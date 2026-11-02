@@ -32,7 +32,7 @@
     "composicionActual": "Composición actual",
     "elegirCamara": "Elegir cámara",
     "laListaOficialMarcaA": "La lista oficial marca a {total} como vigentes y la cámara tiene {bancas} bancas. Se muestra tal como se publica.",
-    "unPuntoPorBancaAgrupados": "Un punto por banca, agrupados por partido, sin los senadores vitalicios. No es la ubicación real de las bancas."
+    "unPuntoPorBancaAgrupados": "Un punto por banca, agrupados por partido, sin los senadores vitalicios."
   },
   "ultimaVotacion": {
     "ultimaVotacionNominal": "Última votación nominal ·",
