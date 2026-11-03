@@ -1,7 +1,7 @@
 {
   "presentacion": {
     "leyesSancionadasPorElCongreso": "Leyes sancionadas por el Congreso Nacional del Paraguay en el período legislativo {id}, con datos abiertos.",
-    "queVotaElCongresoDel": "Qué vota el Congreso del Paraguay",
+    "queVotaElCongresoDel": "¿Cómo vota el Congreso en Paraguay?",
     "leyesSancionadasPorElCongreso2": "Leyes sancionadas por el Congreso Nacional del Paraguay en el período legislativo {id}, a partir de los datos abiertos que publica el propio Congreso.",
     "seccionesDelSitio": "Secciones del sitio",
     "verLasLeyesDelPeriodo": "[Ver las {cantidad} leyes del período]({url1})",
