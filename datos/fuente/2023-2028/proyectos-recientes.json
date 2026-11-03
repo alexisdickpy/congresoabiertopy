@@ -3867,5 +3867,96 @@
     "origenProyecto": "CAMARA DE DIPUTADOS",
     "tipoProyecto": "PROYECTO DE LEY",
     "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "JUAN MANUEL ACEVEDO AYALA, ALEJANDRO DARÍO AGUILERA ELIZAUR, Santiago Alfredo Benítez Cáceres, MIGUEL ANGEL DEL PUERTO SILVA, CLETO MARCELINO GIMENEZ GIMENEZ, EDGAR GUSTAVO OLMEDO SILVA, EMILIO PAVON DOLDAN, JOSÉ RAMÓN RODRÍGUEZ MACIEL, ARTURO RENE URBIETA CUEVAS, PASTOR ALBERTO VERA BEJARANO, MARÍA CRISTINA VILLALBA DE ABENTE, VIRINA MAURICIA VILLANUEVA VDA DE PEÑA, PATRICIA ALEXANDRA ZENA OVIEDO, HUGO JOEL MEZA",
+      "fechaIngreso": "2026-11-02"
+    },
+    "acapite": "QUE ESTABLECE EL RÉGIMEN ESPECIAL PARA LA REGULARIZACIÓN DE LA TENENCIA Y OCUPACIÓN DE LOS INMUEBLES EXPROPIADOS POR LA LEY Nº 517/95, PRESENTADO POR VARIOS DIPUTADOS",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160272",
+    "autores": [
+      {
+        "apellidos": "ACEVEDO AYALA",
+        "idLegislador": 101414,
+        "nombres": "JUAN MANUEL"
+      },
+      {
+        "apellidos": "AGUILERA ELIZAUR",
+        "idLegislador": 101453,
+        "nombres": "ALEJANDRO DARÍO"
+      },
+      {
+        "apellidos": "Benítez Cáceres",
+        "idLegislador": 101554,
+        "nombres": "Santiago Alfredo"
+      },
+      {
+        "apellidos": "DEL PUERTO SILVA",
+        "idLegislador": 101454,
+        "nombres": "MIGUEL ANGEL"
+      },
+      {
+        "apellidos": "GIMENEZ GIMENEZ",
+        "idLegislador": 101446,
+        "nombres": "CLETO MARCELINO"
+      },
+      {
+        "apellidos": "OLMEDO SILVA",
+        "idLegislador": 101458,
+        "nombres": "EDGAR GUSTAVO"
+      },
+      {
+        "apellidos": "PAVON DOLDAN",
+        "idLegislador": 101395,
+        "nombres": "EMILIO"
+      },
+      {
+        "apellidos": "RODRÍGUEZ MACIEL",
+        "idLegislador": 101390,
+        "nombres": "JOSÉ RAMÓN"
+      },
+      {
+        "apellidos": "URBIETA CUEVAS",
+        "idLegislador": 101396,
+        "nombres": "ARTURO RENE"
+      },
+      {
+        "apellidos": "VERA BEJARANO",
+        "idLegislador": 101449,
+        "nombres": "PASTOR ALBERTO"
+      },
+      {
+        "apellidos": "VILLALBA DE ABENTE",
+        "idLegislador": 101413,
+        "nombres": "MARÍA CRISTINA"
+      },
+      {
+        "apellidos": "VILLANUEVA VDA DE PEÑA",
+        "idLegislador": 101393,
+        "nombres": "VIRINA MAURICIA"
+      },
+      {
+        "apellidos": "ZENA OVIEDO",
+        "idLegislador": 101418,
+        "nombres": "PATRICIA ALEXANDRA"
+      },
+      {
+        "apellidos": "MEZA",
+        "idLegislador": 101424,
+        "nombres": "HUGO JOEL"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696164",
+    "fechaIngresoExpediente": "02/11/2026",
+    "idProyecto": 160272,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
   }
 ]

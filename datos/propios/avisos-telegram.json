@@ -1,5 +1,11 @@
 {
-  "avisados": [],
+  "avisados": [
+    {
+      "fecha": "2026-11-03T15:48:06Z",
+      "id": 160272,
+      "tipo": "proyectos"
+    }
+  ],
   "iniciales": {
     "leyes": [
       144142,

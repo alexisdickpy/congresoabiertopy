@@ -6,7 +6,7 @@
 
 | Período | Datos actualizados por última vez |
 |---|---|
-| 2023-2028 | 2026-11-03T00:52:13Z |
+| 2023-2028 | 2026-11-03T15:21:49Z |
 
 La última comprobación de la fuente (aunque no haya cambios) figura en [`estado.json`](estado.json).
 
@@ -231,7 +231,7 @@ Se publica en `fuente/{período}/autores.json` y `fuente/{período}/autores.csv`
 
 Un registro por cada expediente del que un legislador del período figura como autor (legislador/{id}/expedientes), con fecha de ingreso dentro del período. Incluye todos los tipos de expediente. Un expediente con varios autores aparece una vez por cada uno; la API no distingue autor principal. Se descarga una vez por semana.
 
-Se publica en `fuente/{período}/expedientes.json` y `fuente/{período}/expedientes.csv`, con 17664 registros en total.
+Se publica en `fuente/{período}/expedientes.json` y `fuente/{período}/expedientes.csv`, con 17685 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|

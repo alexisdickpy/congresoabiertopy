@@ -21950,5 +21950,19 @@
     "iniciativa": "PARLAMENTARIA",
     "origenProyecto": "CAMARA DE DIPUTADOS",
     "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-02"
+    },
+    "acapite": "QUE ESTABLECE EL RÉGIMEN ESPECIAL PARA LA REGULARIZACIÓN DE LA TENENCIA Y OCUPACIÓN DE LOS INMUEBLES EXPROPIADOS POR LA LEY Nº 517/95, PRESENTADO POR VARIOS DIPUTADOS",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160272",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696164",
+    "fechaIngresoExpediente": "02/11/2026",
+    "idProyecto": 160272,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY"
   }
 ]

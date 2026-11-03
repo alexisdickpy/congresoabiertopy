@@ -10,7 +10,7 @@
       "cantidades": {
         "autores": 2182,
         "comisiones": 2864,
-        "expedientes": 17664,
+        "expedientes": 17685,
         "legisladores": 143,
         "legisladoresVigentes": 127,
         "leyes": 556,
@@ -19,10 +19,10 @@
         "votaciones": 1165,
         "votos": 82680
       },
-      "ultimaComprobacion": "2026-11-03T00:52:13Z",
-      "ultimaModificacion": "2026-11-03T00:52:13Z"
+      "ultimaComprobacion": "2026-11-03T15:21:49Z",
+      "ultimaModificacion": "2026-11-03T15:21:49Z"
     }
   },
-  "ultimaComprobacion": "2026-11-03T00:52:13Z",
-  "ultimaModificacion": "2026-11-03T00:52:13Z"
+  "ultimaComprobacion": "2026-11-03T15:21:49Z",
+  "ultimaModificacion": "2026-11-03T15:21:49Z"
 }
