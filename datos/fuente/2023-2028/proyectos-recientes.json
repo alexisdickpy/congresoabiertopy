@@ -1,32 +1,6 @@
 [
   {
     "_propio": {
-      "autores": "Arnaldo Samaniego González",
-      "fechaIngreso": "2026-08-04"
-    },
-    "acapite": "Proyecto de Ley “QUE CONCEDE PENSIÓN GRACIABLE AL SEÑOR AGUSTÍN OSCAR RAMÍREZ MARTÍNEZ”, presentado por el senador Arnaldo Samaniego González, de fecha 1 de julio de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157381",
-    "autores": [
-      {
-        "apellidos": "Samaniego González",
-        "idLegislador": 101357,
-        "nombres": "Arnaldo"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603815",
-    "fechaIngresoExpediente": "04/08/2026",
-    "idProyecto": 157381,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
       "autores": "Gustavo Alfredo Leite Gusinky, Antonio Carlos Barrios Fernández, Orlando Penner Dürksen",
       "fechaIngreso": "2026-08-05"
     },
@@ -107,176 +81,6 @@
     "expedienteCamara": "D-2694676",
     "fechaIngresoExpediente": "05/08/2026",
     "idProyecto": 157421,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "BETTINA ROSMARY AGUILERA PANIAGUA, MIGUEL ANGEL DEL PUERTO SILVA, MAURICIO FABIAN ESPÍNOLA NÚÑEZ, DALIA MARLENE ESTIGARRIBIA, HUGO JOEL MEZA, ROYA NIGSA TORRES BAÉZ, PASTOR ALBERTO VERA BEJARANO, MARÍA CRISTINA VILLALBA DE ABENTE, DEL PILAR VÁZQUEZ CABRERA",
-      "fechaIngreso": "2026-08-04"
-    },
-    "acapite": "QUE CREA EL PROGRAMA NACIONAL DE REUTILIZACIÓN SANITARIA, EDUCATIVA Y DE BIENESTAR COMUNITARIO DE INMUEBLES PÚBLICOS SUBUTILIZADOS, presentados por los Diputados Nacional Pastor Vera, Hugo Meza, Cristina Villalba, Miguel A. Del Puerto, Dalia Estigarribia, Del Pilar Vázquez, Roya Torres, Bettina Aguilera, Mauricio Espínola",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157424",
-    "autores": [
-      {
-        "apellidos": "AGUILERA PANIAGUA",
-        "idLegislador": 101394,
-        "nombres": "BETTINA ROSMARY"
-      },
-      {
-        "apellidos": "DEL PUERTO SILVA",
-        "idLegislador": 101454,
-        "nombres": "MIGUEL ANGEL"
-      },
-      {
-        "apellidos": "ESPÍNOLA NÚÑEZ",
-        "idLegislador": 101387,
-        "nombres": "MAURICIO FABIAN"
-      },
-      {
-        "apellidos": "ESTIGARRIBIA",
-        "idLegislador": 101440,
-        "nombres": "DALIA MARLENE"
-      },
-      {
-        "apellidos": "MEZA",
-        "idLegislador": 101424,
-        "nombres": "HUGO JOEL"
-      },
-      {
-        "apellidos": "TORRES BAÉZ",
-        "idLegislador": 101438,
-        "nombres": "ROYA NIGSA"
-      },
-      {
-        "apellidos": "VERA BEJARANO",
-        "idLegislador": 101449,
-        "nombres": "PASTOR ALBERTO"
-      },
-      {
-        "apellidos": "VILLALBA DE ABENTE",
-        "idLegislador": 101413,
-        "nombres": "MARÍA CRISTINA"
-      },
-      {
-        "apellidos": "VÁZQUEZ CABRERA",
-        "idLegislador": 101466,
-        "nombres": "DEL PILAR"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694677",
-    "fechaIngresoExpediente": "04/08/2026",
-    "idProyecto": 157424,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "DALIA MARLENE ESTIGARRIBIA",
-      "fechaIngreso": "2026-08-04"
-    },
-    "acapite": "QUE DESAFECTA DEL DOMINIO PÚBLICO MUNICIPAL (EDIFICIO PÚBLICO) Y AUTORIZA A LA MUNICIPALIDAD DE VILLA ELISA, A TRANSFERIR A TITULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES, UN INMUEBLE IDENTIFICADO CON CUENTA CORRIENTE CATASTRAL N° 27-1652-08, UBICADO EN LA CALLE ESTADOS UNIDOS C/ PARAGUAY DEL BARRIO GLORIA MARIA, A LOS EFECTOS DE REGULACIÓN DEL ASENTAMIENTO ANGEL DAVID, presentado por la Diputada Nacional Dalia Estigarribia",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157427",
-    "autores": [
-      {
-        "apellidos": "ESTIGARRIBIA",
-        "idLegislador": 101440,
-        "nombres": "DALIA MARLENE"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694678",
-    "fechaIngresoExpediente": "04/08/2026",
-    "idProyecto": 157427,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "DALIA MARLENE ESTIGARRIBIA",
-      "fechaIngreso": "2026-08-04"
-    },
-    "acapite": "QUE DESAFECTA DEL DOMINIO PÚBLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE VILLA ELISA, A TRANSFERIR A TITULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES, UN INMUEBLE INDENTIFICADO CON CUENTA CORRIENTE CATASTRAL N° 27-1652-09, UBICADO EN LA CALLE PÚBLICA C/ ESTADOS UNIDOS DEL BARRIO GLORIA MARIA, PARA LA REGULACIÓN DEL ASENTAMIENTO ANGEL DAVID, PRESENTADO POR LA DIPUTADA DALIA ESTIGARRIBIA.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157431",
-    "autores": [
-      {
-        "apellidos": "ESTIGARRIBIA",
-        "idLegislador": 101440,
-        "nombres": "DALIA MARLENE"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694680",
-    "fechaIngresoExpediente": "04/08/2026",
-    "idProyecto": 157431,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "DALIA MARLENE ESTIGARRIBIA",
-      "fechaIngreso": "2026-08-04"
-    },
-    "acapite": "QUE DESAFECTA DEL DOMINIO PÚBLICO MUNICIPAL (EDIFICIO PÚBLICO) Y AUTORIZA A LA MUNICIPALIDAD DE VILLA ELISA, A TRANSFERIR A TITULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES, UN INMUEBLE INDENTIFICADO CON CUENTA CORRIENTE CATASTRAL N° 27-1648-18, UBICADO EN LA CALLE PÚBLICA C/ JAIMAICA DEL BARRIO GLORIA MARIA, PARA LA REGULACIÓN DEL ASENTAMIENTO ANGEL DAVID, presentado por la Diputada Nacional Dalia Estigarribia",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157432",
-    "autores": [
-      {
-        "apellidos": "ESTIGARRIBIA",
-        "idLegislador": 101440,
-        "nombres": "DALIA MARLENE"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694679",
-    "fechaIngresoExpediente": "04/08/2026",
-    "idProyecto": 157432,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "SEBASTIÁN EMILIO REMESOWSKI SQUEF",
-      "fechaIngreso": "2026-08-04"
-    },
-    "acapite": "QUE DESAFECTA DEL DOMINIO PÚBLICO MUNICIPAL Y AUTORIZA LA TRANSFERENCIA A TÍTULO GRATUITO DE UN INMUEBLE INDIVIDUALIZADO COMO LOTE N 01 DE LA MANZANA 020 DEL CUADRANTE U223-16, PROPIEDAD DE LA MUNICIPALIDAD DE OBLIGADO, DEPARTAMENTO DE ITAPÚA, A FAVOR DE LA CAJA DE JUBILACIONES Y PENSIONES DEL PERSONAL DE LA ADMINISTRACIÓN NACIONAL DE ELECTRICIDAD (ANDE) PARA ESTABLECER SU OFICINA REGIONAL CON EL  FIN DE BRINDAR EL SERVICIO DE ATENCIÓN A LA CIUDADANÍA DE OBLIGADO Y POBLACIONES VECINAS, PRESENTADO POR EL DIPUTADO SEBASTIÁN REMESOWSKI.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157441",
-    "autores": [
-      {
-        "apellidos": "REMESOWSKI SQUEF",
-        "idLegislador": 101504,
-        "nombres": "SEBASTIÁN EMILIO"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694681",
-    "fechaIngresoExpediente": "04/08/2026",
-    "idProyecto": 157441,
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE DIPUTADOS",
@@ -1965,7 +1769,7 @@
     "appURL": "https://silpy.congreso.gov.py/expediente/158621",
     "autores": [],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "C-2603984",
     "fechaIngresoExpediente": "04/09/2026",
