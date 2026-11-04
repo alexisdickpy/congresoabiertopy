@@ -16,7 +16,7 @@
     "siglasSonPropiasDeEste": "**Siglas:** Son propias de este sitio, para que las etiquetas entren en poco espacio. Al pasar el cursor sobre una etiqueta se ve el nombre oficial del partido y cuántos votos tuvo esa categoría sobre los votos emitidos del partido.",
     "totalesLosQuePublicaEl": "**Totales:** Los que publica el Congreso, sobre los legisladores registrados en la lista oficial de la votación.",
     "partidoEsElQueLa": "Partido es el que la API registra para cada legislador en el período, no necesariamente el de la fecha de cada votación. [Cómo se calcula la posición de cada partido]({url1}) · [Coincidencia de votos entre partidos]({url2})",
-    "decisionesSinVotacionNominalCon": "[{decisiones} decisiones sin votación nominal]({url1}), con su resultado oficial, aparte porque no tienen votos individuales.",
+    "decisionesSinVotacionNominalCon": "[{decisiones} decisiones sin votación nominal]({url1}), con su resultado oficial. Este listado se encuentra aparte porque no tiene votos individuales.",
     "votacionesPorAno": "Votaciones por año",
     "elAnoEsElDe": "El año es el de la fecha del trámite en que se votó. En cada año se puede filtrar por cámara, estado del proyecto y resultado.",
     "votacionesMasAjustadas": "Votaciones más ajustadas",
