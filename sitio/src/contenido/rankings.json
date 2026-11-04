@@ -29,7 +29,7 @@
     "legisladoresNoTienen": "legisladores no tienen",
     "partidoRegistradoEnLaApi": "partido registrado en la API.",
     "masAusentes": "Más «ausentes»",
-    "legisladoresConMasAusenciasEn": "Legisladores con más ausencias en votaciones nominales.",
+    "legisladoresConMasAusenciasEn": "Legisladores con más ausencias en votaciones nominales (no contempla las votaciones que se realizaron de forma no nominal, por lo cual el listado no implica necesariamente que son los legisladores que más faltaron a sesiones)",
     "ausenciasVotacionesNominalesEnQue": "Ausencias = votaciones nominales en que figura como AUSENTE ÷ votaciones nominales en cuya lista figura × 100",
     "votacionesNominalesTodasLasDel": "**Votaciones nominales.** Todas las del período en cuya lista oficial figura, de cualquier tipo de expediente. La lista de cada votación incluye solo a quienes ocupaban el cargo ese día.",
     "minimoEntranALaLista2": "**Mínimo.** Entran a la lista quienes figuran en al menos {minimo} votaciones nominales, para que no la encabecen suplentes o reemplazos con pocas votaciones. A igual porcentaje, primero quien figura en más votaciones.",
