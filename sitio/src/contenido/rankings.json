@@ -35,7 +35,7 @@
     "minimoEntranALaLista2": "**Mínimo:** Entran a la lista quienes figuran en al menos {minimo} votaciones nominales, para que no la encabecen suplentes o reemplazos con pocas votaciones. A igual porcentaje, primero quien figura en más votaciones.",
     "sinMotivoLaFuenteNo": "**Sin motivo:** La fuente no dice por qué un legislador figura como AUSENTE. Una licencia, una representación oficial o haber salido del recinto en el momento de votar cuentan igual.",
     "votacionYSesionFigurarComo": "**Votación y sesión:** Figurar como AUSENTE en una votación no es lo mismo que no ir a la sesión. Indica que no registró su voto en ese momento, aunque pudiera estar en la sala.",
-    "laFichaDeCadaLegislador2": "La ficha de cada legislador lista las votaciones en que figura como AUSENTE. [Cómo se arma esta lista]({url1}) · [Todos los legisladores, por ausencias en votaciones nominales]({url2})",
+    "laFichaDeCadaLegislador2": "La ficha de cada legislador lista las votaciones en que figura como AUSENTE. [Ver cómo se arma esta lista]({url1}) · [Todos los legisladores, por ausencias en votaciones nominales]({url2})",
     "legisladorFigura": "legislador figura",
     "legisladoresFiguran": "legisladores figuran",
     "enMenosDeVotacionesNominales": "en menos de {minimo} votaciones nominales y no"
