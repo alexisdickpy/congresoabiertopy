@@ -1,0 +1,76 @@
+---
+// Partidos (#93): empieza con la composición actual de cada cámara (la misma de la portada) y sigue con
+// una tarjeta por partido que enlaza a su perfil temático (lib/perfilPartidos.js) y con el enlace a la
+// coincidencia de votos. Ninguna cifra suma las dos cámaras.
+import Base from "../../layouts/Base.astro";
+import ComposicionCongreso from "../../components/ComposicionCongreso.astro";
+import { periodos } from "../../lib/datos.js";
+import { perfilesDePartidos } from "../../lib/perfilPartidos.js";
+import * as rutas from "../../lib/rutas.js";
+import { legible } from "../../lib/texto.js";
+import { textos, fill, md, crudo } from "../../lib/contenido.js";
+const tx = textos.partidos.indice;
+
+const periodo = periodos().find((p) => p.vigente).id;
+const perfiles = perfilesDePartidos(periodo);
+---
+
+<Base titulo={tx.partidos} descripcion={fill(tx.descripcion, { periodo })}>
+  <h1>{tx.partidos}</h1>
+  <ComposicionCongreso periodo={periodo} />
+
+  <p class="lectura destacado" set:html={md(tx.coincidenciaDeVotos, { url1: crudo(rutas.coincidencia()) })} />
+
+  <h2>{tx.perfilDeCadaPartido}</h2>
+  <p class="lectura" set:html={md(tx.cadaPerfilMuestra, { url1: crudo(rutas.votosPorTema()) })} />
+  <ul class="tarjetas-partidos">
+    {
+      perfiles.map((p: any) => (
+        <li class={`tarjeta-partido ${p.clase}`} data-partido={p.id}>
+          <h3>
+            <a href={p.url}>
+              <span class="pip"></span> {p.sigla && <b>{p.sigla} </b>}
+              <span class="nombre">{legible(p.nombre)}{p.nombreConocido && p.nombreConocido !== p.sigla && ` (${p.nombreConocido})`}</span>
+            </a>
+          </h3>
+          <p class="chico texto-suave">
+            {p.legisladores > 0
+              ? p.camaras.filter((c: any) => c.legisladores > 0).map((c: any) => `${c.nombre} ${c.legisladores}`).join(" · ")
+              : tx.sinLegisladoresEnEjercicio}
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="chico texto-suave">{tx.ordenDeLasTarjetas}</p>
+</Base>
+
+<style>
+  .destacado {
+    margin-top: var(--espacio-5);
+    padding: var(--espacio-3);
+    border-left: var(--foco-ancho) solid var(--color-acento);
+    background: var(--color-superficie);
+  }
+  .tarjetas-partidos {
+    list-style: none;
+    margin: 0 0 var(--espacio-3);
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+    gap: var(--espacio-3);
+  }
+  .tarjeta-partido {
+    padding: var(--espacio-3);
+    border: var(--borde-ancho) solid var(--color-borde);
+    border-top: var(--foco-ancho) solid var(--color-partido, var(--color-borde));
+    border-radius: var(--radio);
+  }
+  h3 {
+    margin: 0 0 var(--espacio-1);
+    font-size: var(--tamano-base);
+  }
+  .tarjeta-partido p {
+    margin: 0;
+  }
+</style>

@@ -7,7 +7,8 @@
 import { coincidencia } from "./coincidencia.js";
 import { claseDeCategoria, detalleDeVotacion } from "./ficha.js";
 import { listado } from "./legisladores.js";
-import { clasePartido, siglaDe } from "./partidos.js";
+import { clasePartido, partidoUnificado, siglaDe } from "./partidos.js";
+import * as rutas from "./rutas.js";
 import { legible, recortar } from "./texto.js";
 import { ultimasVotaciones } from "./votaciones.js";
 import { CANTIDAD_PORTADA, votosDistintosAlPartido } from "./votosDistintos.js";
@@ -63,7 +64,7 @@ const CAMARAS = [
 /**
  * Composición actual de cada cámara (#80): legisladores en ejercicio según el dato oficial, sin los
  * senadores vitalicios, por
- * partido, de más a menos. `asientos`, un punto por legislador, partido por partido. Se muestra lo que
+ * partido, de más a menos, con el identificador del partido unificado y su perfil (#93). `asientos`, un punto por legislador, partido por partido. Se muestra lo que
  * publica el Congreso aunque no coincida con las bancas (`bancas` queda para avisarlo).
  */
 export function composicion(periodo) {
@@ -76,7 +77,7 @@ export function composicion(periodo) {
       grupos.get(clave).push(f);
     }
     const partidos = [...grupos.entries()]
-      .map(([texto, miembros]) => ({ sigla: siglaDe(texto) ?? texto, nombre: legible(miembros[0].partidoConocido ? `${texto} (${miembros[0].partidoConocido})` : texto), clase: clasePartido(texto), cantidad: miembros.length, miembros }))
+      .map(([texto, miembros]) => ({ id: miembros[0].partido ? partidoUnificado(texto).id : null, url: miembros[0].partido ? rutas.partidos(partidoUnificado(texto).id) : null, sigla: siglaDe(texto) ?? texto, nombre: legible(miembros[0].partidoConocido ? `${texto} (${miembros[0].partidoConocido})` : texto), clase: clasePartido(texto), cantidad: miembros.length, miembros }))
       .sort((a, b) => b.cantidad - a.cantidad || a.sigla.localeCompare(b.sigla, "es"));
     return {
       camara,

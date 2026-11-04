@@ -304,8 +304,26 @@ export function textoDeCoincidencia(c) {
   return c.suficiente ? c.texto : fill(tx.menosDeVotacionesEnComun, { fraccion: c.fraccion, umbral: UMBRAL });
 }
 
+/** Cantidad de tonos del sombreado del cuadro de coincidencia. */
+export const NIVELES_CUADRO = 5;
+
 /**
- * Intensidad del sombreado de una celda del cuadro, entre 0 y 1: el porcentaje de coincidencia. Sin
- * porcentaje (diagonal o pocas votaciones en común), 0. Un solo tono, sin colores que califiquen.
+ * Escala del sombreado de un cuadro (#93): el rango entre el menor y el mayor porcentaje de sus celdas con
+ * porcentaje, en NIVELES_CUADRO partes iguales. Así se ven las diferencias aunque todos los porcentajes
+ * estén cerca. { minimo, maximo } (proporciones entre 0 y 1), o null si ninguna celda tiene porcentaje.
  */
-export const intensidadDe = (c) => (c?.suficiente ? Math.round(c.porcentaje * 100) / 100 : 0);
+export function escalaDelCuadro(filas) {
+  const porcentajes = filas.flatMap((f) => f.celdas.filter((c) => c?.suficiente).map((c) => c.porcentaje));
+  return porcentajes.length ? { minimo: Math.min(...porcentajes), maximo: Math.max(...porcentajes) } : null;
+}
+
+/**
+ * Nivel del sombreado de una celda, de 1 (el menor porcentaje del cuadro) a NIVELES_CUADRO (el mayor).
+ * Sin porcentaje (diagonal o pocas votaciones en común), 0. Un solo tono, sin colores que califiquen.
+ */
+export function nivelDe(c, escala) {
+  if (!c?.suficiente || !escala) return 0;
+  const ancho = escala.maximo - escala.minimo;
+  if (ancho <= 0) return NIVELES_CUADRO;
+  return Math.min(NIVELES_CUADRO, 1 + Math.floor(((c.porcentaje - escala.minimo) / ancho) * NIVELES_CUADRO + 1e-9)); // el margen evita errores de redondeo en los límites
+}

@@ -15,6 +15,7 @@ import interaccion from "../contenido/interaccion.json" with { type: "json" };
 import legisladores from "../contenido/legisladores.json" with { type: "json" };
 import leyes from "../contenido/leyes.json" with { type: "json" };
 import metodologia from "../contenido/metodologia.json" with { type: "json" };
+import partidos from "../contenido/partidos.json" with { type: "json" };
 import portada from "../contenido/portada.json" with { type: "json" };
 import privacidad from "../contenido/privacidad.json" with { type: "json" };
 import proyectos from "../contenido/proyectos.json" with { type: "json" };
@@ -26,7 +27,7 @@ import { fill } from "./rellenar.js";
 
 export { fill };
 
-export const textos = { buscar, coincidencia, datos, error404, estadisticas, general, interaccion, legisladores, leyes, metodologia, portada, privacidad, proyectos, rankings, temas, test, votaciones };
+export const textos = { buscar, coincidencia, datos, error404, estadisticas, general, interaccion, legisladores, leyes, metodologia, partidos, portada, privacidad, proyectos, rankings, temas, test, votaciones };
 
 const escapar = (valor) => String(valor).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 

@@ -21,6 +21,8 @@ import { masAjustadas, votacionesDelAnio, votacionesDelPeriodo } from "../../src
 import { MINIMO_VOTACIONES_AUSENCIAS, masAusentes } from "../../src/lib/rankings.js";
 import { votosDistintosAlPartido } from "../../src/lib/votosDistintos.js";
 import { votosPorTema } from "../../src/lib/votosPorTema.js";
+import { perfilesDePartidos } from "../../src/lib/perfilPartidos.js";
+import { escalaDelCuadro, nivelDe } from "../../src/lib/coincidencia.js";
 import { compartirVotacion } from "../../src/lib/compartir.js";
 import { datosDelTest, esPreliminar } from "../../src/lib/testAfinidad.js";
 import { fijo, textos } from "../textos.js";
@@ -516,7 +518,7 @@ test("ningún texto propio presenta AUSENTE como asistencia, faltas o inasistenc
   // pueden tratar de asistencia social y se muestran sin cambios). La firma dice «con asistencia de
   // IA», el único uso permitido de la palabra.
   const prohibidas = /inasistencia|asistencia(?! de IA)|\bfalta|\bfaltó|días ausente/i;
-  const urls = [rutas.inicio(), rutas.metodologia(), rutas.legisladores(), rutas.votacionesNominales(), rutas.coincidencia(), rutas.rankings(), ...paginasDeVotaciones(), ...algunasVotaciones(), ...legisladores().map((p) => p.url)];
+  const urls = [rutas.inicio(), rutas.metodologia(), rutas.legisladores(), rutas.votacionesNominales(), rutas.coincidencia(), rutas.partidos(), rutas.rankings(), ...paginasDeVotaciones(), ...algunasVotaciones(), ...legisladores().map((p) => p.url)];
   for (const url of urls) {
     const visible = leer(url)
       .replace(/<(script|style)[\s\S]*?<\/\1>/g, " ")
@@ -771,6 +773,57 @@ test("el menú y la portada enlazan a cada vista de análisis", () => {
   assert.ok(!/bancada/i.test(coincidenciaPortada.replace(fijo(textos.portada.analisis.laCoincidenciaCompleta), "")), "La coincidencia de la portada menciona bancadas");
   // Sin «Pendiente de clasificación» en la portada.
   assert.ok(!crudo.includes('data-tema="pendiente"'), "La portada muestra «Pendiente de clasificación»");
+});
+
+test("partidos: composición, perfiles con las cifras de los votos por tema, enlaces y cuadro de coincidencia en niveles (#93)", () => {
+  const periodo = periodos().find((p) => p.vigente).id;
+  const perfiles = perfilesDePartidos(periodo);
+  const menu = (url) => leer(url).match(/<nav aria-label="Principal"[\s\S]*?<\/nav>/)?.[0] ?? "";
+  // Índice: empieza con la composición, enlaza la coincidencia y cada perfil.
+  const indice = leer(rutas.partidos());
+  const h1 = indice.indexOf("<h1");
+  assert.ok(h1 > 0 && indice.indexOf('id="titulo-composicion"') > h1, "El índice no empieza con la composición");
+  assert.ok(indice.indexOf('id="titulo-composicion"') < indice.indexOf(`class="tarjetas-partidos"`), "La composición no va primero");
+  assert.ok(indice.includes(`href="${rutas.coincidencia()}"`), "El índice no enlaza la coincidencia");
+  for (const p of perfiles) assert.ok(indice.includes(`href="${p.url}"`), `El índice no enlaza ${p.url}`);
+  for (const url of [rutas.partidos(), rutas.coincidencia(), ...perfiles.map((p) => p.url)]) {
+    assert.ok(menu(url).includes(`href="${rutas.partidos()}" aria-current="page"`), `${url} no marca «Partidos» en el menú`);
+  }
+  // Cada perfil: avisos, cifras iguales a las de votos por tema y enlaces a cada tema.
+  const temas = votosPorTema(periodo);
+  for (const p of perfiles) {
+    const html = texto(p.url).replace(/ data-astro-cid-\w+/g, "");
+    assert.ok(html.includes(fijo(textos.partidos.perfil.aviso)), `Falta el aviso en ${p.url}`);
+    assert.ok(html.includes(`href="${rutas.metodologia(rutas.anclasMetodologia.perfilPartidos)}"`), p.url);
+    for (const t of p.temas) {
+      assert.ok(html.includes(`href="${t.url}"`), `${p.url} no enlaza ${t.url}`);
+      for (const c of t.camaras) {
+        const fila = temas.find((x) => x.id === t.id).camaras.find((x) => x.camara === c.camara).partidos.find((f) => f.id === p.id);
+        c.categorias.forEach((cat, n) => {
+          if (fila.celdas[n].cantidad > 0) assert.ok(html.includes(`<b>${cat}</b> ${fila.celdas[n].texto}`), `${p.url} ${t.id} ${c.camara} ${cat}`);
+        });
+      }
+    }
+    assert.ok(!html.includes('class="votaciones-tema'), `${p.url} repite la lista de votaciones del tema`);
+    assert.ok(html.includes(`href="${rutas.legisladoresDePartido(p.id)}"`), `${p.url} no enlaza sus legisladores`);
+  }
+  // Enlaces al perfil desde la portada, la coincidencia, cada tema y las fichas.
+  const portada = leer(rutas.inicio());
+  for (const c of composicion(periodo)) for (const x of c.partidos.filter((y) => y.url)) assert.ok(portada.includes(`href="${x.url}"`), `La portada no enlaza ${x.url}`);
+  const coinc = leer(rutas.coincidencia());
+  for (const p of perfiles.filter((x) => coincidencia(periodo).partidos.some((y) => y.id === x.id))) assert.ok(coinc.includes(`href="${p.url}"`), `La coincidencia no enlaza ${p.url}`);
+  for (const t of temas) {
+    const html = leer(t.url);
+    for (const c of t.camaras) for (const f of c.partidos) assert.ok(html.includes(`href="${rutas.partidos(f.id)}"`), `${t.url} no enlaza ${f.id}`);
+  }
+  const vigente = listado(periodo).enEjercicio.find((f) => f.partido);
+  assert.ok(leer(vigente.url).includes(`href="${perfiles.find((p) => p.textos.some((x) => x.texto === vigente.partido)).url}"`), `${vigente.url} no enlaza el perfil de su partido`);
+  // Cuadro de coincidencia: cada celda con porcentaje lleva su nivel, y hay una leyenda por cuadro.
+  for (const cuadro of coincidencia(periodo).cuadros) {
+    const escala = escalaDelCuadro(cuadro.filas);
+    for (const f of cuadro.filas) for (const c of f.celdas.filter((x) => x?.suficiente)) assert.ok(coinc.includes(`<td class="nivel-${nivelDe(c, escala)}"`), `Nivel de ${f.id}`);
+  }
+  assert.equal(coinc.split('class="escala-cuadro').length - 1, coincidencia(periodo).cuadros.length, "Leyenda de cada cuadro");
 });
 
 test("metodología: glosario con sus términos y las siglas de los partidos (#92)", () => {

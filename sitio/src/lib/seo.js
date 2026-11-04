@@ -11,6 +11,7 @@ import { esPreliminar } from "./testAfinidad.js";
 import { recortar } from "./texto.js";
 import { votacionesDelPeriodo } from "./votaciones.js";
 import { votosPorTema } from "./votosPorTema.js";
+import { perfilesDePartidos } from "./perfilPartidos.js";
 import { textos, fill } from "./contenido.js";
 const tx = textos.general.buscadores;
 
@@ -149,6 +150,8 @@ export function direccionesDelSitemap() {
     rutas.legisladores(),
     rutas.mapaDiputados(),
     rutas.votacionesNominales(),
+    rutas.partidos(),
+    ...perfilesDePartidos(periodos().find((p) => p.vigente).id).map((p) => p.url),
     rutas.coincidencia(),
     rutas.rankings(),
     rutas.estadisticas(),

@@ -53,6 +53,7 @@ export const anclasMetodologia = {
   observaciones: "observaciones-sobre-los-datos",
   temas: "temas-de-las-leyes",
   votosPorTema: "votos-de-partidos-y-bancadas-por-tema",
+  perfilPartidos: "perfil-de-cada-partido",
   testAfinidad: "test-de-afinidad",
   mapa: "mapa-de-diputados-por-departamento",
   expedientes: "expedientes-presentados",
@@ -120,6 +121,11 @@ export const parametroGrupoCoincidencia = "grupo";
 
 /** Votos de partidos y bancadas por tema (#37); con tema (identificador de temas.json), la página de ese tema. */
 export const votosPorTema = (tema) => (tema ? `/votos-por-tema/${encodeURIComponent(tema)}/` : "/votos-por-tema/");
+
+/** Partidos (#93): índice con la composición actual; con identificador (partido unificado, #42), el perfil temático de ese partido. */
+export const partidos = (id) => (id ? `/partidos/${encodeURIComponent(id)}/` : "/partidos/");
+/** Listado de legisladores filtrado por un partido unificado. */
+export const legisladoresDePartido = (id) => `${legisladores()}?${parametrosLegisladores.partido}=${encodeURIComponent(id)}`;
 
 /** Test de afinidad (#63): preguntas basadas en votaciones nominales y coincidencia con partidos, bancadas y legisladores. */
 export const testAfinidad = () => "/test-de-afinidad/";
