@@ -23,7 +23,7 @@ const plural = (n: number, singular: string, varios: string) => `${numero(n)} ${
   <h1>{tx.votosDePartidosPorTema}</h1>
   <p class="lectura">
     {fill(tx.paraCadaTemaLosVotos, { periodo: periodo })} 
-    <a href={rutas.metodologia(rutas.anclasMetodologia.votosPorTema)}>{txc.comoSeCalcula}</a>
+    <a href={rutas.metodologia(rutas.anclasMetodologia.votosPorTema)}>{tx.verComoSeCalcula}</a>
     {" · "}
     <a href={rutas.archivoCalculado(periodo, NOMBRE_VOTOS_POR_TEMA, "csv")} download>{txc.descargarLaTablaCsv}</a>
   </p>
@@ -44,7 +44,7 @@ const plural = (n: number, singular: string, varios: string) => `${numero(n)} ${
 <style>
   .temas-votos {
     list-style: none;
-    margin: 0;
+    margin: var(--espacio-5) 0 0;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));

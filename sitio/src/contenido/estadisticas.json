@@ -8,7 +8,7 @@
     "porAnoDeSancion": "Por año de sanción",
     "porIniciativa": "Por iniciativa",
     "porPartidoDeSusAutores": "Por partido de sus autores",
-    "unaLeyCuentaUnaVez": "Una ley cuenta una vez por cada partido con algún autor, así que la suma pasa del total.",
+    "unaLeyCuentaUnaVez": "Si una ley tiene autores de varios partidos, cuenta para cada uno de ellos; por eso la suma de todos los partidos es mayor que el total de leyes.",
     "legisladoresConMasLeyesDe": "Legisladores con más leyes de su autoría",
     "losPrimerosMuchasLeyesTienen": "Los {cantidad} primeros. Muchas leyes tienen varios autores. Más leyes no significa necesariamente mejor ni peor trabajo.",
     "votacionesNominalesSobreProyectosDe": "Votaciones nominales sobre proyectos de ley",

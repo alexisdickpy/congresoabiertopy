@@ -4,6 +4,7 @@
 // las votaciones más ajustadas.
 import Base from "../../layouts/Base.astro";
 import ListaVotaciones from "../../components/ListaVotaciones.astro";
+import TarjetasEnlace from "../../components/TarjetasEnlace.astro";
 import { periodos } from "../../lib/datos.js";
 import { decisionesSinNominal } from "../../lib/decisiones.js";
 import * as rutas from "../../lib/rutas.js";
@@ -38,24 +39,31 @@ const porCamaraTexto = (lista: any[]) => lista.map((c) => `${c.camara} ${numero(
       <li set:html={md(tx.siglasSonPropiasDeEste, {  })} />
       <li set:html={md(tx.totalesLosQuePublicaEl, {  })} />
     </ul>
-    <p class="chico texto-suave" set:html={md(tx.partidoEsElQueLa, { url1: crudo(rutas.metodologia(rutas.anclasMetodologia.posicionPartidos)), url2: crudo(rutas.coincidencia()) })} />
+    <p class="chico texto-suave">{tx.partidoEsElQueLa}</p>
   </div>
 
-  <p class="lectura" set:html={md(tx.decisionesSinVotacionNominalCon, { url1: crudo(rutas.decisionesSinNominal()), decisiones: numero(decisiones.length) })} />
+  <TarjetasEnlace
+    etiqueta={tx.masSobreLasVotaciones}
+    tarjetas={[
+      { url: rutas.metodologia(rutas.anclasMetodologia.posicionPartidos), titulo: tx.tarjetaPosicionTitulo, descripcion: tx.tarjetaPosicionDescripcion },
+      { url: rutas.coincidencia(), titulo: tx.tarjetaCoincidenciaTitulo, descripcion: tx.tarjetaCoincidenciaDescripcion },
+      { url: rutas.decisionesSinNominal(), titulo: fill(tx.tarjetaDecisionesTitulo, { decisiones: numero(decisiones.length) }), descripcion: tx.tarjetaDecisionesDescripcion },
+    ]}
+  />
 
   <section aria-labelledby="titulo-anios">
     <h2 id="titulo-anios">{tx.votacionesPorAno}</h2>
     <p class="chico texto-suave">{tx.elAnoEsElDe}</p>
-    <ul class="anios">
-      {
-        anios.map((a: any) => (
-          <li data-anio={a.anio}>
-            <a href={a.url}>{a.anio}</a> <span class="chico">{plural(a.total, txc.votacion, "votaciones")}</span>{" "}
-            <span class="chico texto-suave">({porCamaraTexto(a.porCamara)})</span>
-          </li>
-        ))
-      }
-    </ul>
+    <TarjetasEnlace
+      etiqueta={tx.votacionesPorAno}
+      tarjetas={anios.map((a: any) => ({
+        url: a.url,
+        titulo: a.anio,
+        descripcion: plural(a.total, txc.votacion, "votaciones"),
+        detalle: porCamaraTexto(a.porCamara),
+        datos: { anio: a.anio },
+      }))}
+    />
   </section>
 
   <section aria-labelledby="titulo-ajustadas">
@@ -77,15 +85,5 @@ const porCamaraTexto = (lista: any[]) => lista.map((c) => `${c.camara} ${numero(
     padding: var(--espacio-3) var(--espacio-4);
     background: var(--color-superficie);
     border-left: var(--foco-ancho) solid var(--color-acento);
-  }
-  .anios {
-    list-style: none;
-    padding: 0;
-  }
-  .anios li + li {
-    margin-top: var(--espacio-2);
-  }
-  .anios a {
-    font-weight: var(--peso-fuerte);
   }
 </style>
