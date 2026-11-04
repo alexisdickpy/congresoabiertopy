@@ -225,7 +225,7 @@ Decisión de alcance (#44). La página `/votaciones/` reúne las votaciones nomi
 
 ### Votaciones más ajustadas
 
-En `/votaciones/`, las **10** votaciones de cada cámara con menor diferencia entre los totales oficiales de `SI` y de `NO`. No están en la portada.
+En `/votaciones/`, las **5** votaciones de cada cámara con menor diferencia entre los totales oficiales de `SI` y de `NO`. No están en la portada.
 
 > diferencia = | total oficial de SI − total oficial de NO |
 
@@ -306,7 +306,7 @@ Comprobación. Las pruebas recalculan a mano, con un recuento aparte de `votacio
 Decisión de alcance (#93). Las mismas cifras de los votos por tema, ordenadas por partido en lugar de por tema. Se calculan en `sitio/src/lib/perfilPartidos.js` tomando, para cada tema y cámara, la fila del partido en `votosPorTema`, sin otro cálculo.
 
 - **Índice `/partidos/`.** Empieza con la composición actual de cada cámara (la misma de la portada), sigue con un enlace destacado a la coincidencia de votos y con una tarjeta por partido (sigla, nombre y legisladores en ejercicio por cámara). Orden: de más a menos legisladores en ejercicio en el Congreso y, a igualdad, por nombre; es solo un orden.
-- **Perfil `/partidos/{partidoUnificado}/`.** Uno por cada partido unificado con al menos un legislador registrado en el período (11 en 2023-2028). Muestra los legisladores en ejercicio por cámara (los de la composición, sin vitalicios), el texto oficial del partido en cada cámara y, para cada tema en el orden de `temas.json`, una barra por cámara con el reparto en las categorías oficiales, cada cantidad escrita, la cantidad de votaciones del tema en esa cámara y los votos registrados del partido, y un enlace a `/votos-por-tema/{tema}/`.
+- **Perfil `/partidos/{partidoUnificado}/`.** Uno por cada partido unificado con al menos un legislador registrado en el período (11 en 2023-2028). Muestra los legisladores en ejercicio por cámara (los de la composición, sin vitalicios), el texto oficial del partido en cada cámara y una tabla compacta por cámara (#99), con una fila por tema en el orden de `temas.json`: una mini barra con el reparto, el porcentaje y la cantidad de `SI`, `NO`, `ABSTENCIÓN/BLANCO`, `NO VOTA` (solo si el partido tiene alguno en esa cámara) y `AUSENTE` sobre todos sus votos registrados en el tema, los votos registrados y las votaciones, y el nombre del tema enlazado a `/votos-por-tema/{tema}/`. Las mociones y otras opciones van juntas en la columna «Otras opciones», cuya cifra es su suma; el detalle de la celda nombra cada una con su cifra. Un tema sin votos del partido en esa cámara queda con la fila sin cifras.
 - **Sin repetir la página del tema.** El perfil no lista las votaciones; la lista con la etapa de cada una está en la página del tema, que enlaza a cada perfil desde el nombre del partido.
 - **Reglas.** Las de los votos por tema: cámaras por separado, sin cifra única de apoyo, sin umbral y con la cantidad de votaciones a la vista, partido según el registro del período. Si el partido no tuvo votos en un tema en una cámara, esa cámara no aparece; si no tuvo en ninguna, el tema lo dice. «Pendiente de clasificación» va al final si tiene votaciones.
 - **Enlaces.** El nombre de cada partido enlaza a su perfil en la composición (portada e índice), en la ficha de cada legislador del período vigente, en la coincidencia de votos y en la página de cada tema. Al pie del perfil: el listado de legisladores filtrado por el partido, la coincidencia de votos con el partido elegido y la descarga de `votos-por-tema.csv`.

@@ -3,10 +3,11 @@
 import Base from "../../layouts/Base.astro";
 import FiltroLegisladores from "../../components/FiltroLegisladores.astro";
 import TablaLegisladores from "../../components/TablaLegisladores.astro";
+import TarjetasEnlace from "../../components/TarjetasEnlace.astro";
 import { periodos } from "../../lib/datos.js";
 import { listado, opcionesDelListado } from "../../lib/legisladores.js";
 import * as rutas from "../../lib/rutas.js";
-import { textos, fill, md, crudo } from "../../lib/contenido.js";
+import { textos, fill } from "../../lib/contenido.js";
 const tx = textos.legisladores.listado;
 
 const periodo = periodos().find((p) => p.vigente).id;
@@ -28,10 +29,15 @@ const conNombreConocido = todos.some((l) => l.partidoConocido);
       {tx.losDatosSonLosQue}
       {conNombreConocido && tx.elNombreEntreParentesisEs}
     </p>
-    <p set:html={md(tx.votacionesNominalesPorLegisladorUna, { url1: crudo(rutas.votacionesNominales()) })} />
-    <p set:html={md(tx.mapaDeDiputadosPorDepartamento, { url1: crudo(rutas.mapaDiputados()) })} />
-    <p set:html={md(tx.coincidenciaDeVotosEntrePartidos, { url1: crudo(rutas.coincidencia()) })} />
   </div>
+  <TarjetasEnlace
+    etiqueta={tx.otrasVistas}
+    tarjetas={[
+      { url: rutas.votacionesNominales(), titulo: tx.vistaVotacionesTitulo, descripcion: tx.vistaVotacionesDescripcion },
+      { url: rutas.mapaDiputados(), titulo: tx.vistaMapaTitulo, descripcion: tx.vistaMapaDescripcion },
+      { url: rutas.coincidencia(), titulo: tx.vistaCoincidenciaTitulo, descripcion: tx.vistaCoincidenciaDescripcion },
+    ]}
+  />
   <FiltroLegisladores entradas={todos.map((l) => l.filtro)} opciones={opcionesDelListado(periodo)} />
   <section data-filtro-legisladores>
     <h2 class="solo-lectores">{tx.enEjercicio}</h2>

@@ -1,0 +1,174 @@
+---
+// Tabla compacta de votos por tema de un partido en una cámara (lib/perfilPartidos.js, #99): una fila
+// por tema, con su mini barra, el porcentaje y la cantidad de cada categoría sobre todos los votos
+// registrados del partido en ese tema, y el denominador. Recibe los valores ya calculados. En celular,
+// cada tema se ve como una tarjeta con las cifras en una grilla (48rem = --punto-quiebre-movil).
+import BarraVotos from "./BarraVotos.astro";
+import { textos, fill } from "../lib/contenido.js";
+const tx = textos.partidos.perfil;
+
+interface Props {
+  tabla: any;
+  titulo: string;
+  nivel?: 3 | 4;
+}
+const { tabla, titulo, nivel = 3 } = Astro.props;
+const Titulo = `h${nivel}`;
+const numero = (n: number) => n.toLocaleString("es-PY");
+const nombreColumna = (c: any) => c.categoria ?? tx.otrasOpciones;
+const detalle = (celda: any) => celda.detalle.map((d: any) => `${d.categoria} ${d.texto}`).join("; ");
+---
+
+<section class="tabla-temas-partido">
+  <Titulo>{titulo}</Titulo>
+  <div class="tabla-temas-marco">
+  <table class="tabla-temas">
+    <caption class="solo-lectores">{titulo}</caption>
+    <thead>
+      <tr>
+        <th scope="col">{tx.columnaTema}</th>
+        {tabla.columnas.map((c: any) => <th scope="col" class="cifra"><span class={`muestra ${c.clase}`}></span> {nombreColumna(c)}</th>)}
+        <th scope="col" class="cifra">{tx.columnaDenominador}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        tabla.filas.map((f: any) => (
+          <tr data-tema={f.id}>
+            <th scope="row">
+              <a href={f.url}>{f.nombre}</a>
+              {f.datos && <BarraVotos barra={f.datos.barra} compacta />}
+            </th>
+            {f.datos ? (
+              <Fragment>
+                {tabla.columnas.map((c: any) => {
+                  const celda = f.datos.celdas[c.clave];
+                  return (
+                    <td class={`cifra${celda.cantidad ? "" : " cero"}`} data-etiqueta={nombreColumna(c)} title={detalle(celda) || undefined}>
+                      <b>{celda.porcentajeTexto}</b> <span class="cantidad">{numero(celda.cantidad)}</span>
+                      {celda.detalle.length > 0 && <span class="solo-lectores">{detalle(celda)}</span>}
+                    </td>
+                  );
+                })}
+                <td class="cifra denominador" data-etiqueta={tx.columnaDenominador}>
+                  {fill(tx.denominador, { votos: numero(f.datos.votos), votaciones: numero(f.datos.votaciones) })}
+                </td>
+              </Fragment>
+            ) : (
+              <td class="sin-votos" colspan={tabla.columnas.length + 1}>{tx.sinVotos}</td>
+            )}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<style is:global>
+  .tabla-temas-partido {
+    margin-bottom: var(--espacio-5);
+  }
+  .tabla-temas {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--tamano-chico);
+  }
+  .tabla-temas th,
+  .tabla-temas td {
+    text-align: left;
+    vertical-align: top;
+    padding: var(--espacio-2);
+    border-bottom: var(--borde-ancho) solid var(--color-borde);
+  }
+  /* Si la pantalla es angosta pero no tanto como para las tarjetas, se desplaza la tabla, no la página. */
+  .tabla-temas-marco {
+    overflow-x: auto;
+  }
+  .tabla-temas thead th {
+    background: var(--color-fondo);
+    border-bottom-width: var(--borde-grueso);
+    vertical-align: bottom;
+  }
+  .tabla-temas .cifra {
+    text-align: right;
+    white-space: nowrap;
+  }
+  .tabla-temas tbody th {
+    font-weight: var(--peso-normal);
+    border-left: var(--foco-ancho) solid var(--color-tema, var(--color-borde));
+    min-width: 10rem;
+  }
+  .tabla-temas tbody th a {
+    display: block;
+    margin-bottom: var(--espacio-1);
+  }
+  .tabla-temas .cantidad,
+  .tabla-temas .cero,
+  .tabla-temas .denominador,
+  .tabla-temas .sin-votos {
+    color: var(--color-texto-suave);
+  }
+  .tabla-temas .cantidad {
+    display: block;
+  }
+  .tabla-temas .denominador {
+    white-space: normal;
+    min-width: 6rem;
+  }
+  .tabla-temas .cero b {
+    font-weight: var(--peso-normal);
+  }
+  .tabla-temas .muestra {
+    display: inline-block;
+    width: var(--espacio-3);
+    height: var(--espacio-3);
+    border-radius: var(--radio);
+    vertical-align: -0.1em;
+  }
+
+  @media (max-width: 48rem) {
+    .tabla-temas thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+    }
+    .tabla-temas tbody tr {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--espacio-1) var(--espacio-3);
+      padding: var(--espacio-3) 0 var(--espacio-3) var(--espacio-3);
+      border-left: var(--foco-ancho) solid var(--color-tema, var(--color-borde));
+      border-bottom: var(--borde-ancho) solid var(--color-borde);
+    }
+    .tabla-temas tbody th,
+    .tabla-temas tbody td {
+      display: block;
+      padding: 0;
+      border: 0;
+      text-align: left;
+      min-width: 0;
+    }
+    .tabla-temas tbody .cifra {
+      text-align: left;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+    .tabla-temas tbody th,
+    .tabla-temas .denominador,
+    .tabla-temas .sin-votos {
+      grid-column: 1 / -1;
+    }
+    .tabla-temas tbody td[data-etiqueta]::before {
+      content: attr(data-etiqueta);
+      display: block;
+      color: var(--color-texto-suave);
+      white-space: normal;
+    }
+    .tabla-temas .cantidad {
+      display: inline;
+    }
+  }
+</style>

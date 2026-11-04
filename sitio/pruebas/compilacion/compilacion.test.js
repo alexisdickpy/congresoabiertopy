@@ -825,8 +825,9 @@ test("partidos: composición, perfiles con las cifras de los votos por tema, enl
       assert.ok(html.includes(`href="${t.url}"`), `${p.url} no enlaza ${t.url}`);
       for (const c of t.camaras) {
         const fila = temas.find((x) => x.id === t.id).camaras.find((x) => x.camara === c.camara).partidos.find((f) => f.id === p.id);
+        // Tabla compacta (#99): cada categoría con votos, con la misma cifra, en el detalle de su celda.
         c.categorias.forEach((cat, n) => {
-          if (fila.celdas[n].cantidad > 0) assert.ok(html.includes(`<b>${cat}</b> ${fila.celdas[n].texto}`), `${p.url} ${t.id} ${c.camara} ${cat}`);
+          if (fila.celdas[n].cantidad > 0) assert.ok(html.includes(`${cat} ${fila.celdas[n].texto}`), `${p.url} ${t.id} ${c.camara} ${cat}`);
         });
       }
     }
@@ -997,4 +998,28 @@ test("portada: «Preguntale a un partido» con respuesta inicial, menús, datos 
   assert.ok(html.includes(fijo(tx.invitacion)));
   assert.ok(html.includes(`href="${rutas.metodologia(rutas.anclasMetodologia.testAfinidad)}"`));
   assert.ok(leer(rutas.metodologia()).includes(fijo(tx.titulo)), "La metodología explica el bloque");
+});
+
+test("ajustes de páginas (#98): tarjetas de enlace, 5 votaciones ajustadas por cámara y textos nuevos", () => {
+  const periodo = periodos().find((p) => p.vigente).id;
+  const tarjetas = (html) => [...html.matchAll(/<a class="tarjeta-enlace" href="([^"]+)"/g)].map((m) => m[1]);
+  const legis = texto(rutas.legisladores());
+  assert.deepEqual(tarjetas(legis), [rutas.votacionesNominales(), rutas.mapaDiputados(), rutas.coincidencia()]);
+  assert.ok(legis.includes(fijo(textos.legisladores.listado.vistaCoincidenciaDescripcion)));
+
+  const vot = texto(rutas.votaciones());
+  const { anios } = votacionesDelPeriodo(periodo);
+  assert.deepEqual(tarjetas(vot), [
+    rutas.metodologia(rutas.anclasMetodologia.posicionPartidos),
+    rutas.coincidencia(),
+    rutas.decisionesSinNominal(),
+    ...anios.map((a) => a.url),
+  ]);
+  assert.ok(vot.includes(`href="${rutas.metodologia(rutas.anclasMetodologia.masAjustadas)}"`), "«Cómo se eligen» sigue como enlace");
+  for (const c of masAjustadas(periodo)) assert.equal(c.votaciones.length, 5, c.camara);
+
+  assert.ok(texto(rutas.votosPorTema()).includes(fijo(textos.temas.indice.verComoSeCalcula)));
+  assert.ok(texto(rutas.estadisticas()).includes(fijo(textos.estadisticas.pagina.unaLeyCuentaUnaVez)));
+  const test7714 = datosDelTest(periodo).preguntas.find((p) => p.numeroLey === "7714");
+  assert.ok(!test7714.explicacion.includes("Diputados no trató"));
 });
