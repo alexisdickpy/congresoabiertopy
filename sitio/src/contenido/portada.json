@@ -9,7 +9,7 @@
     "verElMapaDeDiputados": "[Ver el mapa de diputados por departamento]({url1})",
     "buscarUnaLey": "[Buscar una ley]({url1})",
     "descargarLosDatosAbiertos": "[Descargar los datos abiertos]({url1})",
-    "preguntasSobreLeyesVotadasEn": "{preguntas} preguntas sobre leyes votadas en el período. ¿Con que partido político coincides más?  Al final ves cuánto coinciden tus respuestas con lo que votó cada partido.",
+    "preguntasSobreLeyesVotadasEn": "{preguntas} preguntas sobre leyes votadas en el período. ¿Con qué partido político coincides más? Al final ves cuánto coinciden tus respuestas con lo que votó cada partido.",
     "hacerElTest": "Hacer el test",
     "avisosPorTelegram": "Avisos por Telegram",
     "unBotTeAvisaDe": "Un bot te avisa de las novedades del Congreso. Eliges qué avisos recibir y te das de baja cuando quieras.",
