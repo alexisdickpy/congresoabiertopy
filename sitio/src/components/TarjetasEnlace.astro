@@ -1,0 +1,33 @@
+---
+// Tarjetas de enlace a otras vistas (#98): cada una lleva su título, una línea de descripción y, si hace
+// falta, un detalle en letra suave. La tarjeta entera es el enlace. Los estilos están en estilos/base.css
+// (.tarjetas-enlace), para que un rediseño los cambie en un solo lugar. `datos` agrega atributos data-*
+// a cada tarjeta, por ejemplo el año.
+
+interface Tarjeta {
+  url: string;
+  titulo: string;
+  descripcion?: string;
+  detalle?: string;
+  datos?: Record<string, string>;
+}
+interface Props {
+  tarjetas: Tarjeta[];
+  etiqueta?: string;
+}
+const { tarjetas, etiqueta } = Astro.props;
+---
+
+<ul class="tarjetas-enlace" aria-label={etiqueta}>
+  {
+    tarjetas.map((t) => (
+      <li {...Object.fromEntries(Object.entries(t.datos ?? {}).map(([k, v]) => [`data-${k}`, v]))}>
+        <a class="tarjeta-enlace" href={t.url}>
+          <span class="tarjeta-enlace-titulo">{t.titulo}</span>
+          {t.descripcion && <span class="tarjeta-enlace-descripcion">{t.descripcion}</span>}
+          {t.detalle && <span class="tarjeta-enlace-detalle">{t.detalle}</span>}
+        </a>
+      </li>
+    ))
+  }
+</ul>

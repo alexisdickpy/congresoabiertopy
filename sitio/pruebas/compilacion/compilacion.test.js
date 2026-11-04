@@ -979,3 +979,27 @@ test("diseño: composición en la portada, estadísticas en el menú y listas la
   assert.ok(leer(rutas.leyes()).includes("data-paginar"), "El catálogo de leyes no se pagina");
   assert.ok(!leer(rutas.votosPorTema("salud")).includes("Por bancada"), "Votos por tema no lleva bancadas");
 });
+
+test("ajustes de páginas (#98): tarjetas de enlace, 5 votaciones ajustadas por cámara y textos nuevos", () => {
+  const periodo = periodos().find((p) => p.vigente).id;
+  const tarjetas = (html) => [...html.matchAll(/<a class="tarjeta-enlace" href="([^"]+)"/g)].map((m) => m[1]);
+  const legis = texto(rutas.legisladores());
+  assert.deepEqual(tarjetas(legis), [rutas.votacionesNominales(), rutas.mapaDiputados(), rutas.coincidencia()]);
+  assert.ok(legis.includes(fijo(textos.legisladores.listado.vistaCoincidenciaDescripcion)));
+
+  const vot = texto(rutas.votaciones());
+  const { anios } = votacionesDelPeriodo(periodo);
+  assert.deepEqual(tarjetas(vot), [
+    rutas.metodologia(rutas.anclasMetodologia.posicionPartidos),
+    rutas.coincidencia(),
+    rutas.decisionesSinNominal(),
+    ...anios.map((a) => a.url),
+  ]);
+  assert.ok(vot.includes(`href="${rutas.metodologia(rutas.anclasMetodologia.masAjustadas)}"`), "«Cómo se eligen» sigue como enlace");
+  for (const c of masAjustadas(periodo)) assert.equal(c.votaciones.length, 5, c.camara);
+
+  assert.ok(texto(rutas.votosPorTema()).includes(fijo(textos.temas.indice.verComoSeCalcula)));
+  assert.ok(texto(rutas.estadisticas()).includes(fijo(textos.estadisticas.pagina.unaLeyCuentaUnaVez)));
+  const test7714 = datosDelTest(periodo).preguntas.find((p) => p.numeroLey === "7714");
+  assert.ok(!test7714.explicacion.includes("Diputados no trató"));
+});

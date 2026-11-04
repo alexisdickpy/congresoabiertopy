@@ -225,7 +225,7 @@ Decisión de alcance (#44). La página `/votaciones/` reúne las votaciones nomi
 
 ### Votaciones más ajustadas
 
-En `/votaciones/`, las **10** votaciones de cada cámara con menor diferencia entre los totales oficiales de `SI` y de `NO`. No están en la portada.
+En `/votaciones/`, las **5** votaciones de cada cámara con menor diferencia entre los totales oficiales de `SI` y de `NO`. No están en la portada.
 
 > diferencia = | total oficial de SI − total oficial de NO |
 
