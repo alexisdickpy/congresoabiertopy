@@ -18,7 +18,7 @@
     "minimoEntranALaLista": "**Mínimo:** Entran a la lista quienes tienen al menos {minimo} votaciones comparables, para que nadie la encabece con muy pocas votaciones. A igual porcentaje, primero quien tiene más votaciones comparables.",
     "laFichaDeCadaLegislador": "La ficha de cada legislador lista las votaciones en que votó distinto. [Ver cómo se arma esta lista]({url1}) · [Todos los legisladores, por votos distintos a su partido]({url2}) · [Por votos distintos a su bancada]({url3})",
     "enEstaCamara": "en esta cámara.",
-    "noEstanEnLaLista": "No están en la lista los siguientes legisladores, porque no tienen ninguna votación comparable. En todas las votaciones en que votaron fueron los únicos de su partido en emitir voto en esta cámara, así que no hay una mayoría de su partido con la cual comparar.",
+    "noEstanEnLaLista": "No están en la lista los siguientes legisladores, porque no tienen ninguna votación comparable. En todas las votaciones en que votaron fueron los únicos de su partido en emitir voto en esta cámara, así que no hay una mayoría de su partido con la cual comparar:",
     "yaNoEjerce": ", ya no ejerce",
     "legisladorTiene": "legislador tiene",
     "legisladoresTienen": "legisladores tienen",
