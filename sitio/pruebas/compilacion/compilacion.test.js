@@ -823,8 +823,9 @@ test("partidos: composición, perfiles con las cifras de los votos por tema, enl
       assert.ok(html.includes(`href="${t.url}"`), `${p.url} no enlaza ${t.url}`);
       for (const c of t.camaras) {
         const fila = temas.find((x) => x.id === t.id).camaras.find((x) => x.camara === c.camara).partidos.find((f) => f.id === p.id);
+        // Tabla compacta (#99): cada categoría con votos, con la misma cifra, en el detalle de su celda.
         c.categorias.forEach((cat, n) => {
-          if (fila.celdas[n].cantidad > 0) assert.ok(html.includes(`<b>${cat}</b> ${fila.celdas[n].texto}`), `${p.url} ${t.id} ${c.camara} ${cat}`);
+          if (fila.celdas[n].cantidad > 0) assert.ok(html.includes(`${cat} ${fila.celdas[n].texto}`), `${p.url} ${t.id} ${c.camara} ${cat}`);
         });
       }
     }

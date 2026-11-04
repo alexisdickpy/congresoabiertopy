@@ -2068,17 +2068,28 @@ content:
           - name: aviso
             label: "No hay una cifra única de apoyo: un NO puede ser a una modificació…"
             type: text
+          - name: comoLeerLaTabla
+            label: "Cómo leer la tabla (párrafo antes de las tablas)"
+            type: text
+          - name: tablaTitulo
+            label: "Título de cada tabla"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {camara}."
+          - name: columnaTema
+            label: "Columna Tema"
+            type: string
+          - name: otrasOpciones
+            label: "Columna Otras opciones (mociones)"
+            type: string
+          - name: columnaDenominador
+            label: "Columna del denominador"
+            type: string
+          - name: denominador
+            label: "{votos} votos en {votaciones} votaciones"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {votos}, {votaciones}."
           - name: sinVotos
             label: "Sin votos registrados de este partido en las votaciones de este tema."
-            type: string
-          - name: verLasVotaciones
-            label: "Ver las votaciones del tema"
-            type: string
-          - name: votoRegistrado
-            label: "voto registrado"
-            type: string
-          - name: votosRegistrados
-            label: "votos registrados"
             type: string
           - name: masSobreEstePartido
             label: "Más sobre este partido"

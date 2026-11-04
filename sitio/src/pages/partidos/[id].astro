@@ -1,10 +1,10 @@
 ---
-// Perfil temático de un partido (lib/perfilPartidos.js, alcance acordado en #93): por tema, una barra por
-// cámara con el reparto de los votos de sus legisladores en las categorías oficiales, la cantidad de
-// votaciones y el enlace a la página del tema, que tiene la lista de votaciones. Las cifras son las
-// mismas de los votos por tema (#37). Sin cifra única de apoyo y sin sumar cámaras.
+// Perfil temático de un partido (lib/perfilPartidos.js, alcance acordado en #93): una tabla compacta por
+// cámara (#99) con una fila por tema, el reparto de los votos de sus legisladores en las categorías
+// oficiales, el denominador y el enlace a la página del tema, que tiene la lista de votaciones. Las cifras
+// son las mismas de los votos por tema (#37). Sin cifra única de apoyo y sin sumar cámaras.
 import Base from "../../layouts/Base.astro";
-import BarraVotos from "../../components/BarraVotos.astro";
+import TablaTemasPartido from "../../components/TablaTemasPartido.astro";
 import { NOMBRE_VOTOS_POR_TEMA } from "../../lib/calculados.js";
 import { periodos } from "../../lib/datos.js";
 import { valorDePartido } from "../../lib/coincidencia.js";
@@ -22,7 +22,6 @@ export function getStaticPaths() {
 
 const { periodo, partido } = Astro.props;
 const numero = (n: number) => n.toLocaleString("es-PY");
-const plural = (n: number, singular: string, varios: string) => `${numero(n)} ${n === 1 ? singular : varios}`;
 const nombreCamara = new Map(partido.camaras.map((c: any) => [c.camara, c.nombre]));
 const nombre = legible(partido.nombre) + (partido.nombreConocido && partido.nombreConocido !== partido.sigla ? ` (${partido.nombreConocido})` : "");
 const conSigla = partido.sigla && partido.sigla !== partido.nombre ? `${partido.sigla} · ${nombre}` : nombre;
@@ -54,27 +53,9 @@ const conSigla = partido.sigla && partido.sigla !== partido.nombre ? `${partido.
     {partido.leyenda.map((l: any) => <li><span class={`muestra ${l.clase}`}></span>{l.categoria}</li>)}
   </ul>
 
-  <ul class="temas-partido">
-    {
-      partido.temas.map((t: any) => (
-        <li class="tema-partido" data-tema={t.id}>
-          <h3>{t.nombre}</h3>
-          {t.camaras.length === 0 ? (
-            <p class="chico texto-suave">{tx.sinVotos}</p>
-          ) : (
-            t.camaras.map((c: any) => (
-              <div class="camara-partido">
-                <p class="chico"><b>{nombreCamara.get(c.camara) ?? c.camara}</b> · {plural(c.votaciones, txc.votacionNominal, txc.votacionesNominales)} · {plural(c.votos, tx.votoRegistrado, tx.votosRegistrados)}</p>
-                <BarraVotos barra={c.barra} />
-                <p class="cifras chico">{c.categorias.map((cat: string, n: number) => c.celdas[n].cantidad > 0 && <span><b>{cat}</b> {c.celdas[n].texto}</span>)}</p>
-              </div>
-            ))
-          )}
-          <p class="chico"><a href={t.url}>{tx.verLasVotaciones}</a></p>
-        </li>
-      ))
-    }
-  </ul>
+  <p class="chico texto-suave lectura">{tx.comoLeerLaTabla}</p>
+  {partido.tablas.length === 0 && <p class="chico texto-suave">{tx.sinVotos}</p>}
+  {partido.tablas.map((t: any) => <TablaTemasPartido tabla={t} titulo={fill(tx.tablaTitulo, { camara: t.nombre })} />)}
 
   <h2>{tx.masSobreEstePartido}</h2>
   <ul class="chico">
@@ -114,33 +95,5 @@ const conSigla = partido.sigla && partido.sigla !== partido.nombre ? `${partido.
     width: var(--espacio-4);
     height: var(--espacio-4);
     border-radius: var(--radio);
-  }
-  .temas-partido {
-    list-style: none;
-    margin: 0 0 var(--espacio-5);
-    padding: 0;
-  }
-  .tema-partido {
-    padding: var(--espacio-3) 0 var(--espacio-3) var(--espacio-3);
-    border-top: var(--borde-ancho) solid var(--color-borde);
-    border-left: var(--foco-ancho) solid var(--color-tema, var(--color-borde));
-    margin-bottom: var(--espacio-3);
-  }
-  .tema-partido h3 {
-    margin: 0 0 var(--espacio-2);
-    font-size: var(--tamano-base);
-  }
-  .tema-partido p {
-    margin: 0;
-  }
-  .camara-partido {
-    display: grid;
-    gap: var(--espacio-1);
-    margin-bottom: var(--espacio-3);
-  }
-  .cifras {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--espacio-1) var(--espacio-4);
   }
 </style>
