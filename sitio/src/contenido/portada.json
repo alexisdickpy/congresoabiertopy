@@ -62,6 +62,32 @@
     "votacionesEnQueCadaPartido": "Votaciones en que cada partido tuvo la misma posición que {referencia}",
     "sin": "{fraccion}, sin %"
   },
+  "preguntale": {
+    "titulo": "Preguntale a un partido",
+    "votoAntes": "¿Votó",
+    "aFavorDe": "a favor de",
+    "cierre": "?",
+    "etiquetaPartido": "Partido",
+    "etiquetaPropuesta": "Propuesta",
+    "todasLasPropuestas": "las {cantidad} propuestas del test de afinidad",
+    "explicacion": "Son las mismas votaciones del test de afinidad, cámara por cámara. La posición del partido en cada votación es la opción con más votos entre los votos emitidos de sus legisladores; AUSENTE y NO VOTA no son votos emitidos. [Cómo se calcula]({url1})",
+    "deTotal": "de {total}",
+    "cifraCamara": "{camara}: votaciones en que la posición de {partido} fue a favor",
+    "detalleCamara": "En contra: {contra} · Sin mayoría a favor o en contra: {sin}",
+    "sinVotaciones": "{partido} no tuvo legisladores registrados en las votaciones de esta propuesta.",
+    "lasVotaciones": "Las votaciones y la posición de {partido}",
+    "ley": "Ley N° {numero}",
+    "posicionFavor": "A favor",
+    "posicionContra": "En contra",
+    "posicionSinMayoria": "Sin mayoría a favor o en contra",
+    "posicionSinVotos": "Sin votos emitidos",
+    "votosDelPartido": "{aFavor} a favor y {enContra} en contra, de {emitidos} votos emitidos del partido",
+    "comparacion": "Todos los partidos",
+    "comparacionExplicacion": "Votaciones en que la posición de cada partido fue a favor, sobre las votaciones en que tuvo legisladores registrados.",
+    "etiquetaBarra": "{partido}: a favor en {favor}, en contra en {contra} y sin mayoría en {sin}, de {total} votaciones",
+    "invitacion": "¿Y vos, qué habrías votado? Hacé el test con estas mismas preguntas y mirá con qué partidos coincidís.",
+    "hacerElTest": "Hacer el test de afinidad"
+  },
   "textos": {
     "senadores": "Senadores",
     "diputados": "Diputados"

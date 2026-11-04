@@ -1,0 +1,234 @@
+---
+// «Preguntale a un partido» (#100), en la portada: una frase con dos menús, «¿Votó [partido] a favor de
+// [propuesta]?», y la respuesta con las votaciones del test de afinidad. La respuesta inicial (el primer
+// partido y todas las propuestas) sale al compilar, así que se lee sin JavaScript; al cambiar un menú, el
+// navegador la vuelve a armar con la misma función (lib/preguntaPartido.js) y los datos de la página.
+import { datosPreguntaPartido } from "../lib/datosPreguntaPartido.js";
+import { htmlRespuesta, TODAS } from "../lib/preguntaPartido.js";
+import * as rutas from "../lib/rutas.js";
+import { fill, md, crudo } from "../lib/contenido.js";
+
+interface Props {
+  periodo: string;
+}
+const { periodo } = Astro.props;
+const datos = datosPreguntaPartido(periodo);
+const tx = datos.textos;
+const inicial = datos.partidos[0].id;
+// "<" escapado para que ningún texto pueda cerrar la etiqueta <script>.
+const json = JSON.stringify(datos).replace(/</g, "\\u003c");
+---
+
+<section class="pregunta-partido" aria-labelledby="titulo-pregunta-partido" id="pregunta-partido">
+  <h2 id="titulo-pregunta-partido">{tx.titulo}</h2>
+  <script type="application/json" id="datos-pregunta-partido" set:html={json} />
+  <form class="frase-pregunta" data-frase>
+    <span>{tx.votoAntes}</span>
+    <label class="solo-lectores" for="pregunta-partido-partido">{tx.etiquetaPartido}</label>
+    <select id="pregunta-partido-partido" data-partido>
+      {datos.partidos.map((p) => <option value={p.id} selected={p.id === inicial}>{p.sigla}</option>)}
+    </select>
+    <span>{tx.aFavorDe}</span>
+    <label class="solo-lectores" for="pregunta-partido-propuesta">{tx.etiquetaPropuesta}</label>
+    <span class="con-cierre">
+      <select id="pregunta-partido-propuesta" data-propuesta>
+        <option value={TODAS} selected>{fill(tx.todasLasPropuestas, { cantidad: datos.preguntas.length })}</option>
+        {datos.preguntas.map((p) => <option value={p.id}>{p.frase}</option>)}
+      </select><span>{tx.cierre}</span>
+    </span>
+  </form>
+  <p class="chico texto-suave lectura" set:html={md(tx.explicacion, { url1: crudo(rutas.metodologia(rutas.anclasMetodologia.testAfinidad)) })} />
+  <div class="respuesta-partido" data-respuesta aria-live="polite" set:html={htmlRespuesta(datos, inicial, TODAS)} />
+  <p class="invitacion-test">
+    <span>{tx.invitacion}</span>
+    <a class="boton" href={rutas.testAfinidad()}>{tx.hacerElTest}</a>
+  </p>
+</section>
+
+<script>
+  import { htmlRespuesta } from "../lib/preguntaPartido.js";
+
+  const caja = document.getElementById("pregunta-partido")!;
+  const datos = JSON.parse(document.getElementById("datos-pregunta-partido")!.textContent!);
+  const partido = caja.querySelector<HTMLSelectElement>("[data-partido]")!;
+  const propuesta = caja.querySelector<HTMLSelectElement>("[data-propuesta]")!;
+  const respuesta = caja.querySelector<HTMLElement>("[data-respuesta]")!;
+  const actualizar = () => (respuesta.innerHTML = htmlRespuesta(datos, partido.value, propuesta.value));
+  partido.addEventListener("change", actualizar);
+  propuesta.addEventListener("change", actualizar);
+  caja.querySelector("[data-frase]")!.addEventListener("submit", (e) => e.preventDefault());
+  // Si el navegador recordó una elección al volver a la página, se muestra esa.
+  actualizar();
+</script>
+
+<style is:global>
+  .pregunta-partido {
+    margin-top: var(--espacio-6);
+    padding-top: var(--espacio-4);
+    border-top: var(--borde-ancho) solid var(--color-borde-fuerte);
+  }
+  .pregunta-partido > h2 {
+    margin: 0 0 var(--espacio-3);
+    font-size: var(--tamano-base);
+    font-family: var(--fuente-texto);
+    font-weight: var(--peso-fuerte);
+    color: var(--color-texto-suave);
+  }
+  /* La frase: los menús se leen como parte del texto, subrayados con el color de acento. */
+  .frase-pregunta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--espacio-1) var(--espacio-2);
+    margin: 0 0 var(--espacio-3);
+    font-family: var(--fuente-titulo);
+    font-size: var(--tamano-titulo-1);
+    line-height: var(--interlineado-titulo);
+  }
+  .frase-pregunta select {
+    width: auto;
+    max-width: 100%;
+    /* Del ancho de la opción elegida, no de la más larga (donde el navegador lo permite). */
+    field-sizing: content;
+    padding: 0 var(--espacio-1);
+    border: 0;
+    border-bottom: var(--borde-grueso) solid var(--color-acento);
+    border-radius: 0;
+    background: transparent;
+    color: var(--color-acento);
+    font: inherit;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+  /* El signo de cierre va pegado al último menú. */
+  .con-cierre {
+    display: inline-flex;
+    align-items: baseline;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .con-cierre select {
+    min-width: 0;
+  }
+  .frase-pregunta select option {
+    font-family: var(--fuente-texto);
+    font-size: var(--tamano-base);
+    background: var(--color-fondo);
+    color: var(--color-texto);
+  }
+  .respuesta-partido h3 {
+    font-size: var(--tamano-titulo-3);
+    margin: 0 0 var(--espacio-2);
+  }
+  .respuesta-partido h4 {
+    font-size: var(--tamano-base);
+    margin: var(--espacio-3) 0 var(--espacio-1);
+  }
+  .respuesta-partido p {
+    margin: 0;
+  }
+  .resumen-respuesta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: var(--espacio-4);
+    margin: var(--espacio-4) 0;
+  }
+  .resumen-camara {
+    padding-left: var(--espacio-3);
+    border-left: var(--foco-ancho) solid var(--color-acento);
+  }
+  .cifra-respuesta {
+    font-family: var(--fuente-titulo);
+    font-size: var(--tamano-titulo-2);
+  }
+  .cifra-respuesta b {
+    font-size: var(--tamano-veredicto);
+    line-height: 1;
+  }
+  .detalle-respuesta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    gap: var(--espacio-4) var(--espacio-6);
+  }
+  .lista-respuesta {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .lista-respuesta li {
+    padding: var(--espacio-2) 0;
+    border-bottom: var(--borde-ancho) solid var(--color-borde);
+  }
+  .posicion-partido {
+    font-weight: var(--peso-fuerte);
+  }
+  .posicion-partido::before {
+    content: "";
+    display: inline-block;
+    width: var(--tamano-pip);
+    height: var(--tamano-pip);
+    margin-right: var(--espacio-1);
+    border-radius: 50%;
+    background: var(--color-posicion);
+  }
+  .posicion-favor { --color-posicion: var(--color-voto-si); }
+  .posicion-contra { --color-posicion: var(--color-voto-no); }
+  .posicion-sin { --color-posicion: var(--color-voto-ausente); }
+  .barras-respuesta {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--espacio-1);
+  }
+  .barras-respuesta li {
+    display: grid;
+    grid-template-columns: 6rem 1fr 3rem;
+    align-items: center;
+    gap: var(--espacio-2);
+    font-size: var(--tamano-chico);
+  }
+  .barras-respuesta li.elegido {
+    font-weight: var(--peso-fuerte);
+  }
+  .barras-respuesta li.elegido .nombre-barra {
+    text-decoration: underline;
+    text-decoration-color: var(--color-acento);
+    text-decoration-thickness: var(--borde-grueso);
+  }
+  .nombre-barra {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .barra-respuesta {
+    display: flex;
+    height: var(--alto-barra-votos);
+    border-radius: var(--radio);
+    overflow: hidden;
+    background: var(--color-superficie);
+  }
+  .barra-respuesta span {
+    display: block;
+    height: 100%;
+    background: var(--color-posicion);
+  }
+  .barra-respuesta .posicion-sin {
+    opacity: 0.5;
+  }
+  .cifra-barra {
+    text-align: right;
+  }
+  .invitacion-test {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--espacio-3);
+    margin: var(--espacio-5) 0 0;
+    padding: var(--espacio-3) var(--espacio-4);
+    background: var(--color-superficie);
+    border-left: var(--foco-ancho) solid var(--color-acento);
+    font-size: var(--tamano-titulo-3);
+    font-family: var(--fuente-titulo);
+  }
+</style>

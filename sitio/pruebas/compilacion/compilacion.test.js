@@ -25,6 +25,8 @@ import { perfilesDePartidos } from "../../src/lib/perfilPartidos.js";
 import { escalaDelCuadro, nivelDe } from "../../src/lib/coincidencia.js";
 import { compartirVotacion } from "../../src/lib/compartir.js";
 import { datosDelTest, esPreliminar } from "../../src/lib/testAfinidad.js";
+import { datosPreguntaPartido } from "../../src/lib/datosPreguntaPartido.js";
+import { respuesta, TODAS } from "../../src/lib/preguntaPartido.js";
 import { fijo, textos } from "../textos.js";
 
 const dist = resolve(process.cwd(), "dist");
@@ -977,4 +979,22 @@ test("diseño: composición en la portada, estadísticas en el menú y listas la
   assert.ok(portada.includes(`href="${rutas.estadisticas()}"`));
   assert.ok(leer(rutas.leyes()).includes("data-paginar"), "El catálogo de leyes no se pagina");
   assert.ok(!leer(rutas.votosPorTema("salud")).includes("Por bancada"), "Votos por tema no lleva bancadas");
+});
+
+test("portada: «Preguntale a un partido» con respuesta inicial, menús, datos e invitación al test (#100)", () => {
+  const periodo = periodos().find((p) => p.vigente).id;
+  const datos = datosPreguntaPartido(periodo);
+  const html = leer(rutas.inicio());
+  const tx = textos.portada.preguntale;
+  assert.ok(html.includes('id="pregunta-partido"'));
+  assert.ok(html.includes('<script type="application/json" id="datos-pregunta-partido">'));
+  for (const p of datos.partidos) assert.ok(html.includes(`<option value="${p.id}"`), p.id);
+  for (const q of datos.preguntas) assert.ok(html.includes(`<option value="${q.id}">`), q.id);
+  // Respuesta inicial, sin JavaScript: el primer partido y todas las propuestas.
+  const r = respuesta(datos, datos.partidos[0].id, TODAS);
+  for (const v of r.lista) assert.ok(html.includes(`<li data-votacion-pregunta="${v.id}">`), `Falta la votación ${v.id}`);
+  for (const c of r.camaras) assert.ok(html.includes(`data-camara="${c.camara}"`), c.camara);
+  assert.ok(html.includes(fijo(tx.invitacion)));
+  assert.ok(html.includes(`href="${rutas.metodologia(rutas.anclasMetodologia.testAfinidad)}"`));
+  assert.ok(leer(rutas.metodologia()).includes(fijo(tx.titulo)), "La metodología explica el bloque");
 });
