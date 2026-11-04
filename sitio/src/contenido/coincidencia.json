@@ -2,7 +2,7 @@
   "pagina": {
     "partidos": "Partidos",
     "bancadas": "Bancadas ({camara})",
-    "queTanSeguidoVotaronIgual": "Qué tan seguido votaron igual los partidos y las bancadas del Congreso Nacional del Paraguay en las votaciones nominales sobre proyectos de ley del período legislativo {periodo}, cada cámara por separado y con numerador y denominador.",
+    "queTanSeguidoVotaronIgual": "Qué tan seguido votaron igual los partidos y las bancadas del Congreso Nacional del Paraguay en las votaciones nominales sobre proyectos de ley del período legislativo {periodo}, cada cámara por separado, con numerador y denominador.",
     "todosLosLegisladores": "[← Todos los legisladores]({url1})",
     "paraCadaPartidoYCada": "Para cada partido y cada bancada del período legislativo {periodo}, en cuántas votaciones nominales sobre proyectos de ley tuvo la misma posición que cada uno de los demás grupos de su cámara.",
     "coincidenciaVotacionesEnQueLos": "Coincidencia = votaciones en que los dos grupos tuvieron la misma posición ÷ votaciones en que los dos tuvieron posición × 100",
