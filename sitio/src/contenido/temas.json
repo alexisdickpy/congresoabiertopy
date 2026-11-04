@@ -2,7 +2,8 @@
   "indice": {
     "votosDePartidosPorTema": "Votos de partidos por tema",
     "comoVotaronLosLegisladoresDe": "Cómo votaron los legisladores de cada partido del Congreso Nacional del Paraguay en las votaciones nominales sobre proyectos de ley de cada tema, período legislativo {periodo}, cada cámara por separado.",
-    "paraCadaTemaLosVotos": "Para cada tema, los votos de los legisladores de cada partido en las votaciones nominales sobre proyectos de ley del período {periodo}, cámara por cámara. El tema es una clasificación del Observatorio, no del Congreso."
+    "paraCadaTemaLosVotos": "Para cada tema, los votos de los legisladores de cada partido en las votaciones nominales sobre proyectos de ley del período {periodo}, cámara por cámara. El tema es una clasificación del Observatorio, no del Congreso.",
+    "verComoSeCalcula": "Ver cómo se calcula"
   },
   "tema": {
     "votosDePartidosEn": "Votos de partidos en {nombre}",

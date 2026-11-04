@@ -815,18 +815,27 @@ content:
           - name: elNombreEntreParentesisEs
             label: "El nombre entre paréntesis es el nombre por el que se conoce a un…"
             type: text
-          - name: votacionesNominalesPorLegisladorUna
-            label: "Votaciones nominales por legislador, una tabla con las ausencias,…"
+          - name: otrasVistas
+            label: "Otras vistas (nombre de las tarjetas para lectores de pantalla)"
+            type: string
+          - name: vistaVotacionesTitulo
+            label: "Tarjeta de votaciones nominales por legislador: título"
+            type: string
+          - name: vistaVotacionesDescripcion
+            label: "Tarjeta de votaciones nominales por legislador: descripción"
             type: text
-            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
-          - name: mapaDeDiputadosPorDepartamento
-            label: "Mapa de diputados por departamento, cuántos diputados tiene cada…"
+          - name: vistaMapaTitulo
+            label: "Tarjeta del mapa de diputados: título"
+            type: string
+          - name: vistaMapaDescripcion
+            label: "Tarjeta del mapa de diputados: descripción"
             type: text
-            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
-          - name: coincidenciaDeVotosEntrePartidos
-            label: "Coincidencia de votos entre partidos y bancadas, qué tan seguido…"
+          - name: vistaCoincidenciaTitulo
+            label: "Tarjeta de coincidencia de votos: título"
+            type: string
+          - name: vistaCoincidenciaDescripcion
+            label: "Tarjeta de coincidencia de votos: descripción"
             type: text
-            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
           - name: enEjercicio
             label: "En ejercicio"
             type: string
@@ -1416,11 +1425,28 @@ content:
           - name: partidoEsElQueLa
             label: "Partido es el que la API registra para cada legislador en el…"
             type: text
-            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
-          - name: decisionesSinVotacionNominalCon
-            label: "{decisiones} decisiones sin votación nominal, con su resultado…"
+          - name: masSobreLasVotaciones
+            label: "Más sobre las votaciones (nombre de las tarjetas para lectores de pantalla)"
+            type: string
+          - name: tarjetaPosicionTitulo
+            label: "Tarjeta de la posición de cada partido: título"
+            type: string
+          - name: tarjetaPosicionDescripcion
+            label: "Tarjeta de la posición de cada partido: descripción"
             type: text
-            description: "Partes automáticas, no las borres ni les cambies el nombre: {decisiones}. Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
+          - name: tarjetaCoincidenciaTitulo
+            label: "Tarjeta de coincidencia de votos: título"
+            type: string
+          - name: tarjetaCoincidenciaDescripcion
+            label: "Tarjeta de coincidencia de votos: descripción"
+            type: text
+          - name: tarjetaDecisionesTitulo
+            label: "Tarjeta de decisiones sin votación nominal: título"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {decisiones}."
+          - name: tarjetaDecisionesDescripcion
+            label: "Tarjeta de decisiones sin votación nominal: descripción"
+            type: text
           - name: votacionesPorAno
             label: "Votaciones por año"
             type: string
@@ -1910,6 +1936,9 @@ content:
             label: "Para cada tema, los votos de los legisladores de cada partido en…"
             type: text
             description: "Partes automáticas, no las borres ni les cambies el nombre: {periodo}."
+          - name: verComoSeCalcula
+            label: "Ver cómo se calcula"
+            type: string
       - name: tema
         label: "Página de cada tema"
         type: object
@@ -2243,7 +2272,7 @@ content:
             label: "Por partido de sus autores"
             type: string
           - name: unaLeyCuentaUnaVez
-            label: "Una ley cuenta una vez por cada partido con algún autor, así que…"
+            label: "Si una ley tiene autores de varios partidos, cuenta para cada uno…"
             type: text
           - name: legisladoresConMasLeyesDe
             label: "Legisladores con más leyes de su autoría"

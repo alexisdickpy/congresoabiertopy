@@ -27,8 +27,8 @@ import { slug } from "./texto.js";
 import { textos } from "./contenido.js";
 const txc = textos.general.comunes;
 
-/** Votaciones más ajustadas por cámara en la página de votaciones y en la portada. */
-export const CANTIDAD_AJUSTADAS = 10;
+/** Votaciones más ajustadas por cámara en la página de votaciones. */
+export const CANTIDAD_AJUSTADAS = 5;
 /** Votaciones más recientes en la portada, de las dos cámaras. */
 export const CANTIDAD_ULTIMAS_PORTADA = 3;
 

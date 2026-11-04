@@ -157,6 +157,51 @@ button {
   text-decoration: none;
 }
 
+/* Tarjetas de enlace a otras vistas (components/TarjetasEnlace.astro, #98): la tarjeta entera es el
+   enlace, con su título, una línea de descripción y un detalle en letra suave. */
+.tarjetas-enlace {
+  list-style: none;
+  margin: var(--espacio-4) 0 var(--espacio-5);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: var(--espacio-3);
+}
+.tarjeta-enlace,
+.tarjeta-enlace:visited {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-1);
+  height: 100%;
+  padding: var(--espacio-3) var(--espacio-4);
+  border: var(--borde-ancho) solid var(--color-borde);
+  border-left: var(--foco-ancho) solid var(--color-acento);
+  border-radius: var(--radio);
+  background: var(--color-superficie);
+  color: var(--color-texto);
+  text-decoration: none;
+}
+.tarjeta-enlace:hover {
+  border-color: var(--color-acento);
+}
+.tarjeta-enlace-titulo {
+  font-family: var(--fuente-titulo);
+  font-size: var(--tamano-titulo-3);
+  font-weight: var(--peso-fuerte);
+  line-height: var(--interlineado-titulo);
+  color: var(--color-enlace);
+}
+.tarjeta-enlace-titulo::after {
+  content: " →";
+}
+.tarjeta-enlace-descripcion {
+  font-size: var(--tamano-chico);
+}
+.tarjeta-enlace-detalle {
+  font-size: var(--tamano-chico);
+  color: var(--color-texto-suave);
+}
+
 /* Punto de un voto (el mismo código del hemiciclo): relleno por voto, AUSENTE solo con contorno. */
 .punto {
   display: inline-block;
