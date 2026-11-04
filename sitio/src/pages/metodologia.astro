@@ -7,7 +7,7 @@ import { actualizacion, cita } from "../lib/catalogo.js";
 import { crudo, fill, md, textos } from "../lib/contenido.js";
 import { periodos } from "../lib/datos.js";
 import { observacionesDeLosDatos } from "../lib/metodologia.js";
-import { tablaDePartidos } from "../lib/partidos.js";
+import { siglasDePartidos, tablaDePartidos } from "../lib/partidos.js";
 import { temas, TEXTO_PENDIENTE } from "../lib/temas.js";
 import * as rutas from "../lib/rutas.js";
 import { CANTIDAD_RANKING, MINIMO_VOTACIONES_AUSENCIAS } from "../lib/rankings.js";
@@ -58,6 +58,19 @@ const valores = {
           ))
         }
       </dl>
+      <Fragment slot="siglas">
+        <h3 id="siglas-de-los-partidos">{tx.siglasDeLosPartidos}</h3>
+        <dl class="siglas">
+          {
+            siglasDePartidos().map((p) => (
+              <>
+                <dt>{p.sigla}</dt>
+                <dd>{p.nombre}</dd>
+              </>
+            ))
+          }
+        </dl>
+      </Fragment>
       <details slot="partidos">
         <summary class="chico">{fill(tx.verPartidos, { total: partidos.length })}</summary>
         <dl class="partidos chico">
@@ -98,10 +111,11 @@ const valores = {
 </Base>
 
 <style>
-  dt {
+  /* También las listas de definiciones de Secciones (categorías de voto, glosario). */
+  .metodologia :global(dt) {
     font-weight: var(--peso-fuerte);
   }
-  dd {
+  .metodologia :global(dd) {
     margin: 0 0 var(--espacio-3);
   }
   .partidos ul {

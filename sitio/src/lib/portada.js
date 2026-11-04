@@ -11,6 +11,7 @@ import { clasePartido, siglaDe } from "./partidos.js";
 import { legible, recortar } from "./texto.js";
 import { ultimasVotaciones } from "./votaciones.js";
 import { CANTIDAD_PORTADA, votosDistintosAlPartido } from "./votosDistintos.js";
+import { PENDIENTE } from "./temas.js";
 import { votosPorTema } from "./votosPorTema.js";
 import { textos } from "./contenido.js";
 const tx = textos.portada.textos;
@@ -150,7 +151,8 @@ export function votacionDestacada(periodo) {
  * - votaciones: las CANTIDAD_ULTIMAS_PORTADA votaciones más recientes, de las dos cámaras.
  * - votosDistintos: por cámara, los CANTIDAD_PORTADA primeros del cuadro de votos distintos a la mayoría
  *   de su partido, en el mismo orden.
- * - temas: los temas con votaciones, cada uno con la dirección de su página de votos por tema (#37).
+ * - temas: los temas con votaciones, cada uno con la dirección de su página de votos por tema (#37),
+ *   sin «Pendiente de clasificación», que la portada nunca muestra (#92).
  */
 export function vistaPrevia(periodo) {
   const c = coincidencia(periodo);
@@ -171,6 +173,8 @@ export function vistaPrevia(periodo) {
       camara: x.camara,
       filas: x.filas.slice(0, CANTIDAD_PORTADA),
     })),
-    temas: votosPorTema(periodo).map((t) => ({ id: t.id, nombre: t.nombre, nombreCorto: t.nombreCorto, url: t.url })),
+    temas: votosPorTema(periodo)
+      .filter((t) => t.id !== PENDIENTE)
+      .map((t) => ({ id: t.id, nombre: t.nombre, nombreCorto: t.nombreCorto, url: t.url })),
   };
 }

@@ -298,26 +298,19 @@ content:
           - name: seccionesDelSitio
             label: "Secciones del sitio"
             type: string
-          - name: verLasLeyesDelPeriodo
-            label: "Ver las {cantidad} leyes del período"
-            type: text
-            description: "Partes automáticas, no las borres ni les cambies el nombre: {cantidad}. Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
-          - name: verLosLegisladoresSusVotos
-            label: "Ver los legisladores, sus votos y sus leyes"
-            type: text
-            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
-          - name: verElMapaDeDiputados
-            label: "Ver el mapa de diputados por departamento"
-            type: text
-            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
-          - name: buscarUnaLey
-            label: "Buscar una ley"
-            type: text
-            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
-          - name: descargarLosDatosAbiertos
-            label: "Descargar los datos abiertos"
-            type: text
-            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
+          - name: botonLeyes
+            label: "Botón: {cantidad} leyes"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {cantidad}."
+          - name: botonLegisladores
+            label: "Botón: Legisladores"
+            type: string
+          - name: botonMapa
+            label: "Botón: Mapa de diputados"
+            type: string
+          - name: botonBuscar
+            label: "Botón: Buscar una ley"
+            type: string
           - name: preguntasSobreLeyesVotadasEn
             label: "{preguntas} preguntas sobre leyes votadas en el período. Al final…"
             type: text
@@ -345,9 +338,12 @@ content:
         label: "Apartado de análisis"
         type: object
         fields:
-          - name: analisis
-            label: "Análisis"
+          - name: quePartidosVotanIgual
+            label: "Título de la coincidencia: ¿Qué partidos votan igual?"
             type: string
+          - name: descripcionCoincidencia
+            label: "Qué tan seguido votaron igual los partidos de cada cámara…"
+            type: text
           - name: compararCon
             label: "Comparar con"
             type: string
@@ -377,6 +373,9 @@ content:
             label: "Ver {titulo}"
             type: string
             description: "Partes automáticas, no las borres ni les cambies el nombre: {titulo}."
+          - name: laCoincidenciaCompleta
+            label: "Enlace bajo la coincidencia: la coincidencia completa, también entre bancadas"
+            type: string
       - name: composicion
         label: "Composición de cada cámara"
         type: object
@@ -461,6 +460,10 @@ content:
           - name: sinLey
             label: "sin ley ("
             type: string
+          - name: masProyectosVotadosSinLey
+            label: "Portada: Además, {proyectos} sin ley."
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {proyectos}."
       - name: barrasCoincidencia
         label: "Gráfico de coincidencia"
         type: object
@@ -2575,12 +2578,15 @@ content:
           - name: casosSinEnlace
             label: "Los casos que no tienen enlace propio no figuran en este sitio,…"
             type: text
+          - name: siglasDeLosPartidos
+            label: "Siglas de los partidos"
+            type: string
       - name: secciones
         label: Secciones
         type: object
         list:
-          min: 29
-          max: 29
+          min: 30
+          max: 30
           collapsible:
             collapsed: true
             summary: "{titulo}"

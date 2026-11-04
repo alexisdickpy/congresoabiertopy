@@ -53,14 +53,15 @@
     "verElCaso": "Ver el caso",
     "verLosCasos": "Ver los {total} casos",
     "notaManual": "(nota agregada a mano)",
-    "casosSinEnlace": "Los casos que no tienen enlace propio no figuran en este sitio, por ejemplo votaciones que no están enlazadas con una ley sancionada en el período; se pueden consultar en la fuente oficial."
+    "casosSinEnlace": "Los casos que no tienen enlace propio no figuran en este sitio, por ejemplo votaciones que no están enlazadas con una ley sancionada en el período; se pueden consultar en la fuente oficial.",
+    "siglasDeLosPartidos": "Siglas de los partidos"
   },
   "secciones": [
     {
       "ancla": "",
       "nivel": 0,
       "titulo": "",
-      "texto": "Esta página explica de dónde vienen los datos, cómo se presentan y qué agrega el sitio por su cuenta. La versión técnica, con el detalle de cada archivo, está en el [repositorio del proyecto](https://github.com/alexisdickpy/observatorio-legislativo-py/blob/main/docs/metodologia.md).",
+      "texto": "Esta página explica de dónde vienen los datos, cómo se presentan y qué agrega el sitio por su cuenta. La versión técnica, con el detalle de cada archivo, está en el [repositorio del proyecto](https://github.com/alexisdickpy/observatorio-legislativo-py/blob/main/docs/metodologia.md). Las siglas y los términos que usa el sitio se explican en el [glosario](#glosario).",
       "textoDespues": ""
     },
     {
@@ -279,6 +280,95 @@
       "titulo": "Limitaciones conocidas",
       "texto": "- La API no informa cuándo se modificó un registro, así que los cambios se detectan comparando cada copia con la anterior.\n- Partido y bancada son un único valor por período, sin fecha. Por eso los votos distintos a la mayoría se calculan con el grupo registrado para el período.\n- «AUSENTE» indica ausencia en la votación y no informa si el legislador estaba en la sesión.\n- Solo se publican las votaciones nominales, es decir, las que registran el voto de cada legislador. Las que se hacen sin ese registro, por ejemplo a mano alzada, no se publican en la API. El Senado registra muchas menos votaciones nominales que Diputados.\n- El tema sale solo del título oficial del proyecto, no de su texto completo.\n- Por ahora el sitio cubre solo el período {periodo}.",
       "textoDespues": ""
+    },
+    {
+      "ancla": "glosario",
+      "nivel": 2,
+      "titulo": "Glosario",
+      "texto": "Siglas y términos que aparecen en el sitio, explicados de forma breve. El detalle está en cada sección de esta página.",
+      "definiciones": [
+        {
+          "termino": "SILpy",
+          "definicion": "Sistema de Información Legislativa del Congreso Nacional. Es el sitio oficial donde se consultan los expedientes, las leyes y las votaciones. El Observatorio enlaza a SILpy para que cada dato se pueda comprobar en la fuente."
+        },
+        {
+          "termino": "API",
+          "definicion": "Servicio por el que el Congreso publica sus datos abiertos en un formato que pueden leer otros programas. El sitio guarda una copia y la compara con la API una vez por día ([Fuente y actualización](#fuente))."
+        },
+        {
+          "termino": "Datos abiertos",
+          "definicion": "Datos que una institución publica para que cualquier persona los use, los reutilice y los comparta."
+        },
+        {
+          "termino": "CC BY 4.0",
+          "definicion": "Licencia de los datos del Congreso y de los datos que calcula el sitio. Permite usarlos para cualquier fin, siempre que se cite la fuente."
+        },
+        {
+          "termino": "Proyecto de ley",
+          "definicion": "Propuesta de ley presentada al Congreso por legisladores, por el Poder Ejecutivo o por otras instituciones habilitadas. Puede llegar a ser ley, seguir en trámite o archivarse."
+        },
+        {
+          "termino": "Expediente",
+          "definicion": "Número con que el Congreso identifica cada asunto que recibe, por ejemplo un proyecto de ley, un pedido de informe o una resolución. La letra inicial indica la cámara donde ingresó: S para el Senado y D para Diputados."
+        },
+        {
+          "termino": "Ley sancionada",
+          "definicion": "Proyecto de ley aprobado por el Congreso. Después, el Poder Ejecutivo la promulga o la objeta."
+        },
+        {
+          "termino": "Cámara de origen y cámara revisora",
+          "definicion": "Un proyecto se trata primero en la cámara donde ingresó (de origen) y después en la otra (revisora). Si la revisora lo modifica, vuelve a la de origen."
+        },
+        {
+          "termino": "Objeción del Poder Ejecutivo",
+          "definicion": "Rechazo total o parcial de una ley sancionada por parte del Poder Ejecutivo. La ley vuelve al Congreso, que puede aceptar o rechazar la objeción."
+        },
+        {
+          "termino": "Período legislativo",
+          "definicion": "Los cinco años de mandato de un Congreso. El sitio cubre hoy el período {periodo}."
+        },
+        {
+          "termino": "Período parlamentario",
+          "definicion": "Cada año de trabajo del Congreso dentro del período legislativo, de julio a junio. Las comisiones se integran por período parlamentario."
+        },
+        {
+          "termino": "Votación nominal",
+          "definicion": "Votación en la que queda registrado el voto de cada legislador con su nombre. Es la única que publica la API ([Decisiones sin votación nominal](#decisiones-sin-votacion-nominal))."
+        },
+        {
+          "termino": "SI, NO, ABSTENCIÓN/BLANCO, NO VOTA, AUSENTE, MOCIÓN",
+          "definicion": "Categorías de voto que publica el Congreso ([Categorías de voto](#categorias-de-voto)). AUSENTE indica que el legislador no registró su voto en esa votación y no dice si estaba en la sesión."
+        },
+        {
+          "termino": "Partido",
+          "definicion": "Partido político con el que el Congreso registra a cada legislador en el período ([Partido y bancada](#partido-y-bancada))."
+        },
+        {
+          "termino": "Bancada",
+          "definicion": "Grupo de legisladores que actúan juntos dentro de una cámara. Puede no coincidir con el partido."
+        },
+        {
+          "termino": "Partido unificado",
+          "definicion": "Agrupación propia del sitio de los textos oficiales que corresponden al mismo partido, por ejemplo cuando una cámara lo escribe distinto que la otra ([Dos niveles de análisis](#partido-unificado))."
+        },
+        {
+          "termino": "Senador vitalicio",
+          "definicion": "Expresidente de la República que integra el Senado con voz pero sin voto. No ocupa una de las 45 bancas y no figura en las listas de votación."
+        },
+        {
+          "termino": "Tema",
+          "definicion": "Clasificación propia del Observatorio de cada ley y de cada proyecto de ley votado. «Pendiente de clasificación» es un proyecto que todavía no tiene tema ([Temas de las leyes](#temas-de-las-leyes))."
+        },
+        {
+          "termino": "Coincidencia de votos",
+          "definicion": "Porcentaje de votaciones en que dos partidos o dos bancadas tuvieron la misma posición ([Coincidencia de votos](#coincidencia-de-votos))."
+        },
+        {
+          "termino": "«Rebelde»",
+          "definicion": "Legislador que votó distinto a la mayoría de su partido. Va entre comillas porque es un apodo, no una calificación del sitio ([Lista de más «rebeldes»](#cuadro-de-votos-distintos))."
+        }
+      ],
+      "bloque": "siglas"
     }
   ]
 }

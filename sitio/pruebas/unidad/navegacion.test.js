@@ -11,6 +11,9 @@ import * as rutas from "../../src/lib/rutas.js";
 import { CANTIDAD_ULTIMAS_PORTADA, votacionesDelPeriodo } from "../../src/lib/votaciones.js";
 import { CANTIDAD_PORTADA, votosDistintosAlPartido } from "../../src/lib/votosDistintos.js";
 import { votosPorTema } from "../../src/lib/votosPorTema.js";
+import { resumenPorTema } from "../../src/lib/resumenTemas.js";
+import { siglasDePartidos } from "../../src/lib/partidos.js";
+import { PENDIENTE } from "../../src/lib/temas.js";
 
 const PERIODO = "2023-2028";
 
@@ -158,6 +161,26 @@ test("vista previa de votaciones: las más recientes de las dos cámaras, al fin
       .map((v) => v.clave),
     ["votaciones", "temas"],
   );
-  // Los temas van a lo ancho, con una etiqueta por tema que lleva a su página (#37).
-  assert.deepEqual(previa.temas.map((t) => t.url), votosPorTema(PERIODO).map((t) => t.url));
+  assert.equal(CANTIDAD_ULTIMAS_PORTADA, 3, "La portada muestra las 3 más recientes (#92)");
+  // Los temas van a lo ancho, con una etiqueta por tema que lleva a su página (#37), sin «Pendiente» (#92).
+  assert.deepEqual(previa.temas.map((t) => t.url), votosPorTema(PERIODO).filter((t) => t.id !== PENDIENTE).map((t) => t.url));
+});
+
+test("la portada nunca muestra «Pendiente de clasificación»; el catálogo, solo si tiene alguno (#92)", () => {
+  const portada = resumenPorTema(PERIODO, { conPendiente: false });
+  const catalogo = resumenPorTema(PERIODO);
+  assert.ok(!portada.some((t) => t.id === PENDIENTE));
+  assert.ok(!vistaPrevia(PERIODO).temas.some((t) => t.id === PENDIENTE));
+  // Fuera de «Pendiente», los dos cuadros son iguales.
+  assert.deepEqual(portada, catalogo.filter((t) => t.id !== PENDIENTE));
+  const pendiente = catalogo.find((t) => t.id === PENDIENTE);
+  if (pendiente) assert.ok(pendiente.leyes + pendiente.archivados + pendiente.enTramite + pendiente.otros > 0);
+});
+
+test("siglas del glosario: una por sigla, con el nombre del partido (#92)", () => {
+  const siglas = siglasDePartidos();
+  assert.equal(new Set(siglas.map((s) => s.sigla)).size, siglas.length);
+  for (const sigla of ["ANR", "PLRA", "Yo Creo", "PEN", "PDP", "CN"]) assert.ok(siglas.some((s) => s.sigla === sigla), sigla);
+  assert.match(siglas.find((s) => s.sigla === "ANR").nombre, /Asociación Nacional Republicana/);
+  assert.equal(siglas.find((s) => s.sigla === "Yo Creo").nombre, "Movimiento Conciencia Democrática Nacional");
 });

@@ -4,11 +4,10 @@
     "queVotaElCongresoDel": "¿Cómo vota el Congreso en Paraguay?",
     "leyesSancionadasPorElCongreso2": "Leyes sancionadas por el Congreso Nacional del Paraguay en el período legislativo {id}, a partir de los datos abiertos que publica el propio Congreso.",
     "seccionesDelSitio": "Secciones del sitio",
-    "verLasLeyesDelPeriodo": "[Ver las {cantidad} leyes del período]({url1})",
-    "verLosLegisladoresSusVotos": "[Ver los legisladores, sus votos y sus leyes]({url1})",
-    "verElMapaDeDiputados": "[Ver el mapa de diputados por departamento]({url1})",
-    "buscarUnaLey": "[Buscar una ley]({url1})",
-    "descargarLosDatosAbiertos": "[Descargar los datos abiertos]({url1})",
+    "botonLeyes": "{cantidad} leyes",
+    "botonLegisladores": "Legisladores",
+    "botonMapa": "Mapa de diputados",
+    "botonBuscar": "Buscar una ley",
     "preguntasSobreLeyesVotadasEn": "{preguntas} preguntas sobre leyes votadas en el período. ¿Con qué partido político coincides más? Al final ves cuánto coinciden tus respuestas con lo que votó cada partido.",
     "hacerElTest": "Hacer el test",
     "avisosPorTelegram": "Avisos por Telegram",
@@ -18,7 +17,8 @@
     "diputadosEnEjercicioElegiUn": "{total} diputados en ejercicio. Elegí un departamento para ver quiénes son, o mirá el [mapa con la lista completa]({url1})."
   },
   "analisis": {
-    "analisis": "Análisis",
+    "quePartidosVotanIgual": "¿Qué partidos votan igual?",
+    "descripcionCoincidencia": "Qué tan seguido votaron igual los partidos de cada cámara en las votaciones nominales sobre proyectos de ley.",
     "compararCon": "Comparar con",
     "sobreProyectosDeLey": "sobre proyectos de ley.",
     "noTieneVotacionesEnComun": "{referencia} no tiene votaciones en común con otros partidos en esta cámara.",
@@ -26,7 +26,8 @@
     "entreTodosLosParesMas": "Entre todos los pares, más coincidencia entre {valor} y {valor2} ({porcentajeTexto}) y menos entre {valor3} y {valor4} ({porcentajeTexto2}).",
     "ver": "[Ver {titulo}]({url1})",
     "verTodasLasVotacionesY": "Ver todas las votaciones y las más ajustadas",
-    "ver2": "Ver {titulo}"
+    "ver2": "Ver {titulo}",
+    "laCoincidenciaCompleta": "la coincidencia completa, también entre bancadas"
   },
   "composicion": {
     "composicionActual": "Composición actual",
@@ -54,7 +55,8 @@
     "leyesSancionadas": "leyes sancionadas",
     "proyectoVotado": "proyecto votado",
     "proyectosVotados": "proyectos votados",
-    "sinLey": "sin ley ("
+    "sinLey": "sin ley (",
+    "masProyectosVotadosSinLey": "Además, {proyectos} sin ley."
   },
   "barrasCoincidencia": {
     "votacionesEnQueCadaPartido": "Votaciones en que cada partido tuvo la misma posición que {referencia}",

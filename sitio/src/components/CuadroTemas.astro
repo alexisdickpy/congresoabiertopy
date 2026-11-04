@@ -1,7 +1,9 @@
 ---
-// Cuadro de leyes por tema (lib/resumenTemas.js, #36): una tarjeta por tema con el color del tema, la
-// cantidad de leyes y la de proyectos votados sin ley por estado oficial. Cada tarjeta lleva al catálogo
-// filtrado por ese tema. Se usa en la portada y en el catálogo de leyes.
+// Cuadro de leyes por tema (lib/resumenTemas.js, #36): un cuadro por tema con el fondo y el borde del
+// color del tema (#92), la cantidad de leyes y la de proyectos votados sin ley. Cada cuadro lleva al
+// catálogo filtrado por ese tema. Se usa en el catálogo de leyes, con los proyectos por estado oficial,
+// y en la portada (`portada`), con solo el total de proyectos votados sin ley y sin «Pendiente de
+// clasificación».
 import * as rutas from "../lib/rutas.js";
 import { resumenPorTema } from "../lib/resumenTemas.js";
 import { textos, fill, md, crudo } from "../lib/contenido.js";
@@ -10,11 +12,12 @@ const tx = textos.portada.cuadroTemas;
 interface Props {
   periodo: string;
   nivel?: 2 | 3;
+  portada?: boolean;
 }
-const { periodo, nivel = 2 } = Astro.props;
+const { periodo, nivel = 2, portada = false } = Astro.props;
 const Titulo = `h${nivel}`;
 const Tema = `h${nivel + 1}`;
-const cuadros = resumenPorTema(periodo);
+const cuadros = resumenPorTema(periodo, { conPendiente: !portada });
 const numero = (n: number) => n.toLocaleString("es-PY");
 const plural = (n: number, singular: string, varios: string) => `${numero(n)} ${n === 1 ? singular : varios}`;
 const sinLey = (c: any) =>
@@ -34,7 +37,12 @@ const sinLey = (c: any) =>
         <li class="tarjeta-tema" data-tema={c.id}>
           <Tema class="nombre"><a href={c.url}>{c.nombre}</a></Tema>
           <p class="cifra"><strong>{plural(c.leyes, tx.leySancionada, tx.leyesSancionadas)}</strong></p>
-          {sinLey(c).length > 0 && <p class="chico texto-suave">{plural(c.archivados + c.enTramite + c.otros, tx.proyectoVotado, tx.proyectosVotados)} {tx.sinLey}{sinLey(c).join(" · ")})</p>}
+          {sinLey(c).length > 0 &&
+            (portada ? (
+              <p class="chico texto-suave">{fill(tx.masProyectosVotadosSinLey, { proyectos: plural(c.archivados + c.enTramite + c.otros, tx.proyectoVotado, tx.proyectosVotados) })}</p>
+            ) : (
+              <p class="chico texto-suave">{plural(c.archivados + c.enTramite + c.otros, tx.proyectoVotado, tx.proyectosVotados)} {tx.sinLey}{sinLey(c).join(" · ")})</p>
+            ))}
         </li>
       ))
     }
@@ -51,15 +59,23 @@ const sinLey = (c: any) =>
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
-    gap: 0 var(--espacio-5);
+    gap: var(--espacio-3);
   }
+  /* Cuadro con el color de su tema, como los de /votos-por-tema/: fondo suave y borde superior (#92). */
   .tarjeta-tema {
-    padding: var(--espacio-2) 0 var(--espacio-3);
-    border-top: var(--borde-ancho) solid var(--color-borde);
+    padding: var(--espacio-3);
+    border: var(--borde-ancho) solid var(--color-borde);
+    border-top: var(--foco-ancho) solid var(--color-tema, var(--color-borde));
+    border-radius: var(--radio);
+    background: color-mix(in srgb, var(--color-tema, var(--color-borde)) var(--mezcla-fondo-tema), var(--color-fondo));
   }
   .nombre {
     margin: 0 0 var(--espacio-1);
     font-size: var(--tamano-base);
+  }
+  .nombre a,
+  .nombre a:visited {
+    color: var(--color-texto);
   }
   p {
     margin: 0;

@@ -85,10 +85,14 @@ test("período 2023-2028: cada votación sobre proyectos de ley una sola vez, en
   const deLey = [...i.votaciones.values()].filter(esDeProyectoDeLey);
   assert.equal(votaciones.length, deLey.length);
   assert.equal(new Set(votaciones.map((v) => v.id)).size, votaciones.length);
+  // La actualización diaria agrega votaciones: los totales salen de la lista y nunca bajan de los de
+  // la clasificación de #60 (211 y 793).
   assert.deepEqual(
     porCamara.map((c) => [c.camara, c.total]),
-    [["CAMARA DE SENADORES", 211], ["CAMARA DE DIPUTADOS", 793]],
+    porCamara.map((c) => [c.camara, votaciones.filter((v) => v.camara === c.camara).length]),
   );
+  assert.deepEqual(porCamara.map((c) => c.camara), ["CAMARA DE SENADORES", "CAMARA DE DIPUTADOS"]);
+  assert.ok(porCamara[0].total >= 211 && porCamara[1].total >= 793, "Faltan votaciones");
   assert.deepEqual(anios.map((a) => a.anio), ["2026", "2025", "2024", "2023"]);
   assert.equal(anios.reduce((n, a) => n + a.total, 0), votaciones.length);
   for (const a of anios) {

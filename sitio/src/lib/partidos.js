@@ -87,3 +87,17 @@ export function tablaDePartidos() {
     .map((g) => ({ ...g, textos: g.textos.sort((a, b) => porTexto(a.texto, b.texto)) }))
     .sort((a, b) => b.textos.length - a.textos.length || porTexto(a.nombre, b.nombre));
 }
+
+/**
+ * Siglas de los partidos para el glosario de la metodología (#92): una por sigla, con el nombre del
+ * partido unificado y, si lo tiene, el nombre conocido. Salen de la tabla propia (datos/propios/partidos.json).
+ */
+export function siglasDePartidos() {
+  const siglas = new Map();
+  for (const e of partidosConocidos()) {
+    if (!e.sigla || siglas.has(e.sigla)) continue;
+    const nombre = e.nombreConocido && e.nombreConocido !== e.sigla ? `${e.nombreUnificado} (${e.nombreConocido})` : e.nombreUnificado;
+    siglas.set(e.sigla, { sigla: e.sigla, nombre });
+  }
+  return [...siglas.values()].sort((a, b) => porTexto(a.sigla, b.sigla));
+}

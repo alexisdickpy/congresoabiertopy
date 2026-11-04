@@ -6,7 +6,8 @@
 //   proyecto de ninguna ley del catálogo, por su estado oficial (estadoProyecto de su votación más
 //   reciente): archivados, en trámite y los demás estados.
 // - Una ley o un proyecto con dos temas cuenta en los dos. Orden de más a menos leyes; a igual cantidad,
-//   el de temas.json. «Pendiente de clasificación» solo aparece si tiene alguno.
+//   el de temas.json. «Pendiente de clasificación» solo aparece si tiene alguno, y nunca en la portada
+//   (conPendiente: false, #92).
 
 import { leyes } from "./catalogo.js";
 import { indice, valor } from "./ficha.js";
@@ -31,9 +32,10 @@ function proyectosSinLey(periodo) {
 
 /**
  * Un cuadro por tema: { id, nombre, url, leyes, archivados, enTramite, otros }. Las cifras son de las
- * leyes del catálogo (todos los períodos) y de los proyectos votados sin ley del período.
+ * leyes del catálogo (todos los períodos) y de los proyectos votados sin ley del período. Con
+ * `conPendiente: false`, sin «Pendiente de clasificación» aunque tenga alguno.
  */
-export function resumenPorTema(periodo) {
+export function resumenPorTema(periodo, { conPendiente = true } = {}) {
   const sinLey = [...proyectosSinLey(periodo)].map(([idProyecto, estado]) => ({
     estado,
     temas: temasDeProyectos([{ periodo, idProyecto }]).filtro,
@@ -53,6 +55,6 @@ export function resumenPorTema(periodo) {
         otros: proyectos.length - archivados - enTramite,
       };
     })
-    .filter((t) => t.id !== PENDIENTE || t.leyes + t.archivados + t.enTramite + t.otros > 0)
+    .filter((t) => t.id !== PENDIENTE || (conPendiente && t.leyes + t.archivados + t.enTramite + t.otros > 0))
     .sort((a, b) => b.leyes - a.leyes || a.orden - b.orden);
 }

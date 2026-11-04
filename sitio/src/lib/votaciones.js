@@ -30,7 +30,7 @@ const txc = textos.general.comunes;
 /** Votaciones más ajustadas por cámara en la página de votaciones y en la portada. */
 export const CANTIDAD_AJUSTADAS = 10;
 /** Votaciones más recientes en la portada, de las dos cámaras. */
-export const CANTIDAD_ULTIMAS_PORTADA = 5;
+export const CANTIDAD_ULTIMAS_PORTADA = 3;
 
 /** Valor de filtro de las votaciones sin dato en un campo. */
 const SIN_DATO = "sin-dato";
