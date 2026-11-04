@@ -58,6 +58,7 @@ export const anclasMetodologia = {
   expedientes: "expedientes-presentados",
   comisiones: "comisiones",
   avisos: "avisos-del-bot-de-telegram",
+  glosario: "glosario",
 };
 
 /** Repositorio público del proyecto: código, datos y licencias. */

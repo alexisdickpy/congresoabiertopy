@@ -36,11 +36,10 @@ const mapa = mapaDeDiputados(vigente.id);
   <UltimaVotacion periodo={vigente.id} />
   <nav class="accesos" aria-label={tx.seccionesDelSitio}>
     <ul>
-      <li set:html={md(tx.verLasLeyesDelPeriodo, { url1: crudo(rutas.leyes()), cantidad: cantidad })} />
-      <li set:html={md(tx.verLosLegisladoresSusVotos, { url1: crudo(rutas.legisladores()) })} />
-      <li set:html={md(tx.verElMapaDeDiputados, { url1: crudo(rutas.mapaDiputados()) })} />
-      <li set:html={md(tx.buscarUnaLey, { url1: crudo(rutas.buscar()) })} />
-      <li set:html={md(tx.descargarLosDatosAbiertos, { url1: crudo(rutas.datosAbiertos()) })} />
+      <li><a class="boton" href={rutas.leyes()}>{fill(tx.botonLeyes, { cantidad: cantidad.toLocaleString("es-PY") })}</a></li>
+      <li><a class="boton" href={rutas.legisladores()}>{tx.botonLegisladores}</a></li>
+      <li><a class="boton" href={rutas.mapaDiputados()}>{tx.botonMapa}</a></li>
+      <li><a class="boton" href={rutas.buscar()}>{tx.botonBuscar}</a></li>
     </ul>
   </nav>
   <AnalisisPortada periodo={vigente.id} parte="tarjetas" />
@@ -60,7 +59,7 @@ const mapa = mapaDeDiputados(vigente.id);
       <p><a class="boton" href={rutas.botTelegram()}>{tx.abrirElBot}</a></p>
     </section>
   </div>
-  <CuadroTemas periodo={vigente.id} />
+  <CuadroTemas periodo={vigente.id} portada />
   <AnalisisPortada periodo={vigente.id} parte="temas" />
   <section aria-labelledby="mapa-portada">
     <h2 id="mapa-portada">{tx.diputadosPorDepartamento}</h2>
@@ -81,17 +80,24 @@ const mapa = mapaDeDiputados(vigente.id);
     margin: 0;
     color: var(--color-texto-suave);
   }
+  /* Cuatro accesos como botones (#92): en fila en pantallas anchas, de a dos en el celular. */
   .accesos ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
-    gap: 0 var(--espacio-5);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+    gap: var(--espacio-3);
     list-style: none;
     padding: 0;
     margin: var(--espacio-5) 0 0;
   }
-  .accesos li {
-    border-top: var(--borde-ancho) solid var(--color-borde);
-    padding: var(--espacio-2) 0;
+  @media (max-width: 30rem) {
+    .accesos ul {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .accesos .boton {
+    display: block;
+    height: 100%;
+    text-align: center;
   }
   .dos-acciones {
     display: grid;

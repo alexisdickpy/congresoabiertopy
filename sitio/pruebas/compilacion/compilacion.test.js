@@ -14,6 +14,7 @@ import { mapaDeDiputados } from "../../src/lib/mapa.js";
 import { observacionesDeLosDatos } from "../../src/lib/metodologia.js";
 import { menuPrincipal, vistasDeAnalisis } from "../../src/lib/navegacion.js";
 import { composicion, vistaPrevia } from "../../src/lib/portada.js";
+import { siglasDePartidos } from "../../src/lib/partidos.js";
 import { legible } from "../../src/lib/texto.js";
 import * as rutas from "../../src/lib/rutas.js";
 import { masAjustadas, votacionesDelAnio, votacionesDelPeriodo } from "../../src/lib/votaciones.js";
@@ -351,8 +352,8 @@ test("mapa de diputados: una zona por departamento, la lista con cada diputado, 
   assert.equal((portada.match(/class="zona"/g) ?? []).length, m.zonas.length);
   assert.ok(portada.includes(`href="${rutas.mapaDiputados()}#${m.zonas[0].ancla}"`));
   assert.ok(portada.includes('class="mapa-lista" hidden') && portada.includes('id="mapa-detalle"'), "En la portada, la lista oculta alimenta el detalle");
-  // Orden de la portada: análisis, test, leyes por tema, votos por tema, mapa y votaciones.
-  const orden = ['id="titulo-analisis"', 'id="test-portada"', 'id="titulo-cuadro-temas"', 'data-analisis="temas"', 'id="mapa-portada"', 'data-analisis="votaciones"'].map((m) => portada.indexOf(m));
+  // Orden de la portada (#92): más «rebeldes», coincidencia, test, leyes por tema, votos por tema, mapa y votaciones.
+  const orden = ['data-analisis="rankings"', 'data-analisis="coincidencia"', 'id="test-portada"', 'id="titulo-cuadro-temas"', 'data-analisis="temas"', 'id="mapa-portada"', 'data-analisis="votaciones"'].map((m) => portada.indexOf(m));
   assert.ok(orden.every((n, i) => n >= 0 && (i === 0 || n > orden[i - 1])), `Orden de la portada ${orden}`);
   assert.ok(texto(rutas.mapaDiputados()).includes(fijo(textos.legisladores.mapa.diputadosEnEjercicioEnEl)));
   assert.ok(html.includes("Natural Earth"));
@@ -757,6 +758,27 @@ test("el menú y la portada enlazan a cada vista de análisis", () => {
   const votaciones = posiciones.find(([clave]) => clave === "votaciones")[1];
   assert.ok(posiciones.every(([clave, n]) => clave === "votaciones" || n < votaciones), "La tarjeta de votaciones no está al final");
   assert.equal(html.match(/<li data-votos-distintos=/g)?.length ?? 0, previa.votosDistintos.reduce((n, c) => n + c.filas.length, 0));
+  // #92: sin el título «Análisis», cuatro botones de acceso y la coincidencia de la portada solo con partidos.
+  const crudo = leer(rutas.inicio()).replace(/<header[\s\S]*?<\/header>/, " ");
+  assert.ok(!crudo.includes('id="titulo-analisis"'), "La portada conserva el título «Análisis»");
+  const accesos = crudo.match(/<nav class="accesos[\s\S]*?<\/nav>/)?.[0] ?? "";
+  assert.deepEqual(
+    [...accesos.matchAll(/<a class="boton[^"]*" href="([^"]+)"/g)].map((m) => m[1]),
+    [rutas.leyes(), rutas.legisladores(), rutas.mapaDiputados(), rutas.buscar()],
+  );
+  const coincidenciaPortada = crudo.split('data-analisis="coincidencia"')[1]?.split("</section>")[0] ?? "";
+  assert.ok(coincidenciaPortada.includes(fijo(textos.portada.analisis.quePartidosVotanIgual)), "Falta el título de la coincidencia");
+  assert.ok(!/bancada/i.test(coincidenciaPortada.replace(fijo(textos.portada.analisis.laCoincidenciaCompleta), "")), "La coincidencia de la portada menciona bancadas");
+  // Sin «Pendiente de clasificación» en la portada.
+  assert.ok(!crudo.includes('data-tema="pendiente"'), "La portada muestra «Pendiente de clasificación»");
+});
+
+test("metodología: glosario con sus términos y las siglas de los partidos (#92)", () => {
+  const html = leer(rutas.metodologia());
+  assert.ok(html.includes(`id="${rutas.anclasMetodologia.glosario}"`), "Falta el glosario");
+  const glosario = html.split(`id="${rutas.anclasMetodologia.glosario}"`)[1];
+  for (const termino of ["SILpy", "Votación nominal", "Bancada", "Senador vitalicio", "Expediente"]) assert.ok(glosario.includes(termino), `Falta ${termino} en el glosario`);
+  for (const s of siglasDePartidos()) assert.ok(new RegExp(`<dt[^>]*>${s.sigla}</dt>`).test(glosario), `Falta la sigla ${s.sigla}`);
 });
 
 test("votos por tema: índice, una página por tema con el reparto de cada grupo, avisos y lista de votaciones", () => {

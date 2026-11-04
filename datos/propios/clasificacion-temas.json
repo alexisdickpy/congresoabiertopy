@@ -11626,10 +11626,16 @@
     },
     {
       "idProyecto": 160291,
-      "pendiente": true,
+      "pendiente": false,
       "periodoLegislativo": "2023-2028",
-      "revisado": false,
-      "temas": []
+      "revisado": true,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "intermediacion financiera",
+          "tema": "economia"
+        }
+      ]
     }
   ]
 }
