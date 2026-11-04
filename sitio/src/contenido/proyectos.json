@@ -3,7 +3,7 @@
     "proyectosDeLey": "Proyectos de ley",
     "proyectosDeLeyDelCongreso": "{proyectos} proyectos de ley del Congreso Nacional del Paraguay en el período legislativo {periodo}, con su estado oficial y su enlace, tengan o no votación nominal.",
     "proyectosDeLeyDelPeriodo": "{proyectos} proyectos de ley del período legislativo {periodo}, con su estado oficial y su expediente. {sinNominal} no tienen votación nominal publicada.",
-    "losProyectosSinVotacionNominal": "Los proyectos sin votación nominal no entran en los cálculos que se realizan de como votan los partidos, porque no hay votos individuales para realizar los cálculos. El título se recorta en esta lista y el completo está en el expediente. [Cómo se arma esta lista]({url1})",
+    "losProyectosSinVotacionNominal": "Los proyectos sin votación nominal no entran en los cálculos que se realizan acerca de cómo votan los partidos, porque no hay votos individuales para realizar los cálculos. El título se recorta en esta lista y el completo está en el expediente. [Aquí tienes más información sobre cómo se arma esta lista]({url1})",
     "palabrasDelTituloOExpediente": "Palabras del título o expediente",
     "votacionNominal": "Votación nominal",
     "conOSin": "Con o sin",
