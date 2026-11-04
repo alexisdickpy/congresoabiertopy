@@ -9,7 +9,7 @@ Requiere la versión de Node.js de [`.node-version`](.node-version). Los comando
 ```bash
 npm ci                    # instalar las versiones exactas de package-lock.json
 npm run dev               # sitio en desarrollo (la búsqueda no funciona en este modo)
-npm run build             # compilar en dist/ y generar el índice de búsqueda
+npm run build             # compilar en dist/ y generar el índice de búsqueda (scripts/indice-busqueda.js)
 npm run preview           # ver dist/ tal como se publicará
 npm test                  # pruebas del filtro de leyes y de las fichas
 npm run test:compilacion  # comprobar dist/ después de npm run build
@@ -41,7 +41,7 @@ Para el rediseño (Fase 4) hay tres reglas. Ningún color, tipografía ni medida
 | `/leyes/{número}/` | Ficha de la ley (`_propio.numeroLey`). Los registros con el mismo número se muestran juntos; cada uno con su iniciativa, autores y votaciones nominales. |
 | `/legisladores/` | Legisladores del período vigente, primero los que están en ejercicio (Senadores y luego Diputados, por apellido) y, aparte, los que ya no ejercen. Filtros por nombre, cámara, partido, bancada y departamento, que quedan en la dirección (`?q=…&camara=…&partido=…&bancada=…&departamento=…`). |
 | `/legisladores/{slug}/` | Ficha de cada persona (slug de `datos/propios/personas.json`), con un bloque por período. |
-| `/buscar/` | Búsqueda en las fichas con Pagefind (`?q=…`). |
+| `/buscar/` | Búsqueda con Pagefind en las fichas de leyes y legisladores y en los proyectos de ley del período, con filtro por tipo (`?q=…&tipo=ley|proyecto`). |
 | `/datos/` | Descarga de los datos abiertos. |
 
 Los valores oficiales se muestran tal como los publica el Congreso. Las fechas ISO de `_propio` se usan solo para ordenar y para el año del filtro (se toma la fecha de sanción más antigua de los registros de cada número).

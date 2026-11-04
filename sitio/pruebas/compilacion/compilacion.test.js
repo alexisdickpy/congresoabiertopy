@@ -28,6 +28,8 @@ import { datosDelTest, esPreliminar } from "../../src/lib/testAfinidad.js";
 import { datosPreguntaPartido } from "../../src/lib/datosPreguntaPartido.js";
 import { respuesta, TODAS } from "../../src/lib/preguntaPartido.js";
 import { fijo, textos } from "../textos.js";
+import { proyectosDeLey } from "../../src/lib/proyectos.js";
+import { TIPOS_BUSQUEDA } from "../../src/lib/busqueda.js";
 
 const dist = resolve(process.cwd(), "dist");
 const pagina = (url) => join(dist, decodeURIComponent(url), "index.html");
@@ -92,8 +94,17 @@ test("cada página tiene la cita de la fuente y la fecha de actualización", () 
   }
 });
 
-test("índice de búsqueda generado", () => {
+test("índice de búsqueda generado, con leyes, legisladores y proyectos de ley (#104)", () => {
   assert.ok(existsSync(join(dist, "pagefind", "pagefind.js")));
+  const entrada = JSON.parse(readFileSync(join(dist, "pagefind", "pagefind-entry.json"), "utf-8"));
+  const proyectos = proyectosDeLey(periodos().find((p) => p.vigente).id).filter((p) => !p.ley && p.url);
+  assert.ok(proyectos.length > 0);
+  assert.equal(entrada.languages.es.page_count, leyes().length + legisladores().length + proyectos.length);
+  const buscar = leer(rutas.buscar());
+  for (const valor of [TIPOS_BUSQUEDA.todos, TIPOS_BUSQUEDA.ley, TIPOS_BUSQUEDA.proyecto]) assert.ok(buscar.includes(`name="tipo" value="${valor}"`), `Falta el filtro ${valor}`);
+  assert.ok(buscar.includes(fijo(textos.buscar.pagina.queIncluye)));
+  const ley = leer(leyes()[0].url);
+  assert.ok(ley.includes(`data-pagefind-filter="tipo:${TIPOS_BUSQUEDA.ley}"`));
 });
 
 test("datos/ servido en /datos/ con las mismas rutas", () => {

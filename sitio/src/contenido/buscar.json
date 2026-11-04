@@ -1,10 +1,12 @@
 {
   "pagina": {
-    "buscarLeyes": "Buscar leyes",
-    "buscarLeyesDelCongresoNacional": "Buscar leyes del Congreso Nacional del Paraguay por número o por palabras del título.",
-    "numeroDeLeyOPalabras": "Número de ley o palabras del título",
+    "buscarLeyes": "Buscar leyes y proyectos",
+    "buscarLeyesDelCongresoNacional": "Buscar leyes y proyectos de ley del Congreso Nacional del Paraguay por número, expediente o palabras del título, con su estado oficial.",
+    "numeroDeLeyOPalabras": "Número de ley, expediente o palabras del título",
     "buscar": "Buscar",
     "verMasResultados": "Ver más resultados",
-    "laBusquedaNecesitaJavascriptTambien": "La búsqueda necesita JavaScript. También podés recorrer la [lista completa de leyes]({url1})."
+    "laBusquedaNecesitaJavascriptTambien": "La búsqueda necesita JavaScript. También podés recorrer la [lista completa de leyes]({url1}).",
+    "queIncluye": "Incluye las leyes sancionadas en el período, los proyectos de ley del período que no llegaron a ser ley, con su estado oficial tal como lo publica el Congreso, y los legisladores. Cada proyecto lleva a su expediente oficial en SILpy.",
+    "mostrar": "Mostrar"
   }
 }

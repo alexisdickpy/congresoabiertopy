@@ -3,6 +3,7 @@
 // votaciones nominales sobre proyectos de ley, ausencias, NO VOTA, abstenciones y votos distintos a la
 // mayoría de su bancada y de su partido en todas las votaciones nominales, leyes de su autoría,
 // expedientes presentados y comisiones (preparado por lib/legisladores.js).
+import { TIPOS_BUSQUEDA } from "../../lib/busqueda.js";
 import Base from "../../layouts/Base.astro";
 import { clasePartido } from "../../lib/partidos.js";
 import { legible } from "../../lib/texto.js";
@@ -45,6 +46,7 @@ const descripcion = descripcionDeLegislador(f, sinDato);
   <p class="chico" set:html={md(tx.todosLosLegisladores, { url1: crudo(rutas.legisladores()) })} />
   <article data-pagefind-body>
     <h1 data-pagefind-meta="title">{f.nombre ?? sinDato}</h1>
+    <span data-pagefind-filter={`tipo:${TIPOS_BUSQUEDA.legislador}`} hidden></span>
     {
       f.bloques.map((b: any) => (
         <section class="bloque">

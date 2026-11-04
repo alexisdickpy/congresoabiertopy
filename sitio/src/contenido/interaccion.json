@@ -67,10 +67,18 @@
   },
   "buscar": {
     "buscando": "Buscando…",
-    "sinResultados": "No se encontraron leyes.",
+    "sinResultados": "No se encontraron resultados.",
     "unResultado": "1 resultado.",
     "variosResultados": "{cantidad} resultados.",
-    "noDisponible": "La búsqueda no está disponible en este momento."
+    "noDisponible": "La búsqueda no está disponible en este momento.",
+    "todos": "Todos",
+    "leyes": "Leyes",
+    "proyectos": "Proyectos de ley",
+    "leySancionada": "Ley sancionada",
+    "proyectoDeLey": "Proyecto de ley",
+    "legislador": "Legislador",
+    "estadoOficial": "Estado oficial: {estado}",
+    "expediente": "Expediente {expediente}"
   },
   "proyectos": {
     "resultado": "Se muestran {visibles} de {total} proyectos."
