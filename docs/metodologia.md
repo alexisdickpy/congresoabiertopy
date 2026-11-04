@@ -379,6 +379,14 @@ El bot de Telegram del proyecto avisa de la actividad del Congreso. Al empezar, 
 
 `/proyectos/` (`lib/proyectos.js`) parte de `proyectos.json`, con todos los proyectos de ley ingresados en el período según el listado general de la API, de cualquier iniciativa y estado. Suma los ingresados antes que figuran en `expedientes.json`, `votaciones.json`, `leyes.json`, `proyectos-recientes.json` y `decisiones-plenario.json`. Los textos son los oficiales. Los que no tienen votación nominal no entran en los cálculos por partido.
 
+### Búsqueda
+
+Decisión de alcance (#104). `/buscar/` usa Pagefind con un índice estático que se genera al compilar (`sitio/scripts/indice-busqueda.js`). Incluye las fichas de las leyes sancionadas del período, las fichas de los legisladores y, como registros propios del índice, los proyectos de ley de `/proyectos/` que no son leyes sancionadas, porque no tienen página en el sitio.
+
+- **Proyectos.** Se indexan el título completo y el expediente oficiales. Cada resultado muestra el título, el expediente y el estado oficial tal como lo publica la API, y enlaza a su expediente en SILpy, igual que `/proyectos/`.
+- **Filtro.** «Todos», «Leyes» o «Proyectos de ley», con el filtro `tipo` del índice (`ley`, `proyecto`, `legislador`; `sitio/src/lib/busqueda.js`). Los legisladores aparecen con «Todos».
+- **Peso.** El navegador descarga solo las partes del índice que necesita cada búsqueda.
+
 ## Decisiones sin votación nominal
 
 Trámites de discusión en el plenario sobre proyectos de ley, con un resultado oficial que decide sobre el proyecto, sin votación nominal publicada (`lib/decisiones.js`). Salen de `tramitaciones.json` y `decisiones-plenario.json`, sin repetir trámites, con el mismo criterio de los avisos de Telegram. No hay votos individuales, por lo que no entran en gráficos ni cálculos. La lista cubre las leyes, los proyectos con votaciones nominales y los proyectos en trámite, así que puede no ser completa.

@@ -65,6 +65,8 @@ export function proyectosDeLey(periodo) {
       return {
         ...r,
         titulo: recortar(r.titulo, LARGO_TITULO),
+        // Completo para el índice de búsqueda (#104); la lista muestra el recortado.
+        tituloCompleto: r.titulo,
         anio: (r.ingreso ?? "").slice(0, 4) || null,
         estadoFiltro: r.estado ? slug(r.estado) : SIN_DATO,
         votaciones: ids.length,

@@ -234,7 +234,7 @@
       "ancla": "proyectos-de-ley",
       "nivel": 2,
       "titulo": "Listado de proyectos de ley",
-      "texto": "Reúne todos los proyectos de ley ingresados en el período según el listado general de la API del Congreso, de cualquier iniciativa y estado, más los ingresados antes que se votaron o sancionaron en el período. Título, estado y expediente son los oficiales. Los proyectos sin votación nominal no entran en los cálculos por partido.",
+      "texto": "Reúne todos los proyectos de ley ingresados en el período según el listado general de la API del Congreso, de cualquier iniciativa y estado, más los ingresados antes que se votaron o sancionaron en el período. Título, estado y expediente son los oficiales. Los proyectos sin votación nominal no entran en los cálculos por partido. El [buscador](/buscar/) también los incluye, con su estado oficial y el enlace a su expediente en SILpy.",
       "textoDespues": ""
     },
     {

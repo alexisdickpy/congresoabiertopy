@@ -1,5 +1,6 @@
 ---
 // Ficha de una ley: temas según la clasificación propia, datos oficiales, iniciativa, autores y votaciones nominales de cada registro.
+import { TIPOS_BUSQUEDA } from "../../lib/busqueda.js";
 import Base from "../../layouts/Base.astro";
 import FichaRegistro from "../../components/FichaRegistro.astro";
 import TemasLey from "../../components/TemasLey.astro";
@@ -22,6 +23,7 @@ const { ley } = Astro.props;
   <article data-pagefind-body>
     <h1 data-pagefind-meta="title">{fill(tx.ley, { numero: ley.numero })}</h1>
     <span data-pagefind-filter="año" hidden>{ley.anio}</span>
+    <span data-pagefind-filter={`tipo:${TIPOS_BUSQUEDA.ley}`} hidden></span>
     <TemasLey clasificacion={ley.temas} />
     {
       ley.registros.length > 1 && (

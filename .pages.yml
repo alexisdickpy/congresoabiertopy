@@ -226,7 +226,7 @@ content:
             label: "Bot de Telegram"
             type: string
           - name: buscarLeyes
-            label: "Buscar leyes"
+            label: "Buscar (menú)"
             type: string
       - name: buscadores
         label: "Textos para buscadores y vistas previas"
@@ -309,7 +309,7 @@ content:
             label: "Botón: Mapa de diputados"
             type: string
           - name: botonBuscar
-            label: "Botón: Buscar una ley"
+            label: "Botón: Buscar leyes y proyectos"
             type: string
           - name: preguntasSobreLeyesVotadasEn
             label: "{preguntas} preguntas sobre leyes votadas en el período. Al final…"
@@ -2485,13 +2485,19 @@ content:
         type: object
         fields:
           - name: buscarLeyes
-            label: "Buscar leyes"
+            label: "Título: Buscar leyes y proyectos"
             type: string
           - name: buscarLeyesDelCongresoNacional
-            label: "Buscar leyes del Congreso Nacional del Paraguay por número o por…"
+            label: "Descripción para buscadores: Buscar leyes y proyectos de ley…"
             type: text
           - name: numeroDeLeyOPalabras
-            label: "Número de ley o palabras del título"
+            label: "Etiqueta del campo: Número de ley, expediente o palabras del título"
+            type: string
+          - name: queIncluye
+            label: "Qué incluye la búsqueda"
+            type: text
+          - name: mostrar
+            label: "Mostrar (nombre del filtro)"
             type: string
           - name: buscar
             label: "Buscar"
@@ -3128,7 +3134,7 @@ content:
             label: "Buscando…"
             type: string
           - name: sinResultados
-            label: "No se encontraron leyes."
+            label: "No se encontraron resultados."
             type: string
           - name: unResultado
             label: "1 resultado."
@@ -3140,6 +3146,32 @@ content:
           - name: noDisponible
             label: "La búsqueda no está disponible en este momento."
             type: string
+          - name: todos
+            label: "Filtro: Todos"
+            type: string
+          - name: leyes
+            label: "Filtro: Leyes"
+            type: string
+          - name: proyectos
+            label: "Filtro: Proyectos de ley"
+            type: string
+          - name: leySancionada
+            label: "Etiqueta de resultado: Ley sancionada"
+            type: string
+          - name: proyectoDeLey
+            label: "Etiqueta de resultado: Proyecto de ley"
+            type: string
+          - name: legislador
+            label: "Etiqueta de resultado: Legislador"
+            type: string
+          - name: estadoOficial
+            label: "Estado oficial: {estado}"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {estado}."
+          - name: expediente
+            label: "Expediente {expediente}"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {expediente}."
       - name: proyectos
         label: "Lista de proyectos"
         type: object

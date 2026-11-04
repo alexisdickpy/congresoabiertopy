@@ -14,6 +14,7 @@ import { votosPorTema } from "../../src/lib/votosPorTema.js";
 import { resumenPorTema } from "../../src/lib/resumenTemas.js";
 import { siglasDePartidos } from "../../src/lib/partidos.js";
 import { PENDIENTE } from "../../src/lib/temas.js";
+import { textos } from "../textos.js";
 
 const PERIODO = "2023-2028";
 
@@ -22,7 +23,7 @@ test("el menú tiene una entrada por cada vista de análisis, con direcciones de
   for (const v of vistasDeAnalisis()) assert.ok(urls.includes(v.urlMenu ?? v.url), `Falta ${v.urlMenu ?? v.url} en el menú`);
   assert.deepEqual(
     menuPrincipal().map((e) => e.texto),
-    ["Leyes", "Proyectos", "Legisladores", "Votaciones", "Partidos", "Temas", "Rankings", "Estadísticas", "Test de afinidad", "Bot de Telegram", "Buscar leyes", "Datos abiertos"],
+    ["Leyes", "Proyectos", "Legisladores", "Votaciones", "Partidos", "Temas", "Rankings", "Estadísticas", "Test de afinidad", "Bot de Telegram", textos.general.menu.buscarLeyes, "Datos abiertos"],
   );
   // «Partidos» lleva al índice de partidos (#93); la coincidencia la sigue marcando (siguiente prueba).
   assert.ok(urls.includes(rutas.partidos()) && !urls.includes(rutas.coincidencia()) && urls.includes(rutas.rankings()));
