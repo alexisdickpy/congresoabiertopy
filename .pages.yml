@@ -464,6 +464,92 @@ content:
             label: "Portada: Además, {proyectos} sin ley."
             type: string
             description: "Partes automáticas, no las borres ni les cambies el nombre: {proyectos}."
+      - name: preguntale
+        label: "Preguntale a un partido"
+        type: object
+        fields:
+          - name: titulo
+            label: "Preguntale a un partido"
+            type: string
+          - name: votoAntes
+            label: "¿Votó"
+            type: string
+          - name: aFavorDe
+            label: "a favor de"
+            type: string
+          - name: cierre
+            label: "?"
+            type: string
+          - name: etiquetaPartido
+            label: "Partido"
+            type: string
+          - name: etiquetaPropuesta
+            label: "Propuesta"
+            type: string
+          - name: todasLasPropuestas
+            label: "las {cantidad} propuestas del test de afinidad"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {cantidad}."
+          - name: explicacion
+            label: "Son las mismas votaciones del test de afinidad, cámara por…"
+            type: text
+            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
+          - name: deTotal
+            label: "de {total}"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {total}."
+          - name: cifraCamara
+            label: "{camara}: votaciones en que la posición de {partido} fue a favor"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {camara}, {partido}."
+          - name: detalleCamara
+            label: "En contra: {contra} · Sin mayoría a favor o en contra: {sin}"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {contra}, {sin}."
+          - name: sinVotaciones
+            label: "{partido} no tuvo legisladores registrados en las votaciones de…"
+            type: text
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {partido}."
+          - name: lasVotaciones
+            label: "Las votaciones y la posición de {partido}"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {partido}."
+          - name: ley
+            label: "Ley N° {numero}"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {numero}."
+          - name: posicionFavor
+            label: "A favor"
+            type: string
+          - name: posicionContra
+            label: "En contra"
+            type: string
+          - name: posicionSinMayoria
+            label: "Sin mayoría a favor o en contra"
+            type: string
+          - name: posicionSinVotos
+            label: "Sin votos emitidos"
+            type: string
+          - name: votosDelPartido
+            label: "{aFavor} a favor y {enContra} en contra, de {emitidos} votos…"
+            type: text
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {aFavor}, {enContra}, {emitidos}."
+          - name: comparacion
+            label: "Todos los partidos"
+            type: string
+          - name: comparacionExplicacion
+            label: "Votaciones en que la posición de cada partido fue a favor, sobre…"
+            type: text
+          - name: etiquetaBarra
+            label: "{partido}: a favor en {favor}, en contra en {contra} y sin…"
+            type: text
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {partido}, {favor}, {contra}, {sin}, {total}."
+          - name: invitacion
+            label: "¿Y vos, qué habrías votado? Hacé el test con estas mismas…"
+            type: text
+          - name: hacerElTest
+            label: "Hacer el test de afinidad"
+            type: string
       - name: barrasCoincidencia
         label: "Gráfico de coincidencia"
         type: object

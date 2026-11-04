@@ -4,6 +4,7 @@ import AnalisisPortada from "../components/AnalisisPortada.astro";
 import ComposicionCongreso from "../components/ComposicionCongreso.astro";
 import CuadroTemas from "../components/CuadroTemas.astro";
 import MapaDepartamentos from "../components/MapaDepartamentos.astro";
+import PreguntaPartido from "../components/PreguntaPartido.astro";
 import UltimaVotacion from "../components/UltimaVotacion.astro";
 import { leyes } from "../lib/catalogo.js";
 import { periodos } from "../lib/datos.js";
@@ -43,6 +44,7 @@ const mapa = mapaDeDiputados(vigente.id);
     </ul>
   </nav>
   <AnalisisPortada periodo={vigente.id} parte="tarjetas" />
+  <PreguntaPartido periodo={vigente.id} />
   <div class="dos-acciones">
     <section aria-labelledby="test-portada">
       <h2 id="test-portada">{txc.testDeAfinidad}</h2>
