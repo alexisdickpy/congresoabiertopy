@@ -82,3 +82,25 @@ test("dirección del perfil a partir del texto oficial", () => {
   assert.equal(rutas.partidos(), "/partidos/");
   assert.equal(rutas.legisladoresDePartido("x"), "/legisladores/?partido=x");
 });
+
+test("tabla compacta (#99): una por cámara con votos, una fila por tema y las mismas cifras", () => {
+  for (const p of perfilesDePartidos(PERIODO)) {
+    const camaras = new Set(p.temas.flatMap((t) => t.camaras.map((c) => c.camara)));
+    assert.deepEqual(new Set(p.tablas.map((t) => t.camara)), camaras, p.id);
+    for (const tabla of p.tablas) {
+      assert.deepEqual(tabla.filas.map((f) => f.id), p.temas.map((t) => t.id), `${p.id}: todos los temas, en el mismo orden`);
+      for (const k of ["SI", "NO", "ABSTENCIÓN/BLANCO", "AUSENTE"]) assert.ok(tabla.columnas.some((c) => c.clave === k), `${p.id} ${tabla.camara} ${k}`);
+      tabla.filas.forEach((f, n) => {
+        const c = p.temas[n].camaras.find((x) => x.camara === tabla.camara);
+        if (!c) return assert.equal(f.datos, null, `${p.id} ${f.id}: sin votos, sin cifras`);
+        assert.equal(f.datos.votos, c.votos);
+        assert.equal(f.datos.votaciones, c.votaciones);
+        // Cada categoría figura una sola vez en el detalle, con la misma cifra; las columnas suman todos los votos.
+        const detalle = tabla.columnas.flatMap((col) => f.datos.celdas[col.clave].detalle);
+        const conVotos = c.categorias.map((cat, k) => ({ categoria: cat, texto: c.celdas[k].texto, cantidad: c.celdas[k].cantidad })).filter((x) => x.cantidad > 0);
+        assert.deepEqual(new Set(detalle.map((d) => `${d.categoria} ${d.texto}`)), new Set(conVotos.map((d) => `${d.categoria} ${d.texto}`)), `${p.id} ${f.id} ${tabla.camara}`);
+        assert.equal(tabla.columnas.reduce((s, col) => s + f.datos.celdas[col.clave].cantidad, 0), c.votos, `${p.id} ${f.id}: nada queda afuera`);
+      });
+    }
+  }
+});

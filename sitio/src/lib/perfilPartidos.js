@@ -11,8 +11,12 @@
 // - Partido: el que la API registra para el período, no por fecha.
 // - Orden: de más a menos legisladores en ejercicio en el Congreso y, a igualdad, por nombre. Es solo un
 //   orden; ninguna cifra suma cámaras.
+// - Tabla compacta (#99): una tabla por cámara con una fila por tema y una columna por categoría oficial
+//   (SI, NO, ABSTENCIÓN/BLANCO, NO VOTA y AUSENTE), con las mismas celdas de los votos por tema. NO VOTA
+//   solo aparece si el partido tiene alguno en esa cámara. Las mociones y otras opciones van juntas en
+//   una columna «Otras opciones», cuya cifra es su suma y cuyo detalle nombra cada una con su cifra.
 
-import { claseDeCategoria, ordenarCategorias, posicionCamara } from "./ficha.js";
+import { claseDeCategoria, ordenarCategorias, posicionCamara, proporcion } from "./ficha.js";
 import { listado } from "./legisladores.js";
 import { clasePartido, nombreConocido, partidoUnificado, siglaDe } from "./partidos.js";
 import { composicion } from "./portada.js";
@@ -21,13 +25,55 @@ import { votosPorTema } from "./votosPorTema.js";
 
 const porTexto = (a, b) => a.localeCompare(b, "es");
 
+/** Columnas fijas de la tabla compacta; las demás categorías van en OTRAS. */
+export const COLUMNAS_TABLA = ["SI", "NO", "ABSTENCIÓN/BLANCO", "NO VOTA", "AUSENTE"];
+/** Columnas que se muestran aunque el partido no tenga votos en ellas. */
+const SIEMPRE = new Set(["SI", "NO", "ABSTENCIÓN/BLANCO", "AUSENTE"]);
+/** Clave de la columna de mociones y otras opciones. */
+export const OTRAS = "otras";
+
+/**
+ * Tablas compactas de un perfil, una por cámara con votos del partido: { camara, nombre, columnas:
+ * [{ clave, categoria, clase }], filas: [{ id, nombre, url, datos: null | { votaciones, votos, barra,
+ * celdas: { [clave]: { ...proporcion, detalle: [{ categoria, texto }] } } } }] }.
+ */
+function tablasDe(camaras, temas) {
+  return camaras
+    .map((c) => {
+      const filas = temas.map((t) => {
+        const x = t.camaras.find((y) => y.camara === c.camara);
+        if (!x) return { id: t.id, nombre: t.nombre, url: t.url, datos: null };
+        const celdas = {};
+        const otras = [];
+        x.categorias.forEach((cat, n) => {
+          const celda = x.celdas[n];
+          if (COLUMNAS_TABLA.includes(cat)) celdas[cat] = { ...celda, detalle: celda.cantidad ? [{ categoria: cat, texto: celda.texto }] : [] };
+          else if (celda.cantidad) otras.push({ categoria: cat, cantidad: celda.cantidad, texto: celda.texto });
+        });
+        for (const cat of COLUMNAS_TABLA) celdas[cat] ??= { ...proporcion(0, x.votos), detalle: [] };
+        celdas[OTRAS] = { ...proporcion(otras.reduce((n, o) => n + o.cantidad, 0), x.votos), detalle: otras.map(({ categoria, texto }) => ({ categoria, texto })) };
+        return { id: t.id, nombre: t.nombre, url: t.url, datos: { votaciones: x.votaciones, votos: x.votos, barra: x.barra, celdas } };
+      });
+      const conDatos = filas.filter((f) => f.datos);
+      if (!conDatos.length) return null;
+      const usada = (clave) => SIEMPRE.has(clave) || conDatos.some((f) => f.datos.celdas[clave].cantidad > 0);
+      const columnas = [
+        ...COLUMNAS_TABLA.filter((k) => k !== "NO VOTA" && k !== "AUSENTE").filter(usada).map((k) => ({ clave: k, categoria: k, clase: claseDeCategoria(k) })),
+        ...(usada(OTRAS) ? [{ clave: OTRAS, categoria: null, clase: "voto-otro" }] : []),
+        ...["NO VOTA", "AUSENTE"].filter(usada).map((k) => ({ clave: k, categoria: k, clase: claseDeCategoria(k) })),
+      ];
+      return { camara: c.camara, nombre: c.nombre, columnas, filas };
+    })
+    .filter(Boolean);
+}
+
 const porPeriodo = new Map();
 
 /**
  * Perfiles de los partidos de un período:
  * { id, nombre, sigla, nombreConocido, clase, url, textos: [{ camara, texto }], camaras: [{ camara,
  * nombre, legisladores }], legisladores, temas: [{ id, nombre, nombreCorto, url, camaras: [{ camara,
- * votaciones, votos, categorias, celdas, barra }] }], leyenda }.
+ * votaciones, votos, categorias, celdas, barra }] }], tablas (ver tablasDe), leyenda }.
  */
 export function perfilesDePartidos(periodo) {
   if (porPeriodo.has(periodo)) return porPeriodo.get(periodo);
@@ -79,6 +125,7 @@ export function perfilesDePartidos(periodo) {
       camaras,
       legisladores: camaras.reduce((n, c) => n + c.legisladores, 0),
       temas,
+      tablas: tablasDe(camaras, temas),
       leyenda: ordenarCategorias(usadas).map((c) => ({ categoria: c, clase: claseDeCategoria(c) })),
     };
   });
