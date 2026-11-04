@@ -12,7 +12,7 @@
     "queHabriasVotado": "¿Qué habrías votado?",
     "preguntaAnterior": "← Pregunta anterior",
     "tuAfinidadConLosPartidos": "Tu afinidad con los partidos",
-    "coincidenciaConLaPosicionDe": "Coincidencia con la posición de la mayoría de cada partido en esas votaciones, sobre las preguntas que se pudieron comparar. Con menos de {minimo} no se muestra porcentaje. Coincidir no es bueno ni malo. [Cómo se calcula]({url1})",
+    "coincidenciaConLaPosicionDe": "Esto representa la coincidencia con la posición de la mayoría de cada partido en esas votaciones, sobre las preguntas que se pudieron comparar. Con menos de {minimo} no se muestra porcentaje. Coincidir con un determinado partido político no es bueno ni malo. [Ver cómo se calcula]({url1})",
     "tusRespuestasYLasVotaciones": "Tus respuestas y las votaciones",
     "volverAEmpezar": "Volver a empezar"
   }
