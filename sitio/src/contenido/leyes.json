@@ -33,7 +33,7 @@
     "tipoDePromulgacion": "Tipo de promulgación",
     "observacionDelDecreto": "Observación del decreto",
     "notaDelObservatorio": "**Nota del Observatorio.** {valor}",
-    "entreParentesisElNombrePor": "Entre paréntesis, el nombre por el que se conoce a un partido (por ejemplo, «Yo Creo»). Es un agregado de este sitio, y el nombre que va antes es el oficial.",
+    "entreParentesisElNombrePor": "Entre paréntesis, el nombre por el que se conoce a un partido (por ejemplo, \"Yo Creo\"). Es un agregado de este sitio, y el nombre que va antes es el oficial.",
     "enlacesOficiales": "Enlaces oficiales",
     "fichaDeLaLeyEn": "[Ficha de la ley en SILpy]({url1})",
     "expedienteEnSilpy": "[Expediente en SILpy]({url1})",

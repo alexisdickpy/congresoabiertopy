@@ -1,7 +1,7 @@
 {
   "presentacion": {
     "leyesSancionadasPorElCongreso": "Leyes sancionadas por el Congreso Nacional del Paraguay en el período legislativo {id}, con datos abiertos.",
-    "queVotaElCongresoDel": "Qué vota el Congreso del Paraguay",
+    "queVotaElCongresoDel": "¿Cómo vota el Congreso en Paraguay?",
     "leyesSancionadasPorElCongreso2": "Leyes sancionadas por el Congreso Nacional del Paraguay en el período legislativo {id}, a partir de los datos abiertos que publica el propio Congreso.",
     "seccionesDelSitio": "Secciones del sitio",
     "verLasLeyesDelPeriodo": "[Ver las {cantidad} leyes del período]({url1})",
@@ -9,10 +9,10 @@
     "verElMapaDeDiputados": "[Ver el mapa de diputados por departamento]({url1})",
     "buscarUnaLey": "[Buscar una ley]({url1})",
     "descargarLosDatosAbiertos": "[Descargar los datos abiertos]({url1})",
-    "preguntasSobreLeyesVotadasEn": "{preguntas} preguntas sobre leyes votadas en el período. Al final ves cuánto coinciden tus respuestas con lo que votó cada partido.",
+    "preguntasSobreLeyesVotadasEn": "{preguntas} preguntas sobre leyes votadas en el período. ¿Con que partido político coincides más?  Al final ves cuánto coinciden tus respuestas con lo que votó cada partido.",
     "hacerElTest": "Hacer el test",
     "avisosPorTelegram": "Avisos por Telegram",
-    "unBotTeAvisaDe": "Un bot te avisa de las novedades del Congreso. Eliges qué avisos recibir y te das de baja cuando quieras con el comando /baja.",
+    "unBotTeAvisaDe": "Un bot te avisa de las novedades del Congreso. Eliges qué avisos recibir y te das de baja cuando quieras.",
     "abrirElBot": "Abrir el bot",
     "diputadosPorDepartamento": "Diputados por departamento",
     "diputadosEnEjercicioElegiUn": "{total} diputados en ejercicio. Elegí un departamento para ver quiénes son, o mirá el [mapa con la lista completa]({url1})."
@@ -32,13 +32,13 @@
     "composicionActual": "Composición actual",
     "elegirCamara": "Elegir cámara",
     "laListaOficialMarcaA": "La lista oficial marca a {total} como vigentes y la cámara tiene {bancas} bancas. Se muestra tal como se publica.",
-    "unPuntoPorBancaAgrupados": "Un punto por banca, agrupados por partido, sin los senadores vitalicios. No es la ubicación real de las bancas."
+    "unPuntoPorBancaAgrupados": "Un punto por banca, agrupados por partido, sin los senadores vitalicios."
   },
   "ultimaVotacion": {
     "ultimaVotacionNominal": "Última votación nominal ·",
     "expediente": "· Expediente",
     "ley": "Ley {numero}",
-    "unPuntoPorLegisladorAgrupados": "Un punto por legislador, agrupados por voto. No es la ubicación real de las bancas.",
+    "unPuntoPorLegisladorAgrupados": "Un punto por legislador, agrupados por voto.",
     "notaDelObservatorio": "Nota del Observatorio.",
     "losTotalesPublicadosNoCoinciden": "Los totales publicados no coinciden con el recuento de los votos individuales (",
     "votoDeCadaPartidoEn": "Voto de cada partido en esta votación",
