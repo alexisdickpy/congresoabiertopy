@@ -32,6 +32,13 @@ const pagina = (url) => join(dist, decodeURIComponent(url), "index.html");
 const leer = (url) => readFileSync(pagina(url), "utf-8");
 /** HTML con los espacios y saltos de línea seguidos reducidos a uno (compressHTML está desactivado). */
 const texto = (url) => leer(url).replace(/\s+/g, " ");
+/** Comillas y «&» tal como se leen en la página (el HTML las escribe como &quot;, &#39; o &amp;). */
+const decodificar = (t) => t.replaceAll("&quot;", '"').replaceAll("&#34;", '"').replaceAll("&#39;", "'").replaceAll("&amp;", "&");
+/** Sin los apodos «rebeldes» y «ausentes» de los títulos, escritos con comillas angulares, rectas o tipográficas. */
+const sinApodos = (t) => t.replace(/[«"“'‘]\s*(rebeldes|ausentes)\s*[»"”'’]/gi, " ");
+/** Todos los textos de un archivo de contenido, también los anidados. */
+const todosLosTextos = (valor) =>
+  typeof valor === "string" ? [valor] : valor && typeof valor === "object" ? Object.values(valor).flatMap(todosLosTextos) : [];
 
 test("una ficha por número de ley", () => {
   for (const ley of leyes()) assert.ok(existsSync(pagina(ley.url)), `Falta la ficha ${ley.url}`);
@@ -302,8 +309,8 @@ test("rankings, más «rebeldes»: cifras con su denominador, enlaces, fotos, m�
   // El orden de las filas en la página es el del cuadro.
   const orden = [...html.matchAll(/<li data-votos-distintos="([^"]+)"/g)].map((m) => m[1]);
   assert.deepEqual(orden, camaras.flatMap((c) => c.filas.map((f) => f.slug)));
-  // «rebeldes» y «ausentes» solo entre comillas, como apodos en los títulos.
-  const visible = completa.replace(/<header[\s\S]*?<\/header>/, " ").replace(/<(script|style)[\s\S]*?<\/\1>/g, " ").replace(/<[^>]+>/g, " ").replaceAll("«rebeldes»", " ").replaceAll("«ausentes»", " ");
+  // «rebeldes» y «ausentes» solo entre comillas (angulares, rectas o tipográficas), como apodos en los títulos.
+  const visible = sinApodos(decodificar(completa.replace(/<header[\s\S]*?<\/header>/, " ").replace(/<(script|style)[\s\S]*?<\/\1>/g, " ").replace(/<[^>]+>/g, " ")));
   const calificativo = visible.match(/.{0,30}\b(mejor|peor|ranking|puesto|campe[oó]n|rebelde|d[ií]scolo|traici[oó]n|leal|vago|falt[oó]n)\b.{0,20}/i);
   assert.ok(!calificativo, `«${calificativo?.[0]}»`);
   const ausentes = visible.match(/.{0,30}\bausentes\b.{0,20}/);
@@ -518,16 +525,33 @@ test("ningún texto propio presenta AUSENTE como asistencia, faltas o inasistenc
   // pueden tratar de asistencia social y se muestran sin cambios). La firma dice «con asistencia de
   // IA», el único uso permitido de la palabra.
   const prohibidas = /inasistencia|asistencia(?! de IA)|\bfalta|\bfaltó|días ausente/i;
+  // Se permiten las aclaraciones de los rankings que niegan esa lectura: frases entre paréntesis con un «no»,
+  // como «(…, por lo cual el listado no implica necesariamente que son los legisladores que más faltaron a
+  // sesiones)». Se toman de los textos editables, no se copian acá.
+  const unEspacio = (t) => t.replace(/\s+/g, " ");
+  const aclaraciones = [...new Set(todosLosTextos(textos.rankings).flatMap((t) => unEspacio(t).match(/\([^()]*\bno\b[^()]*\)/gi) ?? []))];
   const urls = [rutas.inicio(), rutas.metodologia(), rutas.legisladores(), rutas.votacionesNominales(), rutas.coincidencia(), rutas.partidos(), rutas.rankings(), ...paginasDeVotaciones(), ...algunasVotaciones(), ...legisladores().map((p) => p.url)];
   for (const url of urls) {
-    const visible = leer(url)
-      .replace(/<(script|style)[\s\S]*?<\/\1>/g, " ")
-      .replace(/<table[\s\S]*?<\/table>/g, " ")
-      .replace(/<span class="titulo[^>]*>[^<]*<\/span>/g, " ")
-      .replace(/<[^>]+>/g, " ")
-      .replaceAll(textos.general.pie.desarrolladoPorAlexisDickCon, " ");
+    let visible = unEspacio(
+      decodificar(
+        leer(url)
+          .replace(/<(script|style)[\s\S]*?<\/\1>/g, " ")
+          .replace(/<table[\s\S]*?<\/table>/g, " ")
+          .replace(/<span class="titulo[^>]*>[^<]*<\/span>/g, " ")
+          .replace(/<[^>]+>/g, " "),
+      ),
+    ).replaceAll(textos.general.pie.desarrolladoPorAlexisDickCon, " ");
+    for (const aclaracion of aclaraciones) visible = visible.replaceAll(aclaracion, " ");
     const encontrado = visible.match(new RegExp(`.{0,30}(${prohibidas.source}).{0,20}`, "i"));
     assert.ok(!encontrado, `En ${url}, «${encontrado?.[0]}»`);
+  }
+});
+
+test("ninguna página tiene enlaces vacíos, por ejemplo por un texto editable borrado", () => {
+  const paginas = readdirSync(dist, { recursive: true }).filter((a) => String(a).endsWith(".html"));
+  for (const archivo of paginas) {
+    const vacio = readFileSync(join(dist, String(archivo)), "utf-8").match(/<a\b[^>]*>\s*<\/a>/);
+    assert.ok(!vacio, `${archivo}: ${vacio?.[0]}`);
   }
 });
 

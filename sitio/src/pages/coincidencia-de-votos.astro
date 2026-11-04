@@ -61,7 +61,8 @@ const secciones = [
     </ul>
     <p class="chico texto-suave">
       {tx.cadaVotacionEsDeUna}
-      <a href={rutas.metodologia(rutas.anclasMetodologia.partidoUnificado)}>{tx.partidoUnificado}</a>{tx.quePermitePonerLadoA} 
+      {/* Texto opcional: si se borra en Pages CMS, no queda un enlace vacío. */}
+      {tx.partidoUnificado && <a href={rutas.metodologia(rutas.anclasMetodologia.partidoUnificado)}>{tx.partidoUnificado}</a>}{tx.quePermitePonerLadoA}
       <a href={rutas.metodologia(rutas.anclasMetodologia.coincidencia)}>{tx.comoSeCalculaLaCoincidencia}</a>
       {" · "}
       <a href={rutas.archivoCalculado(periodo, NOMBRE_COINCIDENCIA, "csv")} download>{txc.descargarLaTablaCsv}</a>
