@@ -44858,5 +44858,238 @@
       "urgencia": "ORDINARIO"
     },
     "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-10-26",
+      "fechaPublicacion": "2026-10-28",
+      "fechaSancion": "2026-09-22",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [
+        109336
+      ],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7726",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146813",
+    "fechaPromulgacion": "26/10/2026",
+    "fechaPublicacion": "28/10/2026",
+    "fechaSancion": "22/09/2026",
+    "idLey": 146813,
+    "numeroLey": "7726",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-08-12"
+      },
+      "acapite": "Proyecto de Ley “QUE DECLARA EL 31 DE OCTUBRE COMO DÍA NACIONAL DE LA IGLESIA EVANGÉLICA EN LA REPÚBLICA DEL PARAGUAY”, presentado por los senadores Regina Lizarella Valiente de Rodríguez, Orlando Penner Dürksen, Blanca Margarita Ovelar de Duarte y Gustavo Alfredo Leite Gusinky, de fecha 12 de agosto de 2026.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/157712",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146813",
+          "idAdjunto": 146813,
+          "idProyecto": 157712,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-199403",
+          "idAdjunto": 199403,
+          "idProyecto": 157712,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "ANTECEDENTE",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-199511",
+          "idAdjunto": 199511,
+          "idProyecto": 157712,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-500066",
+          "idAdjunto": 500066,
+          "idProyecto": 157712,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-500067",
+          "idAdjunto": 500067,
+          "idProyecto": 157712,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "S-2603870",
+      "fechaIngresoExpediente": "12/08/2026",
+      "idProyecto": 157712,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-10-26",
+      "fechaPublicacion": "2026-10-28",
+      "fechaSancion": "2026-09-09",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [
+        108775
+      ],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7721",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146823",
+    "fechaPromulgacion": "26/10/2026",
+    "fechaPublicacion": "28/10/2026",
+    "fechaSancion": "09/09/2026",
+    "idLey": 146823,
+    "numeroLey": "7721",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2025-12-16"
+      },
+      "acapite": "QUE MODIFICA EL ARTÍCULO 3º DE LA LEY Nº 426 DE FECHA 7 DE DICIEMBRE DE 1.973 “QUE ESTABLECE LA DIVISIÓN POLÍTICA DEL TERRITORIO DE LA REPÚBLICA”, EN CUANTO SE RELACIONA A LOS LÍMITES DE LOS DEPARTAMENTOS DE MISIONES Y ÑEEMBUCÚ, ESTABLECIENDO ADEMÁS LÍMITES DEFINITIVOS ENTRE LOS DISTRITOS DE YABEBYRY, CERRITO Y LAURELES, presentado por los Diputados Nacionales Fabiana Souto, Arnaldo Valdez, Diosnel Aguilera y Carlos Arrechea. ",
+      "appURL": "https://silpy.congreso.gov.py/expediente/151764",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146823",
+          "idAdjunto": 146823,
+          "idProyecto": 151764,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-190347",
+          "idAdjunto": 190347,
+          "idProyecto": 151764,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-191641",
+          "idAdjunto": 191641,
+          "idProyecto": 151764,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-191651",
+          "idAdjunto": 191651,
+          "idProyecto": 151764,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-500039",
+          "idAdjunto": 500039,
+          "idProyecto": 151764,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "D-2591320",
+      "fechaIngresoExpediente": "16/12/2025",
+      "idProyecto": 151764,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-10-26",
+      "fechaPublicacion": "2026-10-28",
+      "fechaSancion": "2026-09-09",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [
+        108576
+      ],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7723",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146824",
+    "fechaPromulgacion": "26/10/2026",
+    "fechaPublicacion": "28/10/2026",
+    "fechaSancion": "09/09/2026",
+    "idLey": 146824,
+    "numeroLey": "7723",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-05-05"
+      },
+      "acapite": "QUE DESAFECTA DEL DOMINIO PÚBLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD  DE AREGUÁ A TRASFERIR A TÍTULO GRATUITO  A FAVOR DEL MINISTERIO DE EDUCACIÓN Y CIENCIAS - (MEC), UN INMUEBLE INDIVIDUALIZADO COMO FINCA Nº 8614 CON CTA. CTE. CRAL Nº 27-2941-03 UBICADO EN LA COMPAÑIA COCUE GUAZU DE ESTE  DISTRITO , DONDE SE ASIENTA UNA INSTITUCIÓN EDUCATIVA, presentado por el Diputado Nacional  Néstor Castellano",
+      "appURL": "https://silpy.congreso.gov.py/expediente/154293",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146824",
+          "idAdjunto": 146824,
+          "idProyecto": 154293,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-194355",
+          "idAdjunto": 194355,
+          "idProyecto": 154293,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-499986",
+          "idAdjunto": 499986,
+          "idProyecto": 154293,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "D-2693018",
+      "fechaIngresoExpediente": "05/05/2026",
+      "idProyecto": 154293,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
   }
 ]

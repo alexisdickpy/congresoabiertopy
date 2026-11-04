@@ -6,7 +6,7 @@
 
 | Período | Datos actualizados por última vez |
 |---|---|
-| 2023-2028 | 2026-11-03T15:21:49Z |
+| 2023-2028 | 2026-11-04T15:34:08Z |
 
 La última comprobación de la fuente (aunque no haya cambios) figura en [`estado.json`](estado.json).
 
@@ -20,7 +20,7 @@ Describe cada campo de los archivos de `datos/`. El mismo nombre sirve para el J
 
 Un registro por ley sancionada en el período, con su proyecto, ministerios y archivos adjuntos.
 
-Se publica en `fuente/{período}/leyes.json` y `fuente/{período}/leyes.csv`, con 556 registros en total.
+Se publica en `fuente/{período}/leyes.json` y `fuente/{período}/leyes.csv`, con 559 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|
@@ -66,7 +66,7 @@ Se publica en `fuente/{período}/leyes.json` y `fuente/{período}/leyes.csv`, co
 
 Un registro por trámite del proyecto de cada ley.
 
-Se publica en `fuente/{período}/tramitaciones.json` y `fuente/{período}/tramitaciones.csv`, con 13601 registros en total.
+Se publica en `fuente/{período}/tramitaciones.json` y `fuente/{período}/tramitaciones.csv`, con 13642 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|
@@ -101,7 +101,7 @@ Se publica en `fuente/{período}/tramitaciones.json` y `fuente/{período}/tramit
 
 Un registro por votación nominal del período, sin los votos individuales (están en `votos`).
 
-Se publica en `fuente/{período}/votaciones.json` y `fuente/{período}/votaciones.csv`, con 1165 registros en total.
+Se publica en `fuente/{período}/votaciones.json` y `fuente/{período}/votaciones.csv`, con 1166 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|
@@ -163,7 +163,7 @@ Se publica en `fuente/{período}/votaciones.json` y `fuente/{período}/votacione
 
 Un voto individual por fila.
 
-Se publica en `fuente/{período}/votos.csv`, con 82680 registros en total.
+Se publica en `fuente/{período}/votos.csv`, con 82725 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|
@@ -178,7 +178,7 @@ Se publica en `fuente/{período}/votos.csv`, con 82680 registros en total.
 
 Un registro por legislador del período, vigente o no. Es la única tabla con el correo y el teléfono que la API publica para cada legislador.
 
-Se publica en `fuente/{período}/legisladores.json` y `fuente/{período}/legisladores.csv`, con 143 registros en total.
+Se publica en `fuente/{período}/legisladores.json` y `fuente/{período}/legisladores.csv`, con 144 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|
@@ -205,7 +205,7 @@ Se publica en `fuente/{período}/legisladores.json` y `fuente/{período}/legisla
 
 Un registro por autor de cada proyecto con ley y de cada proyecto de ley con votaciones en el período, en el orden que publica la API. El autor puede ser legislador de otra legislatura.
 
-Se publica en `fuente/{período}/autores.json` y `fuente/{período}/autores.csv`, con 2182 registros en total.
+Se publica en `fuente/{período}/autores.json` y `fuente/{período}/autores.csv`, con 2199 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|

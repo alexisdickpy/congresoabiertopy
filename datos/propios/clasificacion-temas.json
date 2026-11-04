@@ -11623,6 +11623,13 @@
           "tema": "trabajo"
         }
       ]
+    },
+    {
+      "idProyecto": 160291,
+      "pendiente": true,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": []
     }
   ]
 }

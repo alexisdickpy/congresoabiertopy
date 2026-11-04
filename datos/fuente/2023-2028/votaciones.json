@@ -80395,8 +80395,10 @@
   {
     "_propio": {
       "cantidadVotos": 80,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146824
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -80414,9 +80416,9 @@
       },
       "acapite": "QUE DESAFECTA DEL DOMINIO PÚBLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD  DE AREGUÁ A TRASFERIR A TÍTULO GRATUITO  A FAVOR DEL MINISTERIO DE EDUCACIÓN Y CIENCIAS - (MEC), UN INMUEBLE INDIVIDUALIZADO COMO FINCA Nº 8614 CON CTA. CTE. CRAL Nº 27-2941-03 UBICADO EN LA COMPAÑIA COCUE GUAZU DE ESTE  DISTRITO , DONDE SE ASIENTA UNA INSTITUCIÓN EDUCATIVA, presentado por el Diputado Nacional  Néstor Castellano",
       "appURL": "https://silpy.congreso.gov.py/expediente/154293",
-      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "D-2693018",
       "fechaIngresoExpediente": "05/05/2026",
       "idProyecto": 154293,
@@ -83808,8 +83810,10 @@
   {
     "_propio": {
       "cantidadVotos": 80,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146823
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -83827,9 +83831,9 @@
       },
       "acapite": "QUE MODIFICA EL ARTÍCULO 3º DE LA LEY Nº 426 DE FECHA 7 DE DICIEMBRE DE 1.973 “QUE ESTABLECE LA DIVISIÓN POLÍTICA DEL TERRITORIO DE LA REPÚBLICA”, EN CUANTO SE RELACIONA A LOS LÍMITES DE LOS DEPARTAMENTOS DE MISIONES Y ÑEEMBUCÚ, ESTABLECIENDO ADEMÁS LÍMITES DEFINITIVOS ENTRE LOS DISTRITOS DE YABEBYRY, CERRITO Y LAURELES, presentado por los Diputados Nacionales Fabiana Souto, Arnaldo Valdez, Diosnel Aguilera y Carlos Arrechea. ",
       "appURL": "https://silpy.congreso.gov.py/expediente/151764",
-      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "D-2591320",
       "fechaIngresoExpediente": "16/12/2025",
       "idProyecto": 151764,
@@ -90299,8 +90303,10 @@
   {
     "_propio": {
       "cantidadVotos": 80,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146813
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -90319,9 +90325,9 @@
       },
       "acapite": "Proyecto de Ley “QUE DECLARA EL 31 DE OCTUBRE COMO DÍA NACIONAL DE LA IGLESIA EVANGÉLICA EN LA REPÚBLICA DEL PARAGUAY”, presentado por los senadores Regina Lizarella Valiente de Rodríguez, Orlando Penner Dürksen, Blanca Margarita Ovelar de Duarte y Gustavo Alfredo Leite Gusinky, de fecha 12 de agosto de 2026.",
       "appURL": "https://silpy.congreso.gov.py/expediente/157712",
-      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "S-2603870",
       "fechaIngresoExpediente": "12/08/2026",
       "idProyecto": 157712,
@@ -90910,6 +90916,83 @@
       "idTramitacion": 441347,
       "numeroSesion": "187",
       "resultadoTramite": "SE RATIFICA"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 45,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "AUSENTE": 9,
+        "NO": 1,
+        "SI": 35
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109405",
+    "descripcion": "La Presidencia somete a votación electrónica el proyecto de Ley en general.",
+    "idVotacion": 109405,
+    "observacion": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-11-03"
+      },
+      "acapite": "Proyecto de Ley “QUE AMPLÍA LA LEY 2334/03 ‘DE GARANTÍAS DE DEPÓSITO Y RESOLUCIÓN DE ENTIDADES DE INTERMEDIACIÓN FINANCIERA SUJETAS A LA LEY GENERAL DE BANCOS, FINANCIERAS Y OTRAS ENTIDADES DE CRÉDITOS’, Y ESTABLECE EL ANTICIPO DE LA GARANTÍA DE DEPÓSITO”, presentado por los senadores Gustavo Basilio Núñez Giménez, Natalicio Esteban Chase Acosta, Antonio Carlos Barrios Fernández, Ramón Catalino Retamozo Delgado, Rafael Augusto Filizzola Serra, Celeste Josefina Amarilla Vda. de Boccia, Derlis Hernán Maidana Zarza, Regina Lizarella Valiente de Rodríguez, Dionisio Oswaldo Amarilla Guirland, Eduardo Hirohito Nakayama Rojas, Lourdes Noelia Cabrera Petters, Hermelinda Alvarenga de Ortega, Juan Carlos Luis Galaverna Ortega, Orlando Penner Dürksen, Edgar Idalino López Ruíz,  Ernesto Javier Zacarías Irún y Silvio Adalberto Ovelar Benítez de fecha 3 de noviembre de 2026.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/160291",
+      "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "S-2604225",
+      "fechaIngresoExpediente": "03/11/2026",
+      "idProyecto": 160291,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 0,
+    "totalAusente": 9,
+    "totalNO": 1,
+    "totalNoVota": 0,
+    "totalSI": 35,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-03"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "03/11/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-11-03"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112732",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "03/11/2026",
+        "horaFin": "00:00",
+        "horaInicio": "14:40",
+        "idSesion": 112732,
+        "numeroSesion": "191",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 444184,
+      "numeroSesion": "191",
+      "resultadoTramite": "APROBADO CON MODIFICACIONES"
     }
   }
 ]

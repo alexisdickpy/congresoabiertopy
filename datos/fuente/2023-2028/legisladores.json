@@ -597,9 +597,9 @@
     "_propio": {
       "fuenteRegistro": "legislador?idCamara=A",
       "slug": "zenaida-concepcion-delgado-benitez",
-      "vigente": true
+      "vigente": false
     },
-    "activo": true,
+    "activo": false,
     "apellidos": "Delgado Benítez",
     "appURL": "https://silpy.congreso.gov.py/legislador/101366",
     "bancada": "ASOCIACIÓN NACIONAL REPUBLICANA PARTIDO COLORADO (ANR) - \"A\"",
@@ -3141,6 +3141,28 @@
     "idLegislador": 101614,
     "nombres": "Carlos Augusto",
     "partidoPolitico": "Asociación Nacional Republicana ANR",
+    "periodoLegislativo": "2023-2028",
+    "telefonoParlamentario": "",
+    "tipoParlamentario": "SUPLENTE"
+  },
+  {
+    "_propio": {
+      "fuenteRegistro": "legislador?idCamara=A",
+      "slug": "faisal-ale-huespe-cibils",
+      "vigente": true
+    },
+    "activo": true,
+    "apellidos": "Huespe Cibils",
+    "appURL": "https://silpy.congreso.gov.py/legislador/101624",
+    "bancada": "CRUZADA NACIONAL",
+    "camaraParlamentario": "CAMARA DE SENADORES",
+    "cargoBancada": "MIEMBRO",
+    "departamento": "NACIONAL",
+    "emailParlamentario": "",
+    "fotoURL": "https://silpy.congreso.gov.py/images/101624.jpg",
+    "idLegislador": 101624,
+    "nombres": "Faisal Ale",
+    "partidoPolitico": "Partido Cruzada Nacional",
     "periodoLegislativo": "2023-2028",
     "telefonoParlamentario": "",
     "tipoParlamentario": "SUPLENTE"

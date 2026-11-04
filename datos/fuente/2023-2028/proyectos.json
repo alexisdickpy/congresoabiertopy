@@ -16735,7 +16735,7 @@
     },
     "acapite": "QUE MODIFICA EL ARTÍCULO 3º DE LA LEY Nº 426 DE FECHA 7 DE DICIEMBRE DE 1.973 “QUE ESTABLECE LA DIVISIÓN POLÍTICA DEL TERRITORIO DE LA REPÚBLICA”, EN CUANTO SE RELACIONA A LOS LÍMITES DE LOS DEPARTAMENTOS DE MISIONES Y ÑEEMBUCÚ, ESTABLECIENDO ADEMÁS LÍMITES DEFINITIVOS ENTRE LOS DISTRITOS DE YABEBYRY, CERRITO Y LAURELES, presentado por los Diputados Nacionales Fabiana Souto, Arnaldo Valdez, Diosnel Aguilera y Carlos Arrechea. ",
     "appURL": "https://silpy.congreso.gov.py/expediente/151764",
-    "estadoProyecto": "EN TRAMITE",
+    "estadoProyecto": "PUBLICADO",
     "expedienteCamara": "D-2591320",
     "fechaIngresoExpediente": "16/12/2025",
     "idProyecto": 151764,
@@ -18667,7 +18667,7 @@
     },
     "acapite": "QUE DESAFECTA DEL DOMINIO PÚBLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD  DE AREGUÁ A TRASFERIR A TÍTULO GRATUITO  A FAVOR DEL MINISTERIO DE EDUCACIÓN Y CIENCIAS - (MEC), UN INMUEBLE INDIVIDUALIZADO COMO FINCA Nº 8614 CON CTA. CTE. CRAL Nº 27-2941-03 UBICADO EN LA COMPAÑIA COCUE GUAZU DE ESTE  DISTRITO , DONDE SE ASIENTA UNA INSTITUCIÓN EDUCATIVA, presentado por el Diputado Nacional  Néstor Castellano",
     "appURL": "https://silpy.congreso.gov.py/expediente/154293",
-    "estadoProyecto": "EN TRAMITE",
+    "estadoProyecto": "PUBLICADO",
     "expedienteCamara": "D-2693018",
     "fechaIngresoExpediente": "05/05/2026",
     "idProyecto": 154293,
@@ -20543,7 +20543,7 @@
     },
     "acapite": "Proyecto de Ley “QUE DECLARA EL 31 DE OCTUBRE COMO DÍA NACIONAL DE LA IGLESIA EVANGÉLICA EN LA REPÚBLICA DEL PARAGUAY”, presentado por los senadores Regina Lizarella Valiente de Rodríguez, Orlando Penner Dürksen, Blanca Margarita Ovelar de Duarte y Gustavo Alfredo Leite Gusinky, de fecha 12 de agosto de 2026.",
     "appURL": "https://silpy.congreso.gov.py/expediente/157712",
-    "estadoProyecto": "EN TRAMITE",
+    "estadoProyecto": "PUBLICADO",
     "expedienteCamara": "S-2603870",
     "fechaIngresoExpediente": "12/08/2026",
     "idProyecto": 157712,
@@ -21963,6 +21963,76 @@
     "idProyecto": 160272,
     "iniciativa": "PARLAMENTARIA",
     "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-03"
+    },
+    "acapite": "Proyecto de Ley “QUE AMPLÍA LA LEY 2334/03 ‘DE GARANTÍAS DE DEPÓSITO Y RESOLUCIÓN DE ENTIDADES DE INTERMEDIACIÓN FINANCIERA SUJETAS A LA LEY GENERAL DE BANCOS, FINANCIERAS Y OTRAS ENTIDADES DE CRÉDITOS’, Y ESTABLECE EL ANTICIPO DE LA GARANTÍA DE DEPÓSITO”, presentado por los senadores Gustavo Basilio Núñez Giménez, Natalicio Esteban Chase Acosta, Antonio Carlos Barrios Fernández, Ramón Catalino Retamozo Delgado, Rafael Augusto Filizzola Serra, Celeste Josefina Amarilla Vda. de Boccia, Derlis Hernán Maidana Zarza, Regina Lizarella Valiente de Rodríguez, Dionisio Oswaldo Amarilla Guirland, Eduardo Hirohito Nakayama Rojas, Lourdes Noelia Cabrera Petters, Hermelinda Alvarenga de Ortega, Juan Carlos Luis Galaverna Ortega, Orlando Penner Dürksen, Edgar Idalino López Ruíz,  Ernesto Javier Zacarías Irún y Silvio Adalberto Ovelar Benítez de fecha 3 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160291",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604225",
+    "fechaIngresoExpediente": "03/11/2026",
+    "idProyecto": 160291,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-03"
+    },
+    "acapite": "Proyecto de Ley “QUE ESTABLECE LA AMPLIACIÓN DE LA GARANTÍA DE DEPÓSITOS BANCARIOS DEL FONDO DE GARANTÍA DE DEPÓSITOS (FGD) PARA LA COBERTURA DE LA TOTALIDAD DE LOS FONDOS PÚBLICOS DEPOSITADOS EN LA ENTIDAD BANCARIA DENOMINADA ‘UENO BANK”, presentado por los senadores Gustavo Basilio Gustavo Núñez Giménez, Rafael Augusto Filizzola Serra, Hermelinda Alvarenga de Ortega, Ramón Catalino Retamozo Delgado, Juan Carlos Luis Galaverna Ortega, Silvio Adalberto Ovelar Benítez, Dionisio Oswaldo Amarilla Guirland, Lourdes Noelia Cabrera Petters, Eduardo Hirohito Nakayama Rojas, Edgar Idalino López Ruíz y Natalicio Esteban Chase Acosta  de fecha 3 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160301",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604226",
+    "fechaIngresoExpediente": "03/11/2026",
+    "idProyecto": 160301,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-10-29"
+    },
+    "acapite": "Proyecto de Ley “QUE DECLARA DE INTERÉS SOCIAL Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE URBANISMO, VIVIENDA Y HÁBITAT, EL INMUEBLE INDIVIDUALIZADO COMO FINCA N° 290, PADRÓN N°. 240, PARA SU POSTERIOR TRANSFERENCIA A TÍTULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES DEL ‘TERRITORIO SOCIAL GUADALUPE’, UBICADOS EN EL LUGAR DENOMINADO BARRIO YBYSUNÚ, DISTRITO DE GUARAMBARÉ, DEPARTAMENTO CENTRAL”, presentado por el senador José Gregorio Ledesma Narváez, de fecha 29 de octubre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160331",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604222",
+    "fechaIngresoExpediente": "29/10/2026",
+    "idProyecto": 160331,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-03"
+    },
+    "acapite": "Proyecto de Ley “QUE REGULA EL EJERCICIO PROFESIONAL DEL ECONOMISTA”, presentado por la senadora Ramona Yolanda Paredes, de fecha 29 de octubre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160332",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604223",
+    "fechaIngresoExpediente": "03/11/2026",
+    "idProyecto": 160332,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-03"
+    },
+    "acapite": "Proyecto de Ley “DEL DERECHO DE ACCESO DEL PACIENTE A SU HISTORIA CLÍNICA”, presentado por el senador Derlis Ariel Alejandro Osorio Nunes, de fecha 3 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160341",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604224",
+    "fechaIngresoExpediente": "03/11/2026",
+    "idProyecto": 160341,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
     "tipoProyecto": "PROYECTO DE LEY"
   }
 ]

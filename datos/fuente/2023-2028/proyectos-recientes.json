@@ -1,42 +1,6 @@
 [
   {
     "_propio": {
-      "autores": "Gustavo Alfredo Leite Gusinky, Antonio Carlos Barrios Fernández, Orlando Penner Dürksen",
-      "fechaIngreso": "2026-08-05"
-    },
-    "acapite": "Proyecto de Ley “QUE AUTORIZA LA TRANSFERENCIA DE CRÉDITOS PRESUPUESTARIOS DE ORGANISMOS Y ENTIDADES DEL ESTADO DE LA ADMINISTRACIÓN CENTRAL A FAVOR DEL MINISTERIO DE SALUD PÚBLICA Y BIENESTAR SOCIAL PARA LA ADQUISICIÓN DE MEDICAMENTOS Y ESTABLECE MEDIDAS EXCEPCIONALES PARA SU EJECUCIÓN”, presentado por los senadores Gustavo Alfredo Leite Gusinky, Antonio Carlos Barrios Fernández y Orlando Penner Dürksen, de fecha 5 de agosto de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157390",
-    "autores": [
-      {
-        "apellidos": "Leite Gusinky",
-        "idLegislador": 101382,
-        "nombres": "Gustavo Alfredo"
-      },
-      {
-        "apellidos": "Barrios Fernández",
-        "idLegislador": 101475,
-        "nombres": "Antonio Carlos"
-      },
-      {
-        "apellidos": "Penner Dürksen",
-        "idLegislador": 101372,
-        "nombres": "Orlando"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603832",
-    "fechaIngresoExpediente": "05/08/2026",
-    "idProyecto": 157390,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
       "autores": "José Gregorio Ledesma Narváez",
       "fechaIngreso": "2026-08-06"
     },
@@ -58,32 +22,6 @@
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "JUAN RAMÓN MACIEL MERLO",
-      "fechaIngreso": "2026-08-05"
-    },
-    "acapite": "QUE REGULA LA COMERCIALIZACIÓN Y EL USO DE DISPOSITIVOS DE DIAGNÓSTICO IN VITRO POINT OF CARE (PoC) EN LA REPÚBLICA DEL PARAGUAY, presentado por el Diputado Nacional Juan Ramón Maciel",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157421",
-    "autores": [
-      {
-        "apellidos": "MACIEL MERLO",
-        "idLegislador": 101461,
-        "nombres": "JUAN RAMÓN"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694676",
-    "fechaIngresoExpediente": "05/08/2026",
-    "idProyecto": 157421,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
     "tipoProyecto": "PROYECTO DE LEY",
     "urgencia": "ORDINARIO"
   },
@@ -652,9 +590,9 @@
         "nombres": "Regina Lizarella"
       }
     ],
-    "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-    "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-    "estadoProyecto": "EN TRAMITE",
+    "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+    "descripcionSubEtapa": "/",
+    "estadoProyecto": "PUBLICADO",
     "expedienteCamara": "S-2603870",
     "fechaIngresoExpediente": "12/08/2026",
     "idProyecto": 157712,
@@ -2700,7 +2638,7 @@
     "appURL": "https://silpy.congreso.gov.py/expediente/159371",
     "autores": [],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "S-2604119",
     "fechaIngresoExpediente": "05/10/2026",
@@ -3385,7 +3323,7 @@
     "appURL": "https://silpy.congreso.gov.py/expediente/159951",
     "autores": [],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "S-2604187",
     "fechaIngresoExpediente": "16/10/2026",
@@ -3956,6 +3894,266 @@
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Natalicio Esteban Chase Acosta, Rafael Augusto Filizzola Serra, Basilio Gustavo Núñez Giménez, Ernesto Javier Zacarías Irún, Celeste Josefina Amarilla Vda. de Boccia, Lourdes Noelia Cabrera Petters, Orlando Penner Dürksen, Silvio Adalberto Ovelar Benítez, Antonio Carlos Barrios Fernández, Ramón Catalino Retamozo Delgado, Derlis Hernán Maidana Zarza, Regina Lizarella Valiente de Rodríguez, Dionisio Oswaldo Amarilla Guirland, Eduardo Hirohito Nakayama Rojas, Hermelinda Alvarenga de Ortega, Juan Carlos Luis Galaverna Ortega, Edgar Idalino López Ruíz",
+      "fechaIngreso": "2026-11-03"
+    },
+    "acapite": "Proyecto de Ley “QUE AMPLÍA LA LEY 2334/03 ‘DE GARANTÍAS DE DEPÓSITO Y RESOLUCIÓN DE ENTIDADES DE INTERMEDIACIÓN FINANCIERA SUJETAS A LA LEY GENERAL DE BANCOS, FINANCIERAS Y OTRAS ENTIDADES DE CRÉDITOS’, Y ESTABLECE EL ANTICIPO DE LA GARANTÍA DE DEPÓSITO”, presentado por los senadores Gustavo Basilio Núñez Giménez, Natalicio Esteban Chase Acosta, Antonio Carlos Barrios Fernández, Ramón Catalino Retamozo Delgado, Rafael Augusto Filizzola Serra, Celeste Josefina Amarilla Vda. de Boccia, Derlis Hernán Maidana Zarza, Regina Lizarella Valiente de Rodríguez, Dionisio Oswaldo Amarilla Guirland, Eduardo Hirohito Nakayama Rojas, Lourdes Noelia Cabrera Petters, Hermelinda Alvarenga de Ortega, Juan Carlos Luis Galaverna Ortega, Orlando Penner Dürksen, Edgar Idalino López Ruíz,  Ernesto Javier Zacarías Irún y Silvio Adalberto Ovelar Benítez de fecha 3 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160291",
+    "autores": [
+      {
+        "apellidos": "Chase Acosta",
+        "idLegislador": 101363,
+        "nombres": "Natalicio Esteban"
+      },
+      {
+        "apellidos": "Filizzola Serra",
+        "idLegislador": 101362,
+        "nombres": "Rafael Augusto"
+      },
+      {
+        "apellidos": "Núñez Giménez",
+        "idLegislador": 101361,
+        "nombres": "Basilio Gustavo"
+      },
+      {
+        "apellidos": "Zacarías Irún",
+        "idLegislador": 101376,
+        "nombres": "Ernesto Javier"
+      },
+      {
+        "apellidos": "Amarilla Vda. de Boccia",
+        "idLegislador": 101350,
+        "nombres": "Celeste Josefina"
+      },
+      {
+        "apellidos": "Cabrera Petters",
+        "idLegislador": 101381,
+        "nombres": "Lourdes Noelia"
+      },
+      {
+        "apellidos": "Penner Dürksen",
+        "idLegislador": 101372,
+        "nombres": "Orlando"
+      },
+      {
+        "apellidos": "Ovelar Benítez",
+        "idLegislador": 101339,
+        "nombres": "Silvio Adalberto"
+      },
+      {
+        "apellidos": "Barrios Fernández",
+        "idLegislador": 101475,
+        "nombres": "Antonio Carlos"
+      },
+      {
+        "apellidos": "Retamozo Delgado",
+        "idLegislador": 101477,
+        "nombres": "Ramón Catalino"
+      },
+      {
+        "apellidos": "Maidana Zarza",
+        "idLegislador": 101341,
+        "nombres": "Derlis Hernán"
+      },
+      {
+        "apellidos": "Valiente de Rodríguez",
+        "idLegislador": 101349,
+        "nombres": "Regina Lizarella"
+      },
+      {
+        "apellidos": "Amarilla Guirland",
+        "idLegislador": 101373,
+        "nombres": "Dionisio Oswaldo"
+      },
+      {
+        "apellidos": "Nakayama Rojas",
+        "idLegislador": 101358,
+        "nombres": "Eduardo Hirohito"
+      },
+      {
+        "apellidos": "Alvarenga de Ortega",
+        "idLegislador": 101365,
+        "nombres": "Hermelinda"
+      },
+      {
+        "apellidos": "Galaverna Ortega",
+        "idLegislador": 101484,
+        "nombres": "Juan Carlos Luis"
+      },
+      {
+        "apellidos": "López Ruíz",
+        "idLegislador": 101347,
+        "nombres": "Edgar Idalino"
+      }
+    ],
+    "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604225",
+    "fechaIngresoExpediente": "03/11/2026",
+    "idProyecto": 160291,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Natalicio Esteban Chase Acosta, Rafael Augusto Filizzola Serra, Silvio Adalberto Ovelar Benítez, Basilio Gustavo Núñez Giménez, Hermelinda Alvarenga de Ortega, Ramón Catalino Retamozo Delgado, Juan Carlos Luis Galaverna Ortega, Dionisio Oswaldo Amarilla Guirland, Lourdes Noelia Cabrera Petters, Eduardo Hirohito Nakayama Rojas, Edgar Idalino López Ruíz",
+      "fechaIngreso": "2026-11-03"
+    },
+    "acapite": "Proyecto de Ley “QUE ESTABLECE LA AMPLIACIÓN DE LA GARANTÍA DE DEPÓSITOS BANCARIOS DEL FONDO DE GARANTÍA DE DEPÓSITOS (FGD) PARA LA COBERTURA DE LA TOTALIDAD DE LOS FONDOS PÚBLICOS DEPOSITADOS EN LA ENTIDAD BANCARIA DENOMINADA ‘UENO BANK”, presentado por los senadores Gustavo Basilio Gustavo Núñez Giménez, Rafael Augusto Filizzola Serra, Hermelinda Alvarenga de Ortega, Ramón Catalino Retamozo Delgado, Juan Carlos Luis Galaverna Ortega, Silvio Adalberto Ovelar Benítez, Dionisio Oswaldo Amarilla Guirland, Lourdes Noelia Cabrera Petters, Eduardo Hirohito Nakayama Rojas, Edgar Idalino López Ruíz y Natalicio Esteban Chase Acosta  de fecha 3 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160301",
+    "autores": [
+      {
+        "apellidos": "Chase Acosta",
+        "idLegislador": 101363,
+        "nombres": "Natalicio Esteban"
+      },
+      {
+        "apellidos": "Filizzola Serra",
+        "idLegislador": 101362,
+        "nombres": "Rafael Augusto"
+      },
+      {
+        "apellidos": "Ovelar Benítez",
+        "idLegislador": 101339,
+        "nombres": "Silvio Adalberto"
+      },
+      {
+        "apellidos": "Núñez Giménez",
+        "idLegislador": 101361,
+        "nombres": "Basilio Gustavo"
+      },
+      {
+        "apellidos": "Alvarenga de Ortega",
+        "idLegislador": 101365,
+        "nombres": "Hermelinda"
+      },
+      {
+        "apellidos": "Retamozo Delgado",
+        "idLegislador": 101477,
+        "nombres": "Ramón Catalino"
+      },
+      {
+        "apellidos": "Galaverna Ortega",
+        "idLegislador": 101484,
+        "nombres": "Juan Carlos Luis"
+      },
+      {
+        "apellidos": "Amarilla Guirland",
+        "idLegislador": 101373,
+        "nombres": "Dionisio Oswaldo"
+      },
+      {
+        "apellidos": "Cabrera Petters",
+        "idLegislador": 101381,
+        "nombres": "Lourdes Noelia"
+      },
+      {
+        "apellidos": "Nakayama Rojas",
+        "idLegislador": 101358,
+        "nombres": "Eduardo Hirohito"
+      },
+      {
+        "apellidos": "López Ruíz",
+        "idLegislador": 101347,
+        "nombres": "Edgar Idalino"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604226",
+    "fechaIngresoExpediente": "03/11/2026",
+    "idProyecto": 160301,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "José Gregorio Ledesma Narváez",
+      "fechaIngreso": "2026-10-29"
+    },
+    "acapite": "Proyecto de Ley “QUE DECLARA DE INTERÉS SOCIAL Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE URBANISMO, VIVIENDA Y HÁBITAT, EL INMUEBLE INDIVIDUALIZADO COMO FINCA N° 290, PADRÓN N°. 240, PARA SU POSTERIOR TRANSFERENCIA A TÍTULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES DEL ‘TERRITORIO SOCIAL GUADALUPE’, UBICADOS EN EL LUGAR DENOMINADO BARRIO YBYSUNÚ, DISTRITO DE GUARAMBARÉ, DEPARTAMENTO CENTRAL”, presentado por el senador José Gregorio Ledesma Narváez, de fecha 29 de octubre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160331",
+    "autores": [
+      {
+        "apellidos": "Ledesma Narváez",
+        "idLegislador": 101368,
+        "nombres": "José Gregorio"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604222",
+    "fechaIngresoExpediente": "29/10/2026",
+    "idProyecto": 160331,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Ramona Yolanda Paredes",
+      "fechaIngreso": "2026-11-03"
+    },
+    "acapite": "Proyecto de Ley “QUE REGULA EL EJERCICIO PROFESIONAL DEL ECONOMISTA”, presentado por la senadora Ramona Yolanda Paredes, de fecha 29 de octubre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160332",
+    "autores": [
+      {
+        "apellidos": "Paredes",
+        "idLegislador": 101344,
+        "nombres": "Ramona Yolanda"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604223",
+    "fechaIngresoExpediente": "03/11/2026",
+    "idProyecto": 160332,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Derlis Ariel Alejandro Osorio Nunes",
+      "fechaIngreso": "2026-11-03"
+    },
+    "acapite": "Proyecto de Ley “DEL DERECHO DE ACCESO DEL PACIENTE A SU HISTORIA CLÍNICA”, presentado por el senador Derlis Ariel Alejandro Osorio Nunes, de fecha 3 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160341",
+    "autores": [
+      {
+        "apellidos": "Osorio Nunes",
+        "idLegislador": 101346,
+        "nombres": "Derlis Ariel Alejandro"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604224",
+    "fechaIngresoExpediente": "03/11/2026",
+    "idProyecto": 160341,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
     "tipoProyecto": "PROYECTO DE LEY",
     "urgencia": "ORDINARIO"
   }

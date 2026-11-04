@@ -2,6 +2,81 @@
   "sincronizaciones": [
     {
       "archivosModificados": [
+        "fuente/2023-2028/leyes.json",
+        "fuente/2023-2028/tramitaciones.json",
+        "fuente/2023-2028/votaciones.json",
+        "fuente/2023-2028/votos.csv",
+        "fuente/2023-2028/legisladores.json",
+        "fuente/2023-2028/autores.json",
+        "fuente/2023-2028/proyectos-recientes.json",
+        "fuente/2023-2028/proyectos.json",
+        "fuente/2023-2028/decisiones-plenario.json",
+        "propios/personas.json",
+        "fuente/2023-2028/leyes.csv",
+        "fuente/2023-2028/tramitaciones.csv",
+        "fuente/2023-2028/votaciones.csv",
+        "fuente/2023-2028/legisladores.csv",
+        "fuente/2023-2028/autores.csv",
+        "diccionario.md",
+        "propios/clasificacion-temas.json",
+        "propios/clasificacion-temas.csv",
+        "fotos/2023-2028/101624.jpg"
+      ],
+      "cambios": {
+        "legisladores": {
+          "agregados": 1,
+          "eliminados": 0,
+          "modificados": 1
+        },
+        "leyes": {
+          "agregados": 3,
+          "eliminados": 0,
+          "modificados": 0
+        },
+        "votaciones": {
+          "agregados": 1,
+          "eliminados": 0,
+          "modificados": 3
+        }
+      },
+      "cantidades": {
+        "autores": 2199,
+        "comisiones": 2864,
+        "expedientes": 17685,
+        "legisladores": 144,
+        "legisladoresVigentes": 127,
+        "leyes": 559,
+        "numerosDeLey": 544,
+        "tramitaciones": 13642,
+        "votaciones": 1166,
+        "votos": 82725
+      },
+      "consultas": 975,
+      "expedientesActualizados": false,
+      "fecha": "2026-11-04T15:34:08Z",
+      "leyesNuevas": [
+        {
+          "fechaSancion": "2026-09-22",
+          "idLey": 146813,
+          "numeroLey": "7726"
+        },
+        {
+          "fechaSancion": "2026-09-09",
+          "idLey": 146823,
+          "numeroLey": "7721"
+        },
+        {
+          "fechaSancion": "2026-09-09",
+          "idLey": 146824,
+          "numeroLey": "7723"
+        }
+      ],
+      "modo": "incremental",
+      "periodo": "2023-2028",
+      "resultado": "correcta"
+    },
+    {
+      "archivosModificados": [
         "fuente/2023-2028/expedientes.json",
         "fuente/2023-2028/proyectos-recientes.json",
         "fuente/2023-2028/proyectos.json",

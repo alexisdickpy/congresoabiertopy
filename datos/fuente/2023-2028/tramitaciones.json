@@ -346465,6 +346465,421 @@
     }
   },
   {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2025-12-16"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Ingreso de Expediente",
+      "fechaTramite": "16/12/2025",
+      "idTramitacion": 406122,
+      "numeroSesion": "",
+      "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2025-12-16"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Expediente",
+      "fechaTramite": "16/12/2025",
+      "idTramitacion": 406133,
+      "numeroSesion": "",
+      "resultadoTramite": "PASA A COMISIÓN: Asuntos Municipales y Departamentales - Legislación y Codificación"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-03-16"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Dictamen de Comisión",
+      "fechaTramite": "16/03/2026",
+      "idTramitacion": 411758,
+      "numeroSesion": "",
+      "resultadoTramite": "Legislación y Codificación"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-03-24"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Dictamen de Comisión",
+      "fechaTramite": "24/03/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-03-24"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/111762",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "24/03/2026",
+        "horaFin": "10:57",
+        "horaInicio": "09:00",
+        "idSesion": 111762,
+        "numeroSesion": "110",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2025-07-01",
+            "fechaTermino": "2026-06-30"
+          },
+          "fechaInicio": "01/07/2025",
+          "fechaTermino": "30/06/2026",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100257,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2025-2026"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 411794,
+      "numeroSesion": "110",
+      "resultadoTramite": "Legislación y Codificación"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-04-06"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Dictamen de Comisión",
+      "fechaTramite": "06/04/2026",
+      "idTramitacion": 413473,
+      "numeroSesion": "",
+      "resultadoTramite": "Asuntos Municipales y Departamentales"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-04-07"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Dictamen de Comisión",
+      "fechaTramite": "07/04/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-04-07"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/111872",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "07/04/2026",
+        "horaFin": "11:59",
+        "horaInicio": "11:45",
+        "idSesion": 111872,
+        "numeroSesion": "71",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2025-07-01",
+            "fechaTermino": "2026-06-30"
+          },
+          "fechaInicio": "01/07/2025",
+          "fechaTermino": "30/06/2026",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100257,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2025-2026"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 413476,
+      "numeroSesion": "71",
+      "resultadoTramite": "Asuntos Municipales y Departamentales"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-04-14"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "14/04/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-04-14"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/111882",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "14/04/2026",
+        "horaFin": "15:00",
+        "horaInicio": "09:00",
+        "idSesion": 111882,
+        "numeroSesion": "113",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2025-07-01",
+            "fechaTermino": "2026-06-30"
+          },
+          "fechaInicio": "01/07/2025",
+          "fechaTermino": "30/06/2026",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100257,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2025-2026"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 414823,
+      "numeroSesion": "113",
+      "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-05-06"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Expediente",
+      "fechaTramite": "06/05/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-05-06"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/111952",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "06/05/2026",
+        "horaFin": "14:20",
+        "horaInicio": "09:35",
+        "idSesion": 111952,
+        "numeroSesion": "161",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2025-07-01",
+            "fechaTermino": "2026-06-30"
+          },
+          "fechaInicio": "01/07/2025",
+          "fechaTermino": "30/06/2026",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100257,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2025-2026"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 418582,
+      "numeroSesion": "161",
+      "resultadoTramite": "PASA A COMISIÓN: Asuntos Departamentales, Municipales, Distritales y Regionales - Asuntos Constitucionales, Defensa Nacional y Fuerza Pública"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-05-05"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Texto aprobado",
+      "fechaTramite": "05/05/2026",
+      "idTramitacion": 418583,
+      "numeroSesion": "",
+      "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-07-28"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Dictamen de Comisión",
+      "fechaTramite": "28/07/2026",
+      "idTramitacion": 430487,
+      "numeroSesion": "",
+      "resultadoTramite": "Asuntos Departamentales, Municipales, Distritales y Regionales"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-07-29"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Dictamen de Comisión",
+      "fechaTramite": "29/07/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-07-29"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112292",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "29/07/2026",
+        "horaFin": "14:40",
+        "horaInicio": "09:37",
+        "idSesion": 112292,
+        "numeroSesion": "175",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 430628,
+      "numeroSesion": "175",
+      "resultadoTramite": "Asuntos Departamentales, Municipales, Distritales y Regionales"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-08-04"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Dictamen de Comisión",
+      "fechaTramite": "04/08/2026",
+      "idTramitacion": 431769,
+      "numeroSesion": "",
+      "resultadoTramite": "Asuntos Constitucionales, Defensa Nacional y Fuerza Pública"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-08-05"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Dictamen de Comisión",
+      "fechaTramite": "05/08/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-08-05"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112312",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "05/08/2026",
+        "horaFin": "13:37",
+        "horaInicio": "09:38",
+        "idSesion": 112312,
+        "numeroSesion": "176",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 431785,
+      "numeroSesion": "176",
+      "resultadoTramite": "Asuntos Constitucionales, Defensa Nacional y Fuerza Pública"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-08-05"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "05/08/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-08-05"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112312",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "05/08/2026",
+        "horaFin": "13:37",
+        "horaInicio": "09:38",
+        "idSesion": 112312,
+        "numeroSesion": "176",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 431946,
+      "numeroSesion": "176",
+      "resultadoTramite": "POSTERGADO"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-30"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Notificación de Sanción Automática (2T)",
+      "fechaTramite": "30/10/2026",
+      "idTramitacion": 443887,
+      "numeroSesion": "",
+      "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-19"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Resolución de Sanción Automática en 2T",
+      "fechaTramite": "19/10/2026",
+      "idTramitacion": 443903,
+      "numeroSesion": "",
+      "resultadoTramite": ""
+    }
+  },
+  {
     "idProyecto": 151811,
     "tramitacion": {
       "_propio": {
@@ -354710,6 +355125,446 @@
     }
   },
   {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-05-05"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Ingreso de Expediente",
+      "fechaTramite": "05/05/2026",
+      "idTramitacion": 418900,
+      "numeroSesion": "",
+      "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-05-05"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Expediente",
+      "fechaTramite": "05/05/2026",
+      "idTramitacion": 418913,
+      "numeroSesion": "",
+      "resultadoTramite": "PASA A COMISIÓN: Desarrollo Social, Población y Vivienda - Asuntos Municipales y Departamentales"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-05-25"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Dictamen de Comisión",
+      "fechaTramite": "25/05/2026",
+      "idTramitacion": 421313,
+      "numeroSesion": "",
+      "resultadoTramite": "Desarrollo Social, Población y Vivienda"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-05-26"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Dictamen de Comisión",
+      "fechaTramite": "26/05/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-05-26"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112032",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "26/05/2026",
+        "horaFin": "11:36",
+        "horaInicio": "09:00",
+        "idSesion": 112032,
+        "numeroSesion": "119",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2025-07-01",
+            "fechaTermino": "2026-06-30"
+          },
+          "fechaInicio": "01/07/2025",
+          "fechaTermino": "30/06/2026",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100257,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2025-2026"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 421520,
+      "numeroSesion": "119",
+      "resultadoTramite": "Desarrollo Social, Población y Vivienda"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-05-26"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "26/05/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-05-26"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112062",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "26/05/2026",
+        "horaFin": "10:13",
+        "horaInicio": "09:55",
+        "idSesion": 112062,
+        "numeroSesion": "74",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2025-07-01",
+            "fechaTermino": "2026-06-30"
+          },
+          "fechaInicio": "01/07/2025",
+          "fechaTermino": "30/06/2026",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100257,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2025-2026"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 421823,
+      "numeroSesion": "74",
+      "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-06-11"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Texto aprobado",
+      "fechaTramite": "11/06/2026",
+      "idTramitacion": 424213,
+      "numeroSesion": "",
+      "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-06-17"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Expediente",
+      "fechaTramite": "17/06/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-06-17"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112142",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "17/06/2026",
+        "horaFin": "16:08",
+        "horaInicio": "09:33",
+        "idSesion": 112142,
+        "numeroSesion": "169",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2025-07-01",
+            "fechaTermino": "2026-06-30"
+          },
+          "fechaInicio": "01/07/2025",
+          "fechaTermino": "30/06/2026",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100257,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2025-2026"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 425115,
+      "numeroSesion": "169",
+      "resultadoTramite": "PASA A COMISIÓN: Energía, Recursos Naturales, Población, Ambiente, Producción y Desarrollo Sostenible - Asuntos Departamentales, Municipales, Distritales y Regionales - Desarrollo Social"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-09-01"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Dictamen de Comisión",
+      "fechaTramite": "01/09/2026",
+      "idTramitacion": 435774,
+      "numeroSesion": "",
+      "resultadoTramite": "Energía, Recursos Naturales, Población, Ambiente, Producción y Desarrollo Sostenible"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-09-01"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Dictamen de Comisión",
+      "fechaTramite": "01/09/2026",
+      "idTramitacion": 435850,
+      "numeroSesion": "",
+      "resultadoTramite": "Asuntos Departamentales, Municipales, Distritales y Regionales"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-09-02"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Dictamen de Comisión",
+      "fechaTramite": "02/09/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-09-02"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112462",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "02/09/2026",
+        "horaFin": "11:27",
+        "horaInicio": "10:11",
+        "idSesion": 112462,
+        "numeroSesion": "181",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 435894,
+      "numeroSesion": "181",
+      "resultadoTramite": "Asuntos Departamentales, Municipales, Distritales y Regionales"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-09-02"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Dictamen de Comisión",
+      "fechaTramite": "02/09/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-09-02"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112462",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "02/09/2026",
+        "horaFin": "11:27",
+        "horaInicio": "10:11",
+        "idSesion": 112462,
+        "numeroSesion": "181",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 435904,
+      "numeroSesion": "181",
+      "resultadoTramite": "Energía, Recursos Naturales, Población, Ambiente, Producción y Desarrollo Sostenible"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-09-02"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "02/09/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-09-02"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112462",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "02/09/2026",
+        "horaFin": "11:27",
+        "horaInicio": "10:11",
+        "idSesion": 112462,
+        "numeroSesion": "181",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 435968,
+      "numeroSesion": "181",
+      "resultadoTramite": "POSTERGADO"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-09-08"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Dictamen de Comisión",
+      "fechaTramite": "08/09/2026",
+      "idTramitacion": 436776,
+      "numeroSesion": "",
+      "resultadoTramite": "Desarrollo Social"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-09-09"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Dictamen de Comisión",
+      "fechaTramite": "09/09/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-09-09"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112502",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "09/09/2026",
+        "horaFin": "16:34",
+        "horaInicio": "11:33",
+        "idSesion": 112502,
+        "numeroSesion": "182",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 436788,
+      "numeroSesion": "182",
+      "resultadoTramite": "Desarrollo Social"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-09-09"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "09/09/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-09-09"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112502",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "09/09/2026",
+        "horaFin": "16:34",
+        "horaInicio": "11:33",
+        "idSesion": 112502,
+        "numeroSesion": "182",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 436922,
+      "numeroSesion": "182",
+      "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-19"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Resolución Sancion Completa",
+      "fechaTramite": "19/10/2026",
+      "idTramitacion": 443878,
+      "numeroSesion": "",
+      "resultadoTramite": ""
+    }
+  },
+  {
     "idProyecto": 154691,
     "tramitacion": {
       "_propio": {
@@ -357487,6 +358342,241 @@
       "idTramitacion": 441846,
       "numeroSesion": "",
       "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 157712,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-08-12"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Expediente",
+      "fechaTramite": "12/08/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-08-12"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112352",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "12/08/2026",
+        "horaFin": "15:34",
+        "horaInicio": "09:39",
+        "idSesion": 112352,
+        "numeroSesion": "177",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 433157,
+      "numeroSesion": "177",
+      "resultadoTramite": "PASA A COMISIÓN: Educación y Cultura"
+    }
+  },
+  {
+    "idProyecto": 157712,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-08-12"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Ingreso de Expediente",
+      "fechaTramite": "12/08/2026",
+      "idTramitacion": 433165,
+      "numeroSesion": "",
+      "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 157712,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-08-26"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "26/08/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-08-26"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112412",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "26/08/2026",
+        "horaFin": "19:00",
+        "horaInicio": "09:41",
+        "idSesion": 112412,
+        "numeroSesion": "179",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 435166,
+      "numeroSesion": "179",
+      "resultadoTramite": "APROBADO CON MODIFICACIONES"
+    }
+  },
+  {
+    "idProyecto": 157712,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-08-27"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Texto aprobado",
+      "fechaTramite": "27/08/2026",
+      "idTramitacion": 435303,
+      "numeroSesion": "",
+      "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 157712,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-08-27"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Expediente",
+      "fechaTramite": "27/08/2026",
+      "idTramitacion": 435343,
+      "numeroSesion": "",
+      "resultadoTramite": "PASA A COMISIÓN: Educación, Cultura y Culto - Legislación y Codificación"
+    }
+  },
+  {
+    "idProyecto": 157712,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-09-07"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Dictamen de Comisión",
+      "fechaTramite": "07/09/2026",
+      "idTramitacion": 437030,
+      "numeroSesion": "",
+      "resultadoTramite": "Educación, Cultura y Culto"
+    }
+  },
+  {
+    "idProyecto": 157712,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-09-15"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Entrada de Dictamen de Comisión",
+      "fechaTramite": "15/09/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-09-15"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112522",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "15/09/2026",
+        "horaFin": "14:28",
+        "horaInicio": "09:00",
+        "idSesion": 112522,
+        "numeroSesion": "135",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 437043,
+      "numeroSesion": "135",
+      "resultadoTramite": "Educación, Cultura y Culto"
+    }
+  },
+  {
+    "idProyecto": 157712,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-09-22"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "22/09/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-09-22"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112542",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "22/09/2026",
+        "horaFin": "09:00",
+        "horaInicio": "09:00",
+        "idSesion": 112542,
+        "numeroSesion": "136",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 438663,
+      "numeroSesion": "136",
+      "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "idProyecto": 157712,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-20"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Resolución Sancion Completa",
+      "fechaTramite": "20/10/2026",
+      "idTramitacion": 443926,
+      "numeroSesion": "",
+      "resultadoTramite": ""
     }
   }
 ]

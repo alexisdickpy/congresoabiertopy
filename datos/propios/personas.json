@@ -533,6 +533,16 @@
     {
       "legisladores": [
         {
+          "idLegislador": 101624,
+          "periodoLegislativo": "2023-2028"
+        }
+      ],
+      "nombre": "Faisal Ale Huespe Cibils",
+      "slug": "faisal-ale-huespe-cibils"
+    },
+    {
+      "legisladores": [
+        {
           "idLegislador": 101408,
           "periodoLegislativo": "2023-2028"
         }
