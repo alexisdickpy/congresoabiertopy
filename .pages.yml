@@ -1857,6 +1857,16 @@ content:
           - name: sin
             label: "sin %"
             type: string
+          - name: menosCoincidencia
+            label: "Menos coincidencia"
+            type: string
+          - name: masCoincidencia
+            label: "Más coincidencia"
+            type: string
+          - name: escala
+            label: "Cinco tonos repartidos por igual entre el menor ({minimo}) y…"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {minimo}, {maximo}."
       - name: selector
         label: "Selector de partido o bancada"
         type: object
@@ -1961,6 +1971,94 @@ content:
         fields:
           - name: pendienteDeClasificacion
             label: "Pendiente de clasificación"
+            type: string
+  - name: paginasPartidos
+    label: "Partidos (índice y perfiles)"
+    type: file
+    path: sitio/src/contenido/partidos.json
+    format: json
+    operations: { create: false, delete: false }
+    fields:
+      - name: indice
+        label: "Índice de partidos"
+        type: object
+        fields:
+          - name: partidos
+            label: "Partidos"
+            type: string
+          - name: descripcion
+            label: "Composición actual del Congreso Nacional del Paraguay por partido…"
+            type: text
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {periodo}."
+          - name: perfilDeCadaPartido
+            label: "Perfil de cada partido"
+            type: string
+          - name: cadaPerfilMuestra
+            label: "Cada perfil muestra cómo votaron los legisladores del partido en c…"
+            type: text
+            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
+          - name: coincidenciaDeVotos
+            label: "[Coincidencia de votos entre partidos]({url1}): qué tan seguido vo…"
+            type: text
+            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
+          - name: sinLegisladoresEnEjercicio
+            label: "Sin legisladores en ejercicio"
+            type: string
+          - name: ordenDeLasTarjetas
+            label: "Los partidos van de más a menos legisladores en ejercicio. Es solo…"
+            type: text
+      - name: perfil
+        label: "Perfil de cada partido"
+        type: object
+        fields:
+          - name: titulo
+            label: "{nombre}: votos por tema"
+            type: string
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {nombre}."
+          - name: descripcion
+            label: "Cómo votaron los legisladores de {nombre} en las votaciones nomina…"
+            type: text
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {nombre}, {periodo}."
+          - name: volver
+            label: "[← Partidos]({url1})"
+            type: text
+            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
+          - name: legisladoresEnEjercicio
+            label: "Legisladores en ejercicio"
+            type: string
+          - name: textoOficial
+            label: "Texto oficial del partido"
+            type: string
+          - name: votosPorTema
+            label: "Votos por tema"
+            type: string
+          - name: paraCadaTema
+            label: "Para cada tema, el reparto de los votos de sus legisladores en las…"
+            type: text
+            description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
+          - name: aviso
+            label: "No hay una cifra única de apoyo: un NO puede ser a una modificació…"
+            type: text
+          - name: sinVotos
+            label: "Sin votos registrados de este partido en las votaciones de este tema."
+            type: string
+          - name: verLasVotaciones
+            label: "Ver las votaciones del tema"
+            type: string
+          - name: votoRegistrado
+            label: "voto registrado"
+            type: string
+          - name: votosRegistrados
+            label: "votos registrados"
+            type: string
+          - name: masSobreEstePartido
+            label: "Más sobre este partido"
+            type: string
+          - name: susLegisladores
+            label: "Sus legisladores"
+            type: string
+          - name: coincidenciaConOtros
+            label: "Coincidencia de votos con otros partidos"
             type: string
   - name: rankings
     label: "Rankings"

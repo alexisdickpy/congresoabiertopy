@@ -8,7 +8,9 @@ import {
   UMBRAL,
   coincidencia,
   coincidenciaEntre,
-  intensidadDe,
+  escalaDelCuadro,
+  NIVELES_CUADRO,
+  nivelDe,
   posicionDe,
   posicionesDelPeriodo,
   tablaCoincidencia,
@@ -270,13 +272,26 @@ test("cuadro de partidos: por cámara, simétrico, sin la diagonal, mismas cifra
         assert.deepEqual([celda.cantidad, celda.total], [espejo.cantidad, espejo.total]);
         const otra = coincidenciaEntre(c.partido, f.id, cuadro.filas[j].id);
         assert.deepEqual([celda.cantidad, celda.total], [otra.cantidad, otra.total]);
-        assert.ok(intensidadDe(celda) >= 0 && intensidadDe(celda) <= 1);
+        const nivel = nivelDe(celda, escalaDelCuadro(cuadro.filas));
+        assert.ok(celda.suficiente ? nivel >= 1 && nivel <= NIVELES_CUADRO : nivel === 0);
       });
     });
   }
-  assert.equal(intensidadDe(null), 0);
-  assert.equal(intensidadDe({ suficiente: false, porcentaje: 0.9 }), 0);
-  assert.equal(intensidadDe({ suficiente: true, porcentaje: 0.834 }), 0.83);
+  // Escala de cada cuadro: el menor porcentaje es el nivel 1 y el mayor, el último.
+  for (const cuadro of r.cuadros) {
+    const escala = escalaDelCuadro(cuadro.filas);
+    const celdas = cuadro.filas.flatMap((f) => f.celdas).filter((c) => c?.suficiente);
+    assert.equal(nivelDe(celdas.find((c) => c.porcentaje === escala.minimo), escala), 1);
+    assert.equal(nivelDe(celdas.find((c) => c.porcentaje === escala.maximo), escala), NIVELES_CUADRO);
+  }
+  const escala = { minimo: 0.5, maximo: 1 };
+  assert.equal(nivelDe(null, escala), 0);
+  assert.equal(nivelDe({ suficiente: false, porcentaje: 0.9 }, escala), 0);
+  assert.deepEqual([0.5, 0.59, 0.6, 0.75, 0.89, 0.9, 1].map((porcentaje) => nivelDe({ suficiente: true, porcentaje }, escala)), [1, 1, 2, 3, 4, 5, 5]);
+  assert.equal(nivelDe({ suficiente: true, porcentaje: 0.7 }, { minimo: 0.7, maximo: 0.7 }), NIVELES_CUADRO);
+  const filas = (celdas) => [{ celdas }];
+  assert.equal(escalaDelCuadro(filas([null, { suficiente: false, porcentaje: 0.2 }])), null);
+  assert.deepEqual(escalaDelCuadro(filas([null, { suficiente: true, porcentaje: 0.4 }, { suficiente: false, porcentaje: 0.1 }, { suficiente: true, porcentaje: 0.9 }])), { minimo: 0.4, maximo: 0.9 });
 });
 
 test("orden de los grupos: de más a menos legisladores en ejercicio, ANR primero y PLRA segundo", () => {

@@ -6,6 +6,7 @@
 import Base from "../../layouts/Base.astro";
 import { clasePartido } from "../../lib/partidos.js";
 import { legible } from "../../lib/texto.js";
+import { urlDePerfil } from "../../lib/perfilPartidos.js";
 import AusenciasVotaciones from "../../components/AusenciasVotaciones.astro";
 import ComisionesLegislador from "../../components/ComisionesLegislador.astro";
 import ExpedientesPresentados from "../../components/ExpedientesPresentados.astro";
@@ -60,7 +61,7 @@ const descripcion = descripcionDeLegislador(f, sinDato);
               <div><dt>{txc.camara}</dt><dd>{b.camara ?? sinDato}</dd></div>
               <div><dt>{tx.tipo}</dt><dd>{b.tipo ?? sinDato}</dd></div>
               <div><dt>{txc.departamento}</dt><dd>{b.departamento ?? sinDato}</dd></div>
-              <div><dt>{txc.partido}</dt><dd>{b.partido && <span class={`pip ${clasePartido(b.partido)}`}></span>} {legible(b.partido) ?? sinDato}{b.partidoConocido && ` (${b.partidoConocido})`}</dd></div>              <div><dt>{txc.bancada}</dt><dd>{legible(b.bancada) ?? sinDato}</dd></div>
+              <div><dt>{txc.partido}</dt><dd>{b.partido && <span class={`pip ${clasePartido(b.partido)}`}></span>} {b.periodoVigente && b.partido && urlDePerfil(b.periodo, b.partido) ? <a href={urlDePerfil(b.periodo, b.partido)}>{legible(b.partido)}</a> : (legible(b.partido) ?? sinDato)}{b.partidoConocido && ` (${b.partidoConocido})`}</dd></div>              <div><dt>{txc.bancada}</dt><dd>{legible(b.bancada) ?? sinDato}</dd></div>
               <div><dt>{tx.cargoEnLaBancada}</dt><dd class={b.cargoBancada ? undefined : "texto-suave"}>{b.cargoBancada ?? sinDato}</dd></div>
               <div><dt>{tx.correo}</dt><dd class={b.correo ? "contacto" : "texto-suave"}>{b.correo ? <a href={`mailto:${b.correo}`}>{b.correo}</a> : sinDato}</dd></div>
               <div><dt>{tx.telefono}</dt><dd class={b.telefono ? undefined : "texto-suave"}>{b.telefono ?? sinDato}</dd></div>

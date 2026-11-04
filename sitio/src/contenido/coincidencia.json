@@ -14,7 +14,7 @@
     "quePermitePonerLadoA": "Las bancadas se muestran con su nombre oficial, dentro de su cámara. Partido y bancada son los que la API registra para el período, no necesariamente los de la fecha de cada votación.",
     "comoSeCalculaLaCoincidencia": "Cómo se calcula la coincidencia",
     "todosLosParesDePartidos": "Tabla de coincidencia de partidos",
-    "cadaCeldaEsLaCoincidencia": "Cada celda es la coincidencia entre el partido de la fila y el de la columna, en esa cámara. El tono más intenso indica más coincidencia y no califica. Con menos de {umbral} votaciones en común, la celda muestra solo las cantidades. Los partidos van de más a menos legisladores en ejercicio en esa cámara. En el menú de abajo, los partidos van de más a menos legisladores en ejercicio en el Congreso y las bancadas, en su cámara. Ninguna cifra suma las dos cámaras.",
+    "cadaCeldaEsLaCoincidencia": "Cada celda es la coincidencia entre el partido de la fila y el de la columna, en esa cámara. El tono más intenso indica más coincidencia y no califica; la escala va del menor al mayor porcentaje de cada cuadro. Con menos de {umbral} votaciones en común, la celda muestra solo las cantidades. Los partidos van de más a menos legisladores en ejercicio en esa cámara. En el menú de abajo, los partidos van de más a menos legisladores en ejercicio en el Congreso y las bancadas, en su cámara. Ninguna cifra suma las dos cámaras.",
     "coincidenciaEntreTodosLosPares": "Coincidencia entre todos los pares de partidos, {camara}",
     "unPartidoOUnaBancada": "Un partido o una bancada con cada uno de los demás",
     "conElTextoOficial": "{valor}, con el texto oficial «{texto}», {votaciones}.",
@@ -34,7 +34,10 @@
   "cuadro": {
     "enEjercicio": "en ejercicio",
     "mismoPartido": "Mismo partido",
-    "sin": "sin %"
+    "sin": "sin %",
+    "menosCoincidencia": "Menos coincidencia",
+    "masCoincidencia": "Más coincidencia",
+    "escala": "Cinco tonos repartidos por igual entre el menor ({minimo}) y el mayor ({maximo}) porcentaje de este cuadro."
   },
   "selector": {
     "partidoOBancada": "Partido o bancada"

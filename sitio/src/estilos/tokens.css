@@ -73,6 +73,14 @@
   --color-mapa-limite: #ffffff;
   --color-mapa-cifra: #1d2125; /* sin cambio en modo oscuro: las zonas siguen siendo claras */
   --color-mapa-cifra-oscura: #ffffff;
+  /* Cuadro de coincidencia (#93): cinco tonos de un solo color, los mismos del mapa, del menor al mayor
+     porcentaje de cada cuadro; las cifras de los dos más intensos van en blanco. */
+  --color-cuadro-1: var(--color-mapa-1);
+  --color-cuadro-2: var(--color-mapa-2);
+  --color-cuadro-3: var(--color-mapa-3);
+  --color-cuadro-4: var(--color-mapa-4);
+  --color-cuadro-5: var(--color-mapa-5);
+  --color-cifra-cuadro-fuerte: #ffffff;
   --tamano-foto-mapa: 2.5rem;
   --ancho-mapa: 36rem;
 
@@ -121,7 +129,6 @@
   --ancho-numero-lista: 1.5rem;
   --tamano-cifra-lista: 1.25rem;
   --ancho-nombre-barra: 16rem;
-  --sombreado-maximo-cuadro: 45%; /* mezcla máxima del color de acento en el cuadro de coincidencia */
   --ancho-celda-cuadro: 4.75rem;
   --tamano-punto: 0.625rem;
   --punto-quiebre-movil: 48rem; /* referencia: las media queries no aceptan variables */

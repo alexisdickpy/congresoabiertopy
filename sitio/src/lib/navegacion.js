@@ -12,7 +12,8 @@ const txc = textos.general.comunes;
  * Vistas de análisis, en el orden del menú. `menu` es el nombre corto de su entrada; `titulo` y
  * `descripcion`, los de la portada. Con `portada: false` la vista está en el menú y no en la portada; con
  * `portadaAlFinal`, su tarjeta va a lo ancho debajo de las demás. `incluye` son otras direcciones que
- * marcan su entrada del menú.
+ * marcan su entrada del menú. Con `urlMenu`, la entrada del menú lleva a esa dirección y la de la vista
+ * sigue marcándola: «Partidos» lleva al índice de partidos (#93) y la coincidencia queda dentro.
  */
 export const vistasDeAnalisis = () => [
   {
@@ -27,6 +28,7 @@ export const vistasDeAnalisis = () => [
   {
     clave: "coincidencia",
     url: rutas.coincidencia(),
+    urlMenu: rutas.partidos(),
     menu: tx.partidos,
     titulo: txc.coincidenciaDeVotosEntrePartidos,
     descripcion: tx.queTanSeguidoVotaronIgual,
@@ -55,7 +57,7 @@ export const menuPrincipal = () => [
   { url: rutas.leyes(), texto: tx.leyes },
   { url: rutas.proyectos(), texto: tx.proyectos },
   { url: rutas.legisladores(), texto: tx.legisladores },
-  ...vistasDeAnalisis().map((v) => ({ url: v.url, texto: v.menu, incluye: v.incluye ?? [] })),
+  ...vistasDeAnalisis().map((v) => ({ url: v.urlMenu ?? v.url, texto: v.menu, incluye: [...(v.incluye ?? []), ...(v.urlMenu ? [v.url] : [])] })),
   { url: rutas.estadisticas(), texto: tx.estadisticas },
   { url: rutas.testAfinidad(), texto: txc.testDeAfinidad },
   { url: rutas.botTelegram(), texto: tx.botDeTelegram },

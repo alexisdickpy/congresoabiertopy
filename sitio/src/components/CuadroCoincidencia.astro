@@ -1,14 +1,18 @@
 ---
 // Cuadro de coincidencia de todos los pares de partidos de una cámara: filas y columnas con los
 // mismos partidos, y en cada celda el porcentaje con su numerador y su denominador. El sombreado es
-// de un solo tono (más intenso = más coincidencia), sin colores que califiquen; la intensidad viene de
-// lib/coincidencia.js y la mezcla máxima de tokens.css. Filas y columnas van de más a menos
+// de un solo tono (más intenso = más coincidencia), sin colores que califiquen, en cinco niveles
+// repartidos entre el menor y el mayor porcentaje del cuadro (lib/coincidencia.js, #93), con su leyenda;
+// los colores están en tokens.css. Filas y columnas van de más a menos
 // legisladores en ejercicio en esa cámara. Con pocas votaciones en común, solo las
 // cantidades y sin sombreado.
-import { intensidadDe } from "../lib/coincidencia.js";
+import { escalaDelCuadro, NIVELES_CUADRO, nivelDe } from "../lib/coincidencia.js";
 import { clasePartido } from "../lib/partidos.js";
 import { legible } from "../lib/texto.js";
-import { textos } from "../lib/contenido.js";
+import { periodos } from "../lib/datos.js";
+import { perfilesDePartidos } from "../lib/perfilPartidos.js";
+import * as rutas from "../lib/rutas.js";
+import { textos, fill } from "../lib/contenido.js";
 const tx = textos.coincidencia.cuadro;
 
 interface Props {
@@ -16,6 +20,12 @@ interface Props {
   filas: { id: string; nombre: string; legisladores: number; celdas: any[] }[];
 }
 const { titulo, filas } = Astro.props;
+const escala = escalaDelCuadro(filas);
+const celdas = filas.flatMap((f) => f.celdas).filter((c) => c?.suficiente);
+const textoDe = (p: number) => celdas.find((c) => c.porcentaje === p)?.porcentajeTexto;
+const niveles = Array.from({ length: NIVELES_CUADRO }, (_, n) => n + 1);
+// Cada partido enlaza a su perfil (#93), si lo tiene en el período vigente.
+const conPerfil = new Set(perfilesDePartidos(periodos().find((p) => p.vigente).id).map((p) => p.id));
 ---
 
 <div class="cuadro-coincidencia-desplazable">
@@ -28,10 +38,20 @@ const { titulo, filas } = Astro.props;
       </tr>
     </thead>
     <tbody>
-      {filas.map((f) => <tr data-cuadro-fila={f.id}><th scope="row"><span class={`pip ${clasePartido(f.nombre)}`}></span> {legible(f.nombre)}<span class="bancas">{f.legisladores} {f.legisladores === 1 ? "legislador" : "legisladores"} {tx.enEjercicio}</span></th>{f.celdas.map((c) => !c ? <td class="diagonal"><span aria-hidden="true">—</span><span class="solo-lectores">{tx.mismoPartido}</span></td> : c.suficiente ? <td style={`--intensidad: ${intensidadDe(c)}`}><span class="porcentaje">{c.porcentajeTexto}</span> <span class="fraccion">{c.fraccion}</span></td> : <td class="sin-porcentaje"><span class="fraccion">{c.fraccion}</span> <span class="fraccion">{tx.sin}</span></td>)}</tr>)}
+      {filas.map((f) => <tr data-cuadro-fila={f.id}><th scope="row"><span class={`pip ${clasePartido(f.nombre)}`}></span> {conPerfil.has(f.id) ? <a href={rutas.partidos(f.id)}>{legible(f.nombre)}</a> : legible(f.nombre)}<span class="bancas">{f.legisladores} {f.legisladores === 1 ? "legislador" : "legisladores"} {tx.enEjercicio}</span></th>{f.celdas.map((c) => !c ? <td class="diagonal"><span aria-hidden="true">—</span><span class="solo-lectores">{tx.mismoPartido}</span></td> : c.suficiente ? <td class={`nivel-${nivelDe(c, escala)}`}><span class="porcentaje">{c.porcentajeTexto}</span> <span class="fraccion">{c.fraccion}</span></td> : <td class="sin-porcentaje"><span class="fraccion">{c.fraccion}</span> <span class="fraccion">{tx.sin}</span></td>)}</tr>)}
     </tbody>
   </table>
 </div>
+{
+  escala && (
+    <div class="escala-cuadro chico">
+      <span>{tx.menosCoincidencia}</span>
+      <span class="tonos" aria-hidden="true">{niveles.map((n) => <span class={`tono nivel-${n}`}></span>)}</span>
+      <span>{tx.masCoincidencia}</span>
+      <span class="texto-suave">{fill(tx.escala, { minimo: textoDe(escala.minimo), maximo: textoDe(escala.maximo) })}</span>
+    </div>
+  )
+}
 
 <style>
   .cuadro-coincidencia-desplazable {
@@ -71,11 +91,26 @@ const { titulo, filas } = Astro.props;
     width: var(--ancho-celda-cuadro);
     min-width: var(--ancho-celda-cuadro);
     text-align: center;
-    background: color-mix(
-      in srgb,
-      var(--color-acento) calc(var(--intensidad, 0) * var(--sombreado-maximo-cuadro)),
-      var(--color-fondo)
-    );
+  }
+  .nivel-1 { background: var(--color-cuadro-1); }
+  .nivel-2 { background: var(--color-cuadro-2); }
+  .nivel-3 { background: var(--color-cuadro-3); }
+  .nivel-4 { background: var(--color-cuadro-4); color: var(--color-cifra-cuadro-fuerte); }
+  .nivel-5 { background: var(--color-cuadro-5); color: var(--color-cifra-cuadro-fuerte); }
+  .escala-cuadro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--espacio-1) var(--espacio-2);
+    margin: var(--espacio-2) 0 var(--espacio-4);
+  }
+  .tonos {
+    display: inline-flex;
+  }
+  .tono {
+    width: var(--espacio-5);
+    height: var(--espacio-3);
+    border: var(--borde-ancho) solid var(--color-borde);
   }
   .cuadro-coincidencia td.diagonal {
     background: var(--color-superficie);

@@ -8,6 +8,7 @@ import VotacionesTema from "../../components/VotacionesTema.astro";
 import { periodos } from "../../lib/datos.js";
 import * as rutas from "../../lib/rutas.js";
 import { votosPorTema } from "../../lib/votosPorTema.js";
+import { idsConPerfil } from "../../lib/perfilPartidos.js";
 import { textos, fill, md, crudo } from "../../lib/contenido.js";
 const tx = textos.temas.tema;
 const txc = textos.general.comunes;
@@ -19,6 +20,9 @@ export function getStaticPaths() {
 
 const { periodo, tema } = Astro.props;
 const otros = votosPorTema(periodo);
+// Cada partido enlaza a su perfil temático (#93).
+const conPerfil = idsConPerfil(periodo);
+const conEnlace = (filas: any[]) => filas.map((f) => ({ ...f, url: conPerfil.has(f.id) ? rutas.partidos(f.id) : null }));
 const numero = (n: number) => n.toLocaleString("es-PY");
 const plural = (n: number, singular: string, varios: string) => `${numero(n)} ${n === 1 ? singular : varios}`;
 ---
@@ -49,7 +53,7 @@ const plural = (n: number, singular: string, varios: string) => `${numero(n)} ${
         <ul class="leyenda chico" aria-hidden="true">
           {c.leyenda.map((l: any) => <li><span class={`muestra ${l.clase}`}></span>{l.categoria}</li>)}
         </ul>
-        <RepartoTema titulo={txc.porPartido} categorias={c.categorias} filas={c.partidos} />
+        <RepartoTema titulo={txc.porPartido} categorias={c.categorias} filas={conEnlace(c.partidos)} />
         <details>
           <summary>{tx.verLas} {plural(c.votaciones.length, txc.votacion, "votaciones")} {fill(tx.deLa, { camara: c.camara })}</summary>
           <VotacionesTema votaciones={c.votaciones} />

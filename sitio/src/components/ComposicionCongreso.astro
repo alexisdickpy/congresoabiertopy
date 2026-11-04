@@ -1,6 +1,6 @@
 ---
 // Inicio de la portada (#80): composición actual de cada cámara en un hemiciclo con el color de cada
-// partido, y un botón para pasar de una cámara a la otra. Sin JavaScript se ven las dos, una debajo de la
+// partido (cada partido enlaza a su perfil, #93), y un botón para pasar de una cámara a la otra. Sin JavaScript se ven las dos, una debajo de la
 // otra. Datos de lib/portada.js.
 import Hemiciclo from "./Hemiciclo.astro";
 import { composicion } from "../lib/portada.js";
@@ -28,7 +28,7 @@ const camaras = composicion(periodo);
         <div class="columnas">
           <Hemiciclo puntos={c.asientos} cifra={String(c.total)} detalle={c.nombre.toUpperCase()} etiqueta={`${c.nombre}: ${c.partidos.map((p) => `${p.sigla} ${p.cantidad}`).join(", ")}.`} />
           <ul class="partidos">
-            {c.partidos.map((p) => <li><span class={`pip ${p.clase}`}></span><span class="nombre"><b>{p.sigla}</b> <span class="chico texto-suave">{p.nombre}</span></span><span class="cantidad">{p.cantidad}</span></li>)}
+            {c.partidos.map((p) => <li><span class={`pip ${p.clase}`}></span><span class="nombre">{p.url ? <a href={p.url}><b>{p.sigla}</b> <span class="chico texto-suave">{p.nombre}</span></a> : <Fragment><b>{p.sigla}</b> <span class="chico texto-suave">{p.nombre}</span></Fragment>}</span><span class="cantidad">{p.cantidad}</span></li>)}
           </ul>
         </div>
         {c.total !== c.bancas && <p class="chico texto-suave aviso">{fill(tx.laListaOficialMarcaA, { total: c.total, bancas: c.bancas })}</p>}
@@ -118,6 +118,11 @@ const camaras = composicion(periodo);
   }
   .partidos li:last-child {
     border-bottom: var(--borde-ancho) solid var(--color-borde);
+  }
+  /* El nombre enlaza al perfil del partido (#93) sin el color de enlace, para no recargar la lista. */
+  .partidos .nombre a {
+    color: inherit;
+    text-decoration-color: var(--color-borde-fuerte);
   }
   .partidos b {
     font-weight: var(--peso-fuerte);

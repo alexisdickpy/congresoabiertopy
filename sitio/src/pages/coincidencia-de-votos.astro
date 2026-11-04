@@ -91,7 +91,7 @@ const secciones = [
     {
       partidos.map((p: any) => (
         <section class="grupo-coincidencia" id={p.valor} data-grupo={p.valor}>
-          <h4><span class={`pip ${clasePartido(p.nombre)}`}></span> {legible(p.nombre)}</h4>
+          <h4><span class={`pip ${clasePartido(p.nombre)}`}></span> <a href={rutas.partidos(p.id)}>{legible(p.nombre)}</a></h4>
           <ul class="chico texto-suave">
             {p.porCamara.map((g: any, n: number) =>
               g ? (

@@ -19,12 +19,13 @@ const PERIODO = "2023-2028";
 
 test("el menú tiene una entrada por cada vista de análisis, con direcciones de lib/rutas.js", () => {
   const urls = menuPrincipal().map((e) => e.url);
-  for (const v of vistasDeAnalisis()) assert.ok(urls.includes(v.url), `Falta ${v.url} en el menú`);
+  for (const v of vistasDeAnalisis()) assert.ok(urls.includes(v.urlMenu ?? v.url), `Falta ${v.urlMenu ?? v.url} en el menú`);
   assert.deepEqual(
     menuPrincipal().map((e) => e.texto),
     ["Leyes", "Proyectos", "Legisladores", "Votaciones", "Partidos", "Temas", "Rankings", "Estadísticas", "Test de afinidad", "Bot de Telegram", "Buscar leyes", "Datos abiertos"],
   );
-  assert.ok(urls.includes(rutas.coincidencia()) && urls.includes(rutas.rankings()));
+  // «Partidos» lleva al índice de partidos (#93); la coincidencia la sigue marcando (siguiente prueba).
+  assert.ok(urls.includes(rutas.partidos()) && !urls.includes(rutas.coincidencia()) && urls.includes(rutas.rankings()));
   // La tabla de votaciones nominales ya no tiene entrada propia; marca «Rankings» (siguiente prueba).
   assert.ok(!urls.includes(rutas.votacionesNominales()));
   assert.equal(new Set(urls).size, urls.length, "Direcciones repetidas en el menú");
@@ -43,6 +44,8 @@ test("la entrada actual es la de ruta más larga que contiene la dirección", ()
   assert.equal(entradaActual(menu, rutas.legisladores()).texto, "Legisladores");
   assert.equal(entradaActual(menu, rutas.legislador("alguien")).texto, "Legisladores");
   assert.equal(entradaActual(menu, rutas.coincidencia()).texto, "Partidos");
+  assert.equal(entradaActual(menu, rutas.partidos()).texto, "Partidos");
+  assert.equal(entradaActual(menu, rutas.partidos("asociacion-nacional-republicana-anr")).texto, "Partidos");
   assert.equal(entradaActual(menu, rutas.rankings()).texto, "Rankings");
   assert.equal(entradaActual(menu, rutas.votaciones()).texto, "Votaciones");
   assert.equal(entradaActual(menu, rutas.votaciones("2025")).texto, "Votaciones");
