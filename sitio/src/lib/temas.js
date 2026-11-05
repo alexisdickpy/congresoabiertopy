@@ -5,7 +5,8 @@
 //   datos/propios/clasificacion-temas.json (importador/temas.py). Es un dato propio, nunca oficial.
 // - Una ley o una votación toma los temas de su proyecto. Una ley con más de un registro toma los
 //   temas de todos sus proyectos, en el orden de temas.json.
-// - Sin ningún tema, figura como pendiente de clasificación (valor de filtro PENDIENTE).
+// - Desde #111 todo proyecto tiene tema: si ninguna regla encaja, el de reserva ("Otros asuntos", `reserva` en
+//   temas.json), que solo se muestra donde tiene proyectos. PENDIENTE queda por si una entrada vieja no tiene tema.
 
 import { leerJson } from "./datos.js";
 import * as rutas from "./rutas.js";
@@ -17,7 +18,7 @@ export const PENDIENTE = "pendiente";
 export const TEXTO_PENDIENTE = tx.pendienteDeClasificacion;
 
 let temasCache;
-/** Temas en el orden de temas.json: { id, nombre, nombreCorto (etiquetas), definicion, url (catálogo filtrado) }. */
+/** Temas en el orden de temas.json: { id, nombre, nombreCorto (etiquetas), definicion, url (catálogo filtrado), reserva }. */
 export function temas() {
   temasCache ??= leerJson("propios/temas.json").temas.map((t) => ({
     id: t.id,
@@ -25,6 +26,7 @@ export function temas() {
     nombreCorto: t.nombreCorto ?? t.nombre,
     definicion: t.definicion,
     url: rutas.leyesPorTema(t.id),
+    reserva: Boolean(t.reserva),
   }));
   return temasCache;
 }

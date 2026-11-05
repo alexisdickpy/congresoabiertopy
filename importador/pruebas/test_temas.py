@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 from importador.escribir import json_bytes
-from importador.temas import RUTA_CLASIFICACION, RUTA_CSV, aplicar_reglas, clasificar, proyectos_del_periodo, texto_de_reglas
+from importador.temas import RUTA_CLASIFICACION, RUTA_CSV, aplicar_reglas, clasificar, proyectos_del_periodo, tema_de_reserva, texto_de_reglas
 
 DATOS = Path(__file__).resolve().parents[2] / "datos"
 TEMAS = json.loads((DATOS / "propios" / "temas.json").read_text(encoding="utf-8"))["temas"]
@@ -88,15 +88,24 @@ class Clasificar(unittest.TestCase):
         self.assertEqual(proyectos_del_periodo(self.salida / "fuente" / "2023-2028"),
                          {10: "Que crea la Universidad Rural", 20: "De la disfemia"})
 
-    def test_pendiente_y_reglas(self):
+    def test_tambien_los_proyectos_del_listado_general(self):
+        listado = [{"idProyecto": 40, "acapite": "Que crea el distrito de X"}, {"idProyecto": 10, "acapite": "otro"}]
+        (self.salida / "fuente" / "2023-2028" / "proyectos.json").write_bytes(json_bytes(listado))
+        clasificar(self.salida)
+        e = self.leer()
+        self.assertEqual(sorted(e), [10, 20, 40])
+        self.assertEqual([t["tema"] for t in e[40]["temas"]], ["estado"])
+        self.assertEqual([t["tema"] for t in e[10]["temas"]], ["educacion"])
+
+    def test_sin_regla_recibe_el_tema_de_reserva(self):
         _, avisos = clasificar(self.salida)
         e = self.leer()
         self.assertEqual(sorted(e), [10, 20])
         self.assertEqual([t["tema"] for t in e[10]["temas"]], ["educacion"])
         self.assertFalse(e[10]["pendiente"])
-        self.assertEqual(e[20]["temas"], [])
-        self.assertTrue(e[20]["pendiente"])
-        self.assertEqual(len(avisos), 1)
+        self.assertEqual(e[20]["temas"], [{"tema": tema_de_reserva(TEMAS), "origen": "reserva"}])
+        self.assertFalse(e[20]["pendiente"])
+        self.assertEqual(avisos, [])
         self.assertTrue((self.salida / RUTA_CSV).read_bytes().startswith(b"\xef\xbb\xbf"))
 
     def test_conserva_lo_revisado_y_es_estable(self):
@@ -106,6 +115,19 @@ class Clasificar(unittest.TestCase):
         clasificar(self.salida)
         self.assertEqual(self.leer()[20], revisada)
         self.assertEqual(clasificar(self.salida), ([], []))
+
+    def test_revisado_sin_temas_recibe_el_de_reserva(self):
+        revisada = {"idProyecto": 20, "periodoLegislativo": "2023-2028", "pendiente": True, "revisado": True, "temas": []}
+        (self.salida / RUTA_CLASIFICACION).write_bytes(json_bytes({"proyectos": [revisada]}))
+        clasificar(self.salida)
+        self.assertEqual(self.leer()[20]["temas"], [{"tema": "otros-asuntos", "origen": "reserva"}])
+        self.assertFalse(self.leer()[20]["pendiente"])
+
+    def test_sin_tema_de_reserva_es_un_error(self):
+        sin_reserva = [t for t in TEMAS if not t.get("reserva")]
+        (self.salida / "propios" / "temas.json").write_bytes(json_bytes({"temas": sin_reserva}))
+        with self.assertRaises(ValueError):
+            clasificar(self.salida)
 
     def test_tema_revisado_desconocido_es_un_error(self):
         revisada = {"idProyecto": 20, "periodoLegislativo": "2023-2028", "pendiente": False, "revisado": True,
@@ -118,12 +140,12 @@ class Clasificar(unittest.TestCase):
 class CopiaDeDatos(unittest.TestCase):
     """La clasificación guardada en datos/ cubre todos los proyectos y está al día."""
 
-    def test_cada_proyecto_tiene_tema_o_pendiente(self):
+    def test_cada_proyecto_tiene_tema_y_ninguno_queda_pendiente(self):
         entradas = json.loads((DATOS / RUTA_CLASIFICACION).read_text(encoding="utf-8"))["proyectos"]
         ids_temas = {t["id"] for t in TEMAS}
         for e in entradas:
-            self.assertTrue(e["temas"] or e["pendiente"], e["idProyecto"])
-            self.assertEqual(e["pendiente"], not e["temas"], e["idProyecto"])
+            self.assertTrue(e["temas"], e["idProyecto"])
+            self.assertFalse(e["pendiente"], e["idProyecto"])
             self.assertTrue({t["tema"] for t in e["temas"]} <= ids_temas, e["idProyecto"])
         proyectos = proyectos_del_periodo(DATOS / "fuente" / "2023-2028")
         self.assertEqual({e["idProyecto"] for e in entradas if e["periodoLegislativo"] == "2023-2028"}, set(proyectos))
@@ -131,8 +153,11 @@ class CopiaDeDatos(unittest.TestCase):
     def test_temas_con_nombre_definicion_y_palabras_clave(self):
         ids = [t["id"] for t in TEMAS]
         self.assertEqual(len(ids), len(set(ids)))
+        self.assertEqual(tema_de_reserva(TEMAS), "otros-asuntos")
         for t in TEMAS:
-            self.assertTrue(t["nombre"] and t["definicion"] and t["palabrasClave"], t["id"])
+            self.assertTrue(t["nombre"] and t["definicion"], t["id"])
+            # El tema de reserva no tiene palabras clave: se asigna cuando ninguna regla encaja.
+            self.assertEqual(bool(t["palabrasClave"]), not t.get("reserva"), t["id"])
             self.assertRegex(t["id"], r"^[a-z]+(-[a-z]+)*$")
 
 

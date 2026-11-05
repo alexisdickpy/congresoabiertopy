@@ -4,6 +4,8 @@
 import Base from "../layouts/Base.astro";
 import { periodos } from "../lib/datos.js";
 import { proyectosDeLey } from "../lib/proyectos.js";
+import { temas } from "../lib/temas.js";
+import EtiquetasTema from "../components/EtiquetasTema.astro";
 import * as rutas from "../lib/rutas.js";
 import { textos, fill, md, crudo } from "../lib/contenido.js";
 const tx = textos.proyectos.pagina;
@@ -13,6 +15,7 @@ const periodo = periodos().find((p) => p.vigente).id;
 const proyectos = proyectosDeLey(periodo);
 const sinNominal = proyectos.filter((p: any) => !p.votaciones).length;
 const estados = [...new Map(proyectos.map((p: any) => [p.estadoFiltro, p.estado ?? txc.sinDato])).entries()].sort((a: any, b: any) => a[1].localeCompare(b[1], "es"));
+const opcionesTema = temas().filter((t) => proyectos.some((p: any) => p.temas.filtro.includes(t.id)));
 const anios = [...new Set(proyectos.map((p: any) => p.anio).filter(Boolean))].sort().reverse();
 const numero = (n: number) => n.toLocaleString("es-PY");
 ---
@@ -33,12 +36,13 @@ const numero = (n: number) => n.toLocaleString("es-PY");
     <div class="texto"><label for="proyecto-texto">{tx.palabrasDelTituloOExpediente}</label><input type="search" id="proyecto-texto" autocomplete="off" /></div>
     <div><label for="proyecto-estado">{txc.estado}</label><select id="proyecto-estado" data-campo="estado"><option value="">{txc.todos}</option>{estados.map(([v, t]) => <option value={v as string}>{t}</option>)}</select></div>
     <div><label for="proyecto-votacion">{tx.votacionNominal}</label><select id="proyecto-votacion" data-campo="nominal"><option value="">{tx.conOSin}</option><option value="si">{tx.conVotacionNominal}</option><option value="no">{tx.sinVotacionNominal}</option></select></div>
+    <div><label for="proyecto-tema">{tx.tema}</label><select id="proyecto-tema" data-campo="tema" data-varios><option value="">{txc.todos}</option>{opcionesTema.map((t) => <option value={t.id}>{t.nombre}</option>)}</select></div>
     <div><label for="proyecto-anio">{tx.anoDeIngreso}</label><select id="proyecto-anio" data-campo="anio"><option value="">{txc.todos}</option>{anios.map((a) => <option value={a as string}>{a}</option>)}</select></div>
     <p class="chico texto-suave" id="proyecto-estado-filtro" aria-live="polite"></p>
   </form>
 
   <ol class="proyectos" data-paginar>
-    {proyectos.map((p: any) => <li data-proyecto={p.id} data-estado={p.estadoFiltro} data-nominal={p.votaciones ? "si" : "no"} data-anio={p.anio ?? ""}><p>{p.url ? <a href={p.url}>{txc.expediente} {p.expediente ?? tx.enSilpy}</a> : fill(txc.expedienteNumero, { expediente: p.expediente ?? txc.sinDatoMinuscula })} <span class="texto-suave">{p.titulo}</span></p><p class="chico texto-suave"><strong>{p.estado ?? txc.sinDato}</strong>{p.ley && <Fragment> · <a href={p.ley.url}>{fill(tx.ley, { numero: p.ley.numero })}</a></Fragment>}{p.votacion ? <Fragment> · <a href={p.votacion}>{p.votaciones === 1 ? tx.t1VotacionNominal : fill(tx.votacionesNominalesVerLaUltima, { votaciones: p.votaciones })}</a></Fragment> : tx.sinVotacionNominal2}{p.decision && fill(tx.enElPlenario, { resultado: p.decision.resultado, fecha: p.decision.fecha })}</p></li>)}
+    {proyectos.map((p: any) => <li data-proyecto={p.id} data-estado={p.estadoFiltro} data-nominal={p.votaciones ? "si" : "no"} data-anio={p.anio ?? ""} data-tema={p.temas.filtro.join(" ")}><p>{p.url ? <a href={p.url}>{txc.expediente} {p.expediente ?? tx.enSilpy}</a> : fill(txc.expedienteNumero, { expediente: p.expediente ?? txc.sinDatoMinuscula })} <span class="texto-suave">{p.titulo}</span></p><p class="chico"><EtiquetasTema clasificacion={p.temas} /></p><p class="chico texto-suave"><strong>{p.estado ?? txc.sinDato}</strong>{p.ley && <Fragment> · <a href={p.ley.url}>{fill(tx.ley, { numero: p.ley.numero })}</a></Fragment>}{p.votacion ? <Fragment> · <a href={p.votacion}>{p.votaciones === 1 ? tx.t1VotacionNominal : fill(tx.votacionesNominalesVerLaUltima, { votaciones: p.votaciones })}</a></Fragment> : tx.sinVotacionNominal2}{p.decision && fill(tx.enElPlenario, { resultado: p.decision.resultado, fecha: p.decision.fecha })}</p></li>)}
   </ol>
 </Base>
 
@@ -57,7 +61,8 @@ const numero = (n: number) => n.toLocaleString("es-PY");
     const buscado = normalizar(texto.value.trim());
     let cantidad = 0;
     for (const item of items) {
-      const visible = selectores.every((s) => !s.value || item.dataset[s.dataset.campo!] === s.value) && textos.get(item)!.includes(buscado);
+      const dato = (s: HTMLSelectElement) => item.dataset[s.dataset.campo!] ?? "";
+      const visible = selectores.every((s) => !s.value || ("varios" in s.dataset ? dato(s).split(" ").includes(s.value) : dato(s) === s.value)) && textos.get(item)!.includes(buscado);
       item.hidden = !visible;
       if (visible) cantidad++;
     }

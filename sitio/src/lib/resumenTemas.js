@@ -55,6 +55,6 @@ export function resumenPorTema(periodo, { conPendiente = true } = {}) {
         otros: proyectos.length - archivados - enTramite,
       };
     })
-    .filter((t) => t.id !== PENDIENTE || (conPendiente && t.leyes + t.archivados + t.enTramite + t.otros > 0))
+    .filter((t) => (t.id !== PENDIENTE || conPendiente) && ((t.id !== PENDIENTE && !t.reserva) || t.leyes + t.archivados + t.enTramite + t.otros > 0))
     .sort((a, b) => b.leyes - a.leyes || a.orden - b.orden);
 }

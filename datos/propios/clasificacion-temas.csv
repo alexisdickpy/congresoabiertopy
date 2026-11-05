@@ -240,71 +240,131 @@
 128358,2023-2028,justicia,false,true
 128365,2023-2028,presupuesto | economia | relaciones-exteriores,false,true
 128366,2023-2028,trabajo | relaciones-exteriores,false,true
+128370,2023-2028,educacion,false,false
 128374,2023-2028,presupuesto,false,true
+128375,2023-2028,presupuesto,false,false
 128376,2023-2028,presupuesto | trabajo,false,true
 128405,2023-2028,estado,false,true
 128411,2023-2028,presupuesto | obras,false,true
+128451,2023-2028,estado,false,false
+128452,2023-2028,justicia,false,false
 128453,2023-2028,justicia,false,true
+128460,2023-2028,trabajo | estado,false,false
 128492,2023-2028,presupuesto,false,true
 128493,2023-2028,presupuesto,false,true
 128494,2023-2028,presupuesto,false,true
+128495,2023-2028,inmuebles,false,false
 128505,2023-2028,salud,false,true
 128518,2023-2028,presupuesto,false,true
 128522,2023-2028,trabajo | derechos,false,true
+128542,2023-2028,trabajo | estado,false,false
 128543,2023-2028,estado,false,true
 128545,2023-2028,inmuebles,false,true
+128559,2023-2028,trabajo | estado,false,false
+128562,2023-2028,salud,false,false
+128565,2023-2028,economia | obras,false,false
+128567,2023-2028,salud | seguridad,false,false
+128586,2023-2028,ambiente | estado | derechos,false,false
 128592,2023-2028,inmuebles,false,true
 128593,2023-2028,derechos,false,true
+128595,2023-2028,economia,false,false
 128596,2023-2028,seguridad,false,true
 128597,2023-2028,justicia | derechos,false,true
+128624,2023-2028,salud,false,false
 128625,2023-2028,inmuebles,false,true
 128628,2023-2028,presupuesto | salud | ambiente | obras,false,true
+128644,2023-2028,presupuesto | obras,false,false
+128646,2023-2028,relaciones-exteriores,false,false
+128653,2023-2028,estado,false,false
+128657,2023-2028,presupuesto | educacion,false,false
 128658,2023-2028,presupuesto | educacion,false,true
 128659,2023-2028,estado,false,true
 128664,2023-2028,inmuebles,false,true
 128678,2023-2028,seguridad,false,true
+128682,2023-2028,cultura,false,false
 128707,2023-2028,inmuebles,false,true
 128710,2023-2028,educacion,false,true
 128711,2023-2028,inmuebles,false,true
+128715,2023-2028,otros-asuntos,false,false
 128717,2023-2028,inmuebles,false,true
+128736,2023-2028,derechos,false,false
+128922,2023-2028,inmuebles,false,false
+128925,2023-2028,inmuebles,false,false
 128927,2023-2028,salud,false,true
 128929,2023-2028,economia,false,true
 128938,2023-2028,justicia,false,true
 128940,2023-2028,salud,false,true
+128941,2023-2028,presupuesto | trabajo,false,false
 128946,2023-2028,cultura,false,true
 128956,2023-2028,seguridad,false,true
+128957,2023-2028,obras | derechos,false,false
 128964,2023-2028,derechos,false,true
 129032,2023-2028,educacion,false,true
 129043,2023-2028,inmuebles,false,true
 129044,2023-2028,educacion | estado,false,true
 129047,2023-2028,cultura,false,true
+129063,2023-2028,inmuebles,false,false
 129071,2023-2028,economia,false,true
 129075,2023-2028,seguridad,false,true
 129078,2023-2028,trabajo | seguridad,false,true
+129082,2023-2028,presupuesto | estado,false,false
 129089,2023-2028,economia | ambiente,false,true
 129094,2023-2028,presupuesto,false,true
+129099,2023-2028,trabajo | salud,false,false
+129105,2023-2028,obras,false,false
+129107,2023-2028,presupuesto | obras,false,false
 129110,2023-2028,presupuesto | educacion,false,true
+129111,2023-2028,justicia,false,false
+129112,2023-2028,justicia | derechos,false,false
 129135,2023-2028,salud | cultura,false,true
 129138,2023-2028,presupuesto,false,true
+129139,2023-2028,estado,false,false
+129144,2023-2028,inmuebles,false,false
 129145,2023-2028,inmuebles,false,true
 129157,2023-2028,presupuesto,false,true
 129161,2023-2028,derechos,false,true
 129162,2023-2028,derechos,false,true
 129163,2023-2028,derechos,false,true
 129164,2023-2028,inmuebles,false,true
+129167,2023-2028,derechos,false,false
+129200,2023-2028,presupuesto,false,false
 129212,2023-2028,cultura | deporte,false,true
+129216,2023-2028,justicia,false,false
 129230,2023-2028,presupuesto | justicia,false,true
+129232,2023-2028,inmuebles,false,false
 129240,2023-2028,cultura,false,true
+129244,2023-2028,seguridad | obras,false,false
+129245,2023-2028,economia | cultura | obras,false,false
+129249,2023-2028,economia,false,false
+129250,2023-2028,otros-asuntos,false,false
+129251,2023-2028,presupuesto | economia | salud | obras | estado,false,false
 129252,2023-2028,deporte,false,true
+129253,2023-2028,otros-asuntos,false,false
+129254,2023-2028,obras | estado,false,false
 129288,2023-2028,cultura | ambiente,false,true
+129289,2023-2028,trabajo | justicia | derechos,false,false
 129300,2023-2028,trabajo | estado,false,true
+129308,2023-2028,estado,false,false
+129319,2023-2028,salud | derechos,false,false
 129320,2023-2028,justicia,false,true
+129334,2023-2028,estado,false,false
+129353,2023-2028,estado,false,false
 129355,2023-2028,inmuebles,false,true
+129388,2023-2028,inmuebles,false,false
+129390,2023-2028,salud,false,false
 129405,2023-2028,inmuebles,false,true
+129408,2023-2028,seguridad,false,false
+129409,2023-2028,trabajo | estado,false,false
 129419,2023-2028,derechos,false,true
 129443,2023-2028,presupuesto,false,true
+129445,2023-2028,salud,false,false
 129449,2023-2028,pensiones-graciables,false,true
+129450,2023-2028,justicia | seguridad,false,false
+129459,2023-2028,deporte,false,false
+129464,2023-2028,educacion,false,false
+129491,2023-2028,economia,false,false
 129492,2023-2028,salud,false,true
+129494,2023-2028,inmuebles,false,false
 129496,2023-2028,pensiones-graciables,false,true
 129497,2023-2028,seguridad,false,true
 129510,2023-2028,derechos,false,true
@@ -313,23 +373,35 @@
 129527,2023-2028,inmuebles,false,true
 129552,2023-2028,pensiones-graciables,false,true
 129553,2023-2028,salud,false,true
+129558,2023-2028,inmuebles,false,false
 129564,2023-2028,presupuesto,false,true
 129565,2023-2028,inmuebles,false,true
 129566,2023-2028,pensiones-graciables,false,true
 129567,2023-2028,cultura,false,true
 129582,2023-2028,derechos,false,true
+129583,2023-2028,estado,false,false
+129584,2023-2028,derechos,false,false
+129585,2023-2028,presupuesto | estado,false,false
+129586,2023-2028,economia,false,false
 129635,2023-2028,derechos,false,true
 129637,2023-2028,derechos,false,true
+129648,2023-2028,presupuesto,false,false
 129650,2023-2028,seguridad,false,true
 129652,2023-2028,presupuesto | derechos,false,true
+129653,2023-2028,inmuebles,false,false
 129657,2023-2028,relaciones-exteriores | obras,false,true
+129658,2023-2028,trabajo,false,false
+129659,2023-2028,estado,false,false
 129660,2023-2028,obras,false,true
 129661,2023-2028,inmuebles,false,true
 129662,2023-2028,derechos,false,true
 129688,2023-2028,inmuebles,false,true
+129690,2023-2028,educacion,false,false
 129698,2023-2028,salud,false,true
+129714,2023-2028,justicia,false,false
 129724,2023-2028,pensiones-graciables,false,true
 129739,2023-2028,seguridad,false,true
+129743,2023-2028,derechos,false,false
 129769,2023-2028,educacion,false,true
 129774,2023-2028,inmuebles,false,true
 129779,2023-2028,salud,false,true
@@ -337,64 +409,140 @@
 129781,2023-2028,trabajo,false,true
 129783,2023-2028,presupuesto | estado,false,true
 129784,2023-2028,derechos,false,true
+129824,2023-2028,salud,false,false
+129843,2023-2028,salud,false,false
+129861,2023-2028,estado,false,false
+129864,2023-2028,salud,false,false
+129865,2023-2028,salud,false,false
+129866,2023-2028,justicia,false,false
 129867,2023-2028,justicia,false,true
 129876,2023-2028,inmuebles,false,true
+129885,2023-2028,trabajo | estado,false,false
 129888,2023-2028,cultura | obras,false,true
+129914,2023-2028,derechos,false,false
 129915,2023-2028,obras,false,true
+129916,2023-2028,obras,false,false
 129977,2023-2028,justicia,false,true
+129996,2023-2028,trabajo | estado,false,false
 130014,2023-2028,relaciones-exteriores | justicia,false,true
 130015,2023-2028,relaciones-exteriores,false,true
 130020,2023-2028,salud | derechos,false,true
 130024,2023-2028,inmuebles,false,true
+130025,2023-2028,inmuebles,false,false
 130037,2023-2028,seguridad,false,true
+130038,2023-2028,justicia,false,false
+130050,2023-2028,inmuebles,false,false
+130051,2023-2028,economia | cultura,false,false
 130052,2023-2028,educacion,false,true
+130053,2023-2028,presupuesto | educacion | obras,false,false
+130055,2023-2028,economia | justicia,false,false
+130056,2023-2028,inmuebles,false,false
 130058,2023-2028,estado,false,true
+130059,2023-2028,seguridad,false,false
 130071,2023-2028,relaciones-exteriores | obras,false,true
 130072,2023-2028,economia | relaciones-exteriores,false,true
 130073,2023-2028,economia | relaciones-exteriores,false,true
+130074,2023-2028,inmuebles,false,false
+130076,2023-2028,estado,false,false
 130077,2023-2028,cultura,false,true
 130100,2023-2028,salud | educacion | derechos,false,true
+130121,2023-2028,trabajo | estado,false,false
 130171,2023-2028,trabajo | estado,false,true
+130201,2023-2028,trabajo | estado,false,false
+130202,2023-2028,justicia,false,false
+130212,2023-2028,pensiones-graciables,false,false
 130213,2023-2028,relaciones-exteriores | justicia,false,true
+130214,2023-2028,seguridad,false,false
+130215,2023-2028,trabajo | estado,false,false
+130241,2023-2028,trabajo | estado,false,false
 130348,2023-2028,ambiente,false,true
+130361,2023-2028,seguridad,false,false
+130373,2023-2028,educacion | justicia,false,false
+130378,2023-2028,relaciones-exteriores | educacion,false,false
+130379,2023-2028,inmuebles,false,false
+130380,2023-2028,inmuebles,false,false
+130391,2023-2028,justicia,false,false
 130401,2023-2028,obras,false,true
+130411,2023-2028,trabajo | justicia | estado,false,false
 130431,2023-2028,inmuebles,false,true
+130441,2023-2028,justicia,false,false
 130443,2023-2028,justicia,false,true
+130474,2023-2028,inmuebles,false,false
 130571,2023-2028,presupuesto | obras,false,true
+130573,2023-2028,trabajo,false,false
+130574,2023-2028,educacion | derechos,false,false
 130575,2023-2028,educacion | cultura,false,true
+130606,2023-2028,salud,false,false
+130621,2023-2028,relaciones-exteriores | derechos,false,false
 130642,2023-2028,salud | cultura,false,true
+130653,2023-2028,pensiones-graciables,false,false
 130663,2023-2028,ambiente,false,true
+130704,2023-2028,relaciones-exteriores | educacion | estado,false,false
+130721,2023-2028,inmuebles,false,false
+130811,2023-2028,otros-asuntos,false,false
+130812,2023-2028,educacion | cultura,false,false
 130813,2023-2028,cultura,false,true
 130814,2023-2028,pensiones-graciables,false,true
+130815,2023-2028,derechos,false,false
+130831,2023-2028,economia,false,false
 130932,2023-2028,inmuebles,false,true
 130942,2023-2028,presupuesto,false,true
 130954,2023-2028,cultura | seguridad,false,true
+130961,2023-2028,educacion,false,false
+130995,2023-2028,justicia,false,false
+131021,2023-2028,economia | obras | estado,false,false
+131042,2023-2028,presupuesto | salud | educacion,false,false
+131061,2023-2028,presupuesto | educacion,false,false
+131062,2023-2028,inmuebles,false,false
 131065,2023-2028,presupuesto | educacion,false,true
 131100,2023-2028,educacion,false,true
+131101,2023-2028,justicia,false,false
+131111,2023-2028,inmuebles,false,false
 131151,2023-2028,estado,false,true
 131153,2023-2028,cultura,false,true
+131154,2023-2028,economia | salud,false,false
+131155,2023-2028,economia,false,false
+131161,2023-2028,justicia,false,false
+131171,2023-2028,presupuesto,false,false
+131172,2023-2028,economia,false,false
 131251,2023-2028,derechos,false,true
+131253,2023-2028,salud,false,false
 131261,2023-2028,inmuebles,false,true
 131271,2023-2028,presupuesto | obras,false,true
 131281,2023-2028,inmuebles,false,true
+131282,2023-2028,inmuebles,false,false
 131323,2023-2028,inmuebles,false,true
+131330,2023-2028,justicia,false,false
 131346,2023-2028,inmuebles,false,true
 131432,2023-2028,inmuebles,false,true
+131452,2023-2028,estado,false,false
+131461,2023-2028,ambiente,false,false
 131462,2023-2028,presupuesto | estado,false,true
 131472,2023-2028,economia | cultura,false,true
 131496,2023-2028,pensiones-graciables,false,true
+131497,2023-2028,economia | obras,false,false
 131612,2023-2028,justicia,false,true
+131613,2023-2028,justicia | estado,false,false
 131631,2023-2028,inmuebles,false,true
 131641,2023-2028,inmuebles,false,true
 131642,2023-2028,inmuebles,false,true
 131645,2023-2028,trabajo | justicia,false,true
+131661,2023-2028,estado,false,false
 131702,2023-2028,economia | obras | estado,false,true
 131703,2023-2028,salud,false,true
+131704,2023-2028,obras,false,false
+131731,2023-2028,presupuesto | justicia,false,false
+131732,2023-2028,presupuesto | justicia,false,false
+131733,2023-2028,presupuesto | justicia,false,false
+131734,2023-2028,presupuesto | justicia,false,false
 131811,2023-2028,presupuesto | salud,false,true
 131821,2023-2028,cultura,false,true
+131844,2023-2028,salud,false,false
+131862,2023-2028,obras,false,false
 131893,2023-2028,derechos,false,true
 131951,2023-2028,cultura,false,true
 131952,2023-2028,inmuebles,false,true
+131961,2023-2028,inmuebles,false,false
 132001,2023-2028,presupuesto | obras,false,true
 132002,2023-2028,presupuesto,false,true
 132003,2023-2028,presupuesto,false,true
@@ -410,81 +558,160 @@
 132051,2023-2028,justicia,false,true
 132062,2023-2028,pensiones-graciables,false,true
 132071,2023-2028,presupuesto | ambiente,false,true
+132072,2023-2028,educacion,false,false
 132074,2023-2028,justicia | obras,false,true
 132076,2023-2028,inmuebles,false,true
 132080,2023-2028,relaciones-exteriores | obras,false,true
+132081,2023-2028,derechos,false,false
+132092,2023-2028,salud | derechos,false,false
 132093,2023-2028,presupuesto | deporte,false,true
 132111,2023-2028,pensiones-graciables,false,true
+132122,2023-2028,derechos,false,false
 132143,2023-2028,presupuesto | obras,false,true
 132147,2023-2028,obras,false,true
 132152,2023-2028,presupuesto | obras,false,true
 132262,2023-2028,trabajo | salud,false,true
 132272,2023-2028,inmuebles,false,true
 132364,2023-2028,justicia,false,true
+132368,2023-2028,economia,false,false
+132371,2023-2028,trabajo | derechos,false,false
+132461,2023-2028,ambiente,false,false
+132472,2023-2028,inmuebles,false,false
 132521,2023-2028,presupuesto,false,true
 132531,2023-2028,estado,false,true
 132532,2023-2028,pensiones-graciables,false,true
+132541,2023-2028,presupuesto | estado,false,false
+132545,2023-2028,justicia,false,false
+132546,2023-2028,presupuesto | justicia,false,false
+132547,2023-2028,presupuesto | justicia,false,false
+132551,2023-2028,justicia,false,false
+132552,2023-2028,presupuesto,false,false
 132673,2023-2028,salud | educacion,false,true
+132674,2023-2028,presupuesto | salud,false,false
 132675,2023-2028,presupuesto | educacion,false,true
 132676,2023-2028,obras,false,true
+132677,2023-2028,inmuebles,false,false
 132681,2023-2028,presupuesto,false,true
 132722,2023-2028,salud,false,true
+132732,2023-2028,ambiente,false,false
 132733,2023-2028,economia,false,true
 132734,2023-2028,economia,false,true
 132893,2023-2028,inmuebles,false,true
 132894,2023-2028,economia,false,true
 132895,2023-2028,estado,false,true
+132897,2023-2028,derechos,false,false
 132898,2023-2028,justicia,false,true
+132921,2023-2028,justicia,false,false
+132923,2023-2028,cultura,false,false
+132931,2023-2028,obras,false,false
 132941,2023-2028,presupuesto | estado,false,true
 133001,2023-2028,presupuesto | justicia,false,true
 133011,2023-2028,justicia | derechos,false,true
 133021,2023-2028,presupuesto | estado | derechos,false,true
+133087,2023-2028,trabajo | salud,false,false
+133088,2023-2028,obras,false,false
+133089,2023-2028,seguridad,false,false
 133090,2023-2028,justicia,false,true
+133192,2023-2028,presupuesto,false,false
+133221,2023-2028,inmuebles,false,false
 133281,2023-2028,presupuesto | obras,false,true
+133295,2023-2028,salud | educacion,false,false
+133301,2023-2028,derechos,false,false
 133302,2023-2028,pensiones-graciables,false,true
 133303,2023-2028,inmuebles,false,true
+133381,2023-2028,ambiente,false,false
+133382,2023-2028,presupuesto | obras,false,false
 133383,2023-2028,presupuesto | trabajo,false,true
 133384,2023-2028,inmuebles,false,true
 133385,2023-2028,presupuesto,false,true
 133424,2023-2028,economia | ambiente,false,true
 133432,2023-2028,inmuebles,false,true
+133576,2023-2028,obras,false,false
+133577,2023-2028,obras | estado,false,false
 133578,2023-2028,economia | seguridad,false,true
 133611,2023-2028,ambiente,false,true
+133612,2023-2028,presupuesto | obras,false,false
 133632,2023-2028,ambiente,false,true
+133641,2023-2028,justicia,false,false
+133642,2023-2028,inmuebles,false,false
+133661,2023-2028,presupuesto,false,false
 133662,2023-2028,presupuesto | ambiente,false,true
 133663,2023-2028,presupuesto,false,true
 133664,2023-2028,inmuebles,false,true
+133671,2023-2028,inmuebles,false,false
+133751,2023-2028,ambiente,false,false
 133941,2023-2028,presupuesto | educacion,false,true
+134001,2023-2028,salud | educacion,false,false
+134023,2023-2028,trabajo,false,false
+134024,2023-2028,inmuebles,false,false
 134025,2023-2028,inmuebles,false,true
+134026,2023-2028,cultura,false,false
 134028,2023-2028,presupuesto | relaciones-exteriores,false,true
+134031,2023-2028,pensiones-graciables,false,false
+134041,2023-2028,relaciones-exteriores,false,false
 134132,2023-2028,inmuebles,false,true
 134138,2023-2028,presupuesto,false,true
 134140,2023-2028,ambiente,false,true
 134141,2023-2028,presupuesto,false,true
 134152,2023-2028,inmuebles,false,true
 134184,2023-2028,cultura,false,true
+134187,2023-2028,obras,false,false
+134252,2023-2028,estado,false,false
 134283,2023-2028,obras,false,true
 134293,2023-2028,presupuesto | salud,false,true
+134372,2023-2028,inmuebles,false,false
+134375,2023-2028,justicia,false,false
+134381,2023-2028,justicia,false,false
+134382,2023-2028,justicia,false,false
+134383,2023-2028,seguridad,false,false
 134456,2023-2028,cultura | obras,false,true
 134461,2023-2028,estado,false,true
 134471,2023-2028,inmuebles,false,true
+134473,2023-2028,pensiones-graciables,false,false
+134522,2023-2028,economia,false,false
+134531,2023-2028,estado,false,false
+134541,2023-2028,justicia,false,false
 134542,2023-2028,presupuesto,false,true
+134544,2023-2028,estado,false,false
+134581,2023-2028,trabajo | obras | derechos,false,false
 134591,2023-2028,seguridad,false,true
 134604,2023-2028,presupuesto | educacion,false,true
 134631,2023-2028,presupuesto | estado,false,true
+134632,2023-2028,presupuesto,false,false
+134641,2023-2028,obras | estado,false,false
+134642,2023-2028,presupuesto | salud | estado,false,false
+134643,2023-2028,presupuesto | obras,false,false
+134751,2023-2028,educacion,false,false
 134752,2023-2028,inmuebles,false,true
+134753,2023-2028,trabajo,false,false
+134754,2023-2028,salud,false,false
 134761,2023-2028,obras,false,true
 134804,2023-2028,presupuesto,false,true
+134845,2023-2028,inmuebles,false,false
+134846,2023-2028,justicia,false,false
+134961,2023-2028,economia | trabajo | salud,false,false
+134981,2023-2028,presupuesto | trabajo | seguridad,false,false
 135012,2023-2028,justicia,false,true
 135013,2023-2028,inmuebles,false,true
+135073,2023-2028,inmuebles,false,false
+135074,2023-2028,justicia,false,false
+135075,2023-2028,inmuebles,false,false
+135081,2023-2028,economia,false,false
 135101,2023-2028,presupuesto | justicia,false,true
+135117,2023-2028,presupuesto | estado,false,false
+135131,2023-2028,estado,false,false
+135141,2023-2028,cultura,false,false
+135161,2023-2028,presupuesto,false,false
 135172,2023-2028,presupuesto | estado,false,true
 135173,2023-2028,educacion | derechos,false,true
 135175,2023-2028,educacion,false,true
 135178,2023-2028,inmuebles,false,true
 135181,2023-2028,derechos,false,true
+135411,2023-2028,justicia,false,false
+135441,2023-2028,inmuebles,false,false
 135451,2023-2028,inmuebles,false,true
 135471,2023-2028,pensiones-graciables,false,true
+135473,2023-2028,ambiente,false,false
 135479,2023-2028,relaciones-exteriores,false,true
 135480,2023-2028,relaciones-exteriores,false,true
 135481,2023-2028,estado,false,true
@@ -493,44 +720,95 @@
 135584,2023-2028,trabajo | salud,false,true
 135585,2023-2028,presupuesto | estado,false,true
 135587,2023-2028,cultura | ambiente,false,true
+135589,2023-2028,presupuesto,false,false
+135591,2023-2028,ambiente,false,false
+135601,2023-2028,trabajo | estado,false,false
+135611,2023-2028,cultura,false,false
 135612,2023-2028,inmuebles,false,true
 135663,2023-2028,estado,false,true
+135664,2023-2028,trabajo | estado,false,false
+135665,2023-2028,trabajo,false,false
 135666,2023-2028,inmuebles,false,true
+135667,2023-2028,otros-asuntos,false,false
+135670,2023-2028,ambiente,false,false
+135781,2023-2028,inmuebles,false,false
 135819,2023-2028,presupuesto | obras,false,true
+135881,2023-2028,estado,false,false
+135901,2023-2028,trabajo,false,false
 135971,2023-2028,cultura | obras,false,true
+135986,2023-2028,inmuebles,false,false
 135992,2023-2028,justicia | derechos,false,true
+136001,2023-2028,economia,false,false
 136131,2023-2028,ambiente,false,true
+136132,2023-2028,educacion | derechos,false,false
+136133,2023-2028,pensiones-graciables,false,false
+136173,2023-2028,inmuebles,false,false
+136174,2023-2028,pensiones-graciables,false,false
 136212,2023-2028,pensiones-graciables,false,true
 136213,2023-2028,inmuebles,false,true
+136215,2023-2028,seguridad,false,false
 136216,2023-2028,ambiente,false,true
 136221,2023-2028,presupuesto | estado,false,true
 136222,2023-2028,presupuesto | estado,false,true
+136224,2023-2028,inmuebles,false,false
 136362,2023-2028,presupuesto | salud | obras,false,true
+136385,2023-2028,ambiente,false,false
+136387,2023-2028,economia,false,false
+136388,2023-2028,salud,false,false
 136389,2023-2028,trabajo | justicia,false,true
+136421,2023-2028,educacion,false,false
 136451,2023-2028,presupuesto | educacion | obras,false,true
 136457,2023-2028,presupuesto | cultura,false,true
 136460,2023-2028,presupuesto,false,true
 136461,2023-2028,inmuebles,false,true
 136462,2023-2028,pensiones-graciables,false,true
 136464,2023-2028,inmuebles,false,true
+136471,2023-2028,inmuebles,false,false
 136472,2023-2028,inmuebles,false,true
+136473,2023-2028,trabajo | salud,false,false
+136475,2023-2028,justicia,false,false
+136591,2023-2028,seguridad | estado,false,false
+136699,2023-2028,estado,false,false
 136700,2023-2028,economia,false,true
+136711,2023-2028,justicia,false,false
 136718,2023-2028,trabajo,false,true
+136731,2023-2028,inmuebles,false,false
 137091,2023-2028,inmuebles,false,true
 137271,2023-2028,economia | cultura,false,true
+137310,2023-2028,ambiente,false,false
+137317,2023-2028,inmuebles,false,false
 137318,2023-2028,ambiente,false,true
+137320,2023-2028,ambiente,false,false
+137331,2023-2028,presupuesto | educacion,false,false
 137332,2023-2028,presupuesto | economia | educacion,false,true
 137334,2023-2028,cultura,false,true
+137351,2023-2028,presupuesto | economia,false,false
+137371,2023-2028,salud | derechos,false,false
+137372,2023-2028,justicia | derechos,false,false
+137415,2023-2028,justicia,false,false
+137418,2023-2028,justicia,false,false
+137428,2023-2028,justicia,false,false
+137432,2023-2028,economia | justicia,false,false
+137463,2023-2028,obras,false,false
+137471,2023-2028,justicia,false,false
 137607,2023-2028,economia,false,true
+137611,2023-2028,justicia,false,false
 137621,2023-2028,presupuesto | estado,false,true
 137631,2023-2028,inmuebles,false,true
 137632,2023-2028,inmuebles,false,true
+137633,2023-2028,derechos,false,false
 137634,2023-2028,justicia,false,true
+137641,2023-2028,justicia,false,false
+137819,2023-2028,justicia,false,false
 137841,2023-2028,presupuesto | educacion,false,true
 137842,2023-2028,presupuesto | educacion,false,true
+137873,2023-2028,educacion | cultura,false,false
+137881,2023-2028,presupuesto | cultura | estado,false,false
 137882,2023-2028,salud | derechos,false,true
 137883,2023-2028,trabajo,false,true
 137891,2023-2028,economia,false,true
+137955,2023-2028,derechos,false,false
+137958,2023-2028,inmuebles,false,false
 137991,2023-2028,economia,false,true
 138002,2023-2028,presupuesto | obras,false,true
 138011,2023-2028,educacion,false,true
@@ -538,150 +816,388 @@
 138057,2023-2028,inmuebles,false,true
 138081,2023-2028,economia,false,true
 138101,2023-2028,educacion,false,true
+138161,2023-2028,economia,false,false
 138171,2023-2028,inmuebles,false,true
+138173,2023-2028,derechos,false,false
 138176,2023-2028,estado,false,true
 138178,2023-2028,estado,false,true
 138184,2023-2028,relaciones-exteriores,false,true
 138185,2023-2028,economia | obras,false,true
 138188,2023-2028,inmuebles,false,true
 138189,2023-2028,pensiones-graciables,false,true
+138190,2023-2028,seguridad,false,false
+138193,2023-2028,justicia,false,false
 138341,2023-2028,obras,false,true
+138346,2023-2028,otros-asuntos,false,false
+138347,2023-2028,economia | salud,false,false
 138348,2023-2028,inmuebles,false,true
+138349,2023-2028,inmuebles,false,false
 138362,2023-2028,trabajo,false,true
+138363,2023-2028,educacion | cultura | justicia,false,false
+138364,2023-2028,ambiente,false,false
+138365,2023-2028,educacion,false,false
+138391,2023-2028,obras,false,false
 138392,2023-2028,presupuesto | salud,false,true
 138401,2023-2028,presupuesto,false,true
+138402,2023-2028,inmuebles,false,false
+138403,2023-2028,presupuesto,false,false
 138404,2023-2028,pensiones-graciables,false,true
+138411,2023-2028,relaciones-exteriores | derechos,false,false
+138547,2023-2028,inmuebles,false,false
+138548,2023-2028,inmuebles,false,false
+138549,2023-2028,derechos,false,false
 138551,2023-2028,inmuebles,false,true
+138561,2023-2028,economia | obras,false,false
+138562,2023-2028,obras,false,false
+138571,2023-2028,trabajo,false,false
 138593,2023-2028,salud | cultura,false,true
+138594,2023-2028,trabajo,false,false
+138601,2023-2028,pensiones-graciables,false,false
+138755,2023-2028,ambiente,false,false
+138756,2023-2028,derechos,false,false
 138761,2023-2028,relaciones-exteriores,false,true
 138762,2023-2028,economia | relaciones-exteriores | salud,false,true
+138763,2023-2028,ambiente,false,false
 138811,2023-2028,pensiones-graciables,false,true
 138822,2023-2028,pensiones-graciables,false,true
 138823,2023-2028,seguridad,false,true
+138825,2023-2028,inmuebles,false,false
+138832,2023-2028,salud,false,false
+138841,2023-2028,inmuebles,false,false
+138851,2023-2028,inmuebles,false,false
 139001,2023-2028,economia,false,true
 139002,2023-2028,inmuebles,false,true
+139005,2023-2028,obras,false,false
 139011,2023-2028,presupuesto | estado,false,true
+139012,2023-2028,inmuebles,false,false
 139021,2023-2028,presupuesto | salud,false,true
 139022,2023-2028,pensiones-graciables,false,true
 139081,2023-2028,seguridad,false,true
+139149,2023-2028,estado,false,false
 139162,2023-2028,cultura,false,true
+139191,2023-2028,economia | obras,false,false
 139194,2023-2028,inmuebles,false,true
+139271,2023-2028,justicia,false,false
 139286,2023-2028,inmuebles,false,true
+139291,2023-2028,cultura,false,false
 139311,2023-2028,pensiones-graciables,false,true
 139411,2023-2028,presupuesto | seguridad,false,true
+139421,2023-2028,justicia,false,false
+139422,2023-2028,presupuesto | salud | estado,false,false
+139423,2023-2028,relaciones-exteriores | estado,false,false
+139424,2023-2028,derechos,false,false
+139425,2023-2028,justicia,false,false
+139426,2023-2028,inmuebles,false,false
 139430,2023-2028,inmuebles,false,true
+139431,2023-2028,educacion,false,false
+139441,2023-2028,presupuesto | obras | derechos,false,false
 139451,2023-2028,justicia,false,true
+139452,2023-2028,inmuebles,false,false
+139461,2023-2028,cultura | deporte,false,false
+139462,2023-2028,trabajo | seguridad,false,false
+139481,2023-2028,inmuebles,false,false
+139482,2023-2028,educacion | derechos,false,false
 139483,2023-2028,trabajo | deporte,false,true
+139491,2023-2028,obras,false,false
+139501,2023-2028,economia | obras,false,false
 139611,2023-2028,educacion,false,true
+139651,2023-2028,presupuesto | estado,false,false
+139701,2023-2028,presupuesto | derechos,false,false
+139702,2023-2028,justicia,false,false
+139761,2023-2028,economia,false,false
+139861,2023-2028,economia,false,false
+139912,2023-2028,obras,false,false
+139923,2023-2028,presupuesto | justicia,false,false
+139971,2023-2028,economia | salud | estado,false,false
+140041,2023-2028,estado,false,false
+140105,2023-2028,educacion,false,false
+140106,2023-2028,presupuesto | obras | estado,false,false
+140107,2023-2028,presupuesto | estado,false,false
+140108,2023-2028,economia | justicia,false,false
+140110,2023-2028,presupuesto | salud | estado,false,false
+140113,2023-2028,economia | cultura | estado,false,false
 140122,2023-2028,presupuesto | educacion,false,true
+140160,2023-2028,obras,false,false
 140212,2023-2028,presupuesto | economia,false,true
+140241,2023-2028,estado,false,false
+140243,2023-2028,derechos,false,false
+140245,2023-2028,economia | justicia,false,false
 140261,2023-2028,presupuesto | obras,false,true
+140281,2023-2028,estado,false,false
 140351,2023-2028,presupuesto | estado,false,true
+140367,2023-2028,presupuesto | economia | salud,false,false
 140401,2023-2028,deporte,false,true
 140651,2023-2028,inmuebles,false,true
+140661,2023-2028,ambiente,false,false
 140662,2023-2028,salud | educacion | derechos,false,true
+140671,2023-2028,economia,false,false
 140681,2023-2028,presupuesto | obras,false,true
+140691,2023-2028,estado,false,false
+140763,2023-2028,economia,false,false
+140780,2023-2028,ambiente | estado,false,false
 140814,2023-2028,pensiones-graciables,false,true
 140822,2023-2028,pensiones-graciables,false,true
 140824,2023-2028,economia | cultura,false,true
+140832,2023-2028,presupuesto | obras | estado,false,false
+140833,2023-2028,economia,false,false
 140834,2023-2028,educacion,false,true
+140836,2023-2028,educacion,false,false
 140841,2023-2028,obras,false,true
 140851,2023-2028,presupuesto | obras,false,true
+140871,2023-2028,inmuebles,false,false
+140907,2023-2028,inmuebles,false,false
+140908,2023-2028,inmuebles,false,false
 141023,2023-2028,inmuebles,false,true
+141032,2023-2028,trabajo,false,false
 141063,2023-2028,justicia,false,true
 141065,2023-2028,salud,false,true
 141071,2023-2028,salud,false,true
+141091,2023-2028,inmuebles,false,false
 141092,2023-2028,justicia,false,true
+141094,2023-2028,justicia,false,false
 141122,2023-2028,derechos,false,true
 141148,2023-2028,inmuebles,false,true
+141251,2023-2028,salud,false,false
+141263,2023-2028,obras,false,false
+141271,2023-2028,educacion,false,false
 141272,2023-2028,presupuesto | obras,false,true
 141273,2023-2028,relaciones-exteriores,false,true
+141274,2023-2028,justicia | obras | estado | derechos,false,false
+141275,2023-2028,trabajo,false,false
+141311,2023-2028,estado,false,false
 141573,2023-2028,economia | salud | educacion,false,true
+141646,2023-2028,derechos,false,false
+141647,2023-2028,inmuebles,false,false
+141648,2023-2028,pensiones-graciables,false,false
+141651,2023-2028,inmuebles,false,false
 141701,2023-2028,pensiones-graciables,false,true
+141702,2023-2028,derechos,false,false
 141703,2023-2028,estado,false,true
 141711,2023-2028,presupuesto,false,true
 141731,2023-2028,estado,false,true
 141771,2023-2028,presupuesto | ambiente,false,true
+141801,2023-2028,estado,false,false
 141872,2023-2028,cultura | obras,false,true
 141902,2023-2028,inmuebles,false,true
 141911,2023-2028,presupuesto | educacion,false,true
 141914,2023-2028,salud,false,true
 141917,2023-2028,seguridad,false,true
 141921,2023-2028,presupuesto,false,true
+141922,2023-2028,salud,false,false
 141931,2023-2028,inmuebles,false,true
+141932,2023-2028,inmuebles,false,false
 141933,2023-2028,inmuebles,false,true
 141935,2023-2028,inmuebles,false,true
 141937,2023-2028,inmuebles,false,true
+141941,2023-2028,justicia | seguridad,false,false
+141953,2023-2028,obras,false,false
 141961,2023-2028,inmuebles,false,true
+141962,2023-2028,presupuesto,false,false
 141963,2023-2028,cultura,false,true
+141965,2023-2028,presupuesto | economia | educacion,false,false
+142021,2023-2028,estado,false,false
 142171,2023-2028,deporte,false,true
+142181,2023-2028,economia,false,false
 142202,2023-2028,economia,false,true
+142213,2023-2028,estado,false,false
 142214,2023-2028,cultura,false,true
+142231,2023-2028,seguridad,false,false
 142232,2023-2028,presupuesto | salud,false,true
+142237,2023-2028,presupuesto | educacion,false,false
+142238,2023-2028,presupuesto | educacion,false,false
 142240,2023-2028,inmuebles,false,true
+142242,2023-2028,presupuesto | economia | educacion,false,false
+142251,2023-2028,presupuesto | educacion,false,false
+142252,2023-2028,cultura,false,false
+142261,2023-2028,obras,false,false
+142321,2023-2028,economia | obras,false,false
+142421,2023-2028,trabajo,false,false
 142454,2023-2028,inmuebles,false,true
+142455,2023-2028,seguridad | ambiente | estado,false,false
+142456,2023-2028,inmuebles,false,false
 142458,2023-2028,inmuebles,false,true
 142461,2023-2028,presupuesto | justicia,false,true
 142462,2023-2028,justicia,false,true
+142463,2023-2028,obras,false,false
 142464,2023-2028,pensiones-graciables,false,true
 142483,2023-2028,justicia,false,true
 142491,2023-2028,inmuebles,false,true
+142493,2023-2028,obras,false,false
+142635,2023-2028,otros-asuntos,false,false
 142641,2023-2028,educacion,false,true
+142691,2023-2028,ambiente,false,false
+142692,2023-2028,economia,false,false
+142693,2023-2028,seguridad,false,false
+142695,2023-2028,justicia,false,false
+142696,2023-2028,obras,false,false
 142811,2023-2028,economia | relaciones-exteriores,false,true
 142821,2023-2028,presupuesto | trabajo,false,true
+142822,2023-2028,presupuesto | educacion,false,false
+142823,2023-2028,presupuesto | educacion,false,false
 142831,2023-2028,inmuebles,false,true
 142841,2023-2028,cultura,false,true
+142843,2023-2028,cultura,false,false
+142844,2023-2028,pensiones-graciables,false,false
 142845,2023-2028,pensiones-graciables,false,true
+142851,2023-2028,economia,false,false
+142852,2023-2028,derechos,false,false
 142873,2023-2028,presupuesto,false,true
 142881,2023-2028,economia | relaciones-exteriores,false,true
 142882,2023-2028,presupuesto | estado,false,true
 142888,2023-2028,deporte,false,true
+142890,2023-2028,inmuebles,false,false
+142891,2023-2028,estado,false,false
+142902,2023-2028,economia | obras,false,false
+142903,2023-2028,inmuebles,false,false
+142906,2023-2028,inmuebles,false,false
+142907,2023-2028,inmuebles,false,false
+142921,2023-2028,educacion,false,false
+142925,2023-2028,salud | educacion | seguridad | estado,false,false
 142931,2023-2028,cultura | obras,false,true
 142941,2023-2028,presupuesto | obras | derechos,false,true
 142951,2023-2028,cultura,false,true
+142962,2023-2028,salud,false,false
+142963,2023-2028,otros-asuntos,false,false
+142991,2023-2028,justicia | estado,false,false
 142992,2023-2028,cultura,false,true
+143081,2023-2028,estado,false,false
 143082,2023-2028,justicia,false,true
+143083,2023-2028,economia,false,false
 143141,2023-2028,derechos,false,true
+143183,2023-2028,seguridad,false,false
 143184,2023-2028,pensiones-graciables,false,true
+143191,2023-2028,inmuebles,false,false
+143291,2023-2028,obras | estado,false,false
 143311,2023-2028,presupuesto,false,true
 143332,2023-2028,presupuesto | educacion,false,true
+143333,2023-2028,seguridad | derechos,false,false
+143334,2023-2028,trabajo | salud,false,false
+143335,2023-2028,presupuesto,false,false
 143337,2023-2028,ambiente,false,true
+143341,2023-2028,obras,false,false
 143342,2023-2028,justicia | derechos,false,true
+143375,2023-2028,obras,false,false
+143401,2023-2028,derechos,false,false
+143411,2023-2028,relaciones-exteriores | seguridad,false,false
+143421,2023-2028,justicia | derechos,false,false
 143442,2023-2028,seguridad,false,true
+143532,2023-2028,inmuebles,false,false
+143533,2023-2028,cultura,false,false
+143534,2023-2028,inmuebles,false,false
 143535,2023-2028,justicia | derechos,false,true
+143536,2023-2028,derechos,false,false
+143537,2023-2028,inmuebles,false,false
+143538,2023-2028,salud | educacion,false,false
+143539,2023-2028,inmuebles,false,false
 143540,2023-2028,cultura,false,true
+143542,2023-2028,inmuebles,false,false
+143543,2023-2028,inmuebles,false,false
+143544,2023-2028,inmuebles,false,false
+143555,2023-2028,pensiones-graciables,false,false
+143556,2023-2028,inmuebles,false,false
+143592,2023-2028,salud | derechos,false,false
+143601,2023-2028,estado,false,false
 143611,2023-2028,presupuesto | justicia,false,true
 143612,2023-2028,presupuesto,false,true
+143643,2023-2028,economia,false,false
+143651,2023-2028,seguridad,false,false
+143662,2023-2028,justicia,false,false
 143670,2023-2028,relaciones-exteriores | derechos,false,true
 143701,2023-2028,inmuebles,false,true
 143752,2023-2028,presupuesto | salud,false,true
+143761,2023-2028,justicia,false,false
+143771,2023-2028,justicia,false,false
 143772,2023-2028,pensiones-graciables,false,true
+143773,2023-2028,inmuebles,false,false
+143781,2023-2028,obras,false,false
+143791,2023-2028,justicia,false,false
+143792,2023-2028,estado,false,false
 143794,2023-2028,presupuesto,false,true
+143841,2023-2028,cultura,false,false
+143843,2023-2028,cultura,false,false
 143952,2023-2028,cultura,false,true
 143954,2023-2028,presupuesto,false,true
+143955,2023-2028,trabajo,false,false
+143958,2023-2028,seguridad | derechos,false,false
+143959,2023-2028,salud,false,false
+143960,2023-2028,trabajo | educacion,false,false
+143961,2023-2028,economia | estado,false,false
+143984,2023-2028,seguridad,false,false
 143993,2023-2028,presupuesto | seguridad,false,true
+143994,2023-2028,salud | educacion | derechos,false,false
 144011,2023-2028,pensiones-graciables,false,true
+144032,2023-2028,inmuebles,false,false
+144041,2023-2028,salud | educacion | deporte | justicia,false,false
 144121,2023-2028,cultura,false,true
+144132,2023-2028,trabajo,false,false
+144137,2023-2028,trabajo,false,false
+144142,2023-2028,inmuebles,false,false
+144143,2023-2028,inmuebles,false,false
+144150,2023-2028,obras,false,false
 144155,2023-2028,presupuesto | justicia,false,true
+144171,2023-2028,inmuebles,false,false
 144182,2023-2028,estado,false,true
 144183,2023-2028,economia | ambiente,false,true
+144381,2023-2028,estado,false,false
+144392,2023-2028,seguridad | obras,false,false
 144402,2023-2028,salud | educacion | ambiente,false,true
+144403,2023-2028,derechos,false,false
+144404,2023-2028,obras,false,false
+144405,2023-2028,presupuesto | justicia,false,false
+144406,2023-2028,presupuesto | justicia,false,false
 144431,2023-2028,presupuesto | economia,false,true
+144433,2023-2028,inmuebles,false,false
 144441,2023-2028,economia,false,true
 144442,2023-2028,inmuebles,false,true
 144471,2023-2028,obras,false,true
 144571,2023-2028,presupuesto,false,true
 144572,2023-2028,trabajo | justicia,false,true
+144641,2023-2028,obras,false,false
+144674,2023-2028,obras,false,false
 144675,2023-2028,cultura,false,true
+144676,2023-2028,pensiones-graciables,false,false
+144677,2023-2028,obras,false,false
+144678,2023-2028,economia | estado,false,false
 144679,2023-2028,inmuebles,false,true
 144680,2023-2028,economia | relaciones-exteriores | ambiente,false,true
+144681,2023-2028,educacion | ambiente,false,false
+144683,2023-2028,inmuebles,false,false
+144685,2023-2028,inmuebles,false,false
+144691,2023-2028,educacion,false,false
+144748,2023-2028,trabajo | cultura,false,false
+144749,2023-2028,estado,false,false
+144750,2023-2028,salud,false,false
 144761,2023-2028,cultura,false,true
+144781,2023-2028,inmuebles,false,false
+144782,2023-2028,ambiente,false,false
+144783,2023-2028,economia,false,false
+144784,2023-2028,pensiones-graciables,false,false
+144791,2023-2028,inmuebles,false,false
+144801,2023-2028,salud,false,false
+144802,2023-2028,obras,false,false
+144812,2023-2028,obras,false,false
+144833,2023-2028,economia,false,false
+145001,2023-2028,obras,false,false
+145042,2023-2028,cultura,false,false
 145045,2023-2028,inmuebles,false,true
+145049,2023-2028,derechos,false,false
+145052,2023-2028,otros-asuntos,false,false
+145053,2023-2028,otros-asuntos,false,false
+145061,2023-2028,estado,false,false
+145062,2023-2028,seguridad | obras,false,false
+145071,2023-2028,economia | obras | estado,false,false
 145072,2023-2028,relaciones-exteriores | derechos,false,true
 145073,2023-2028,economia,false,true
 145093,2023-2028,presupuesto,false,true
+145094,2023-2028,estado,false,false
 145095,2023-2028,presupuesto | salud,false,true
+145097,2023-2028,educacion,false,false
+145098,2023-2028,obras,false,false
+145099,2023-2028,economia,false,false
+145112,2023-2028,ambiente,false,false
+145131,2023-2028,pensiones-graciables,false,false
 145162,2023-2028,presupuesto | justicia,false,true
+145181,2023-2028,justicia | seguridad,false,false
 145241,2023-2028,economia,false,true
 145242,2023-2028,economia,false,true
 145243,2023-2028,economia,false,true
@@ -690,107 +1206,613 @@
 145246,2023-2028,obras,false,true
 145247,2023-2028,obras,false,true
 145261,2023-2028,inmuebles,false,true
+145307,2023-2028,economia | justicia,false,false
+145321,2023-2028,presupuesto,false,false
+145322,2023-2028,economia,false,false
 145331,2023-2028,pensiones-graciables,false,true
 145347,2023-2028,inmuebles,false,true
 145348,2023-2028,justicia,false,true
+145349,2023-2028,salud | derechos,false,false
+145350,2023-2028,cultura,false,false
 145451,2023-2028,cultura | deporte,false,true
+145461,2023-2028,ambiente,false,false
 145481,2023-2028,trabajo,false,true
+145503,2023-2028,salud,false,false
 145511,2023-2028,inmuebles,false,true
+145521,2023-2028,inmuebles,false,false
+145531,2023-2028,inmuebles,false,false
+145535,2023-2028,inmuebles,false,false
+145536,2023-2028,justicia,false,false
 145538,2023-2028,inmuebles,false,true
 145691,2023-2028,justicia,false,true
+145811,2023-2028,salud,false,false
+145812,2023-2028,cultura,false,false
+145813,2023-2028,economia,false,false
 145822,2023-2028,relaciones-exteriores,false,true
+145826,2023-2028,inmuebles,false,false
+145827,2023-2028,inmuebles,false,false
+145829,2023-2028,inmuebles,false,false
+145832,2023-2028,trabajo,false,false
+145843,2023-2028,economia | estado | derechos,false,false
 145844,2023-2028,inmuebles,false,true
+145845,2023-2028,pensiones-graciables,false,false
 145891,2023-2028,presupuesto | justicia,false,true
+145981,2023-2028,justicia,false,false
 145991,2023-2028,deporte,false,true
+145994,2023-2028,trabajo | justicia,false,false
+146091,2023-2028,ambiente,false,false
 146101,2023-2028,justicia,false,true
+146102,2023-2028,inmuebles,false,false
+146142,2023-2028,obras,false,false
+146162,2023-2028,inmuebles,false,false
+146231,2023-2028,trabajo | justicia | estado,false,false
+146251,2023-2028,derechos,false,false
 146346,2023-2028,trabajo | justicia | estado,false,true
 146347,2023-2028,justicia,false,true
+146350,2023-2028,educacion,false,false
 146372,2023-2028,salud | cultura,false,true
+146392,2023-2028,pensiones-graciables,false,false
+146401,2023-2028,obras,false,false
+146492,2023-2028,cultura,false,false
+146493,2023-2028,seguridad,false,false
+146494,2023-2028,salud | estado,false,false
+146502,2023-2028,estado,false,false
 146532,2023-2028,deporte | derechos,false,true
 146545,2023-2028,derechos,false,true
+146622,2023-2028,inmuebles,false,false
+146625,2023-2028,salud | derechos,false,false
 146671,2023-2028,pensiones-graciables,false,true
+146673,2023-2028,inmuebles,false,false
+146674,2023-2028,cultura,false,false
+146675,2023-2028,inmuebles,false,false
+146679,2023-2028,presupuesto | obras,false,false
+146680,2023-2028,inmuebles,false,false
+146681,2023-2028,inmuebles,false,false
 146691,2023-2028,inmuebles,false,true
 146693,2023-2028,cultura | obras,false,true
+146694,2023-2028,presupuesto | educacion,false,false
+146703,2023-2028,justicia,false,false
+146721,2023-2028,cultura | ambiente,false,false
+146811,2023-2028,estado,false,false
+146813,2023-2028,inmuebles,false,false
 146821,2023-2028,relaciones-exteriores | cultura,false,true
 146831,2023-2028,relaciones-exteriores | educacion,false,true
 146836,2023-2028,cultura | obras | derechos,false,true
+146881,2023-2028,inmuebles,false,false
+146913,2023-2028,economia,false,false
+146921,2023-2028,educacion,false,false
+146931,2023-2028,ambiente,false,false
+146932,2023-2028,inmuebles,false,false
+146951,2023-2028,ambiente,false,false
 147121,2023-2028,educacion,false,true
+147122,2023-2028,ambiente,false,false
+147125,2023-2028,justicia,false,false
+147142,2023-2028,obras,false,false
+147144,2023-2028,trabajo | cultura,false,false
+147191,2023-2028,derechos,false,false
+147192,2023-2028,obras,false,false
+147195,2023-2028,derechos,false,false
+147204,2023-2028,estado,false,false
 147211,2023-2028,presupuesto | economia,false,true
+147212,2023-2028,presupuesto | obras,false,false
+147373,2023-2028,justicia,false,false
+147374,2023-2028,salud,false,false
+147375,2023-2028,inmuebles,false,false
+147376,2023-2028,presupuesto,false,false
+147378,2023-2028,educacion,false,false
+147379,2023-2028,inmuebles,false,false
+147381,2023-2028,inmuebles,false,false
+147383,2023-2028,inmuebles,false,false
+147384,2023-2028,inmuebles,false,false
+147391,2023-2028,obras,false,false
+147403,2023-2028,trabajo | justicia,false,false
+147441,2023-2028,estado,false,false
+147581,2023-2028,inmuebles,false,false
+147605,2023-2028,presupuesto,false,false
 147606,2023-2028,inmuebles,false,true
+147608,2023-2028,otros-asuntos,false,false
 147614,2023-2028,economia | justicia,false,true
+147622,2023-2028,estado | derechos,false,false
+147841,2023-2028,obras,false,false
 147872,2023-2028,cultura,false,true
+147914,2023-2028,trabajo,false,false
 147921,2023-2028,presupuesto | obras,false,true
+147932,2023-2028,estado,false,false
+147951,2023-2028,presupuesto | economia | educacion,false,false
+147954,2023-2028,presupuesto | educacion,false,false
+147961,2023-2028,presupuesto | educacion,false,false
+148051,2023-2028,economia,false,false
+148062,2023-2028,relaciones-exteriores | obras,false,false
 148064,2023-2028,relaciones-exteriores | seguridad,false,true
+148073,2023-2028,inmuebles,false,false
 148081,2023-2028,obras,false,true
 148083,2023-2028,seguridad,false,true
+148085,2023-2028,inmuebles,false,false
+148086,2023-2028,ambiente | obras,false,false
+148262,2023-2028,justicia,false,false
+148264,2023-2028,estado,false,false
+148265,2023-2028,presupuesto | deporte,false,false
+148291,2023-2028,inmuebles,false,false
+148411,2023-2028,salud,false,false
+148412,2023-2028,seguridad,false,false
 148413,2023-2028,inmuebles,false,true
+148414,2023-2028,inmuebles,false,false
+148415,2023-2028,inmuebles,false,false
 148611,2023-2028,inmuebles,false,true
+148623,2023-2028,presupuesto | ambiente | obras,false,false
 148651,2023-2028,presupuesto,false,true
+148701,2023-2028,inmuebles,false,false
+148702,2023-2028,inmuebles,false,false
+148711,2023-2028,presupuesto | estado,false,false
+148722,2023-2028,inmuebles,false,false
+148891,2023-2028,derechos,false,false
+148892,2023-2028,cultura,false,false
 148895,2023-2028,inmuebles,false,true
+148922,2023-2028,seguridad,false,false
+148941,2023-2028,inmuebles,false,false
+148943,2023-2028,inmuebles,false,false
+148946,2023-2028,inmuebles,false,false
+148947,2023-2028,economia | justicia | derechos,false,false
+148948,2023-2028,derechos,false,false
+148952,2023-2028,inmuebles,false,false
+148961,2023-2028,inmuebles,false,false
+148981,2023-2028,cultura,false,false
+149001,2023-2028,educacion,false,false
 149021,2023-2028,inmuebles,false,true
+149031,2023-2028,inmuebles,false,false
+149033,2023-2028,inmuebles,false,false
+149034,2023-2028,inmuebles,false,false
 149141,2023-2028,pensiones-graciables,false,true
+149182,2023-2028,economia | justicia | derechos,false,false
+149191,2023-2028,educacion,false,false
+149192,2023-2028,economia | relaciones-exteriores,false,false
+149193,2023-2028,cultura,false,false
+149201,2023-2028,educacion,false,false
+149224,2023-2028,salud,false,false
+149225,2023-2028,educacion | cultura | deporte,false,false
 149227,2023-2028,inmuebles,false,true
+149233,2023-2028,economia,false,false
 149235,2023-2028,trabajo | salud,false,true
 149371,2023-2028,cultura,false,true
+149402,2023-2028,estado,false,false
+149412,2023-2028,educacion,false,false
 149422,2023-2028,presupuesto | educacion,false,true
+149432,2023-2028,inmuebles,false,false
+149441,2023-2028,inmuebles,false,false
+149451,2023-2028,justicia,false,false
+149511,2023-2028,salud,false,false
+149512,2023-2028,derechos,false,false
+149531,2023-2028,justicia,false,false
 149671,2023-2028,seguridad,false,true
+149796,2023-2028,presupuesto | estado,false,false
 149805,2023-2028,salud | cultura,false,true
 149806,2023-2028,relaciones-exteriores,false,true
 149811,2023-2028,inmuebles,false,true
 149821,2023-2028,economia,false,true
+149842,2023-2028,inmuebles,false,false
+149843,2023-2028,salud | obras,false,false
 149844,2023-2028,pensiones-graciables,false,true
+149851,2023-2028,inmuebles,false,false
 149861,2023-2028,pensiones-graciables,false,true
+149891,2023-2028,presupuesto,false,false
+149894,2023-2028,economia | estado,false,false
 149902,2023-2028,presupuesto | estado,false,true
 150081,2023-2028,cultura,false,true
 150101,2023-2028,cultura,false,true
+150111,2023-2028,presupuesto,false,false
 150151,2023-2028,estado,false,true
+150152,2023-2028,inmuebles,false,false
 150163,2023-2028,relaciones-exteriores,false,true
 150168,2023-2028,relaciones-exteriores | cultura,false,true
+150188,2023-2028,trabajo | derechos,false,false
+150212,2023-2028,derechos,false,false
+150213,2023-2028,obras,false,false
+150231,2023-2028,trabajo | obras | derechos,false,false
+150671,2023-2028,salud | educacion | derechos,false,false
+150673,2023-2028,estado,false,false
+150681,2023-2028,justicia,false,false
 150731,2023-2028,cultura,false,true
+150771,2023-2028,obras,false,false
 150781,2023-2028,obras | derechos,false,true
+150782,2023-2028,derechos,false,false
+150783,2023-2028,economia,false,false
+150784,2023-2028,inmuebles,false,false
+150785,2023-2028,inmuebles,false,false
+150792,2023-2028,inmuebles,false,false
+151682,2023-2028,obras,false,false
+151683,2023-2028,educacion,false,false
+151684,2023-2028,estado,false,false
 151701,2023-2028,cultura,false,true
+151712,2023-2028,inmuebles,false,false
+151713,2023-2028,inmuebles,false,false
+151714,2023-2028,pensiones-graciables,false,false
 151721,2023-2028,obras,false,true
+151722,2023-2028,inmuebles,false,false
+151731,2023-2028,seguridad,false,false
+151751,2023-2028,inmuebles,false,false
+151761,2023-2028,trabajo | obras,false,false
 151762,2023-2028,pensiones-graciables,false,true
+151763,2023-2028,economia | ambiente,false,false
 151764,2023-2028,estado,false,true
+151765,2023-2028,justicia,false,false
+151771,2023-2028,seguridad | obras,false,false
+151781,2023-2028,cultura,false,false
+151791,2023-2028,justicia | estado,false,false
+151801,2023-2028,obras,false,false
 151811,2023-2028,trabajo,false,true
+151823,2023-2028,trabajo,false,false
+151831,2023-2028,obras,false,false
+151832,2023-2028,trabajo,false,false
+151841,2023-2028,seguridad | estado,false,false
+151881,2023-2028,inmuebles,false,false
 151901,2023-2028,relaciones-exteriores | obras,false,true
 151903,2023-2028,relaciones-exteriores,false,true
+151911,2023-2028,relaciones-exteriores,false,false
 151921,2023-2028,economia | relaciones-exteriores,false,true
+151931,2023-2028,inmuebles,false,false
+151932,2023-2028,trabajo,false,false
+151933,2023-2028,salud | derechos,false,false
+151934,2023-2028,trabajo,false,false
+151935,2023-2028,trabajo,false,false
 151951,2023-2028,cultura,false,true
 152081,2023-2028,salud | educacion | derechos,false,true
+152091,2023-2028,estado,false,false
+152092,2023-2028,justicia | estado,false,false
+152093,2023-2028,inmuebles,false,false
 152095,2023-2028,pensiones-graciables,false,true
 152096,2023-2028,pensiones-graciables,false,true
+152142,2023-2028,economia | obras | estado,false,false
+152144,2023-2028,inmuebles,false,false
+152151,2023-2028,pensiones-graciables,false,false
+152152,2023-2028,relaciones-exteriores,false,false
+152187,2023-2028,justicia | derechos,false,false
+152197,2023-2028,trabajo,false,false
+152198,2023-2028,trabajo,false,false
+152391,2023-2028,ambiente | obras,false,false
+152392,2023-2028,salud | educacion | derechos,false,false
+152411,2023-2028,presupuesto,false,false
+152412,2023-2028,justicia,false,false
+152413,2023-2028,otros-asuntos,false,false
 152416,2023-2028,presupuesto | justicia,false,true
+152419,2023-2028,pensiones-graciables,false,false
+152454,2023-2028,derechos,false,false
+152595,2023-2028,inmuebles,false,false
+152596,2023-2028,economia,false,false
+152599,2023-2028,salud | seguridad | ambiente,false,false
+152600,2023-2028,economia | salud | seguridad | ambiente | derechos,false,false
+152633,2023-2028,obras,false,false
+152635,2023-2028,seguridad | derechos,false,false
+152636,2023-2028,inmuebles,false,false
+152641,2023-2028,salud,false,false
+152642,2023-2028,inmuebles,false,false
+152643,2023-2028,salud,false,false
 152711,2023-2028,inmuebles,false,true
+152767,2023-2028,presupuesto | trabajo | estado,false,false
+152801,2023-2028,economia | salud,false,false
 152822,2023-2028,presupuesto,false,true
 152841,2023-2028,presupuesto,false,true
+152842,2023-2028,justicia | derechos,false,false
+152861,2023-2028,salud | educacion | derechos,false,false
+152891,2023-2028,trabajo | estado,false,false
+153011,2023-2028,estado,false,false
 153012,2023-2028,relaciones-exteriores | obras,false,true
+153015,2023-2028,economia | derechos,false,false
+153016,2023-2028,derechos,false,false
+153017,2023-2028,estado,false,false
+153044,2023-2028,justicia,false,false
+153045,2023-2028,justicia,false,false
+153046,2023-2028,obras,false,false
+153047,2023-2028,obras,false,false
 153049,2023-2028,salud | cultura,false,true
+153072,2023-2028,cultura | derechos,false,false
+153108,2023-2028,pensiones-graciables,false,false
+153151,2023-2028,otros-asuntos,false,false
+153191,2023-2028,justicia,false,false
+153192,2023-2028,ambiente,false,false
+153194,2023-2028,presupuesto | trabajo,false,false
+153198,2023-2028,inmuebles,false,false
+153199,2023-2028,cultura,false,false
+153200,2023-2028,economia,false,false
+153202,2023-2028,estado,false,false
+153204,2023-2028,presupuesto | justicia,false,false
+153221,2023-2028,presupuesto,false,false
+153252,2023-2028,inmuebles,false,false
+153381,2023-2028,salud,false,false
+153411,2023-2028,justicia,false,false
+153413,2023-2028,inmuebles,false,false
+153414,2023-2028,presupuesto,false,false
+153415,2023-2028,presupuesto | salud,false,false
+153416,2023-2028,cultura,false,false
+153431,2023-2028,trabajo | estado,false,false
 153616,2023-2028,economia,false,true
+153625,2023-2028,cultura,false,false
 153651,2023-2028,economia,false,true
 153669,2023-2028,seguridad,false,true
+153672,2023-2028,educacion | seguridad,false,false
+153691,2023-2028,estado,false,false
+153701,2023-2028,derechos,false,false
+153702,2023-2028,educacion,false,false
+153703,2023-2028,justicia,false,false
+153704,2023-2028,estado,false,false
+153705,2023-2028,salud,false,false
+153706,2023-2028,inmuebles,false,false
+153707,2023-2028,cultura,false,false
+153708,2023-2028,cultura,false,false
+153711,2023-2028,inmuebles,false,false
+153721,2023-2028,inmuebles,false,false
+153741,2023-2028,inmuebles,false,false
+153752,2023-2028,derechos,false,false
+153841,2023-2028,pensiones-graciables,false,false
+153954,2023-2028,justicia | estado | derechos,false,false
+153957,2023-2028,presupuesto,false,false
+153958,2023-2028,salud | educacion | derechos,false,false
+153961,2023-2028,seguridad,false,false
 153994,2023-2028,relaciones-exteriores,false,true
 153995,2023-2028,presupuesto | relaciones-exteriores | obras,false,true
 154001,2023-2028,economia | relaciones-exteriores,false,true
 154011,2023-2028,presupuesto | justicia,false,true
+154012,2023-2028,ambiente,false,false
+154051,2023-2028,trabajo | salud,false,false
+154052,2023-2028,cultura,false,false
+154055,2023-2028,salud,false,false
+154103,2023-2028,pensiones-graciables,false,false
+154234,2023-2028,justicia | estado,false,false
+154235,2023-2028,derechos,false,false
+154252,2023-2028,economia,false,false
+154262,2023-2028,inmuebles,false,false
+154263,2023-2028,inmuebles,false,false
+154264,2023-2028,educacion,false,false
+154265,2023-2028,inmuebles,false,false
+154266,2023-2028,pensiones-graciables,false,false
 154269,2023-2028,salud | cultura,false,true
+154270,2023-2028,presupuesto | salud | justicia,false,false
+154271,2023-2028,trabajo,false,false
+154275,2023-2028,educacion | obras,false,false
+154281,2023-2028,salud,false,false
+154283,2023-2028,trabajo | justicia,false,false
+154292,2023-2028,pensiones-graciables,false,false
 154293,2023-2028,inmuebles,false,true
+154294,2023-2028,inmuebles,false,false
+154295,2023-2028,salud,false,false
+154421,2023-2028,salud,false,false
+154461,2023-2028,estado,false,false
+154462,2023-2028,seguridad,false,false
+154463,2023-2028,educacion,false,false
+154466,2023-2028,presupuesto | cultura,false,false
+154471,2023-2028,pensiones-graciables,false,false
+154481,2023-2028,economia,false,false
 154491,2023-2028,derechos,false,true
 154501,2023-2028,justicia | derechos,false,true
+154671,2023-2028,cultura,false,false
 154691,2023-2028,cultura,false,true
 154704,2023-2028,cultura,false,true
+154705,2023-2028,salud | estado,false,false
+154707,2023-2028,trabajo,false,false
+154711,2023-2028,inmuebles,false,false
+154721,2023-2028,inmuebles,false,false
+154752,2023-2028,seguridad,false,false
+154753,2023-2028,economia,false,false
 154761,2023-2028,obras,false,true
 154762,2023-2028,trabajo | salud | obras,false,true
+154811,2023-2028,justicia,false,false
+154821,2023-2028,obras | estado,false,false
+154831,2023-2028,economia | cultura,false,false
 154832,2023-2028,justicia,false,true
+154833,2023-2028,pensiones-graciables,false,false
+154834,2023-2028,estado,false,false
+154841,2023-2028,obras,false,false
+154944,2023-2028,obras,false,false
+155039,2023-2028,cultura,false,false
+155062,2023-2028,salud | obras,false,false
+155156,2023-2028,otros-asuntos,false,false
+155157,2023-2028,inmuebles,false,false
+155163,2023-2028,salud,false,false
 155164,2023-2028,presupuesto | obras,false,true
 155171,2023-2028,cultura,false,true
 155181,2023-2028,justicia,false,true
+155183,2023-2028,cultura | obras,false,false
+155185,2023-2028,economia | derechos,false,false
+155191,2023-2028,derechos,false,false
+155193,2023-2028,cultura,false,false
+155194,2023-2028,salud | derechos,false,false
+155200,2023-2028,salud,false,false
+155223,2023-2028,cultura,false,false
+155231,2023-2028,cultura,false,false
+155361,2023-2028,pensiones-graciables,false,false
+155381,2023-2028,inmuebles,false,false
+155414,2023-2028,inmuebles,false,false
+155531,2023-2028,obras,false,false
 155544,2023-2028,pensiones-graciables,false,true
+155641,2023-2028,relaciones-exteriores,false,false
+155642,2023-2028,relaciones-exteriores,false,false
+155644,2023-2028,economia,false,false
+155652,2023-2028,obras,false,false
+155661,2023-2028,estado | derechos,false,false
+155663,2023-2028,inmuebles,false,false
+155666,2023-2028,cultura,false,false
 155681,2023-2028,trabajo | justicia,false,true
+155801,2023-2028,relaciones-exteriores | seguridad,false,false
+155822,2023-2028,inmuebles,false,false
+155831,2023-2028,otros-asuntos,false,false
+155832,2023-2028,obras,false,false
+155833,2023-2028,educacion,false,false
+155881,2023-2028,trabajo | derechos,false,false
+156001,2023-2028,inmuebles,false,false
+156002,2023-2028,derechos,false,false
+156004,2023-2028,derechos,false,false
+156014,2023-2028,inmuebles,false,false
+156015,2023-2028,trabajo | salud | derechos,false,false
 156024,2023-2028,presupuesto,false,true
+156041,2023-2028,cultura,false,false
+156042,2023-2028,cultura,false,false
+156061,2023-2028,estado,false,false
 156142,2023-2028,justicia | derechos,false,true
+156224,2023-2028,cultura,false,false
+156232,2023-2028,obras,false,false
+156236,2023-2028,presupuesto | justicia,false,false
+156263,2023-2028,inmuebles,false,false
+156416,2023-2028,salud,false,false
+156417,2023-2028,pensiones-graciables,false,false
+156431,2023-2028,inmuebles,false,false
+156432,2023-2028,inmuebles,false,false
 156434,2023-2028,cultura,false,true
+156451,2023-2028,relaciones-exteriores | cultura,false,false
+156621,2023-2028,salud,false,false
+156634,2023-2028,inmuebles,false,false
+156682,2023-2028,salud,false,false
+156691,2023-2028,educacion,false,false
+156692,2023-2028,presupuesto | salud | obras,false,false
+156711,2023-2028,economia,false,false
+156761,2023-2028,obras,false,false
+156771,2023-2028,obras,false,false
 156831,2023-2028,presupuesto | obras,false,true
+156861,2023-2028,inmuebles,false,false
+156874,2023-2028,inmuebles,false,false
+156891,2023-2028,inmuebles,false,false
+156911,2023-2028,inmuebles,false,false
+157037,2023-2028,cultura,false,false
+157091,2023-2028,cultura,false,false
+157103,2023-2028,economia,false,false
+157122,2023-2028,pensiones-graciables,false,false
+157143,2023-2028,presupuesto | obras | estado,false,false
+157147,2023-2028,cultura,false,false
+157163,2023-2028,presupuesto | estado,false,false
+157164,2023-2028,estado,false,false
+157201,2023-2028,salud,false,false
+157232,2023-2028,inmuebles,false,false
+157381,2023-2028,pensiones-graciables,false,false
+157390,2023-2028,presupuesto | salud,false,false
+157391,2023-2028,inmuebles,false,false
+157421,2023-2028,economia | salud,false,false
+157424,2023-2028,salud | educacion,false,false
+157427,2023-2028,inmuebles,false,false
+157431,2023-2028,inmuebles,false,false
+157432,2023-2028,inmuebles,false,false
+157441,2023-2028,inmuebles,false,false
+157452,2023-2028,trabajo | estado,false,false
+157491,2023-2028,estado,false,false
+157575,2023-2028,justicia,false,false
+157612,2023-2028,trabajo | salud,false,false
+157622,2023-2028,salud | educacion | derechos,false,false
+157631,2023-2028,derechos,false,false
+157635,2023-2028,pensiones-graciables,false,false
+157641,2023-2028,seguridad,false,false
+157651,2023-2028,estado,false,false
+157672,2023-2028,presupuesto | salud,false,false
+157673,2023-2028,inmuebles,false,false
+157681,2023-2028,ambiente,false,false
+157682,2023-2028,inmuebles,false,false
+157691,2023-2028,economia | obras,false,false
+157692,2023-2028,economia,false,false
+157711,2023-2028,trabajo,false,false
 157712,2023-2028,cultura,false,true
+157721,2023-2028,justicia,false,false
+157762,2023-2028,trabajo,false,false
+157902,2023-2028,ambiente | estado,false,false
+157981,2023-2028,pensiones-graciables,false,false
+157982,2023-2028,inmuebles,false,false
+157989,2023-2028,economia | relaciones-exteriores,false,false
+157991,2023-2028,relaciones-exteriores,false,false
+158011,2023-2028,trabajo,false,false
+158012,2023-2028,deporte,false,false
 158018,2023-2028,trabajo,false,true
+158183,2023-2028,obras,false,false
+158184,2023-2028,pensiones-graciables,false,false
+158185,2023-2028,trabajo,false,false
+158196,2023-2028,presupuesto | salud,false,false
+158197,2023-2028,relaciones-exteriores,false,false
+158221,2023-2028,presupuesto | economia | salud,false,false
+158222,2023-2028,economia | educacion,false,false
+158241,2023-2028,presupuesto | salud,false,false
+158356,2023-2028,inmuebles,false,false
+158361,2023-2028,salud | derechos,false,false
+158362,2023-2028,salud | estado,false,false
+158381,2023-2028,relaciones-exteriores,false,false
+158382,2023-2028,inmuebles,false,false
+158384,2023-2028,trabajo | estado,false,false
+158385,2023-2028,cultura,false,false
+158388,2023-2028,economia,false,false
+158389,2023-2028,cultura | seguridad,false,false
+158390,2023-2028,cultura,false,false
+158391,2023-2028,cultura | derechos,false,false
+158411,2023-2028,economia,false,false
+158471,2023-2028,seguridad,false,false
+158473,2023-2028,inmuebles,false,false
+158522,2023-2028,trabajo | justicia,false,false
+158621,2023-2028,presupuesto,false,false
+158645,2023-2028,justicia,false,false
+158646,2023-2028,presupuesto,false,false
+158655,2023-2028,economia,false,false
+158656,2023-2028,inmuebles,false,false
+158657,2023-2028,salud,false,false
+158658,2023-2028,justicia | estado,false,false
+158664,2023-2028,educacion | cultura,false,false
+158702,2023-2028,inmuebles,false,false
+158711,2023-2028,salud,false,false
+158738,2023-2028,inmuebles,false,false
+158776,2023-2028,justicia,false,false
+158777,2023-2028,inmuebles,false,false
+158791,2023-2028,estado,false,false
+158816,2023-2028,salud | educacion,false,false
+158818,2023-2028,inmuebles,false,false
+158819,2023-2028,estado,false,false
+158820,2023-2028,inmuebles,false,false
+158831,2023-2028,inmuebles,false,false
+158832,2023-2028,inmuebles,false,false
+158862,2023-2028,derechos,false,false
+158871,2023-2028,cultura,false,false
+158874,2023-2028,salud,false,false
+158991,2023-2028,pensiones-graciables,false,false
+159011,2023-2028,economia | estado,false,false
+159016,2023-2028,educacion,false,false
+159032,2023-2028,inmuebles,false,false
+159321,2023-2028,cultura,false,false
+159331,2023-2028,estado,false,false
+159371,2023-2028,relaciones-exteriores,false,false
+159392,2023-2028,inmuebles,false,false
+159396,2023-2028,ambiente,false,false
+159441,2023-2028,inmuebles,false,false
+159461,2023-2028,seguridad,false,false
+159641,2023-2028,economia | ambiente,false,false
+159642,2023-2028,otros-asuntos,false,false
+159653,2023-2028,economia,false,false
+159654,2023-2028,presupuesto | salud,false,false
+159655,2023-2028,justicia | derechos,false,false
+159661,2023-2028,estado,false,false
+159662,2023-2028,trabajo,false,false
+159701,2023-2028,derechos,false,false
+159703,2023-2028,obras,false,false
+159713,2023-2028,derechos,false,false
+159714,2023-2028,cultura,false,false
+159721,2023-2028,inmuebles,false,false
+159731,2023-2028,cultura | obras,false,false
+159741,2023-2028,obras | estado,false,false
+159742,2023-2028,derechos,false,false
+159801,2023-2028,inmuebles,false,false
+159843,2023-2028,inmuebles,false,false
+159951,2023-2028,presupuesto | economia | relaciones-exteriores | cultura,false,false
+159953,2023-2028,derechos,false,false
+159966,2023-2028,educacion,false,false
+159982,2023-2028,derechos,false,false
+159983,2023-2028,ambiente,false,false
+159984,2023-2028,salud,false,false
+160026,2023-2028,justicia | derechos,false,false
+160161,2023-2028,cultura,false,false
+160163,2023-2028,inmuebles,false,false
+160165,2023-2028,inmuebles,false,false
+160167,2023-2028,trabajo,false,false
+160168,2023-2028,inmuebles,false,false
+160171,2023-2028,seguridad,false,false
+160213,2023-2028,inmuebles,false,false
+160214,2023-2028,inmuebles,false,false
+160251,2023-2028,deporte,false,false
+160272,2023-2028,inmuebles,false,false
 160291,2023-2028,economia,false,true
+160301,2023-2028,economia,false,false
+160331,2023-2028,inmuebles,false,false
+160332,2023-2028,trabajo,false,false
+160341,2023-2028,salud,false,false
+160362,2023-2028,economia | relaciones-exteriores,false,false
+160363,2023-2028,relaciones-exteriores,false,false
+160371,2023-2028,relaciones-exteriores | obras,false,false
+160413,2023-2028,economia | cultura,false,false

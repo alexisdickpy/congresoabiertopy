@@ -86,7 +86,7 @@ function camaraDelTema(camara, votaciones, i) {
 const porPeriodo = new Map();
 
 /**
- * Un tema por cada uno de temas.json (y "pendiente de clasificación" si tiene votaciones), en ese orden:
+ * Un tema por cada uno de temas.json (el de reserva y "pendiente de clasificación", solo si tienen votaciones), en ese orden:
  * { id, nombre, nombreCorto, definicion, url, total, camaras }. `camaras`, primero la de Senadores, solo
  * las que tienen votaciones del tema. `total` es la cantidad de votaciones del tema.
  */
@@ -94,6 +94,7 @@ export function votosPorTema(periodo) {
   if (porPeriodo.has(periodo)) return porPeriodo.get(periodo);
   const i = indice(periodo);
   const { votaciones } = votacionesDelPeriodo(periodo);
+  const soloConVotaciones = new Set([PENDIENTE, ...temas().filter((t) => t.reserva).map((t) => t.id)]);
   const lista = [...temas(), { id: PENDIENTE, nombre: TEXTO_PENDIENTE, nombreCorto: TEXTO_PENDIENTE, definicion: null }]
     .map((t) => {
       const delTema = votaciones.filter((v) => v.temas.filtro.includes(t.id));
@@ -102,7 +103,7 @@ export function votosPorTema(periodo) {
         .map((c) => camaraDelTema(c, delTema.filter((v) => v.camara === c), i));
       return { id: t.id, nombre: t.nombre, nombreCorto: t.nombreCorto, definicion: t.definicion, url: rutas.votosPorTema(t.id), total: delTema.length, camaras };
     })
-    .filter((t) => t.id !== PENDIENTE || t.total > 0);
+    .filter((t) => !soloConVotaciones.has(t.id) || t.total > 0);
   porPeriodo.set(periodo, lista);
   return lista;
 }
