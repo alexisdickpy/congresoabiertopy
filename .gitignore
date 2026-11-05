@@ -25,6 +25,9 @@ desktop.ini
 .vscode/
 .idea/
 
+# Imagen general para compartir: se genera al compilar (sitio/scripts/imagen-compartir.js, #126)
+sitio/public/compartir.png
+
 # Archivos de trabajo locales que no deben publicarse
 CLAUDE.md
 CLAUDE.local.md

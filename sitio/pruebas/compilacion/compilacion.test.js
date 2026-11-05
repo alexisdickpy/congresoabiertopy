@@ -1,5 +1,6 @@
 // Comprueba el sitio compilado (ejecutar después de npm run build).
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { test } from "node:test";
@@ -686,6 +687,10 @@ const etiqueta = (html, patron) =>
 const metaPropiedad = (html, propiedad) => etiqueta(html, new RegExp(`<meta property="${propiedad}" content="([^"]*)"`));
 const datosEstructurados = (url) => JSON.parse(etiqueta(leer(url), /<script type="application\/ld\+json">(.*?)<\/script>/s));
 const archivoDe = (direccion) => join(dist, decodeURIComponent(new URL(direccion).pathname));
+/** Versión (?v=…) que debe llevar la dirección de una imagen: huella de su contenido (lib/seo.js, versionar, #126). */
+const versionDe = (direccion) => createHash("sha256").update(readFileSync(archivoDe(direccion))).digest("hex").slice(0, 10);
+/** Dirección de la imagen con su versión, como debe aparecer en og:image. */
+const conVersion = (direccion) => `${direccion}?v=${versionDe(direccion)}`;
 
 test("cada página tiene título y descripción únicos, URL canónica e imagen para compartir", () => {
   const titulos = new Map();
@@ -709,13 +714,14 @@ test("cada página tiene título y descripción únicos, URL canónica e imagen 
     assert.equal(metaPropiedad(html, "og:title"), titulo);
     const imagen = metaPropiedad(html, "og:image");
     assert.ok(imagen?.startsWith(rutas.sitio) && existsSync(archivoDe(imagen)), `Imagen inexistente en ${url}`);
+    assert.equal(imagen, conVersion(imagen.split("?")[0]), `Imagen sin la versión de su contenido en ${url}`);
   }
 });
 
 test("la foto oficial como vista previa de cada legislador que la tiene", () => {
   for (const persona of legisladores()) {
     const foto = ficha(persona).bloques[0].foto;
-    const esperada = rutas.absoluta(foto ?? rutas.imagenCompartir());
+    const esperada = conVersion(rutas.absoluta(foto ?? rutas.imagenCompartir()));
     assert.equal(metaPropiedad(leer(persona.url), "og:image"), esperada, persona.url);
   }
 });
@@ -915,7 +921,7 @@ test("una página por votación con su imagen para compartir, botones sin servic
   for (const v of votaciones) {
     const html = leer(v.pagina);
     const c = compartirVotacion(v);
-    assert.ok(html.includes(`<meta property="og:image" content="${c.vistaPrevia.url}"`), `Falta la imagen de vista previa en ${v.pagina}`);
+    assert.ok(html.includes(`<meta property="og:image" content="${conVersion(c.vistaPrevia.url)}"`), `Falta la imagen de vista previa en ${v.pagina}`);
     assert.ok(html.includes('<meta name="twitter:card" content="summary_large_image"'), v.pagina);
     for (const formato of ["horizontal", "vertical"]) {
       const imagen = join(dist, rutas.imagenVotacion(v.id, formato));

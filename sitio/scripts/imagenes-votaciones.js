@@ -4,37 +4,19 @@
 // provisional hasta la Fase 4 (#14).
 //
 // La tipografía es Inter, del paquete @expo-google-fonts/inter, para que las imágenes salgan iguales en
-// cualquier computadora y en el servidor de compilación. Las imágenes se dibujan en un proceso aparte
-// que solo ve esa tipografía (variable FONTCONFIG_FILE, que se lee al iniciar el proceso).
+// cualquier computadora y en el servidor de compilación (scripts/fuente-inter.js).
 //
 // public/votacion/ no se sube al repositorio. Para no redibujar todo en cada compilación, se guarda
 // una huella del dibujo de cada votación (node_modules/.cache/) y solo se dibujan las que cambiaron.
-import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
-import { availableParallelism, tmpdir } from "node:os";
+import { availableParallelism } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { FUENTE, usarInter } from "./fuente-inter.js";
 
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const fuentes = resolve(raiz, "node_modules", "@expo-google-fonts", "inter");
-const configuracion = join(tmpdir(), "observatorio-legislativo-fuentes", "fonts.conf");
-
-if (process.env.FONTCONFIG_FILE !== configuracion) {
-  const carpeta = (ruta) => `<dir>${ruta.replace(/\\/g, "/")}</dir>`;
-  mkdirSync(dirname(configuracion), { recursive: true });
-  writeFileSync(
-    configuracion,
-    `<?xml version="1.0"?>\n<!DOCTYPE fontconfig SYSTEM "fonts.dtd">\n<fontconfig>${carpeta(join(fuentes, "400Regular"))}${carpeta(join(fuentes, "700Bold"))}` +
-      `<cachedir>${join(dirname(configuracion), "cache").replace(/\\/g, "/")}</cachedir></fontconfig>\n`,
-  );
-  const hijo = spawnSync(process.execPath, [fileURLToPath(import.meta.url)], {
-    stdio: "inherit",
-    // Un hilo de libuv por procesador, para dibujar varias imágenes a la vez.
-    env: { ...process.env, FONTCONFIG_FILE: configuracion, UV_THREADPOOL_SIZE: String(Math.max(4, availableParallelism())) },
-  });
-  process.exit(hijo.status ?? 1);
-}
+usarInter(import.meta.url);
 
 const { default: sharp } = await import("sharp");
 const { periodos } = await import("../src/lib/datos.js");
@@ -54,7 +36,6 @@ const color = {
 };
 /** Color de una clase de categoría de voto (voto-si → --color-voto-si); sin posición, el del borde. */
 const colorDe = (clase) => token(`color-${clase}`) ?? color.borde;
-const FUENTE = "Inter";
 
 const escapar = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 

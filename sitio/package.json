@@ -8,7 +8,7 @@
     "node": "24.21.0"
   },
   "scripts": {
-    "datos": "node scripts/validar-contenido.js && node scripts/copiar-datos.js && node scripts/reducir-fotos.js && node scripts/imagenes-votaciones.js",
+    "datos": "node scripts/validar-contenido.js && node scripts/copiar-datos.js && node scripts/reducir-fotos.js && node scripts/imagen-compartir.js && node scripts/imagenes-votaciones.js",
     "dev": "npm run datos && astro dev",
     "build": "npm run datos && astro build && node scripts/indice-busqueda.js",
     "preview": "astro preview",
