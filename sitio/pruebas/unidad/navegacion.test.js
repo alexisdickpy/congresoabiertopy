@@ -25,9 +25,9 @@ test("el menú tiene una entrada por cada vista de análisis, con direcciones de
     menuPrincipal().map((e) => e.texto),
     ["Leyes", "Proyectos", "Legisladores", "Votaciones", "Partidos", "Temas", "Rankings", "Estadísticas", "Test de afinidad", "Bot de Telegram", textos.general.menu.buscarLeyes, "Datos abiertos"],
   );
-  // «Partidos» lleva al índice de partidos (#93); la coincidencia la sigue marcando (siguiente prueba).
+  // "Partidos" lleva al índice de partidos (#93); la coincidencia la sigue marcando (siguiente prueba).
   assert.ok(urls.includes(rutas.partidos()) && !urls.includes(rutas.coincidencia()) && urls.includes(rutas.rankings()));
-  // La tabla de votaciones nominales ya no tiene entrada propia; marca «Rankings» (siguiente prueba).
+  // La tabla de votaciones nominales ya no tiene entrada propia; marca "Rankings" (siguiente prueba).
   assert.ok(!urls.includes(rutas.votacionesNominales()));
   assert.equal(new Set(urls).size, urls.length, "Direcciones repetidas en el menú");
   // Todas las vistas de análisis tienen tarjeta en la portada.
@@ -166,16 +166,16 @@ test("vista previa de votaciones: las más recientes de las dos cámaras, al fin
     ["votaciones", "temas"],
   );
   assert.equal(CANTIDAD_ULTIMAS_PORTADA, 3, "La portada muestra las 3 más recientes (#92)");
-  // Los temas van a lo ancho, con una etiqueta por tema que lleva a su página (#37), sin «Pendiente» (#92).
+  // Los temas van a lo ancho, con una etiqueta por tema que lleva a su página (#37), sin "Pendiente" (#92).
   assert.deepEqual(previa.temas.map((t) => t.url), votosPorTema(PERIODO).filter((t) => t.id !== PENDIENTE).map((t) => t.url));
 });
 
-test("la portada nunca muestra «Pendiente de clasificación»; el catálogo, solo si tiene alguno (#92)", () => {
+test('la portada nunca muestra "Pendiente de clasificación"; el catálogo, solo si tiene alguno (#92)', () => {
   const portada = resumenPorTema(PERIODO, { conPendiente: false });
   const catalogo = resumenPorTema(PERIODO);
   assert.ok(!portada.some((t) => t.id === PENDIENTE));
   assert.ok(!vistaPrevia(PERIODO).temas.some((t) => t.id === PENDIENTE));
-  // Fuera de «Pendiente», los dos cuadros son iguales.
+  // Fuera de "Pendiente", los dos cuadros son iguales.
   assert.deepEqual(portada, catalogo.filter((t) => t.id !== PENDIENTE));
   const pendiente = catalogo.find((t) => t.id === PENDIENTE);
   if (pendiente) assert.ok(pendiente.leyes + pendiente.archivados + pendiente.enTramite + pendiente.otros > 0);

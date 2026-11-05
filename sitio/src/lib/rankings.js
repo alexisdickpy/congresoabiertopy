@@ -1,6 +1,6 @@
 // Rankings de legisladores por cámara (alcance acordado en #57). Sin HTML. Usa las cifras de la vista
 // comparativa (lib/legisladores.js, comparativa), sin recalcularlas, y nunca suma las cámaras. La lista
-// de más «rebeldes» está en lib/votosDistintos.js; aquí, el orden común y la de más «ausentes» (cifra
+// de más "rebeldes" está en lib/votosDistintos.js; aquí, el orden común y la de más "ausentes" (cifra
 // ausencias, #29).
 
 import { comparativa } from "./legisladores.js";
@@ -37,7 +37,7 @@ export function ausenciasDeCamara(filas, { minimo = MINIMO_VOTACIONES_AUSENCIAS,
   };
 }
 
-/** Ranking de más «ausentes» de un período, por cámara, en el orden de la vista comparativa. */
+/** Ranking de más "ausentes" de un período, por cámara, en el orden de la vista comparativa. */
 export function masAusentes(periodo) {
   return {
     periodo,

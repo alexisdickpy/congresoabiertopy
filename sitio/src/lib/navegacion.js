@@ -13,7 +13,7 @@ const txc = textos.general.comunes;
  * `descripcion`, los de la portada. Con `portada: false` la vista está en el menú y no en la portada; con
  * `portadaAlFinal`, su tarjeta va a lo ancho debajo de las demás. `incluye` son otras direcciones que
  * marcan su entrada del menú. Con `urlMenu`, la entrada del menú lleva a esa dirección y la de la vista
- * sigue marcándola: «Partidos» lleva al índice de partidos (#93) y la coincidencia queda dentro.
+ * sigue marcándola: "Partidos" lleva al índice de partidos (#93) y la coincidencia queda dentro.
  */
 export const vistasDeAnalisis = () => [
   {
@@ -42,7 +42,7 @@ export const vistasDeAnalisis = () => [
     portadaAlFinal: true,
   },
   {
-    // En la portada, solo la lista de más «rebeldes» (#57); la de más «ausentes» está en la página.
+    // En la portada, solo la lista de más "rebeldes" (#57); la de más "ausentes" está en la página.
     clave: "rankings",
     url: rutas.rankings(),
     incluye: [rutas.votacionesNominales()],
@@ -67,7 +67,7 @@ export const menuPrincipal = () => [
 
 /**
  * Entrada del menú que corresponde a una dirección: la de ruta más larga que la contiene, contando su
- * `incluye`, para que /legisladores/votaciones-nominales/ marque «Rankings» y no también «Legisladores».
+ * `incluye`, para que /legisladores/votaciones-nominales/ marque "Rankings" y no también "Legisladores".
  */
 export function entradaActual(entradas, pathname) {
   const largo = (e) => Math.max(...[e.url, ...(e.incluye ?? [])].filter((u) => pathname.startsWith(u)).map((u) => u.length), -1);

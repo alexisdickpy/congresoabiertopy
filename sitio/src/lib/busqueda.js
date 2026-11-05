@@ -1,4 +1,4 @@
-// Tipos de resultado del buscador (#104): el valor del filtro «tipo» del índice de Pagefind. Sin
+// Tipos de resultado del buscador (#104): el valor del filtro "tipo" del índice de Pagefind. Sin
 // dependencias, porque también lo usa el navegador. Los nombres que se muestran están en
 // contenido/interaccion.json (buscar).
 

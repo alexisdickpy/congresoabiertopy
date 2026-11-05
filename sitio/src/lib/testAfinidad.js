@@ -22,7 +22,7 @@ import * as rutas from "./rutas.js";
 
 const OPUESTO = { SI: "NO", NO: "SI" };
 
-/** Posición (letra) que corresponde a una mayoría, según el voto que equivale a «A favor». */
+/** Posición (letra) que corresponde a una mayoría, según el voto que equivale a "A favor". */
 export function letraDe(sentido, votoAFavor) {
   if (sentido === votoAFavor) return POSICION.favor;
   if (sentido === OPUESTO[votoAFavor]) return POSICION.contra;

@@ -2,7 +2,7 @@
 // mano (docs/edicion-de-textos.md). Solo para la compilación: los scripts del navegador importan
 // contenido/interaccion.json y lib/rellenar.js, para no llevar todos los textos a cada página.
 //
-// Los textos con enlaces o negrita usan Markdown («[texto](dirección)», «**negrita**»).
+// Los textos con enlaces o negrita usan Markdown ("[texto](dirección)", "**negrita**").
 
 import { marked } from "marked";
 import buscar from "../contenido/buscar.json" with { type: "json" };

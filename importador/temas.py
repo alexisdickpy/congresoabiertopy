@@ -8,14 +8,14 @@ Es un dato propio, separado de los valores oficiales:
 
 Criterios (ver docs/metodologia.md):
 - Las reglas buscan las palabras clave en el acápite oficial del proyecto, sin mayúsculas ni tildes y
-  sin el encabezado «Mensaje del Poder Ejecutivo… por el cual remite» ni la parte final «presentado
-  por…». Cada palabra clave es el comienzo de una palabra
-  (`tributari` encuentra «tributaria» y «tributario»).
+  sin el encabezado "Mensaje del Poder Ejecutivo… por el cual remite" ni la parte final "presentado
+  por…". Cada palabra clave es el comienzo de una palabra
+  (`tributari` encuentra "tributaria" y "tributario").
 - Un proyecto puede tener más de un tema. Los temas con `exclusivo` (pensiones graciables, inmuebles)
   dejan fuera a los demás, porque el beneficiario o el destino del inmueble no es el tema de la ley.
 - Cada tema puede tener `excepto`, frases que no cuentan para ese tema.
-- Sin ninguna regla, el proyecto recibe el tema de reserva (`reserva: true` en temas.json, «Otros asuntos»,
-  #111) con origen «reserva». Así ningún proyecto queda pendiente de clasificación; `pendiente` es siempre
+- Sin ninguna regla, el proyecto recibe el tema de reserva (`reserva: true` en temas.json, "Otros asuntos",
+  #111) con origen "reserva". Así ningún proyecto queda pendiente de clasificación; `pendiente` es siempre
   false y se conserva por compatibilidad.
 - Las entradas revisadas a mano (`revisado: true`) no se recalculan.
 
@@ -50,7 +50,7 @@ def normalizar(texto):
 
 
 def texto_de_reglas(acapite):
-    """El acápite normalizado, sin el encabezado «Mensaje… remite» ni la parte «presentado por…», entre espacios."""
+    """El acápite normalizado, sin el encabezado "Mensaje… remite" ni la parte "presentado por…", entre espacios."""
     texto = MENSAJE.sub("", PRESENTADO_POR.sub("", normalizar(acapite)))
     return f" {texto.strip()} "
 

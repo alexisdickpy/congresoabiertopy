@@ -1,13 +1,13 @@
 ---
 // Apartado de la portada con cada vista de análisis (lib/navegacion.js) que no lleva `portada: false`.
-// Con parte="tarjetas", un bloque a lo ancho por vista, primero los más «rebeldes» y después la
+// Con parte="tarjetas", un bloque a lo ancho por vista, primero los más "rebeldes" y después la
 // coincidencia de votos entre partidos (#92), cada uno con las dos cámaras lado a lado (senadores a la
 // izquierda, diputados a la derecha) y alineadas por fila. La portada muestra solo partidos; las
 // bancadas están en la página de coincidencia. Con la clave de una vista de
 // `portadaAlFinal` (hoy, "temas" y "votaciones"), solo esa vista a lo ancho, donde la ponga la portada:
 // su enlace, una línea sobre qué muestra y una vista previa con datos por cámara (lib/portada.js,
 // alcance acordado en #51). Solo la de rankings lleva nombres de personas, los primeros de más
-// «rebeldes» (#54, #57). Una vista sin vista previa propia muestra solo el enlace y la línea. En
+// "rebeldes" (#54, #57). Una vista sin vista previa propia muestra solo el enlace y la línea. En
 // la coincidencia se elige el partido del gráfico; al abrir, el de más legisladores en ejercicio.
 import BarrasCoincidencia from "./BarrasCoincidencia.astro";
 import ListaVotaciones from "./ListaVotaciones.astro";
@@ -27,7 +27,7 @@ const { periodo, parte } = Astro.props;
 const previa = vistaPrevia(periodo);
 const numero = (n: number) => n.toLocaleString("es-PY");
 const plural = (n: number, singular: string, varios: string) => `${numero(n)} ${n === 1 ? singular : varios}`;
-/** Orden de los bloques de arriba: primero los más «rebeldes», después la coincidencia (#92). */
+/** Orden de los bloques de arriba: primero los más "rebeldes", después la coincidencia (#92). */
 const ORDEN = ["rankings", "coincidencia"];
 /** Filas de la lista de rebeldes, para alinear los puestos de las dos cámaras. */
 const filasRanking = Math.max(0, ...previa.votosDistintos.map((c) => c.filas.length));
@@ -192,7 +192,7 @@ const filasRanking = Math.max(0, ...previa.votosDistintos.map((c) => c.filas.len
   .tarjeta h2 {
     margin-top: 0;
   }
-  /* Etiquetas de los temas como cuadritos con el color de su tema (#92), como los de «Leyes por tema». */
+  /* Etiquetas de los temas como cuadritos con el color de su tema (#92), como los de "Leyes por tema". */
   .temas-portada {
     margin: var(--espacio-3) 0;
   }

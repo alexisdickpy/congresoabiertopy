@@ -10,7 +10,7 @@
   import { fill } from "../lib/rellenar.js";
   const ti = interaccion.paginador;
   const POR_PAGINA = 25;
-  /** Números a mostrar: el primero, el último y los vecinos de la página actual; null es «…». */
+  /** Números a mostrar: el primero, el último y los vecinos de la página actual; null es "…". */
   const numeros = (actual: number, total: number) => {
     const lista: (number | null)[] = [];
     for (let n = 1; n <= total; n++) {

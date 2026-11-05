@@ -14,7 +14,7 @@
 // - Tabla compacta (#99): una tabla por cámara con una fila por tema y una columna por categoría oficial
 //   (SI, NO, ABSTENCIÓN/BLANCO, NO VOTA y AUSENTE), con las mismas celdas de los votos por tema. NO VOTA
 //   solo aparece si el partido tiene alguno en esa cámara. Las mociones y otras opciones van juntas en
-//   una columna «Otras opciones», cuya cifra es su suma y cuyo detalle nombra cada una con su cifra.
+//   una columna "Otras opciones", cuya cifra es su suma y cuyo detalle nombra cada una con su cifra.
 
 import { claseDeCategoria, ordenarCategorias, posicionCamara, proporcion } from "./ficha.js";
 import { listado } from "./legisladores.js";

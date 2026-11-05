@@ -12,21 +12,21 @@
       "partidoUnificado": "partido-cruzada-nacional",
       "nombreUnificado": "Partido Cruzada Nacional",
       "sigla": "CN",
-      "fundamentoUnificado": "Texto oficial de la Cámara de Diputados. Se agrupa con «Partido Cruzada Nacional» (Cámara de Senadores) porque la bancada oficial de la diputada con este texto se llama «PARTIDO CRUZADA NACIONAL \"CN\"», el mismo nombre del partido que figura en el Senado."
+      "fundamentoUnificado": "Texto oficial de la Cámara de Diputados. Se agrupa con \"Partido Cruzada Nacional\" (Cámara de Senadores) porque la bancada oficial de la diputada con este texto se llama PARTIDO CRUZADA NACIONAL \"CN\", el mismo nombre del partido que figura en el Senado."
     },
     {
       "partidoPolitico": "INDEPENDIENTE",
       "partidoUnificado": "independiente",
       "nombreUnificado": "INDEPENDIENTE",
       "sigla": "IND",
-      "fundamentoUnificado": "Queda solo. No se agrupa con «Independiente A» (Cámara de Senadores) porque nada en los datos oficiales indica que sean el mismo partido."
+      "fundamentoUnificado": "Queda solo. No se agrupa con \"Independiente A\" (Cámara de Senadores) porque nada en los datos oficiales indica que sean el mismo partido."
     },
     {
       "partidoPolitico": "Independiente A",
       "partidoUnificado": "independiente-a",
       "nombreUnificado": "Independiente A",
       "sigla": "IND A",
-      "fundamentoUnificado": "Queda solo. No se agrupa con «INDEPENDIENTE» (Cámara de Diputados) porque nada en los datos oficiales indica que sean el mismo partido. Su bancada oficial es «LIBERAL INDEPENDIENTE» y la del diputado con el otro texto, «BANCADA INDEPENDIENTE»."
+      "fundamentoUnificado": "Queda solo. No se agrupa con \"INDEPENDIENTE\" (Cámara de Diputados) porque nada en los datos oficiales indica que sean el mismo partido. Su bancada oficial es \"LIBERAL INDEPENDIENTE\" y la del diputado con el otro texto, \"BANCADA INDEPENDIENTE\"."
     },
     {
       "partidoPolitico": "Movimiento Conciencia Democrática Nacional",
@@ -35,14 +35,14 @@
       "sigla": "Yo Creo",
       "fundamentoUnificado": "Único texto oficial de este partido en el período 2023-2028. No hay otro texto que corresponda al mismo partido.",
       "nombreConocido": "Yo Creo",
-      "fundamentoNombreConocido": "Las bancadas oficiales de sus legisladores en el período 2023-2028 llevan ese nombre: «CONCIENCIA DEMOCRÁTICA NACIONAL - \"YO CREO\"» (Cámara de Senadores) y «BANCADA DEL MOVIMIENTO CONCIENCIA DEMOCRÁTICA NACIONAL -YO CREO» (Cámara de Diputados)."
+      "fundamentoNombreConocido": "Las bancadas oficiales de sus legisladores en el período 2023-2028 llevan ese nombre: CONCIENCIA DEMOCRÁTICA NACIONAL - \"YO CREO\" (Cámara de Senadores) y \"BANCADA DEL MOVIMIENTO CONCIENCIA DEMOCRÁTICA NACIONAL -YO CREO\" (Cámara de Diputados)."
     },
     {
       "partidoPolitico": "Partido Cruzada Nacional",
       "partidoUnificado": "partido-cruzada-nacional",
       "nombreUnificado": "Partido Cruzada Nacional",
       "sigla": "CN",
-      "fundamentoUnificado": "Texto oficial de la Cámara de Senadores. Se agrupa con «CRUZADA NACIONAL» (Cámara de Diputados) porque la bancada oficial de la diputada con ese texto se llama «PARTIDO CRUZADA NACIONAL \"CN\"» y la de dos de los senadores con este texto, «CRUZADA NACIONAL»."
+      "fundamentoUnificado": "Texto oficial de la Cámara de Senadores. Se agrupa con \"CRUZADA NACIONAL\" (Cámara de Diputados) porque la bancada oficial de la diputada con ese texto se llama PARTIDO CRUZADA NACIONAL \"CN\" y la de dos de los senadores con este texto, \"CRUZADA NACIONAL\"."
     },
     {
       "partidoPolitico": "Partido Democrático Progresista PDP",

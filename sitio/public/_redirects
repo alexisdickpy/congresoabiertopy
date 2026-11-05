@@ -1,4 +1,4 @@
 # Redirecciones permanentes de direcciones publicadas que cambiaron (lib/rutas.js, redireccionesPermanentes).
-# El cuadro de más «rebeldes» (#54) pasó a la página de rankings (#57).
+# El cuadro de más "rebeldes" (#54) pasó a la página de rankings (#57).
 /legisladores/votos-distintos-al-partido/ /rankings/ 301
 /legisladores/votos-distintos-al-partido /rankings/ 301

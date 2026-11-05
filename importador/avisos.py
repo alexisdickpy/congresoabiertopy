@@ -13,7 +13,7 @@ Se ejecuta en la sincronización diaria, después de importar. Compara los datos
   en un resumen anterior, sin las votaciones de ese mismo día. Si no hay ninguna, no envía nada.
 
 En los proyectos, a cada autor se le agrega su partido y un círculo de color (COLOR_PARTIDO), y del título se
-omite la parte final «presentado por...», que repetiría a los autores. En las votaciones, además, se agregan el
+omite la parte final "presentado por...", que repetiría a los autores. En las votaciones, además, se agregan el
 voto por partido y los enlaces a la votación y al proyecto en SILpy.
 
 Si ya hay votación nominal de un trámite, no se avisa como decisión del plenario.
@@ -221,7 +221,7 @@ def lineas_por_partido(partidos):
 
 
 def bloque_votacion(v, base, partidos=None, autores=None):
-    """Una votación. Sin autores se conserva el título entero, porque «presentado por» sería el único dato de origen."""
+    """Una votación. Sin autores se conserva el título entero, porque "presentado por" sería el único dato de origen."""
     proyecto = v.get("proyecto") or {}
     titulo = proyecto.get("acapite")
     partes = []

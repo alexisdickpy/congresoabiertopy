@@ -1,7 +1,7 @@
 // Genera src/mapa/departamentos.json, la copia propia y simplificada del contorno de los departamentos
 // del Paraguay (#65). No corre en la compilación: se ejecuta a mano solo si cambia el contorno.
 //
-// Fuente: Natural Earth, «Admin 1 – States, Provinces» a escala 1:10m, versión 5.1.2 (dominio público).
+// Fuente: Natural Earth, "Admin 1 – States, Provinces" a escala 1:10m, versión 5.1.2 (dominio público).
 //   https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_admin_1_states_provinces.geojson
 // Uso: node scripts/mapa-departamentos.js <archivo .geojson descargado>
 //

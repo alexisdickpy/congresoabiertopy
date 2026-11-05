@@ -770,7 +770,7 @@
           "campo": "observacion",
           "origen": "oficial",
           "tipo": "texto",
-          "descripcion": "Observación del voto (por ejemplo, «Votó a viva voz»)."
+          "descripcion": "Observación del voto (por ejemplo, \"Votó a viva voz\")."
         }
       ]
     },

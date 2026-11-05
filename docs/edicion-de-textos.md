@@ -5,7 +5,7 @@ Los textos propios del sitio se pueden cambiar desde [Pages CMS](https://app.pag
 ## Qué se puede editar
 
 - **Todas las páginas y secciones**, con sus títulos, explicaciones, etiquetas y mensajes de los filtros. Están en `sitio/src/contenido/`, un archivo por área del sitio.
-- **El nombre del sitio, la cita de la fuente, el pie de página y la firma**, en «General, pie y menú».
+- **El nombre del sitio, la cita de la fuente, el pie de página y la firma**, en "General, pie y menú".
 - **La metodología y la privacidad**, sección por sección.
 - **Temas de las leyes**: nombre, nombre corto y definición.
 - **Partidos unificados**: nombre unificado, nombre conocido y fundamento.
@@ -23,11 +23,11 @@ Los textos propios del sitio se pueden cambiar desde [Pages CMS](https://app.pag
 - **Partes automáticas.** Las palabras entre llaves, como `{periodo}` o `{cantidad}`, se reemplazan por un valor al compilar. Se pueden mover dentro de la frase, pero no borrar ni renombrar sin cuidado. Si un texto usa una parte que no existe aquí, la compilación se detiene y avisa cuál es.
 - **Enlaces.** Se escriben `[texto del enlace](dirección)`. Se puede cambiar el texto; lo que va entre paréntesis conviene dejarlo igual.
 - **Negrita.** Se escribe `**texto**`.
-- **Palabras que el sitio cuida.** «AUSENTE» en una votación no significa faltar a la sesión. Conviene hablar de «ausencias en votaciones nominales» y no de inasistencias o faltas.
+- **Palabras que el sitio cuida.** "AUSENTE" en una votación no significa faltar a la sesión. Conviene hablar de "ausencias en votaciones nominales" y no de inasistencias o faltas.
 
 ## La cita de la fuente
 
-La licencia CC BY 4.0 de los datos obliga a citar la fuente. La redacción de la cita se puede cambiar, pero debe seguir nombrando «Datos Abiertos Poder Legislativo». Si no lo hace, la compilación se detiene.
+La licencia CC BY 4.0 de los datos obliga a citar la fuente. La redacción de la cita se puede cambiar, pero debe seguir nombrando "Datos Abiertos Poder Legislativo". Si no lo hace, la compilación se detiene.
 
 ## Qué pasa si algo sale mal
 

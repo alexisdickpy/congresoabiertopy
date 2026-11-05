@@ -24,9 +24,9 @@ const licencia = "https://creativecommons.org/licenses/by/4.0/";
 const TIPOS_MIME = { CSV: "text/csv", JSON: "application/json", MD: "text/markdown" };
 
 /**
- * Tema de una ley para su título. Muchos títulos oficiales empiezan con un preámbulo («Proyecto de
- * Ley "…"», «Mensaje del Poder Ejecutivo N° …») y el tema va entre comillas; en ese caso se toma el
- * texto entre comillas. Si el título empieza directamente con el tema («QUE …»), se usa desde el inicio.
+ * Tema de una ley para su título. Muchos títulos oficiales empiezan con un preámbulo (`Proyecto de
+ * Ley "…"`, `Mensaje del Poder Ejecutivo N° …`) y el tema va entre comillas; en ese caso se toma el
+ * texto entre comillas. Si el título empieza directamente con el tema ("QUE …"), se usa desde el inicio.
  */
 export function temaDeLey(titulo, largo = LARGO_TEMA) {
   const t = String(titulo ?? "").replace(/\s+/g, " ").trim();

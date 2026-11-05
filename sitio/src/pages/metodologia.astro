@@ -23,7 +23,7 @@ const agrupados = partidos.filter((g) => g.textos.length > 1);
 const fecha = actualizacion();
 const vigente = periodos().find((p) => p.vigente);
 const observaciones = observacionesDeLosDatos();
-const reunidos = agrupados.map((g) => fill(tx.reunidoComo, { textos: g.textos.map((t) => `«${t.texto}»`).join(" y "), nombre: g.nombre })).join("; ");
+const reunidos = agrupados.map((g) => fill(tx.reunidoComo, { textos: g.textos.map((t) => `"${t.texto}"`).join(" y "), nombre: g.nombre })).join("; ");
 const valores = {
   periodo: vigente.id,
   cita: fuente.cita,
@@ -80,7 +80,7 @@ const valores = {
                 <dt>{g.nombre} <span class="texto-suave">({g.id})</span></dt>
                 <dd>
                   <ul>
-                    {g.textos.map((t) => <li>«{t.texto}»{t.nombreConocido && ` (${t.nombreConocido})`}. {t.fundamento}</li>)}
+                    {g.textos.map((t) => <li>"{t.texto}"{t.nombreConocido && ` (${t.nombreConocido})`}. {t.fundamento}</li>)}
                   </ul>
                 </dd>
               </Fragment>
