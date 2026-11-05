@@ -8,9 +8,10 @@ Se ejecuta en la sincronización diaria, después de importar. Compara los datos
 - votaciones: un mensaje con las votaciones nominales nuevas de proyectos de ley, solo si hay;
 - plenario: para quienes eligieron las votaciones, un mensaje con las decisiones nuevas del plenario sobre
   proyectos de ley que no tienen votación nominal publicada (decisiones-plenario.json), solo si hay;
-- proyectos: un mensaje con los proyectos de ley nuevos de cualquier iniciativa y sus autores, solo si hay;
-- resumen: con --resumen (el flujo lo pasa los lunes), las leyes y las votaciones que no estuvieron
-  en un resumen anterior, sin las votaciones de ese mismo día. Si no hay ninguna, no envía nada.
+- proyectos: un mensaje con los proyectos de ley nuevos de cualquier iniciativa y sus autores, solo si hay.
+
+El resumen semanal de los lunes se quitó (#120). Los campos ultimoResumen y resumido que quedan en el registro
+ya no se usan.
 
 En los proyectos, a cada autor se le agrega su partido y un círculo de color (COLOR_PARTIDO), y del título se
 omite la parte final "presentado por...", que repetiría a los autores. En las votaciones, además, se agregan el
@@ -29,7 +30,6 @@ La dirección del sitio se toma de sitio/src/lib/rutas.js; las rutas /leyes/{nú
 Uso, desde la raíz del repositorio:
     python -m importador.avisos              # envía, si están los secretos
     python -m importador.avisos --prueba     # muestra los mensajes sin enviarlos ni registrar
-    python -m importador.avisos --resumen    # además, envía el resumen semanal
 """
 
 import argparse
@@ -43,7 +43,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from collections import Counter
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 
 from .escribir import escribir_si_cambia, json_bytes, leer_json
@@ -57,7 +57,6 @@ CITA = "Origen de los datos: Datos Abiertos Poder Legislativo"
 API_TELEGRAM = "https://api.telegram.org"
 PROYECTO_DE_LEY = "PROYECTO DE LEY"
 PAUSA_ENVIO = 0.05  # Telegram admite unos 30 mensajes por segundo
-ASUNCION = timezone(timedelta(hours=-3))
 # Color de cada partido por su sigla (propios/partidos.json). Independientes y otros, SIN_COLOR_PARTIDO.
 COLOR_PARTIDO = {"ANR": "🔴", "PLRA": "🔵", "CN": "⚫", "Yo Creo": "🟠", "PEN": "🟡", "PDP": "🟢", "PPQ": "🔷", "PPS": "🟣", "PPC": "🟤"}
 SIN_COLOR_PARTIDO = "⚪"
@@ -337,55 +336,12 @@ def mensajes_de(tipo, pendientes, votaciones, base, salida):
     return [([], t) for t in textos[:-1]] + [(list(pendientes), textos[-1])]
 
 
-def para_el_resumen(registro, ids, hoy):
-    """Entradas del registro que van en este resumen: las que no estuvieron en otro, sin las votaciones de hoy.
-
-    La semana se cuenta por cuándo apareció cada cosa en los datos, para no perder lo que se publica con demora.
-    """
-    elegidas = []
-    for a in registro["avisados"]:
-        elemento = ids.get(a["tipo"], {}).get(a["id"])
-        if a["tipo"] in ("leyes", "votaciones", "plenario") and not a.get("resumido") and elemento:
-            if not (a["tipo"] != "leyes" and fecha_votacion(elemento) >= hoy.isoformat()):
-                elegidas.append(a)
-    return elegidas
-
-
-def mensaje_resumen(elegidas, ids, base, hoy):
-    """Mensajes del resumen semanal, o ninguno si no hay nada que contar."""
-    leyes = {}
-    for a in elegidas:
-        if a["tipo"] == "leyes":
-            ley = ids["leyes"][a["id"]]
-            leyes.setdefault(ley["_propio"]["numeroLey"], ley)
-    votaciones = [ids["votaciones"][a["id"]] for a in elegidas if a["tipo"] == "votaciones"]
-    decisiones = [ids["plenario"][a["id"]] for a in elegidas if a["tipo"] == "plenario"]
-    if not leyes and not votaciones and not decisiones:
-        return []
-    bloques = []
-    if leyes:
-        bloques.append(f"Leyes nuevas ({len(leyes)})\n" + "\n".join(
-            f"Ley {n}. {acortar((l.get('proyecto') or {}).get('acapite'), 150)} {url_ley(base, l)}" for n, l in leyes.items()))
-    if votaciones:
-        por_resultado = Counter((v.get("tramitacion") or {}).get("resultadoTramite") or "Sin dato" for v in votaciones)
-        bloques.append(f"Votaciones nominales de proyectos de ley ({len(votaciones)})\n"
-                       + "\n".join(f"{r}, {n}" for r, n in sorted(por_resultado.items()))
-                       + f"\n{base}/legisladores/votaciones-nominales/")
-    if decisiones:
-        por_resultado = Counter(d["tramitacion"].get("resultadoTramite") for d in decisiones)
-        bloques.append(f"Decisiones del plenario sobre proyectos de ley, sin votación nominal publicada ({len(decisiones)})\n"
-                       + "\n".join(f"{r}, {n}" for r, n in sorted(por_resultado.items())))
-    return en_mensajes(f"Resumen de la semana anterior, al {fecha_legible(hoy.isoformat())}. Incluye lo que apareció "
-                       "en los datos desde el resumen anterior, aunque su fecha oficial sea más vieja.", bloques)
-
-
-def avisar(salida, enviar, base, ahora=None, salida_texto=print, resumen=False):
+def avisar(salida, enviar, base, ahora=None, salida_texto=print):
     """Envía lo pendiente con `enviar(tipo, texto)`, que devuelve None o el motivo del error.
 
     Con `enviar` None solo muestra los mensajes y no modifica el registro. Devuelve {enviados, errores, primera}.
     """
     ahora = ahora or datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
-    hoy = datetime.fromisoformat(ahora.replace("Z", "+00:00")).astimezone(ASUNCION).date()
     ruta = salida / "propios" / "avisos-telegram.json"
     registro = leer_json(ruta)
     ids = novedades(salida)
@@ -397,7 +353,7 @@ def avisar(salida, enviar, base, ahora=None, salida_texto=print, resumen=False):
                      + (" (modo de prueba, no se registra)." if enviar is None else "."))
         if enviar is not None:
             escribir_si_cambia(ruta, json_bytes({"iniciales": {t: sorted(v) for t, v in ids.items() if v or t != "plenario"},
-                                                 "avisados": [], "ultimoResumen": None}))
+                                                 "avisados": []}))
         return resultado
 
     def mandar(tipo, texto):
@@ -429,13 +385,6 @@ def avisar(salida, enviar, base, ahora=None, salida_texto=print, resumen=False):
             nuevos.extend({"tipo": tipo, "id": i, "fecha": ahora} for i in identificadores)
 
     registro["avisados"] = registro["avisados"] + nuevos
-    if resumen:
-        elegidas = para_el_resumen(registro, ids, hoy)
-        mensajes = mensaje_resumen(elegidas, ids, base, hoy)
-        if mensajes and all([mandar("resumen", t) for t in mensajes]):
-            for a in elegidas:
-                a["resumido"] = True
-            registro["ultimoResumen"] = hoy.isoformat()
 
     if enviar is not None:
         escribir_si_cambia(ruta, json_bytes(registro))
@@ -501,7 +450,6 @@ class Envio:
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--prueba", action="store_true", help="mostrar los mensajes sin enviarlos ni registrar")
-    parser.add_argument("--resumen", action="store_true", help="enviar también el resumen semanal")
     parser.add_argument("--salida", default=RAIZ / "datos", type=Path, help="carpeta de datos (por defecto datos/)")
     args = parser.parse_args(argv)
     token, url_bot, clave = (os.environ.get(n) for n in ("TELEGRAM_TOKEN", "BOT_URL", "BOT_CLAVE"))
@@ -513,7 +461,7 @@ def main(argv=None):
             print("Faltan TELEGRAM_TOKEN, BOT_URL o BOT_CLAVE. Modo de prueba, no se envía nada ni se modifica el registro.")
         else:
             enviar = Envio(token, url_bot, clave)
-        avisar(args.salida, enviar, sitio(), resumen=args.resumen)
+        avisar(args.salida, enviar, sitio())
     except Exception as e:  # un fallo de los avisos nunca interrumpe la sincronización
         print(f"AVISO: los avisos de Telegram fallaron ({type(e).__name__}). Se reintentará en la próxima ejecución.", file=sys.stderr)
     return 0

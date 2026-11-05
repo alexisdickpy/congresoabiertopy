@@ -1,8 +1,7 @@
 // Bot de Telegram del Observatorio Legislativo (#66), como Cloudflare Worker.
 //
 // - Recibe los mensajes del bot (webhook de Telegram en /telegram) y deja que cada persona elija sus
-//   avisos con un menú: leyes nuevas, votaciones de proyectos de ley, proyectos de ley presentados y
-//   resumen semanal.
+//   avisos con un menú: leyes nuevas, votaciones de proyectos de ley y proyectos de ley presentados.
 // - Guarda en Cloudflare KV (SUSCRIPTORES) solo el número de chat y los avisos elegidos, como metadatos
 //   de una clave por chat. Ningún nombre, usuario ni teléfono. /baja, o bloquear el bot, borra la clave.
 // - Los avisos no salen de aquí: los envía la sincronización diaria de GitHub Actions
@@ -16,9 +15,8 @@ export const TIPOS = [
   { id: "leyes", nombre: "Leyes nuevas sancionadas" },
   { id: "votaciones", nombre: "Votaciones de proyectos de ley con sus resultados" },
   { id: "proyectos", nombre: "Proyectos de ley nuevos presentados, con sus autores" },
-  { id: "resumen", nombre: "Resumen de la semana anterior (los lunes)" },
 ];
-const INICIALES = { leyes: true, votaciones: true, proyectos: true, resumen: true };
+const INICIALES = { leyes: true, votaciones: true, proyectos: true };
 const CITA = "Origen de los datos: Datos Abiertos Poder Legislativo.";
 
 export const textoBienvenida = (sitio) =>
@@ -40,7 +38,9 @@ const leer = async (env, chat) => {
   const { metadata } = await env.SUSCRIPTORES.getWithMetadata(String(chat));
   return metadata ?? null;
 };
-const guardar = (env, chat, prefs) => env.SUSCRIPTORES.put(String(chat), "", { metadata: prefs });
+// Solo se guardan los avisos que existen: una opción quitada (como el resumen semanal, #120) se descarta.
+const guardar = (env, chat, prefs) =>
+  env.SUSCRIPTORES.put(String(chat), "", { metadata: Object.fromEntries(TIPOS.map((t) => [t.id, Boolean(prefs[t.id])])) });
 const borrar = (env, chat) => env.SUSCRIPTORES.delete(String(chat));
 
 async function telegram(env, metodo, cuerpo) {

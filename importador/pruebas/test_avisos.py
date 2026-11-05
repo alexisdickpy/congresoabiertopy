@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from importador.avisos import CITA, LIMITE_LEYES, LIMITE_TELEGRAM, RAIZ, avisar, barra_votos, en_mensajes, sitio
+from importador.avisos import CITA, LIMITE_LEYES, LIMITE_TELEGRAM, RAIZ, avisar, barra_votos, en_mensajes, main, sitio
 from importador.escribir import json_bytes
 
 BASE = "https://ejemplo.test"
@@ -197,7 +197,6 @@ class Avisos(unittest.TestCase):
     def test_sin_novedades_no_se_envia_nada(self):
         self.correr()
         self.correr(ahora=LUNES)
-        self.correr(ahora=LUNES, resumen=True)
         self.assertEqual(self.enviados, [])
 
     def test_ley_con_el_resultado_de_sus_votaciones(self):
@@ -228,29 +227,19 @@ class Avisos(unittest.TestCase):
         self.assertIn("OTRO PROYECTO.", texto)
         self.assertEqual(len(self.registro()["avisados"]), 2)
 
-    def test_resumen_solo_cuando_se_pide_y_una_sola_vez(self):
+    def test_sin_resumen_semanal_y_el_registro_viejo_sigue_sirviendo(self):
+        # El resumen de los lunes se quitó (#120). Un registro con sus campos viejos se conserva tal cual.
         self.correr()
-        self.poner(leyes=[ley(1), ley(2)], votaciones=[votacion(1), votacion(2)])
-        self.correr(ahora="2026-10-29T12:00:00Z")
+        ruta = self.salida / "propios" / "avisos-telegram.json"
+        viejo = self.registro()
+        viejo["ultimoResumen"] = "2026-10-26"
+        ruta.write_bytes(json_bytes(viejo))
+        self.poner(leyes=[ley(1), ley(2)])
         self.correr(ahora=LUNES)
-        self.assertEqual(self.textos("resumen"), [])
-        self.correr(ahora=LUNES, resumen=True)
-        texto, = self.textos("resumen")
-        self.assertIn("Ley 7002", texto)
-        self.assertIn("Votaciones nominales de proyectos de ley (1)", texto)
-        self.assertIn("APROBADO, 1", texto)
-        self.correr(ahora=LUNES, resumen=True)
-        self.assertEqual(len(self.textos("resumen")), 1)
-
-    def test_votacion_del_mismo_dia_queda_para_el_resumen_siguiente(self):
-        self.correr()
-        hoy = votacion(2)
-        hoy["tramitacion"]["_propio"]["fechaTramite"] = "2026-11-02"
-        self.poner(votaciones=[votacion(1), hoy])
-        self.correr(ahora=LUNES, resumen=True)
-        self.assertEqual(self.textos("resumen"), [])
-        self.correr(ahora="2026-11-09T12:00:00Z", resumen=True)
-        self.assertEqual(len(self.textos("resumen")), 1)
+        self.assertEqual([t for t, _ in self.enviados], ["leyes"])
+        self.assertEqual(self.registro()["ultimoResumen"], "2026-10-26")
+        with self.assertRaises(SystemExit):
+            main(["--resumen", "--prueba"])
 
     def test_fallo_del_envio_no_registra_y_se_reintenta(self):
         self.correr()
@@ -331,22 +320,6 @@ class Avisos(unittest.TestCase):
         self.assertEqual(len(self.enviados), 1)
         self.assertIn("Votaciones nominales nuevas", self.enviados[0][1])
         self.assertNotIn("sin votación nominal publicada", self.enviados[0][1])
-
-    def test_decision_nueva_entra_en_el_resumen_una_vez(self):
-        self.correr()
-        self.poner_decisiones(decision(1))
-        self.correr()
-        self.poner_decisiones(decision(1), decision(2))
-        self.correr()
-        self.enviados.clear()
-        self.correr(ahora=LUNES, resumen=True)
-        self.assertEqual(len(self.enviados), 1)
-        self.assertEqual(self.enviados[0][0], "resumen")
-        self.assertIn("sin votación nominal publicada (1)", self.enviados[0][1])
-        self.assertIn("RECHAZADO, 1", self.enviados[0][1])
-        self.enviados.clear()
-        self.correr(ahora="2026-11-09T12:00:00Z", resumen=True)
-        self.assertEqual(self.enviados, [])
 
     def test_rutas_iguales_a_las_del_sitio(self):
         rutas = (RAIZ / "sitio" / "src" / "lib" / "rutas.js").read_text(encoding="utf-8")

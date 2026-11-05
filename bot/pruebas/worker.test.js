@@ -41,7 +41,7 @@ const toque = (data, chat = 7) => ({ callback_query: { id: "q", data, message: {
 
 test("/start suscribe con todos los avisos activados, muestra el menú y no guarda más que las preferencias", async () => {
   await atender(mensaje("/start"), env);
-  assert.deepEqual(env.SUSCRIPTORES.datos.get("7"), { leyes: true, votaciones: true, proyectos: true, resumen: true });
+  assert.deepEqual(env.SUSCRIPTORES.datos.get("7"), { leyes: true, votaciones: true, proyectos: true });
   assert.equal(llamadas[0].metodo, "sendMessage");
   assert.equal(llamadas[0].cuerpo.reply_markup.inline_keyboard.length, TIPOS.length);
   assert.ok(llamadas[0].cuerpo.text.includes("/baja"));
@@ -56,12 +56,22 @@ test("/start de nuevo conserva lo elegido", async () => {
 
 test("tocar una opción la cambia y actualiza el menú", async () => {
   await atender(mensaje("/start"), env);
-  await atender(toque("t:resumen"), env);
-  assert.equal(env.SUSCRIPTORES.datos.get("7").resumen, false);
+  await atender(toque("t:proyectos"), env);
+  assert.equal(env.SUSCRIPTORES.datos.get("7").proyectos, false);
   const edicion = llamadas.find((l) => l.metodo === "editMessageReplyMarkup");
-  assert.ok(edicion.cuerpo.reply_markup.inline_keyboard.flat().some((b) => b.text.startsWith("⬜") && b.callback_data === "t:resumen"));
+  assert.ok(edicion.cuerpo.reply_markup.inline_keyboard.flat().some((b) => b.text.startsWith("⬜") && b.callback_data === "t:proyectos"));
+  await atender(toque("t:proyectos"), env);
+  assert.equal(env.SUSCRIPTORES.datos.get("7").proyectos, true);
+});
+
+test("el resumen semanal ya no existe: no está en el menú y lo guardado de antes se ignora y se descarta", async () => {
+  assert.ok(!TIPOS.some((t) => t.id === "resumen" || /semana|lunes/i.test(t.nombre)));
+  env.SUSCRIPTORES.datos.set("7", { leyes: true, votaciones: true, proyectos: true, resumen: true });
+  assert.deepEqual(await suscriptores(env), [{ chat: 7, avisos: ["leyes", "votaciones", "proyectos"] }]);
   await atender(toque("t:resumen"), env);
-  assert.equal(env.SUSCRIPTORES.datos.get("7").resumen, true);
+  assert.equal(llamadas.some((l) => l.metodo === "editMessageReplyMarkup"), false);
+  await atender(toque("t:leyes"), env);
+  assert.deepEqual(env.SUSCRIPTORES.datos.get("7"), { leyes: false, votaciones: true, proyectos: true });
 });
 
 test("una opción desconocida no cambia nada", async () => {
@@ -89,7 +99,7 @@ test("los grupos se ignoran", async () => {
 test("la lista de suscriptores trae el chat y sus avisos", async () => {
   await atender(mensaje("/start", 7), env);
   await atender(toque("t:proyectos", 7), env);
-  assert.deepEqual(await suscriptores(env), [{ chat: 7, avisos: ["leyes", "votaciones", "resumen"] }]);
+  assert.deepEqual(await suscriptores(env), [{ chat: 7, avisos: ["leyes", "votaciones"] }]);
 });
 
 test("las rutas exigen sus claves", async () => {
@@ -105,4 +115,13 @@ test("las rutas exigen sus claves", async () => {
   assert.equal((await pedir("/baja", baja)).status, 200);
   assert.equal(env.SUSCRIPTORES.datos.size, 0);
   assert.equal((await pedir("/otra")).status, 404);
+});
+
+test("la descripción del bot respeta los límites de Telegram, cita la fuente y no promete avisos semanales", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const d = JSON.parse(await readFile(new URL("../descripcion.json", import.meta.url), "utf-8"));
+  assert.ok(d.descripcion.length > 0 && d.descripcion.length <= 512);
+  assert.ok(d.descripcionCorta.length > 0 && d.descripcionCorta.length <= 120);
+  assert.ok(d.descripcion.includes("Origen de los datos: Datos Abiertos Poder Legislativo"));
+  assert.ok(!/semana|lunes/i.test(d.descripcion + d.descripcionCorta));
 });
