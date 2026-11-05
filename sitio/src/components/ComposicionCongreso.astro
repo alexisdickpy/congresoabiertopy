@@ -9,8 +9,10 @@ const tx = textos.portada.composicion;
 
 interface Props {
   periodo: string;
+  /** Nota bajo los hemiciclos; si falta, la de la portada. */
+  nota?: string;
 }
-const { periodo } = Astro.props;
+const { periodo, nota = tx.unPuntoPorBancaAgrupados } = Astro.props;
 const camaras = composicion(periodo);
 ---
 
@@ -35,7 +37,7 @@ const camaras = composicion(periodo);
       </div>
     ))
   }
-  <p class="chico texto-suave">{tx.unPuntoPorBancaAgrupados}</p>
+  <p class="chico texto-suave">{nota}</p>
 </section>
 
 <script>

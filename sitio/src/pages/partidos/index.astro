@@ -1,9 +1,12 @@
 ---
-// Partidos (#93): empieza con la composición actual de cada cámara (la misma de la portada) y sigue con
-// una tarjeta por partido que enlaza a su perfil temático (lib/perfilPartidos.js) y con el enlace a la
-// coincidencia de votos. Ninguna cifra suma las dos cámaras.
+// Partidos (#93): empieza con la composición actual de cada cámara (la misma de la portada), sigue con
+// los cuadros de coincidencia entre todos los pares de partidos de cada cámara (#108, los mismos de
+// /coincidencia-de-votos/) y con una tarjeta por partido que enlaza a su perfil temático
+// (lib/perfilPartidos.js). Ninguna cifra suma las dos cámaras.
 import Base from "../../layouts/Base.astro";
 import ComposicionCongreso from "../../components/ComposicionCongreso.astro";
+import CuadroCoincidencia from "../../components/CuadroCoincidencia.astro";
+import { coincidencia } from "../../lib/coincidencia.js";
 import { periodos } from "../../lib/datos.js";
 import { perfilesDePartidos } from "../../lib/perfilPartidos.js";
 import * as rutas from "../../lib/rutas.js";
@@ -13,13 +16,27 @@ const tx = textos.partidos.indice;
 
 const periodo = periodos().find((p) => p.vigente).id;
 const perfiles = perfilesDePartidos(periodo);
+const { cuadros, umbral } = coincidencia(periodo);
+const txc = textos.coincidencia.pagina;
 ---
 
 <Base titulo={tx.partidos} descripcion={fill(tx.descripcion, { periodo })}>
   <h1>{tx.partidos}</h1>
-  <ComposicionCongreso periodo={periodo} />
+  <ComposicionCongreso periodo={periodo} nota={tx.notaComposicion} />
 
-  <p class="lectura destacado" set:html={md(tx.coincidenciaDeVotos, { url1: crudo(rutas.coincidencia()) })} />
+  <section class="coincidencia" data-coincidencia>
+    <h2>{tx.coincidenciaTitulo}</h2>
+    <p class="chico texto-suave lectura">{fill(tx.coincidenciaIntro, { umbral })}</p>
+    {
+      cuadros.map((c: any) => (
+        <Fragment>
+          <h3>{c.camara}</h3>
+          <CuadroCoincidencia titulo={fill(txc.coincidenciaEntreTodosLosPares, { camara: c.camara })} filas={c.filas} />
+        </Fragment>
+      ))
+    }
+    <p class="chico" set:html={md(tx.verLaCoincidencia, { url1: crudo(rutas.coincidencia()) })} />
+  </section>
 
   <h2>{tx.perfilDeCadaPartido}</h2>
   <p class="lectura" set:html={md(tx.cadaPerfilMuestra, { url1: crudo(rutas.votosPorTema()) })} />
@@ -46,11 +63,8 @@ const perfiles = perfilesDePartidos(periodo);
 </Base>
 
 <style>
-  .destacado {
-    margin-top: var(--espacio-5);
-    padding: var(--espacio-3);
-    border-left: var(--foco-ancho) solid var(--color-acento);
-    background: var(--color-superficie);
+  .coincidencia {
+    margin-bottom: var(--espacio-6);
   }
   .tarjetas-partidos {
     list-style: none;

@@ -2,11 +2,14 @@
   "indice": {
     "partidos": "Partidos",
     "descripcion": "Composición actual del Congreso Nacional del Paraguay por partido y perfil de cada partido: cómo votaron sus legisladores en cada tema, período legislativo {periodo}, cada cámara por separado.",
-    "perfilDeCadaPartido": "Perfil de cada partido",
+    "notaComposicion": "Un punto por banca, agrupados por partido.",
+    "perfilDeCadaPartido": "Perfil temático de cada partido",
     "cadaPerfilMuestra": "Cada perfil muestra cómo votaron los legisladores del partido en cada tema, cámara por cámara. Son las mismas cifras de [votos por tema]({url1}), ordenadas por partido en lugar de por tema.",
-    "coincidenciaDeVotos": "[Coincidencia de votos entre partidos]({url1}): qué tan seguido votaron igual dos partidos o dos bancadas.",
+    "coincidenciaTitulo": "Coincidencia de votos entre partidos",
+    "coincidenciaIntro": "Qué tan seguido votaron igual dos partidos en las votaciones nominales del período. Cada celda es la coincidencia entre el partido de la fila y el de la columna, en esa cámara. El tono más intenso indica más coincidencia y no califica. Con menos de {umbral} votaciones en común, la celda muestra solo las cantidades. Ninguna cifra suma las dos cámaras.",
+    "verLaCoincidencia": "[Coincidencia de cada partido y de cada bancada, y cómo se calcula]({url1})",
     "sinLegisladoresEnEjercicio": "Sin legisladores en ejercicio",
-    "ordenDeLasTarjetas": "Los partidos van de más a menos legisladores en ejercicio. Es solo un orden y ninguna cifra suma las dos cámaras."
+    "ordenDeLasTarjetas": "Los partidos van de más a menos legisladores en ejercicio."
   },
   "perfil": {
     "titulo": "{nombre}: votos por tema",
@@ -15,7 +18,7 @@
     "legisladoresEnEjercicio": "Legisladores en ejercicio",
     "textoOficial": "Texto oficial del partido",
     "votosPorTema": "Votos por tema",
-    "paraCadaTema": "Para cada tema, el reparto de los votos de sus legisladores en las votaciones nominales sobre proyectos de ley del período, sobre todos sus votos registrados (con AUSENTE y NO VOTA). Son las mismas cifras de [votos por tema]({url1}), vistas desde el partido. La lista de votaciones de cada tema está en la página del tema.",
+    "paraCadaTema": "Para cada tema se muestra el reparto de los votos de los legisladores del partido en las votaciones nominales sobre proyectos de ley del período, sobre todos sus votos registrados (con AUSENTE y NO VOTA). Son las mismas cifras que pueden visualizarse en [votos por tema]({url1}), vistas desde la perspectiva del partido. La lista de votaciones de cada tema está en la página del tema.",
     "aviso": "No hay una cifra única de apoyo: un NO puede ser a una modificación o a una objeción del Poder Ejecutivo, y no a la ley. Cada cámara va por separado. El partido es el que la API registra para el período, no necesariamente el de la fecha de cada votación.",
     "comoLeerLaTabla": "Una tabla por cámara y una fila por tema. Cada porcentaje es la parte de todos los votos registrados del partido en ese tema, contando AUSENTE y NO VOTA, y debajo va la cantidad. «Otras opciones» reúne las mociones; al pasar el cursor se ve cada una. El nombre del tema lleva a sus votaciones.",
     "tablaTitulo": "{camara}",
