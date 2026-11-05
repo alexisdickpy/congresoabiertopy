@@ -256,7 +256,7 @@ Decisión de alcance (#36). Cada proyecto de ley del período lleva uno o más t
 | Trabajo y jubilaciones | `trabajo` | Trabajo, salarios, ejercicio de profesiones, función pública y carrera del servicio civil, jubilaciones y seguridad social. |
 | Pensiones graciables | `pensiones-graciables` | Leyes que conceden o aumentan una pensión graciable a una persona determinada. |
 | Inmuebles del Estado | `inmuebles` | Desafectaciones, transferencias, permutas y expropiaciones de inmuebles determinados, y los cambios a leyes anteriores de ese tipo. |
-| Relaciones exteriores | `relaciones-exteriores` | Tratados, convenios, acuerdos y memorandos con otros países y organismos internacionales, incluido el Mercosur. |
+| Relaciones exteriores | `relaciones-exteriores` | Tratados, convenios, acuerdos y memorandos con otros países y organismos internacionales. |
 | Salud | `salud` | Salud pública, hospitales, profesiones de la salud, enfermedades, medicamentos y vacunas. |
 | Educación | `educacion` | Escuelas, colegios, universidades e institutos superiores, docentes, planes de estudio y alimentación escolar. |
 | Cultura, símbolos y fechas conmemorativas | `cultura` | Cultura, música, literatura, patrimonio histórico, símbolos nacionales, homenajes, nombres de lugares, días nacionales y feriados. |
