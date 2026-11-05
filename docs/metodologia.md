@@ -286,7 +286,7 @@ Comprobación. Las pruebas del importador revisan las reglas (tildes, comienzo d
 
 ## Votos de partidos y bancadas por tema
 
-Decisión de alcance (#37). La página `/votos-por-tema/` tiene una tarjeta por tema con la cantidad de votaciones de cada cámara, y cada tema tiene su página (`/votos-por-tema/{identificador}/`) con el reparto de los votos de cada partido y de cada bancada.
+Decisión de alcance (#37). La sección "Votos de partidos por tema", al final de la página `/partidos/` (antes la página `/votos-por-tema/`, que redirige ahí desde #124), tiene una tarjeta por tema con la cantidad de votaciones de cada cámara, y cada tema tiene su página (`/votos-por-tema/{identificador}/`) con el reparto de los votos de cada partido y de cada bancada.
 
 - **Votaciones de un tema.** Las nominales del período sobre un proyecto de ley (las mismas de `/votaciones/`) cuyo proyecto tiene ese tema en la clasificación propia ([Temas de las leyes](#temas-de-las-leyes)). Una votación con dos temas cuenta en los dos. Incluye los proyectos que no llegaron a ser ley.
 - **Reparto.** Los votos individuales de la lista oficial de cada votación (`votos.csv`), sumados por grupo en todas las votaciones del tema de esa cámara, en las categorías oficiales sin fusionar (`SI`, `NO`, `ABSTENCIÓN/BLANCO`, las mociones, `NO VOTA` y `AUSENTE`). Cada cantidad lleva su denominador, que es la cantidad de votos registrados del grupo en esas votaciones, incluidos `AUSENTE` y `NO VOTA`. Es un recuento propio; el Congreso no publica totales por partido.

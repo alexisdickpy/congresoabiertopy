@@ -156,6 +156,7 @@ content:
           - name: desarrolladoPorAlexisDickCon
             label: "Desarrollado por Alexis Dick con asistencia de IA."
             type: string
+            description: "El enlace va como [texto](dirección). Podés cambiar el texto y la dirección del sitio personal."
       - name: encabezado
         label: "Encabezado"
         type: object
