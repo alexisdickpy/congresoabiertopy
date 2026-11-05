@@ -31,13 +31,17 @@ test("hemiciclo: un punto por legislador, todos dentro del dibujo y sin solapars
   }
 });
 
-test("composición: 45 senadores sin los vitalicios y 80 diputados", () => {
+// La API puede publicar menos legisladores en ejercicio que bancas (por ejemplo, mientras no figura
+// el reemplazo de un diputado dado de baja, #113): el total es lo publicado y nunca supera las bancas.
+test("composición: un asiento por legislador en ejercicio, sin vitalicios, hasta 45 senadores y 80 diputados", () => {
   const [senado, diputados] = composicion(PERIODO);
-  assert.equal(senado.total, 45);
-  assert.equal(senado.asientos.length, 45);
-  assert.equal(diputados.total, 80);
-  assert.equal(diputados.asientos.length, 80);
-  assert.equal(senado.partidos.reduce((a, p) => a + p.cantidad, 0), 45);
+  assert.equal(senado.bancas, 45);
+  assert.equal(diputados.bancas, 80);
+  for (const c of [senado, diputados]) {
+    assert.ok(c.total > 0 && c.total <= c.bancas, `${c.nombre}: ${c.total} de ${c.bancas}`);
+    assert.equal(c.asientos.length, c.total, c.nombre);
+    assert.equal(c.partidos.reduce((a, p) => a + p.cantidad, 0), c.total, c.nombre);
+  }
 });
 
 test("colores: cada partido conocido tiene su clase y lo demás queda neutro", () => {
