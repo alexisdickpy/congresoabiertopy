@@ -983,6 +983,9 @@ test("diseño: composición en la portada, estadísticas en el menú y listas la
   for (const c of composicion(periodo)) {
     const panel = portada.split(`data-panel-camara="${c.nombre}"`)[1]?.split("</svg>")[0] ?? "";
     assert.equal((panel.match(/<circle /g) ?? []).length, c.total, c.nombre);
+    // Si la API publica menos legisladores que bancas, la portada lo avisa (#113).
+    const camara = portada.split(`data-panel-camara="${c.nombre}"`)[1]?.split("data-panel-camara=")[0] ?? "";
+    assert.equal(camara.includes(fijo(textos.portada.composicion.laListaOficialMarcaA)), c.total !== c.bancas, `${c.nombre}: aviso de bancas`);
   }
   assert.ok(portada.includes('id="telegram-portada"') && portada.includes(`href="${rutas.botTelegram()}"`));
   assert.ok(leer(rutas.estadisticas()).includes(fijo(textos.general.menu.estadisticas)));
