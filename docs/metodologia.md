@@ -333,17 +333,6 @@ Decisión de alcance (#63). La página `/test-de-afinidad/` tiene 12 preguntas b
 
 Comprobación. Las pruebas cubren las letras de cada mayoría, la combinación de cámaras, Sin posición, las preguntas sin comparar, el umbral y el orden, el largo de los textos, el enlace al proyecto, los criterios de selección (temas, votaciones en general con el 90 % como máximo o justificación, fuentes de cada explicación), y recalculan a mano la mayoría de cada partido en una pregunta desde `votos.csv`.
 
-### Preguntale a un partido
-
-Decisión de alcance (#100). Un bloque de la portada, sin página propia, con la frase «¿Votó [partido] a favor de [propuesta]?» y dos menús: los partidos (en el orden de los perfiles) y «las N propuestas del test de afinidad» o una de sus preguntas.
-
-- **Votaciones.** Las del test de afinidad, con la misma regla de posición: `mayoriaDe` sobre los votos emitidos de los legisladores del partido unificado y `letraDe` según `votoAFavor`. AUSENTE y NO VOTA no son votos emitidos.
-- **Cuenta.** Por cámara, nunca sumadas: votaciones en que la posición fue a favor, en contra o sin mayoría a favor o en contra (empate, abstención u otra opción, o ningún voto emitido), sobre las votaciones en que el partido tuvo legisladores registrados en la lista oficial.
-- **Detalle.** Cada votación con su fecha, cámara, ley, la posición del partido y sus votos emitidos a favor y en contra; y una barra por partido con la misma cuenta, para comparar.
-- **Cálculo.** `sitio/src/lib/datosPreguntaPartido.js` prepara los datos al compilar y `sitio/src/lib/preguntaPartido.js` arma la respuesta, en la compilación (respuesta inicial, legible sin JavaScript) y en el navegador. Sin calificativos.
-
-Comprobación. `sitio/pruebas/unidad/preguntaPartido.test.js` comprueba que cada posición sea la misma del test de afinidad, que las cuentas cierren y que no se sumen cámaras.
-
 ## Mapa de diputados por departamento
 
 La página `/legisladores/mapa/` (#65) agrupa a los diputados en ejercicio por el `departamento` oficial de cada uno, sin cambiarlo. Los senadores (`NACIONAL`) y los diputados que ya no ejercen quedan fuera del mapa y se mencionan en la página.
