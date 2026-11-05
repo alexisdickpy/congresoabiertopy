@@ -2523,6 +2523,12 @@ content:
           - name: temasDeCadaProyectoDe
             label: "Temas de cada proyecto de ley con ley o con votación en el…"
             type: text
+          - name: unRegistroPorCadaExpediente
+            label: "Un registro por cada expediente del que un legislador del…"
+            type: text
+          - name: proyectosDeLeyDeCualquier
+            label: "Proyectos de ley de cualquier iniciativa ingresados en los…"
+            type: text
           - name: problemasQueEsteProyectoDetecto
             label: "Problemas que este proyecto detectó en los datos oficiales (fechas…"
             type: text

@@ -29,6 +29,8 @@ const TABLAS = {
   temas: tx.temasDeLaClasificacionPropia,
   "clasificacion-temas": tx.temasDeCadaProyectoDe,
   notas: tx.problemasQueEsteProyectoDetecto,
+  expedientes: tx.unRegistroPorCadaExpediente,
+  "proyectos-recientes": tx.proyectosDeLeyDeCualquier,
 };
 
 const sinMarcas = (texto) => texto.replaceAll("`", "");
