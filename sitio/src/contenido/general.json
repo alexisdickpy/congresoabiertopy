@@ -44,7 +44,7 @@
     "losDatosProvienenDeLa": "Los datos provienen de la API de Datos Abiertos del Congreso Nacional y se muestran tal como allí se publican. Este sitio no modifica los valores oficiales y en caso de haber errores en la fuente oficial los mismos se mantienen. Si un dato parece incorrecto, compáralo con la [fuente oficial]({url1}). Este es un proyecto independiente, sin vínculo con el Congreso.",
     "pieDePagina": "Pie de página",
     "datosConLicenciaCodigoCon": "Datos con licencia [{licencia}]({url1}) · Código con licencia [AGPL-3.0]({url2})",
-    "desarrolladoPorAlexisDickCon": "Desarrollado por Alexis Dick con asistencia de IA."
+    "desarrolladoPorAlexisDickCon": "Desarrollado por [Alexis Dick](https://alexisdick.com/) con asistencia de IA."
   },
   "encabezado": {
     "principal": "Principal",

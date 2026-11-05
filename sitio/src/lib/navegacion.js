@@ -13,7 +13,8 @@ const txc = textos.general.comunes;
  * `descripcion`, los de la portada. Con `portada: false` la vista está en el menú y no en la portada; con
  * `portadaAlFinal`, su tarjeta va a lo ancho debajo de las demás. `incluye` son otras direcciones que
  * marcan su entrada del menú. Con `urlMenu`, la entrada del menú lleva a esa dirección y la de la vista
- * sigue marcándola: "Partidos" lleva al índice de partidos (#93) y la coincidencia queda dentro.
+ * sigue marcándola: "Partidos" lleva al índice de partidos (#93) y la coincidencia queda dentro. Con
+ * `enMenu: false`, la vista no tiene entrada propia en el menú. "Datos abiertos" está solo en el pie (#124).
  */
 export const vistasDeAnalisis = () => [
   {
@@ -29,14 +30,16 @@ export const vistasDeAnalisis = () => [
     clave: "coincidencia",
     url: rutas.coincidencia(),
     urlMenu: rutas.partidos(),
+    incluye: [rutas.carpetaVotosPorTema()],
     menu: tx.partidos,
     titulo: txc.coincidenciaDeVotosEntrePartidos,
     descripcion: tx.queTanSeguidoVotaronIgual,
   },
   {
+    // Desde #124 es una sección de la página de partidos: sin entrada propia en el menú.
     clave: "temas",
     url: rutas.votosPorTema(),
-    menu: tx.temas,
+    enMenu: false,
     titulo: tx.votosDePartidosPorTema,
     descripcion: tx.comoVotaronLosLegisladoresDe,
     portadaAlFinal: true,
@@ -57,12 +60,13 @@ export const menuPrincipal = () => [
   { url: rutas.leyes(), texto: tx.leyes },
   { url: rutas.proyectos(), texto: tx.proyectos },
   { url: rutas.legisladores(), texto: tx.legisladores },
-  ...vistasDeAnalisis().map((v) => ({ url: v.urlMenu ?? v.url, texto: v.menu, incluye: [...(v.incluye ?? []), ...(v.urlMenu ? [v.url] : [])] })),
+  ...vistasDeAnalisis()
+    .filter((v) => v.enMenu !== false)
+    .map((v) => ({ url: v.urlMenu ?? v.url, texto: v.menu, incluye: [...(v.incluye ?? []), ...(v.urlMenu ? [v.url] : [])] })),
   { url: rutas.estadisticas(), texto: tx.estadisticas },
   { url: rutas.testAfinidad(), texto: txc.testDeAfinidad },
   { url: rutas.botTelegram(), texto: tx.botDeTelegram },
   { url: rutas.buscar(), texto: tx.buscarLeyes },
-  { url: rutas.datosAbiertos(), texto: txc.datosAbiertos },
 ];
 
 /**

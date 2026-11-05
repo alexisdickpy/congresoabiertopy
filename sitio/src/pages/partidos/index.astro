@@ -2,15 +2,19 @@
 // Partidos (#93): empieza con la composición actual de cada cámara (la misma de la portada), sigue con
 // los cuadros de coincidencia entre todos los pares de partidos de cada cámara (#108, los mismos de
 // /coincidencia-de-votos/) y con una tarjeta por partido que enlaza a su perfil temático
-// (lib/perfilPartidos.js). Ninguna cifra suma las dos cámaras.
+// (lib/perfilPartidos.js). Termina con los votos de partidos por tema (lib/votosPorTema.js, #37): una
+// tarjeta por tema con la cantidad de votaciones nominales de cada cámara y el enlace a su página. Esa
+// sección era la página /votos-por-tema/, que ahora redirige aquí (#124). Ninguna cifra suma las dos cámaras.
 import Base from "../../layouts/Base.astro";
 import ComposicionCongreso from "../../components/ComposicionCongreso.astro";
 import CuadroCoincidencia from "../../components/CuadroCoincidencia.astro";
+import { NOMBRE_VOTOS_POR_TEMA } from "../../lib/calculados.js";
 import { coincidencia } from "../../lib/coincidencia.js";
 import { periodos } from "../../lib/datos.js";
 import { perfilesDePartidos } from "../../lib/perfilPartidos.js";
 import * as rutas from "../../lib/rutas.js";
 import { legible } from "../../lib/texto.js";
+import { votosPorTema } from "../../lib/votosPorTema.js";
 import { textos, fill, md, crudo } from "../../lib/contenido.js";
 const tx = textos.partidos.indice;
 
@@ -18,6 +22,10 @@ const periodo = periodos().find((p) => p.vigente).id;
 const perfiles = perfilesDePartidos(periodo);
 const { cuadros, umbral } = coincidencia(periodo);
 const txc = textos.coincidencia.pagina;
+const txt = textos.temas.indice;
+const temas = votosPorTema(periodo);
+const numero = (n: number) => n.toLocaleString("es-PY");
+const plural = (n: number, singular: string, varios: string) => `${numero(n)} ${n === 1 ? singular : varios}`;
 ---
 
 <Base titulo={tx.partidos} descripcion={fill(tx.descripcion, { periodo })}>
@@ -60,6 +68,28 @@ const txc = textos.coincidencia.pagina;
     }
   </ul>
   <p class="chico texto-suave">{tx.ordenDeLasTarjetas}</p>
+
+  <section class="votos-por-tema" id={rutas.anclaVotosPorTema} aria-labelledby="titulo-votos-por-tema">
+    <h2 id="titulo-votos-por-tema">{txt.votosDePartidosPorTema}</h2>
+    <p class="lectura">
+      {fill(txt.paraCadaTemaLosVotos, { periodo })}
+      <a href={rutas.metodologia(rutas.anclasMetodologia.votosPorTema)}>{txt.verComoSeCalcula}</a>
+      {" · "}
+      <a href={rutas.archivoCalculado(periodo, NOMBRE_VOTOS_POR_TEMA, "csv")} download>{textos.general.comunes.descargarLaTablaCsv}</a>
+    </p>
+    <ul class="temas-votos">
+      {
+        temas.map((t: any) => (
+          <li class="tarjeta-tema" data-tema={t.id}>
+            <h3><a href={t.url}>{t.nombre}</a></h3>
+            <p class="chico">
+              {t.camaras.map((c: any) => `${c.camara} ${plural(c.votaciones.length, "votación", "votaciones")}`).join(" · ")}
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </Base>
 
 <style>
@@ -85,6 +115,28 @@ const txc = textos.coincidencia.pagina;
     font-size: var(--tamano-base);
   }
   .tarjeta-partido p {
+    margin: 0;
+  }
+  .votos-por-tema {
+    margin-top: var(--espacio-6);
+    scroll-margin-top: var(--espacio-4);
+  }
+  .temas-votos {
+    list-style: none;
+    margin: var(--espacio-4) 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+    gap: var(--espacio-3);
+  }
+  .tarjeta-tema {
+    padding: var(--espacio-3);
+    border: var(--borde-ancho) solid var(--color-borde);
+    border-top: var(--foco-ancho) solid var(--color-tema, var(--color-borde));
+    border-radius: var(--radio);
+    background: color-mix(in srgb, var(--color-tema, var(--color-borde)) var(--mezcla-fondo-tema), var(--color-fondo));
+  }
+  .tarjeta-tema p {
     margin: 0;
   }
 </style>

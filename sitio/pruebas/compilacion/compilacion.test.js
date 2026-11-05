@@ -30,7 +30,8 @@ import { proyectosDeLey } from "../../src/lib/proyectos.js";
 import { TIPOS_BUSQUEDA } from "../../src/lib/busqueda.js";
 
 const dist = resolve(process.cwd(), "dist");
-const pagina = (url) => join(dist, decodeURIComponent(url), "index.html");
+/** Archivo de una dirección del sitio; el ancla (#…) no cuenta. */
+const pagina = (url) => join(dist, decodeURIComponent(url.split("#")[0]), "index.html");
 const leer = (url) => readFileSync(pagina(url), "utf-8");
 /** HTML con los espacios y saltos de línea seguidos reducidos a uno (compressHTML está desactivado). */
 const texto = (url) => leer(url).replace(/\s+/g, " ");
@@ -389,12 +390,14 @@ test("las direcciones que cambiaron redirigen con una redirección permanente", 
     }
     assert.ok(!existsSync(pagina(desde)), `${desde} sigue publicada`);
     assert.ok(existsSync(pagina(hacia)), `${hacia} no existe`);
+    const ancla = hacia.split("#")[1];
+    if (ancla) assert.ok(leer(hacia).includes(`id="${ancla}"`), `Falta el ancla de ${hacia}`);
   }
-  assert.deepEqual(rutas.redireccionesPermanentes().map((r) => r.desde), ["/legisladores/votos-distintos-al-partido/"]);
+  assert.deepEqual(rutas.redireccionesPermanentes().map((r) => r.desde), ["/legisladores/votos-distintos-al-partido/", "/votos-por-tema/"]);
 });
 
 /** Página principal de votaciones y la de cada año. */
-const paginasDeTemas = () => [rutas.votosPorTema(), ...votosPorTema(periodos().find((p) => p.vigente).id).map((t) => t.url)];
+const paginasDeTemas = () => [...votosPorTema(periodos().find((p) => p.vigente).id).map((t) => t.url)];
 /** Páginas propias de algunas votaciones (#45): las de la portada. */
 const algunasVotaciones = () => votacionesDelPeriodo(periodos().find((p) => p.vigente).id).votaciones.slice(0, 20).map((v) => v.pagina);
 const paginasDeVotaciones = () => [rutas.votaciones(), ...votacionesDelPeriodo(periodos().find((p) => p.vigente).id).anios.map((a) => a.url)];
@@ -551,7 +554,7 @@ test("ningún texto propio presenta AUSENTE como asistencia, faltas o inasistenc
           .replace(/<span class="titulo[^>]*>[^<]*<\/span>/g, " ")
           .replace(/<[^>]+>/g, " "),
       ),
-    ).replaceAll(textos.general.pie.desarrolladoPorAlexisDickCon, " ");
+    ).replaceAll(fijo(textos.general.pie.desarrolladoPorAlexisDickCon), " ");
     for (const aclaracion of aclaraciones) visible = visible.replaceAll(aclaracion, " ");
     const encontrado = visible.match(new RegExp(`.{0,30}(${prohibidas.source}).{0,20}`, "i"));
     assert.ok(!encontrado, `En ${url}, "${encontrado?.[0]}"`);
@@ -619,6 +622,9 @@ function todasLasPaginas(carpeta = dist, base = "/") {
 
 test("todas las páginas tienen el pie común: aviso, enlaces, licencias y firma", () => {
   const urls = todasLasPaginas();
+  // La firma enlaza al sitio personal del autor (#124); la dirección es editable en general.json.
+  const sitioPersonal = textos.general.pie.desarrolladoPorAlexisDickCon.match(/\[Alexis Dick\]\((https:\/\/[^)]+)\)/)?.[1];
+  assert.ok(sitioPersonal, "La firma no enlaza al sitio personal");
   assert.ok(urls.length > leyes().length + legisladores().length);
   for (const url of urls) {
     const html = texto(url);
@@ -630,6 +636,8 @@ test("todas las páginas tienen el pie común: aviso, enlaces, licencias y firma
       `href="${rutas.privacidad()}"`,
       `href="${rutas.botTelegram()}"`,
       `href="${rutas.codigoFuente()}"`,
+      `href="${rutas.datosAbiertos()}"`,
+      `<a href="${sitioPersonal}">Alexis Dick</a>`,
       `href="${rutas.licenciaDatos()}"`,
       `href="${rutas.licenciaCodigo()}"`,
     ]) {
@@ -766,7 +774,7 @@ test("el menú y la portada enlazan a cada vista de análisis", () => {
     assert.ok(menu(url).includes(`href="${rutas.votaciones()}" aria-current="page"`), `${url} no marca "Votaciones" en el menú`);
   }
   for (const url of paginasDeTemas()) {
-    assert.ok(menu(url).includes(`href="${rutas.votosPorTema()}" aria-current="page"`), `${url} no marca "Temas" en el menú`);
+    assert.ok(menu(url).includes(`href="${rutas.partidos()}" aria-current="page"`), `${url} no marca "Partidos" en el menú`);
   }
   const portada = leer(rutas.inicio()).replace(/<header[\s\S]*?<\/header>/, " ");
   for (const v of vistasDeAnalisis()) {
@@ -873,7 +881,9 @@ test("metodología: glosario con sus términos y las siglas de los partidos (#92
 test("votos por tema: índice, una página por tema con el reparto de cada grupo, avisos y lista de votaciones", () => {
   const periodo = periodos().find((p) => p.vigente).id;
   const lista = votosPorTema(periodo);
-  const indice = leer(rutas.votosPorTema());
+  // El índice es la última sección de la página de partidos (#124).
+  const indice = leer(rutas.votosPorTema()).split(`id="${rutas.anclaVotosPorTema}"`)[1] ?? "";
+  for (const t of lista) assert.ok(texto(t.url).includes(`href="${rutas.votosPorTema()}"`), `${t.url} no vuelve a la sección de partidos`);
   for (const t of lista) assert.ok(indice.includes(`href="${t.url}"`), `El índice no enlaza ${t.url}`);
   assert.ok(indice.includes(`href="${rutas.archivoCalculado(periodo, "votos-por-tema", "csv")}"`), "Falta la descarga en el índice");
   const portada = leer(rutas.inicio());

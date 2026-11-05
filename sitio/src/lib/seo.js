@@ -160,7 +160,6 @@ export function direccionesDelSitemap() {
     rutas.votaciones(),
     ...votacionesDelPeriodo(periodos().find((p) => p.vigente).id).anios.map((a) => a.url),
     ...votacionesDelPeriodo(periodos().find((p) => p.vigente).id).votaciones.map((v) => v.pagina),
-    rutas.votosPorTema(),
     ...votosPorTema(periodos().find((p) => p.vigente).id).map((t) => t.url),
     // El test de afinidad entra cuando sus preguntas dejan de ser preliminares (#64).
     ...(esPreliminar() ? [] : [rutas.testAfinidad()]),

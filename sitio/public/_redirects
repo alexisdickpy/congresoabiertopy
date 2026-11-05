@@ -2,3 +2,6 @@
 # El cuadro de más "rebeldes" (#54) pasó a la página de rankings (#57).
 /legisladores/votos-distintos-al-partido/ /rankings/ 301
 /legisladores/votos-distintos-al-partido /rankings/ 301
+# El índice de votos por tema pasó al final de la página de partidos (#124); las páginas de cada tema siguen.
+/votos-por-tema/ /partidos/#votos-por-tema 301
+/votos-por-tema /partidos/#votos-por-tema 301

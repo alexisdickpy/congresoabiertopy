@@ -20,10 +20,13 @@ const PERIODO = "2023-2028";
 
 test("el menú tiene una entrada por cada vista de análisis, con direcciones de lib/rutas.js", () => {
   const urls = menuPrincipal().map((e) => e.url);
-  for (const v of vistasDeAnalisis()) assert.ok(urls.includes(v.urlMenu ?? v.url), `Falta ${v.urlMenu ?? v.url} en el menú`);
+  for (const v of vistasDeAnalisis().filter((v) => v.enMenu !== false)) assert.ok(urls.includes(v.urlMenu ?? v.url), `Falta ${v.urlMenu ?? v.url} en el menú`);
+  // Desde #124 los votos por tema son una sección de Partidos y "Datos abiertos" está solo en el pie.
+  assert.deepEqual(vistasDeAnalisis().filter((v) => v.enMenu === false).map((v) => v.clave), ["temas"]);
+  assert.ok(!urls.includes(rutas.votosPorTema()) && !urls.includes(rutas.datosAbiertos()));
   assert.deepEqual(
     menuPrincipal().map((e) => e.texto),
-    ["Leyes", "Proyectos", "Legisladores", "Votaciones", "Partidos", "Temas", "Rankings", "Estadísticas", "Test de afinidad", "Bot de Telegram", textos.general.menu.buscarLeyes, "Datos abiertos"],
+    ["Leyes", "Proyectos", "Legisladores", "Votaciones", "Partidos", "Rankings", "Estadísticas", "Test de afinidad", "Bot de Telegram", textos.general.menu.buscarLeyes],
   );
   // "Partidos" lleva al índice de partidos (#93); la coincidencia la sigue marcando (siguiente prueba).
   assert.ok(urls.includes(rutas.partidos()) && !urls.includes(rutas.coincidencia()) && urls.includes(rutas.rankings()));
@@ -46,6 +49,7 @@ test("la entrada actual es la de ruta más larga que contiene la dirección", ()
   assert.equal(entradaActual(menu, rutas.legislador("alguien")).texto, "Legisladores");
   assert.equal(entradaActual(menu, rutas.coincidencia()).texto, "Partidos");
   assert.equal(entradaActual(menu, rutas.partidos()).texto, "Partidos");
+  assert.equal(entradaActual(menu, rutas.votosPorTema("salud")).texto, "Partidos");
   assert.equal(entradaActual(menu, rutas.partidos("asociacion-nacional-republicana-anr")).texto, "Partidos");
   assert.equal(entradaActual(menu, rutas.rankings()).texto, "Rankings");
   assert.equal(entradaActual(menu, rutas.votaciones()).texto, "Votaciones");

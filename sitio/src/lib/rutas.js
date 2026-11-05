@@ -91,9 +91,13 @@ export const anclasRankings = { rebeldes: "mas-rebeldes", ausentes: "mas-ausente
 
 /**
  * Direcciones publicadas que cambiaron, cada una con su redirección permanente en public/_redirects (la
- * compilación comprueba que estén). El cuadro de más "rebeldes" (#54) pasó a la página de rankings (#57).
+ * compilación comprueba que estén). El cuadro de más "rebeldes" (#54) pasó a la página de rankings (#57) y
+ * el índice de votos por tema pasó al final de la página de partidos (#124).
  */
-export const redireccionesPermanentes = () => [{ desde: "/legisladores/votos-distintos-al-partido/", hacia: rankings() }];
+export const redireccionesPermanentes = () => [
+  { desde: "/legisladores/votos-distintos-al-partido/", hacia: rankings() },
+  { desde: carpetaVotosPorTema(), hacia: votosPorTema() },
+];
 
 /** Votaciones con la posición de cada partido (#44); con año, la página de ese año. */
 export const votaciones = (anio) => (anio ? `/votaciones/${encodeURIComponent(anio)}/` : "/votaciones/");
@@ -119,8 +123,15 @@ export const coincidencia = (grupo) => (grupo ? `/coincidencia-de-votos/?grupo=$
 /** Parámetro de la dirección de la coincidencia de votos (?grupo=…). */
 export const parametroGrupoCoincidencia = "grupo";
 
-/** Votos de partidos y bancadas por tema (#37); con tema (identificador de temas.json), la página de ese tema. */
-export const votosPorTema = (tema) => (tema ? `/votos-por-tema/${encodeURIComponent(tema)}/` : "/votos-por-tema/");
+/**
+ * Votos de partidos y bancadas por tema (#37); con tema (identificador de temas.json), la página de ese tema.
+ * Sin tema, la sección de la página de partidos que reemplazó al índice /votos-por-tema/ (#124).
+ */
+export const votosPorTema = (tema) => (tema ? `${carpetaVotosPorTema()}${encodeURIComponent(tema)}/` : `/partidos/#${anclaVotosPorTema}`);
+/** Carpeta de las páginas de cada tema, que marcan "Partidos" en el menú. Sin página propia desde #124. */
+export const carpetaVotosPorTema = () => "/votos-por-tema/";
+/** Ancla (id) de la sección de votos por tema en la página de partidos. */
+export const anclaVotosPorTema = "votos-por-tema";
 
 /** Partidos (#93): índice con la composición actual; con identificador (partido unificado, #42), el perfil temático de ese partido. */
 export const partidos = (id) => (id ? `/partidos/${encodeURIComponent(id)}/` : "/partidos/");

@@ -28,7 +28,7 @@ const enlaces = [
       </ul>
     </nav>
     <p set:html={md(tx.datosConLicenciaCodigoCon, { url1: crudo(rutas.licenciaDatos()), licencia: fuente.licencia, url2: crudo(rutas.licenciaCodigo()) })} />
-    <p class="firma">{tx.desarrolladoPorAlexisDickCon}</p>
+    <p class="firma" set:html={md(tx.desarrolladoPorAlexisDickCon)} />
   </div>
 </footer>
 

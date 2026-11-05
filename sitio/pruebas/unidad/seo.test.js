@@ -97,12 +97,13 @@ test("el sitemap tiene cada ley y cada legislador una vez, sin la búsqueda", ()
   const temas = votosPorTema("2023-2028");
   const conLista = conProyectosDeLey();
   const partidos = perfilesDePartidos("2023-2028");
-  assert.equal(urls.length, leyes().length + legisladores().length + conLista.length + 17 + anios.length + temas.length + partidos.length + votaciones.length);
+  assert.equal(urls.length, leyes().length + legisladores().length + conLista.length + 16 + anios.length + temas.length + partidos.length + votaciones.length);
   for (const p of partidos) assert.ok(urls.includes(rutas.absoluta(p.url)), p.id);
   for (const p of conLista) assert.ok(urls.includes(rutas.absoluta(rutas.expedientesLegislador(p.slug))), p.slug);
   for (const v of votaciones) assert.ok(urls.includes(rutas.absoluta(rutas.votacion(v.id))), v.id);
   for (const t of temas) assert.ok(urls.includes(rutas.absoluta(t.url)), t.url);
-  assert.ok(urls.includes(rutas.absoluta(rutas.votosPorTema())));
+  // El índice de temas es una sección de /partidos/ desde #124: no va al sitemap.
+  assert.ok(!urls.some((u) => u.includes("#")) && !urls.includes(rutas.absoluta(rutas.carpetaVotosPorTema())));
   assert.ok(urls.includes(rutas.absoluta(rutas.votaciones())));
   for (const a of anios) assert.ok(urls.includes(rutas.absoluta(a.url)), a.url);
   assert.ok(urls.includes(rutas.absoluta(rutas.votacionesNominales())));
