@@ -6,7 +6,7 @@
 
 | Período | Datos actualizados por última vez |
 |---|---|
-| 2023-2028 | 2026-11-04T15:34:08Z |
+| 2023-2028 | 2026-11-05T15:38:19Z |
 
 La última comprobación de la fuente (aunque no haya cambios) figura en [`estado.json`](estado.json).
 
@@ -101,7 +101,7 @@ Se publica en `fuente/{período}/tramitaciones.json` y `fuente/{período}/tramit
 
 Un registro por votación nominal del período, sin los votos individuales (están en `votos`).
 
-Se publica en `fuente/{período}/votaciones.json` y `fuente/{período}/votaciones.csv`, con 1166 registros en total.
+Se publica en `fuente/{período}/votaciones.json` y `fuente/{período}/votaciones.csv`, con 1168 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|
@@ -163,7 +163,7 @@ Se publica en `fuente/{período}/votaciones.json` y `fuente/{período}/votacione
 
 Un voto individual por fila.
 
-Se publica en `fuente/{período}/votos.csv`, con 82725 registros en total.
+Se publica en `fuente/{período}/votos.csv`, con 82815 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|

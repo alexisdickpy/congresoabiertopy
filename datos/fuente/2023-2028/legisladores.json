@@ -2357,9 +2357,9 @@
     "_propio": {
       "fuenteRegistro": "legislador?idCamara=A",
       "slug": "alejo-rios-medina",
-      "vigente": true
+      "vigente": false
     },
-    "activo": true,
+    "activo": false,
     "apellidos": "RIOS MEDINA",
     "appURL": "https://silpy.congreso.gov.py/legislador/101455",
     "bancada": "BANCADA DEL PARTIDO LIBERAL RADICAL AUTÉNTICO PLRA - PL",
@@ -2885,9 +2885,9 @@
     "_propio": {
       "fuenteRegistro": "legislador?idCamara=A",
       "slug": "sebastian-emilio-remesowski-squef",
-      "vigente": true
+      "vigente": false
     },
-    "activo": true,
+    "activo": false,
     "apellidos": "REMESOWSKI SQUEF",
     "appURL": "https://silpy.congreso.gov.py/legislador/101504",
     "bancada": "BANCADA DE LA ASOCIACIÓN NACIONAL REPUBLICANA ANR - A \"HONOR COLORADO\"",

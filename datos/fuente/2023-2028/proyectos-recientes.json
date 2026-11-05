@@ -1,58 +1,6 @@
 [
   {
     "_propio": {
-      "autores": "José Gregorio Ledesma Narváez",
-      "fechaIngreso": "2026-08-06"
-    },
-    "acapite": "Proyecto de Ley “QUE DECLARA DE INTERÉS SOCIAL Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO – MINISTERIO DE URBANISMO, VIVIENDA Y HÁBITAT, EL INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA FINCA N° 27, PADRÓN N° 602, PARA SU POSTERIOR TRANSFERENCIA A TÍTULO ONEROSO A SUS ACTUALES OCUPANTES DEL ‘TERRITORIO SOCIAL DIVINO NIÑO’, UBICADO EN EL LUGAR DENOMINADO COSTA FLEITAS, DISTRITO DE AREGUÁ, DEPARTAMENTO CENTRAL”, presentado por el senador José Gregorio Ledesma Narváez, de fecha 30 de julio de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157391",
-    "autores": [
-      {
-        "apellidos": "Ledesma Narváez",
-        "idLegislador": 101368,
-        "nombres": "José Gregorio"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603817",
-    "fechaIngresoExpediente": "06/08/2026",
-    "idProyecto": 157391,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "MAURICIO FABIAN ESPÍNOLA NÚÑEZ",
-      "fechaIngreso": "2026-08-06"
-    },
-    "acapite": "QUE ESTABLECE LÍMITES PRUDENCIALES A LA CONCENTRACIÓN DE RECURSOS DEL INSTITUTO DE PREVISIÓN SOCIAL Y DEL SECTOR PÚBLICO EN EL SISTEMA FINANCIERO NACIONAL, PRESENTADO POR EL DIPUTADO NACIONAL MAURICIO ESPÍNOLA",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157452",
-    "autores": [
-      {
-        "apellidos": "ESPÍNOLA NÚÑEZ",
-        "idLegislador": 101387,
-        "nombres": "MAURICIO FABIAN"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694695",
-    "fechaIngresoExpediente": "06/08/2026",
-    "idProyecto": 157452,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
       "autores": "CARLOS MARÍA LÓPEZ LÓPEZ, HILDA MARÍA DEL ROCÍO VALLEJO ÁVALOS, JORGE RAMÓN ÁVALOS MARIÑO",
       "fechaIngreso": "2026-08-10"
     },
@@ -151,32 +99,6 @@
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "Colym Gregorio Soroka Benítez",
-      "fechaIngreso": "2026-08-06"
-    },
-    "acapite": "Proyecto de Ley “QUE MODIFICA Y AMPLÍA EL ARTÍCULO 9° DE LA LEY N° 7264/2024 ‘QUE CREA EL FONDO NACIONAL DE ALIMENTACIÓN ESCOLAR PARA LA UNIVERSALIZACIÓN EQUITATIVA DE LA ALIMENTACIÓN ESCOLAR (HAMBRE CERO EN NUESTRAS ESCUELAS Y SISTEMA EDUCATIVO), MODIFICA Y AMPLÍA LA LEY N° 5210/2014 DE ALIMENTACIÓN ESCOLAR Y CONTROL SANITARIO Y SUS POSTERIORES MODIFICACIONES Y MODIFICA LA LEY N° 6628/2020”, presentado por el senador Colym Gregorio Soroka Benítez, de fecha 6 de agosto de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157622",
-    "autores": [
-      {
-        "apellidos": "Soroka Benítez",
-        "idLegislador": 101364,
-        "nombres": "Colym Gregorio"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603851",
-    "fechaIngresoExpediente": "06/08/2026",
-    "idProyecto": 157622,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
     "tipoProyecto": "PROYECTO DE LEY",
     "urgencia": "ORDINARIO"
   },
@@ -361,115 +283,6 @@
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "José Daniel Oviedo Antúnez",
-      "fechaIngreso": "2026-08-06"
-    },
-    "acapite": "Proyecto de Ley “QUE AMPLÍA EL PRESUPUESTO GENERAL DE LA NACIÓN PARA EL EJERCICIO FISCAL 2026, APROBADO POR LEY N° 7609/2025, MINISTERIO DE SALUD PÚBLICA Y BIENESTAR SOCIAL”, presentado por el senador José Daniel Oviedo Antúnez, de fecha 6 de agosto de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157672",
-    "autores": [
-      {
-        "apellidos": "Oviedo Antúnez",
-        "idLegislador": 101359,
-        "nombres": "José Daniel"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603850",
-    "fechaIngresoExpediente": "06/08/2026",
-    "idProyecto": 157672,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "José Gregorio Ledesma Narváez",
-      "fechaIngreso": "2026-08-06"
-    },
-    "acapite": "Proyecto de Ley “QUE DESAFECTA DEL DOMINIO PÚBLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE LUQUE A TRANSFERIR A TÍTULO ONEROSO A FAVOR DE SU ACTUAL OCUPANTE, UNA FRACCIÓN DE TERRENO, INDIVIDUALIZADO COMO CTA. CTE. CTRAL. N° 27-0139-11, UBICADO EN EL BARRIO JULIO CORREA, SOBRE LA CALLE CERRO CORÁ Y GOBERNADOR IRALA, DEL CITADO MUNICIPIO”, presentado por el senador José Gregorio Ledesma Narváez, de fecha 6 de agosto de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157673",
-    "autores": [
-      {
-        "apellidos": "Ledesma Narváez",
-        "idLegislador": 101368,
-        "nombres": "José Gregorio"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603853",
-    "fechaIngresoExpediente": "06/08/2026",
-    "idProyecto": 157673,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "Juan Carlos Luis Galaverna Ortega",
-      "fechaIngreso": "2026-08-06"
-    },
-    "acapite": "Proyecto de Ley “QUE MODIFICA LOS ARTÍCULOS 10° y 11° DE LA LEY N° 4928/13 ‘DE PROTECCIÓN AL ARBOLADO URBANO”, presentado por el senador Juan Carlos Luis Galaverna Ortega, de fecha 5 de agosto de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157681",
-    "autores": [
-      {
-        "apellidos": "Galaverna Ortega",
-        "idLegislador": 101484,
-        "nombres": "Juan Carlos Luis"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603852",
-    "fechaIngresoExpediente": "06/08/2026",
-    "idProyecto": 157681,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "José Gregorio Ledesma Narváez, José Daniel Oviedo Antúnez",
-      "fechaIngreso": "2026-08-06"
-    },
-    "acapite": "Proyecto de Ley “QUE DECLARA DE INTERÉS SOCIAL Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE URBANISMO, VIVIENDA Y HÁBITAT (MUVH), LOS INMUEBLES INDIVIDUALIZADOS COMO FINCA N° 13.400, PADRÓN N° 13.149, PARA SU POSTERIOR TRANSFERENCIA A TÍTULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES DEL TERRITORIO SOCIAL FLOR DE ITAPUAMÍ, SITUADOS EN EL LUGAR DENOMINADO BARRIO CANTERA, DE LA NOVENA COMPAÑÍA ITAPUAMÍ, DEL DISTRITO DE LUQUE (DEPARTAMENTO CENTRAL)”. presentado por los senadores José Gregorio Ledesma Narváez y José Daniel Oviedo Antúnez, de fecha 6 de agosto de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157682",
-    "autores": [
-      {
-        "apellidos": "Ledesma Narváez",
-        "idLegislador": 101368,
-        "nombres": "José Gregorio"
-      },
-      {
-        "apellidos": "Oviedo Antúnez",
-        "idLegislador": 101359,
-        "nombres": "José Daniel"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603854",
-    "fechaIngresoExpediente": "06/08/2026",
-    "idProyecto": 157682,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
     "tipoProyecto": "PROYECTO DE LEY",
     "urgencia": "ORDINARIO"
   },
@@ -2786,7 +2599,7 @@
     "appURL": "https://silpy.congreso.gov.py/expediente/159642",
     "autores": [],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "S-2604162",
     "fechaIngresoExpediente": "12/10/2026",
@@ -3991,8 +3804,8 @@
         "nombres": "Edgar Idalino"
       }
     ],
-    "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionEtapa": "TERCER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "RESOLUCIÓN DE SANCIÓN SEGUN CÁMARA REVISORA",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "S-2604225",
     "fechaIngresoExpediente": "03/11/2026",
@@ -4154,6 +3967,103 @@
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "",
+      "fechaIngreso": "2026-11-02"
+    },
+    "acapite": "Mensaje del Poder Ejecutivo 419.- Ministerio de Relaciones Exteriores, de fecha 2 de noviembre de 2026, por el cual remite el Proyecto de Ley “ACUERDO ENTRE EL GOBIERNO DE LA REPÚBLICA DEL PARAGUAY Y LA ORGANIZACIÓN PARA LA COOPERACIÓN Y EL DESARROLLO ECONÓMICOS SOBRE PRIVILEGIOS, INMUNIDADES Y FACILIDADES OTORGADOS A LA ORGANIZACIÓN”.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160362",
+    "autores": [],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604229",
+    "fechaIngresoExpediente": "02/11/2026",
+    "idProyecto": 160362,
+    "iniciativa": "PODER EJECUTIVO",
+    "ministerios": [
+      "MINISTERIO DE RELACIONES EXTERIORES"
+    ],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "",
+      "fechaIngreso": "2026-11-02"
+    },
+    "acapite": "Mensaje del Poder Ejecutivo N° 420.- Ministerio de Relaciones Exteriores, de fecha 2 de noviembre de 2026, por el cual remite el Proyecto de Ley “ACUERDO DE SERVICIOS AÉREOS ENTRE EL GOBIERNO DE LA REPÚBLICA DEL PARAGUAY Y EL GOBIERNO DE LA REPÚBLICA DEL ECUADOR”. ",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160363",
+    "autores": [],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604230",
+    "fechaIngresoExpediente": "02/11/2026",
+    "idProyecto": 160363,
+    "iniciativa": "PODER EJECUTIVO",
+    "ministerios": [
+      "MINISTERIO DE RELACIONES EXTERIORES"
+    ],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "",
+      "fechaIngreso": "2026-11-02"
+    },
+    "acapite": "Mensaje del Poder Ejecutivo N° 418.- Ministerio de Relaciones Exteriores, de fecha 2 de noviembre de 2026, por el cual remite el Proyecto de Ley “ACUERDO ENTRE EL GOBIERNO DE LA REPÚBLICA DEL PARAGUAY Y EL GOBIERNO DE LOS ESTADOS UNIDOS DE AMÉRICA SOBRE COOPERACIÓN EN MATERIA DE INTERCEPTACIÓN AÉREA DE AERONAVES CIVILES”. ",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160371",
+    "autores": [],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604228",
+    "fechaIngresoExpediente": "02/11/2026",
+    "idProyecto": 160371,
+    "iniciativa": "PODER EJECUTIVO",
+    "ministerios": [
+      "MINISTERIO DE RELACIONES EXTERIORES"
+    ],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "HILDA MARÍA DEL ROCÍO VALLEJO ÁVALOS, HÉCTOR RUBEN FIGUEREDO NOTARIO",
+      "fechaIngreso": "2026-11-04"
+    },
+    "acapite": "QUE INSTITUYE EL 18 DE JULIO DE CADA AÑO COMO DÍA NACIONAL DE LAS POSADAS TURÍSTICAS DEL PARAGUAY Y PROMUEVE LA SEMANA NACIONAL DE LAS POSADAS TURÍSTICAS, PRESENTADO POR LA DIPUTADA ROCÍO VALLEJO Y EL DIPUTADO HÉCTOR RUBÉN FIGUEREDO.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160413",
+    "autores": [
+      {
+        "apellidos": "VALLEJO ÁVALOS",
+        "idLegislador": 101389,
+        "nombres": "HILDA MARÍA DEL ROCÍO"
+      },
+      {
+        "apellidos": "FIGUEREDO NOTARIO",
+        "idLegislador": 101392,
+        "nombres": "HÉCTOR RUBEN"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696187",
+    "fechaIngresoExpediente": "04/11/2026",
+    "idProyecto": 160413,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE DIPUTADOS",
     "tipoProyecto": "PROYECTO DE LEY",
     "urgencia": "ORDINARIO"
   }

@@ -79876,8 +79876,8 @@
       },
       "acapite": "Proyecto de Ley “QUE DECLARA PATRIMONIO TRADICIONAL Y CULTURAL DEL PARAGUAY, A LA CORRIDA DE TOROS (TORIN)”, presentado por el senador Lider Santiago Amarilla Ríos, de fecha 10 de junio de 2025.",
       "appURL": "https://silpy.congreso.gov.py/expediente/143540",
-      "descripcionEtapa": "CUARTO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "RESOLUCIÓN SANCIONADO SEGUN CO",
+      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
+      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "S-2502310",
       "fechaIngresoExpediente": "11/06/2025",
@@ -79953,8 +79953,8 @@
       },
       "acapite": "Proyecto de Ley “QUE DECLARA PATRIMONIO TRADICIONAL Y CULTURAL DEL PARAGUAY, A LA CORRIDA DE TOROS (TORIN)”, presentado por el senador Lider Santiago Amarilla Ríos, de fecha 10 de junio de 2025.",
       "appURL": "https://silpy.congreso.gov.py/expediente/143540",
-      "descripcionEtapa": "CUARTO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "RESOLUCIÓN SANCIONADO SEGUN CO",
+      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
+      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "S-2502310",
       "fechaIngresoExpediente": "11/06/2025",
@@ -85686,7 +85686,7 @@
       "acapite": "QUE IMPLEMENTA Y DESARROLLA LA RED NACIONAL DE BANCO DE LECHE HUMANA EN EL PARAGUAY - presentado por las Diputadas Rocío Abed, Del Pilar Vázquez, y los Diputados Raúl Latorre, Miguel Del Puerto, Sebastián Remesowski, Jazmín Narvaez, Liz Acosta, Johana Vega, Fabiana Souto, Cristina Villalba y Dalia Estigarribia.",
       "appURL": "https://silpy.congreso.gov.py/expediente/132042",
       "descripcionEtapa": "CUARTO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "DISCUSIÓN PLENARIO (4T) - RATIFICA",
+      "descripcionSubEtapa": "RESOLUCIÓN SANCION COMPLETA",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2477347",
       "fechaIngresoExpediente": "21/05/2024",
@@ -87387,8 +87387,8 @@
       },
       "acapite": "Proyecto de Ley “QUE DECLARA PATRIMONIO TRADICIONAL Y CULTURAL DEL PARAGUAY, A LA CORRIDA DE TOROS (TORIN)”, presentado por el senador Lider Santiago Amarilla Ríos, de fecha 10 de junio de 2025.",
       "appURL": "https://silpy.congreso.gov.py/expediente/143540",
-      "descripcionEtapa": "CUARTO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "RESOLUCIÓN SANCIONADO SEGUN CO",
+      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
+      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "S-2502310",
       "fechaIngresoExpediente": "11/06/2025",
@@ -90941,8 +90941,8 @@
       },
       "acapite": "Proyecto de Ley “QUE AMPLÍA LA LEY 2334/03 ‘DE GARANTÍAS DE DEPÓSITO Y RESOLUCIÓN DE ENTIDADES DE INTERMEDIACIÓN FINANCIERA SUJETAS A LA LEY GENERAL DE BANCOS, FINANCIERAS Y OTRAS ENTIDADES DE CRÉDITOS’, Y ESTABLECE EL ANTICIPO DE LA GARANTÍA DE DEPÓSITO”, presentado por los senadores Gustavo Basilio Núñez Giménez, Natalicio Esteban Chase Acosta, Antonio Carlos Barrios Fernández, Ramón Catalino Retamozo Delgado, Rafael Augusto Filizzola Serra, Celeste Josefina Amarilla Vda. de Boccia, Derlis Hernán Maidana Zarza, Regina Lizarella Valiente de Rodríguez, Dionisio Oswaldo Amarilla Guirland, Eduardo Hirohito Nakayama Rojas, Lourdes Noelia Cabrera Petters, Hermelinda Alvarenga de Ortega, Juan Carlos Luis Galaverna Ortega, Orlando Penner Dürksen, Edgar Idalino López Ruíz,  Ernesto Javier Zacarías Irún y Silvio Adalberto Ovelar Benítez de fecha 3 de noviembre de 2026.",
       "appURL": "https://silpy.congreso.gov.py/expediente/160291",
-      "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "descripcionEtapa": "TERCER TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "RESOLUCIÓN DE SANCIÓN SEGUN CÁMARA REVISORA",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "S-2604225",
       "fechaIngresoExpediente": "03/11/2026",
@@ -90972,8 +90972,8 @@
         "appURL": "https://silpy.congreso.gov.py/sesion/112732",
         "camaraSesion": "CAMARA DE SENADORES",
         "fechaSesion": "03/11/2026",
-        "horaFin": "00:00",
-        "horaInicio": "14:40",
+        "horaFin": "19:13",
+        "horaInicio": "14:56",
         "idSesion": 112732,
         "numeroSesion": "191",
         "periodoParlamentarioDTO": {
@@ -90993,6 +90993,162 @@
       "idTramitacion": 444184,
       "numeroSesion": "191",
       "resultadoTramite": "APROBADO CON MODIFICACIONES"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 45,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "AUSENTE": 2,
+        "NO": 3,
+        "NO VOTA": 7,
+        "SI": 33
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109415",
+    "descripcion": "La Presidencia somete a votación electrónica la terna propuesta por la Comisión de Asuntos Constitucionales, para el cargo de Defensor del Pueblo, conformada por: Walter Agustín Olmedo, Arnaldo Raúl Martínez Prieto y Alisse Riveros Caballero.",
+    "idVotacion": 109415,
+    "observacion": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-08-11"
+      },
+      "acapite": "Nota N.° 73 del Secretario General de la Cámara de Senadores, de fecha 11 de agosto de 2026, por la cual remite la nómina de las personas que se han postulado para los cargos del Defensor del Pueblo y Defensor del Pueblo Adjunto, de conformidad con lo dispuesto en la Constitución y la norma legal correspondiente.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/157901",
+      "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "RESOLUCIÓN QUE APRUEBA TERNA",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "S-2603863",
+      "fechaIngresoExpediente": "11/08/2026",
+      "idProyecto": 157901,
+      "iniciativa": "SECRETARÍA GENERAL HCS/HCD",
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "RESOLUCIONES BICAMERALES - DEFENSOR DEL PUEBLO ART.277 C.N.",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 0,
+    "totalAusente": 2,
+    "totalNO": 3,
+    "totalNoVota": 7,
+    "totalSI": 33,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-04"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "04/11/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-11-04"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112722",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "04/11/2026",
+        "horaFin": "00:00",
+        "horaInicio": "09:00",
+        "idSesion": 112722,
+        "numeroSesion": "192",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 444464,
+      "numeroSesion": "192",
+      "resultadoTramite": "APRUEBA TERNA"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 45,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "AUSENTE": 4,
+        "NO": 3,
+        "NO VOTA": 7,
+        "SI": 31
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109425",
+    "descripcion": "La Presidencia somete a votación electrónica la terna propuesta para el cargo del Defensor del Pueblo Adjunto, conformada por: Osvaldo Andrés Battilana, Edgar Eligio Villalba y Olga María Paredes.",
+    "idVotacion": 109425,
+    "observacion": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-08-11"
+      },
+      "acapite": "Nota N.° 73 del Secretario General de la Cámara de Senadores, de fecha 11 de agosto de 2026, por la cual remite la nómina de las personas que se han postulado para los cargos del Defensor del Pueblo y Defensor del Pueblo Adjunto, de conformidad con lo dispuesto en la Constitución y la norma legal correspondiente.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/157901",
+      "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "RESOLUCIÓN QUE APRUEBA TERNA",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "S-2603863",
+      "fechaIngresoExpediente": "11/08/2026",
+      "idProyecto": 157901,
+      "iniciativa": "SECRETARÍA GENERAL HCS/HCD",
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "RESOLUCIONES BICAMERALES - DEFENSOR DEL PUEBLO ART.277 C.N.",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 0,
+    "totalAusente": 4,
+    "totalNO": 3,
+    "totalNoVota": 7,
+    "totalSI": 31,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-04"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "04/11/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-11-04"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112722",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "04/11/2026",
+        "horaFin": "00:00",
+        "horaInicio": "09:00",
+        "idSesion": 112722,
+        "numeroSesion": "192",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 444464,
+      "numeroSesion": "192",
+      "resultadoTramite": "APRUEBA TERNA"
     }
   }
 ]

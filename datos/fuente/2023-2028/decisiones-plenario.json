@@ -11354,6 +11354,55 @@
         "numeroSesion": "191",
         "resultadoTramite": "APROBADO CON MODIFICACIONES"
       }
+    },
+    {
+      "acapite": "Proyecto de Ley “QUE CONCEDE PENSIÓN GRACIABLE AL SEÑOR JORGE BAREIRO SALINAS”, presentado por el senador Rafael Augusto Filizzola Serra, de fecha 5 de mayo de 2026.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/154266",
+      "autores": [
+        {
+          "apellidos": "Filizzola Serra",
+          "idLegislador": 101362,
+          "nombres": "Rafael Augusto"
+        }
+      ],
+      "idProyecto": 154266,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-04"
+        },
+        "camaraTramite": "CAMARA DE SENADORES",
+        "descripcionEtapa": "Primer trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "04/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-04"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112722",
+          "camaraSesion": "CAMARA DE SENADORES",
+          "fechaSesion": "04/11/2026",
+          "horaFin": "00:00",
+          "horaInicio": "09:00",
+          "idSesion": 112722,
+          "numeroSesion": "192",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 444443,
+        "numeroSesion": "192",
+        "resultadoTramite": "APROBADO"
+      }
     }
   ],
   "seguidos": [
@@ -12459,6 +12508,10 @@
     160301,
     160331,
     160332,
-    160341
+    160341,
+    160362,
+    160363,
+    160371,
+    160413
   ]
 }

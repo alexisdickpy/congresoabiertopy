@@ -22034,5 +22034,61 @@
     "iniciativa": "PARLAMENTARIA",
     "origenProyecto": "CAMARA DE SENADORES",
     "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-02"
+    },
+    "acapite": "Mensaje del Poder Ejecutivo 419.- Ministerio de Relaciones Exteriores, de fecha 2 de noviembre de 2026, por el cual remite el Proyecto de Ley “ACUERDO ENTRE EL GOBIERNO DE LA REPÚBLICA DEL PARAGUAY Y LA ORGANIZACIÓN PARA LA COOPERACIÓN Y EL DESARROLLO ECONÓMICOS SOBRE PRIVILEGIOS, INMUNIDADES Y FACILIDADES OTORGADOS A LA ORGANIZACIÓN”.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160362",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604229",
+    "fechaIngresoExpediente": "02/11/2026",
+    "idProyecto": 160362,
+    "iniciativa": "PODER EJECUTIVO",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-02"
+    },
+    "acapite": "Mensaje del Poder Ejecutivo N° 420.- Ministerio de Relaciones Exteriores, de fecha 2 de noviembre de 2026, por el cual remite el Proyecto de Ley “ACUERDO DE SERVICIOS AÉREOS ENTRE EL GOBIERNO DE LA REPÚBLICA DEL PARAGUAY Y EL GOBIERNO DE LA REPÚBLICA DEL ECUADOR”. ",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160363",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604230",
+    "fechaIngresoExpediente": "02/11/2026",
+    "idProyecto": 160363,
+    "iniciativa": "PODER EJECUTIVO",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-02"
+    },
+    "acapite": "Mensaje del Poder Ejecutivo N° 418.- Ministerio de Relaciones Exteriores, de fecha 2 de noviembre de 2026, por el cual remite el Proyecto de Ley “ACUERDO ENTRE EL GOBIERNO DE LA REPÚBLICA DEL PARAGUAY Y EL GOBIERNO DE LOS ESTADOS UNIDOS DE AMÉRICA SOBRE COOPERACIÓN EN MATERIA DE INTERCEPTACIÓN AÉREA DE AERONAVES CIVILES”. ",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160371",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604228",
+    "fechaIngresoExpediente": "02/11/2026",
+    "idProyecto": 160371,
+    "iniciativa": "PODER EJECUTIVO",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-04"
+    },
+    "acapite": "QUE INSTITUYE EL 18 DE JULIO DE CADA AÑO COMO DÍA NACIONAL DE LAS POSADAS TURÍSTICAS DEL PARAGUAY Y PROMUEVE LA SEMANA NACIONAL DE LAS POSADAS TURÍSTICAS, PRESENTADO POR LA DIPUTADA ROCÍO VALLEJO Y EL DIPUTADO HÉCTOR RUBÉN FIGUEREDO.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160413",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696187",
+    "fechaIngresoExpediente": "04/11/2026",
+    "idProyecto": 160413,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY"
   }
 ]
