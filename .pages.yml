@@ -2019,22 +2019,32 @@ content:
             label: "Composición actual del Congreso Nacional del Paraguay por partido…"
             type: text
             description: "Partes automáticas, no las borres ni les cambies el nombre: {periodo}."
+          - name: notaComposicion
+            label: "Nota bajo la composición: Un punto por banca, agrupados por partido."
+            type: text
           - name: perfilDeCadaPartido
-            label: "Perfil de cada partido"
+            label: "Perfil temático de cada partido"
             type: string
           - name: cadaPerfilMuestra
             label: "Cada perfil muestra cómo votaron los legisladores del partido en c…"
             type: text
             description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
-          - name: coincidenciaDeVotos
-            label: "[Coincidencia de votos entre partidos]({url1}): qué tan seguido vo…"
+          - name: coincidenciaTitulo
+            label: "Coincidencia de votos entre partidos (título)"
+            type: string
+          - name: coincidenciaIntro
+            label: "Qué tan seguido votaron igual dos partidos… (antes de los cuadros)"
+            type: text
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {umbral}."
+          - name: verLaCoincidencia
+            label: "[Coincidencia de cada partido y de cada bancada…]({url1})"
             type: text
             description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
           - name: sinLegisladoresEnEjercicio
             label: "Sin legisladores en ejercicio"
             type: string
           - name: ordenDeLasTarjetas
-            label: "Los partidos van de más a menos legisladores en ejercicio. Es solo…"
+            label: "Los partidos van de más a menos legisladores en ejercicio."
             type: text
       - name: perfil
         label: "Perfil de cada partido"
@@ -2062,7 +2072,7 @@ content:
             label: "Votos por tema"
             type: string
           - name: paraCadaTema
-            label: "Para cada tema, el reparto de los votos de sus legisladores en las…"
+            label: "Para cada tema se muestra el reparto de los votos de los legisladores…"
             type: text
             description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
           - name: aviso

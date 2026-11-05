@@ -1014,3 +1014,23 @@ test("ajustes de páginas (#98): tarjetas de enlace, 5 votaciones ajustadas por 
   const test7714 = datosDelTest(periodo).preguntas.find((p) => p.numeroLey === "7714");
   assert.ok(!test7714.explicacion.includes("Diputados no trató"));
 });
+
+test("página de partidos: cuadros de coincidencia, nota de la composición, título y redacción del perfil (#108)", () => {
+  const periodo = periodos().find((p) => p.vigente).id;
+  const indice = texto(rutas.partidos());
+  const tx = textos.partidos.indice;
+  assert.ok(!/vitalicios/i.test(indice), "La página de partidos menciona a los senadores vitalicios");
+  assert.ok(indice.includes(fijo(tx.notaComposicion)), "Falta la nota de la composición");
+  assert.ok(texto(rutas.inicio()).includes(fijo(textos.portada.composicion.unPuntoPorBancaAgrupados)), "La portada perdió su nota");
+  const composicion = indice.indexOf('id="titulo-composicion"');
+  const cuadros = indice.indexOf("data-coincidencia");
+  assert.ok(composicion > 0 && cuadros > composicion && cuadros < indice.indexOf('class="tarjetas-partidos"'), "Los cuadros no van después de la composición");
+  for (const c of coincidencia(periodo).cuadros) {
+    assert.ok(indice.includes(fijo(textos.coincidencia.pagina.coincidenciaEntreTodosLosPares.replace("{camara}", c.camara))), `Falta el cuadro de ${c.camara}`);
+  }
+  assert.ok(indice.includes(fijo(tx.perfilDeCadaPartido)) && tx.perfilDeCadaPartido.includes("temático"));
+  assert.ok(!indice.includes("Es solo un orden"), "Queda la aclaración del orden");
+  for (const p of perfilesDePartidos(periodo)) {
+    assert.ok(texto(p.url).includes("vistas desde la perspectiva del partido"), `${p.url} no tiene la nueva redacción`);
+  }
+});
