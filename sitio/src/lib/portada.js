@@ -153,7 +153,7 @@ export function votacionDestacada(periodo) {
  * - votosDistintos: por cámara, los CANTIDAD_PORTADA primeros del cuadro de votos distintos a la mayoría
  *   de su partido, en el mismo orden.
  * - temas: los temas con votaciones, cada uno con la dirección de su página de votos por tema (#37),
- *   sin «Pendiente de clasificación», que la portada nunca muestra (#92).
+ *   sin "Pendiente de clasificación", que la portada nunca muestra (#92).
  */
 export function vistaPrevia(periodo) {
   const c = coincidencia(periodo);

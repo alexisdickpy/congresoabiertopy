@@ -1,6 +1,6 @@
 {
   "estado": "publicado",
-  "descripcion": "Preguntas del test de afinidad. Cada una se basa en una o dos votaciones nominales en general (una por cámara) de un proyecto que llegó a ser ley en el período. votoAFavor es el voto oficial que equivale a responder «A favor». La explicación es un texto propio, breve y sin valoraciones; fuentes lista de dónde sale. justificacion explica por qué se usa una votación con más del 90 % de los votos SI y NO en un mismo sentido.",
+  "descripcion": "Preguntas del test de afinidad. Cada una se basa en una o dos votaciones nominales en general (una por cámara) de un proyecto que llegó a ser ley en el período. votoAFavor es el voto oficial que equivale a responder \"A favor\". La explicación es un texto propio, breve y sin valoraciones; fuentes lista de dónde sale. justificacion explica por qué se usa una votación con más del 90 % de los votos SI y NO en un mismo sentido.",
   "periodoLegislativo": "2023-2028",
   "preguntas": [
     {
@@ -17,7 +17,7 @@
       "id": "alimentacion-escolar",
       "numeroLey": "7264",
       "tema": "educacion",
-      "pregunta": "¿Dar almuerzo escolar a todos los alumnos con el programa «Hambre Cero en las escuelas» y un fondo nacional propio?",
+      "pregunta": "¿Dar almuerzo escolar a todos los alumnos con el programa \"Hambre Cero en las escuelas\" y un fondo nacional propio?",
       "explicacion": "Crea el Fondo Nacional de Alimentación Escolar, con recursos que antes iban al Fonacide. El almuerzo escolar pasa de los municipios a las gobernaciones, salvo en Asunción, Central y Presidente Hayes, donde lo administra el Ministerio de Desarrollo Social.",
       "fuentes": ["https://www.lanacion.com.py/politica/2024/04/01/mitos-y-verdades-sobre-hambre-cero-en-las-escuelas/", "https://www.lanacion.com.py/politica/2024/01/30/hambre-cero-garantizan-financiamiento-de-programas-vigentes/", "https://www.diputados.gov.py/noticias/noticias/1667"],
       "votaciones": [104615],

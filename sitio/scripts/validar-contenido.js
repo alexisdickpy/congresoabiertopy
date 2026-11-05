@@ -33,14 +33,14 @@ for (const nombre of readdirSync(CONTENIDO).filter((a) => a.endsWith(".json"))) 
   const contenido = leer(join(CONTENIDO, nombre));
   for (const [lugar, texto] of textosDe(contenido, nombre)) {
     // El editor de texto con formato puede proteger las llaves con una barra, y la parte no se completaría.
-    if (/\\[{}]/.test(texto)) errores.push(`${lugar}: una parte automática quedó con una barra invertida («${texto.slice(0, 60)}»).`);
+    if (/\\[{}]/.test(texto)) errores.push(`${lugar}: una parte automática quedó con una barra invertida ("${texto.slice(0, 60)}").`);
   }
 }
 
 const general = leer(join(CONTENIDO, "general.json"));
 if (general) {
   if (!general.sitio?.nombre?.trim()) errores.push("general.json: falta el nombre del sitio.");
-  if (!general.sitio?.cita?.includes(FUENTE_OBLIGATORIA)) errores.push(`general.json: la cita de la fuente debe incluir «${FUENTE_OBLIGATORIA}».`);
+  if (!general.sitio?.cita?.includes(FUENTE_OBLIGATORIA)) errores.push(`general.json: la cita de la fuente debe incluir "${FUENTE_OBLIGATORIA}".`);
 }
 
 const rutaPartidos = join(PROPIOS, "partidos.json");

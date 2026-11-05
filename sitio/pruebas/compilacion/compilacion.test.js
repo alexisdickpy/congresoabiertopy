@@ -34,9 +34,9 @@ const pagina = (url) => join(dist, decodeURIComponent(url), "index.html");
 const leer = (url) => readFileSync(pagina(url), "utf-8");
 /** HTML con los espacios y saltos de línea seguidos reducidos a uno (compressHTML está desactivado). */
 const texto = (url) => leer(url).replace(/\s+/g, " ");
-/** Comillas y «&» tal como se leen en la página (el HTML las escribe como &quot;, &#39; o &amp;). */
+/** Comillas y "&" tal como se leen en la página (el HTML las escribe como &quot;, &#39; o &amp;). */
 const decodificar = (t) => t.replaceAll("&quot;", '"').replaceAll("&#34;", '"').replaceAll("&#39;", "'").replaceAll("&amp;", "&");
-/** Sin los apodos «rebeldes» y «ausentes» de los títulos, escritos con comillas angulares, rectas o tipográficas. */
+/** Sin los apodos "rebeldes" y "ausentes" de los títulos, escritos con comillas angulares, rectas o tipográficas. */
 const sinApodos = (t) => t.replace(/[«"“'‘]\s*(rebeldes|ausentes)\s*[»"”'’]/gi, " ");
 /** Todos los textos de un archivo de contenido, también los anidados. */
 const todosLosTextos = (valor) =>
@@ -245,7 +245,7 @@ test("vista comparativa: una fila por legislador con sus cinco cifras, fórmulas
   }
   const visible = html.replace(/<(script|style)[\s\S]*?<\/\1>/g, " ").replace(/<[^>]+>/g, " ");
   const calificativo = visible.match(/.{0,30}\b(mejor|peor|ranking|puesto|campe[oó]n|faltador|vago)\b.{0,20}/i);
-  assert.ok(!calificativo, `«${calificativo?.[0]}»`);
+  assert.ok(!calificativo, `"${calificativo?.[0]}"`);
   assert.ok(texto(rutas.legisladores()).includes(`href="${rutas.votacionesNominales()}"`));
 });
 
@@ -273,7 +273,7 @@ test("coincidencia de votos: un bloque por grupo, cifras con su denominador, fó
   }
   const visible = html.replace(/<(script|style)[\s\S]*?<\/\1>/g, " ").replace(/<[^>]+>/g, " ");
   const calificativo = visible.match(/.{0,30}\b(mejor|peor|ranking|puesto|campe[oó]n|aliado|enemigo|traici[oó]n|leal)\b.{0,20}/i);
-  assert.ok(!calificativo, `«${calificativo?.[0]}»`);
+  assert.ok(!calificativo, `"${calificativo?.[0]}"`);
   assert.ok(texto(rutas.legisladores()).includes(`href="${rutas.coincidencia()}"`));
   assert.ok(texto(rutas.votacionesNominales()).includes(`href="${rutas.coincidencia()}"`));
 });
@@ -292,13 +292,13 @@ function itemRanking(html, f, cifra = "mayoriaPartido") {
 }
 const itemVotosDistintos = (html, f) => itemRanking(html, f);
 
-test("rankings, más «rebeldes»: cifras con su denominador, enlaces, fotos, mínimo y sin otros calificativos", () => {
+test('rankings, más "rebeldes": cifras con su denominador, enlaces, fotos, mínimo y sin otros calificativos', () => {
   const periodo = periodos().find((p) => p.vigente).id;
   const { camaras, minimo } = votosDistintosAlPartido(periodo);
   const completa = texto(rutas.rankings());
   assert.ok(completa.includes(fijo(textos.general.menu.rankings)));
   assert.ok(completa.includes(`href="#${rutas.anclasRankings.rebeldes}"`) && completa.includes(`href="#${rutas.anclasRankings.ausentes}"`));
-  // Solo la parte de más «rebeldes».
+  // Solo la parte de más "rebeldes".
   const html = completa.match(new RegExp(`<section id="${rutas.anclasRankings.rebeldes}"[^]*?(?=<section id="${rutas.anclasRankings.ausentes}")`))?.[0] ?? "";
   assert.ok(html.includes(fijo(textos.general.menu.masRebeldes)));
   assert.ok(html.includes(fijo(textos.rankings.pagina.legisladoresQueMasVecesVotaron)));
@@ -320,17 +320,17 @@ test("rankings, más «rebeldes»: cifras con su denominador, enlaces, fotos, m�
   // El orden de las filas en la página es el del cuadro.
   const orden = [...html.matchAll(/<li data-votos-distintos="([^"]+)"/g)].map((m) => m[1]);
   assert.deepEqual(orden, camaras.flatMap((c) => c.filas.map((f) => f.slug)));
-  // «rebeldes» y «ausentes» solo entre comillas (angulares, rectas o tipográficas), como apodos en los títulos.
+  // "rebeldes" y "ausentes" solo entre comillas (angulares, rectas o tipográficas), como apodos en los títulos.
   const visible = sinApodos(decodificar(completa.replace(/<header[\s\S]*?<\/header>/, " ").replace(/<(script|style)[\s\S]*?<\/\1>/g, " ").replace(/<[^>]+>/g, " ")));
   const calificativo = visible.match(/.{0,30}\b(mejor|peor|ranking|puesto|campe[oó]n|rebelde|d[ií]scolo|traici[oó]n|leal|vago|falt[oó]n)\b.{0,20}/i);
-  assert.ok(!calificativo, `«${calificativo?.[0]}»`);
+  assert.ok(!calificativo, `"${calificativo?.[0]}"`);
   const ausentes = visible.match(/.{0,30}\bausentes\b.{0,20}/);
-  assert.ok(!ausentes, `«${ausentes?.[0]}»`);
+  assert.ok(!ausentes, `"${ausentes?.[0]}"`);
   assert.ok(texto(rutas.votacionesNominales()).includes(`href="${rutas.rankings()}"`));
   assert.ok(completa.includes(`href="${rutas.votacionesNominales()}"`), "Rankings no enlaza la tabla completa");
 });
 
-test("rankings, más «ausentes»: cifras con su denominador, enlaces, fotos, mínimo y notas sobre el motivo", () => {
+test('rankings, más "ausentes": cifras con su denominador, enlaces, fotos, mínimo y notas sobre el motivo', () => {
   const periodo = periodos().find((p) => p.vigente).id;
   const { camaras, minimo } = masAusentes(periodo);
   assert.equal(minimo, MINIMO_VOTACIONES_AUSENCIAS);
@@ -354,7 +354,7 @@ test("rankings, más «ausentes»: cifras con su denominador, enlaces, fotos, m�
   const orden = [...html.matchAll(/<li data-ausencias="([^"]+)"/g)].map((m) => m[1]);
   assert.deepEqual(orden, camaras.flatMap((c) => c.filas.map((f) => f.slug)));
   // La lista de ausentes no va en la portada.
-  assert.ok(!leer(rutas.inicio()).includes("data-ausencias="), "La portada muestra la lista de más «ausentes»");
+  assert.ok(!leer(rutas.inicio()).includes("data-ausencias="), 'La portada muestra la lista de más "ausentes"');
 });
 
 test("mapa de diputados: una zona por departamento, la lista con cada diputado, la fuente y los enlaces", () => {
@@ -372,7 +372,7 @@ test("mapa de diputados: una zona por departamento, la lista con cada diputado, 
   assert.equal((portada.match(/class="zona"/g) ?? []).length, m.zonas.length);
   assert.ok(portada.includes(`href="${rutas.mapaDiputados()}#${m.zonas[0].ancla}"`));
   assert.ok(portada.includes('class="mapa-lista" hidden') && portada.includes('id="mapa-detalle"'), "En la portada, la lista oculta alimenta el detalle");
-  // Orden de la portada (#92): más «rebeldes», coincidencia, test, leyes por tema, votos por tema, mapa y votaciones.
+  // Orden de la portada (#92): más "rebeldes", coincidencia, test, leyes por tema, votos por tema, mapa y votaciones.
   const orden = ['data-analisis="rankings"', 'data-analisis="coincidencia"', 'id="test-portada"', 'id="titulo-cuadro-temas"', 'data-analisis="temas"', 'id="mapa-portada"', 'data-analisis="votaciones"'].map((m) => portada.indexOf(m));
   assert.ok(orden.every((n, i) => n >= 0 && (i === 0 || n > orden[i - 1])), `Orden de la portada ${orden}`);
   assert.ok(texto(rutas.mapaDiputados()).includes(fijo(textos.legisladores.mapa.diputadosEnEjercicioEnEl)));
@@ -479,7 +479,7 @@ test("votaciones: página principal con los años, las más ajustadas, fórmulas
   }
   const visible = html.replace(/<(script|style)[\s\S]*?<\/\1>/g, " ").replace(/<span class="titulo[^>]*>[^<]*<\/span>/g, " ").replace(/<[^>]+>/g, " ");
   const calificativo = visible.match(/.{0,30}\b(mejor|peor|ranking|puesto|campe[oó]n|polémic[ao]|escándalo|reñid[ao])\b.{0,20}/i);
-  assert.ok(!calificativo, `«${calificativo?.[0]}»`);
+  assert.ok(!calificativo, `"${calificativo?.[0]}"`);
 });
 
 test("votaciones: los estilos de las listas, las barras y las etiquetas se cargan en sus páginas", () => {
@@ -533,12 +533,12 @@ test("tabla calculada servida y enlazada desde datos abiertos", () => {
 
 test("ningún texto propio presenta AUSENTE como asistencia, faltas o inasistencias", () => {
   // Se revisan los textos del sitio, sin los valores oficiales (títulos de proyectos y leyes, que
-  // pueden tratar de asistencia social y se muestran sin cambios). La firma dice «con asistencia de
-  // IA», el único uso permitido de la palabra.
+  // pueden tratar de asistencia social y se muestran sin cambios). La firma dice "con asistencia de
+  // IA", el único uso permitido de la palabra.
   const prohibidas = /inasistencia|asistencia(?! de IA)|\bfalta|\bfaltó|días ausente/i;
-  // Se permiten las aclaraciones de los rankings que niegan esa lectura: frases entre paréntesis con un «no»,
-  // como «(…, por lo cual el listado no implica necesariamente que son los legisladores que más faltaron a
-  // sesiones)». Se toman de los textos editables, no se copian acá.
+  // Se permiten las aclaraciones de los rankings que niegan esa lectura: frases entre paréntesis con un "no",
+  // como "(…, por lo cual el listado no implica necesariamente que son los legisladores que más faltaron a
+  // sesiones)". Se toman de los textos editables, no se copian acá.
   const unEspacio = (t) => t.replace(/\s+/g, " ");
   const aclaraciones = [...new Set(todosLosTextos(textos.rankings).flatMap((t) => unEspacio(t).match(/\([^()]*\bno\b[^()]*\)/gi) ?? []))];
   const urls = [rutas.inicio(), rutas.metodologia(), rutas.legisladores(), rutas.votacionesNominales(), rutas.coincidencia(), rutas.partidos(), rutas.rankings(), ...paginasDeVotaciones(), ...algunasVotaciones(), ...legisladores().map((p) => p.url)];
@@ -554,7 +554,7 @@ test("ningún texto propio presenta AUSENTE como asistencia, faltas o inasistenc
     ).replaceAll(textos.general.pie.desarrolladoPorAlexisDickCon, " ");
     for (const aclaracion of aclaraciones) visible = visible.replaceAll(aclaracion, " ");
     const encontrado = visible.match(new RegExp(`.{0,30}(${prohibidas.source}).{0,20}`, "i"));
-    assert.ok(!encontrado, `En ${url}, «${encontrado?.[0]}»`);
+    assert.ok(!encontrado, `En ${url}, "${encontrado?.[0]}"`);
   }
 });
 
@@ -633,7 +633,7 @@ test("todas las páginas tienen el pie común: aviso, enlaces, licencias y firma
       `href="${rutas.licenciaDatos()}"`,
       `href="${rutas.licenciaCodigo()}"`,
     ]) {
-      assert.ok(html.includes(buscado), `Falta «${buscado}» en ${url}`);
+      assert.ok(html.includes(buscado), `Falta "${buscado}" en ${url}`);
     }
   }
 });
@@ -653,7 +653,7 @@ test("la metodología tiene las secciones que enlazan las fichas y todas las obs
 
 test("la privacidad muestra sus secciones editables", () => {
   const html = texto(rutas.privacidad());
-  for (const seccion of textos.privacidad.secciones) if (seccion.texto) assert.ok(html.includes(fijo(seccion.texto)), `Falta «${seccion.titulo}»`);
+  for (const seccion of textos.privacidad.secciones) if (seccion.texto) assert.ok(html.includes(fijo(seccion.texto)), `Falta "${seccion.titulo}"`);
 });
 
 test("las fichas enlazan a la metodología", () => {
@@ -759,14 +759,14 @@ test("el menú y la portada enlazan a cada vista de análisis", () => {
     assert.ok((nav.match(/aria-current="page"/g) ?? []).length <= 1, `Más de una entrada actual en ${url}`);
   }
   for (const url of [rutas.rankings(), rutas.votacionesNominales()]) {
-    assert.ok(menu(url).includes(`href="${rutas.rankings()}" aria-current="page"`), `${url} no marca «Rankings» en el menú`);
+    assert.ok(menu(url).includes(`href="${rutas.rankings()}" aria-current="page"`), `${url} no marca "Rankings" en el menú`);
   }
   assert.ok(!menu(rutas.inicio()).includes(rutas.votacionesNominales()), "La tabla comparativa sigue en el menú");
   for (const url of [...paginasDeVotaciones(), ...algunasVotaciones()]) {
-    assert.ok(menu(url).includes(`href="${rutas.votaciones()}" aria-current="page"`), `${url} no marca «Votaciones» en el menú`);
+    assert.ok(menu(url).includes(`href="${rutas.votaciones()}" aria-current="page"`), `${url} no marca "Votaciones" en el menú`);
   }
   for (const url of paginasDeTemas()) {
-    assert.ok(menu(url).includes(`href="${rutas.votosPorTema()}" aria-current="page"`), `${url} no marca «Temas» en el menú`);
+    assert.ok(menu(url).includes(`href="${rutas.votosPorTema()}" aria-current="page"`), `${url} no marca "Temas" en el menú`);
   }
   const portada = leer(rutas.inicio()).replace(/<header[\s\S]*?<\/header>/, " ");
   for (const v of vistasDeAnalisis()) {
@@ -795,9 +795,9 @@ test("el menú y la portada enlazan a cada vista de análisis", () => {
   const votaciones = posiciones.find(([clave]) => clave === "votaciones")[1];
   assert.ok(posiciones.every(([clave, n]) => clave === "votaciones" || n < votaciones), "La tarjeta de votaciones no está al final");
   assert.equal(html.match(/<li data-votos-distintos=/g)?.length ?? 0, previa.votosDistintos.reduce((n, c) => n + c.filas.length, 0));
-  // #92: sin el título «Análisis», cuatro botones de acceso y la coincidencia de la portada solo con partidos.
+  // #92: sin el título "Análisis", cuatro botones de acceso y la coincidencia de la portada solo con partidos.
   const crudo = leer(rutas.inicio()).replace(/<header[\s\S]*?<\/header>/, " ");
-  assert.ok(!crudo.includes('id="titulo-analisis"'), "La portada conserva el título «Análisis»");
+  assert.ok(!crudo.includes('id="titulo-analisis"'), 'La portada conserva el título "Análisis"');
   const accesos = crudo.match(/<nav class="accesos[\s\S]*?<\/nav>/)?.[0] ?? "";
   assert.deepEqual(
     [...accesos.matchAll(/<a class="boton[^"]*" href="([^"]+)"/g)].map((m) => m[1]),
@@ -806,8 +806,8 @@ test("el menú y la portada enlazan a cada vista de análisis", () => {
   const coincidenciaPortada = crudo.split('data-analisis="coincidencia"')[1]?.split("</section>")[0] ?? "";
   assert.ok(coincidenciaPortada.includes(fijo(textos.portada.analisis.quePartidosVotanIgual)), "Falta el título de la coincidencia");
   assert.ok(!/bancada/i.test(coincidenciaPortada.replace(fijo(textos.portada.analisis.laCoincidenciaCompleta), "")), "La coincidencia de la portada menciona bancadas");
-  // Sin «Pendiente de clasificación» en la portada.
-  assert.ok(!crudo.includes('data-tema="pendiente"'), "La portada muestra «Pendiente de clasificación»");
+  // Sin "Pendiente de clasificación" en la portada.
+  assert.ok(!crudo.includes('data-tema="pendiente"'), 'La portada muestra "Pendiente de clasificación"');
 });
 
 test("partidos: composición, perfiles con las cifras de los votos por tema, enlaces y cuadro de coincidencia en niveles (#93)", () => {
@@ -822,7 +822,7 @@ test("partidos: composición, perfiles con las cifras de los votos por tema, enl
   assert.ok(indice.includes(`href="${rutas.coincidencia()}"`), "El índice no enlaza la coincidencia");
   for (const p of perfiles) assert.ok(indice.includes(`href="${p.url}"`), `El índice no enlaza ${p.url}`);
   for (const url of [rutas.partidos(), rutas.coincidencia(), ...perfiles.map((p) => p.url)]) {
-    assert.ok(menu(url).includes(`href="${rutas.partidos()}" aria-current="page"`), `${url} no marca «Partidos» en el menú`);
+    assert.ok(menu(url).includes(`href="${rutas.partidos()}" aria-current="page"`), `${url} no marca "Partidos" en el menú`);
   }
   // Cada perfil: avisos, cifras iguales a las de votos por tema y enlaces a cada tema.
   const temas = votosPorTema(periodo);
@@ -956,7 +956,7 @@ test("test de afinidad: preguntas sin votos ni autores, enlace al proyecto, dato
     assert.ok(!test_.includes(`href="${rutas.ley(p.numeroLey)}"`));
     for (const v of p.votaciones) assert.ok(!test_.includes(rutas.votacion(v.id)));
   }
-  for (const n of [">SI<", ">NO<", "AUSENTE", "presentado por"]) assert.ok(!test_.includes(n), `El test muestra «${n}»`);
+  for (const n of [">SI<", ">NO<", "AUSENTE", "presentado por"]) assert.ok(!test_.includes(n), `El test muestra "${n}"`);
   assert.ok(html.includes('id="datos-test-afinidad"'), "Faltan los datos del cálculo");
   // Sin recursos de otros sitios ni almacenamiento: solo scripts propios.
   for (const m of html.matchAll(/<script[^>]*src="([^"]+)"/g)) assert.ok(m[1].startsWith("/"), `Script externo ${m[1]}`);
@@ -1009,7 +1009,7 @@ test("ajustes de páginas (#98): tarjetas de enlace, 5 votaciones ajustadas por 
     rutas.decisionesSinNominal(),
     ...anios.map((a) => a.url),
   ]);
-  assert.ok(vot.includes(`href="${rutas.metodologia(rutas.anclasMetodologia.masAjustadas)}"`), "«Cómo se eligen» sigue como enlace");
+  assert.ok(vot.includes(`href="${rutas.metodologia(rutas.anclasMetodologia.masAjustadas)}"`), '"Cómo se eligen" sigue como enlace');
   for (const c of masAjustadas(periodo)) assert.equal(c.votaciones.length, 5, c.camara);
 
   assert.ok(texto(rutas.votosPorTema()).includes(fijo(textos.temas.indice.verComoSeCalcula)));

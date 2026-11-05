@@ -17,7 +17,7 @@
     "cadaCeldaEsLaCoincidencia": "Cada celda es la coincidencia entre el partido de la fila y el de la columna, en esa cámara. El tono más intenso indica más coincidencia y no califica; la escala va del menor al mayor porcentaje de cada cuadro. Con menos de {umbral} votaciones en común, la celda muestra solo las cantidades. Los partidos van de más a menos legisladores en ejercicio en esa cámara. En el menú de abajo, los partidos van de más a menos legisladores en ejercicio en el Congreso y las bancadas, en su cámara. Ninguna cifra suma las dos cámaras.",
     "coincidenciaEntreTodosLosPares": "Coincidencia entre todos los pares de partidos, {camara}",
     "unPartidoOUnaBancada": "Un partido o una bancada con cada uno de los demás",
-    "conElTextoOficial": "{valor}, con el texto oficial «{texto}», {votaciones}.",
+    "conElTextoOficial": "{valor}, con el texto oficial \"{texto}\", {votaciones}.",
     "sinLegisladoresDeEstePartido": "{valor}, sin legisladores de este partido.",
     "coincidenciaDeConLosDemas": "Coincidencia de {nombre} con los demás partidos, por cámara",
     "porBancada": "Por bancada, {camara}",

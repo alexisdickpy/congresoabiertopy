@@ -7,7 +7,7 @@ Comandos del bot: `/start`, `/avisos`, `/baja`.
 ## Puesta en marcha
 
 1. Crear el bot con @BotFather en Telegram y guardar su token.
-2. En Cloudflare, crear un espacio KV (Storage & Databases → KV) y anotar su identificador. Crear también un token de API con la plantilla «Edit Cloudflare Workers» y anotar el identificador de la cuenta.
+2. En Cloudflare, crear un espacio KV (Storage & Databases → KV) y anotar su identificador. Crear también un token de API con la plantilla "Edit Cloudflare Workers" y anotar el identificador de la cuenta.
 3. Cargar en GitHub (Settings → Secrets and variables → Actions) estos secretos.
 
 | Secreto | Contenido |
@@ -18,9 +18,9 @@ Comandos del bot: `/start`, `/avisos`, `/baja`.
 | `CLOUDFLARE_API_TOKEN` | Token de API de Cloudflare |
 | `CLOUDFLARE_ACCOUNT_ID` | Identificador de la cuenta de Cloudflare |
 | `KV_SUSCRIPTORES_ID` | Identificador del espacio KV |
-| `BOT_URL` | Dirección del bot, que muestra el flujo «Despliegue del bot» al terminar. Se carga después del paso 4 |
+| `BOT_URL` | Dirección del bot, que muestra el flujo "Despliegue del bot" al terminar. Se carga después del paso 4 |
 
-4. Ejecutar a mano el flujo «Despliegue del bot» en la pestaña Actions. Publica el programa y lo conecta con Telegram.
+4. Ejecutar a mano el flujo "Despliegue del bot" en la pestaña Actions. Publica el programa y lo conecta con Telegram.
 5. Cargar `BOT_URL`. La primera sincronización siguiente marca lo existente como procesado, sin enviar nada.
 
 ## Pruebas

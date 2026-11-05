@@ -84,14 +84,14 @@ export const parametroOrdenComparativa = "orden";
 /** Vista comparativa ordenada por una cifra (lib/ordenComparativa.js, ORDENES). */
 export const votacionesNominalesOrdenadas = (orden) => `${votacionesNominales()}?${parametroOrdenComparativa}=${encodeURIComponent(orden)}`;
 
-/** Rankings de más «rebeldes» y más «ausentes» (#57); con sección, el ancla de esa lista (anclasRankings). */
+/** Rankings de más "rebeldes" y más "ausentes" (#57); con sección, el ancla de esa lista (anclasRankings). */
 export const rankings = (seccion) => (seccion ? `/rankings/#${seccion}` : "/rankings/");
 /** Anclas (id) de cada lista de la página de rankings. */
 export const anclasRankings = { rebeldes: "mas-rebeldes", ausentes: "mas-ausentes" };
 
 /**
  * Direcciones publicadas que cambiaron, cada una con su redirección permanente en public/_redirects (la
- * compilación comprueba que estén). El cuadro de más «rebeldes» (#54) pasó a la página de rankings (#57).
+ * compilación comprueba que estén). El cuadro de más "rebeldes" (#54) pasó a la página de rankings (#57).
  */
 export const redireccionesPermanentes = () => [{ desde: "/legisladores/votos-distintos-al-partido/", hacia: rankings() }];
 
@@ -99,7 +99,7 @@ export const redireccionesPermanentes = () => [{ desde: "/legisladores/votos-dis
 export const votaciones = (anio) => (anio ? `/votaciones/${encodeURIComponent(anio)}/` : "/votaciones/");
 /** Página propia de una votación nominal (#45), con el número oficial de la votación. */
 export const votacion = (idVotacion) => `${carpetaVotaciones()}${encodeURIComponent(idVotacion)}/`;
-/** Carpeta de las páginas propias de las votaciones, que marcan «Votaciones» en el menú. */
+/** Carpeta de las páginas propias de las votaciones, que marcan "Votaciones" en el menú. */
 export const carpetaVotaciones = () => "/votacion/";
 /** Decisiones del plenario sobre proyectos de ley sin votación nominal publicada. */
 export const decisionesSinNominal = () => "/votaciones/sin-votacion-nominal/";

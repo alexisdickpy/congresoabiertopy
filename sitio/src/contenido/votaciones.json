@@ -110,9 +110,9 @@
     "actualizadoEl": "{cita} · Actualizado el {texto}",
     "paraguay": "Paraguay",
     "textoParaCompartir": "{referencia}{tema}. Votación en la {camara} del {fecha}. Resultado {resultado} ({totales}).",
-    "temaCitado": "«{tema}»",
+    "temaCitado": "\"{tema}\"",
     "descripcionVotacion": "Votación nominal {id} en la {camara} del {fecha} ({etapa}) sobre {referencia}. Resultado {resultado}. {totales}.",
-    "proyectoCitado": "Proyecto «{tema}»."
+    "proyectoCitado": "Proyecto \"{tema}\"."
   },
   "textosFicha": {
     "sinVotosEmitidos": "sin votos emitidos",

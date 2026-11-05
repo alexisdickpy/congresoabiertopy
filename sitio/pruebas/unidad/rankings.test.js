@@ -1,4 +1,4 @@
-// Pruebas de los rankings (lib/rankings.js): el orden común y la lista de más «ausentes», con su
+// Pruebas de los rankings (lib/rankings.js): el orden común y la lista de más "ausentes", con su
 // mínimo, sus empates y las mismas cifras de la vista comparativa.
 import assert from "node:assert/strict";
 import { test } from "node:test";

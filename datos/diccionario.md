@@ -172,7 +172,7 @@ Se publica en `fuente/{período}/votos.csv`, con 82815 registros en total.
 | `idLegislador` | oficial | entero | Legislador que votó (ver `legisladores`). |
 | `idSentidoVotacion` | oficial | entero | Código del sentido del voto (272 SI, 273 NO, 274 ABSTENCIÓN/BLANCO, 275 AUSENTE, 276 NO VOTA, 281-283 MOCIÓN 1-3). |
 | `sentidoVotacion` | oficial | texto | Sentido del voto en texto. AUSENTE significa que no votó en ese momento, no que faltó a la sesión. |
-| `observacion` | oficial | texto | Observación del voto (por ejemplo, «Votó a viva voz»). |
+| `observacion` | oficial | texto | Observación del voto (por ejemplo, "Votó a viva voz"). |
 
 ## legisladores
 

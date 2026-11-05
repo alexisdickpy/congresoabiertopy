@@ -77,7 +77,8 @@ def elegir_periodo(periodos, id_periodo):
     else:
         elegidos = [p for p in periodos if p.get("vigente")]
     if len(elegidos) != 1:
-        raise ValueError(f"No se encontró un único período {'«' + id_periodo + '»' if id_periodo else 'vigente'} en periodos.json")
+        cual = f'"{id_periodo}"' if id_periodo else "vigente"
+        raise ValueError(f"No se encontró un único período {cual} en periodos.json")
     return elegidos[0]
 
 

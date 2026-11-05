@@ -205,7 +205,7 @@ content:
             label: "Rankings"
             type: string
           - name: masRebeldes
-            label: "Más «rebeldes»"
+            label: "Más \"rebeldes\""
             type: string
           - name: legisladoresQueMasVecesVotaron
             label: "Legisladores que más veces votaron distinto a la mayoría de su…"
@@ -1046,7 +1046,7 @@ content:
             label: "Cómo se calculan los votos distintos a la mayoría"
             type: string
           - name: rankingsDeMasRebeldesY
-            label: "Rankings de más «rebeldes» y más «ausentes»"
+            label: "Rankings de más \"rebeldes\" y más \"ausentes\""
             type: string
           - name: tituloPorCamara
             label: "{camara}, votaciones nominales por legislador"
@@ -1727,7 +1727,7 @@ content:
             type: text
             description: "Partes automáticas, no las borres ni les cambies el nombre: {referencia}, {tema}, {camara}, {fecha}, {resultado}, {totales}."
           - name: temaCitado
-            label: "«{tema}»"
+            label: "\"{tema}\""
             type: string
             description: "Partes automáticas, no las borres ni les cambies el nombre: {tema}."
           - name: descripcionVotacion
@@ -1735,7 +1735,7 @@ content:
             type: text
             description: "Partes automáticas, no las borres ni les cambies el nombre: {id}, {camara}, {fecha}, {etapa}, {referencia}, {resultado}, {totales}."
           - name: proyectoCitado
-            label: "Proyecto «{tema}»."
+            label: "Proyecto \"{tema}\"."
             type: string
             description: "Partes automáticas, no las borres ni les cambies el nombre: {tema}."
       - name: textosFicha
@@ -1824,7 +1824,7 @@ content:
             label: "Un partido o una bancada con cada uno de los demás"
             type: string
           - name: conElTextoOficial
-            label: "{valor}, con el texto oficial «{texto}», {votaciones}."
+            label: "{valor}, con el texto oficial \"{texto}\", {votaciones}."
             type: string
             description: "Partes automáticas, no las borres ni les cambies el nombre: {valor}, {texto}, {votaciones}."
           - name: sinLegisladoresDeEstePartido
@@ -2144,11 +2144,11 @@ content:
             type: text
             description: "Partes automáticas, no las borres ni les cambies el nombre: {cantidad}, {periodo}."
           - name: masRebeldesVotosDistintosA
-            label: "Más «rebeldes», votos distintos a la mayoría de su partido"
+            label: "Más \"rebeldes\", votos distintos a la mayoría de su partido"
             type: text
             description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
           - name: masAusentesAusenciasEnVotaciones
-            label: "Más «ausentes», ausencias en votaciones nominales"
+            label: "Más \"ausentes\", ausencias en votaciones nominales"
             type: text
             description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
           - name: lasCamarasSeMuestranPor
@@ -2156,7 +2156,7 @@ content:
             type: text
             description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
           - name: masRebeldes
-            label: "Más «rebeldes»"
+            label: "Más \"rebeldes\""
             type: string
           - name: legisladoresQueMasVecesVotaron
             label: "Legisladores que más veces votaron distinto a la mayoría de su…"
@@ -2213,7 +2213,7 @@ content:
             label: "partido registrado en la API."
             type: string
           - name: masAusentes
-            label: "Más «ausentes»"
+            label: "Más \"ausentes\""
             type: string
           - name: legisladoresConMasAusenciasEn
             label: "Legisladores con más ausencias en votaciones nominales."

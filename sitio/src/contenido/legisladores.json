@@ -86,7 +86,7 @@
     "lasCamarasSeMuestranPor": "Las cámaras se muestran por separado porque el Senado publica muchas menos votaciones nominales que Diputados. Los porcentajes de quienes figuran en pocas votaciones cambian mucho con cada votación, por eso cada cifra lleva su denominador. La API no informa si había permiso o licencia, ni el motivo. Partido y bancada son los que la API registra para el período, no necesariamente los de la fecha de cada votación. Ordenar la tabla por una cifra solo cambia el orden de las filas.",
     "comoSeCalculanLasAusencias": "Cómo se calculan las ausencias, NO VOTA y abstenciones",
     "comoSeCalculanLosVotos": "Cómo se calculan los votos distintos a la mayoría",
-    "rankingsDeMasRebeldesY": "Rankings de más «rebeldes» y más «ausentes»",
+    "rankingsDeMasRebeldesY": "Rankings de más \"rebeldes\" y más \"ausentes\"",
     "tituloPorCamara": "{camara}, votaciones nominales por legislador"
   },
   "filtro": {

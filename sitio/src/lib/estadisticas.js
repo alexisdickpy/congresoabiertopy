@@ -14,7 +14,7 @@ const txc = textos.general.comunes;
 
 /** Legisladores en la lista de más leyes de su autoría. */
 export const CANTIDAD_AUTORES = 10;
-/** Resultados oficiales distintos que se nombran; el resto va como «otros». */
+/** Resultados oficiales distintos que se nombran; el resto va como "otros". */
 const CANTIDAD_RESULTADOS = 8;
 
 const deMayorAMenor = (a, b) => b.cantidad - a.cantidad || a.texto.localeCompare(b.texto, "es");

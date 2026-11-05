@@ -17,7 +17,7 @@
     "proyectosSinTramitaciones": "Proyectos sin tramitaciones",
     "laApiNoDevuelveLas": "La API no devuelve las tramitaciones del proyecto de la ley.",
     "proyectosDeLeySinAutores": "Proyectos de ley sin autores publicados",
-    "elProyectoEsDeIniciativa": "El proyecto es de iniciativa parlamentaria y tiene votaciones en el período, pero la API no publica sus autores. La página de votaciones no muestra «Presentado por».",
+    "elProyectoEsDeIniciativa": "El proyecto es de iniciativa parlamentaria y tiene votaciones en el período, pero la API no publica sus autores. La página de votaciones no muestra \"Presentado por\".",
     "proyectosSinDocumentosAdjuntos": "Proyectos sin documentos adjuntos",
     "laApiNoDevuelveLos": "La API no devuelve los documentos adjuntos del proyecto de la ley, como el texto de la ley.",
     "numerosDeLeyRepetidosEn": "Números de ley repetidos en otra legislatura",
@@ -101,14 +101,14 @@
         },
         {
           "termino": "AUSENTE",
-          "definicion": "El legislador estuvo ausente en esa votación, es decir, no registró su voto. **No indica si estaba o no en la sesión**, porque pudo estar presente en otro momento. Por eso el sitio habla de «ausencias en votaciones nominales»."
+          "definicion": "El legislador estuvo ausente en esa votación, es decir, no registró su voto. **No indica si estaba o no en la sesión**, porque pudo estar presente en otro momento. Por eso el sitio habla de \"ausencias en votaciones nominales\"."
         },
         {
           "termino": "MOCIÓN 1, MOCIÓN 2, MOCIÓN 3",
           "definicion": "Votos por una de varias propuestas alternativas. El Congreso no publica un total para estas categorías, así que el sitio los cuenta a partir de los votos individuales y lo señala como recuento propio."
         }
       ],
-      "textoDespues": "Los totales de cada votación son los que publica el Congreso. Los porcentajes se calculan sobre todos los legisladores que figuran en la lista de la votación, incluidos AUSENTE y NO VOTA, y siempre se muestran con su denominador, por ejemplo «54 de 80 (67,5 %)»."
+      "textoDespues": "Los totales de cada votación son los que publica el Congreso. Los porcentajes se calculan sobre todos los legisladores que figuran en la lista de la votación, incluidos AUSENTE y NO VOTA, y siempre se muestran con su denominador, por ejemplo \"54 de 80 (67,5 %)\"."
     },
     {
       "ancla": "votos-de-cada-legislador",
@@ -128,20 +128,20 @@
       "ancla": "comisiones",
       "nivel": 2,
       "titulo": "Comisiones",
-      "texto": "La ficha de cada legislador lista las comisiones de las que figura como miembro en cada período parlamentario (de julio a junio), según las listas que publica el Congreso para las dos cámaras. Incluye todos los tipos que publica la fuente, es decir, comisiones permanentes, bicamerales, especiales y nacionales, y frentes parlamentarios. El tipo se muestra sin el agregado «(A)» que usa la fuente. Cada comisión enlaza a su página en SILpy.\n\nLa fuente no indica el cargo de cada miembro dentro de la comisión (presidencia, vicepresidencia, secretaría) ni quién firmó cada dictamen o cómo votó dentro de la comisión. Por eso el sitio no muestra cargos ni calcula indicadores del trabajo en comisiones. En Diputados hay una entrada llamada «Comisiones especiales» que no dice a qué comisión especial corresponde; se muestra con esa aclaración. Las listas de los períodos parlamentarios ya terminados no se vuelven a descargar; la del período en curso se actualiza una vez por semana, los domingos.",
+      "texto": "La ficha de cada legislador lista las comisiones de las que figura como miembro en cada período parlamentario (de julio a junio), según las listas que publica el Congreso para las dos cámaras. Incluye todos los tipos que publica la fuente, es decir, comisiones permanentes, bicamerales, especiales y nacionales, y frentes parlamentarios. El tipo se muestra sin el agregado \"(A)\" que usa la fuente. Cada comisión enlaza a su página en SILpy.\n\nLa fuente no indica el cargo de cada miembro dentro de la comisión (presidencia, vicepresidencia, secretaría) ni quién firmó cada dictamen o cómo votó dentro de la comisión. Por eso el sitio no muestra cargos ni calcula indicadores del trabajo en comisiones. En Diputados hay una entrada llamada \"Comisiones especiales\" que no dice a qué comisión especial corresponde; se muestra con esa aclaración. Las listas de los períodos parlamentarios ya terminados no se vuelven a descargar; la del período en curso se actualiza una vez por semana, los domingos.",
       "textoDespues": ""
     },
     {
       "ancla": "ausencias-en-votaciones-nominales",
       "nivel": 2,
       "titulo": "Ausencias en votaciones nominales",
-      "texto": "La API no publica listas de presencia en las sesiones. Lo único disponible es la categoría AUSENTE de cada votación nominal, que indica que el legislador no registró su voto en ese momento. Por eso el sitio habla siempre de «ausencias en votaciones nominales», cuenta votaciones y no días, y no presenta esta cifra como presencia en las sesiones.\n\nLa cifra de cada ficha cuenta las votaciones nominales del período en que el legislador figura como AUSENTE, sobre todas las votaciones nominales en cuya lista oficial figura, de cualquier tipo de expediente (proyectos de ley, resoluciones, declaraciones y otros). La lista de cada votación incluye solo a quienes ocupaban el cargo ese día, así que el total son las votaciones de su cámara mientras ejercía el cargo. Por eso este total es mayor que el del resumen de votos, que cuenta solo las votaciones sobre proyectos de ley. Cada votación de la lista enlaza a su página oficial en SILpy, con la fecha y la sesión.\n\nEl Senado publica muchas menos votaciones nominales que Diputados, así que las cifras de una cámara y de la otra no se comparan directamente. La API tampoco informa si un legislador AUSENTE tenía permiso o licencia, ni el motivo.",
+      "texto": "La API no publica listas de presencia en las sesiones. Lo único disponible es la categoría AUSENTE de cada votación nominal, que indica que el legislador no registró su voto en ese momento. Por eso el sitio habla siempre de \"ausencias en votaciones nominales\", cuenta votaciones y no días, y no presenta esta cifra como presencia en las sesiones.\n\nLa cifra de cada ficha cuenta las votaciones nominales del período en que el legislador figura como AUSENTE, sobre todas las votaciones nominales en cuya lista oficial figura, de cualquier tipo de expediente (proyectos de ley, resoluciones, declaraciones y otros). La lista de cada votación incluye solo a quienes ocupaban el cargo ese día, así que el total son las votaciones de su cámara mientras ejercía el cargo. Por eso este total es mayor que el del resumen de votos, que cuenta solo las votaciones sobre proyectos de ley. Cada votación de la lista enlaza a su página oficial en SILpy, con la fecha y la sesión.\n\nEl Senado publica muchas menos votaciones nominales que Diputados, así que las cifras de una cámara y de la otra no se comparan directamente. La API tampoco informa si un legislador AUSENTE tenía permiso o licencia, ni el motivo.",
       "textoDespues": ""
     },
     {
       "ancla": "cuadro-de-ausencias",
       "nivel": 3,
-      "titulo": "Lista de más «ausentes»",
+      "titulo": "Lista de más \"ausentes\"",
       "texto": "La página de [rankings](/rankings/#mas-ausentes) muestra, por cámara, los {cantidadRanking} legisladores con mayor porcentaje de ausencias en votaciones nominales, con la misma cifra de cada ficha y de la vista comparativa, sin recalcularla. Solo entran quienes figuran en al menos {minimoAusencias} votaciones nominales, para que no encabecen la lista suplentes o reemplazos con pocas votaciones. A igual porcentaje va primero quien figura en más votaciones y, después, por apellido. Incluye a quienes ya no ejercen, señalados como tales, y se informa cuántos figuran en menos votaciones que el mínimo.\n\nLa fuente no dice el motivo de cada ausencia. Una licencia, una representación oficial o haber salido del recinto en el momento de votar cuentan igual, y figurar como AUSENTE en una votación no necesariamente es lo mismo que no ir a la sesión.",
       "textoDespues": ""
     },
@@ -162,8 +162,8 @@
     {
       "ancla": "cuadro-de-votos-distintos",
       "nivel": 3,
-      "titulo": "Lista de más «rebeldes»",
-      "texto": "La lista [Más «rebeldes»](/rankings/#mas-rebeldes), en la página de rankings, muestra, por cámara, los {cantidadRanking} legisladores con mayor porcentaje de votos distintos a la mayoría de su partido, con la misma cifra de la vista comparativa. Solo entran quienes tienen al menos {minimoComparables} votaciones comparables, para que un porcentaje alto sobre muy pocas votaciones no encabece la lista. A igual porcentaje va primero quien tiene más votaciones comparables y, después, por apellido. Incluye a quienes ya no ejercen, señalados como tales. Se hace solo por partido; los votos distintos a la mayoría de la bancada se ordenan en la vista comparativa.\n\nDebajo de cada lista se nombra a quienes no tienen ninguna votación comparable porque en todas las que votaron fueron los únicos de su partido en emitir voto en su cámara, y se informa cuántos tienen menos votaciones comparables que el mínimo. La portada muestra los {cantidadPortada} primeros de cada cámara.",
+      "titulo": "Lista de más \"rebeldes\"",
+      "texto": "La lista [Más \"rebeldes\"](/rankings/#mas-rebeldes), en la página de rankings, muestra, por cámara, los {cantidadRanking} legisladores con mayor porcentaje de votos distintos a la mayoría de su partido, con la misma cifra de la vista comparativa. Solo entran quienes tienen al menos {minimoComparables} votaciones comparables, para que un porcentaje alto sobre muy pocas votaciones no encabece la lista. A igual porcentaje va primero quien tiene más votaciones comparables y, después, por apellido. Incluye a quienes ya no ejercen, señalados como tales. Se hace solo por partido; los votos distintos a la mayoría de la bancada se ordenan en la vista comparativa.\n\nDebajo de cada lista se nombra a quienes no tienen ninguna votación comparable porque en todas las que votaron fueron los únicos de su partido en emitir voto en su cámara, y se informa cuántos tienen menos votaciones comparables que el mínimo. La portada muestra los {cantidadPortada} primeros de cada cámara.",
       "textoDespues": ""
     },
     {
@@ -177,7 +177,7 @@
       "ancla": "posicion-de-cada-partido",
       "nivel": 2,
       "titulo": "Votaciones y posición de cada partido",
-      "texto": "La página de [votaciones](/votaciones/) reúne las votaciones nominales sobre proyectos de ley del período, una página por año (el de la fecha del trámite votado), de la más reciente a la más antigua. Cada votación muestra la fecha, la cámara, la etapa, el proyecto, su estado oficial, el resultado oficial, los totales que publica el Congreso sobre los legisladores registrados y la posición de cada partido. Se puede filtrar por cámara, estado del proyecto, resultado y tema.\n\nLa posición de un partido en una votación es la categoría con más votos entre los votos emitidos de sus legisladores, igual que en la coincidencia de votos. AUSENTE y NO VOTA no son votos emitidos. Si dos o más categorías empatan en el primer lugar, la etiqueta dice «empate», y si ningún legislador del partido emitió voto, dice «sin votos emitidos». Se calcula dentro de la cámara de la votación, con el partido que la API registra para el período, sin fecha de actualización.\n\nCada partido se muestra con una sigla propia de este sitio, un cuadro del color de su posición y la posición escrita, para que no dependa solo del color. Las siglas salen del nombre oficial cuando lo incluye y, si no, de la bancada oficial, del nombre conocido o de las iniciales. El nombre oficial aparece al pasar el cursor sobre la etiqueta. En la ficha de cada ley, junto a los totales de cada votación, los partidos se agrupan por su posición, cada uno con los votos de esa categoría sobre sus votos emitidos.\n\nDebajo del título oficial de cada proyecto, «Presentado por» indica cuántos de sus autores son de cada partido. En los proyectos del Poder Ejecutivo o de la Corte Suprema de Justicia se indica la iniciativa. Si el Congreso no publica los autores de un proyecto, la línea no aparece y el proyecto figura en las [observaciones sobre los datos](#observaciones-sobre-los-datos).",
+      "texto": "La página de [votaciones](/votaciones/) reúne las votaciones nominales sobre proyectos de ley del período, una página por año (el de la fecha del trámite votado), de la más reciente a la más antigua. Cada votación muestra la fecha, la cámara, la etapa, el proyecto, su estado oficial, el resultado oficial, los totales que publica el Congreso sobre los legisladores registrados y la posición de cada partido. Se puede filtrar por cámara, estado del proyecto, resultado y tema.\n\nLa posición de un partido en una votación es la categoría con más votos entre los votos emitidos de sus legisladores, igual que en la coincidencia de votos. AUSENTE y NO VOTA no son votos emitidos. Si dos o más categorías empatan en el primer lugar, la etiqueta dice \"empate\", y si ningún legislador del partido emitió voto, dice \"sin votos emitidos\". Se calcula dentro de la cámara de la votación, con el partido que la API registra para el período, sin fecha de actualización.\n\nCada partido se muestra con una sigla propia de este sitio, un cuadro del color de su posición y la posición escrita, para que no dependa solo del color. Las siglas salen del nombre oficial cuando lo incluye y, si no, de la bancada oficial, del nombre conocido o de las iniciales. El nombre oficial aparece al pasar el cursor sobre la etiqueta. En la ficha de cada ley, junto a los totales de cada votación, los partidos se agrupan por su posición, cada uno con los votos de esa categoría sobre sus votos emitidos.\n\nDebajo del título oficial de cada proyecto, \"Presentado por\" indica cuántos de sus autores son de cada partido. En los proyectos del Poder Ejecutivo o de la Corte Suprema de Justicia se indica la iniciativa. Si el Congreso no publica los autores de un proyecto, la línea no aparece y el proyecto figura en las [observaciones sobre los datos](#observaciones-sobre-los-datos).",
       "textoDespues": ""
     },
     {
@@ -193,7 +193,7 @@
       "titulo": "Temas de las leyes",
       "texto": "El tema de cada ley es una clasificación del Observatorio, no un dato del Congreso. Abarca las leyes sancionadas y los proyectos de ley votados que no llegaron a ser ley. Un proyecto puede tener más de un tema. Se usan estos {cantidadTemas}.",
       "bloque": "temas",
-      "textoDespues": "Esta clasificación se realiza a través de unas reglas que buscan palabras clave en el título oficial de cada proyecto, y después cada clasificación se revisó a mano. Es solo referencial y puede tener errores. Si ninguna regla encaja, el proyecto figura como «{textoPendiente}». Las pensiones graciables y los inmuebles llevan solo ese tema. La lista de palabras clave y la clasificación de cada proyecto se pueden [descargar aquí](/datos/)."
+      "textoDespues": "Esta clasificación se realiza a través de unas reglas que buscan palabras clave en el título oficial de cada proyecto, y después cada clasificación se revisó a mano. Es solo referencial y puede tener errores. Si ninguna regla encaja, el proyecto figura como \"{textoPendiente}\". Las pensiones graciables y los inmuebles llevan solo ese tema. La lista de palabras clave y la clasificación de cada proyecto se pueden [descargar aquí](/datos/)."
     },
     {
       "ancla": "votos-de-partidos-y-bancadas-por-tema",
@@ -206,7 +206,7 @@
       "ancla": "perfil-de-cada-partido",
       "nivel": 3,
       "titulo": "Perfil de cada partido",
-      "texto": "La página de [partidos](/partidos/) empieza con la composición actual de cada cámara y sigue con un perfil por partido. El perfil muestra las mismas cifras de los votos por tema, ordenadas por partido en lugar de por tema: una tabla por cámara con una fila por tema y, en cada fila, una barra con el reparto de los votos de sus legisladores, el porcentaje y la cantidad de SI, NO, ABSTENCIÓN/BLANCO, NO VOTA (solo si los hay) y AUSENTE sobre todos sus votos registrados en ese tema, los votos registrados y la cantidad de votaciones. Las mociones y otras opciones van juntas en la columna «Otras opciones», con el detalle de cada una. El nombre del tema lleva a su página, que tiene la lista de votaciones.\n\nNo hay una cifra única de apoyo y nunca se suman senadores y diputados. Si el partido no tuvo votos en un tema en una cámara, esa fila dice que no hay votos. Hay un perfil por cada [partido unificado](#partido-unificado) con al menos un legislador en el período, y la cantidad de legisladores en ejercicio de cada cámara es la de la composición. El partido es el que la API registra para el período, sin fecha de actualización.",
+      "texto": "La página de [partidos](/partidos/) empieza con la composición actual de cada cámara y sigue con un perfil por partido. El perfil muestra las mismas cifras de los votos por tema, ordenadas por partido en lugar de por tema: una tabla por cámara con una fila por tema y, en cada fila, una barra con el reparto de los votos de sus legisladores, el porcentaje y la cantidad de SI, NO, ABSTENCIÓN/BLANCO, NO VOTA (solo si los hay) y AUSENTE sobre todos sus votos registrados en ese tema, los votos registrados y la cantidad de votaciones. Las mociones y otras opciones van juntas en la columna \"Otras opciones\", con el detalle de cada una. El nombre del tema lleva a su página, que tiene la lista de votaciones.\n\nNo hay una cifra única de apoyo y nunca se suman senadores y diputados. Si el partido no tuvo votos en un tema en una cámara, esa fila dice que no hay votos. Hay un perfil por cada [partido unificado](#partido-unificado) con al menos un legislador en el período, y la cantidad de legisladores en ejercicio de cada cámara es la de la composición. El partido es el que la API registra para el período, sin fecha de actualización.",
       "textoDespues": ""
     },
     {
@@ -227,7 +227,7 @@
       "ancla": "avisos-del-bot-de-telegram",
       "nivel": 2,
       "titulo": "Avisos del bot de Telegram",
-      "texto": "El bot de Telegram del proyecto avisa de cuatro cosas. Al empezar, todas están activadas, y cada persona desactiva las que no quiera. Las leyes nuevas sancionadas, con el resultado de sus votaciones nominales si están publicadas. Las votaciones de proyectos de ley, en un mensaje por día: las nominales, con el voto de cada partido, y, en un mensaje aparte, las [decisiones del plenario sin votación nominal](#decisiones-sin-votacion-nominal) con su resultado oficial. Los proyectos de ley presentados, de cualquier iniciativa y con sus autores, en un mensaje por día. Y los lunes a la noche, un resumen de la semana anterior con las leyes, las votaciones y las decisiones sin votación nominal. Si no hay novedades, no se envía nada.\n\n«Nuevo» significa que apareció en los datos desde la actualización anterior, no que ocurrió ese día, porque la fuente publica con demora. Cuando la fuente no publica autores, como en los proyectos del Poder Ejecutivo, se indica la iniciativa oficial y los ministerios. El bot guarda solo el número de chat y los avisos elegidos, y el comando /baja o bloquear el bot los borra.",
+      "texto": "El bot de Telegram del proyecto avisa de cuatro cosas. Al empezar, todas están activadas, y cada persona desactiva las que no quiera. Las leyes nuevas sancionadas, con el resultado de sus votaciones nominales si están publicadas. Las votaciones de proyectos de ley, en un mensaje por día: las nominales, con el voto de cada partido, y, en un mensaje aparte, las [decisiones del plenario sin votación nominal](#decisiones-sin-votacion-nominal) con su resultado oficial. Los proyectos de ley presentados, de cualquier iniciativa y con sus autores, en un mensaje por día. Y los lunes a la noche, un resumen de la semana anterior con las leyes, las votaciones y las decisiones sin votación nominal. Si no hay novedades, no se envía nada.\n\n\"Nuevo\" significa que apareció en los datos desde la actualización anterior, no que ocurrió ese día, porque la fuente publica con demora. Cuando la fuente no publica autores, como en los proyectos del Poder Ejecutivo, se indica la iniciativa oficial y los ministerios. El bot guarda solo el número de chat y los avisos elegidos, y el comando /baja o bloquear el bot los borra.",
       "textoDespues": ""
     },
     {
@@ -262,7 +262,7 @@
       "ancla": "partido-unificado",
       "nivel": 3,
       "titulo": "Dos niveles de análisis, partido y bancada",
-      "texto": "La API escribe el partido como texto libre, y a veces escribe el mismo partido de forma distinta en cada cámara. Por eso el sitio agrega una tabla propia de **partidos unificados**, que dice qué textos oficiales corresponden al mismo partido. Solo se reúnen los textos que con seguridad son el mismo partido, con el fundamento de cada caso. Los que no se pueden agrupar con seguridad quedan solos. El texto oficial no cambia y se sigue mostrando en todas las páginas.\n\n- **Partido.** Se identifica con el partido unificado, que es el mismo en las dos cámaras. Lo usa el filtro de partidos del [listado de legisladores](/legisladores/), que muestra cada partido una sola vez. Las fichas y las tablas muestran el texto oficial.\n- **Bancada.** Se usa el nombre oficial, separado por cámara. Las bancadas de una cámara no se unen con las de la otra, porque son grupos internos de cada cámara con nombres propios. Quien no tiene bancada registrada figura como «Sin bancada registrada».\n\nUnificar un partido no suma senadores y diputados. Todas las cifras del sitio (votos distintos a la mayoría, ausencias, NO VOTA, abstenciones) se calculan dentro de cada cámara. El partido unificado solo permite poner lado a lado lo que hizo un mismo partido en cada cámara, cada uno con su propia cifra. Partido y bancada siguen siendo un único valor por período, sin fecha de actualización. {partidosReunidos}",
+      "texto": "La API escribe el partido como texto libre, y a veces escribe el mismo partido de forma distinta en cada cámara. Por eso el sitio agrega una tabla propia de **partidos unificados**, que dice qué textos oficiales corresponden al mismo partido. Solo se reúnen los textos que con seguridad son el mismo partido, con el fundamento de cada caso. Los que no se pueden agrupar con seguridad quedan solos. El texto oficial no cambia y se sigue mostrando en todas las páginas.\n\n- **Partido.** Se identifica con el partido unificado, que es el mismo en las dos cámaras. Lo usa el filtro de partidos del [listado de legisladores](/legisladores/), que muestra cada partido una sola vez. Las fichas y las tablas muestran el texto oficial.\n- **Bancada.** Se usa el nombre oficial, separado por cámara. Las bancadas de una cámara no se unen con las de la otra, porque son grupos internos de cada cámara con nombres propios. Quien no tiene bancada registrada figura como \"Sin bancada registrada\".\n\nUnificar un partido no suma senadores y diputados. Todas las cifras del sitio (votos distintos a la mayoría, ausencias, NO VOTA, abstenciones) se calculan dentro de cada cámara. El partido unificado solo permite poner lado a lado lo que hizo un mismo partido en cada cámara, cada uno con su propia cifra. Partido y bancada siguen siendo un único valor por período, sin fecha de actualización. {partidosReunidos}",
       "bloque": "partidos",
       "textoDespues": ""
     },
@@ -285,7 +285,7 @@
       "ancla": "limitaciones",
       "nivel": 2,
       "titulo": "Limitaciones conocidas",
-      "texto": "- La API no necesariamente informa cuándo se modificó un registro, así que los cambios se detectan comparando cada copia con la anterior.\n- Partido y bancada son un único valor por período, sin fecha de actualización. Por eso los votos distintos a la mayoría se calculan con el grupo registrado para el período.\n- «AUSENTE» indica ausencia en la votación y no informa necesariamente si el legislador estuvo en la sesión o no.\n- Solo las votaciones nominales registran el voto de cada legislador. De las que se hacen sin ese registro, por ejemplo a mano alzada, la API publica solo el resultado. El Senado registra muchas menos votaciones nominales que Diputados.\n- El tema sale solo del título oficial del proyecto, no de su texto completo.\n- Por ahora el sitio cubre solo el período {periodo}.",
+      "texto": "- La API no necesariamente informa cuándo se modificó un registro, así que los cambios se detectan comparando cada copia con la anterior.\n- Partido y bancada son un único valor por período, sin fecha de actualización. Por eso los votos distintos a la mayoría se calculan con el grupo registrado para el período.\n- \"AUSENTE\" indica ausencia en la votación y no informa necesariamente si el legislador estuvo en la sesión o no.\n- Solo las votaciones nominales registran el voto de cada legislador. De las que se hacen sin ese registro, por ejemplo a mano alzada, la API publica solo el resultado. El Senado registra muchas menos votaciones nominales que Diputados.\n- El tema sale solo del título oficial del proyecto, no de su texto completo.\n- Por ahora el sitio cubre solo el período {periodo}.",
       "textoDespues": ""
     },
     {
@@ -364,15 +364,15 @@
         },
         {
           "termino": "Tema",
-          "definicion": "Clasificación propia del Observatorio de cada ley y de cada proyecto de ley votado. «Pendiente de clasificación» es un proyecto que todavía no tiene tema ([Temas de las leyes](#temas-de-las-leyes))."
+          "definicion": "Clasificación propia del Observatorio de cada ley y de cada proyecto de ley votado. \"Pendiente de clasificación\" es un proyecto que todavía no tiene tema ([Temas de las leyes](#temas-de-las-leyes))."
         },
         {
           "termino": "Coincidencia de votos",
           "definicion": "Porcentaje de votaciones en que dos partidos o dos bancadas tuvieron la misma posición ([Coincidencia de votos](#coincidencia-de-votos))."
         },
         {
-          "termino": "«Rebelde»",
-          "definicion": "Legislador que votó distinto a la mayoría de su partido. ([Lista de más «rebeldes»](#cuadro-de-votos-distintos))."
+          "termino": "\"Rebelde\"",
+          "definicion": "Legislador que votó distinto a la mayoría de su partido. ([Lista de más \"rebeldes\"](#cuadro-de-votos-distintos))."
         }
       ],
       "bloque": "siglas"

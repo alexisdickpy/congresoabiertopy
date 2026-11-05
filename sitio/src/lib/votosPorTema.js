@@ -86,7 +86,7 @@ function camaraDelTema(camara, votaciones, i) {
 const porPeriodo = new Map();
 
 /**
- * Un tema por cada uno de temas.json (y «pendiente de clasificación» si tiene votaciones), en ese orden:
+ * Un tema por cada uno de temas.json (y "pendiente de clasificación" si tiene votaciones), en ese orden:
  * { id, nombre, nombreCorto, definicion, url, total, camaras }. `camaras`, primero la de Senadores, solo
  * las que tienen votaciones del tema. `total` es la cantidad de votaciones del tema.
  */

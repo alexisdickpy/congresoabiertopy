@@ -383,7 +383,7 @@ const CAMPOS_FILTRO = ["camara", "partido", "bancada", "departamento"];
 
 /**
  * Valor de URL de cada texto oficial (su slug). Si dos textos distintos dan el mismo slug
- * (por ejemplo, «"PEN"» y «(PEN)»), el segundo en orden alfabético recibe "-2": no se fusionan.
+ * (por ejemplo, '"PEN"' y '(PEN)'), el segundo en orden alfabético recibe "-2": no se fusionan.
  */
 export function valoresUnicos(textos) {
   const valores = new Map();
