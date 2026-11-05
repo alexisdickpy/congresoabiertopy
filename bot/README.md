@@ -4,6 +4,8 @@ Programa del bot de Telegram del Observatorio Legislativo (#66). Corre en Cloudf
 
 Comandos del bot: `/start`, `/avisos`, `/baja`.
 
+La descripción que Telegram muestra antes de `/start` y en el perfil del bot está en [`descripcion.json`](descripcion.json): `descripcion` (hasta 512 caracteres) y `descripcionCorta` (hasta 120). El flujo "Despliegue del bot" la carga en Telegram cada vez que cambia algo en `bot/`.
+
 ## Puesta en marcha
 
 1. Crear el bot con @BotFather en Telegram y guardar su token.
