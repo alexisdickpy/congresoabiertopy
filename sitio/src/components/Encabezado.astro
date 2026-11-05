@@ -14,7 +14,21 @@ const actual = entradaActual(enlaces, Astro.url.pathname);
 
 <header class="encabezado">
   <div class="contenedor fila">
-    <a class="marca" href={rutas.inicio()}>{nombreSitio}</a>
+    <a class="marca" href={rutas.inicio()}
+      ><span class="simbolo"><svg viewBox="-118 -125 214 250" aria-hidden="true" focusable="false">
+        <g class="puntos">
+          <circle cx="0" cy="-100" r="22"></circle>
+          <circle cx="-50" cy="-86.6" r="17"></circle>
+          <circle cx="-86.6" cy="-50" r="15"></circle>
+          <circle cx="-100" cy="0" r="14"></circle>
+          <circle cx="-86.6" cy="50" r="15"></circle>
+          <circle cx="-50" cy="86.6" r="17"></circle>
+          <circle cx="0" cy="100" r="22"></circle>
+        </g>
+        <circle class="punto-arriba" cx="61.06" cy="-72.77" r="31"></circle>
+        <circle class="punto-abajo" cx="61.06" cy="72.77" r="31"></circle>
+      </svg></span><span class="nombre">{nombreSitio}</span></a
+    >
     <nav aria-label={tx.principal}>
       <ul>
         {
@@ -38,6 +52,7 @@ const actual = entradaActual(enlaces, Astro.url.pathname);
     border-color: var(--color-borde-fuerte);
     color: var(--color-texto-suave);
     font-size: var(--tamano-chico);
+    align-self: center; /* centrado con el logo, que ocupa dos líneas */
   }
   .encabezado {
     border-bottom: var(--borde-ancho) solid var(--color-borde);
@@ -54,11 +69,40 @@ const actual = entradaActual(enlaces, Astro.url.pathname);
   .marca,
   .marca:visited {
     font-family: var(--fuente-titulo);
-    font-size: 1.375rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 1.875rem;
     font-weight: 500;
+    line-height: 1.05;
     letter-spacing: -0.01em;
     color: var(--color-texto);
     text-decoration: none;
+  }
+  /* Logo (#122): el nombre va en dos líneas (una palabra por línea) junto al símbolo */
+  .nombre {
+    width: min-content;
+  }
+  /* Símbolo del logo: decorativo, el nombre ya está escrito al lado */
+  .simbolo {
+    flex: none;
+    padding: var(--relleno-logo);
+    border-radius: 0.25em;
+    background: var(--color-logo-fondo);
+    line-height: 0;
+  }
+  .simbolo svg {
+    height: 2.4em;
+    width: auto;
+  }
+  .puntos {
+    fill: var(--color-logo-puntos);
+  }
+  .punto-arriba {
+    fill: var(--color-logo-arriba);
+  }
+  .punto-abajo {
+    fill: var(--color-logo-abajo);
   }
   nav {
     order: 3;

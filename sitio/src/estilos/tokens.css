@@ -18,6 +18,13 @@
   --color-sobre-acento: #ffffff;
   --color-foco: #b35c00;
   --color-marca: #f8e3b4;
+  /* Símbolo del logo (#122): los mismos colores del favicon en los dos modos; en modo claro va
+     dentro de un cuadrado oscuro (como el favicon) para que el gris y el naranja tengan contraste */
+  --color-logo-puntos: #a2acba;
+  --color-logo-arriba: #f2a93b;
+  --color-logo-abajo: #0dbb91;
+  --color-logo-fondo: #121316;
+  --relleno-logo: 0.18em;
 
   /* Colores de las categorías de voto (hemiciclo y barras de las votaciones) */
   --color-voto-si: #0c8a62;
@@ -149,6 +156,8 @@
   --color-sobre-acento: #121316;
   --color-foco: #f4b14a;
   --color-marca: #4d3a12;
+  --color-logo-fondo: transparent;
+  --relleno-logo: 0em;
   --color-voto-si: #10b981;
   --color-voto-no: #ef4444;
   --color-voto-abstencion: #a78bfa;
