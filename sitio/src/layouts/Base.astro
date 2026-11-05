@@ -41,6 +41,8 @@ const json = datos && JSON.stringify(datos).replace(/</g, "\\u003c");
     {indexar ? <link rel="canonical" href={canonica} /> : <meta name="robots" content="noindex" />}
     <script is:inline src="/modo.js"></script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="sitemap" href={rutas.sitemap()} />
     <meta property="og:site_name" content={nombreSitio} />
     <meta property="og:locale" content="es_PY" />
