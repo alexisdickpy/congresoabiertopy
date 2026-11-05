@@ -286,7 +286,7 @@ content:
         type: object
         fields:
           - name: leyesSancionadasPorElCongreso
-            label: "Leyes sancionadas por el Congreso Nacional del Paraguay en el…"
+            label: "Descripción de la portada al compartir y en buscadores (Leyes del Congreso Nacional…)"
             type: text
             description: "Partes automáticas, no las borres ni les cambies el nombre: {id}."
           - name: queVotaElCongresoDel

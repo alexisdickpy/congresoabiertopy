@@ -2,6 +2,9 @@
 // estructurados de schema.org (JSON-LD). Sin HTML. Los valores oficiales se usan tal cual; solo se
 // eligen y se recortan (ver docs/seo.md).
 
+import { createHash } from "node:crypto";
+import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import { leyes } from "./catalogo.js";
 import { estado, periodos } from "./datos.js";
 import { descargas } from "./descargas.js";
@@ -56,6 +59,23 @@ export function descripcionDeLegislador(f, sinDato) {
     votos: b.votos.total,
     leyes: b.autoria.length,
   });
+}
+
+/**
+ * Dirección de una imagen del sitio con una versión según su contenido (?v=…), para que WhatsApp y otras
+ * aplicaciones, que guardan la imagen por dirección, muestren la nueva cuando cambia (#126). Lee el
+ * archivo de public/ (la compilación corre en sitio/); si todavía no existe, la deja sin versión.
+ */
+const versiones = new Map();
+export function versionar(url) {
+  const { origin, pathname } = new URL(url, rutas.sitio);
+  if (origin !== new URL(rutas.sitio).origin) return url;
+  if (!versiones.has(pathname)) {
+    const archivo = join(process.cwd(), "public", decodeURIComponent(pathname));
+    versiones.set(pathname, existsSync(archivo) ? createHash("sha256").update(readFileSync(archivo)).digest("hex").slice(0, 10) : null);
+  }
+  const version = versiones.get(pathname);
+  return version ? `${url}?v=${version}` : url;
 }
 
 /** Imagen de la vista previa al compartir. La foto oficial en las fichas de legisladores; si no, la general. */
