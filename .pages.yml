@@ -737,6 +737,9 @@ content:
           - name: anoDeIngreso
             label: "Año de ingreso"
             type: string
+          - name: tema
+            label: "Tema"
+            type: string
           - name: enSilpy
             label: "en SILpy"
             type: string
@@ -3123,8 +3126,8 @@ content:
         label: "Temas de las leyes"
         type: object
         list:
-          min: 16
-          max: 16
+          min: 17
+          max: 17
           collapsible:
             collapsed: true
             summary: "{nombre}"
@@ -3136,6 +3139,7 @@ content:
           - { name: palabrasClave, type: string, list: true, hidden: true }
           - { name: exclusivo, type: boolean, hidden: true }
           - { name: excepto, type: string, list: true, hidden: true }
+          - { name: reserva, type: boolean, hidden: true }
   - name: partidos
     label: "Partidos unificados"
     type: file
