@@ -2,8 +2,9 @@
 
 Es un dato propio, separado de los valores oficiales:
 - datos/propios/temas.json (se edita a mano) define cada tema, su definición y sus palabras clave;
-- datos/propios/clasificacion-temas.json (y su .csv) tiene los temas de cada proyecto de ley con
-  ley sancionada o con votación nominal en el período, con la regla o la revisión que asignó cada uno.
+- datos/propios/clasificacion-temas.json (y su .csv) tiene los temas de cada proyecto de ley del período
+  (con ley sancionada, con votación nominal o en el listado general de proyectos de ley), con la regla, la
+  revisión o la reserva que asignó cada uno.
 
 Criterios (ver docs/metodologia.md):
 - Las reglas buscan las palabras clave en el acápite oficial del proyecto, sin mayúsculas ni tildes y
@@ -13,7 +14,9 @@ Criterios (ver docs/metodologia.md):
 - Un proyecto puede tener más de un tema. Los temas con `exclusivo` (pensiones graciables, inmuebles)
   dejan fuera a los demás, porque el beneficiario o el destino del inmueble no es el tema de la ley.
 - Cada tema puede tener `excepto`, frases que no cuentan para ese tema.
-- Sin ninguna regla, el proyecto queda pendiente de clasificación; nunca se fuerza un tema.
+- Sin ninguna regla, el proyecto recibe el tema de reserva (`reserva: true` en temas.json, «Otros asuntos»,
+  #111) con origen «reserva». Así ningún proyecto queda pendiente de clasificación; `pendiente` es siempre
+  false y se conserva por compatibilidad.
 - Las entradas revisadas a mano (`revisado: true`) no se recalculan.
 
 Uso, para regenerarla sin consultar la API:
@@ -52,11 +55,21 @@ def texto_de_reglas(acapite):
     return f" {texto.strip()} "
 
 
+def tema_de_reserva(temas):
+    """El único tema con `reserva: true`, que se asigna cuando ninguna regla encaja."""
+    reserva = [t["id"] for t in temas if t.get("reserva")]
+    if len(reserva) != 1:
+        raise ValueError(f"temas.json debe tener exactamente un tema de reserva y tiene {len(reserva)}")
+    return reserva[0]
+
+
 def aplicar_reglas(acapite, temas):
     """Temas que asignan las reglas: [{"tema", "origen": "regla", "palabraClave"}], en el orden de temas.json."""
     texto = texto_de_reglas(acapite)
     asignados = []
     for tema in temas:
+        if tema.get("reserva"):
+            continue
         texto_tema = texto
         for frase in tema.get("excepto", []):
             texto_tema = texto_tema.replace(f" {normalizar(frase)} ", " ")
@@ -76,7 +89,9 @@ def es_de_proyecto_de_ley(votacion):
 
 
 def proyectos_del_periodo(carpeta):
-    """{idProyecto: acápite oficial} de los proyectos con ley y de los proyectos de ley con votación nominal."""
+    """{idProyecto: acápite oficial} de los proyectos con ley, de los proyectos de ley con votación nominal y de
+    los demás proyectos de ley del período que lista el sitio (proyectos.json, expedientes.json,
+    proyectos-recientes.json y decisiones-plenario.json)."""
     proyectos = {}
     for ley in leer_json(carpeta / "leyes.json") or []:
         p = ley.get("proyecto") or {}
@@ -85,12 +100,21 @@ def proyectos_del_periodo(carpeta):
         p = votacion.get("proyecto") or {}
         if p.get("idProyecto") is not None and es_de_proyecto_de_ley(votacion):
             proyectos.setdefault(p["idProyecto"], p.get("acapite") or "")
+    # Los mismos que lista la página /proyectos/ del sitio (lib/proyectos.js), para que todos tengan tema.
+    otros = list(leer_json(carpeta / "proyectos.json") or [])
+    otros += [e for e in leer_json(carpeta / "expedientes.json") or [] if e.get("tipoProyecto") == PROYECTO_DE_LEY]
+    otros += leer_json(carpeta / "proyectos-recientes.json") or []
+    otros += (leer_json(carpeta / "decisiones-plenario.json") or {}).get("decisiones", [])
+    for p in otros:
+        if p.get("idProyecto") is not None and p.get("acapite"):
+            proyectos.setdefault(p["idProyecto"], p["acapite"])
     return proyectos
 
 
 def clasificar_periodo(periodo, proyectos, temas, anteriores):
     """Entradas del período: las revisadas se conservan; las demás salen de las reglas."""
     ids_temas = {t["id"] for t in temas}
+    reserva = tema_de_reserva(temas)
     revisadas = {e["idProyecto"]: e for e in anteriores if e.get("periodoLegislativo") == periodo and e.get("revisado")}
     entradas, avisos = [], []
     for id_proyecto, acapite in sorted(proyectos.items()):
@@ -99,12 +123,12 @@ def clasificar_periodo(periodo, proyectos, temas, anteriores):
             desconocidos = [t["tema"] for t in entrada["temas"] if t["tema"] not in ids_temas]
             if desconocidos:
                 raise ValueError(f"El proyecto {id_proyecto} tiene temas que no están en temas.json: {', '.join(desconocidos)}")
+            if not entrada["temas"]:
+                entrada = dict(entrada, pendiente=False, temas=[{"tema": reserva, "origen": "reserva"}])
         else:
-            asignados = aplicar_reglas(acapite, temas)
+            asignados = aplicar_reglas(acapite, temas) or [{"tema": reserva, "origen": "reserva"}]
             entrada = {"idProyecto": id_proyecto, "periodoLegislativo": periodo,
-                       "pendiente": not asignados, "revisado": False, "temas": asignados}
-            if not asignados:
-                avisos.append(f"Proyecto {id_proyecto} ({periodo}) pendiente de clasificación temática")
+                       "pendiente": False, "revisado": False, "temas": asignados}
         entradas.append(entrada)
     for id_proyecto in sorted(set(revisadas) - set(proyectos)):
         avisos.append(f"Se quitó la clasificación revisada del proyecto {id_proyecto}, que ya no figura en {periodo}")

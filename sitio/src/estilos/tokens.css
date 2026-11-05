@@ -60,6 +60,7 @@
   --color-tema-obras: #f9a825;
   --color-tema-estado: #00acc1;
   --color-tema-derechos: #ec407a;
+  --color-tema-otros-asuntos: #9e9d24;
   --color-tema-pendiente: var(--color-borde);
   --mezcla-fondo-tema: 14%; /* cuánto color del tema lleva el fondo de su etiqueta */
 

@@ -32,7 +32,12 @@
         "acciones de capital",
         "acciones adicionales",
         "donacion n",
-        "royalties"
+        "royalties",
+        "administracion financiera",
+        "gasto publico",
+        "aduaner",
+        "compensacion de obligaciones",
+        "capitalidad"
       ]
     },
     {
@@ -87,7 +92,30 @@
         "oro de inversion",
         "intermediacion financiera",
         "garantia de deposito",
-        "ley general de bancos"
+        "ley general de bancos",
+        "cripto",
+        "moneda",
+        "comerciante",
+        "consumidor",
+        "consumo masivo",
+        "precio",
+        "de carne",
+        "la carne",
+        "frigorific",
+        "bovin",
+        "pagare",
+        "titulos de credito",
+        "informacion crediticia",
+        "quiebra",
+        "seguros",
+        "emprendedor",
+        "economia digital",
+        "desarrollo economico",
+        "pesca",
+        "acuicultura",
+        "frutihorticol",
+        "transferencia bancaria",
+        "parques de diversiones"
       ]
     },
     {
@@ -119,7 +147,14 @@
         "empleo",
         "estibadores",
         "permisos",
-        "prevision social"
+        "prevision social",
+        "codigo del trabajo",
+        "jubilad",
+        "jubilatori",
+        "desempleo",
+        "colegiacion",
+        "vacaciones",
+        "sueldo"
       ]
     },
     {
@@ -211,7 +246,19 @@
         "leche humana",
         "psoriasis",
         "diagnostico",
-        "donante"
+        "donante",
+        "adiccion",
+        "nicotina",
+        "vapeador",
+        "sustancias psicoactivas",
+        "uso de sustancias",
+        "neonatal",
+        "reproduccion asistida",
+        "sangre",
+        "suicidio",
+        "primeros auxilios",
+        "audifono",
+        "calorica"
       ]
     },
     {
@@ -235,7 +282,10 @@
         "institucion de educacion",
         "malla curricular",
         "academia",
-        "reconocimiento de estudio"
+        "reconocimiento de estudio",
+        "educador",
+        "capacitacion",
+        "estudiantil"
       ],
       "excepto": [
         "establecimientos penitenciarios y centros educativos"
@@ -286,7 +336,20 @@
         "pabellon",
         "escudo",
         "museo",
-        "puesta en valor"
+        "puesta en valor",
+        "capital del",
+        "capital mundial",
+        "arte nativo",
+        "danza",
+        "carnaval",
+        "luto nacional",
+        "fruta nacional",
+        "mamifero nacional",
+        "actualizacion de la denominacion",
+        "linguistica",
+        "derecho de autor",
+        "casco historico",
+        "benemerit"
       ]
     },
     {
@@ -301,7 +364,9 @@
         "antidopaje",
         "juegos acuaticos",
         "taekwon",
-        "rally"
+        "rally",
+        "voleibol",
+        "newcom"
       ]
     },
     {
@@ -337,7 +402,9 @@
         "embargos",
         "restitucion",
         "defensa publica",
-        "notarial"
+        "notarial",
+        "divorcio",
+        "sindicatura"
       ]
     },
     {
@@ -368,7 +435,24 @@
         "perros",
         "fuerzas publicas",
         "derribo",
-        "balistic"
+        "balistic",
+        "carcel",
+        "privacion de libertad",
+        "privadas de libertad",
+        "maxima seguridad",
+        "seguridad privada",
+        "seguridad ciudadana",
+        "ciberseguridad",
+        "ciberdelito",
+        "ciberacoso",
+        "deepfake",
+        "patrulla caminera",
+        "bomberos",
+        "control fronterizo",
+        "crimen",
+        "trata de personas",
+        "fuerza publica",
+        "transito ilicito"
       ]
     },
     {
@@ -399,7 +483,19 @@
         "cuenca",
         "agua",
         "cianuro",
-        "minera"
+        "minera",
+        "vida silvestre",
+        "jardin botanic",
+        "ruido",
+        "plastico",
+        "arbolado",
+        "areas verdes",
+        "gestion sostenible del suelo",
+        "recursos naturales",
+        "animales domestic",
+        "baterias",
+        "inundaciones",
+        "jaguar"
       ]
     },
     {
@@ -428,7 +524,25 @@
         "patente de rodados",
         "material rodante",
         "puerto",
-        "peaje"
+        "peaje",
+        "drenaje",
+        "desague",
+        "asfalt",
+        "caminos",
+        "empedrado",
+        "navegacion",
+        "aeronave",
+        "aeronautic",
+        "drones",
+        "motocicleta",
+        "carril",
+        "vehicul",
+        "ascensores",
+        "copaco",
+        "redes de servicios",
+        "boleto",
+        "movilidad",
+        "tarjetas en el servicio publico"
       ]
     },
     {
@@ -466,7 +580,24 @@
         "reguladora",
         "sancion automatica",
         "vehiculos abandonados",
-        "division politica"
+        "division politica",
+        "distrito",
+        "municipio",
+        "municipalidad",
+        "ceremonial",
+        "procedimientos administrativos",
+        "voto",
+        "votacion",
+        "candidat",
+        "listas cerradas",
+        "gestion de intereses",
+        "identidad",
+        "registro civil",
+        "cedula de identidad",
+        "nacionalidad",
+        "sector publico",
+        "planeamiento",
+        "constitucion"
       ]
     },
     {
@@ -511,8 +642,32 @@
         "emergencia a todos los departamento",
         "reparacion a victimas",
         "inclusion",
-        "autista"
+        "autista",
+        "madres",
+        "adultas mayores",
+        "vulnerabilidad",
+        "cuidados",
+        "violencia domestica",
+        "violencia de genero",
+        "menores de edad",
+        "desaparicion forzada",
+        "talla baja",
+        "personas con tea",
+        "lenguaje de senas",
+        "hambre cero",
+        "transferencias monetarias",
+        "servicios sociales",
+        "beneficencia",
+        "migracion juvenil",
+        "juventud"
       ]
+    },
+    {
+      "id": "otros-asuntos",
+      "nombre": "Otros asuntos",
+      "definicion": "Proyectos que no encajan en ninguno de los temas anteriores según las palabras clave. Se asigna automáticamente cuando ninguna regla encaja.",
+      "palabrasClave": [],
+      "reserva": true
     }
   ]
 }

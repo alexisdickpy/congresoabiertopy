@@ -191,9 +191,9 @@
       "ancla": "temas-de-las-leyes",
       "nivel": 2,
       "titulo": "Temas de las leyes",
-      "texto": "El tema de cada ley es una clasificación del Observatorio, no un dato del Congreso. Abarca las leyes sancionadas y los proyectos de ley votados que no llegaron a ser ley. Un proyecto puede tener más de un tema. Se usan estos {cantidadTemas}.",
+      "texto": "El tema de cada ley es una clasificación del Observatorio, no un dato del Congreso. Abarca las leyes sancionadas y todos los proyectos de ley del período, se hayan votado o no. Un proyecto puede tener más de un tema. Se usan estos {cantidadTemas}.",
       "bloque": "temas",
-      "textoDespues": "Esta clasificación se realiza a través de unas reglas que buscan palabras clave en el título oficial de cada proyecto, y después cada clasificación se revisó a mano. Es solo referencial y puede tener errores. Si ninguna regla encaja, el proyecto figura como «{textoPendiente}». Las pensiones graciables y los inmuebles llevan solo ese tema. La lista de palabras clave y la clasificación de cada proyecto se pueden [descargar aquí](/datos/)."
+      "textoDespues": "Esta clasificación se realiza a través de unas reglas que buscan palabras clave en el título oficial de cada proyecto, y después se revisaron a mano las clasificaciones de las leyes y de los proyectos votados. Los demás proyectos se clasifican solo con las reglas, cada vez que se actualizan los datos. Si ninguna regla encaja, el proyecto recibe el tema \"Otros asuntos\", así que todo proyecto tiene al menos un tema. La clasificación es solo referencial y puede tener errores. Las pensiones graciables y los inmuebles llevan solo ese tema. La lista de palabras clave y la clasificación de cada proyecto se pueden [descargar aquí](/datos/)."
     },
     {
       "ancla": "votos-de-partidos-y-bancadas-por-tema",
@@ -234,7 +234,7 @@
       "ancla": "proyectos-de-ley",
       "nivel": 2,
       "titulo": "Listado de proyectos de ley",
-      "texto": "Reúne todos los proyectos de ley ingresados en el período según el listado general de la API del Congreso, de cualquier iniciativa y estado, más los ingresados antes que se votaron o sancionaron en el período. Título, estado y expediente son los oficiales publicados en la API. Los proyectos sin votación nominal no entran en los cálculos por partido. El [buscador](/buscar/) también los incluye, con su estado oficial y el enlace a su expediente en SILpy.",
+      "texto": "Reúne todos los proyectos de ley ingresados en el período según el listado general de la API del Congreso, de cualquier iniciativa y estado, más los ingresados antes que se votaron o sancionaron en el período. Título, estado y expediente son los oficiales publicados en la API. Cada proyecto lleva además su [tema](#temas-de-las-leyes), una clasificación propia, y la lista se puede filtrar por tema. Los proyectos sin votación nominal no entran en los cálculos por partido. El [buscador](/buscar/) también los incluye, con su estado oficial y el enlace a su expediente en SILpy.",
       "textoDespues": ""
     },
     {
@@ -364,7 +364,7 @@
         },
         {
           "termino": "Tema",
-          "definicion": "Clasificación propia del Observatorio de cada ley y de cada proyecto de ley votado. «Pendiente de clasificación» es un proyecto que todavía no tiene tema ([Temas de las leyes](#temas-de-las-leyes))."
+          "definicion": "Clasificación propia del Observatorio de cada ley y de cada proyecto de ley. Si ninguna regla encaja, el proyecto recibe el tema \"Otros asuntos\" ([Temas de las leyes](#temas-de-las-leyes))."
         },
         {
           "termino": "Coincidencia de votos",

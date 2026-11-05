@@ -3,6 +3,7 @@
 // Criterios (ver docs/metodologia.md):
 // - Base: proyectos.json, todos los ingresados en el período según el listado general de la API. Se les suman
 //   los proyectos de otras fuentes, como los ingresados antes del período y votados o sancionados en él.
+// - El tema es la clasificación propia (lib/temas.js, #111).
 // - Título, estado y expediente son los oficiales. El título se recorta en la lista por el peso de la página;
 //   el completo está en el expediente en SILpy.
 
@@ -11,6 +12,7 @@ import { existeEnDatos, fuente } from "./datos.js";
 import { decisionesSinNominal } from "./decisiones.js";
 import { valor } from "./ficha.js";
 import * as rutas from "./rutas.js";
+import { temasDeProyectos } from "./temas.js";
 import { recortar, slug } from "./texto.js";
 
 const PROYECTO_DE_LEY = "PROYECTO DE LEY";
@@ -74,6 +76,8 @@ export function proyectosDeLey(periodo) {
         votacion: ids.length ? rutas.votacion(Math.max(...ids)) : null,
         ley: ley ? { numero: ley.numero, url: ley.url } : null,
         decision: decision ? { fecha: decision.fecha, resultado: decision.resultado, camara: decision.camara } : null,
+        // Clasificación temática propia (#111): todos los proyectos tienen tema.
+        temas: temasDeProyectos([{ periodo, idProyecto: r.id }]),
       };
     })
     .sort((a, b) => (b.ingreso ?? "").localeCompare(a.ingreso ?? "") || b.id - a.id);

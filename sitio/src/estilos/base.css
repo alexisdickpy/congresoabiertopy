@@ -309,6 +309,9 @@ a.tema:visited {
 [data-tema="derechos"] {
   --color-tema: var(--color-tema-derechos);
 }
+[data-tema="otros-asuntos"] {
+  --color-tema: var(--color-tema-otros-asuntos);
+}
 [data-tema="pendiente"] {
   --color-tema: var(--color-tema-pendiente);
 }
