@@ -84,7 +84,12 @@ test("reparto de ANR y PLRA en Salud, Educación y Ambiente, igual a un recuento
 test("cada tema reúne sus votaciones de /votaciones/, por cámara y sin sumar cámaras", () => {
   const { votaciones } = votacionesDelPeriodo(PERIODO);
   const lista = votosPorTema(PERIODO);
-  assert.deepEqual(lista.map((t) => t.id).filter((id) => id !== "pendiente"), temas().map((t) => t.id));
+  // El tema de reserva ("Otros asuntos", #111) y "pendiente" solo figuran si tienen votaciones.
+  const conVotaciones = (id) => votaciones.some((v) => v.temas.filtro.includes(id));
+  assert.deepEqual(
+    lista.map((t) => t.id).filter((id) => id !== "pendiente"),
+    temas().filter((t) => !t.reserva || conVotaciones(t.id)).map((t) => t.id),
+  );
   for (const t of lista) {
     assert.equal(t.url, rutas.votosPorTema(t.id));
     const delTema = votaciones.filter((v) => v.temas.filtro.includes(t.id));
