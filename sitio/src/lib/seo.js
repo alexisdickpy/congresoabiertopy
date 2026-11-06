@@ -188,5 +188,8 @@ export function direccionesDelSitemap() {
     rutas.datosAbiertos(),
     rutas.metodologia(),
     rutas.privacidad(),
+    rutas.sobreElProyecto(),
+    rutas.colabora(),
+    rutas.contacto(),
   ].map(rutas.absoluta);
 }

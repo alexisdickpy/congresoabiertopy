@@ -74,7 +74,7 @@ test("tamaño razonable de las fichas", () => {
 });
 
 test("páginas fijas", () => {
-  for (const url of [rutas.inicio(), rutas.leyes(), rutas.legisladores(), rutas.coincidencia(), rutas.votaciones(), rutas.buscar(), rutas.datosAbiertos(), rutas.metodologia(), rutas.privacidad()]) {
+  for (const url of [rutas.inicio(), rutas.leyes(), rutas.legisladores(), rutas.coincidencia(), rutas.votaciones(), rutas.buscar(), rutas.datosAbiertos(), rutas.metodologia(), rutas.privacidad(), rutas.sobreElProyecto(), rutas.colabora(), rutas.contacto()]) {
     assert.ok(existsSync(pagina(url)), `Falta ${url}`);
   }
 });
@@ -641,6 +641,10 @@ test("todas las páginas tienen el pie común: aviso, enlaces, licencias y firma
       `<a href="${sitioPersonal}">Alexis Dick</a>`,
       `href="${rutas.licenciaDatos()}"`,
       `href="${rutas.licenciaCodigo()}"`,
+      `href="${rutas.sobreElProyecto()}"`,
+      `href="${rutas.colabora()}"`,
+      `href="${rutas.contacto()}"`,
+      `href="mailto:${rutas.correoContacto}?subject=`,
     ]) {
       assert.ok(html.includes(buscado), `Falta "${buscado}" en ${url}`);
     }
@@ -663,6 +667,26 @@ test("la metodología tiene las secciones que enlazan las fichas y todas las obs
 test("la privacidad muestra sus secciones editables", () => {
   const html = texto(rutas.privacidad());
   for (const seccion of textos.privacidad.secciones) if (seccion.texto) assert.ok(html.includes(fijo(seccion.texto)), `Falta "${seccion.titulo}"`);
+});
+
+// Páginas del proyecto (#133): sin formulario, el correo del proyecto en Contacto, Colabora y el botón
+// "Reportar un error" del pie, que lleva escrita la dirección de la página desde la que se escribe.
+test("las páginas del proyecto muestran sus textos y el correo del proyecto", () => {
+  const sobre = texto(rutas.sobreElProyecto());
+  for (const seccion of textos.sobre.secciones) assert.ok(sobre.includes(fijo(seccion.texto)), `Falta "${seccion.titulo}"`);
+  const colabora = texto(rutas.colabora());
+  assert.ok(colabora.includes(fijo(textos.colabora.introduccion)));
+  for (const forma of textos.colabora.formas) {
+    assert.ok(colabora.includes(fijo(forma.texto)), `Falta "${forma.titulo}"`);
+    if (forma.asunto) assert.ok(colabora.includes(`href="${rutas.correo(forma.asunto).replaceAll("&", "&amp;")}"`), `Falta el correo de "${forma.titulo}"`);
+  }
+  assert.ok(colabora.includes(`href="${rutas.codigoFuente()}"`));
+  for (const [url, html] of [[rutas.contacto(), texto(rutas.contacto())], [rutas.colabora(), colabora], [rutas.sobreElProyecto(), sobre]]) {
+    assert.ok(html.includes(`>${rutas.correoContacto}</a>`), `Falta el correo en ${url}`);
+    assert.ok(!html.includes("<form"), `Formulario en ${url}`);
+  }
+  const reporte = rutas.correo(textos.contacto.reportar.asunto, textos.contacto.reportar.cuerpo.replace("{pagina}", rutas.absoluta(rutas.leyes())));
+  assert.ok(leer(rutas.leyes()).includes(`href="${reporte.replaceAll("&", "&amp;")}"`), "Falta el botón para reportar un error");
 });
 
 test("las fichas enlazan a la metodología", () => {

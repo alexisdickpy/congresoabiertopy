@@ -27,6 +27,17 @@ export const datosAbiertos = () => "/datos/";
 export const privacidad = () => "/privacidad/";
 export const estadisticas = () => "/estadisticas/";
 export const proyectos = () => "/proyectos/";
+/** Páginas del proyecto (#133): qué es, cómo colaborar y cómo escribir. */
+export const sobreElProyecto = () => "/sobre-el-proyecto/";
+export const colabora = () => "/colabora/";
+export const contacto = () => "/contacto/";
+/** Correo del proyecto (#130). Sin formulario: los botones abren el programa de correo del visitante. */
+export const correoContacto = "contacto@congresoabiertopy.com";
+/** Enlace que abre un correo al proyecto, con asunto y texto ya escritos si se pasan. */
+export const correo = (asunto, cuerpo) => {
+  const partes = [asunto && `subject=${encodeURIComponent(asunto)}`, cuerpo && `body=${encodeURIComponent(cuerpo)}`].filter(Boolean);
+  return `mailto:${correoContacto}${partes.length ? `?${partes.join("&")}` : ""}`;
+};
 export const sitemap = () => "/sitemap.xml";
 /** Archivos internos del buscador (Pagefind), que los rastreadores no necesitan leer. */
 export const archivosBuscador = () => "/pagefind/";

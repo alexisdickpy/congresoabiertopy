@@ -1,0 +1,41 @@
+{
+  "pagina": {
+    "titulo": "Colabora",
+    "descripcion": "Cómo ayudar a Congreso Abierto: avisar de un error, proponer una mejora, contribuir con código o datos, colaborar como voluntario o apoyar el proyecto."
+  },
+  "introduccion": "Congreso Abierto es un proyecto independiente y de código abierto. Todo el código y los datos que muestra el sitio son públicos y están en [GitHub]({urlCodigo}), y cualquiera puede ayudar a que sean más completos y exactos. Para cualquier consulta, escribe a [{correo}]({urlCorreo}).",
+  "formas": [
+    {
+      "clave": "error",
+      "etiqueta": "Sin programar",
+      "titulo": "Avisa de un error o propón una mejora",
+      "texto": "Si un dato no coincide con la fuente oficial o algo no funciona, cuéntanos en qué página está. También son bienvenidas las ideas para mejorar el sitio.",
+      "boton": "Escribir al correo",
+      "asunto": "Error o sugerencia en Congreso Abierto"
+    },
+    {
+      "clave": "codigo",
+      "etiqueta": "Con código o datos",
+      "titulo": "Contribuye al proyecto",
+      "texto": "El código y los datos están en GitHub. Puedes abrir un aviso (issue) o proponer cambios con un pull request.",
+      "boton": "Ver en GitHub",
+      "asunto": ""
+    },
+    {
+      "clave": "voluntario",
+      "etiqueta": "Con tu tiempo",
+      "titulo": "Colabora como voluntario",
+      "texto": "Si quieres ayudar a revisar datos, clasificar leyes por tema, difundir el proyecto o en otra tarea, escríbenos y cuéntanos qué te interesa.",
+      "boton": "Quiero colaborar",
+      "asunto": "Quiero colaborar como voluntario"
+    },
+    {
+      "clave": "donacion",
+      "etiqueta": "Apoyo económico",
+      "titulo": "Haz una donación",
+      "texto": "Por ahora, si quieres apoyar el proyecto con una donación o un patrocinio, escríbenos por correo. Muy pronto habilitaremos un canal para recibir donaciones y patrocinios.",
+      "boton": "Escribir sobre donaciones",
+      "asunto": "Donación o patrocinio"
+    }
+  ]
+}

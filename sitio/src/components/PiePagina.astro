@@ -1,21 +1,27 @@
 ---
 // Pie de página común: cita de la fuente con la fecha de actualización, aviso de datos, enlaces a
-// las páginas de metodología y privacidad, licencias y firma (textos acordados en #9).
+// las páginas del proyecto, metodología y privacidad, licencias y firma (textos acordados en #9). El
+// botón "Reportar un error" (#133) abre un correo al proyecto con la dirección de la página ya escrita.
 import { actualizacion, cita } from "../lib/catalogo.js";
 import * as rutas from "../lib/rutas.js";
-import { textos, md, crudo } from "../lib/contenido.js";
+import { textos, md, crudo, fill } from "../lib/contenido.js";
 const tx = textos.general.pie;
 const txc = textos.general.comunes;
 
 const fuente = cita();
 const fecha = actualizacion();
 const enlaces = [
+  { url: rutas.sobreElProyecto(), texto: tx.sobreElProyecto },
   { url: rutas.metodologia(), texto: tx.metodologia },
   { url: rutas.privacidad(), texto: tx.privacidadYAvisoLegal },
   { url: rutas.datosAbiertos(), texto: txc.datosAbiertos },
   { url: rutas.botTelegram(), texto: tx.avisosPorTelegram },
   { url: rutas.codigoFuente(), texto: tx.codigoFuente },
+  { url: rutas.colabora(), texto: tx.colabora },
+  { url: rutas.contacto(), texto: tx.contacto },
 ];
+const reporte = textos.contacto.reportar;
+const urlReporte = rutas.correo(reporte.asunto, fill(reporte.cuerpo, { pagina: rutas.absoluta(Astro.url.pathname) }));
 ---
 
 <footer class="pie">
@@ -25,6 +31,7 @@ const enlaces = [
     <nav aria-label={tx.pieDePagina}>
       <ul class="enlaces">
         {enlaces.map((e) => <li><a href={e.url}>{e.texto}</a></li>)}
+        <li><a class="boton secundario chico" href={urlReporte}>{tx.reportarUnError}</a></li>
       </ul>
     </nav>
     <p set:html={md(tx.datosConLicenciaCodigoCon, { url1: crudo(rutas.licenciaDatos()), licencia: fuente.licencia, url2: crudo(rutas.licenciaCodigo()) })} />
@@ -45,6 +52,7 @@ const enlaces = [
   .enlaces {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: var(--espacio-2) var(--espacio-4);
     list-style: none;
     padding: 0;

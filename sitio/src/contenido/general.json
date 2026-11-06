@@ -36,10 +36,14 @@
     "sinDatoMinuscula": "sin dato"
   },
   "pie": {
+    "sobreElProyecto": "Sobre el proyecto",
     "metodologia": "Metodología",
     "privacidadYAvisoLegal": "Privacidad y aviso legal",
     "avisosPorTelegram": "Avisos por Telegram",
     "codigoFuente": "Código fuente",
+    "colabora": "Colabora",
+    "contacto": "Contacto",
+    "reportarUnError": "Reportar un error",
     "actualizadoEl": "**{cita}.** Actualizado el {fecha}.",
     "losDatosProvienenDeLa": "Los datos provienen de la API de Datos Abiertos del Congreso Nacional y se muestran tal como allí se publican. Este sitio no modifica los valores oficiales y en caso de haber errores en la fuente oficial los mismos se mantienen. Si un dato parece incorrecto, compáralo con la [fuente oficial]({url1}). Este es un proyecto independiente, sin vínculo con el Congreso.",
     "pieDePagina": "Pie de página",
@@ -70,7 +74,8 @@
     "legisladores": "Legisladores",
     "estadisticas": "Estadísticas",
     "botDeTelegram": "Bot de Telegram",
-    "buscarLeyes": "Buscar"
+    "buscarLeyes": "Buscar",
+    "contacto": "Contacto"
   },
   "buscadores": {
     "paraguay": "Paraguay",

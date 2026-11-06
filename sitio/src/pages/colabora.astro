@@ -1,0 +1,24 @@
+---
+// Colabora (#133): una introducción breve y una tarjeta por cada forma de ayudar. Las que van por correo
+// abren el programa de correo con el asunto ya escrito (sin formulario: ver la página de privacidad).
+// Textos en contenido/colabora.json.
+import Base from "../layouts/Base.astro";
+import TarjetasAccion from "../components/TarjetasAccion.astro";
+import * as rutas from "../lib/rutas.js";
+import { crudo, md, textos } from "../lib/contenido.js";
+
+const tx = textos.colabora;
+const tarjetas = tx.formas.map((f) => {
+  const externo = f.clave === "codigo";
+  return { ...f, externo, url: externo ? rutas.codigoFuente() : rutas.correo(f.asunto) };
+});
+---
+
+<Base titulo={tx.pagina.titulo} descripcion={tx.pagina.descripcion}>
+  <h1>{tx.pagina.titulo}</h1>
+  <p
+    class="lectura"
+    set:html={md(tx.introduccion, { correo: rutas.correoContacto, urlCorreo: crudo(rutas.correo()), urlCodigo: crudo(rutas.codigoFuente()) })}
+  />
+  <TarjetasAccion tarjetas={tarjetas} etiqueta={tx.pagina.titulo} />
+</Base>

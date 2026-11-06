@@ -1,0 +1,29 @@
+---
+// Sobre el proyecto (#133): qué es, de dónde salen los datos, cómo funciona, quién lo hace y cómo
+// colaborar. Solo en el pie. Textos en contenido/sobre.json.
+import Base from "../layouts/Base.astro";
+import Secciones from "../components/Secciones.astro";
+import { cita } from "../lib/catalogo.js";
+import * as rutas from "../lib/rutas.js";
+import { crudo, textos } from "../lib/contenido.js";
+
+const tx = textos.sobre;
+const valores = {
+  cita: cita().cita,
+  correo: rutas.correoContacto,
+  urlCorreo: crudo(rutas.correo()),
+  urlMetodologia: crudo(rutas.metodologia()),
+  urlDatos: crudo(rutas.datosAbiertos()),
+  urlCodigo: crudo(rutas.codigoFuente()),
+  urlPrivacidad: crudo(rutas.privacidad()),
+  urlColabora: crudo(rutas.colabora()),
+  urlContacto: crudo(rutas.contacto()),
+};
+---
+
+<Base titulo={tx.pagina.titulo} descripcion={tx.pagina.descripcion}>
+  <div class="lectura">
+    <h1>{tx.pagina.titulo}</h1>
+    <Secciones secciones={tx.secciones} valores={valores} />
+  </div>
+</Base>
