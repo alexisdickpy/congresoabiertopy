@@ -6,7 +6,7 @@
   "texto": "Para avisar de un error, proponer una mejora, colaborar o hacer cualquier consulta, escribe al correo del proyecto:",
   "boton": "Escribir un correo",
   "consejo": "Si se trata de un dato incorrecto, indica la página donde lo viste y, si puedes, el documento oficial con el que no coincide.",
-  "aclaracion": "Congreso Abierto es un proyecto independiente, sin vínculo con el Congreso Nacional. No puede responder consultas sobre trámites legislativos ni hacer llegar mensajes a los legisladores. Otras formas de ayudar están en [Colabora]({urlColabora}).",
+  "aclaracion": "Congreso Abierto es un proyecto independiente, sin vínculo con el Congreso Nacional o partidos políticos. No puede responder consultas sobre trámites legislativos ni hacer llegar mensajes a los legisladores. Otras formas de ayudar están en [Colabora]({urlColabora}).",
   "reportar": {
     "asunto": "Error en Congreso Abierto",
     "cuerpo": "Página: {pagina}\n\nQué dato parece incorrecto:\n\nDónde está el dato oficial (si lo tienes):\n"
