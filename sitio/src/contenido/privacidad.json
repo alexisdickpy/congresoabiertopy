@@ -29,7 +29,7 @@
       "ancla": "licencias",
       "nivel": 2,
       "titulo": "Licencias y cómo citar",
-      "texto": "- Los datos tienen licencia [{licencia}](https://github.com/alexisdickpy/observatorio-legislativo-py/blob/main/LICENSE-DATOS.md), la misma con que los publica el Congreso. Se pueden reutilizar citando \"{cita}\" y la fecha de actualización. Se descargan en [Datos abiertos](/datos/).\n- El código tiene licencia [AGPL-3.0](https://github.com/alexisdickpy/observatorio-legislativo-py/blob/main/LICENSE) y está publicado en el [repositorio del proyecto](https://github.com/alexisdickpy/observatorio-legislativo-py).",
+      "texto": "- Los datos tienen licencia [{licencia}](https://github.com/alexisdickpy/congresoabiertopy/blob/main/LICENSE-DATOS.md), la misma con que los publica el Congreso. Se pueden reutilizar citando \"{cita}\" y la fecha de actualización. Se descargan en [Datos abiertos](/datos/).\n- El código tiene licencia [AGPL-3.0](https://github.com/alexisdickpy/congresoabiertopy/blob/main/LICENSE) y está publicado en el [repositorio del proyecto](https://github.com/alexisdickpy/congresoabiertopy).",
       "textoDespues": ""
     }
   ]

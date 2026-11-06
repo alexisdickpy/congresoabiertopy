@@ -22,7 +22,7 @@ content:
         type: object
         fields:
           - name: nombre
-            label: "Observatorio Legislativo"
+            label: "Nombre del sitio (Congreso Abierto)"
             type: string
           - name: cita
             label: "Origen de los datos: Datos Abiertos Poder Legislativo"
@@ -286,14 +286,14 @@ content:
         type: object
         fields:
           - name: leyesSancionadasPorElCongreso
-            label: "Descripción de la portada al compartir y en buscadores (Leyes del Congreso Nacional…)"
+            label: "Descripción de la portada al compartir y en buscadores (Observatorio legislativo independiente…)"
             type: text
             description: "Partes automáticas, no las borres ni les cambies el nombre: {id}."
           - name: queVotaElCongresoDel
             label: "Qué vota el Congreso del Paraguay"
             type: string
           - name: leyesSancionadasPorElCongreso2
-            label: "Leyes sancionadas por el Congreso Nacional del Paraguay en el…"
+            label: "Presentación de la portada (Congreso Abierto es un observatorio legislativo…)"
             type: text
             description: "Partes automáticas, no las borres ni les cambies el nombre: {id}."
           - name: seccionesDelSitio
@@ -412,7 +412,7 @@ content:
             label: "Un punto por legislador, agrupados por voto. No es la ubicación…"
             type: text
           - name: notaDelObservatorio
-            label: "Nota del Observatorio."
+            label: "Nota de Congreso Abierto."
             type: string
           - name: losTotalesPublicadosNoCoinciden
             label: "Los totales publicados no coinciden con el recuento de los votos…"
@@ -443,7 +443,7 @@ content:
             label: "Leyes por tema"
             type: string
           - name: clasificacionDelObservatorioNoDel
-            label: "Clasificación del Observatorio, no del Congreso. Una ley puede…"
+            label: "Clasificación de Congreso Abierto, no del Congreso. Una ley puede…"
             type: text
             description: "Los enlaces van como [texto](dirección). Podés cambiar el texto; no cambies lo que va entre paréntesis."
           - name: leySancionada
@@ -540,7 +540,7 @@ content:
             label: "Año de sanción"
             type: string
           - name: temaClasificacionDelObservatorio
-            label: "Tema (clasificación del Observatorio)"
+            label: "Tema (clasificación de Congreso Abierto)"
             type: string
           - name: ordenarPor
             label: "Ordenar por"
@@ -594,7 +594,7 @@ content:
             label: "Observación del decreto"
             type: string
           - name: notaDelObservatorio
-            label: "Nota del Observatorio. {valor}"
+            label: "Nota de Congreso Abierto. {valor}"
             type: string
             description: "Partes automáticas, no las borres ni les cambies el nombre: {valor}."
           - name: entreParentesisElNombrePor
@@ -651,7 +651,7 @@ content:
         type: object
         fields:
           - name: temaSegunElObservatorio
-            label: "Tema según el Observatorio"
+            label: "Tema según Congreso Abierto"
             type: string
           - name: comoSeClasifica
             label: "Cómo se clasifica"
@@ -1580,13 +1580,13 @@ content:
             label: "* El Congreso no publica un total para esta categoría. Es un…"
             type: text
           - name: notaDelObservatorio
-            label: "Nota del Observatorio."
+            label: "Nota de Congreso Abierto."
             type: string
           - name: losTotalesPublicadosNoCoinciden
             label: "Los totales publicados no coinciden con el recuento de los votos…"
             type: string
           - name: notaDelObservatorio2
-            label: "Nota del Observatorio. {valor}"
+            label: "Nota de Congreso Abierto. {valor}"
             type: string
             description: "Partes automáticas, no las borres ni les cambies el nombre: {valor}."
           - name: posicionDeCadaPartido
@@ -1662,7 +1662,7 @@ content:
             label: "Sin resultado oficial"
             type: string
           - name: temaClasificacionDelObservatorio
-            label: "Tema (clasificación del Observatorio)"
+            label: "Tema (clasificación de Congreso Abierto)"
             type: string
           - name: todos
             label: "Todos ({total})"

@@ -332,3 +332,28 @@ class Avisos(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class EnvioATelegram(unittest.TestCase):
+    """Respuestas de error de Telegram al enviar a un chat (#129)."""
+
+    def responder(self, codigo, cuerpo):
+        import io
+        import urllib.error
+        from unittest import mock
+
+        from importador.avisos import Envio
+        envio = Envio.__new__(Envio)
+        envio.token = "t"
+        error = urllib.error.HTTPError("https://api.telegram.test", codigo, "error", {}, io.BytesIO(cuerpo.encode()))
+        with mock.patch("importador.avisos.urllib.request.urlopen", side_effect=error):
+            return envio._a_chat(7, "hola")
+
+    def test_chat_de_otro_bot_se_da_de_baja(self):
+        self.assertEqual(self.responder(400, '{"ok":false,"description":"Bad Request: chat not found"}'), "baja")
+
+    def test_bloqueo_se_da_de_baja(self):
+        self.assertEqual(self.responder(403, '{"ok":false,"description":"Forbidden: bot was blocked by the user"}'), "baja")
+
+    def test_otro_error_400_se_reintenta(self):
+        self.assertEqual(self.responder(400, '{"ok":false,"description":"Bad Request: message is too long"}'), "HTTP 400")

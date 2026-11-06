@@ -24,7 +24,7 @@ import urllib.request
 from pathlib import Path
 
 BASE = "https://datosv2.congreso.gov.py/web/api"
-USER_AGENT = "observatorio-legislativo-py/importador (+https://github.com/alexisdickpy/observatorio-legislativo-py)"
+USER_AGENT = "congresoabiertopy/importador (+https://github.com/alexisdickpy/congresoabiertopy)"
 PAUSA = 0.3  # segundos entre consultas, para no sobrecargar el servidor
 
 

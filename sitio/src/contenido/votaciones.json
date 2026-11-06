@@ -62,9 +62,9 @@
     "observacion": "Observación: {observacion}",
     "totalesSobreLosLegisladoresRegistrados": "Totales sobre los {registrados} legisladores registrados en la votación.",
     "elCongresoNoPublicaUn": "* El Congreso no publica un total para esta categoría. Es un recuento propio de los votos individuales.",
-    "notaDelObservatorio": "Nota del Observatorio.",
+    "notaDelObservatorio": "Nota de Congreso Abierto.",
     "losTotalesPublicadosNoCoinciden": "Los totales publicados no coinciden con el recuento de los votos individuales (",
-    "notaDelObservatorio2": "**Nota del Observatorio.** {valor}",
+    "notaDelObservatorio2": "**Nota de Congreso Abierto.** {valor}",
     "posicionDeCadaPartido": "Posición de cada partido",
     "enCadaPartidoYBancada": "En cada partido y bancada, el total (\"de …\") son sus legisladores que figuran en la lista oficial de esta votación, incluidos los suplentes en ejercicio y los ausentes.",
     "porPartidoEnNumeros": "Por partido, en números",
@@ -89,7 +89,7 @@
   "filtro": {
     "resultadoOficial": "Resultado oficial",
     "sinResultadoOficial": "Sin resultado oficial",
-    "temaClasificacionDelObservatorio": "Tema (clasificación del Observatorio)",
+    "temaClasificacionDelObservatorio": "Tema (clasificación de Congreso Abierto)",
     "todos": "Todos ({total})",
     "publicadoEsElEstadoDe": "PUBLICADO es el estado de los proyectos que llegaron a ser ley."
   },

@@ -1,5 +1,5 @@
 # Despliega el bot de Telegram (bot/) en Cloudflare Workers, le dice a Telegram adónde enviar los
-# mensajes y carga los comandos y la descripción del bot. Se ejecuta al cambiar bot/ en main o a mano. Sin el secreto CLOUDFLARE_API_TOKEN no hace nada.
+# mensajes y carga los comandos, el nombre visible y la descripción del bot. Se ejecuta al cambiar bot/ en main o a mano. Sin el secreto CLOUDFLARE_API_TOKEN no hace nada.
 # Pasos para ponerlo en marcha en bot/README.md.
 
 name: Despliegue del bot
@@ -68,7 +68,8 @@ jobs:
             --data-urlencode 'allowed_updates=["message","callback_query","my_chat_member"]'
           curl -sS --fail -o /dev/null "https://api.telegram.org/bot$TELEGRAM_TOKEN/setMyCommands" \
             --data-urlencode 'commands=[{"command":"avisos","description":"Elegir qué avisos recibir"},{"command":"baja","description":"Dejar de recibir avisos y borrar este chat"}]'
-          # Descripción que Telegram muestra antes de /start y en el perfil del bot (bot/descripcion.json).
+          # Nombre visible y descripción que Telegram muestra antes de /start y en el perfil del bot (bot/descripcion.json).
+          curl -sS --fail -o /dev/null "https://api.telegram.org/bot$TELEGRAM_TOKEN/setMyName"             --data-urlencode "name=$(jq -r .nombre bot/descripcion.json)"
           curl -sS --fail -o /dev/null "https://api.telegram.org/bot$TELEGRAM_TOKEN/setMyDescription"             --data-urlencode "description=$(jq -r .descripcion bot/descripcion.json)"
           curl -sS --fail -o /dev/null "https://api.telegram.org/bot$TELEGRAM_TOKEN/setMyShortDescription"             --data-urlencode "short_description=$(jq -r .descripcionCorta bot/descripcion.json)"
           echo "Bot conectado. Su dirección es $URL_BOT"

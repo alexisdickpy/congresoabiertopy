@@ -63,14 +63,14 @@ export const anclasMetodologia = {
 };
 
 /** Repositorio público del proyecto: código, datos y licencias. */
-const repositorio = "https://github.com/alexisdickpy/observatorio-legislativo-py";
+const repositorio = "https://github.com/alexisdickpy/congresoabiertopy";
 export const codigoFuente = () => repositorio;
 export const licenciaCodigo = () => `${repositorio}/blob/main/LICENSE`;
 export const licenciaDatos = () => `${repositorio}/blob/main/LICENSE-DATOS.md`;
 export const metodologiaTecnica = () => `${repositorio}/blob/main/docs/metodologia.md`;
 
 /** Bot de Telegram con los avisos de actividad del Congreso (bot/README.md). */
-export const botTelegram = () => "https://t.me/ObservatorioLegislativoPyBot";
+export const botTelegram = () => "https://t.me/CongresoAbiertoPyBot";
 
 /** Archivo de datos/ servido en /datos/… con la misma ruta que en el repositorio. */
 export const archivoDatos = (ruta) => `/datos/${ruta}`;

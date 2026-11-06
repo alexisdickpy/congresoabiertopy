@@ -164,7 +164,7 @@ En ambos casos:
 ## Estructura de carpetas
 
 ```
-observatorio-legislativo-py/
+congresoabiertopy/
 ├── .github/workflows/        # Sincronización diaria y semanal, pruebas
 ├── datos/                    # Copia propia publicada (CC BY 4.0)
 │   ├── periodos.json         # Registro de períodos legislativos incluidos
