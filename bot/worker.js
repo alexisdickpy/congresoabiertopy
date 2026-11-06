@@ -20,10 +20,11 @@ const INICIALES = { leyes: true, votaciones: true, proyectos: true };
 const CITA = "Origen de los datos: Datos Abiertos Poder Legislativo.";
 
 export const textoBienvenida = (sitio) =>
-  "Hola. Este bot avisa de la actividad del Congreso Nacional del Paraguay con los datos que publica el " +
-  "propio Congreso.\n\nTodos los avisos están activados. Tocá abajo los que no quieras recibir. Podés cambiarlos cuando quieras con /avisos " +
-  "y dejar de recibir todo con /baja.\n\nSolo se guarda el número de este chat y los avisos elegidos. " +
-  `Más información en ${sitio}/metodologia/\n\n${CITA}`;
+  "Hola. Este bot avisa de la actividad del Congreso Nacional de la República del Paraguay con los datos que " +
+  "publica el propio Congreso.\n\nTodos los avisos están activados por defecto. Tocá abajo para desactivar los " +
+  "avisos que no quieras recibir. Podés cambiar los avisos cuando quieras escribiendo /avisos y darte de baja de " +
+  "recibir todo al enviar /baja.\nEl bot guarda solo el número de chat y los avisos elegidos, y el enviar el " +
+  `comando /baja o bloquear el bot los borra.\n\nMás información sobre este proyecto en ${sitio}/metodologia/\n\n${CITA}`;
 const TEXTO_MENU = "Tocá cada aviso para activarlo o desactivarlo.";
 const TEXTO_BAJA = "Listo, ya no vas a recibir avisos y se borró este chat de la lista. Para volver, escribí /start.";
 const TEXTO_AYUDA =
