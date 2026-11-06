@@ -1,10 +1,10 @@
 # Bot de Telegram
 
-Programa del bot de Telegram del Observatorio Legislativo (#66). Corre en Cloudflare Workers: atiende los mensajes del bot, muestra el menú de avisos y guarda en Cloudflare KV el número de chat y los avisos elegidos. Los avisos los envía la sincronización diaria (`importador/avisos.py`). El criterio de cada aviso está en la [metodología](../docs/metodologia.md#avisos-del-bot-de-telegram).
+Programa del bot de Telegram de Congreso Abierto, [@CongresoAbiertoPyBot](https://t.me/CongresoAbiertoPyBot) (#66, #129). Corre en Cloudflare Workers: atiende los mensajes del bot, muestra el menú de avisos y guarda en Cloudflare KV el número de chat y los avisos elegidos. Los avisos los envía la sincronización diaria (`importador/avisos.py`). El criterio de cada aviso está en la [metodología](../docs/metodologia.md#avisos-del-bot-de-telegram).
 
 Comandos del bot: `/start`, `/avisos`, `/baja`.
 
-La descripción que Telegram muestra antes de `/start` y en el perfil del bot está en [`descripcion.json`](descripcion.json): `descripcion` (hasta 512 caracteres) y `descripcionCorta` (hasta 120). El flujo "Despliegue del bot" la carga en Telegram cada vez que cambia algo en `bot/`.
+La descripción que Telegram muestra antes de `/start` y en el perfil del bot está en [`descripcion.json`](descripcion.json): `nombre` (nombre visible, hasta 64 caracteres), `descripcion` (hasta 512) y `descripcionCorta` (hasta 120). El flujo "Despliegue del bot" la carga en Telegram cada vez que cambia algo en `bot/`.
 
 ## Puesta en marcha
 

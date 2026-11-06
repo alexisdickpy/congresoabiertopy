@@ -392,6 +392,14 @@ def avisar(salida, enviar, base, ahora=None, salida_texto=print):
     return resultado
 
 
+def _cuerpo(error):
+    """Texto de la respuesta de error de Telegram, o vacío si no se puede leer."""
+    try:
+        return error.read().decode("utf-8", "replace")
+    except (OSError, AttributeError):
+        return ""
+
+
 class Envio:
     """Envía cada mensaje a quienes eligieron ese aviso. Falla al crearse si no hay lista de suscriptores."""
 
@@ -404,17 +412,20 @@ class Envio:
 
     def _cabeceras(self):
         # Sin el agente por defecto de Python, que Cloudflare puede rechazar.
-        return {"authorization": f"Bearer {self.clave}", "user-agent": "observatorio-legislativo-py/avisos"}
+        return {"authorization": f"Bearer {self.clave}", "user-agent": "congresoabiertopy/avisos"}
 
     def _a_chat(self, chat, texto):
-        """None si salió bien; 'baja' si la persona bloqueó el bot; si no, el motivo."""
+        """None si salió bien; 'baja' si la persona bloqueó el bot o el chat no existe para este bot; si no, el motivo.
+
+        "chat not found" pasa con los chats de otro bot, como los suscriptores del bot anterior (#129).
+        """
         datos = urllib.parse.urlencode({"chat_id": chat, "text": texto, "disable_web_page_preview": "true"}).encode()
         for intento in range(2):
             try:
                 with urllib.request.urlopen(f"{API_TELEGRAM}/bot{self.token}/sendMessage", data=datos, timeout=30):
                     return None
             except urllib.error.HTTPError as e:
-                if e.code == 403:
+                if e.code == 403 or (e.code == 400 and "chat not found" in _cuerpo(e)):
                     return "baja"
                 if e.code == 429 and intento == 0:
                     time.sleep(min(int(e.headers.get("Retry-After") or 5), 60))

@@ -122,6 +122,7 @@ test("la descripción del bot respeta los límites de Telegram, cita la fuente y
   const d = JSON.parse(await readFile(new URL("../descripcion.json", import.meta.url), "utf-8"));
   assert.ok(d.descripcion.length > 0 && d.descripcion.length <= 512);
   assert.ok(d.descripcionCorta.length > 0 && d.descripcionCorta.length <= 120);
+  assert.ok(d.nombre.length > 0 && d.nombre.length <= 64);
   assert.ok(d.descripcion.includes("Origen de los datos: Datos Abiertos Poder Legislativo"));
   assert.ok(!/semana|lunes/i.test(d.descripcion + d.descripcionCorta));
 });

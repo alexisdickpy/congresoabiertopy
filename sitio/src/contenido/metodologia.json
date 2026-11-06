@@ -61,7 +61,7 @@
       "ancla": "",
       "nivel": 0,
       "titulo": "",
-      "texto": "Esta página explica de dónde vienen los datos, cómo se presentan y qué cálculos realiza este sitio a partir de los datos públicos. La versión técnica, con el detalle de cada archivo, está en el [repositorio del proyecto](https://github.com/alexisdickpy/observatorio-legislativo-py/blob/main/docs/metodologia.md). Las siglas y los términos que usa el sitio se explican en el [glosario](#glosario).",
+      "texto": "Esta página explica de dónde vienen los datos, cómo se presentan y qué cálculos realiza este sitio a partir de los datos públicos. La versión técnica, con el detalle de cada archivo, está en el [repositorio del proyecto](https://github.com/alexisdickpy/congresoabiertopy/blob/main/docs/metodologia.md). Las siglas y los términos que usa el sitio se explican en el [glosario](#glosario).",
       "textoDespues": ""
     },
     {
@@ -191,7 +191,7 @@
       "ancla": "temas-de-las-leyes",
       "nivel": 2,
       "titulo": "Temas de las leyes",
-      "texto": "El tema de cada ley es una clasificación del Observatorio, no un dato del Congreso. Abarca las leyes sancionadas y todos los proyectos de ley del período, se hayan votado o no. Un proyecto puede tener más de un tema. Se usan estos {cantidadTemas}.",
+      "texto": "El tema de cada ley es una clasificación de Congreso Abierto, no un dato del Congreso. Abarca las leyes sancionadas y todos los proyectos de ley del período, se hayan votado o no. Un proyecto puede tener más de un tema. Se usan estos {cantidadTemas}.",
       "bloque": "temas",
       "textoDespues": "Esta clasificación se realiza a través de unas reglas que buscan palabras clave en el título oficial de cada proyecto, y después se revisaron a mano las clasificaciones de las leyes y de los proyectos votados. Los demás proyectos se clasifican solo con las reglas, cada vez que se actualizan los datos. Si ninguna regla encaja, el proyecto recibe el tema \"Otros asuntos\", así que todo proyecto tiene al menos un tema. La clasificación es solo referencial y puede tener errores. Las pensiones graciables y los inmuebles llevan solo ese tema. La lista de palabras clave y la clasificación de cada proyecto se pueden [descargar aquí](/datos/)."
     },
@@ -296,7 +296,7 @@
       "definiciones": [
         {
           "termino": "SILpy",
-          "definicion": "Sistema de Información Legislativa del Congreso Nacional. Es el sitio oficial donde se consultan los expedientes, las leyes y las votaciones. El Observatorio enlaza a SILpy para que cada dato se pueda comprobar en la fuente."
+          "definicion": "Sistema de Información Legislativa del Congreso Nacional. Es el sitio oficial donde se consultan los expedientes, las leyes y las votaciones. Congreso Abierto enlaza a SILpy para que cada dato se pueda comprobar en la fuente."
         },
         {
           "termino": "API",
@@ -364,7 +364,7 @@
         },
         {
           "termino": "Tema",
-          "definicion": "Clasificación propia del Observatorio de cada ley y de cada proyecto de ley. Si ninguna regla encaja, el proyecto recibe el tema \"Otros asuntos\" ([Temas de las leyes](#temas-de-las-leyes))."
+          "definicion": "Clasificación propia de Congreso Abierto de cada ley y de cada proyecto de ley. Si ninguna regla encaja, el proyecto recibe el tema \"Otros asuntos\" ([Temas de las leyes](#temas-de-las-leyes))."
         },
         {
           "termino": "Coincidencia de votos",

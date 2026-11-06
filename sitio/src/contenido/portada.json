@@ -1,8 +1,8 @@
 {
   "presentacion": {
-    "leyesSancionadasPorElCongreso": "Leyes del Congreso Nacional de la República del Paraguay en el período legislativo {id}.",
+    "leyesSancionadasPorElCongreso": "Observatorio legislativo independiente sobre las leyes del Congreso Nacional de la República del Paraguay en el período legislativo {id}.",
     "queVotaElCongresoDel": "¿Cómo vota el Congreso en Paraguay?",
-    "leyesSancionadasPorElCongreso2": "Leyes del Congreso Nacional de la  República del Paraguay en el período legislativo {id}, a partir de los datos abiertos oficiales que publica el propio Congreso. Una herramienta independiente de transparencia parlamentaria para periodistas, investigadores, desarrolladores y la ciudadanía en general. Los análisis realizados en este sitio sirven de ayuda pero no deben ser utilizados como fuente única sin contrastar con la fuente oficial y pueden contener errores.",
+    "leyesSancionadasPorElCongreso2": "Congreso Abierto es un observatorio legislativo independiente sobre el Congreso Nacional de la República del Paraguay. Muestra las leyes del período legislativo {id} a partir de los datos abiertos oficiales que publica el propio Congreso. Es una herramienta de transparencia parlamentaria para periodistas, investigadores, desarrolladores y la ciudadanía en general. Los análisis de este sitio sirven de ayuda, pero pueden contener errores y no deben usarse como única fuente sin contrastarlos con la fuente oficial.",
     "seccionesDelSitio": "Secciones del sitio",
     "botonLeyes": "{cantidad} leyes",
     "botonLegisladores": "Legisladores",
@@ -40,7 +40,7 @@
     "expediente": "· Expediente",
     "ley": "Ley {numero}",
     "unPuntoPorLegisladorAgrupados": "Un punto por legislador, agrupados por voto.",
-    "notaDelObservatorio": "Nota del Observatorio.",
+    "notaDelObservatorio": "Nota de Congreso Abierto.",
     "losTotalesPublicadosNoCoinciden": "Los totales publicados no coinciden con el recuento de los votos individuales (",
     "votoDeCadaPartidoEn": "Voto de cada partido en esta votación",
     "verComoVotoCadaLegislador": "[Ver cómo votó cada legislador]({url1})",
@@ -50,7 +50,7 @@
     "enTramite": "{enTramite} en trámite",
     "enOtroEstado": "en otro estado",
     "leyesPorTema": "Leyes por tema",
-    "clasificacionDelObservatorioNoDel": "Clasificación del Observatorio, no del Congreso. Una ley puede tener más de un tema. [Ver cómo se clasifica]({url1})",
+    "clasificacionDelObservatorioNoDel": "Clasificación de Congreso Abierto, no del Congreso. Una ley puede tener más de un tema. [Ver cómo se clasifica]({url1})",
     "leySancionada": "ley sancionada",
     "leyesSancionadas": "leyes sancionadas",
     "proyectoVotado": "proyecto votado",

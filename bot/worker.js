@@ -1,4 +1,4 @@
-// Bot de Telegram del Observatorio Legislativo (#66), como Cloudflare Worker.
+// Bot de Telegram de Congreso Abierto (#66, #129), como Cloudflare Worker.
 //
 // - Recibe los mensajes del bot (webhook de Telegram en /telegram) y deja que cada persona elija sus
 //   avisos con un menú: leyes nuevas, votaciones de proyectos de ley y proyectos de ley presentados.

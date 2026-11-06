@@ -58,7 +58,7 @@ python -m unittest discover -s importador/pruebas -t .
 
 - Compara con `datos/propios/avisos-telegram.json`. La primera vez marca todo lo existente como procesado y no envía nada.
 - Pide la lista de suscriptores al bot en cada ejecución y no la guarda ni la muestra.
-- Si no consigue la lista, o un mensaje no llega a nadie, ese aviso se reintenta en la próxima ejecución y la sincronización sigue. Si alguien bloqueó el bot, lo da de baja.
+- Si no consigue la lista, o un mensaje no llega a nadie, ese aviso se reintenta en la próxima ejecución y la sincronización sigue. Si alguien bloqueó el bot, o el chat no existe para el bot (por ejemplo, un suscriptor del bot anterior, #129), lo da de baja.
 - Necesita `TELEGRAM_TOKEN`, `BOT_URL` y `BOT_CLAVE`, secretos del repositorio en GitHub Actions. Sin ellos, o con `--prueba`, solo muestra los mensajes y no modifica el registro.
 - Si la sincronización falla al confirmar en `main` después de enviar, un aviso podría repetirse una vez.
 

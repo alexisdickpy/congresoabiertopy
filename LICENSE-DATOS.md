@@ -19,7 +19,7 @@ Ante una duda, compárelos con la fuente oficial.
 Al reutilizar estos datos, mencione:
 
 1. Origen de los datos: Datos Abiertos Poder Legislativo.
-2. Observatorio Legislativo (este repositorio), si usa los datos procesados o los indicadores calculados.
+2. Congreso Abierto (este repositorio), si usa los datos procesados o los indicadores calculados.
 3. La fecha de actualización de los datos utilizados.
 
 Este proyecto es independiente y no cuenta con el aval del Congreso Nacional. Quien reutilice los datos

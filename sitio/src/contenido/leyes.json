@@ -2,7 +2,7 @@
   "catalogo": {
     "leyes": "Leyes",
     "lasLeyesSancionadasPorEl": "Las {lista} leyes sancionadas por el Congreso Nacional del Paraguay en el período legislativo {nombresPeriodos}, con número, título, fechas y cámara de origen.",
-    "leyesDelPeriodoLegislativoEl": "{lista} leyes del período legislativo {nombresPeriodos}. El título y las fechas se muestran tal como los publica el Congreso. Cuando el Congreso publica más de un registro con el mismo número de ley, se muestran todos sus títulos. El tema es una clasificación del Observatorio, no del Congreso. [Cómo se clasifica]({url1})"
+    "leyesDelPeriodoLegislativoEl": "{lista} leyes del período legislativo {nombresPeriodos}. El título y las fechas se muestran tal como los publica el Congreso. Cuando el Congreso publica más de un registro con el mismo número de ley, se muestran todos sus títulos. El tema es una clasificación de Congreso Abierto, no del Congreso. [Cómo se clasifica]({url1})"
   },
   "ficha": {
     "todasLasLeyes": "[← Todas las leyes]({url1})",
@@ -13,7 +13,7 @@
   "filtro": {
     "numeroOPalabrasDelTitulo": "Número o palabras del título",
     "anoDeSancion": "Año de sanción",
-    "temaClasificacionDelObservatorio": "Tema (clasificación del Observatorio)",
+    "temaClasificacionDelObservatorio": "Tema (clasificación de Congreso Abierto)",
     "ordenarPor": "Ordenar por",
     "limpiar": "Limpiar"
   },
@@ -32,7 +32,7 @@
     "fechaDePublicacion": "Fecha de publicación",
     "tipoDePromulgacion": "Tipo de promulgación",
     "observacionDelDecreto": "Observación del decreto",
-    "notaDelObservatorio": "**Nota del Observatorio.** {valor}",
+    "notaDelObservatorio": "**Nota de Congreso Abierto.** {valor}",
     "entreParentesisElNombrePor": "Entre paréntesis, el nombre por el que se conoce a un partido (por ejemplo, \"Yo Creo\"). Es un agregado de este sitio, y el nombre que va antes es el oficial.",
     "enlacesOficiales": "Enlaces oficiales",
     "fichaDeLaLeyEn": "[Ficha de la ley en SILpy]({url1})",
@@ -51,7 +51,7 @@
     "algunosAutoresEranLegisladoresDe": "Algunos autores eran legisladores de otra legislatura. En ese caso se indica la legislatura, y su partido, bancada y cámara son los que la API registra para ella."
   },
   "temasLey": {
-    "temaSegunElObservatorio": "Tema según el Observatorio",
+    "temaSegunElObservatorio": "Tema según Congreso Abierto",
     "comoSeClasifica": "Cómo se clasifica"
   },
   "votacionesDeLaLey": {

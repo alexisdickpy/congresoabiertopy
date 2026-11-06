@@ -1,6 +1,6 @@
-# Observatorio Legislativo
+# Congreso Abierto
 
-Portal independiente de datos abiertos para explorar las **leyes aprobadas por el Congreso Nacional de Paraguay** y **cómo votó cada diputado, senador, partido y bancada**.
+Observatorio legislativo independiente y portal de datos abiertos para explorar las **leyes aprobadas por el Congreso Nacional de Paraguay** y **cómo votó cada diputado, senador, partido y bancada**.
 
 > El sitio está publicado en [congresoabiertopy.com](https://congresoabiertopy.com) y sigue en desarrollo. El avance se sigue en los [Issues](../../issues) de este repositorio.
 
