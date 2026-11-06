@@ -2,7 +2,7 @@
   "presentacion": {
     "leyesSancionadasPorElCongreso": "Leyes del Congreso Nacional de la República del Paraguay en el período legislativo {id}.",
     "queVotaElCongresoDel": "¿Cómo vota el Congreso en Paraguay?",
-    "leyesSancionadasPorElCongreso2": "Leyes sancionadas por el Congreso Nacional del Paraguay en el período legislativo {id}, a partir de los datos abiertos que publica el propio Congreso.",
+    "leyesSancionadasPorElCongreso2": "Leyes del Congreso Nacional de la  República del Paraguay en el período legislativo {id}, a partir de los datos abiertos oficiales que publica el propio Congreso. Una herramienta independiente de transparencia parlamentaria para periodistas, investigadores, desarrolladores y la ciudadanía en general. Los análisis realizados en este sitio sirven de ayuda pero no deben ser utilizados como fuente única sin contrastar con la fuente oficial y pueden contener errores.",
     "seccionesDelSitio": "Secciones del sitio",
     "botonLeyes": "{cantidad} leyes",
     "botonLegisladores": "Legisladores",
