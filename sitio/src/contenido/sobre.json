@@ -8,7 +8,7 @@
       "ancla": "que-es",
       "nivel": 2,
       "titulo": "¿Qué es esto?",
-      "texto": "Congreso Abierto es un observatorio legislativo independiente sobre el Congreso Nacional del Paraguay. Reúne en un solo lugar las leyes sancionadas, los proyectos de ley, los legisladores y sus votaciones del período legislativo actual, para que cualquiera pueda consultarlos, compararlos y compartirlos con facilidad."
+      "texto": "Congreso Abierto es un observatorio legislativo independiente sobre el Congreso Nacional de la República del Paraguay. Reúne en un solo lugar las leyes sancionadas, los proyectos de ley, los legisladores y sus votaciones del período legislativo actual, para que cualquiera pueda consultarlos, compararlos y compartirlos con facilidad."
     },
     {
       "ancla": "de-donde-salen-los-datos",
@@ -20,19 +20,19 @@
       "ancla": "como-funciona",
       "nivel": 2,
       "titulo": "¿Cómo funciona el sitio?",
-      "texto": "Una vez por día, un programa copia los datos nuevos del Congreso en el [repositorio público del proyecto]({urlCodigo}) y vuelve a armar el sitio con ellos. Las páginas se publican ya listas: no hay cuentas de usuario, publicidad ni cookies (ver [privacidad]({urlPrivacidad}))."
+      "texto": "Una vez por día, un programa copia los datos nuevos del Congreso en el [repositorio público del proyecto]({urlCodigo}) y vuelve a armar el sitio con ellos. Las páginas se publican ya listas. No hay cuentas de usuario, publicidad ni cookies (ver [privacidad]({urlPrivacidad}))."
     },
     {
       "ancla": "quien-lo-hace",
       "nivel": 2,
       "titulo": "¿Quién lo hace?",
-      "texto": "Es un proyecto independiente, desarrollado por Alexis Dick con asistencia de IA. No tiene vínculo con el Congreso Nacional ni cuenta con su aval. El código es abierto, con licencia AGPL-3.0, y los datos tienen licencia CC BY 4.0."
+      "texto": "Es un proyecto independiente, desarrollado por Alexis Dick con asistencia de IA. No tiene vínculo con el Congreso Nacional ni con ningún partido político. El código es abierto, con licencia AGPL-3.0, y los datos tienen licencia CC BY 4.0."
     },
     {
       "ancla": "colaborar-o-contactar",
       "nivel": 2,
       "titulo": "¿Cómo colaborar o contactar?",
-      "texto": "Si encuentras un error o tienes una idea, escribe a [{correo}]({urlCorreo}). En [Colabora]({urlColabora}) están las formas de ayudar al proyecto, y en [Contacto]({urlContacto}), cómo escribirnos."
+      "texto": "Si encuentras un error o tienes una idea, escribe a [{correo}]({urlCorreo}). En [Colabora]({urlColabora}) están las formas de ayudar al proyecto."
     }
   ]
 }
