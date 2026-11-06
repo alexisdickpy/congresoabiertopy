@@ -3,7 +3,7 @@
 // Si una URL publicada cambia, agregar una redirección permanente en public/_redirects.
 
 /** Dirección pública del sitio. Es el único lugar que cambia al mudarlo a otro dominio (docs/seo.md). */
-export const sitio = "https://congreso.alexisdick.com";
+export const sitio = "https://congresoabiertopy.com";
 /** Dirección completa de una ruta del sitio, para etiquetas de buscadores y redes sociales. */
 export const absoluta = (ruta) => new URL(ruta, sitio).href;
 

@@ -154,7 +154,7 @@ En ambos casos:
 
 ### 6. Publicación: Cloudflare Pages conectado al repositorio
 
-- **Decisión.** El proyecto de Cloudflare Pages se conecta al repositorio de GitHub. Cada cambio en `main` (datos nuevos o código) dispara una compilación y publicación en `congreso.alexisdick.com` (#11).
+- **Decisión.** El proyecto de Cloudflare Pages se conecta al repositorio de GitHub. Cada cambio en `main` (datos nuevos o código) dispara una compilación y publicación en `congreso.alexisdick.com` (#11), desde #128 en `congresoabiertopy.com`.
 - **Motivos.**
   - No hay que guardar claves de Cloudflare en GitHub.
   - Cada PR recibe automáticamente una vista previa con su propia dirección, útil para revisar el rediseño.

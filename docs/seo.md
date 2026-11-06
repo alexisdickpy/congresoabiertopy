@@ -38,13 +38,15 @@ Revisan el código, no el dominio, así que se hacen apenas el sitio esté publi
 
 ## Dominio propio y alta en los buscadores (Fase 4, #14)
 
-El sitio queda publicado e indexable en `congreso.alexisdick.com`, pero no se da de alta en los buscadores hasta tener el dominio definitivo. Así Google empieza a registrar el sitio directamente con la dirección final y no hace falta avisarle de una mudanza. La difusión pública también empieza recién entonces.
+El sitio estuvo publicado e indexable en `congreso.alexisdick.com`, sin alta en los buscadores, hasta tener el dominio definitivo `congresoabiertopy.com` (#128). Así Google empieza a registrar el sitio directamente con la dirección final y no hace falta avisarle de una mudanza. La difusión pública también empieza recién entonces.
 
 ### Mudanza al dominio propio
 
+Hecha en #128. El DNS de `congresoabiertopy.com` está en Cloudflare, y `www.congresoabiertopy.com` redirige al dominio sin `www` con otra regla de redirección.
+
 1. Cambiar `sitio` en `sitio/src/lib/rutas.js`. Es el único lugar con el dominio. De ahí salen la configuración de Astro, las URLs canónicas, el sitemap, `robots.txt` y los datos estructurados.
 2. Agregar el dominio nuevo al proyecto de Cloudflare Pages.
-3. Redirigir el subdominio viejo con una **regla de redirección** de Cloudflare en la zona `alexisdick.com` (incluida en el plan gratuito). Debe ser permanente (301), conservar la ruta y los parámetros, y aplicarse a `congreso.alexisdick.com/*` → `https://DOMINIO-NUEVO/${1}`. Así cada enlace viejo lleva a la misma página en el dominio nuevo.
+3. Redirigir el subdominio viejo con una **regla de redirección** de Cloudflare en la zona `alexisdick.com` (incluida en el plan gratuito). Debe ser permanente (301), conservar la ruta y los parámetros, y aplicarse a `congreso.alexisdick.com/*` → `https://congresoabiertopy.com/${1}`. Así cada enlace viejo lleva a la misma página en el dominio nuevo.
 4. Mantener la redirección al menos un año.
 
 ### Google Search Console
@@ -52,7 +54,7 @@ El sitio queda publicado e indexable en `congreso.alexisdick.com`, pero no se da
 1. Entrar en [Google Search Console](https://search.google.com/search-console) con la cuenta de Google que se quiera usar para el proyecto.
 2. Elegir **Agregar propiedad** y el tipo **Dominio**, y escribir el dominio nuevo. Así queda verificado entero, con cualquier subdominio.
 3. Google muestra un registro TXT. Si el DNS del dominio nuevo está en Cloudflare, Google suele ofrecer verificarlo de forma automática con un botón que abre Cloudflare y pide permiso. Si no aparece, copiar el registro TXT, agregarlo en Cloudflare (**DNS** → **Registros** → **Agregar registro**, tipo TXT, nombre `@`) y volver a Search Console para pulsar **Verificar**.
-4. En la propiedad verificada, ir a **Sitemaps** y enviar `https://DOMINIO-NUEVO/sitemap.xml`.
+4. En la propiedad verificada, ir a **Sitemaps** y enviar `https://congresoabiertopy.com/sitemap.xml`.
 5. Unos días después, revisar **Páginas** e **Indexación** para confirmar que no hay errores críticos.
 
 Opcionalmente se puede hacer lo mismo en [Bing Webmaster Tools](https://www.bing.com/webmasters), que permite importar la propiedad desde Search Console.

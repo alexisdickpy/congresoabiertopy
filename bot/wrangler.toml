@@ -7,7 +7,7 @@ compatibility_date = "2026-10-01"
 workers_dev = true
 
 [vars]
-SITIO = "https://congreso.alexisdick.com"
+SITIO = "https://congresoabiertopy.com"
 
 [[kv_namespaces]]
 binding = "SUSCRIPTORES"
