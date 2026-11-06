@@ -1,0 +1,32 @@
+---
+// Contacto (#133): el correo del proyecto, sin formulario (el sitio no recoge datos de sus visitantes;
+// ver la página de privacidad). En el menú principal y en el pie. Textos en contenido/contacto.json.
+import Base from "../layouts/Base.astro";
+import * as rutas from "../lib/rutas.js";
+import { crudo, md, textos } from "../lib/contenido.js";
+
+const tx = textos.contacto;
+---
+
+<Base titulo={tx.pagina.titulo} descripcion={tx.pagina.descripcion}>
+  <div class="lectura">
+    <h1>{tx.pagina.titulo}</h1>
+    <p set:html={md(tx.texto)} />
+    <p class="correo-destacado"><a href={rutas.correo()}>{rutas.correoContacto}</a></p>
+    <p><a class="boton" href={rutas.correo()}>{tx.boton}</a></p>
+    <p set:html={md(tx.consejo)} />
+    <p class="nota" set:html={md(tx.aclaracion, { urlColabora: crudo(rutas.colabora()) })} />
+  </div>
+</Base>
+
+<style>
+  .correo-destacado {
+    font-family: var(--fuente-titulo);
+    font-size: var(--tamano-titulo-3);
+    font-weight: var(--peso-fuerte);
+    overflow-wrap: anywhere;
+  }
+  .nota {
+    color: var(--color-texto-suave);
+  }
+</style>

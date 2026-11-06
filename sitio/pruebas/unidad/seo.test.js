@@ -97,7 +97,7 @@ test("el sitemap tiene cada ley y cada legislador una vez, sin la búsqueda", ()
   const temas = votosPorTema("2023-2028");
   const conLista = conProyectosDeLey();
   const partidos = perfilesDePartidos("2023-2028");
-  assert.equal(urls.length, leyes().length + legisladores().length + conLista.length + 16 + anios.length + temas.length + partidos.length + votaciones.length);
+  assert.equal(urls.length, leyes().length + legisladores().length + conLista.length + 19 + anios.length + temas.length + partidos.length + votaciones.length);
   for (const p of partidos) assert.ok(urls.includes(rutas.absoluta(p.url)), p.id);
   for (const p of conLista) assert.ok(urls.includes(rutas.absoluta(rutas.expedientesLegislador(p.slug))), p.slug);
   for (const v of votaciones) assert.ok(urls.includes(rutas.absoluta(rutas.votacion(v.id))), v.id);
@@ -111,6 +111,8 @@ test("el sitemap tiene cada ley y cada legislador una vez, sin la búsqueda", ()
   assert.ok(urls.includes(rutas.absoluta(rutas.mapaDiputados())));
   assert.ok(urls.includes(rutas.absoluta(rutas.coincidencia())));
   assert.ok(urls.includes(rutas.absoluta(rutas.testAfinidad())));
+  // Páginas del proyecto (#133).
+  for (const u of [rutas.sobreElProyecto(), rutas.colabora(), rutas.contacto()]) assert.ok(urls.includes(rutas.absoluta(u)), u);
   assert.ok(!urls.includes(rutas.absoluta(rutas.buscar())));
   for (const u of urls) assert.ok(u.startsWith(`${rutas.sitio}/`) && u.endsWith("/"), u);
 });

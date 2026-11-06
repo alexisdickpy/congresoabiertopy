@@ -157,6 +157,64 @@ button {
   text-decoration: none;
 }
 
+/* Acción secundaria: el mismo botón con contorno, para que la principal se distinga (#133). */
+.boton.secundario,
+.boton.secundario:visited {
+  border: var(--borde-ancho) solid var(--color-acento);
+  background: var(--color-fondo);
+  color: var(--color-acento);
+}
+/* Botón chico, por ejemplo "Reportar un error" en el pie (#133). */
+.boton.chico,
+.boton.chico:visited {
+  padding: var(--espacio-1) var(--espacio-3);
+  font-size: var(--tamano-chico);
+}
+
+/* Tarjetas con una acción cada una (components/TarjetasAccion.astro, página Colabora, #133): etiqueta,
+   título, texto y un botón abajo. */
+.tarjetas-accion {
+  list-style: none;
+  margin: var(--espacio-5) 0;
+  padding: 0;
+  display: grid;
+  gap: var(--espacio-4);
+}
+/* Dos columnas desde el ancho de una tableta: con cuatro tarjetas quedan dos filas parejas. */
+@media (min-width: 40rem) {
+  .tarjetas-accion {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.tarjeta-accion {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-2);
+  padding: var(--espacio-4);
+  border: var(--borde-ancho) solid var(--color-borde);
+  border-radius: var(--radio);
+  background: var(--color-superficie);
+}
+.tarjeta-accion-etiqueta {
+  font-size: var(--tamano-chico);
+  font-weight: var(--peso-fuerte);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-acento);
+}
+.tarjeta-accion-titulo {
+  margin: 0;
+  font-size: var(--tamano-titulo-3);
+}
+.tarjeta-accion-texto {
+  flex: 1;
+  margin: 0;
+}
+.tarjeta-accion .boton {
+  align-self: flex-start;
+  margin-top: var(--espacio-2);
+}
+
 /* Tarjetas de enlace a otras vistas (components/TarjetasEnlace.astro, #98): la tarjeta entera es el
    enlace, con su título, una línea de descripción y un detalle en letra suave. */
 .tarjetas-enlace {

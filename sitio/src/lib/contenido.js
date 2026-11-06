@@ -7,6 +7,8 @@
 import { marked } from "marked";
 import buscar from "../contenido/buscar.json" with { type: "json" };
 import coincidencia from "../contenido/coincidencia.json" with { type: "json" };
+import colabora from "../contenido/colabora.json" with { type: "json" };
+import contacto from "../contenido/contacto.json" with { type: "json" };
 import datos from "../contenido/datos.json" with { type: "json" };
 import error404 from "../contenido/error404.json" with { type: "json" };
 import estadisticas from "../contenido/estadisticas.json" with { type: "json" };
@@ -20,6 +22,7 @@ import portada from "../contenido/portada.json" with { type: "json" };
 import privacidad from "../contenido/privacidad.json" with { type: "json" };
 import proyectos from "../contenido/proyectos.json" with { type: "json" };
 import rankings from "../contenido/rankings.json" with { type: "json" };
+import sobre from "../contenido/sobre.json" with { type: "json" };
 import temas from "../contenido/temas.json" with { type: "json" };
 import test from "../contenido/test.json" with { type: "json" };
 import votaciones from "../contenido/votaciones.json" with { type: "json" };
@@ -27,7 +30,7 @@ import { fill } from "./rellenar.js";
 
 export { fill };
 
-export const textos = { buscar, coincidencia, datos, error404, estadisticas, general, interaccion, legisladores, leyes, metodologia, partidos, portada, privacidad, proyectos, rankings, temas, test, votaciones };
+export const textos = { buscar, coincidencia, colabora, contacto, datos, error404, estadisticas, general, interaccion, legisladores, leyes, metodologia, partidos, portada, privacidad, proyectos, rankings, sobre, temas, test, votaciones };
 
 const escapar = (valor) => String(valor).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 

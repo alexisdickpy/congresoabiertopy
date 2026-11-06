@@ -26,7 +26,7 @@ test("el menú tiene una entrada por cada vista de análisis, con direcciones de
   assert.ok(!urls.includes(rutas.votosPorTema()) && !urls.includes(rutas.datosAbiertos()));
   assert.deepEqual(
     menuPrincipal().map((e) => e.texto),
-    ["Leyes", "Proyectos", "Legisladores", "Votaciones", "Partidos", "Rankings", "Estadísticas", "Test de afinidad", "Bot de Telegram", textos.general.menu.buscarLeyes],
+    ["Leyes", "Proyectos", "Legisladores", "Votaciones", "Partidos", "Rankings", "Estadísticas", "Test de afinidad", "Bot de Telegram", "Contacto", textos.general.menu.buscarLeyes],
   );
   // "Partidos" lleva al índice de partidos (#93); la coincidencia la sigue marcando (siguiente prueba).
   assert.ok(urls.includes(rutas.partidos()) && !urls.includes(rutas.coincidencia()) && urls.includes(rutas.rankings()));

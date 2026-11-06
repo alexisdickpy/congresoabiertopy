@@ -1,0 +1,37 @@
+---
+// Tarjetas con una acción cada una (#133, página Colabora): una etiqueta corta, un título, un texto y un
+// botón al final. La primera lleva el botón principal y las demás el secundario. Los estilos están en
+// estilos/base.css (.tarjetas-accion), para que un rediseño los cambie en un solo lugar.
+import { md } from "../lib/contenido.js";
+
+interface Tarjeta {
+  etiqueta: string;
+  titulo: string;
+  texto: string;
+  boton: string;
+  url: string;
+  /** Enlace a otro sitio (GitHub): se abre aparte y lo indica con una flecha. */
+  externo?: boolean;
+}
+interface Props {
+  tarjetas: Tarjeta[];
+  etiqueta?: string;
+}
+const { tarjetas, etiqueta } = Astro.props;
+---
+
+<ul class="tarjetas-accion" aria-label={etiqueta}>
+  {
+    tarjetas.map((t, i) => (
+      <li class="tarjeta-accion">
+        <span class="tarjeta-accion-etiqueta">{t.etiqueta}</span>
+        <h2 class="tarjeta-accion-titulo">{t.titulo}</h2>
+        <p class="tarjeta-accion-texto" set:html={md(t.texto)} />
+        <a class={i === 0 ? "boton" : "boton secundario"} href={t.url} {...(t.externo ? { rel: "noopener" } : {})}>
+          {t.boton}
+          {t.externo && <span aria-hidden="true"> ↗</span>}
+        </a>
+      </li>
+    ))
+  }
+</ul>

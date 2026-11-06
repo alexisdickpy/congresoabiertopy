@@ -126,6 +126,9 @@ content:
         label: "Pie de página"
         type: object
         fields:
+          - name: sobreElProyecto
+            label: "Sobre el proyecto"
+            type: string
           - name: metodologia
             label: "Metodología"
             type: string
@@ -137,6 +140,15 @@ content:
             type: string
           - name: codigoFuente
             label: "Código fuente"
+            type: string
+          - name: colabora
+            label: "Colabora"
+            type: string
+          - name: contacto
+            label: "Contacto"
+            type: string
+          - name: reportarUnError
+            label: "Reportar un error (botón que abre un correo)"
             type: string
           - name: actualizadoEl
             label: "{cita}. Actualizado el {fecha}."
@@ -225,6 +237,9 @@ content:
             type: string
           - name: botDeTelegram
             label: "Bot de Telegram"
+            type: string
+          - name: contacto
+            label: "Contacto"
             type: string
           - name: buscarLeyes
             label: "Buscar (menú)"
@@ -2775,6 +2790,122 @@ content:
             label: Texto después de la lista automática
             type: rich-text
             options: { media: false, format: markdown }
+  - name: sobre
+    label: "Sobre el proyecto"
+    type: file
+    path: sitio/src/contenido/sobre.json
+    format: json
+    operations: { create: false, delete: false }
+    fields:
+      - name: pagina
+        label: "Página"
+        type: object
+        fields:
+          - name: titulo
+            label: "Sobre el proyecto"
+            type: string
+          - name: descripcion
+            label: "Descripción para buscadores"
+            type: text
+      - name: secciones
+        label: Secciones
+        type: object
+        list:
+          min: 5
+          max: 5
+          collapsible:
+            collapsed: true
+            summary: "{titulo}"
+        fields:
+          - { name: ancla, label: "Dirección de la sección (no se edita)", type: string, readonly: true }
+          - { name: nivel, type: number, hidden: true }
+          - { name: titulo, label: Título, type: string }
+          - name: texto
+            label: Texto
+            type: rich-text
+            description: "Las palabras entre llaves, como {correo} o {urlColabora}, son partes automáticas. No las borres ni les cambies el nombre."
+            options: { media: false, format: markdown }
+  - name: colabora
+    label: "Colabora"
+    type: file
+    path: sitio/src/contenido/colabora.json
+    format: json
+    operations: { create: false, delete: false }
+    fields:
+      - name: pagina
+        label: "Página"
+        type: object
+        fields:
+          - name: titulo
+            label: "Colabora"
+            type: string
+          - name: descripcion
+            label: "Descripción para buscadores"
+            type: text
+      - name: introduccion
+        label: "Introducción"
+        type: text
+        description: "Partes automáticas, no las borres ni les cambies el nombre: {correo}, {urlCorreo}, {urlCodigo}. Los enlaces van como [texto](dirección)."
+      - name: formas
+        label: "Formas de colaborar (una tarjeta cada una)"
+        type: object
+        list:
+          min: 4
+          max: 4
+          collapsible:
+            collapsed: true
+            summary: "{titulo}"
+        fields:
+          - { name: clave, label: "Tipo de tarjeta (no se edita)", type: string, readonly: true }
+          - { name: etiqueta, label: "Etiqueta chica", type: string }
+          - { name: titulo, label: Título, type: string }
+          - { name: texto, label: Texto, type: text }
+          - { name: boton, label: "Texto del botón", type: string }
+          - name: asunto
+            label: "Asunto del correo"
+            type: string
+            description: "El botón abre un correo al proyecto con este asunto. La tarjeta de GitHub no lo usa."
+  - name: contacto
+    label: "Contacto y reporte de errores"
+    type: file
+    path: sitio/src/contenido/contacto.json
+    format: json
+    operations: { create: false, delete: false }
+    fields:
+      - name: pagina
+        label: "Página"
+        type: object
+        fields:
+          - name: titulo
+            label: "Contacto"
+            type: string
+          - name: descripcion
+            label: "Descripción para buscadores"
+            type: text
+      - name: texto
+        label: "Texto antes del correo"
+        type: text
+      - name: boton
+        label: "Texto del botón"
+        type: string
+      - name: consejo
+        label: "Consejo para reportar un dato incorrecto"
+        type: text
+      - name: aclaracion
+        label: "Aclaración de independencia"
+        type: text
+        description: "Partes automáticas, no las borres ni les cambies el nombre: {urlColabora}. Los enlaces van como [texto](dirección)."
+      - name: reportar
+        label: "Botón \"Reportar un error\" del pie"
+        type: object
+        fields:
+          - name: asunto
+            label: "Asunto del correo"
+            type: string
+          - name: cuerpo
+            label: "Texto inicial del correo"
+            type: text
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {pagina} (la dirección de la página desde la que se escribe)."
   - name: privacidad
     label: "Privacidad y aviso legal"
     type: file

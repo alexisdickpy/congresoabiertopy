@@ -66,6 +66,7 @@ export const menuPrincipal = () => [
   { url: rutas.estadisticas(), texto: tx.estadisticas },
   { url: rutas.testAfinidad(), texto: txc.testDeAfinidad },
   { url: rutas.botTelegram(), texto: tx.botDeTelegram },
+  { url: rutas.contacto(), texto: tx.contacto },
   { url: rutas.buscar(), texto: tx.buscarLeyes },
 ];
 
