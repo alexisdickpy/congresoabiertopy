@@ -2764,8 +2764,8 @@ content:
         label: Secciones
         type: object
         list:
-          min: 30
-          max: 30
+          min: 31
+          max: 31
           collapsible:
             collapsed: true
             summary: "{titulo}"

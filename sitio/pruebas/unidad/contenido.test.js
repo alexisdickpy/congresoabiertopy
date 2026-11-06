@@ -41,6 +41,33 @@ test("cada campo de los datos propios editables figura en .pages.yml", () => {
   }
 });
 
+// Pages CMS no deja guardar un archivo si una lista con cantidad fija (min/max) tiene otra cantidad: al
+// agregar o quitar una sección hay que actualizar .pages.yml (#135).
+test("las listas con cantidad fija en .pages.yml tienen esa cantidad de elementos", () => {
+  const archivos = [
+    ...Object.entries(textos).map(([nombre, contenido]) => [`sitio/src/contenido/${nombre}.json`, contenido]),
+    ...["temas", "partidos", "test-afinidad"].map((n) => [`datos/propios/${n}.json`, JSON.parse(readFileSync(join(raiz, `datos/propios/${n}.json`), "utf-8"))]),
+  ];
+  const listas = (valor, nombre) =>
+    !valor || typeof valor !== "object"
+      ? []
+      : Object.entries(valor).flatMap(([k, v]) => [...(k === nombre && Array.isArray(v) ? [v] : []), ...listas(v, nombre)]);
+  let revisadas = 0;
+  for (const [ruta, contenido] of archivos) {
+    const inicio = config.indexOf(`path: ${ruta}\n`);
+    const fin = config.indexOf("\n  - name: ", inicio);
+    const seccion = config.slice(inicio, fin === -1 ? undefined : fin);
+    for (const m of seccion.matchAll(/- name: (\w+)\n(?:[^\n]*\n){0,4}?\s+list:\n\s+min: (\d+)\n\s+max: (\d+)/g)) {
+      const [, nombre, min, max] = m;
+      const encontradas = listas(contenido, nombre);
+      assert.ok(encontradas.length > 0, `No se encontró la lista ${nombre} de ${ruta}`);
+      for (const l of encontradas) assert.ok(l.length >= Number(min) && l.length <= Number(max), `${ruta}: ${nombre} tiene ${l.length} elementos y .pages.yml permite ${min} a ${max}`);
+      revisadas++;
+    }
+  }
+  assert.ok(revisadas >= 4, `Solo se revisaron ${revisadas} listas`);
+});
+
 test("los datos del Congreso no se editan desde Pages CMS", () => {
   assert.ok(!config.includes("path: datos/fuente"), "datos/fuente no debe estar en .pages.yml");
 });
