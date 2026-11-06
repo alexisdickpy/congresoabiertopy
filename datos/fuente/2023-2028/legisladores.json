@@ -707,9 +707,9 @@
     "_propio": {
       "fuenteRegistro": "legislador?idCamara=A",
       "slug": "enrique-riera-escudero",
-      "vigente": false
+      "vigente": true
     },
-    "activo": false,
+    "activo": true,
     "apellidos": "Riera Escudero",
     "appURL": "https://silpy.congreso.gov.py/legislador/101371",
     "bancada": "",
@@ -3105,9 +3105,9 @@
     "_propio": {
       "fuenteRegistro": "legislador?idCamara=A",
       "slug": "guadalupe-aveiro-solis",
-      "vigente": true
+      "vigente": false
     },
-    "activo": true,
+    "activo": false,
     "apellidos": "Aveiro Solis",
     "appURL": "https://silpy.congreso.gov.py/legislador/101604",
     "bancada": "ASOCIACIÓN NACIONAL REPUBLICANA PARTIDO COLORADO (ANR) - \"A\"",
