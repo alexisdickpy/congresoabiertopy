@@ -2,7 +2,7 @@
 
 Portal independiente de datos abiertos para explorar las **leyes aprobadas por el Congreso Nacional de Paraguay** y **cómo votó cada diputado, senador, partido y bancada**.
 
-> El sitio está publicado en [congreso.alexisdick.com](https://congreso.alexisdick.com) y sigue en desarrollo. El avance se sigue en los [Issues](../../issues) de este repositorio.
+> El sitio está publicado en [congresoabiertopy.com](https://congresoabiertopy.com) y sigue en desarrollo. El avance se sigue en los [Issues](../../issues) de este repositorio.
 
 ## Qué ofrece
 
@@ -35,7 +35,7 @@ Se pueden reutilizar libremente bajo [CC BY 4.0](LICENSE-DATOS.md), citando "Ori
 
 El sitio está en [`sitio/`](sitio/). Usa Astro con salida estática y búsqueda con Pagefind, sin servidor ni base de datos. Cómo compilarlo y cómo está organizado se explica en [`sitio/README.md`](sitio/README.md).
 
-Se publica en [congreso.alexisdick.com](https://congreso.alexisdick.com) con Cloudflare Pages conectado al repositorio, que lo compila y publica solo con cada cambio en `main`.
+Se publica en [congresoabiertopy.com](https://congresoabiertopy.com) con Cloudflare Pages conectado al repositorio, que lo compila y publica solo con cada cambio en `main`.
 
 ## Privacidad
 

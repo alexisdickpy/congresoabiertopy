@@ -1,6 +1,6 @@
 # Metodología
 
-Este documento reúne los criterios propios del proyecto, con el detalle técnico de cada archivo. El sitio publica una versión en lenguaje simple en `/metodologia/` (`sitio/src/pages/metodologia.astro`), con las observaciones sobre los datos generadas desde `datos/propios/notas.json` en cada compilación. Si cambia un criterio, actualizar los dos. Las siglas y los términos se explican en el [glosario del sitio](https://congreso.alexisdick.com/metodologia/#glosario) (#92), que no se repite aquí.
+Este documento reúne los criterios propios del proyecto, con el detalle técnico de cada archivo. El sitio publica una versión en lenguaje simple en `/metodologia/` (`sitio/src/pages/metodologia.astro`), con las observaciones sobre los datos generadas desde `datos/propios/notas.json` en cada compilación. Si cambia un criterio, actualizar los dos. Las siglas y los términos se explican en el [glosario del sitio](https://congresoabiertopy.com/metodologia/#glosario) (#92), que no se repite aquí.
 
 ## Principio: fidelidad a la fuente
 
