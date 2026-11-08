@@ -3712,12 +3712,37 @@
   },
   {
     "_propio": {
-      "autores": "Natalicio Esteban Chase Acosta, Rafael Augusto Filizzola Serra, Basilio Gustavo Núñez Giménez, Ernesto Javier Zacarías Irún, Celeste Josefina Amarilla Vda. de Boccia, Lourdes Noelia Cabrera Petters, Orlando Penner Dürksen, Silvio Adalberto Ovelar Benítez, Antonio Carlos Barrios Fernández, Ramón Catalino Retamozo Delgado, Derlis Hernán Maidana Zarza, Regina Lizarella Valiente de Rodríguez, Dionisio Oswaldo Amarilla Guirland, Eduardo Hirohito Nakayama Rojas, Hermelinda Alvarenga de Ortega, Juan Carlos Luis Galaverna Ortega, Edgar Idalino López Ruíz",
+      "autores": "Hermelinda Alvarenga de Ortega, Dionisio Oswaldo Amarilla Guirland, Celeste Josefina Amarilla Vda. de Boccia, Antonio Carlos Barrios Fernández, Lourdes Noelia Cabrera Petters, Natalicio Esteban Chase Acosta, Rafael Augusto Filizzola Serra, Juan Carlos Luis Galaverna Ortega, Edgar Idalino López Ruíz, Derlis Hernán Maidana Zarza, Eduardo Hirohito Nakayama Rojas, Basilio Gustavo Núñez Giménez, Silvio Adalberto Ovelar Benítez, Orlando Penner Dürksen, Ramón Catalino Retamozo Delgado, Regina Lizarella Valiente de Rodríguez, Ernesto Javier Zacarías Irún",
       "fechaIngreso": "2026-11-03"
     },
     "acapite": "Proyecto de Ley “QUE AMPLÍA LA LEY 2334/03 ‘DE GARANTÍAS DE DEPÓSITO Y RESOLUCIÓN DE ENTIDADES DE INTERMEDIACIÓN FINANCIERA SUJETAS A LA LEY GENERAL DE BANCOS, FINANCIERAS Y OTRAS ENTIDADES DE CRÉDITOS’, Y ESTABLECE EL ANTICIPO DE LA GARANTÍA DE DEPÓSITO”, presentado por los senadores Gustavo Basilio Núñez Giménez, Natalicio Esteban Chase Acosta, Antonio Carlos Barrios Fernández, Ramón Catalino Retamozo Delgado, Rafael Augusto Filizzola Serra, Celeste Josefina Amarilla Vda. de Boccia, Derlis Hernán Maidana Zarza, Regina Lizarella Valiente de Rodríguez, Dionisio Oswaldo Amarilla Guirland, Eduardo Hirohito Nakayama Rojas, Lourdes Noelia Cabrera Petters, Hermelinda Alvarenga de Ortega, Juan Carlos Luis Galaverna Ortega, Orlando Penner Dürksen, Edgar Idalino López Ruíz,  Ernesto Javier Zacarías Irún y Silvio Adalberto Ovelar Benítez de fecha 3 de noviembre de 2026.",
     "appURL": "https://silpy.congreso.gov.py/expediente/160291",
     "autores": [
+      {
+        "apellidos": "Alvarenga de Ortega",
+        "idLegislador": 101365,
+        "nombres": "Hermelinda"
+      },
+      {
+        "apellidos": "Amarilla Guirland",
+        "idLegislador": 101373,
+        "nombres": "Dionisio Oswaldo"
+      },
+      {
+        "apellidos": "Amarilla Vda. de Boccia",
+        "idLegislador": 101350,
+        "nombres": "Celeste Josefina"
+      },
+      {
+        "apellidos": "Barrios Fernández",
+        "idLegislador": 101475,
+        "nombres": "Antonio Carlos"
+      },
+      {
+        "apellidos": "Cabrera Petters",
+        "idLegislador": 101381,
+        "nombres": "Lourdes Noelia"
+      },
       {
         "apellidos": "Chase Acosta",
         "idLegislador": 101363,
@@ -3729,71 +3754,6 @@
         "nombres": "Rafael Augusto"
       },
       {
-        "apellidos": "Núñez Giménez",
-        "idLegislador": 101361,
-        "nombres": "Basilio Gustavo"
-      },
-      {
-        "apellidos": "Zacarías Irún",
-        "idLegislador": 101376,
-        "nombres": "Ernesto Javier"
-      },
-      {
-        "apellidos": "Amarilla Vda. de Boccia",
-        "idLegislador": 101350,
-        "nombres": "Celeste Josefina"
-      },
-      {
-        "apellidos": "Cabrera Petters",
-        "idLegislador": 101381,
-        "nombres": "Lourdes Noelia"
-      },
-      {
-        "apellidos": "Penner Dürksen",
-        "idLegislador": 101372,
-        "nombres": "Orlando"
-      },
-      {
-        "apellidos": "Ovelar Benítez",
-        "idLegislador": 101339,
-        "nombres": "Silvio Adalberto"
-      },
-      {
-        "apellidos": "Barrios Fernández",
-        "idLegislador": 101475,
-        "nombres": "Antonio Carlos"
-      },
-      {
-        "apellidos": "Retamozo Delgado",
-        "idLegislador": 101477,
-        "nombres": "Ramón Catalino"
-      },
-      {
-        "apellidos": "Maidana Zarza",
-        "idLegislador": 101341,
-        "nombres": "Derlis Hernán"
-      },
-      {
-        "apellidos": "Valiente de Rodríguez",
-        "idLegislador": 101349,
-        "nombres": "Regina Lizarella"
-      },
-      {
-        "apellidos": "Amarilla Guirland",
-        "idLegislador": 101373,
-        "nombres": "Dionisio Oswaldo"
-      },
-      {
-        "apellidos": "Nakayama Rojas",
-        "idLegislador": 101358,
-        "nombres": "Eduardo Hirohito"
-      },
-      {
-        "apellidos": "Alvarenga de Ortega",
-        "idLegislador": 101365,
-        "nombres": "Hermelinda"
-      },
-      {
         "apellidos": "Galaverna Ortega",
         "idLegislador": 101484,
         "nombres": "Juan Carlos Luis"
@@ -3802,6 +3762,46 @@
         "apellidos": "López Ruíz",
         "idLegislador": 101347,
         "nombres": "Edgar Idalino"
+      },
+      {
+        "apellidos": "Maidana Zarza",
+        "idLegislador": 101341,
+        "nombres": "Derlis Hernán"
+      },
+      {
+        "apellidos": "Nakayama Rojas",
+        "idLegislador": 101358,
+        "nombres": "Eduardo Hirohito"
+      },
+      {
+        "apellidos": "Núñez Giménez",
+        "idLegislador": 101361,
+        "nombres": "Basilio Gustavo"
+      },
+      {
+        "apellidos": "Ovelar Benítez",
+        "idLegislador": 101339,
+        "nombres": "Silvio Adalberto"
+      },
+      {
+        "apellidos": "Penner Dürksen",
+        "idLegislador": 101372,
+        "nombres": "Orlando"
+      },
+      {
+        "apellidos": "Retamozo Delgado",
+        "idLegislador": 101477,
+        "nombres": "Ramón Catalino"
+      },
+      {
+        "apellidos": "Valiente de Rodríguez",
+        "idLegislador": 101349,
+        "nombres": "Regina Lizarella"
+      },
+      {
+        "apellidos": "Zacarías Irún",
+        "idLegislador": 101376,
+        "nombres": "Ernesto Javier"
       }
     ],
     "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",

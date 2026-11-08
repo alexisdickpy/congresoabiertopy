@@ -11231,6 +11231,31 @@
       "appURL": "https://silpy.congreso.gov.py/expediente/160291",
       "autores": [
         {
+          "apellidos": "Alvarenga de Ortega",
+          "idLegislador": 101365,
+          "nombres": "Hermelinda"
+        },
+        {
+          "apellidos": "Amarilla Guirland",
+          "idLegislador": 101373,
+          "nombres": "Dionisio Oswaldo"
+        },
+        {
+          "apellidos": "Amarilla Vda. de Boccia",
+          "idLegislador": 101350,
+          "nombres": "Celeste Josefina"
+        },
+        {
+          "apellidos": "Barrios Fernández",
+          "idLegislador": 101475,
+          "nombres": "Antonio Carlos"
+        },
+        {
+          "apellidos": "Cabrera Petters",
+          "idLegislador": 101381,
+          "nombres": "Lourdes Noelia"
+        },
+        {
           "apellidos": "Chase Acosta",
           "idLegislador": 101363,
           "nombres": "Natalicio Esteban"
@@ -11241,71 +11266,6 @@
           "nombres": "Rafael Augusto"
         },
         {
-          "apellidos": "Núñez Giménez",
-          "idLegislador": 101361,
-          "nombres": "Basilio Gustavo"
-        },
-        {
-          "apellidos": "Zacarías Irún",
-          "idLegislador": 101376,
-          "nombres": "Ernesto Javier"
-        },
-        {
-          "apellidos": "Amarilla Vda. de Boccia",
-          "idLegislador": 101350,
-          "nombres": "Celeste Josefina"
-        },
-        {
-          "apellidos": "Cabrera Petters",
-          "idLegislador": 101381,
-          "nombres": "Lourdes Noelia"
-        },
-        {
-          "apellidos": "Penner Dürksen",
-          "idLegislador": 101372,
-          "nombres": "Orlando"
-        },
-        {
-          "apellidos": "Ovelar Benítez",
-          "idLegislador": 101339,
-          "nombres": "Silvio Adalberto"
-        },
-        {
-          "apellidos": "Barrios Fernández",
-          "idLegislador": 101475,
-          "nombres": "Antonio Carlos"
-        },
-        {
-          "apellidos": "Retamozo Delgado",
-          "idLegislador": 101477,
-          "nombres": "Ramón Catalino"
-        },
-        {
-          "apellidos": "Maidana Zarza",
-          "idLegislador": 101341,
-          "nombres": "Derlis Hernán"
-        },
-        {
-          "apellidos": "Valiente de Rodríguez",
-          "idLegislador": 101349,
-          "nombres": "Regina Lizarella"
-        },
-        {
-          "apellidos": "Amarilla Guirland",
-          "idLegislador": 101373,
-          "nombres": "Dionisio Oswaldo"
-        },
-        {
-          "apellidos": "Nakayama Rojas",
-          "idLegislador": 101358,
-          "nombres": "Eduardo Hirohito"
-        },
-        {
-          "apellidos": "Alvarenga de Ortega",
-          "idLegislador": 101365,
-          "nombres": "Hermelinda"
-        },
-        {
           "apellidos": "Galaverna Ortega",
           "idLegislador": 101484,
           "nombres": "Juan Carlos Luis"
@@ -11314,6 +11274,46 @@
           "apellidos": "López Ruíz",
           "idLegislador": 101347,
           "nombres": "Edgar Idalino"
+        },
+        {
+          "apellidos": "Maidana Zarza",
+          "idLegislador": 101341,
+          "nombres": "Derlis Hernán"
+        },
+        {
+          "apellidos": "Nakayama Rojas",
+          "idLegislador": 101358,
+          "nombres": "Eduardo Hirohito"
+        },
+        {
+          "apellidos": "Núñez Giménez",
+          "idLegislador": 101361,
+          "nombres": "Basilio Gustavo"
+        },
+        {
+          "apellidos": "Ovelar Benítez",
+          "idLegislador": 101339,
+          "nombres": "Silvio Adalberto"
+        },
+        {
+          "apellidos": "Penner Dürksen",
+          "idLegislador": 101372,
+          "nombres": "Orlando"
+        },
+        {
+          "apellidos": "Retamozo Delgado",
+          "idLegislador": 101477,
+          "nombres": "Ramón Catalino"
+        },
+        {
+          "apellidos": "Valiente de Rodríguez",
+          "idLegislador": 101349,
+          "nombres": "Regina Lizarella"
+        },
+        {
+          "apellidos": "Zacarías Irún",
+          "idLegislador": 101376,
+          "nombres": "Ernesto Javier"
         }
       ],
       "idProyecto": 160291,
@@ -11332,8 +11332,8 @@
           "appURL": "https://silpy.congreso.gov.py/sesion/112732",
           "camaraSesion": "CAMARA DE SENADORES",
           "fechaSesion": "03/11/2026",
-          "horaFin": "00:00",
-          "horaInicio": "14:40",
+          "horaFin": "19:13",
+          "horaInicio": "14:56",
           "idSesion": 112732,
           "numeroSesion": "191",
           "periodoParlamentarioDTO": {
@@ -11352,6 +11352,135 @@
         },
         "idTramitacion": 444184,
         "numeroSesion": "191",
+        "resultadoTramite": "APROBADO CON MODIFICACIONES"
+      }
+    },
+    {
+      "acapite": "Proyecto de Ley “QUE AMPLÍA LA LEY 2334/03 ‘DE GARANTÍAS DE DEPÓSITO Y RESOLUCIÓN DE ENTIDADES DE INTERMEDIACIÓN FINANCIERA SUJETAS A LA LEY GENERAL DE BANCOS, FINANCIERAS Y OTRAS ENTIDADES DE CRÉDITOS’, Y ESTABLECE EL ANTICIPO DE LA GARANTÍA DE DEPÓSITO”, presentado por los senadores Gustavo Basilio Núñez Giménez, Natalicio Esteban Chase Acosta, Antonio Carlos Barrios Fernández, Ramón Catalino Retamozo Delgado, Rafael Augusto Filizzola Serra, Celeste Josefina Amarilla Vda. de Boccia, Derlis Hernán Maidana Zarza, Regina Lizarella Valiente de Rodríguez, Dionisio Oswaldo Amarilla Guirland, Eduardo Hirohito Nakayama Rojas, Lourdes Noelia Cabrera Petters, Hermelinda Alvarenga de Ortega, Juan Carlos Luis Galaverna Ortega, Orlando Penner Dürksen, Edgar Idalino López Ruíz,  Ernesto Javier Zacarías Irún y Silvio Adalberto Ovelar Benítez de fecha 3 de noviembre de 2026.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/160291",
+      "autores": [
+        {
+          "apellidos": "Alvarenga de Ortega",
+          "idLegislador": 101365,
+          "nombres": "Hermelinda"
+        },
+        {
+          "apellidos": "Amarilla Guirland",
+          "idLegislador": 101373,
+          "nombres": "Dionisio Oswaldo"
+        },
+        {
+          "apellidos": "Amarilla Vda. de Boccia",
+          "idLegislador": 101350,
+          "nombres": "Celeste Josefina"
+        },
+        {
+          "apellidos": "Barrios Fernández",
+          "idLegislador": 101475,
+          "nombres": "Antonio Carlos"
+        },
+        {
+          "apellidos": "Cabrera Petters",
+          "idLegislador": 101381,
+          "nombres": "Lourdes Noelia"
+        },
+        {
+          "apellidos": "Chase Acosta",
+          "idLegislador": 101363,
+          "nombres": "Natalicio Esteban"
+        },
+        {
+          "apellidos": "Filizzola Serra",
+          "idLegislador": 101362,
+          "nombres": "Rafael Augusto"
+        },
+        {
+          "apellidos": "Galaverna Ortega",
+          "idLegislador": 101484,
+          "nombres": "Juan Carlos Luis"
+        },
+        {
+          "apellidos": "López Ruíz",
+          "idLegislador": 101347,
+          "nombres": "Edgar Idalino"
+        },
+        {
+          "apellidos": "Maidana Zarza",
+          "idLegislador": 101341,
+          "nombres": "Derlis Hernán"
+        },
+        {
+          "apellidos": "Nakayama Rojas",
+          "idLegislador": 101358,
+          "nombres": "Eduardo Hirohito"
+        },
+        {
+          "apellidos": "Núñez Giménez",
+          "idLegislador": 101361,
+          "nombres": "Basilio Gustavo"
+        },
+        {
+          "apellidos": "Ovelar Benítez",
+          "idLegislador": 101339,
+          "nombres": "Silvio Adalberto"
+        },
+        {
+          "apellidos": "Penner Dürksen",
+          "idLegislador": 101372,
+          "nombres": "Orlando"
+        },
+        {
+          "apellidos": "Retamozo Delgado",
+          "idLegislador": 101477,
+          "nombres": "Ramón Catalino"
+        },
+        {
+          "apellidos": "Valiente de Rodríguez",
+          "idLegislador": 101349,
+          "nombres": "Regina Lizarella"
+        },
+        {
+          "apellidos": "Zacarías Irún",
+          "idLegislador": 101376,
+          "nombres": "Ernesto Javier"
+        }
+      ],
+      "idProyecto": 160291,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-04"
+        },
+        "camaraTramite": "CAMARA DE DIPUTADOS",
+        "descripcionEtapa": "Segundo trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "04/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-04"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112742",
+          "camaraSesion": "CAMARA DE DIPUTADOS",
+          "fechaSesion": "04/11/2026",
+          "horaFin": "19:00",
+          "horaInicio": "10:00",
+          "idSesion": 112742,
+          "numeroSesion": "92",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "EXTRAORDINARIA"
+        },
+        "idTramitacion": 444441,
+        "numeroSesion": "92",
         "resultadoTramite": "APROBADO CON MODIFICACIONES"
       }
     },
@@ -11402,6 +11531,234 @@
         "idTramitacion": 444443,
         "numeroSesion": "192",
         "resultadoTramite": "APROBADO"
+      }
+    },
+    {
+      "acapite": "QUE IMPLEMENTA Y DESARROLLA LA RED NACIONAL DE BANCO DE LECHE HUMANA EN EL PARAGUAY - presentado por las Diputadas Rocío Abed, Del Pilar Vázquez, y los Diputados Raúl Latorre, Miguel Del Puerto, Sebastián Remesowski, Jazmín Narvaez, Liz Acosta, Johana Vega, Fabiana Souto, Cristina Villalba y Dalia Estigarribia.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/132042",
+      "autores": [
+        {
+          "apellidos": "ABED DE ZACARÍAS",
+          "idLegislador": 101405,
+          "nombres": "MARÍA ROCÍO"
+        },
+        {
+          "apellidos": "ACOSTA BRITEZ",
+          "idLegislador": 101403,
+          "nombres": "LIZ CRISTINA"
+        },
+        {
+          "apellidos": "DEL PUERTO SILVA",
+          "idLegislador": 101454,
+          "nombres": "MIGUEL ANGEL"
+        },
+        {
+          "apellidos": "ESTIGARRIBIA",
+          "idLegislador": 101440,
+          "nombres": "DALIA MARLENE"
+        },
+        {
+          "apellidos": "LATORRE MARTÍNEZ",
+          "idLegislador": 101385,
+          "nombres": "RAÚL LUIS"
+        },
+        {
+          "apellidos": "NARVAEZ OSORIO",
+          "idLegislador": 101437,
+          "nombres": "JAZMIN"
+        },
+        {
+          "apellidos": "REMESOWSKI SQUEF",
+          "idLegislador": 101504,
+          "nombres": "SEBASTIÁN EMILIO"
+        },
+        {
+          "apellidos": "SOUTO DE ALLIANA",
+          "idLegislador": 101480,
+          "nombres": "MARÍA FABIANA"
+        },
+        {
+          "apellidos": "VEGA INSFRAN",
+          "idLegislador": 101434,
+          "nombres": "GLORIA MARÍA JOHANA"
+        },
+        {
+          "apellidos": "VILLALBA DE ABENTE",
+          "idLegislador": 101413,
+          "nombres": "MARÍA CRISTINA"
+        },
+        {
+          "apellidos": "VÁZQUEZ CABRERA",
+          "idLegislador": 101466,
+          "nombres": "DEL PILAR"
+        }
+      ],
+      "idProyecto": 132042,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-04"
+        },
+        "camaraTramite": "CAMARA DE SENADORES",
+        "descripcionEtapa": "Cuarto trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario (4T) - Ratifica",
+        "fechaTramite": "04/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-04"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112722",
+          "camaraSesion": "CAMARA DE SENADORES",
+          "fechaSesion": "04/11/2026",
+          "horaFin": "00:00",
+          "horaInicio": "09:00",
+          "idSesion": 112722,
+          "numeroSesion": "192",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 444465,
+        "numeroSesion": "192",
+        "resultadoTramite": "NO SE RATIFICA"
+      }
+    },
+    {
+      "acapite": "Proyecto de Ley “QUE AMPLÍA LA LEY 2334/03 ‘DE GARANTÍAS DE DEPÓSITO Y RESOLUCIÓN DE ENTIDADES DE INTERMEDIACIÓN FINANCIERA SUJETAS A LA LEY GENERAL DE BANCOS, FINANCIERAS Y OTRAS ENTIDADES DE CRÉDITOS’, Y ESTABLECE EL ANTICIPO DE LA GARANTÍA DE DEPÓSITO”, presentado por los senadores Gustavo Basilio Núñez Giménez, Natalicio Esteban Chase Acosta, Antonio Carlos Barrios Fernández, Ramón Catalino Retamozo Delgado, Rafael Augusto Filizzola Serra, Celeste Josefina Amarilla Vda. de Boccia, Derlis Hernán Maidana Zarza, Regina Lizarella Valiente de Rodríguez, Dionisio Oswaldo Amarilla Guirland, Eduardo Hirohito Nakayama Rojas, Lourdes Noelia Cabrera Petters, Hermelinda Alvarenga de Ortega, Juan Carlos Luis Galaverna Ortega, Orlando Penner Dürksen, Edgar Idalino López Ruíz,  Ernesto Javier Zacarías Irún y Silvio Adalberto Ovelar Benítez de fecha 3 de noviembre de 2026.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/160291",
+      "autores": [
+        {
+          "apellidos": "Alvarenga de Ortega",
+          "idLegislador": 101365,
+          "nombres": "Hermelinda"
+        },
+        {
+          "apellidos": "Amarilla Guirland",
+          "idLegislador": 101373,
+          "nombres": "Dionisio Oswaldo"
+        },
+        {
+          "apellidos": "Amarilla Vda. de Boccia",
+          "idLegislador": 101350,
+          "nombres": "Celeste Josefina"
+        },
+        {
+          "apellidos": "Barrios Fernández",
+          "idLegislador": 101475,
+          "nombres": "Antonio Carlos"
+        },
+        {
+          "apellidos": "Cabrera Petters",
+          "idLegislador": 101381,
+          "nombres": "Lourdes Noelia"
+        },
+        {
+          "apellidos": "Chase Acosta",
+          "idLegislador": 101363,
+          "nombres": "Natalicio Esteban"
+        },
+        {
+          "apellidos": "Filizzola Serra",
+          "idLegislador": 101362,
+          "nombres": "Rafael Augusto"
+        },
+        {
+          "apellidos": "Galaverna Ortega",
+          "idLegislador": 101484,
+          "nombres": "Juan Carlos Luis"
+        },
+        {
+          "apellidos": "López Ruíz",
+          "idLegislador": 101347,
+          "nombres": "Edgar Idalino"
+        },
+        {
+          "apellidos": "Maidana Zarza",
+          "idLegislador": 101341,
+          "nombres": "Derlis Hernán"
+        },
+        {
+          "apellidos": "Nakayama Rojas",
+          "idLegislador": 101358,
+          "nombres": "Eduardo Hirohito"
+        },
+        {
+          "apellidos": "Núñez Giménez",
+          "idLegislador": 101361,
+          "nombres": "Basilio Gustavo"
+        },
+        {
+          "apellidos": "Ovelar Benítez",
+          "idLegislador": 101339,
+          "nombres": "Silvio Adalberto"
+        },
+        {
+          "apellidos": "Penner Dürksen",
+          "idLegislador": 101372,
+          "nombres": "Orlando"
+        },
+        {
+          "apellidos": "Retamozo Delgado",
+          "idLegislador": 101477,
+          "nombres": "Ramón Catalino"
+        },
+        {
+          "apellidos": "Valiente de Rodríguez",
+          "idLegislador": 101349,
+          "nombres": "Regina Lizarella"
+        },
+        {
+          "apellidos": "Zacarías Irún",
+          "idLegislador": 101376,
+          "nombres": "Ernesto Javier"
+        }
+      ],
+      "idProyecto": 160291,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-04"
+        },
+        "camaraTramite": "CAMARA DE SENADORES",
+        "descripcionEtapa": "Tercer trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario (3T) - Modificaciones",
+        "fechaTramite": "04/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-04"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112762",
+          "camaraSesion": "CAMARA DE SENADORES",
+          "fechaSesion": "04/11/2026",
+          "horaFin": "00:00",
+          "horaInicio": "16:00",
+          "idSesion": 112762,
+          "numeroSesion": "193",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "EXTRAORDINARIA"
+        },
+        "idTramitacion": 444474,
+        "numeroSesion": "193",
+        "resultadoTramite": "APROBADAS LAS MODIFICACIONES"
       }
     }
   ],

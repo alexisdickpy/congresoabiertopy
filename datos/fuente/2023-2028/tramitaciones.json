@@ -346880,6 +346880,36 @@
     }
   },
   {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-26"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "26/10/2026",
+      "idTramitacion": 444285,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 151764,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-28"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "28/10/2026",
+      "idTramitacion": 444286,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
+    }
+  },
+  {
     "idProyecto": 151811,
     "tramitacion": {
       "_propio": {
@@ -355565,6 +355595,36 @@
     }
   },
   {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-26"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "26/10/2026",
+      "idTramitacion": 444287,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 154293,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-28"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "28/10/2026",
+      "idTramitacion": 444288,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
+    }
+  },
+  {
     "idProyecto": 154691,
     "tramitacion": {
       "_propio": {
@@ -358577,6 +358637,36 @@
       "idTramitacion": 443926,
       "numeroSesion": "",
       "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 157712,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-26"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "26/10/2026",
+      "idTramitacion": 444293,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 157712,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-28"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "28/10/2026",
+      "idTramitacion": 444294,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
     }
   }
 ]

@@ -6,7 +6,7 @@
 
 | Período | Datos actualizados por última vez |
 |---|---|
-| 2023-2028 | 2026-11-06T15:12:04Z |
+| 2023-2028 | 2026-11-08T13:48:56Z |
 
 La última comprobación de la fuente (aunque no haya cambios) figura en [`estado.json`](estado.json).
 
@@ -66,7 +66,7 @@ Se publica en `fuente/{período}/leyes.json` y `fuente/{período}/leyes.csv`, co
 
 Un registro por trámite del proyecto de cada ley.
 
-Se publica en `fuente/{período}/tramitaciones.json` y `fuente/{período}/tramitaciones.csv`, con 13642 registros en total.
+Se publica en `fuente/{período}/tramitaciones.json` y `fuente/{período}/tramitaciones.csv`, con 13648 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|
