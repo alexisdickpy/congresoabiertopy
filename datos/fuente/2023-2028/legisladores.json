@@ -2753,9 +2753,9 @@
     "_propio": {
       "fuenteRegistro": "legislador?idCamara=A",
       "slug": "antonio-carlos-barrios-fernandez",
-      "vigente": true
+      "vigente": false
     },
-    "activo": true,
+    "activo": false,
     "apellidos": "Barrios Fernández",
     "appURL": "https://silpy.congreso.gov.py/legislador/101475",
     "bancada": "ASOCIACIÓN NACIONAL REPUBLICANA ANR - BANCADA INDEPENDIENTE - HONOR COLORADO",
@@ -3105,9 +3105,9 @@
     "_propio": {
       "fuenteRegistro": "legislador?idCamara=A",
       "slug": "guadalupe-aveiro-solis",
-      "vigente": false
+      "vigente": true
     },
-    "activo": false,
+    "activo": true,
     "apellidos": "Aveiro Solis",
     "appURL": "https://silpy.congreso.gov.py/legislador/101604",
     "bancada": "ASOCIACIÓN NACIONAL REPUBLICANA PARTIDO COLORADO (ANR) - \"A\"",
