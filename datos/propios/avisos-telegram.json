@@ -89,6 +89,21 @@
       "fecha": "2026-11-08T14:59:40Z",
       "id": 444474,
       "tipo": "plenario"
+    },
+    {
+      "fecha": "2026-11-10T16:06:35Z",
+      "id": 160505,
+      "tipo": "proyectos"
+    },
+    {
+      "fecha": "2026-11-10T16:06:35Z",
+      "id": 160506,
+      "tipo": "proyectos"
+    },
+    {
+      "fecha": "2026-11-10T16:06:35Z",
+      "id": 160531,
+      "tipo": "proyectos"
     }
   ],
   "iniciales": {

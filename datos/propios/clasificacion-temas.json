@@ -26501,6 +26501,44 @@
           "tema": "cultura"
         }
       ]
+    },
+    {
+      "idProyecto": 160505,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "pension graciable",
+          "tema": "pensiones-graciables"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160506,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "codigo civil",
+          "tema": "justicia"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160531,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "reserva",
+          "tema": "otros-asuntos"
+        }
+      ]
     }
   ]
 }

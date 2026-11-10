@@ -1,94 +1,6 @@
 [
   {
     "_propio": {
-      "autores": "JOSÉ RAMÓN RODRÍGUEZ MACIEL, LIZ CRISTINA ACOSTA BRITEZ, MIGUEL ANGEL DEL PUERTO SILVA",
-      "fechaIngreso": "2026-08-11"
-    },
-    "acapite": "QUE REGULA LA PROFESIÓN DEL AGENTE COMUNITARIO DE SALUD, CREA LA CARRERA DEL AGENTE COMUNITARIO DE SALUD Y ESTABLECE SU REGIMEN JURIDICO, FUNCIONAL Y LABORAL, presentado por los Diputados Nacionales José Rodríguez, Liz Cristina Acosta y Miguel Ángel del Puerto.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157612",
-    "autores": [
-      {
-        "apellidos": "RODRÍGUEZ MACIEL",
-        "idLegislador": 101390,
-        "nombres": "JOSÉ RAMÓN"
-      },
-      {
-        "apellidos": "ACOSTA BRITEZ",
-        "idLegislador": 101403,
-        "nombres": "LIZ CRISTINA"
-      },
-      {
-        "apellidos": "DEL PUERTO SILVA",
-        "idLegislador": 101454,
-        "nombres": "MIGUEL ANGEL"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694770",
-    "fechaIngresoExpediente": "11/08/2026",
-    "idProyecto": 157612,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "Saúl González Rojas",
-      "fechaIngreso": "2026-08-11"
-    },
-    "acapite": "QUE MODIFICA Y AMPLÍA LOS ARTÍCULOS 13 Y 33 DE LA LEY N° 6670/2020 'QUE ESTABLECE LA MODERNIZACIÓN DEL SISTEMA ESTADÍSTICO NACIONAL (SISEN) Y CREA EL INSTITUTO NACIONAL DE ESTADÍSTICA (INE)', PARA LA INCLUSIÓN DE MÓDULOS Y VARIABLES SOBRE DISCAPACIDAD SOCIOCOGNITIVA Y NEURODIVERGENCIAS EN LAS ESTADÍSTICAS OFICIALES Y REGISTROS ADMINISTRATIVOS, presentado por DIPUTADO NACIONAL SAÚL GONZÁLEZ",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157631",
-    "autores": [
-      {
-        "apellidos": "González Rojas",
-        "idLegislador": 101564,
-        "nombres": "Saúl"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694775",
-    "fechaIngresoExpediente": "11/08/2026",
-    "idProyecto": 157631,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "ENRIQUE ANTONIO CONCEPCIÓN BUZARQUIS CÁCERES",
-      "fechaIngreso": "2026-08-11"
-    },
-    "acapite": "QUE CONCEDE PENSION GRACIABLE AL DESTACADO MÚSICO, COMPOSITOR E INTERPRETE PARAGUAYO ROBERTO PINTO BENÍTEZ”, PRESENTADO POR EL DIPUTADO NACIONAL ANTONIO BUZARQUIS",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157635",
-    "autores": [
-      {
-        "apellidos": "BUZARQUIS CÁCERES",
-        "idLegislador": 101457,
-        "nombres": "ENRIQUE ANTONIO CONCEPCIÓN"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694776",
-    "fechaIngresoExpediente": "11/08/2026",
-    "idProyecto": 157635,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
       "autores": "MARÍA ROCÍO ABED DE ZACARÍAS, BETTINA ROSMARY AGUILERA PANIAGUA, NÉSTOR DAVID CASTELLANO ESCOBAR, MIGUEL ANGEL DEL PUERTO SILVA, CARLOS MARCIAL GODOY GARCIA, RODRIGO DANIEL GAMARRA KRAYACICH",
       "fechaIngreso": "2026-08-12"
     },
@@ -135,113 +47,6 @@
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "MARÍA CONSTANCIA BENÍTEZ DE BENÍTEZ, RODRIGO DANIEL BLANCO AMARILLA, DALIA MARLENE ESTIGARRIBIA, LUIS FEDERICO FRANCO ALFARO, PEDRO JOSÉ GÓMEZ SILVA, CARLOS MARÍA LÓPEZ LÓPEZ, CARLOS ALBERTO PEREIRA RIEVE, ALEJO RIOS MEDINA, MARCELO RAFAEL SALINAS GONZÁLEZ, ARNALDO AGUSTÍN VALDEZ NOGUERA, DEL PILAR VÁZQUEZ CABRERA, JORGE RAMÓN ÁVALOS MARIÑO",
-      "fechaIngreso": "2026-08-11"
-    },
-    "acapite": "QUE MODIFICA Y AMPLÍA LOS ARTÍCULOS 227 Y 234 DE LA LEY Nº 834/1996 \"QUE ESTABLECE EL CÓDIGO ELECTORAL PARAGUAYO\",- presentado por varios Diputados Nacionales.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157651",
-    "autores": [
-      {
-        "apellidos": "BENÍTEZ DE BENÍTEZ",
-        "idLegislador": 101452,
-        "nombres": "MARÍA CONSTANCIA"
-      },
-      {
-        "apellidos": "BLANCO AMARILLA",
-        "idLegislador": 101441,
-        "nombres": "RODRIGO DANIEL"
-      },
-      {
-        "apellidos": "ESTIGARRIBIA",
-        "idLegislador": 101440,
-        "nombres": "DALIA MARLENE"
-      },
-      {
-        "apellidos": "FRANCO ALFARO",
-        "idLegislador": 101442,
-        "nombres": "LUIS FEDERICO"
-      },
-      {
-        "apellidos": "GÓMEZ SILVA",
-        "idLegislador": 101443,
-        "nombres": "PEDRO JOSÉ"
-      },
-      {
-        "apellidos": "LÓPEZ LÓPEZ",
-        "idLegislador": 101451,
-        "nombres": "CARLOS MARÍA"
-      },
-      {
-        "apellidos": "PEREIRA RIEVE",
-        "idLegislador": 101463,
-        "nombres": "CARLOS ALBERTO"
-      },
-      {
-        "apellidos": "RIOS MEDINA",
-        "idLegislador": 101455,
-        "nombres": "ALEJO"
-      },
-      {
-        "apellidos": "SALINAS GONZÁLEZ",
-        "idLegislador": 101439,
-        "nombres": "MARCELO RAFAEL"
-      },
-      {
-        "apellidos": "VALDEZ NOGUERA",
-        "idLegislador": 101469,
-        "nombres": "ARNALDO AGUSTÍN"
-      },
-      {
-        "apellidos": "VÁZQUEZ CABRERA",
-        "idLegislador": 101466,
-        "nombres": "DEL PILAR"
-      },
-      {
-        "apellidos": "ÁVALOS MARIÑO",
-        "idLegislador": 101471,
-        "nombres": "JORGE RAMÓN"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694777",
-    "fechaIngresoExpediente": "11/08/2026",
-    "idProyecto": 157651,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "Enrique Salyn Concepción Buzarquis Cáceres",
-      "fechaIngreso": "2026-08-11"
-    },
-    "acapite": "Proyecto de Ley “LEY GENERAL DE LA INDUSTRIA ELÉCTRICA”, presentado por el senador Enrique Salyn Concepción Buzarquis Cáceres, de fecha 11 de agosto de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157691",
-    "autores": [
-      {
-        "apellidos": "Buzarquis Cáceres",
-        "idLegislador": 101340,
-        "nombres": "Enrique Salyn Concepción"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603855",
-    "fechaIngresoExpediente": "11/08/2026",
-    "idProyecto": 157691,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
     "tipoProyecto": "PROYECTO DE LEY",
     "urgencia": "ORDINARIO"
   },
@@ -3349,7 +3154,7 @@
       "autores": "WALTER HUGO GARCIA MENDEZ",
       "fechaIngreso": "2026-10-27"
     },
-    "acapite": "QUE DESAFECTA DEL DOMINIO PÚBLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE CIUDAD DEL ESTE, PARA SU POSTERIOR TRANSFERENCIA A TÍTULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES DEL ASENTAMIENTO EL PROGRESO. EL INMUEBLE INDIVIDUALIZADO COMO CTAS. CATASTRALES N° 26-5017-01 Y Nº 26-5017-02 UBICADO EN EL LUGAR DENOMINADO KM 7 BARRIO CIUDAD NUEVA DEL DISTRITO DE CIUDAD DEL ESTE DEPARTAMENTO DE ALTO PARANÁ, PRESENTADO POR EL DIPUTADO NACIONAL WALTER GARCÍA",
+    "acapite": "QUE DESAFECTA DEL DOMINIO PÚBLICO MUNICIPAL Y AUTORIZA A LA MUNICIPALIDAD DE CIUDAD DEL ESTE, PARA SU POSTERIOR TRANSFERENCIA A TÍTULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES DEL ASENTAMIENTO “EL PROGRESO”, EL INMUEBLE INDIVIDUALIZADO COMO CTAS. CATASTRALES N° 26-5017-01 Y Nº 26-5017-02 UBICADO EN EL LUGAR DENOMINADO KM 7 BARRIO CIUDAD NUEVA DEL DISTRITO DE CIUDAD DEL ESTE DEPARTAMENTO DE ALTO PARANÁ, PRESENTADO POR EL DIPUTADO NACIONAL WALTER GARCÍA",
     "appURL": "https://silpy.congreso.gov.py/expediente/160163",
     "autores": [
       {
@@ -3375,7 +3180,7 @@
       "autores": "GERMAN SOLINGER SANTANDER",
       "fechaIngreso": "2026-10-27"
     },
-    "acapite": "QUE DECLARA DE INTERÉS SOCIAL Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE URBANISMO, VIVIENDA Y HÁBITAT (MUVH), UN INMUEBLE INDIVIDUALIZADO COMO PARTE DEL FRACCIONAMIENTO DE LA FINCA N° 8282 PADRÓN Nº 4680 UBICADO EN EL LUGAR DENOMINADO ARROYO PORA (ANTES “PARAJE” SANTA MARÍA) DEL DISTRITO DE CAMBYRETA DEPARTAMENTO DE ITAPUÁ, PARA SU POSTERIOR TRANSFERENCIA A TÍTULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES DEL ASENTAMIENTO ARROYO PORA, PRESENTADO POR EL DIPUTADO NACIONAL GERMÁN SOLINGER",
+    "acapite": "QUE DECLARA DE INTERÉS SOCIAL Y EXPROPIA A FAVOR DEL MINISTERIO DE URBANISMO, VIVIENDA Y HÁBITAT (MUVH), UN INMUEBLE INDIVIDUALIZADO COMO PARTE DEL FRACCIONAMIENTO DE LA FINCA N° 8282 PADRÓN Nº 4680 UBICADO EN EL LUGAR DENOMINADO ARROYO PORA (ANTES “PARAJE” SANTA MARÍA) DEL DISTRITO DE CAMBYRETA DEPARTAMENTO DE ITAPÚA, PARA SU POSTERIOR TRANSFERENCIA A TÍTULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES DEL ASENTAMIENTO ARROYO PORA, PRESENTADO POR EL DIPUTADO NACIONAL GERMÁN SOLINGER",
     "appURL": "https://silpy.congreso.gov.py/expediente/160165",
     "autores": [
       {
@@ -3401,7 +3206,7 @@
       "autores": "MARÍA ROCÍO ABED DE ZACARÍAS",
       "fechaIngreso": "2026-10-28"
     },
-    "acapite": "QUE MODIFICA EL ARTÍCULO 1º DE LA LEY N.º 3803/2009 “QUE OTORGA LICENCIA A TRABAJADORAS PARA SOMETERSE A EXÁMENES DE PAPANICOLAU Y MAMOGRAFÍA “, MODIFICADO POR LA LEY N.º 6.211/2018, PRESENTADO POR LA DIPUTADA NACIONAL ROCIO ABED",
+    "acapite": "QUE MODIFICA EL ARTÍCULO 1º DE LA LEY N.º 3803/2009 “QUE OTORGA LICENCIA A TRABAJADORAS PARA SOMETERSE A EXÁMENES DE PAPANICOLAU Y MAMOGRAFÍA”, MODIFICADO POR LA LEY N.º 6.211/2018, PRESENTADO POR LA DIPUTADA NACIONAL ROCÍO ABED",
     "appURL": "https://silpy.congreso.gov.py/expediente/160167",
     "autores": [
       {
@@ -3994,6 +3799,84 @@
     "expedienteCamara": "D-2696187",
     "fechaIngresoExpediente": "04/11/2026",
     "idProyecto": 160413,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "José Gregorio Ledesma Narváez",
+      "fechaIngreso": "2026-11-05"
+    },
+    "acapite": "Proyecto de Ley “QUE CONCEDE PENSIÓN GRACIABLE AL SEÑOR REMIGIO CABAÑAS MOREL CON C.I. N° 2.185.943”, presentado por el senador José Gregorio Ledesma Narváez, de fecha 30 de octubre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160505",
+    "autores": [
+      {
+        "apellidos": "Ledesma Narváez",
+        "idLegislador": 101368,
+        "nombres": "José Gregorio"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604254",
+    "fechaIngresoExpediente": "05/11/2026",
+    "idProyecto": 160505,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Walter Janusz Ricardo Kobylanski Brandhuber",
+      "fechaIngreso": "2026-11-05"
+    },
+    "acapite": "Proyecto de Ley “DE EMERGENCIA, QUE INTERPRETA EL ARTÍCULO 424 DEL CÓDIGO CIVIL Y ESTABLECE UN RÉGIMEN ESPECIAL SOBRE LA MORA DE LOS DEUDORES DE CRÉDITOS DEL ACTIVO DE UENO BANK S.A., SOMETIDA A PROCEDIMIENTO DE RESOLUCIÓN”, presentado por el senador Walter Janusz Ricardo Kobylanski Brandhuber, de fecha 5 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160506",
+    "autores": [
+      {
+        "apellidos": "Kobylanski Brandhuber",
+        "idLegislador": 101594,
+        "nombres": "Walter Janusz Ricardo"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604255",
+    "fechaIngresoExpediente": "05/11/2026",
+    "idProyecto": 160506,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "MAURICIO FABIAN ESPÍNOLA NÚÑEZ",
+      "fechaIngreso": "2026-11-09"
+    },
+    "acapite": "QUE ESTABLECE MEDIDAS EXTRAORDINARIAS PARA LA RECUPERACIÓN DE ACTIVOS Y FONDOS PÚBLICOS PREVISIONALES EN EL MARCO DEL CASO UENO BANK S.A.,- presentado por el Diputado Nacional Mauricio Espínola.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160531",
+    "autores": [
+      {
+        "apellidos": "ESPÍNOLA NÚÑEZ",
+        "idLegislador": 101387,
+        "nombres": "MAURICIO FABIAN"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696251",
+    "fechaIngresoExpediente": "09/11/2026",
+    "idProyecto": 160531,
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE DIPUTADOS",
