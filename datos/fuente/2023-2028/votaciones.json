@@ -84062,9 +84062,9 @@
       },
       "acapite": "QUE DECLARA DE INTERÉS SOCIAL Y EXPROPIA A FAVOR DEL MINISTERIO DE URBANISMO,VIVIENDA Y HÁBITAT (MUVH), UN INMUEBLE INDIVIDUALIZADO COMO FINCA Nº 6088 (MATRIZ)  Y CTA. CTE. CTRAL Nº 26-7588-1 SITUADO EN LA CALLE 10 Y 11 ACARAY CON UNA SUPERFICIE DE 2 HAS, UBICADO EN EL DISTRITO DE CIUDAD DEL ESTE, DEPARTAMENTO DE ALTO PARANÁ, PARA SU POSTERIOR TRANSFERENCIA A TÍTULO ONEROSOA FAVOR DE LOS ACTUALES OCUPANTES DEL ASENTAMIENTO 1º DE JUNIO-PRESENTADO POR LA DIPUTADA NACIONAL MARÍA ROCÍO ABED DE ZACARÍAS ",
       "appURL": "https://silpy.congreso.gov.py/expediente/141961",
-      "descripcionEtapa": "TERCER TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "RESOLUCIÓN DE SANCIÓN AUTOMÁTICA EN 3T (RECHAZO)",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "ARCHIVADO",
+      "estadoProyecto": "ARCHIVADO",
       "expedienteCamara": "D-2583988",
       "fechaIngresoExpediente": "22/04/2025",
       "idProyecto": 141961,
@@ -86151,7 +86151,7 @@
       "acapite": "QUE DISPONE LA TRANSFERENCIA A TITULO GRATUITO A FAVOR DEL MINISTERIO DE URBANISMO, VIVIENDA Y HÁBITAT (MUVH), EL INMUEBLE DE LA FINCA Nº 1.141 PADRÓN Nº 1.696 LOTE 178, PROPIEDAD DE MINISTERIO DE DEFENSA NACIONAL, PARA SU POSTERIOR TRANSFERENCIA A TITULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES ",
       "appURL": "https://silpy.congreso.gov.py/expediente/144442",
       "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2585933",
       "fechaIngresoExpediente": "09/07/2025",
@@ -87001,7 +87001,7 @@
       "acapite": "QUE CAMBIA DE DENOMINACIÓN A LA RUTA PY 19 VIRGEN DEL ROSARIO Y PASA A DENOMINARSE PY19 VIRGEN DEL PILAR, PRESENTADO POR LOS DIPUTADOS NACIONALES DIOSNEL AGUILERA Y FABIANA SOUTO",
       "appURL": "https://silpy.congreso.gov.py/expediente/146693",
       "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2587759",
       "fechaIngresoExpediente": "02/09/2025",
@@ -91149,6 +91149,542 @@
       "idTramitacion": 444464,
       "numeroSesion": "192",
       "resultadoTramite": "APRUEBA TERNA"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 45,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "AUSENTE": 1,
+        "SI": 44
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109435",
+    "descripcion": "La Presidencia somete a votación nominal la culpabilidad o no en el proceso del Juicio Político al Presidente de la República Don Santiago Peña Palacios.",
+    "idVotacion": 109435,
+    "observacion": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-11-04"
+      },
+      "acapite": "QUE DISPONE LA FORMULACIÓN DE LA ACUSACIÓN EN JUICIO POLÍTICO CONTRA EL PRESIDENTE DE LA REPÚBLICA DEL PARAGUAY, DON SANTIAGO PEÑA PALACIOS, CONFORME AL ARTÍCULO 225 DE LA CONSTITUCIÓN NACIONAL, PRESENTADO POR VARIOS DIPUTADOS NACIONALES",
+      "appURL": "https://silpy.congreso.gov.py/expediente/160381",
+      "descripcionEtapa": "FINALIZACIÓN DE TRAMITACIÓN",
+      "descripcionSubEtapa": "SE COMUNICA A LA CÁMARA DE DIPUTADOS Y A QUIEN CORRESPONDA",
+      "estadoProyecto": "COMUNICADO",
+      "expedienteCamara": "D-2696185",
+      "fechaIngresoExpediente": "04/11/2026",
+      "idProyecto": 160381,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "JUICIO POLÍTICO ART. 225 C.N.",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 0,
+    "totalAusente": 1,
+    "totalNO": 0,
+    "totalNoVota": 0,
+    "totalSI": 44,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-06"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario - Juicio Político",
+      "fechaTramite": "06/11/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-11-06"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112822",
+        "camaraSesion": "CAMARA DE SENADORES",
+        "fechaSesion": "06/11/2026",
+        "horaFin": "00:00",
+        "horaInicio": "18:00",
+        "idSesion": 112822,
+        "numeroSesion": "198",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 445206,
+      "numeroSesion": "198",
+      "resultadoTramite": "DECLARA CULPABLE EN MAYORÍA 2/3 Y SEPARA DEL CARGO"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "AUSENTE": 24,
+        "SI": 56
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109445",
+    "descripcion": "Consideración del Proyecto de Ley, “QUE DECLARA EN ESTADO DE EMERGENCIA VIAL LA AVENIDA\nTSUNESABURŌ MAKIGUCHI QUE UNE LAS CIUDADES DE LUQUE Y LIMPIO, DEPARTAMENTO CENTRAL”.",
+    "idVotacion": 109445,
+    "observacion": "(Si) Aprobación en general (No) Rechazo Resultado: Aprobado en general",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-05-25"
+      },
+      "acapite": "QUE DECLARA EN ESTADO DE EMERGENCIA VIAL LA AVENIDA TSUNESABURO MAKIGUCHI, QUE UNE LAS CIUDADES DE LUQUE Y LIMPIO, DEPARTAMENTO CENTRAL, PRESENTADO POR EL DIPUTADO NACIONAL PEDRO GÓMEZ",
+      "appURL": "https://silpy.congreso.gov.py/expediente/154944",
+      "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "D-2693472",
+      "fechaIngresoExpediente": "25/05/2026",
+      "idProyecto": 154944,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 0,
+    "totalAusente": 24,
+    "totalNO": 0,
+    "totalNoVota": 0,
+    "totalSI": 56,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-13"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "13/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-13"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112632",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "13/10/2026",
+        "horaFin": "13:51",
+        "horaInicio": "09:50",
+        "idSesion": 112632,
+        "numeroSesion": "89",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 441134,
+      "numeroSesion": "89",
+      "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "AUSENTE": 31,
+        "SI": 49
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109446",
+    "descripcion": "Consideración del Decreto Nº 6259, “POR EL CUAL SE OBJETA TOTALMENTE EL PROYECTO DE LEY Nº\n7678/2026, QUE MODIFICA EL ARTÍCULO 9° DE LA LEY N° 7264/2024 “QUE CREA EL FONDO NACIONAL DE\nALIMENTACIÓN ESCOLAR PARA LA UNIVERSALIZACIÓN EQUITATIVA DE LA ALIMENTACIÓN ESCOLAR (HAMBRE\nCERO EN NUESTRAS ESCUELAS Y SISTEMA EDUCATIVO), MODIFICA Y AMPLÍA LA LEY Nº 5210/2014 ‘DE\nALIMENTACION ESCOLAR Y CONTROL SANITARIO’ Y SUS POSTERIORES MODIFICACIONES Y MODIFICA LA LEY Nº\n6628/2020 ‘QUE ESTABLECE LA GRATUIDAD DE LOS CURSOS DE ADMISIÓN Y DE GRADO EN TODAS LAS\nUNIVERSIDADES PÚBLICAS DEL PAÍS, EN EL INSTITUTO SUPERIOR DE BELLAS ARTES, INSTITUTO NACIONAL DE\nEDUCACIÓN SUPERIOR, EN INSTITUTOS DE FORMACIÓN DOCENTE, DEPENDIENTES DEL MINISTERIO DE\nEDUCACIÓN Y CIENCIAS Y EN EL INSTITUTO NACIONAL DE SALUD Y MODIFICA LOS ARTÍCULOS 3°, 5° Y 6° DE LA\nLEY Nº 4758/2012 ‘QUE CREA EL FONDO NACIONAL DE INVERSIÓN PUBLICA Y DESARROLLO (FONACIDE) Y EL\nFONDO PARA LA EXCELENCIA DE LA EDUCACIÓN Y LA INVESTIGACIÓN’, Y SUS MODIFICATORIAS”.",
+    "idVotacion": 109446,
+    "observacion": "(Si) Aceptar la Objeción Total del Decreto (No) Rechazar la Objeción Total del Decreto Resultado: Se acepta la Objeción Total del Decreto",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-03-04"
+      },
+      "acapite": "Proyecto de Ley “QUE MODIFICA EL ARTÍCULO 9° DE LA LEY N° 7264/24 ‘QUE CREA EL FONDO NACIONAL DE ALIMENTACIÓN ESCOLAR PARA LA UNIVERSALIZACIÓN EQUITATIVA DE LA ALIMENTACIÓN ESCOLAR (HAMBRE CERO EN NUESTRAS ESCUELAS Y SISTEMA EDUCATIVO), MODIFICA Y AMPLÍA LA LEY Nº 5210/2014 ‘DE ALIMENTACION ESCOLAR Y CONTROL SANITARIO” Y SUS POSTERIORES MODIFICACIONES Y MODIFICA LA LEY Nº 6628/2020 ‘QUE ESTABLECE LA GRATUIDAD DE LOS CURSOS DE ADMISIÓN Y DE GRADO EN TODAS LAS UNIVERSIDADES PÚBLICAS DEL PAÍS, EN EL INSTITUTO SUPERIOR DE BELLAS ARTES, INSTITUTO NACIONAL DE EDUCACIÓN SUPERIOR, EN INSTITUTOS DE FORMACIÓN DOCENTE, DEPENDIENTES DEL MINISTERIO DE EDUCACIÓN Y CIENCIAS Y EN EL INSTITUTO NACIONAL DE SALUD Y MODIFICA LOS ARTÍCULOS 3°, 5° Y 6° DE LA LEY Nº 4758/2012 ‘QUE CREA EL FONDO NACIONAL DE INVERSIÓN PUBLICA Y DESARROLLO (FONACIDE) Y EL FONDO PARA LA EXCELENCIA DE LA EDUCACIÓN Y LA INVESTIGACIÓN’, Y SUS MODIFICATORIAS”, presentado por el senador Silvio Adalberto Ovelar Benítez, de fecha 4 de marzo de 2026.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/152081",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "ARCHIVADO",
+      "estadoProyecto": "ARCHIVADO",
+      "expedienteCamara": "S-2603200",
+      "fechaIngresoExpediente": "04/03/2026",
+      "idProyecto": 152081,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 0,
+    "totalAusente": 31,
+    "totalNO": 0,
+    "totalNoVota": 0,
+    "totalSI": 49,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-13"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Discusion Objeción Total en CR",
+      "descripcionSubEtapa": "Discusión Plenario (Aprobacion Objeción en CO)",
+      "fechaTramite": "13/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-13"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112632",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "13/10/2026",
+        "horaFin": "13:51",
+        "horaInicio": "09:50",
+        "idSesion": 112632,
+        "numeroSesion": "89",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 441136,
+      "numeroSesion": "89",
+      "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "AUSENTE": 34,
+        "NO": 45,
+        "SI": 1
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109455",
+    "descripcion": "Consideración del Proyecto de Ley, “QUE DECLARA DE INTERÉS SOCIAL Y EXPROPIA A FAVOR DEL\nESTADO PARAGUAYO - MINISTERIO DE URBANISMO, VIVIENDA Y HÁBITAT, EL INMUEBLE INDIVIDUALIZADO COMO\nPARTE DE LA FINCA N° 2.263, CON PADRÓN N° 14.006, ASIENTO DEL TERRITORIO SOCIAL 6 DE ENERO, UBICADOS\nEN MARISCAL ESTIGARRIBIA, BARRIO LAURELTY ENTRE CAMPO VERDE COMPAÑÍA 10, DEL DISTRITO DE\nCAPIATÁ RUTA 2, DEPARTAMENTO CENTRAL, PARA SU POSTERIOR TRANSFERENCIA A TÍTULO ONEROSO A\nFAVOR DE SUS ACTUALES OCUPANTES”.",
+    "idVotacion": 109455,
+    "observacion": "(Si) Aprobación en general (No) Rechazo Resultado: Rechazado",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2024-08-13"
+      },
+      "acapite": "Proyecto de Ley “QUE DECLARA DE INTERÉS SOCIAL Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO – MINISTERIO DE URBANISMO, VIVIENDA Y HABITAT (MUVH) EL INMUEBLE INDIVIDUALIZADO COMO PARTE DE LA FINCA N° 2.263, CON PADRÓN N° 14.006, ASIENTO DEL TERRITORIO SOCIAL 6 ENERO UBICADOS EN MARISCAL ESTIGARRIBIA BARRIO LAURELTY ENTRE CAMPO VERDE COMPAÑÍA 10 DEL DISTRITO DE CAPIATÁ RUTA 2, DEPARTAMENTO CENTRAL, PARA SU POSTERIOR TRANSFERENCIA A TÍTULO ONEROSO A FAVOR DE SU ACTUALES OCUPANTES”, presentado por el senador José Gregorio Ledesma Narvaez, de fecha 13 de agosto de 2024.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/135075",
+      "descripcionEtapa": "TERCER TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN - (3T) - RECHAZO",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "S-2401390",
+      "fechaIngresoExpediente": "13/08/2024",
+      "idProyecto": 135075,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 0,
+    "totalAusente": 34,
+    "totalNO": 45,
+    "totalNoVota": 0,
+    "totalSI": 1,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-13"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "13/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-13"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112632",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "13/10/2026",
+        "horaFin": "13:51",
+        "horaInicio": "09:50",
+        "idSesion": 112632,
+        "numeroSesion": "89",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 441139,
+      "numeroSesion": "89",
+      "resultadoTramite": "RECHAZADO"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "ABSTENCIÓN/BLANCO": 1,
+        "AUSENTE": 35,
+        "SI": 44
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109456",
+    "descripcion": "Consideración del Proyecto de Ley, “QUE DEROGA LA LEY Nº 3.315/2007, CARTA ORGÁNICA DE LA\nUNIVERSIDAD NACIONAL DE VILLARRICA DEL ESPÍRITU SANTO, CREADA POR LA LEY Nº 3.208, DE FECHA 30 DE\nMAYO DE 2007”.",
+    "idVotacion": 109456,
+    "observacion": "(Si) Aprobación en general y en particular (No) Rechazo Resultado: Aprobado en general y en particular",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-05-05"
+      },
+      "acapite": "Proyecto de Ley “QUE MODIFICA Y DEROGA LOS ARTÍCULOS DE LA LEY N° 3315/2007 ‘CARTA ORGÁNICA DE LA UNIVERSIDAD NACIONAL DE VILLARRICA DEL ESPÍRITU SANTO, CREADA POR LEY N° 3208, DE FECHA 30 DE MAYO DE 2007”, presentado por el senador Dionisio Oswaldo Amarilla Guirland, de fecha 29 de abril de 2026.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/154264",
+      "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "RESOLUCIÓN SANCION COMPLETA",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "S-2603458",
+      "fechaIngresoExpediente": "05/05/2026",
+      "idProyecto": 154264,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 1,
+    "totalAusente": 35,
+    "totalNO": 0,
+    "totalNoVota": 0,
+    "totalSI": 44,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-13"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "13/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-13"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112632",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "13/10/2026",
+        "horaFin": "13:51",
+        "horaInicio": "09:50",
+        "idSesion": 112632,
+        "numeroSesion": "89",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 441141,
+      "numeroSesion": "89",
+      "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "ABSTENCIÓN/BLANCO": 1,
+        "AUSENTE": 33,
+        "SI": 46
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109465",
+    "descripcion": "Consideración del Proyecto de Ley, “QUE MODIFICA Y AMPLÍA EL ARTÍCULO 289 DE LA LEY Nº\n1160/1997 “CODIGO PENAL”.",
+    "idVotacion": 109465,
+    "observacion": "(Si) Aceptar las modificaciones introducidas por la Cámara de Senadores (No) Rechazar las modificaciones introducidas por la Cámara de Senadores Resultado: Se acepta las modificaciones introducidas por la Cámara de Senadores",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2024-12-17"
+      },
+      "acapite": "QUE MODIFICA Y AMPLIA EL ARTICULO 289 DE LA LEY 1160/97 CODIGO PENAL PARAGUAYO, presentado por el Diputado Nacional Yamil Esgaib",
+      "appURL": "https://silpy.congreso.gov.py/expediente/139451",
+      "descripcionEtapa": "TERCER TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "RESOLUCIÓN DE SANCIÓN SEGUN CÁMARA REVISORA",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "D-2482677",
+      "fechaIngresoExpediente": "17/12/2024",
+      "idProyecto": 139451,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 1,
+    "totalAusente": 33,
+    "totalNO": 0,
+    "totalNoVota": 0,
+    "totalSI": 46,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-13"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Tercer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario (3T) - Modificaciones",
+      "fechaTramite": "13/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-13"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112632",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "13/10/2026",
+        "horaFin": "13:51",
+        "horaInicio": "09:50",
+        "idSesion": 112632,
+        "numeroSesion": "89",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 441140,
+      "numeroSesion": "89",
+      "resultadoTramite": "APROBADAS LAS MODIFICACIONES"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "ABSTENCIÓN/BLANCO": 6,
+        "AUSENTE": 37,
+        "SI": 37
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109475",
+    "descripcion": "Consideración del Proyecto de Ley, “QUE CONCEDE PENSIÓN GRACIABLE AL SEÑOR DESIDERIO\nLARROSA RAMÍREZ”.",
+    "idVotacion": 109475,
+    "observacion": "(Si) Aprobación en general (No) Rechazo Resultado: Aprobado en general",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-04-07"
+      },
+      "acapite": "QUE CONCEDE PENSIÓN GRACIABLE AL SEÑOR DESIDERIO LARROSA RAMÍREZ, PRESENTADO POR EL DIPUTADO NACIONAL HUGO MEZA",
+      "appURL": "https://silpy.congreso.gov.py/expediente/153108",
+      "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "D-2692446",
+      "fechaIngresoExpediente": "07/04/2026",
+      "idProyecto": 153108,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 6,
+    "totalAusente": 37,
+    "totalNO": 0,
+    "totalNoVota": 0,
+    "totalSI": 37,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-13"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "13/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-13"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112632",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "13/10/2026",
+        "horaFin": "13:51",
+        "horaInicio": "09:50",
+        "idSesion": 112632,
+        "numeroSesion": "89",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 441142,
+      "numeroSesion": "89",
+      "resultadoTramite": "APROBADO"
     }
   }
 ]

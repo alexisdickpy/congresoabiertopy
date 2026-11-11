@@ -104,6 +104,36 @@
       "fecha": "2026-11-10T16:06:35Z",
       "id": 160531,
       "tipo": "proyectos"
+    },
+    {
+      "fecha": "2026-11-11T15:50:21Z",
+      "id": 109445,
+      "tipo": "votaciones"
+    },
+    {
+      "fecha": "2026-11-11T15:50:21Z",
+      "id": 109446,
+      "tipo": "votaciones"
+    },
+    {
+      "fecha": "2026-11-11T15:50:21Z",
+      "id": 109455,
+      "tipo": "votaciones"
+    },
+    {
+      "fecha": "2026-11-11T15:50:21Z",
+      "id": 109456,
+      "tipo": "votaciones"
+    },
+    {
+      "fecha": "2026-11-11T15:50:21Z",
+      "id": 109465,
+      "tipo": "votaciones"
+    },
+    {
+      "fecha": "2026-11-11T15:50:21Z",
+      "id": 109475,
+      "tipo": "votaciones"
     }
   ],
   "iniciales": {

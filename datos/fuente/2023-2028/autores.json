@@ -31214,6 +31214,29 @@
     "_propio": {
       "delPeriodo": true,
       "orden": 1,
+      "slug": "jose-gregorio-ledesma-narvaez"
+    },
+    "idProyecto": 135075,
+    "legislador": {
+      "activo": true,
+      "apellidos": "Ledesma Narváez",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101368",
+      "bancada": "PARTIDO LIBERAL RADICAL AUTENTICO (PLRA) \"A\"",
+      "camaraParlamentario": "CAMARA DE SENADORES",
+      "cargoBancada": "LIDER",
+      "departamento": "NACIONAL",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101368.jpg",
+      "idLegislador": 101368,
+      "nombres": "José Gregorio",
+      "partidoPolitico": "Partido Liberal Radical Auténtico PLRA",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 1,
       "slug": "miguel-angel-del-puerto-silva"
     },
     "idProyecto": 135172,
@@ -47659,6 +47682,29 @@
     "_propio": {
       "delPeriodo": true,
       "orden": 1,
+      "slug": "hugo-joel-meza"
+    },
+    "idProyecto": 153108,
+    "legislador": {
+      "activo": true,
+      "apellidos": "MEZA",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101424",
+      "bancada": "BANCADA DE LA ASOCIACIÓN NACIONAL REPUBLICANA ANR - B",
+      "camaraParlamentario": "CAMARA DE DIPUTADOS",
+      "cargoBancada": "MIEMBRO",
+      "departamento": "CORDILLERA",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101424.jpg",
+      "idLegislador": 101424,
+      "nombres": "HUGO JOEL",
+      "partidoPolitico": "Asociación Nacional Republicana ANR",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 1,
       "slug": "hermelinda-alvarenga-de-ortega"
     },
     "idProyecto": 153616,
@@ -48157,6 +48203,29 @@
       "idLegislador": 101390,
       "nombres": "JOSÉ RAMÓN",
       "partidoPolitico": "Asociación Nacional Republicana ANR",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 1,
+      "slug": "dionisio-oswaldo-amarilla-guirland"
+    },
+    "idProyecto": 154264,
+    "legislador": {
+      "activo": true,
+      "apellidos": "Amarilla Guirland",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101373",
+      "bancada": "PARTIDO LIBERAL RADICAL AUTÉNTICO (PLRA) – ELIGIO AYALA",
+      "camaraParlamentario": "CAMARA DE SENADORES",
+      "cargoBancada": "LIDER",
+      "departamento": "NACIONAL",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101373.jpg",
+      "idLegislador": 101373,
+      "nombres": "Dionisio Oswaldo",
+      "partidoPolitico": "Partido Liberal Radical Auténtico PLRA",
       "periodoLegislativo": "2023-2028",
       "tipoParlamentario": "TITULAR"
     }
@@ -49398,6 +49467,29 @@
       "fotoURL": "https://silpy.congreso.gov.py/images/101463.jpg",
       "idLegislador": 101463,
       "nombres": "CARLOS ALBERTO",
+      "partidoPolitico": "Partido Liberal Radical Auténtico PLRA",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 1,
+      "slug": "pedro-jose-gomez-silva"
+    },
+    "idProyecto": 154944,
+    "legislador": {
+      "activo": true,
+      "apellidos": "GÓMEZ SILVA",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101443",
+      "bancada": "BANCADA DEL PARTIDO LIBERAL RADICAL AUTÉNTICO PLRA - PL",
+      "camaraParlamentario": "CAMARA DE DIPUTADOS",
+      "cargoBancada": "MIEMBRO",
+      "departamento": "CENTRAL",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101443.jpg",
+      "idLegislador": 101443,
+      "nombres": "PEDRO JOSÉ",
       "partidoPolitico": "Partido Liberal Radical Auténtico PLRA",
       "periodoLegislativo": "2023-2028",
       "tipoParlamentario": "TITULAR"
