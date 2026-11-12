@@ -8277,7 +8277,7 @@
     "_propio": {
       "fechaIngreso": "2024-11-06"
     },
-    "acapite": "Proyecto de Ley “DE ELIMINACIÓN DE SEGUROS MÉDICOS PRIVADOS PARA FUNCIONARIOS PÚBLICOS DEL ESTADO”, presentado por los senadores Rafael Augusto Filizzola Serra, Ramona Yolanda Paredes, Ignacio Iramain Chilavert, Colym Gregorio Soroka Benítez, Eduardo Hirohito Nakayama Rojas y José Daniel Oviedo Antúnez, de fecha 6 de noviembre de 2024.",
+    "acapite": "Proyecto de Ley “DE ELIMINACIÓN DE SEGUROS MÉDICOS PRIVADOS PARA FUNCIONARIOS PÚBLICOS DEL ESTADO”, presentado por los senadores Rafael Augusto Filizzola Serra, Ramona Yolanda Paredes, Ignacio Iramain Chilavert, Eduardo Hirohito Nakayama Rojas y José Daniel Oviedo Antúnez, de fecha 6 de noviembre de 2024.",
     "appURL": "https://silpy.congreso.gov.py/expediente/138347",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "S-2401672",
@@ -18037,7 +18037,7 @@
     },
     "acapite": "Mensaje del Poder Ejecutivo N.º 372 del Ministerio de Agricultura y Ganadería, de fecha 16 de abril de 2026, por el cual remite el Proyecto de Ley “QUE MODIFICA EL ARTÍCULO 52 DE LA LEY N° 1862/02 ‘QUE ESTABLECE EL ESTATUTO AGRARIO’, EL ARTÍCULO 1 DE LA LEY N° 5881/17 ‘QUE MODIFICA EL ARTÍCULO 56 DE LA LEY N° 1863/02 ‘QUE ESTABLECE EL ESTATUTO AGRARIO’, MODIFICADA POR LAS LEYES N° 2002/02 Y 4.988/13, Y EL ARTÍCULO 14 DE LA LEY N° 2.419/2002 ‘QUE CREA EL INSTITUTO NACIONAL DE DESARROLLO RURAL Y DE LA TIERRA”.",
     "appURL": "https://silpy.congreso.gov.py/expediente/153651",
-    "estadoProyecto": "EN TRAMITE",
+    "estadoProyecto": "RETIRADO",
     "expedienteCamara": "S-2603413",
     "fechaIngresoExpediente": "17/04/2026",
     "idProyecto": 153651,
@@ -21509,7 +21509,7 @@
     },
     "acapite": "Mensaje del Poder Ejecutivo N.º 416.- Ministerio de Economía y Finanzas, de fecha 12 de octubre de 2026, por el cual remite el Proyecto de Ley “QUE CREA LA DIRECCIÓN NACIONAL DE JUEGOS DE AZAR (DINAJZAR) Y ESTABLECE EL RÉGIMEN JURÍDICO DE LOS JUEGOS DE AZAR”. ",
     "appURL": "https://silpy.congreso.gov.py/expediente/159642",
-    "estadoProyecto": "EN TRAMITE",
+    "estadoProyecto": "RETIRADO",
     "expedienteCamara": "S-2604162",
     "fechaIngresoExpediente": "12/10/2026",
     "idProyecto": 159642,
@@ -22131,6 +22131,118 @@
     "idProyecto": 160531,
     "iniciativa": "PARLAMENTARIA",
     "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-10"
+    },
+    "acapite": "QUE DISPONE LA DESCENTRALIZACIÓN Y MUNICIPALIZACIÓN DEL PROGRAMA HAMBRE CERO, ESTABLECIENDO LA ELABORACIÓN LOCAL DE ALIMENTOS Y LA CONTRATACIÓN DEL PERSONAL DE LA COMUNIDAD EDUCATIVA, PRESENTADO POR EL DIPUTADO ARNALDO VALDÉZ.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160641",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696274",
+    "fechaIngresoExpediente": "10/11/2026",
+    "idProyecto": 160641,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-10"
+    },
+    "acapite": "Proyecto de Ley “QUE CREA LA LÍNEA DE GARANTÍA ESPECIAL DE EMERGENCIA PARA LA RECOMPOSICIÓN DEL CAPITAL OPERATIVO DE LAS MIPYMES AFECTADAS POR LA CRISIS DEL UENO BANK, A CARGO DEL FONDO DE GARANTÍAS DEL PARAGUAY (FOGAPY)”, presentado por el senador Ever Villalba, de fecha 10 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160675",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604263",
+    "fechaIngresoExpediente": "10/11/2026",
+    "idProyecto": 160675,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-10"
+    },
+    "acapite": "Proyecto de Ley “QUE ESTABLECE LA SUSPENSIÓN TEMPORAL DE LA CONVERSIÓN DE EMPRESAS FINANCIERAS EN BANCOS Y DEL OTORGAMIENTO DE NUEVAS LICENCIAS BANCARIAS”, presentado por el senador Walter Janusz Ricardo Kobylanski Brandhuber, de fecha 10 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160676",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604264",
+    "fechaIngresoExpediente": "10/11/2026",
+    "idProyecto": 160676,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-11"
+    },
+    "acapite": "Proyecto de Ley “DE FILOSOFÍA COMO MATERIA FUNDAMENTAL Y OBLIGATORIA EN LA EDUCACIÓN MEDIA”, presentado por el senador Eduardo Hirohito Nakayama Rojas, de fecha 11 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160677",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604265",
+    "fechaIngresoExpediente": "11/11/2026",
+    "idProyecto": 160677,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-09"
+    },
+    "acapite": "Proyecto de Ley “QUE DECLARA DE INTERÉS SOCIAL Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO – INSTITUTO NACIONAL DE DESARROLLO RURAL Y DE LA TIERRA (INDERT) PARA FINES DE LA REFORMA AGRARIA, EL INMUEBLE INDIVIDUALIZADO CON LA MATRICULA N° J04/1579 CON PADRÓN N° 1882, FRACCIÓN ‘C’ (RESTO) DEL DISTRITO DE GENERAL BERNARDINO CABALLERO, DEL DEPARTAMENTO DE PARAGUARÍ, PARA LA TRANSFERENCIA A TÍTULO ONEROSO A FAVOR DE LOS ACTUALES OCUPANTES DEL ASENTAMIENTO ZORRILLA CUE Y PASO PYPUCU”, presentado por el senador José Gregorio Ledesma Narváez , de fecha 9 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160683",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604259",
+    "fechaIngresoExpediente": "09/11/2026",
+    "idProyecto": 160683,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-11"
+    },
+    "acapite": "Proyecto de Ley “QUE ESTABLECE EL RÉGIMEN DE PREVENCIÓN, CORRECCIÓN Y SANCIÓN DE CONFLICTOS DE INTERESES EN LA FUNCIÓN PÚBLICA”, presentado por los senadores Rafael Augusto Filizzola Serra, Esperanza Martínez de Portillo, Ignacio Iramain Chilavert, Ramona Yolanda Paredes y José Daniel Oviedo Antúnez, de fecha 9 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160684",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604267",
+    "fechaIngresoExpediente": "11/11/2026",
+    "idProyecto": 160684,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-11"
+    },
+    "acapite": "Proyecto de Ley “QUE ESTABLECE MECANISMOS DE TRANSPARENCIA DOCUMENTAL Y COMERCIAL EN EL COBRO DE REGALÍAS BIOTECNOLÓGICAS Y OTRAS RETENCIONES AGRÍCOLAS”, presentado por los senadores Lilian Graciela Samaniego González, Guadalupe Aveiro Solis, Ever Federico Villalba Benítez, Derlis Ariel Alejandro Osorio Nunes, Colym Gregorio Soroka Benítez, Ramón Catalino Retamozo Delgado, Juan Eudes Afara Maciel, Regina Lizarella Valiente de Rodríguez, Walter Janusz Ricardo Kobylanski Brandhuber, José Daniel Oviedo Antúnez, Esperanza Martínez de Portillo, Oscar Rubén Salomón Fernández, Arnaldo Samaniego González, Hermelinda Alvarenga de Ortega, Dionisio Oswaldo Amarilla Guirland, Ignacio Iramain Chilavert, Rafael Augusto Filizzola Serra y Lourdes Noelia Cabrera Petters, de fecha 11 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160686",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604270",
+    "fechaIngresoExpediente": "11/11/2026",
+    "idProyecto": 160686,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-11"
+    },
+    "acapite": "Proyecto de Ley “QUE MODIFICA Y AMPLÍA EL ARTÍCULO 46 DE LA LEY N° 5876/2017 ‘DE ADMINISTRACIÓN DE BIENES INCAUTADOS Y COMISADOS’, MODIFICADO POR LA LEY N° 6369/2019, E INCORPORA EL ARTÍCULO 46 BIS, ESTABLECIENDO LA RESTITUCIÓN DE BIENES PROVENIENTES DEL FRAUDE FINANCIERO EN FAVOR DE TRABAJADORES, AHORRISTAS Y DEPOSITANTES”, presentado por los senadores Esperanza Martínez de Portillo, Ignacio Iramain Chilavert, Rafael Augusto Filizzola Serra, José Daniel Oviedo Antúnez, Lucía Mendoza de Esparza, Ramona Yolanda Paredes y Faisal Ale Huespe Cibils, de fecha 11 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160703",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604276",
+    "fechaIngresoExpediente": "11/11/2026",
+    "idProyecto": 160703,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
     "tipoProyecto": "PROYECTO DE LEY"
   }
 ]

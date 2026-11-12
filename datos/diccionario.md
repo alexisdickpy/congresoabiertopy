@@ -6,7 +6,7 @@
 
 | Período | Datos actualizados por última vez |
 |---|---|
-| 2023-2028 | 2026-11-11T15:27:36Z |
+| 2023-2028 | 2026-11-12T16:04:31Z |
 
 La última comprobación de la fuente (aunque no haya cambios) figura en [`estado.json`](estado.json).
 
@@ -178,7 +178,7 @@ Se publica en `fuente/{período}/votos.csv`, con 83340 registros en total.
 
 Un registro por legislador del período, vigente o no. Es la única tabla con el correo y el teléfono que la API publica para cada legislador.
 
-Se publica en `fuente/{período}/legisladores.json` y `fuente/{período}/legisladores.csv`, con 144 registros en total.
+Se publica en `fuente/{período}/legisladores.json` y `fuente/{período}/legisladores.csv`, con 146 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|

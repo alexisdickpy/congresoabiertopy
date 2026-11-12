@@ -26539,6 +26539,130 @@
           "tema": "otros-asuntos"
         }
       ]
+    },
+    {
+      "idProyecto": 160641,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "educativ",
+          "tema": "educacion"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "hambre cero",
+          "tema": "derechos"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160675,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "mipymes",
+          "tema": "economia"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160676,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "empresa",
+          "tema": "economia"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160677,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "educacion",
+          "tema": "educacion"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160683,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "expropia",
+          "tema": "inmuebles"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160684,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "funcion publica",
+          "tema": "trabajo"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "funcion publica",
+          "tema": "estado"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160686,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "agricola",
+          "tema": "economia"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "transparencia",
+          "tema": "estado"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160703,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "trabajador",
+          "tema": "trabajo"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "bienes incautados",
+          "tema": "justicia"
+        }
+      ]
     }
   ]
 }

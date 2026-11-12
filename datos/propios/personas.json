@@ -543,6 +543,16 @@
     {
       "legisladores": [
         {
+          "idLegislador": 101634,
+          "periodoLegislativo": "2023-2028"
+        }
+      ],
+      "nombre": "Fernando Ismael Da Silva Sánchez",
+      "slug": "fernando-ismael-da-silva-sanchez"
+    },
+    {
+      "legisladores": [
+        {
           "idLegislador": 101408,
           "periodoLegislativo": "2023-2028"
         }
@@ -1319,6 +1329,16 @@
       ],
       "nombre": "RUBEN ANTONIO ROUSSILLON BLAIRES",
       "slug": "ruben-antonio-roussillon-blaires"
+    },
+    {
+      "legisladores": [
+        {
+          "idLegislador": 101644,
+          "periodoLegislativo": "2023-2028"
+        }
+      ],
+      "nombre": "Rubén Darío Benítez Benítez",
+      "slug": "ruben-dario-benitez-benitez"
     },
     {
       "legisladores": [
