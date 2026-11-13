@@ -1,26 +1,6 @@
 [
   {
     "_propio": {
-      "autores": "",
-      "fechaIngreso": "2026-08-14"
-    },
-    "acapite": "QUE MODIFICA LOS ARTÍCULOS 6 Y 13 DE LA LEY 98/1992 \"QUE ESTABLECE EL RÉGIMEN UNIFICADO DE JUBILACIONES Y PENSIONES Y MODIFICA LAS DISPOSIONES DEL DECRETO-LEY 1680/50, APROBADO POR LEY 375/56,Y SUS MODIFICACIONES; MODIFICA DISPOSIONES DEL RÉGIMEN LEGAL DEL INSTITUTO DE PREVISIÓN SOCIAL , DEROGA DISPOSICIONES INCOMPATIBLES CON LA PRESENTE LEY RELATIVAS A SU CONSEJO DE ADMINISTRACIÓN, REORGANIZA SU ESTRUCTURA DE GOBIERNO Y ESTABLECE UN CONSEJO HONORÍFICO DE REPRESENTACIÓN  Y FISCALIZACIÓN, presentado por el Diputado Nacional Daniel Centurión.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157762",
-    "autores": [],
-    "descripcionEtapa": "TRAMITACIÓN TERMINADA",
-    "descripcionSubEtapa": "PROYECTO RETIRADO",
-    "estadoProyecto": "RETIRADO",
-    "expedienteCamara": "D-2694835",
-    "fechaIngresoExpediente": "14/08/2026",
-    "idProyecto": 157762,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
       "autores": "Ernesto Javier Zacarías Irún",
       "fechaIngreso": "2026-08-19"
     },
@@ -67,28 +47,6 @@
     "idProyecto": 157981,
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "",
-      "fechaIngreso": "2026-08-14"
-    },
-    "acapite": "Mensaje del Poder Ejecutivo N.° 406.- Ministerio de Relaciones Exteriores, de fecha 14 de agosto de 2026, por el cual remite el Proyecto de Ley “ACUERDO DE LIBRE COMERCIO ENTRE EL MERCADO COMÚN DEL SUR (MERCOSUR) Y LOS ESTADOS DE LA ASOCIACIÓN EUROPEA DE LIBRE COMERCIO (AELC)”, firmado en la ciudad de Río de Janeiro el 16 de setiembre de 2025. ",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157989",
-    "autores": [],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603906",
-    "fechaIngresoExpediente": "14/08/2026",
-    "idProyecto": 157989,
-    "iniciativa": "PODER EJECUTIVO",
-    "ministerios": [
-      "MINISTERIO DE RELACIONES EXTERIORES"
-    ],
     "origenProyecto": "CAMARA DE SENADORES",
     "tipoProyecto": "PROYECTO DE LEY",
     "urgencia": "ORDINARIO"
@@ -811,7 +769,7 @@
       }
     ],
     "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "S-2603966",
     "fechaIngresoExpediente": "02/09/2026",
@@ -872,7 +830,7 @@
       }
     ],
     "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "S-2603967",
     "fechaIngresoExpediente": "02/09/2026",
@@ -1046,8 +1004,8 @@
     "acapite": "MENSAJE DEL PODER EJECUTIVO Nº 409/2026 \"QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACIÓN PARA EL EJERCICIO FISCAL 2027\"",
     "appURL": "https://silpy.congreso.gov.py/expediente/158621",
     "autores": [],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "ENTRADA DE EXPEDIENTE",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "C-2603984",
     "fechaIngresoExpediente": "04/09/2026",
@@ -2540,7 +2498,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2695878",
     "fechaIngresoExpediente": "15/10/2026",
@@ -3651,7 +3609,7 @@
       "autores": "MAURICIO FABIAN ESPÍNOLA NÚÑEZ",
       "fechaIngreso": "2026-11-09"
     },
-    "acapite": "QUE ESTABLECE MEDIDAS EXTRAORDINARIAS PARA LA RECUPERACIÓN DE ACTIVOS Y FONDOS PÚBLICOS PREVISIONALES EN EL MARCO DEL CASO UENO BANK S.A.,- presentado por el Diputado Nacional Mauricio Espínola.",
+    "acapite": "QUE ESTABLECE MEDIDAS EXTRAORDINARIAS PARA LA RECUPERACIÓN DE ACTIVOS Y FONDOS PÚBLICOS Y PREVISIONALES EN EL MARCO DEL CASO UENO BANK S.A.,- presentado por el Diputado Nacional Mauricio Espínola.",
     "appURL": "https://silpy.congreso.gov.py/expediente/160531",
     "autores": [
       {
