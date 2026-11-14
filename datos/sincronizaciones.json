@@ -1,6 +1,45 @@
 {
   "sincronizaciones": [
     {
+      "archivosModificados": [],
+      "cambios": {
+        "legisladores": {
+          "agregados": 0,
+          "eliminados": 0,
+          "modificados": 0
+        },
+        "leyes": {
+          "agregados": 0,
+          "eliminados": 0,
+          "modificados": 0
+        },
+        "votaciones": {
+          "agregados": 0,
+          "eliminados": 0,
+          "modificados": 0
+        }
+      },
+      "cantidades": {
+        "autores": 2203,
+        "comisiones": 2864,
+        "expedientes": 17868,
+        "legisladores": 146,
+        "legisladoresVigentes": 127,
+        "leyes": 559,
+        "numerosDeLey": 544,
+        "tramitaciones": 13648,
+        "votaciones": 1175,
+        "votos": 83340
+      },
+      "consultas": 981,
+      "expedientesActualizados": false,
+      "fecha": "2026-11-14T14:20:40Z",
+      "leyesNuevas": [],
+      "modo": "incremental",
+      "periodo": "2023-2028",
+      "resultado": "correcta"
+    },
+    {
       "archivosModificados": [
         "fuente/2023-2028/proyectos-recientes.json",
         "fuente/2023-2028/proyectos.json",
