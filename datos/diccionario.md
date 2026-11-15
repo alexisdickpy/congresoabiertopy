@@ -6,7 +6,7 @@
 
 | Período | Datos actualizados por última vez |
 |---|---|
-| 2023-2028 | 2026-11-13T15:31:56Z |
+| 2023-2028 | 2026-11-15T14:16:10Z |
 
 La última comprobación de la fuente (aunque no haya cambios) figura en [`estado.json`](estado.json).
 
@@ -255,7 +255,7 @@ Se publica en `fuente/{período}/expedientes.json` y `fuente/{período}/expedien
 
 Un registro por cada miembro de cada comisión en cada período parlamentario del período legislativo (comision?idCamara= y comision/{id}/miembros/{período}), de las dos cámaras y de todos los tipos (permanentes, bicamerales, especiales, nacionales y frentes parlamentarios). La API no publica el cargo de cada miembro dentro de la comisión ni las firmas de los dictámenes. Los períodos parlamentarios ya terminados no se vuelven a descargar.
 
-Se publica en `fuente/{período}/comisiones.json` y `fuente/{período}/comisiones.csv`, con 2864 registros en total.
+Se publica en `fuente/{período}/comisiones.json` y `fuente/{período}/comisiones.csv`, con 2854 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|

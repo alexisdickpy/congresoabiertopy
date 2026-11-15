@@ -40791,24 +40791,6 @@
     "_propio": {
       "orden": 5,
       "periodoParlamentario": "2026-2027",
-      "slug": "zenaida-concepcion-delgado-benitez"
-    },
-    "apellidos": "Delgado Benítez",
-    "appURL": "https://silpy.congreso.gov.py/comision/3",
-    "camaraComision": "CAMARA DE SENADORES",
-    "esComisionActiva": "SI",
-    "idComision": 3,
-    "idLegislador": 101366,
-    "idPeriodoParlamentario": 100267,
-    "nombreComision": "RELACIONES EXTERIORES Y ASUNTOS INTERNACIONALES",
-    "nombres": "Zenaida Concepción",
-    "numeroComision": "4",
-    "tipoComision": "PERMANENTE"
-  },
-  {
-    "_propio": {
-      "orden": 6,
-      "periodoParlamentario": "2026-2027",
       "slug": "juan-carlos-luis-galaverna-ortega"
     },
     "apellidos": "Galaverna Ortega",
@@ -40825,7 +40807,7 @@
   },
   {
     "_propio": {
-      "orden": 7,
+      "orden": 6,
       "periodoParlamentario": "2026-2027",
       "slug": "walter-janusz-ricardo-kobylanski-brandhuber"
     },
@@ -40843,25 +40825,7 @@
   },
   {
     "_propio": {
-      "orden": 8,
-      "periodoParlamentario": "2026-2027",
-      "slug": "gustavo-alfredo-leite-gusinky"
-    },
-    "apellidos": "Leite Gusinky",
-    "appURL": "https://silpy.congreso.gov.py/comision/3",
-    "camaraComision": "CAMARA DE SENADORES",
-    "esComisionActiva": "SI",
-    "idComision": 3,
-    "idLegislador": 101382,
-    "idPeriodoParlamentario": 100267,
-    "nombreComision": "RELACIONES EXTERIORES Y ASUNTOS INTERNACIONALES",
-    "nombres": "Gustavo Alfredo",
-    "numeroComision": "4",
-    "tipoComision": "PERMANENTE"
-  },
-  {
-    "_propio": {
-      "orden": 9,
+      "orden": 7,
       "periodoParlamentario": "2026-2027",
       "slug": "derlis-hernan-maidana-zarza"
     },
@@ -40879,7 +40843,7 @@
   },
   {
     "_propio": {
-      "orden": 10,
+      "orden": 8,
       "periodoParlamentario": "2026-2027",
       "slug": "eduardo-hirohito-nakayama-rojas"
     },
@@ -40897,7 +40861,7 @@
   },
   {
     "_propio": {
-      "orden": 11,
+      "orden": 9,
       "periodoParlamentario": "2026-2027",
       "slug": "oscar-ruben-salomon-fernandez"
     },
@@ -40915,7 +40879,7 @@
   },
   {
     "_propio": {
-      "orden": 12,
+      "orden": 10,
       "periodoParlamentario": "2026-2027",
       "slug": "lilian-graciela-samaniego-gonzalez"
     },
@@ -40933,7 +40897,7 @@
   },
   {
     "_propio": {
-      "orden": 13,
+      "orden": 11,
       "periodoParlamentario": "2026-2027",
       "slug": "pedro-alejandro-diaz-veron"
     },
@@ -40951,7 +40915,7 @@
   },
   {
     "_propio": {
-      "orden": 14,
+      "orden": 12,
       "periodoParlamentario": "2026-2027",
       "slug": "natalicio-esteban-chase-acosta"
     },
@@ -40969,19 +40933,19 @@
   },
   {
     "_propio": {
-      "orden": 15,
+      "orden": 13,
       "periodoParlamentario": "2026-2027",
-      "slug": "antonio-carlos-barrios-fernandez"
+      "slug": "gustavo-alfredo-leite-gusinky"
     },
-    "apellidos": "Barrios Fernández",
+    "apellidos": "Leite Gusinky",
     "appURL": "https://silpy.congreso.gov.py/comision/3",
     "camaraComision": "CAMARA DE SENADORES",
     "esComisionActiva": "SI",
     "idComision": 3,
-    "idLegislador": 101475,
+    "idLegislador": 101382,
     "idPeriodoParlamentario": 100267,
     "nombreComision": "RELACIONES EXTERIORES Y ASUNTOS INTERNACIONALES",
-    "nombres": "Antonio Carlos",
+    "nombres": "Gustavo Alfredo",
     "numeroComision": "4",
     "tipoComision": "PERMANENTE"
   },
@@ -43941,24 +43905,6 @@
     "_propio": {
       "orden": 10,
       "periodoParlamentario": "2026-2027",
-      "slug": "sebastian-emilio-remesowski-squef"
-    },
-    "apellidos": "REMESOWSKI SQUEF",
-    "appURL": "https://silpy.congreso.gov.py/comision/38",
-    "camaraComision": "CAMARA DE DIPUTADOS",
-    "esComisionActiva": "SI",
-    "idComision": 38,
-    "idLegislador": 101504,
-    "idPeriodoParlamentario": 100267,
-    "nombreComision": "EDUCACIÓN, CULTURA Y CULTO",
-    "nombres": "SEBASTIÁN EMILIO",
-    "numeroComision": "7",
-    "tipoComision": "PERMANENTE"
-  },
-  {
-    "_propio": {
-      "orden": 11,
-      "periodoParlamentario": "2026-2027",
       "slug": "ruben-antonio-roussillon-blaires"
     },
     "apellidos": "ROUSSILLON BLAIRES",
@@ -43975,7 +43921,7 @@
   },
   {
     "_propio": {
-      "orden": 12,
+      "orden": 11,
       "periodoParlamentario": "2026-2027",
       "slug": "gloria-maria-johana-vega-insfran"
     },
@@ -43993,7 +43939,7 @@
   },
   {
     "_propio": {
-      "orden": 13,
+      "orden": 12,
       "periodoParlamentario": "2026-2027",
       "slug": "carlos-maria-lopez-lopez"
     },
@@ -44011,7 +43957,7 @@
   },
   {
     "_propio": {
-      "orden": 14,
+      "orden": 13,
       "periodoParlamentario": "2026-2027",
       "slug": "luis-maria-gonzalez-vaesken"
     },
@@ -44805,24 +44751,6 @@
     "_propio": {
       "orden": 12,
       "periodoParlamentario": "2026-2027",
-      "slug": "sebastian-emilio-remesowski-squef"
-    },
-    "apellidos": "REMESOWSKI SQUEF",
-    "appURL": "https://silpy.congreso.gov.py/comision/43",
-    "camaraComision": "CAMARA DE DIPUTADOS",
-    "esComisionActiva": "SI",
-    "idComision": 43,
-    "idLegislador": 101504,
-    "idPeriodoParlamentario": 100267,
-    "nombreComision": "INDUSTRIA, COMERCIO, TURISMO Y COOPERATIVISMO",
-    "nombres": "SEBASTIÁN EMILIO",
-    "numeroComision": "12",
-    "tipoComision": "PERMANENTE"
-  },
-  {
-    "_propio": {
-      "orden": 13,
-      "periodoParlamentario": "2026-2027",
       "slug": "jose-ramon-rodriguez-maciel"
     },
     "apellidos": "RODRÍGUEZ MACIEL",
@@ -44839,7 +44767,7 @@
   },
   {
     "_propio": {
-      "orden": 14,
+      "orden": 13,
       "periodoParlamentario": "2026-2027",
       "slug": "arturo-rene-urbieta-cuevas"
     },
@@ -44857,7 +44785,7 @@
   },
   {
     "_propio": {
-      "orden": 15,
+      "orden": 14,
       "periodoParlamentario": "2026-2027",
       "slug": "arnaldo-agustin-valdez-noguera"
     },
@@ -44875,7 +44803,7 @@
   },
   {
     "_propio": {
-      "orden": 16,
+      "orden": 15,
       "periodoParlamentario": "2026-2027",
       "slug": "cesar-ladislao-cerini-benitez"
     },
@@ -44893,7 +44821,7 @@
   },
   {
     "_propio": {
-      "orden": 17,
+      "orden": 16,
       "periodoParlamentario": "2026-2027",
       "slug": "hector-ruben-figueredo-notario"
     },
@@ -46317,24 +46245,6 @@
     "_propio": {
       "orden": 8,
       "periodoParlamentario": "2026-2027",
-      "slug": "sebastian-emilio-remesowski-squef"
-    },
-    "apellidos": "REMESOWSKI SQUEF",
-    "appURL": "https://silpy.congreso.gov.py/comision/48",
-    "camaraComision": "CAMARA DE DIPUTADOS",
-    "esComisionActiva": "SI",
-    "idComision": 48,
-    "idLegislador": 101504,
-    "idPeriodoParlamentario": 100267,
-    "nombreComision": "CUENTAS Y CONTROL DE EJECUCIÓN PRESUPUESTARIA",
-    "nombres": "SEBASTIÁN EMILIO",
-    "numeroComision": "17",
-    "tipoComision": "PERMANENTE"
-  },
-  {
-    "_propio": {
-      "orden": 9,
-      "periodoParlamentario": "2026-2027",
       "slug": "adrian-dario-billy-vaesken-vazquez"
     },
     "apellidos": "VAESKEN VÁZQUEZ",
@@ -46351,7 +46261,7 @@
   },
   {
     "_propio": {
-      "orden": 10,
+      "orden": 9,
       "periodoParlamentario": "2026-2027",
       "slug": "gloria-maria-johana-vega-insfran"
     },
@@ -46369,7 +46279,7 @@
   },
   {
     "_propio": {
-      "orden": 11,
+      "orden": 10,
       "periodoParlamentario": "2026-2027",
       "slug": "luis-federico-franco-alfaro"
     },
@@ -46387,7 +46297,7 @@
   },
   {
     "_propio": {
-      "orden": 12,
+      "orden": 11,
       "periodoParlamentario": "2026-2027",
       "slug": "cesar-ladislao-cerini-benitez"
     },
@@ -46598,24 +46508,6 @@
     "idPeriodoParlamentario": 100267,
     "nombreComision": "LUCHA CONTRA EL NARCOTRÁFICO, ILÍCITOS CONEXOS,GRAVES Y DE PREVENCIÓN DE LAS ADICCIONES.",
     "nombres": "FRANCISCO OSVALDO MANUEL",
-    "numeroComision": "19",
-    "tipoComision": "PERMANENTE"
-  },
-  {
-    "_propio": {
-      "orden": 6,
-      "periodoParlamentario": "2026-2027",
-      "slug": "sebastian-emilio-remesowski-squef"
-    },
-    "apellidos": "REMESOWSKI SQUEF",
-    "appURL": "https://silpy.congreso.gov.py/comision/50",
-    "camaraComision": "CAMARA DE DIPUTADOS",
-    "esComisionActiva": "SI",
-    "idComision": 50,
-    "idLegislador": 101504,
-    "idPeriodoParlamentario": 100267,
-    "nombreComision": "LUCHA CONTRA EL NARCOTRÁFICO, ILÍCITOS CONEXOS,GRAVES Y DE PREVENCIÓN DE LAS ADICCIONES.",
-    "nombres": "SEBASTIÁN EMILIO",
     "numeroComision": "19",
     "tipoComision": "PERMANENTE"
   },
@@ -47523,24 +47415,6 @@
     "_propio": {
       "orden": 5,
       "periodoParlamentario": "2026-2027",
-      "slug": "sebastian-emilio-remesowski-squef"
-    },
-    "apellidos": "REMESOWSKI SQUEF",
-    "appURL": "https://silpy.congreso.gov.py/comision/56",
-    "camaraComision": "CAMARA DE DIPUTADOS",
-    "esComisionActiva": "SI",
-    "idComision": 56,
-    "idLegislador": 101504,
-    "idPeriodoParlamentario": 100267,
-    "nombreComision": "DEPORTES",
-    "nombres": "SEBASTIÁN EMILIO",
-    "numeroComision": "25",
-    "tipoComision": "PERMANENTE"
-  },
-  {
-    "_propio": {
-      "orden": 6,
-      "periodoParlamentario": "2026-2027",
       "slug": "jatar-eduardo-fernandez-safuan"
     },
     "apellidos": "FERNÁNDEZ SAFUAN",
@@ -47557,7 +47431,7 @@
   },
   {
     "_propio": {
-      "orden": 7,
+      "orden": 6,
       "periodoParlamentario": "2026-2027",
       "slug": "ruben-antonio-roussillon-blaires"
     },
@@ -48171,24 +48045,6 @@
     "_propio": {
       "orden": 1,
       "periodoParlamentario": "2026-2027",
-      "slug": "juan-eudes-afara-maciel"
-    },
-    "apellidos": "Afara Maciel",
-    "appURL": "https://silpy.congreso.gov.py/comision/72",
-    "camaraComision": "CAMARA DE SENADORES",
-    "esComisionActiva": "SI",
-    "idComision": 72,
-    "idLegislador": 101378,
-    "idPeriodoParlamentario": 100267,
-    "nombreComision": "DESARROLLO SOCIAL",
-    "nombres": "Juan Eudes",
-    "numeroComision": "19",
-    "tipoComision": "PERMANENTE"
-  },
-  {
-    "_propio": {
-      "orden": 2,
-      "periodoParlamentario": "2026-2027",
       "slug": "pedro-alejandro-diaz-veron"
     },
     "apellidos": "Díaz Verón",
@@ -48205,7 +48061,7 @@
   },
   {
     "_propio": {
-      "orden": 3,
+      "orden": 2,
       "periodoParlamentario": "2026-2027",
       "slug": "arnaldo-samaniego-gonzalez"
     },
@@ -48223,7 +48079,7 @@
   },
   {
     "_propio": {
-      "orden": 4,
+      "orden": 3,
       "periodoParlamentario": "2026-2027",
       "slug": "juan-carlos-luis-galaverna-ortega"
     },
@@ -48241,7 +48097,7 @@
   },
   {
     "_propio": {
-      "orden": 5,
+      "orden": 4,
       "periodoParlamentario": "2026-2027",
       "slug": "jose-gregorio-ledesma-narvaez"
     },
@@ -48259,19 +48115,19 @@
   },
   {
     "_propio": {
-      "orden": 6,
+      "orden": 5,
       "periodoParlamentario": "2026-2027",
-      "slug": "zenaida-concepcion-delgado-benitez"
+      "slug": "juan-eudes-afara-maciel"
     },
-    "apellidos": "Delgado Benítez",
+    "apellidos": "Afara Maciel",
     "appURL": "https://silpy.congreso.gov.py/comision/72",
     "camaraComision": "CAMARA DE SENADORES",
     "esComisionActiva": "SI",
     "idComision": 72,
-    "idLegislador": 101366,
+    "idLegislador": 101378,
     "idPeriodoParlamentario": 100267,
     "nombreComision": "DESARROLLO SOCIAL",
-    "nombres": "Zenaida Concepción",
+    "nombres": "Juan Eudes",
     "numeroComision": "19",
     "tipoComision": "PERMANENTE"
   },
@@ -49917,24 +49773,6 @@
     "_propio": {
       "orden": 3,
       "periodoParlamentario": "2026-2027",
-      "slug": "sebastian-emilio-remesowski-squef"
-    },
-    "apellidos": "REMESOWSKI SQUEF",
-    "appURL": "https://silpy.congreso.gov.py/comision/100830",
-    "camaraComision": "CAMARA DE DIPUTADOS",
-    "esComisionActiva": "SI",
-    "idComision": 100830,
-    "idLegislador": 101504,
-    "idPeriodoParlamentario": 100267,
-    "nombreComision": "DEFENSA DE LOS DERECHOS DE LAS PERSONAS CON DISCAPACIDAD",
-    "nombres": "SEBASTIÁN EMILIO",
-    "numeroComision": "31",
-    "tipoComision": "PERMANENTE"
-  },
-  {
-    "_propio": {
-      "orden": 4,
-      "periodoParlamentario": "2026-2027",
       "slug": "maria-fabiana-souto-de-alliana"
     },
     "apellidos": "SOUTO DE ALLIANA",
@@ -49951,7 +49789,7 @@
   },
   {
     "_propio": {
-      "orden": 5,
+      "orden": 4,
       "periodoParlamentario": "2026-2027",
       "slug": "hector-ruben-figueredo-notario"
     },
@@ -49969,7 +49807,7 @@
   },
   {
     "_propio": {
-      "orden": 6,
+      "orden": 5,
       "periodoParlamentario": "2026-2027",
       "slug": "carmen-dejesus-gimenez-de-ovando"
     },
@@ -50781,24 +50619,6 @@
     "_propio": {
       "orden": 6,
       "periodoParlamentario": "2026-2027",
-      "slug": "sebastian-emilio-remesowski-squef"
-    },
-    "apellidos": "REMESOWSKI SQUEF",
-    "appURL": "https://silpy.congreso.gov.py/comision/101630",
-    "camaraComision": "CAMARA DE DIPUTADOS",
-    "esComisionActiva": "SI",
-    "idComision": 101630,
-    "idLegislador": 101504,
-    "idPeriodoParlamentario": 100267,
-    "nombreComision": "NIÑEZ Y ADOLESCENCIA",
-    "nombres": "SEBASTIÁN EMILIO",
-    "numeroComision": "32",
-    "tipoComision": "PERMANENTE"
-  },
-  {
-    "_propio": {
-      "orden": 7,
-      "periodoParlamentario": "2026-2027",
       "slug": "gloria-maria-johana-vega-insfran"
     },
     "apellidos": "VEGA INSFRAN",
@@ -50815,7 +50635,7 @@
   },
   {
     "_propio": {
-      "orden": 8,
+      "orden": 7,
       "periodoParlamentario": "2026-2027",
       "slug": "patricia-alexandra-zena-oviedo"
     },
