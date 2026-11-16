@@ -27,32 +27,6 @@
   },
   {
     "_propio": {
-      "autores": "Derlis Ariel Alejandro Osorio Nunes",
-      "fechaIngreso": "2026-08-17"
-    },
-    "acapite": "Proyecto de Ley “QUE CONCEDE EL AUMENTO DE PENSIÓN GRACIABLE AL SEÑOR FRANCISCO ABDON CABRERA PEREIRA”, presentado por el senador Derlis Ariel Alejandro Osorio Nunes, de fecha 17 de agosto de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157981",
-    "autores": [
-      {
-        "apellidos": "Osorio Nunes",
-        "idLegislador": 101346,
-        "nombres": "Derlis Ariel Alejandro"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603882",
-    "fechaIngresoExpediente": "17/08/2026",
-    "idProyecto": 157981,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
       "autores": "",
       "fechaIngreso": "2026-08-18"
     },
@@ -2844,7 +2818,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2696044",
     "fechaIngresoExpediente": "22/10/2026",
@@ -3541,7 +3515,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2696187",
     "fechaIngresoExpediente": "04/11/2026",
@@ -3635,7 +3609,7 @@
       "autores": "ARNALDO AGUSTÍN VALDEZ NOGUERA",
       "fechaIngreso": "2026-11-10"
     },
-    "acapite": "QUE DISPONE LA DESCENTRALIZACIÓN Y MUNICIPALIZACIÓN DEL PROGRAMA HAMBRE CERO, ESTABLECIENDO LA ELABORACIÓN LOCAL DE ALIMENTOS Y LA CONTRATACIÓN DEL PERSONAL DE LA COMUNIDAD EDUCATIVA, PRESENTADO POR EL DIPUTADO ARNALDO VALDÉZ.",
+    "acapite": "QUE DISPONE LA DESCENTRALIZACIÓN Y MUNICIPALIZACIÓN DEL PROGRAMA HAMBRE CERO, ESTABLECIENDO LA ELABORACIÓN LOCAL DE ALIMENTOS Y LA CONTRATACIÓN DE PERSONAL DE LA COMUNIDAD EDUCATIVA, PRESENTADO POR EL DIPUTADO ARNALDO VALDEZ.",
     "appURL": "https://silpy.congreso.gov.py/expediente/160641",
     "autores": [
       {
