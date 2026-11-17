@@ -977,6 +977,19 @@
       ]
     },
     {
+      "idProyecto": 124619,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "universidad",
+          "tema": "educacion"
+        }
+      ]
+    },
+    {
       "idProyecto": 124620,
       "pendiente": false,
       "periodoLegislativo": "2023-2028",
@@ -26661,6 +26674,47 @@
           "origen": "regla",
           "palabraClave": "bienes incautados",
           "tema": "justicia"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160901,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "defensa nacional",
+          "tema": "seguridad"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "aeropuerto",
+          "tema": "obras"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160902,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "salud",
+          "tema": "salud"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "bienes incautados",
+          "tema": "justicia"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "infraestructura",
+          "tema": "obras"
         }
       ]
     }

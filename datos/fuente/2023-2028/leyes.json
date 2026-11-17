@@ -45091,5 +45091,886 @@
       "urgencia": "ORDINARIO"
     },
     "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-11-10",
+      "fechaPublicacion": "2026-11-12",
+      "fechaSancion": "2026-10-13",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [
+        108535,
+        108545,
+        109117
+      ],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7735",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146833",
+    "fechaPromulgacion": "10/11/2026",
+    "fechaPublicacion": "12/11/2026",
+    "fechaSancion": "13/10/2026",
+    "idLey": 146833,
+    "numeroLey": "7735",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2025-06-11"
+      },
+      "acapite": "Proyecto de Ley “QUE DECLARA PATRIMONIO TRADICIONAL Y CULTURAL DEL PARAGUAY, A LA CORRIDA DE TOROS (TORIN)”, presentado por el senador Lider Santiago Amarilla Ríos, de fecha 10 de junio de 2025.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/143540",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146833",
+          "idAdjunto": 146833,
+          "idProyecto": 143540,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-178055",
+          "idAdjunto": 178055,
+          "idProyecto": 143540,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-187421",
+          "idAdjunto": 187421,
+          "idProyecto": 143540,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "ANTECEDENTE",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-500410",
+          "idAdjunto": 500410,
+          "idProyecto": 143540,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "S-2502310",
+      "fechaIngresoExpediente": "11/06/2025",
+      "idProyecto": 143540,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-11-04",
+      "fechaPublicacion": "2026-11-04",
+      "fechaSancion": "2026-11-04",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [
+        109405
+      ],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7745",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146834",
+    "fechaPromulgacion": "04/11/2026",
+    "fechaPublicacion": "04/11/2026",
+    "fechaSancion": "04/11/2026",
+    "idLey": 146834,
+    "numeroLey": "7745",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-11-03"
+      },
+      "acapite": "Proyecto de Ley “QUE AMPLÍA LA LEY 2334/03 ‘DE GARANTÍAS DE DEPÓSITO Y RESOLUCIÓN DE ENTIDADES DE INTERMEDIACIÓN FINANCIERA SUJETAS A LA LEY GENERAL DE BANCOS, FINANCIERAS Y OTRAS ENTIDADES DE CRÉDITOS’, Y ESTABLECE EL ANTICIPO DE LA GARANTÍA DE DEPÓSITO”, presentado por los senadores Gustavo Basilio Núñez Giménez, Natalicio Esteban Chase Acosta, Antonio Carlos Barrios Fernández, Ramón Catalino Retamozo Delgado, Rafael Augusto Filizzola Serra, Celeste Josefina Amarilla Vda. de Boccia, Derlis Hernán Maidana Zarza, Regina Lizarella Valiente de Rodríguez, Dionisio Oswaldo Amarilla Guirland, Eduardo Hirohito Nakayama Rojas, Lourdes Noelia Cabrera Petters, Hermelinda Alvarenga de Ortega, Juan Carlos Luis Galaverna Ortega, Orlando Penner Dürksen, Edgar Idalino López Ruíz,  Ernesto Javier Zacarías Irún y Silvio Adalberto Ovelar Benítez de fecha 3 de noviembre de 2026.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/160291",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146834",
+          "idAdjunto": 146834,
+          "idProyecto": 160291,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-203551",
+          "idAdjunto": 203551,
+          "idProyecto": 160291,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "ANTECEDENTE",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-203641",
+          "idAdjunto": 203641,
+          "idProyecto": 160291,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-500522",
+          "idAdjunto": 500522,
+          "idProyecto": 160291,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "S-2604225",
+      "fechaIngresoExpediente": "03/11/2026",
+      "idProyecto": 160291,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-11-10",
+      "fechaPublicacion": "2026-11-12",
+      "fechaSancion": "2026-10-20",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [
+        108507
+      ],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7741",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146843",
+    "fechaPromulgacion": "10/11/2026",
+    "fechaPublicacion": "12/11/2026",
+    "fechaSancion": "20/10/2026",
+    "idLey": 146843,
+    "numeroLey": "7741",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2025-11-04"
+      },
+      "acapite": "Proyecto de Ley “QUE DECLARA DE INTERÉS SOCIAL Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO – MINISTERIO DE DESARROLLO SOCIAL, LA FRACCIÓN DE INMUEBLE INDIVIDUALIZADA COMO PARTE DE LA FINCA N° 1801 PADRÓN 3019 DEL DISTRITO DE CIUDAD DEL ESTE, DEPARTAMENTO DE ALTO PARANÁ, PARA SU POSTERIOR TRANSFERENCIA A TÍTULO ONEROSO A FAVOR DE SUS OCUPANTES ACTUALES”, presentado por el senador José Gregorio Ledesma Narváez, de fecha 4 de noviembre de 2025.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/148895",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146843",
+          "idAdjunto": 146843,
+          "idProyecto": 148895,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-186501",
+          "idAdjunto": 186501,
+          "idProyecto": 148895,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-186502",
+          "idAdjunto": 186502,
+          "idProyecto": 148895,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "ANTECEDENTE",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-500760",
+          "idAdjunto": 500760,
+          "idProyecto": 148895,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "S-2502950",
+      "fechaIngresoExpediente": "04/11/2025",
+      "idProyecto": 148895,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-11-04",
+      "fechaPublicacion": "2026-11-04",
+      "fechaSancion": "2026-09-22",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7725",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146844",
+    "fechaPromulgacion": "04/11/2026",
+    "fechaPublicacion": "04/11/2026",
+    "fechaSancion": "22/09/2026",
+    "idLey": 146844,
+    "numeroLey": "7725",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2025-12-17"
+      },
+      "acapite": "Mensaje del Poder Ejecutivo N.º 354 del Ministerio de Obras Públicas y Comunicaciones, de fecha 17 de diciembre de 2025, por el cual remite el Proyecto de Ley “QUE AMPLÍA EL ARTÍCULO 2° DE LA LEY N° 5552/2016, ‘QUE CLASIFICA Y CATEGORIZA LAS RUTAS NACIONALES, DEPARTAMENTALES Y VECINALES”. ",
+      "appURL": "https://silpy.congreso.gov.py/expediente/151682",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146844",
+          "idAdjunto": 146844,
+          "idProyecto": 151682,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-190183",
+          "idAdjunto": 190183,
+          "idProyecto": 151682,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "ANTECEDENTE",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-190184",
+          "idAdjunto": 190184,
+          "idProyecto": 151682,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-500145",
+          "idAdjunto": 500145,
+          "idProyecto": 151682,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "S-2503126",
+      "fechaIngresoExpediente": "17/12/2025",
+      "idProyecto": 151682,
+      "iniciativa": "PODER EJECUTIVO",
+      "ministerios": [
+        "MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES"
+      ],
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-11-03",
+      "fechaPublicacion": "2026-11-12",
+      "fechaSancion": "2026-09-29",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [
+        109118,
+        109386
+      ],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7730",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146845",
+    "fechaPromulgacion": "03/11/2026",
+    "fechaPublicacion": "12/11/2026",
+    "fechaSancion": "29/09/2026",
+    "idLey": 146845,
+    "numeroLey": "7730",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-04-22"
+      },
+      "acapite": "Proyecto de Ley “QUE MODIFICA LOS ARTÍCULOS 89, 137, 138, 140, 141, 142, 147, 148, 149 Y 279 DE LA LEY N° 7280/2024 ‘DE REFORMA Y MODERNIZACIÓN DE LA POLICÍA NACIONAL”, presentado por los senadores Basilio Gustavo Núñez Giménez, Antonio Carlos Barrios Fernández, Natalicio Esteban Chase Acosta, Zenaida Concepción Delgado Benítez, Hermelinda Alvarenga de Ortega, Lourdes Noelia Cabrera Petters, Carlos Augusto Liseras Osorio, Blanca Margarita Ovelar de Duarte, Oscar Rubén Salomón Fernández, Regina Lizarella Valiente de Rodríguez, Antonio Rubén Velázquez Chamorro, Eduardo Hirohito Nakayama Rojas y Ernesto Javier Zacarías Irún, de fecha 22 de abril de 2026.\n",
+      "appURL": "https://silpy.congreso.gov.py/expediente/153669",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146845",
+          "idAdjunto": 146845,
+          "idProyecto": 153669,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-193437",
+          "idAdjunto": 193437,
+          "idProyecto": 153669,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-200322",
+          "idAdjunto": 200322,
+          "idProyecto": 153669,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "ANTECEDENTE",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-499662",
+          "idAdjunto": 499662,
+          "idProyecto": 153669,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "S-2603407",
+      "fechaIngresoExpediente": "22/04/2026",
+      "idProyecto": 153669,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-11-02",
+      "fechaPublicacion": "2026-11-04",
+      "fechaSancion": "2026-09-23",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [
+        108705
+      ],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7728",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146853",
+    "fechaPromulgacion": "02/11/2026",
+    "fechaPublicacion": "04/11/2026",
+    "fechaSancion": "23/09/2026",
+    "idLey": 146853,
+    "numeroLey": "7728",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2025-08-04"
+      },
+      "acapite": "QUE ESTABLECE LA FECHA 26 DE JUNIO COMO DÍA NACIONAL DEL TAEKWON-DO PARAGUAYO, PRESENTADO POR LOS DIPUTADOS NACIONALES JORGE ÁVALOS MARIÑO, JOSÉ DOMINGO ADORNO Y RUBÉN ROUSSILLÓN ",
+      "appURL": "https://silpy.congreso.gov.py/expediente/145451",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146853",
+          "idAdjunto": 146853,
+          "idProyecto": 145451,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-181141",
+          "idAdjunto": 181141,
+          "idProyecto": 145451,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-181142",
+          "idAdjunto": 181142,
+          "idProyecto": 145451,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-501017",
+          "idAdjunto": 501017,
+          "idProyecto": 145451,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "D-2586644",
+      "fechaIngresoExpediente": "04/08/2025",
+      "idProyecto": 145451,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-11-03",
+      "fechaPublicacion": "2026-11-04",
+      "fechaSancion": "2026-10-07",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [
+        109036
+      ],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7731",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146854",
+    "fechaPromulgacion": "03/11/2026",
+    "fechaPublicacion": "04/11/2026",
+    "fechaSancion": "07/10/2026",
+    "idLey": 146854,
+    "numeroLey": "7731",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-06-09"
+      },
+      "acapite": "QUE CONCEDE PENSIÓN GRACIABLE A LA SEÑORA FELICITA ARRÚA VIUDA DE QUINTANA,- presentado por el Diputado Nacional Jorge Ávalos Mariño.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/155544",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146854",
+          "idAdjunto": 146854,
+          "idProyecto": 155544,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-196195",
+          "idAdjunto": 196195,
+          "idProyecto": 155544,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-499650",
+          "idAdjunto": 499650,
+          "idProyecto": 155544,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "D-2693781",
+      "fechaIngresoExpediente": "09/06/2026",
+      "idProyecto": 155544,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "AUTOMÁTICA"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-11-02",
+      "fechaPublicacion": "2026-11-04",
+      "fechaSancion": "2026-10-07",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7732",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146855",
+    "fechaPromulgacion": "02/11/2026",
+    "fechaPublicacion": "04/11/2026",
+    "fechaSancion": "07/10/2026",
+    "idLey": 146855,
+    "numeroLey": "7732",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-07-28"
+      },
+      "acapite": "QUE DECLARA EL DÍA 12 DE AGOSTO DE CADA AÑO, COMO DÍA DE LUTO NACIONAL EN MEMORIA DE LOS HECHOS OCURRIDOS EN LA CIUDAD DE PIRIBEBUY EN EL AÑO 1869, PRESENTADO POR LA DIPUTADA ROCÍO VALLEJO, Y EL DIPUTADO CARLOS MARÍA LÓPEZ.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/157037",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146855",
+          "idAdjunto": 146855,
+          "idProyecto": 157037,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-198381",
+          "idAdjunto": 198381,
+          "idProyecto": 157037,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-198431",
+          "idAdjunto": 198431,
+          "idProyecto": 157037,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-499664",
+          "idAdjunto": 499664,
+          "idProyecto": 157037,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "D-2694473",
+      "fechaIngresoExpediente": "28/07/2026",
+      "idProyecto": 157037,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-11-02",
+      "fechaPublicacion": "2026-11-04",
+      "fechaSancion": "2026-09-23",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [
+        108706,
+        108725
+      ],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7729",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146863",
+    "fechaPromulgacion": "02/11/2026",
+    "fechaPublicacion": "04/11/2026",
+    "fechaSancion": "23/09/2026",
+    "idLey": 146863,
+    "numeroLey": "7729",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-04-06"
+      },
+      "acapite": "QUE DECLARA EL DÍA 14 DE JUNIO DE CADA AÑO, COMO DÍA NACIONAL DEL DONANTE DE SANGRE, PRESENTADO POR LOS DIPUTADOS NACIONALES JATAR FERNÁNDEZ, SAÚL GONZÁLEZ, SANTIAGO BENÍTEZ, CARLOS GODOY Y FABIANA SOUTO",
+      "appURL": "https://silpy.congreso.gov.py/expediente/153049",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146863",
+          "idAdjunto": 146863,
+          "idProyecto": 153049,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-192340",
+          "idAdjunto": 192340,
+          "idProyecto": 153049,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-192372",
+          "idAdjunto": 192372,
+          "idProyecto": 153049,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-499660",
+          "idAdjunto": 499660,
+          "idProyecto": 153049,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "D-2692400",
+      "fechaIngresoExpediente": "06/04/2026",
+      "idProyecto": 153049,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-10-22",
+      "fechaPublicacion": "2026-11-12",
+      "fechaSancion": "2026-09-23",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7724",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146864",
+    "fechaPromulgacion": "22/10/2026",
+    "fechaPublicacion": "12/11/2026",
+    "fechaSancion": "23/09/2026",
+    "idLey": 146864,
+    "numeroLey": "7724",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2021-11-03"
+      },
+      "acapite": "Creación de la UNIVERSIDAD AUTONOMA \"ACADEMO\". Presentado por el Diputado Antonio Buzarquis. ",
+      "appURL": "https://silpy.congreso.gov.py/expediente/124619",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-143747",
+          "idAdjunto": 143747,
+          "idProyecto": 124619,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-143845",
+          "idAdjunto": 143845,
+          "idProyecto": 124619,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-143846",
+          "idAdjunto": 143846,
+          "idProyecto": 124619,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-143847",
+          "idAdjunto": 143847,
+          "idProyecto": 124619,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-143848",
+          "idAdjunto": 143848,
+          "idProyecto": 124619,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-143849",
+          "idAdjunto": 143849,
+          "idProyecto": 124619,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-143850",
+          "idAdjunto": 143850,
+          "idProyecto": 124619,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-143851",
+          "idAdjunto": 143851,
+          "idProyecto": 124619,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-143852",
+          "idAdjunto": 143852,
+          "idProyecto": 124619,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146864",
+          "idAdjunto": 146864,
+          "idProyecto": 124619,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-189173",
+          "idAdjunto": 189173,
+          "idProyecto": 124619,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-501019",
+          "idAdjunto": 501019,
+          "idProyecto": 124619,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "D-2164787",
+      "fechaIngresoExpediente": "03/11/2021",
+      "idProyecto": 124619,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "AUTOMÁTICA"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-11-10",
+      "fechaPublicacion": "2026-11-12",
+      "fechaSancion": "2026-10-13",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [
+        109456
+      ],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7734",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146865",
+    "fechaPromulgacion": "10/11/2026",
+    "fechaPublicacion": "12/11/2026",
+    "fechaSancion": "13/10/2026",
+    "idLey": 146865,
+    "numeroLey": "7734",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-05-05"
+      },
+      "acapite": "Proyecto de Ley “QUE MODIFICA Y DEROGA LOS ARTÍCULOS DE LA LEY N° 3315/2007 ‘CARTA ORGÁNICA DE LA UNIVERSIDAD NACIONAL DE VILLARRICA DEL ESPÍRITU SANTO, CREADA POR LEY N° 3208, DE FECHA 30 DE MAYO DE 2007”, presentado por el senador Dionisio Oswaldo Amarilla Guirland, de fecha 29 de abril de 2026.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/154264",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146865",
+          "idAdjunto": 146865,
+          "idProyecto": 154264,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-194276",
+          "idAdjunto": 194276,
+          "idProyecto": 154264,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "ANTECEDENTE",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-194277",
+          "idAdjunto": 194277,
+          "idProyecto": 154264,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-501042",
+          "idAdjunto": 501042,
+          "idProyecto": 154264,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/msword"
+        }
+      ],
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "S-2603458",
+      "fechaIngresoExpediente": "05/05/2026",
+      "idProyecto": 154264,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
   }
 ]

@@ -6,7 +6,7 @@
 
 | Período | Datos actualizados por última vez |
 |---|---|
-| 2023-2028 | 2026-11-16T17:11:37Z |
+| 2023-2028 | 2026-11-17T16:57:34Z |
 
 La última comprobación de la fuente (aunque no haya cambios) figura en [`estado.json`](estado.json).
 
@@ -20,7 +20,7 @@ Describe cada campo de los archivos de `datos/`. El mismo nombre sirve para el J
 
 Un registro por ley sancionada en el período, con su proyecto, ministerios y archivos adjuntos.
 
-Se publica en `fuente/{período}/leyes.json` y `fuente/{período}/leyes.csv`, con 559 registros en total.
+Se publica en `fuente/{período}/leyes.json` y `fuente/{período}/leyes.csv`, con 570 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|
@@ -66,7 +66,7 @@ Se publica en `fuente/{período}/leyes.json` y `fuente/{período}/leyes.csv`, co
 
 Un registro por trámite del proyecto de cada ley.
 
-Se publica en `fuente/{período}/tramitaciones.json` y `fuente/{período}/tramitaciones.csv`, con 13648 registros en total.
+Se publica en `fuente/{período}/tramitaciones.json` y `fuente/{período}/tramitaciones.csv`, con 13846 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|
@@ -205,7 +205,7 @@ Se publica en `fuente/{período}/legisladores.json` y `fuente/{período}/legisla
 
 Un registro por autor de cada proyecto con ley y de cada proyecto de ley con votaciones en el período, en el orden que publica la API. El autor puede ser legislador de otra legislatura.
 
-Se publica en `fuente/{período}/autores.json` y `fuente/{período}/autores.csv`, con 2203 registros en total.
+Se publica en `fuente/{período}/autores.json` y `fuente/{período}/autores.csv`, con 2206 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|
@@ -231,7 +231,7 @@ Se publica en `fuente/{período}/autores.json` y `fuente/{período}/autores.csv`
 
 Un registro por cada expediente del que un legislador del período figura como autor (legislador/{id}/expedientes), con fecha de ingreso dentro del período. Incluye todos los tipos de expediente. Un expediente con varios autores aparece una vez por cada uno; la API no distingue autor principal. Se descarga una vez por semana.
 
-Se publica en `fuente/{período}/expedientes.json` y `fuente/{período}/expedientes.csv`, con 17868 registros en total.
+Se publica en `fuente/{período}/expedientes.json` y `fuente/{período}/expedientes.csv`, con 18048 registros en total.
 
 | Campo | Origen | Tipo | Descripción |
 |---|---|---|---|

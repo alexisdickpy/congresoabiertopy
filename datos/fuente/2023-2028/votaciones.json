@@ -79391,8 +79391,10 @@
   {
     "_propio": {
       "cantidadVotos": 80,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146843
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -79856,8 +79858,10 @@
   {
     "_propio": {
       "cantidadVotos": 80,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146833
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -79876,9 +79880,9 @@
       },
       "acapite": "Proyecto de Ley “QUE DECLARA PATRIMONIO TRADICIONAL Y CULTURAL DEL PARAGUAY, A LA CORRIDA DE TOROS (TORIN)”, presentado por el senador Lider Santiago Amarilla Ríos, de fecha 10 de junio de 2025.",
       "appURL": "https://silpy.congreso.gov.py/expediente/143540",
-      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "S-2502310",
       "fechaIngresoExpediente": "11/06/2025",
       "idProyecto": 143540,
@@ -79933,8 +79937,10 @@
   {
     "_propio": {
       "cantidadVotos": 80,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146833
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -79953,9 +79959,9 @@
       },
       "acapite": "Proyecto de Ley “QUE DECLARA PATRIMONIO TRADICIONAL Y CULTURAL DEL PARAGUAY, A LA CORRIDA DE TOROS (TORIN)”, presentado por el senador Lider Santiago Amarilla Ríos, de fecha 10 de junio de 2025.",
       "appURL": "https://silpy.congreso.gov.py/expediente/143540",
-      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "S-2502310",
       "fechaIngresoExpediente": "11/06/2025",
       "idProyecto": 143540,
@@ -80954,8 +80960,8 @@
       },
       "acapite": "QUE ESTABLECE CADA 9 DE OCTUBRE, COMO DÍA DEL MIGRANTE PARAGUAYO, presentado por el Diputado Cleto Marcelino Giménez.",
       "appURL": "https://silpy.congreso.gov.py/expediente/137334",
-      "descripcionEtapa": "TERCER TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "RESOLUCIÓN DE SANCIÓN AUTOMÁTICA EN 3T (MODIFICA)",
+      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
+      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2480978",
       "fechaIngresoExpediente": "08/10/2024",
@@ -83037,8 +83043,10 @@
   {
     "_propio": {
       "cantidadVotos": 80,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146853
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -83056,9 +83064,9 @@
       },
       "acapite": "QUE ESTABLECE LA FECHA 26 DE JUNIO COMO DÍA NACIONAL DEL TAEKWON-DO PARAGUAYO, PRESENTADO POR LOS DIPUTADOS NACIONALES JORGE ÁVALOS MARIÑO, JOSÉ DOMINGO ADORNO Y RUBÉN ROUSSILLÓN ",
       "appURL": "https://silpy.congreso.gov.py/expediente/145451",
-      "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "RESOLUCIÓN SANCION COMPLETA",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "D-2586644",
       "fechaIngresoExpediente": "04/08/2025",
       "idProyecto": 145451,
@@ -83113,8 +83121,10 @@
   {
     "_propio": {
       "cantidadVotos": 80,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146863
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -83132,9 +83142,9 @@
       },
       "acapite": "QUE DECLARA EL DÍA 14 DE JUNIO DE CADA AÑO, COMO DÍA NACIONAL DEL DONANTE DE SANGRE, PRESENTADO POR LOS DIPUTADOS NACIONALES JATAR FERNÁNDEZ, SAÚL GONZÁLEZ, SANTIAGO BENÍTEZ, CARLOS GODOY Y FABIANA SOUTO",
       "appURL": "https://silpy.congreso.gov.py/expediente/153049",
-      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "D-2692400",
       "fechaIngresoExpediente": "06/04/2026",
       "idProyecto": 153049,
@@ -83288,7 +83298,7 @@
       "acapite": "QUE CREA EL PROGRAMA NACIONAL DE PREVENCIÓN, DIAGNÓSTICO Y TRATAMIENTO DE PSORIASIS EN PARAGUAY, presentado por la Diputada Dalia Estigarribia y los Diputados Carlos M. López, Miguel Del Puerto y Alexandra Zena.",
       "appURL": "https://silpy.congreso.gov.py/expediente/141065",
       "descripcionEtapa": "TERCER TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "DISCUSIÓN PLENARIO (3T) - RECHAZO",
+      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN - (3T) - RECHAZO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2583529",
       "fechaIngresoExpediente": "25/03/2025",
@@ -83344,8 +83354,10 @@
   {
     "_propio": {
       "cantidadVotos": 80,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146863
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -83363,9 +83375,9 @@
       },
       "acapite": "QUE DECLARA EL DÍA 14 DE JUNIO DE CADA AÑO, COMO DÍA NACIONAL DEL DONANTE DE SANGRE, PRESENTADO POR LOS DIPUTADOS NACIONALES JATAR FERNÁNDEZ, SAÚL GONZÁLEZ, SANTIAGO BENÍTEZ, CARLOS GODOY Y FABIANA SOUTO",
       "appURL": "https://silpy.congreso.gov.py/expediente/153049",
-      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "D-2692400",
       "fechaIngresoExpediente": "06/04/2026",
       "idProyecto": 153049,
@@ -86382,9 +86394,9 @@
       },
       "acapite": "El Senador de la Nación Dionisio Amarilla Guirland, presidente de la Comisión Bicameral encargada de considerar el informe y dictámen de la Contraloria General de la República sobre liquidación del Presupuesto General de la Nación del Ejercicio Fiscal 2024",
       "appURL": "https://silpy.congreso.gov.py/expediente/154661",
-      "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "RESOLUCIÓN BICAMERAL APROBADO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "FINALIZACIÓN DE TRAMITACIÓN",
+      "descripcionSubEtapa": "SE COMUNICA A QUIEN CORRESPONDA",
+      "estadoProyecto": "ARCHIVADO",
       "expedienteCamara": "C-250001b",
       "fechaIngresoExpediente": "18/05/2026",
       "idProyecto": 154661,
@@ -86439,8 +86451,10 @@
   {
     "_propio": {
       "cantidadVotos": 80,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146854
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -86459,9 +86473,9 @@
       },
       "acapite": "QUE CONCEDE PENSIÓN GRACIABLE A LA SEÑORA FELICITA ARRÚA VIUDA DE QUINTANA,- presentado por el Diputado Nacional Jorge Ávalos Mariño.",
       "appURL": "https://silpy.congreso.gov.py/expediente/155544",
-      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "D-2693781",
       "fechaIngresoExpediente": "09/06/2026",
       "idProyecto": 155544,
@@ -87368,8 +87382,10 @@
   {
     "_propio": {
       "cantidadVotos": 45,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146833
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -87387,9 +87403,9 @@
       },
       "acapite": "Proyecto de Ley “QUE DECLARA PATRIMONIO TRADICIONAL Y CULTURAL DEL PARAGUAY, A LA CORRIDA DE TOROS (TORIN)”, presentado por el senador Lider Santiago Amarilla Ríos, de fecha 10 de junio de 2025.",
       "appURL": "https://silpy.congreso.gov.py/expediente/143540",
-      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "S-2502310",
       "fechaIngresoExpediente": "11/06/2025",
       "idProyecto": 143540,
@@ -87444,8 +87460,10 @@
   {
     "_propio": {
       "cantidadVotos": 80,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146845
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -87465,9 +87483,9 @@
       },
       "acapite": "Proyecto de Ley “QUE MODIFICA LOS ARTÍCULOS 89, 137, 138, 140, 141, 142, 147, 148, 149 Y 279 DE LA LEY N° 7280/2024 ‘DE REFORMA Y MODERNIZACIÓN DE LA POLICÍA NACIONAL”, presentado por los senadores Basilio Gustavo Núñez Giménez, Antonio Carlos Barrios Fernández, Natalicio Esteban Chase Acosta, Zenaida Concepción Delgado Benítez, Hermelinda Alvarenga de Ortega, Lourdes Noelia Cabrera Petters, Carlos Augusto Liseras Osorio, Blanca Margarita Ovelar de Duarte, Oscar Rubén Salomón Fernández, Regina Lizarella Valiente de Rodríguez, Antonio Rubén Velázquez Chamorro, Eduardo Hirohito Nakayama Rojas y Ernesto Javier Zacarías Irún, de fecha 22 de abril de 2026.\n",
       "appURL": "https://silpy.congreso.gov.py/expediente/153669",
-      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "S-2603407",
       "fechaIngresoExpediente": "22/04/2026",
       "idProyecto": 153669,
@@ -90765,8 +90783,10 @@
   {
     "_propio": {
       "cantidadVotos": 45,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146845
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -90787,9 +90807,9 @@
       },
       "acapite": "Proyecto de Ley “QUE MODIFICA LOS ARTÍCULOS 89, 137, 138, 140, 141, 142, 147, 148, 149 Y 279 DE LA LEY N° 7280/2024 ‘DE REFORMA Y MODERNIZACIÓN DE LA POLICÍA NACIONAL”, presentado por los senadores Basilio Gustavo Núñez Giménez, Antonio Carlos Barrios Fernández, Natalicio Esteban Chase Acosta, Zenaida Concepción Delgado Benítez, Hermelinda Alvarenga de Ortega, Lourdes Noelia Cabrera Petters, Carlos Augusto Liseras Osorio, Blanca Margarita Ovelar de Duarte, Oscar Rubén Salomón Fernández, Regina Lizarella Valiente de Rodríguez, Antonio Rubén Velázquez Chamorro, Eduardo Hirohito Nakayama Rojas y Ernesto Javier Zacarías Irún, de fecha 22 de abril de 2026.\n",
       "appURL": "https://silpy.congreso.gov.py/expediente/153669",
-      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "S-2603407",
       "fechaIngresoExpediente": "22/04/2026",
       "idProyecto": 153669,
@@ -90921,8 +90941,10 @@
   {
     "_propio": {
       "cantidadVotos": 45,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146834
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -90941,9 +90963,9 @@
       },
       "acapite": "Proyecto de Ley “QUE AMPLÍA LA LEY 2334/03 ‘DE GARANTÍAS DE DEPÓSITO Y RESOLUCIÓN DE ENTIDADES DE INTERMEDIACIÓN FINANCIERA SUJETAS A LA LEY GENERAL DE BANCOS, FINANCIERAS Y OTRAS ENTIDADES DE CRÉDITOS’, Y ESTABLECE EL ANTICIPO DE LA GARANTÍA DE DEPÓSITO”, presentado por los senadores Gustavo Basilio Núñez Giménez, Natalicio Esteban Chase Acosta, Antonio Carlos Barrios Fernández, Ramón Catalino Retamozo Delgado, Rafael Augusto Filizzola Serra, Celeste Josefina Amarilla Vda. de Boccia, Derlis Hernán Maidana Zarza, Regina Lizarella Valiente de Rodríguez, Dionisio Oswaldo Amarilla Guirland, Eduardo Hirohito Nakayama Rojas, Lourdes Noelia Cabrera Petters, Hermelinda Alvarenga de Ortega, Juan Carlos Luis Galaverna Ortega, Orlando Penner Dürksen, Edgar Idalino López Ruíz,  Ernesto Javier Zacarías Irún y Silvio Adalberto Ovelar Benítez de fecha 3 de noviembre de 2026.",
       "appURL": "https://silpy.congreso.gov.py/expediente/160291",
-      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "S-2604225",
       "fechaIngresoExpediente": "03/11/2026",
       "idProyecto": 160291,
@@ -91020,7 +91042,7 @@
       "acapite": "Nota N.° 73 del Secretario General de la Cámara de Senadores, de fecha 11 de agosto de 2026, por la cual remite la nómina de las personas que se han postulado para los cargos del Defensor del Pueblo y Defensor del Pueblo Adjunto, de conformidad con lo dispuesto en la Constitución y la norma legal correspondiente.",
       "appURL": "https://silpy.congreso.gov.py/expediente/157901",
       "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "S-2603863",
       "fechaIngresoExpediente": "11/08/2026",
@@ -91098,7 +91120,7 @@
       "acapite": "Nota N.° 73 del Secretario General de la Cámara de Senadores, de fecha 11 de agosto de 2026, por la cual remite la nómina de las personas que se han postulado para los cargos del Defensor del Pueblo y Defensor del Pueblo Adjunto, de conformidad con lo dispuesto en la Constitución y la norma legal correspondiente.",
       "appURL": "https://silpy.congreso.gov.py/expediente/157901",
       "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "S-2603863",
       "fechaIngresoExpediente": "11/08/2026",
@@ -91459,8 +91481,10 @@
   {
     "_propio": {
       "cantidadVotos": 80,
-      "enlaceLey": "sin_ley",
-      "idLeyes": [],
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146865
+      ],
       "periodoLegislativo": "2023-2028",
       "totalesCoinciden": true,
       "totalesRecalculados": {
@@ -91479,9 +91503,9 @@
       },
       "acapite": "Proyecto de Ley “QUE MODIFICA Y DEROGA LOS ARTÍCULOS DE LA LEY N° 3315/2007 ‘CARTA ORGÁNICA DE LA UNIVERSIDAD NACIONAL DE VILLARRICA DEL ESPÍRITU SANTO, CREADA POR LEY N° 3208, DE FECHA 30 DE MAYO DE 2007”, presentado por el senador Dionisio Oswaldo Amarilla Guirland, de fecha 29 de abril de 2026.",
       "appURL": "https://silpy.congreso.gov.py/expediente/154264",
-      "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "RESOLUCIÓN SANCION COMPLETA",
-      "estadoProyecto": "EN TRAMITE",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
       "expedienteCamara": "S-2603458",
       "fechaIngresoExpediente": "05/05/2026",
       "idProyecto": 154264,

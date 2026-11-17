@@ -67,6 +67,7 @@
 124431,2023-2028,salud | educacion,false,true
 124435,2023-2028,inmuebles,false,true
 124563,2023-2028,inmuebles,false,true
+124619,2023-2028,educacion,false,false
 124620,2023-2028,inmuebles,false,true
 124735,2023-2028,presupuesto | relaciones-exteriores | obras,false,true
 124803,2023-2028,cultura | ambiente,false,true
@@ -1827,3 +1828,5 @@
 160684,2023-2028,trabajo | estado,false,false
 160686,2023-2028,economia | estado,false,false
 160703,2023-2028,trabajo | justicia,false,false
+160901,2023-2028,seguridad | obras,false,false
+160902,2023-2028,salud | justicia | obras,false,false

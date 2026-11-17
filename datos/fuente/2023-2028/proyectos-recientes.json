@@ -27,28 +27,6 @@
   },
   {
     "_propio": {
-      "autores": "",
-      "fechaIngreso": "2026-08-18"
-    },
-    "acapite": "Mensaje del Poder Ejecutivo N.° 407.- Ministerio de Relaciones Exteriores, de fecha 18 de agosto de 2026, por el cual remite el Proyecto de Ley “ACUERDO DE IMPLEMENTACIÓN CONFORME AL ARTÍCULO 6 DEL ACUERDO DE PARÍS ENTRE EL GOBIERNO DE REPÚBLICA DE SINGAPUR Y EL GOBIERNO DE LA REPÚBLICA DEL PARAGUAY”, suscrito en la República de Singapur el 23 de mayo de 2025. ",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157991",
-    "autores": [],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603907",
-    "fechaIngresoExpediente": "18/08/2026",
-    "idProyecto": 157991,
-    "iniciativa": "PODER EJECUTIVO",
-    "ministerios": [
-      "MINISTERIO DE RELACIONES EXTERIORES"
-    ],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
       "autores": "DANIEL FERNANDO CENTURIÓN GONZÁLEZ, HILDA MARÍA DEL ROCÍO VALLEJO ÁVALOS",
       "fechaIngreso": "2026-08-19"
     },
@@ -98,42 +76,6 @@
     "expedienteCamara": "D-2694915",
     "fechaIngresoExpediente": "19/08/2026",
     "idProyecto": 158012,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "MIGUEL ANGEL DEL PUERTO SILVA, CARLOS MARÍA LÓPEZ LÓPEZ, ARTURO RENE URBIETA CUEVAS",
-      "fechaIngreso": "2026-08-18"
-    },
-    "acapite": "QUE CREA Y REGULA LA PROFESIÓN DE LOS PARAMÉDICOS, presentado por los Diputados Nacional Miguel Ángel Del Puerto, Carlos María López, Arturo Rene Urbieta ",
-    "appURL": "https://silpy.congreso.gov.py/expediente/158018",
-    "autores": [
-      {
-        "apellidos": "DEL PUERTO SILVA",
-        "idLegislador": 101454,
-        "nombres": "MIGUEL ANGEL"
-      },
-      {
-        "apellidos": "LÓPEZ LÓPEZ",
-        "idLegislador": 101451,
-        "nombres": "CARLOS MARÍA"
-      },
-      {
-        "apellidos": "URBIETA CUEVAS",
-        "idLegislador": 101396,
-        "nombres": "ARTURO RENE"
-      }
-    ],
-    "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694911",
-    "fechaIngresoExpediente": "18/08/2026",
-    "idProyecto": 158018,
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE DIPUTADOS",
@@ -475,7 +417,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2695137",
     "fechaIngresoExpediente": "01/09/2026",
@@ -2394,7 +2336,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2695724",
     "fechaIngresoExpediente": "07/10/2026",
@@ -2446,7 +2388,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2695877",
     "fechaIngresoExpediente": "14/10/2026",
@@ -3263,9 +3205,9 @@
         "nombres": "Ernesto Javier"
       }
     ],
-    "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
-    "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
-    "estadoProyecto": "EN TRAMITE",
+    "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+    "descripcionSubEtapa": "/",
+    "estadoProyecto": "PUBLICADO",
     "expedienteCamara": "S-2604225",
     "fechaIngresoExpediente": "03/11/2026",
     "idProyecto": 160291,
@@ -3896,7 +3838,7 @@
       "autores": "Rafael Augusto Filizzola Serra, Faisal Ale Huespe Cibils, Ignacio Iramain Chilavert, Esperanza Martínez de Portillo, Gladys Lucía Mendoza de Esparza, José Daniel Oviedo Antúnez, Ramona Yolanda Paredes",
       "fechaIngreso": "2026-11-11"
     },
-    "acapite": "Proyecto de Ley “QUE MODIFICA Y AMPLÍA EL ARTÍCULO 46 DE LA LEY N° 5876/2017 ‘DE ADMINISTRACIÓN DE BIENES INCAUTADOS Y COMISADOS’, MODIFICADO POR LA LEY N° 6369/2019, E INCORPORA EL ARTÍCULO 46 BIS, ESTABLECIENDO LA RESTITUCIÓN DE BIENES PROVENIENTES DEL FRAUDE FINANCIERO EN FAVOR DE TRABAJADORES, AHORRISTAS Y DEPOSITANTES”, presentado por los senadores Esperanza Martínez de Portillo, Ignacio Iramain Chilavert, Rafael Augusto Filizzola Serra, José Daniel Oviedo Antúnez, Lucía Mendoza de Esparza, Ramona Yolanda Paredes y Faisal Ale Huespe Cibils, de fecha 11 de noviembre de 2026.",
+    "acapite": "Proyecto de Ley “QUE MODIFICA Y AMPLÍA EL ARTÍCULO 46 DE LA LEY N° 5876/2017 ‘DE ADMINISTRACIÓN DE BIENES INCAUTADOS Y COMISADOS’, MODIFICADO POR LA LEY N° 6396/2019, E INCORPORA EL ARTÍCULO 46 BIS, ESTABLECIENDO LA RESTITUCIÓN DE BIENES PROVENIENTES DEL FRAUDE FINANCIERO EN FAVOR DE TRABAJADORES, AHORRISTAS Y DEPOSITANTES”, presentado por los senadores Esperanza Martínez de Portillo, Ignacio Iramain Chilavert, Rafael Augusto Filizzola Serra, José Daniel Oviedo Antúnez, Lucía Mendoza de Esparza, Ramona Yolanda Paredes y Faisal Ale Huespe Cibils, de fecha 11 de noviembre de 2026.",
     "appURL": "https://silpy.congreso.gov.py/expediente/160703",
     "autores": [
       {
@@ -3944,6 +3886,32 @@
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "David Manuel Jara Espinoza",
+      "fechaIngreso": "2026-11-17"
+    },
+    "acapite": "QUE MODIFICA EL ARTÍCULO 46 DE LA LEY N.º 5.876/2017 “DE ADMINISTRACIÓN DE BIENES INCAUTADOS Y COMISADOS”, MODIFICADO POR LA LEY 6396/19, E INCORPORA RECURSOS PARA EL FORTALECIMIENTO DE LA INFRAESTRUCTURA, EL EQUIPAMIENTO Y EL ABASTECIMIENTO DE LA SALUD PÚBLICA, presentado por el Diputado Nacional David Jara.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160902",
+    "autores": [
+      {
+        "apellidos": "Jara Espinoza",
+        "idLegislador": 101584,
+        "nombres": "David Manuel"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696429",
+    "fechaIngresoExpediente": "17/11/2026",
+    "idProyecto": 160902,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE DIPUTADOS",
     "tipoProyecto": "PROYECTO DE LEY",
     "urgencia": "ORDINARIO"
   }

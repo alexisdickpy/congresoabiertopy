@@ -3662,6 +3662,29 @@
       "orden": 1,
       "slug": null
     },
+    "idProyecto": 124619,
+    "legislador": {
+      "activo": true,
+      "apellidos": "BUZARQUIS CÁCERES",
+      "appURL": "https://silpy.congreso.gov.py/legislador/100791",
+      "bancada": "PARTIDO LIBERAL RADICAL AUTÉNTICO (PLRA) \"D\"",
+      "camaraParlamentario": "CAMARA DE DIPUTADOS",
+      "cargoBancada": "MIEMBRO",
+      "departamento": "CAAGUAZÚ",
+      "fotoURL": "https://silpy.congreso.gov.py/images/100791.jpg",
+      "idLegislador": 100791,
+      "nombres": "ENRIQUE ANTONIO CONCEPCIÓN",
+      "partidoPolitico": "Partido Liberal Radical Auténtico PLRA",
+      "periodoLegislativo": "2018-2023",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": false,
+      "orden": 1,
+      "slug": null
+    },
     "idProyecto": 124620,
     "legislador": {
       "activo": true,
@@ -50112,6 +50135,52 @@
       "idLegislador": 101469,
       "nombres": "ARNALDO AGUSTÍN",
       "partidoPolitico": "Partido Liberal Radical Auténtico PLRA",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 1,
+      "slug": "carlos-maria-lopez-lopez"
+    },
+    "idProyecto": 157037,
+    "legislador": {
+      "activo": true,
+      "apellidos": "LÓPEZ LÓPEZ",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101451",
+      "bancada": "BANCADA DEL PARTIDO LIBERAL RADICAL AUTÉNTICO PLRA - PL",
+      "camaraParlamentario": "CAMARA DE DIPUTADOS",
+      "cargoBancada": "LIDER",
+      "departamento": "CORDILLERA",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101451.jpg",
+      "idLegislador": 101451,
+      "nombres": "CARLOS MARÍA",
+      "partidoPolitico": "Partido Liberal Radical Auténtico PLRA",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 2,
+      "slug": "hilda-maria-del-rocio-vallejo-avalos"
+    },
+    "idProyecto": 157037,
+    "legislador": {
+      "activo": true,
+      "apellidos": "VALLEJO ÁVALOS",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101389",
+      "bancada": "BANCADA DEL PARTIDO PATRIA QUERIDA - PPQ",
+      "camaraParlamentario": "CAMARA DE DIPUTADOS",
+      "cargoBancada": "LIDER",
+      "departamento": "CAPITAL",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101389.jpg",
+      "idLegislador": 101389,
+      "nombres": "HILDA MARÍA DEL ROCÍO",
+      "partidoPolitico": "Partido Patria Querida PPQ",
       "periodoLegislativo": "2023-2028",
       "tipoParlamentario": "TITULAR"
     }
