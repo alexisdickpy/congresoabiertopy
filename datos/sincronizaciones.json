@@ -1,6 +1,14 @@
 {
   "sincronizaciones": [
     {
+      "consultas": 0,
+      "error": "ErrorAPI: No se pudo obtener https://datosv2.congreso.gov.py/web/api/periodo: <urlopen error [Errno 110] Connection timed out>",
+      "fecha": "2026-11-18T16:42:45Z",
+      "modo": "incremental",
+      "periodo": null,
+      "resultado": "error"
+    },
+    {
       "archivosModificados": [
         "fuente/2023-2028/leyes.json",
         "fuente/2023-2028/tramitaciones.json",
