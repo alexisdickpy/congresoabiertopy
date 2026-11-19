@@ -1,172 +1,6 @@
 [
   {
     "_propio": {
-      "autores": "Ernesto Javier Zacarías Irún",
-      "fechaIngreso": "2026-08-19"
-    },
-    "acapite": "Proyecto de Ley “QUE DECLARA ÁREA SILVESTRE PROTEGIDA BAJO DOMINIO PÚBLICO CON CATEGORÍA DE MANEJO DE PARQUE URBANO AL PARQUE MBARACAYÚ, UBICADO EN EL ÁREA HABITACIONAL N.° 4 DEL DISTRITO DE CIUDAD DEL ESTE, DEPARTAMENTO DE ALTO PARANÁ”. presentado por el senador Ernesto Javier Zacarías Irún, de fecha 19 de agosto de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/157902",
-    "autores": [
-      {
-        "apellidos": "Zacarías Irún",
-        "idLegislador": 101376,
-        "nombres": "Ernesto Javier"
-      }
-    ],
-    "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603885",
-    "fechaIngresoExpediente": "19/08/2026",
-    "idProyecto": 157902,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "DANIEL FERNANDO CENTURIÓN GONZÁLEZ, HILDA MARÍA DEL ROCÍO VALLEJO ÁVALOS",
-      "fechaIngreso": "2026-08-19"
-    },
-    "acapite": "QUE MODIFICA LOS ARTÍCULOS 6º, 7º, 9º, Y 13 DE LA LEY Nº 98/1992 \"QUE ESTABLECE EL RÉGIMEN UNIFICADO DE JUBILACIONES Y PENSIONES Y MODIFICA LAS DISPOSICIONES DEL DECRETO - LEY Nº 1.860/50, APROBADO POR LA LEY Nº 375/56, Y SUS MODIFICACIONES; REORGANIZA LA ESTRUCTURA DE GOBIERNO DEL INSTITUTO DE PREVISIÓN SOCIAL Y CREA EL CONSEJO HONORÍFICO DE REPRESENTACIÓN Y FISCLIZACIÓN, presentado por los Diputados Nacional Daniel Fernando Centurión, Hilda María Del Rocío Vallejo",
-    "appURL": "https://silpy.congreso.gov.py/expediente/158011",
-    "autores": [
-      {
-        "apellidos": "CENTURIÓN GONZÁLEZ",
-        "idLegislador": 101386,
-        "nombres": "DANIEL FERNANDO"
-      },
-      {
-        "apellidos": "VALLEJO ÁVALOS",
-        "idLegislador": 101389,
-        "nombres": "HILDA MARÍA DEL ROCÍO"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694916",
-    "fechaIngresoExpediente": "19/08/2026",
-    "idProyecto": 158011,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "SEBASTIÁN EMILIO REMESOWSKI SQUEF",
-      "fechaIngreso": "2026-08-19"
-    },
-    "acapite": "QUE RECONOCE Y PROMUEVE EL NEWCOM O VÓLEIBOL ADAPTADO COMO ACTIVIDAD FÍSICA, RECREATIVA, SOCIAL E INCLUSIVA, presentado por el Diputado Nacional Sebastián Remesowski ",
-    "appURL": "https://silpy.congreso.gov.py/expediente/158012",
-    "autores": [
-      {
-        "apellidos": "REMESOWSKI SQUEF",
-        "idLegislador": 101504,
-        "nombres": "SEBASTIÁN EMILIO"
-      }
-    ],
-    "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2694915",
-    "fechaIngresoExpediente": "19/08/2026",
-    "idProyecto": 158012,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "Derlis Ariel Alejandro Osorio Nunes",
-      "fechaIngreso": "2026-08-20"
-    },
-    "acapite": "Proyecto de Ley “QUE MODIFICA LA LEY 3.480/08 ‘QUE AMPLÍA LA TARIFA SOCIAL DE ENERGÍA ELÉCTRICA”. presentado por el senador Derlis Ariel Alejandro Osorio Nunes, de fecha 20 de agosto de 2026. ",
-    "appURL": "https://silpy.congreso.gov.py/expediente/158183",
-    "autores": [
-      {
-        "apellidos": "Osorio Nunes",
-        "idLegislador": 101346,
-        "nombres": "Derlis Ariel Alejandro"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603916",
-    "fechaIngresoExpediente": "20/08/2026",
-    "idProyecto": 158183,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "Derlis Ariel Alejandro Osorio Nunes, Oscar Rubén Salomón Fernández",
-      "fechaIngreso": "2026-08-19"
-    },
-    "acapite": "Proyecto de Ley “QUE CONCEDE AUMENTO DE PENSIÓN GRACIABLE AL SEÑOR BLAS ANTONIO COLMAN GODOY, RECONOCIDO MAESTRO INTÉRPRETE, COMPOSITOR Y CANTANTE PARAGUAYO”, presentado por los senadores Derlis Ariel Alejandro Osorio Nunes y Oscar Rubén Salomón Fernández, de fecha 19 de agosto de 2026. ",
-    "appURL": "https://silpy.congreso.gov.py/expediente/158184",
-    "autores": [
-      {
-        "apellidos": "Osorio Nunes",
-        "idLegislador": 101346,
-        "nombres": "Derlis Ariel Alejandro"
-      },
-      {
-        "apellidos": "Salomón Fernández",
-        "idLegislador": 101348,
-        "nombres": "Oscar Rubén"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603917",
-    "fechaIngresoExpediente": "19/08/2026",
-    "idProyecto": 158184,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "Lourdes Noelia Cabrera Petters",
-      "fechaIngreso": "2026-08-20"
-    },
-    "acapite": "Proyecto de Ley “QUE REGULA EL EJERCICIO PROFESIONAL DEL FONOAUDIÓLOGO”, presentado por la senadora Lourdes Noelia Cabrera Petters, de fecha 20 de agosto de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/158185",
-    "autores": [
-      {
-        "apellidos": "Cabrera Petters",
-        "idLegislador": 101381,
-        "nombres": "Lourdes Noelia"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603918",
-    "fechaIngresoExpediente": "20/08/2026",
-    "idProyecto": 158185,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
       "autores": "Celeste Josefina Amarilla Vda. de Boccia, Rafael Augusto Filizzola Serra, Ignacio Iramain Chilavert, José Gregorio Ledesma Narváez, Gladys Lucía Mendoza de Esparza, Blanca Margarita Ovelar de Duarte, José Daniel Oviedo Antúnez, Ramona Yolanda Paredes, Orlando Penner Dürksen, Lilian Graciela Samaniego González, Mario Alberto Varela Cardozo, Ever Federico Villalba Benítez",
       "fechaIngreso": "2026-08-26"
     },
@@ -849,7 +683,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2695216",
     "fechaIngresoExpediente": "07/09/2026",
@@ -921,7 +755,7 @@
     "appURL": "https://silpy.congreso.gov.py/expediente/158621",
     "autores": [],
     "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "ENTRADA DE EXPEDIENTE",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "C-2603984",
     "fechaIngresoExpediente": "04/09/2026",
@@ -1958,7 +1792,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2695748",
     "fechaIngresoExpediente": "09/10/2026",
@@ -2362,7 +2196,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
+    "descripcionSubEtapa": "TEXTO APROBADO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2695868",
     "fechaIngresoExpediente": "13/10/2026",
@@ -2704,7 +2538,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2695963",
     "fechaIngresoExpediente": "20/10/2026",
@@ -2760,7 +2594,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
+    "descripcionSubEtapa": "TEXTO APROBADO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2696044",
     "fechaIngresoExpediente": "22/10/2026",
@@ -2879,7 +2713,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2696133",
     "fechaIngresoExpediente": "28/10/2026",
@@ -3878,11 +3712,59 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "S-2604276",
     "fechaIngresoExpediente": "11/11/2026",
     "idProyecto": 160703,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "",
+      "fechaIngreso": "2026-11-13"
+    },
+    "acapite": "Mensaje del Poder Ejecutivo N° 432. - Ministerio de Economía y Finanzas, de fecha 13 de noviembre de 2026, por el cual remite el Proyecto de Ley: \"Que establece el régimen de administración temporal de las sociedades vinculadas a la entidad financiera UENO BANK S.A., sometida a procedimiento de resolución\".",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160861",
+    "autores": [],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604295",
+    "fechaIngresoExpediente": "13/11/2026",
+    "idProyecto": 160861,
+    "iniciativa": "PODER EJECUTIVO",
+    "ministerios": [
+      "MINISTERIO DE ECONOMÍA Y FINANZAS"
+    ],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Lilian Graciela Samaniego González",
+      "fechaIngreso": "2026-11-16"
+    },
+    "acapite": "Proyecto de Resolución “QUE PIDE INFORMES AL PODER EJECUTIVO - MINISTERIO DE DEFENSA NACIONAL - COMANDO DE LA FUERZA AÉREA PARAGUAYA, SOBRE LOS CONTROLES DE SEGURIDAD DE LA AVIACIÓN CIVIL (AVSEC) APLICADOS EN EL ESPIGÓN PRESIDENCIAL, EN LAS PLATAFORMAS Y HANGARES PRIVADOS DEL AEROPUERTO INTERNACIONAL SILVIO PETTIROSSI Y A LAS AERONAVES QUE SE INDICAN”, presentado por la senadora Lilian Graciela Samaniego González.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160901",
+    "autores": [
+      {
+        "apellidos": "Samaniego González",
+        "idLegislador": 101352,
+        "nombres": "Lilian Graciela"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "TEXTO APROBADO",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604292",
+    "fechaIngresoExpediente": "16/11/2026",
+    "idProyecto": 160901,
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE SENADORES",
@@ -3909,6 +3791,363 @@
     "expedienteCamara": "D-2696429",
     "fechaIngresoExpediente": "17/11/2026",
     "idProyecto": 160902,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Walter Janusz Ricardo Kobylanski Brandhuber",
+      "fechaIngreso": "2026-11-12"
+    },
+    "acapite": "Proyecto de Ley “QUE MODIFICA Y AMPLÍA LA LEY N° 7089/2023 ‘QUE ESTABLECE EL RÉGIMEN DE PREVENCIÓN, CORRECCIÓN Y SANCIÓN DE CONFLICTOS DE INTERESES EN LA FUNCIÓN PÚBLICA’, RESTITUYE DISPOSICIONES DEROGADAS POR LA LEY N° 7236/2024 Y FORTALECE EL RÉGIMEN DE PREVENCIÓN DE CONFLICTOS DE INTERESES EN LA FUNCIÓN PÚBLICA”, presentado por el senador Walter Janusz Ricardo Kobylanski Brandhuber, de fecha 12 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160932",
+    "autores": [
+      {
+        "apellidos": "Kobylanski Brandhuber",
+        "idLegislador": 101594,
+        "nombres": "Walter Janusz Ricardo"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604299",
+    "fechaIngresoExpediente": "12/11/2026",
+    "idProyecto": 160932,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Ever Federico Villalba Benítez",
+      "fechaIngreso": "2026-11-14"
+    },
+    "acapite": "Proyecto de Ley “QUE ESTABLECE EL RÉGIMEN ESPECIAL DE PREVENCIÓN DE LA PUERTA GIRATORIA, LOS CONFLICTOS DE INTERESES Y LA CAPTURA INDEBIDA DE LAS INSTITUCIONES PÚBLICAS”, presentado por el senador Ever Federico Villalba Benítez, de fecha 16 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160933",
+    "autores": [
+      {
+        "apellidos": "Villalba Benítez",
+        "idLegislador": 101355,
+        "nombres": "Ever Federico"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604300",
+    "fechaIngresoExpediente": "14/11/2026",
+    "idProyecto": 160933,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Derlis Hernán Maidana Zarza",
+      "fechaIngreso": "2026-11-17"
+    },
+    "acapite": "Proyecto de Ley “DE PROTECCIÓN DE LOS TRABAJADORES DE EMPRESAS AFECTADAS POR PROCEDIMIENTOS DE RESOLUCIÓN O LIQUIDACIÓN DE ENTIDADES FINANCIERAS”, presentado por el senador Derlis Hernán Maidana Zarza, de fecha 16 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160934",
+    "autores": [
+      {
+        "apellidos": "Maidana Zarza",
+        "idLegislador": 101341,
+        "nombres": "Derlis Hernán"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604301",
+    "fechaIngresoExpediente": "17/11/2026",
+    "idProyecto": 160934,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Lilian Graciela Samaniego González, Arnaldo Samaniego González, Juan Eudes Afara Maciel",
+      "fechaIngreso": "2026-11-16"
+    },
+    "acapite": "Proyecto de Ley “QUE ESTABLECE MEDIDAS PARA CONSERVAR Y RECUPERAR BIENES EN LAS CAUSAS RELACIONADAS CON LA RESOLUCIÓN DE ENTIDADES DE INTERMEDIACIÓN FINANCIERA”, presentado por los senadores Lilian Graciela Samaniego González, Arnaldo Samaniego González y Juan Eudes Afara Maciel, de fecha 16 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160935",
+    "autores": [
+      {
+        "apellidos": "Samaniego González",
+        "idLegislador": 101352,
+        "nombres": "Lilian Graciela"
+      },
+      {
+        "apellidos": "Samaniego González",
+        "idLegislador": 101357,
+        "nombres": "Arnaldo"
+      },
+      {
+        "apellidos": "Afara Maciel",
+        "idLegislador": 101378,
+        "nombres": "Juan Eudes"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604302",
+    "fechaIngresoExpediente": "16/11/2026",
+    "idProyecto": 160935,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Arnaldo Samaniego González, Lilian Graciela Samaniego González, Juan Eudes Afara Maciel",
+      "fechaIngreso": "2026-11-16"
+    },
+    "acapite": "Proyecto de Ley “QUE ESTABLECE REGLAS DE CONTINUIDAD ECONÓMICA EN LA RESOLUCIÓN DE ENTIDADES DE INTERMEDIACIÓN FINANCIERA Y UN PROGRAMA TEMPORAL DE CONTINUIDAD EMPRESARIAL PARA LOS AFECTADOS POR LA RESOLUCIÓN DE LA ENTIDAD BANCARIA DENOMINADA ‘UENO BANK”, presentado por los senadores Lilian Graciela Samaniego González, Arnaldo Samaniego González y Juan Eudes Afara Maciel, de fecha 16 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160941",
+    "autores": [
+      {
+        "apellidos": "Samaniego González",
+        "idLegislador": 101357,
+        "nombres": "Arnaldo"
+      },
+      {
+        "apellidos": "Samaniego González",
+        "idLegislador": 101352,
+        "nombres": "Lilian Graciela"
+      },
+      {
+        "apellidos": "Afara Maciel",
+        "idLegislador": 101378,
+        "nombres": "Juan Eudes"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604303",
+    "fechaIngresoExpediente": "16/11/2026",
+    "idProyecto": 160941,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Arnaldo Samaniego González, Lilian Graciela Samaniego González, Juan Eudes Afara Maciel",
+      "fechaIngreso": "2026-11-16"
+    },
+    "acapite": "Proyecto de Ley “QUE AMPLÍA LA GARANTÍA DE DEPÓSITOS Y ESTABLECE EL RÉGIMEN DE RESTITUCIÓN, CON SUBROGACIÓN, DE LOS FONDOS JUBILATORIOS Y PÚBLICOS DEPOSITADOS O INVERTIDOS EN LA ENTIDAD BANCARIA DENOMINADA ‘UENO BANK”, presentado por los senadores Lilian Graciela Samaniego González, Arnaldo Samaniego González y Juan Eudes Afara Maciel, de fecha 16 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160942",
+    "autores": [
+      {
+        "apellidos": "Samaniego González",
+        "idLegislador": 101357,
+        "nombres": "Arnaldo"
+      },
+      {
+        "apellidos": "Samaniego González",
+        "idLegislador": 101352,
+        "nombres": "Lilian Graciela"
+      },
+      {
+        "apellidos": "Afara Maciel",
+        "idLegislador": 101378,
+        "nombres": "Juan Eudes"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604304",
+    "fechaIngresoExpediente": "16/11/2026",
+    "idProyecto": 160942,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Walter Janusz Ricardo Kobylanski Brandhuber",
+      "fechaIngreso": "2026-11-17"
+    },
+    "acapite": "Proyecto de Ley “QUE MODIFICA LOS ARTÍCULOS 2°, 18, 20 Y 26 E INCORPORA LOS ARTÍCULOS 26 BIS Y 26 TER A LA LEY N° 2334/03 ‘DE GARANTÍA DE DEPÓSITO Y RESOLUCIÓN DE ENTIDADES DE INTERMEDIACIÓN FINANCIERA SUJETOS DE LA LEY GENERAL DE BANCOS, FINANCIERAS Y OTRAS ENTIDADES DE CRÉDITO”, presentado por el senador Walter Janusz Ricardo Kobylanski Brandhuber, de fecha 16 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160945",
+    "autores": [
+      {
+        "apellidos": "Kobylanski Brandhuber",
+        "idLegislador": 101594,
+        "nombres": "Walter Janusz Ricardo"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604307",
+    "fechaIngresoExpediente": "17/11/2026",
+    "idProyecto": 160945,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "José Daniel Oviedo Antúnez",
+      "fechaIngreso": "2026-11-18"
+    },
+    "acapite": "Proyecto de Ley “QUE ESTABLECE UN RÉGIMEN EXTRAORDINARIO DE ANTICIPO DE CRÉDITOS LABORALES A FAVOR DE LOS TRABAJADORES AFECTADOS POR LA RESOLUCIÓN DE UENO BANK S.A. Y LA CRISIS DEL GRUPO VÁZQUEZ, CON UTILIZACIÓN EXCEPCIONAL DE RECURSOS DEL FONDO DE GARANTÍAS DE DEPÓSITOS Y GARANTÍA DE RESTITUCIÓN DEL ESTADO”, presentado por el senador José Daniel Oviedo Antúnez, de fecha 18 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160957",
+    "autores": [
+      {
+        "apellidos": "Oviedo Antúnez",
+        "idLegislador": 101359,
+        "nombres": "José Daniel"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604317",
+    "fechaIngresoExpediente": "18/11/2026",
+    "idProyecto": 160957,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Arnaldo Samaniego González, Lilian Graciela Samaniego González, Juan Eudes Afara Maciel, Alfonso Noria Duarte",
+      "fechaIngreso": "2026-11-19"
+    },
+    "acapite": "Proyecto de Ley “QUE ESTABLECE EL RÉGIMEN INTEGRAL DE ADMINISTRACIÓN DE LOS RECURSOS FINANCIEROS DE LOS ORGANISMOS Y ENTIDADES DEL ESTADO EN EL BANCO NACIONAL DE FOMENTO (BNF)”, presentado por los senadores Lilian Graciela Samaniego González, Alfonso Noria Duarte, Juan Eudes Afara Maciel y Arnaldo Samaniego González, de fecha 18 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/160961",
+    "autores": [
+      {
+        "apellidos": "Samaniego González",
+        "idLegislador": 101357,
+        "nombres": "Arnaldo"
+      },
+      {
+        "apellidos": "Samaniego González",
+        "idLegislador": 101352,
+        "nombres": "Lilian Graciela"
+      },
+      {
+        "apellidos": "Afara Maciel",
+        "idLegislador": 101378,
+        "nombres": "Juan Eudes"
+      },
+      {
+        "apellidos": "Noria Duarte",
+        "idLegislador": 101574,
+        "nombres": "Alfonso"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604316",
+    "fechaIngresoExpediente": "19/11/2026",
+    "idProyecto": 160961,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "CARLOS ALBERTO NÚÑEZ SALINAS",
+      "fechaIngreso": "2026-11-17"
+    },
+    "acapite": "QUE ESTABLECE UN PROGRAMA EXTRAORDINARIO DE GARANTÍAS PARA LA CONTINUIDAD PRODUCTIVA Y LA PROTECCIÓN DEL EMPLEO DE LAS MIPYMES Y LOS TRABAJADORES INDEPENDIENTES AFECTADOS POR LA RESOLUCIÓN DE UENO BANK S.A. PRESENTADO POR EL DIPUTADO NACIONAL CARLOS ALBERTO NUÑEZ SALINAS",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161003",
+    "autores": [
+      {
+        "apellidos": "NÚÑEZ SALINAS",
+        "idLegislador": 101436,
+        "nombres": "CARLOS ALBERTO"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696442",
+    "fechaIngresoExpediente": "17/11/2026",
+    "idProyecto": 161003,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "GLORIA MARÍA JOHANA VEGA INSFRAN",
+      "fechaIngreso": "2026-11-18"
+    },
+    "acapite": "QUE ESTABLECE EL RÉGIMEN DE GARANTÍAS MÍNIMAS PARA VIVIENDAS NUEVAS, REGULA LA RESPONSABILIDAD POR DEFECTOS CONSTRUCTIVOS Y ESTABLECE MEDIDAS DE PROTECCIÓN PARA ADQUIRENTES Y BENEFICIARIOS” presentado por la Diputada Nacional Johana Vega",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161006",
+    "autores": [
+      {
+        "apellidos": "VEGA INSFRAN",
+        "idLegislador": 101434,
+        "nombres": "GLORIA MARÍA JOHANA"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696441",
+    "fechaIngresoExpediente": "18/11/2026",
+    "idProyecto": 161006,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "WALTER HUGO GARCIA MENDEZ",
+      "fechaIngreso": "2026-11-17"
+    },
+    "acapite": "QUE DECLARA EN SITUACIÓN DE EMERGENCIA VIAL LA RUTA PY07 ‘DOCTOR JOSÉ GASPAR RODRÍGUEZ DE FRANCIA’, EN EL TRAMO QUE UNE SANTA FE DEL PARANÁ CON EL CRUCE ITAKYRY, DEPARTAMENTO DE ALTO PARANÁ, Y FACULTA AL PODER EJECUTIVO - MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES A GESTIONAR LOS RECURSOS NECESARIOS PARA LA REPARACIÓN DEL TRAMO AFECTADO, PRESENTADO POR EL DIPUTADO NACIONAL WALTER HUGO GARCIA",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161007",
+    "autores": [
+      {
+        "apellidos": "GARCIA MENDEZ",
+        "idLegislador": 101404,
+        "nombres": "WALTER HUGO"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696443",
+    "fechaIngresoExpediente": "17/11/2026",
+    "idProyecto": 161007,
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE DIPUTADOS",

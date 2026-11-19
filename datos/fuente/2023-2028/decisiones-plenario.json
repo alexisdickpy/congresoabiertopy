@@ -3642,7 +3642,7 @@
           "appURL": "https://silpy.congreso.gov.py/sesion/112112",
           "camaraSesion": "CAMARA DE SENADORES",
           "fechaSesion": "10/06/2026",
-          "horaFin": "14:47",
+          "horaFin": "14:46",
           "horaInicio": "09:37",
           "idSesion": 112112,
           "numeroSesion": "168",
@@ -4769,7 +4769,7 @@
           "appURL": "https://silpy.congreso.gov.py/sesion/112242",
           "camaraSesion": "CAMARA DE SENADORES",
           "fechaSesion": "15/07/2026",
-          "horaFin": "11:56",
+          "horaFin": "11:55",
           "horaInicio": "09:33",
           "idSesion": 112242,
           "numeroSesion": "173",
@@ -4823,7 +4823,7 @@
           "appURL": "https://silpy.congreso.gov.py/sesion/112242",
           "camaraSesion": "CAMARA DE SENADORES",
           "fechaSesion": "15/07/2026",
-          "horaFin": "11:56",
+          "horaFin": "11:55",
           "horaInicio": "09:33",
           "idSesion": 112242,
           "numeroSesion": "173",
@@ -4877,7 +4877,7 @@
           "appURL": "https://silpy.congreso.gov.py/sesion/112242",
           "camaraSesion": "CAMARA DE SENADORES",
           "fechaSesion": "15/07/2026",
-          "horaFin": "11:56",
+          "horaFin": "11:55",
           "horaInicio": "09:33",
           "idSesion": 112242,
           "numeroSesion": "173",
@@ -11760,6 +11760,315 @@
         "numeroSesion": "193",
         "resultadoTramite": "APROBADAS LAS MODIFICACIONES"
       }
+    },
+    {
+      "acapite": "Proyecto de Ley “QUE DECLARA ÁREA SILVESTRE PROTEGIDA BAJO DOMINIO PÚBLICO CON CATEGORÍA DE MANEJO DE PARQUE URBANO AL PARQUE MBARACAYÚ, UBICADO EN EL ÁREA HABITACIONAL N.° 4 DEL DISTRITO DE CIUDAD DEL ESTE, DEPARTAMENTO DE ALTO PARANÁ”. presentado por el senador Ernesto Javier Zacarías Irún, de fecha 19 de agosto de 2026.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/157902",
+      "autores": [
+        {
+          "apellidos": "Zacarías Irún",
+          "idLegislador": 101376,
+          "nombres": "Ernesto Javier"
+        }
+      ],
+      "idProyecto": 157902,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-17"
+        },
+        "camaraTramite": "CAMARA DE DIPUTADOS",
+        "descripcionEtapa": "Segundo trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "17/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-17"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112872",
+          "camaraSesion": "CAMARA DE DIPUTADOS",
+          "fechaSesion": "17/11/2026",
+          "horaFin": "09:36",
+          "horaInicio": "09:00",
+          "idSesion": 112872,
+          "numeroSesion": "143",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446513,
+        "numeroSesion": "143",
+        "resultadoTramite": "APROBADO CON MODIFICACIONES"
+      }
+    },
+    {
+      "acapite": "QUE AUTORIZA LA TRANSFERENCIA LABORAL EXCEPCIONAL DEL PERSONAL DE LA COMPAÑÍA PARAGUAYA DE COMUNICACIONES SOCIEDAD ANÓNIMA, COPACO S.A., A INSTITUCIONES DEL ESTADO, PRESENTADO POR EL DIPUTADO NACIONAL JOSÉ RODRÍGUEZ\nZ",
+      "appURL": "https://silpy.congreso.gov.py/expediente/151761",
+      "autores": [
+        {
+          "apellidos": "RODRÍGUEZ MACIEL",
+          "idLegislador": 101390,
+          "nombres": "JOSÉ RAMÓN"
+        }
+      ],
+      "idProyecto": 151761,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-17"
+        },
+        "camaraTramite": "CAMARA DE DIPUTADOS",
+        "descripcionEtapa": "Primer trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "17/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-17"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112872",
+          "camaraSesion": "CAMARA DE DIPUTADOS",
+          "fechaSesion": "17/11/2026",
+          "horaFin": "09:36",
+          "horaInicio": "09:00",
+          "idSesion": 112872,
+          "numeroSesion": "143",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446517,
+        "numeroSesion": "143",
+        "resultadoTramite": "APROBADO"
+      }
+    },
+    {
+      "acapite": "QUE CREAL EL MUNICIPIO DE SANTA CECILIA EN EL DEPARTAMENTO DE GUAIRÁ Y UNA MUNICIPALIDAD CON ASIENTO EN EL PUEBLO DE SANTA CECILIA, PRESENTADO POR LOS DIPUTADOS NACIONALES: MARÍA CONSTANCIA BENÍTEZ Y EDGAR CHÁVEZ",
+      "appURL": "https://silpy.congreso.gov.py/expediente/140241",
+      "autores": [
+        {
+          "apellidos": "BENÍTEZ DE BENÍTEZ",
+          "idLegislador": 101452,
+          "nombres": "MARÍA CONSTANCIA"
+        },
+        {
+          "apellidos": "CHÁVEZ BRIZUELA",
+          "idLegislador": 101426,
+          "nombres": "EDGAR MILCIADES"
+        }
+      ],
+      "idProyecto": 140241,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-17"
+        },
+        "camaraTramite": "CAMARA DE DIPUTADOS",
+        "descripcionEtapa": "Primer trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "17/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-17"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112872",
+          "camaraSesion": "CAMARA DE DIPUTADOS",
+          "fechaSesion": "17/11/2026",
+          "horaFin": "09:36",
+          "horaInicio": "09:00",
+          "idSesion": 112872,
+          "numeroSesion": "143",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446518,
+        "numeroSesion": "143",
+        "resultadoTramite": "APROBADO"
+      }
+    },
+    {
+      "acapite": "Proyecto de Ley \"QUE DECLARA DE INTERES SOCIAL Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO MINISTERIO DEL URBANISMO VIVIENDA Y HABITAT (M.U.V.H.), UN INMUEBLE INDIVIDUALIZADO COMO LOTE N° 262, FINCA N° 16.965, DENOMINADO ASENTAMIENTO TIERRA PROMETIDA, UBICADO EN LA COLONIA FELIX DE AZARA DE LA CIUDAD DE HERNANDARIAS\", presentado por el senador José Gregorio Ledesma Narváez, de fecha 3 de julio de 2024.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/133642",
+      "autores": [
+        {
+          "apellidos": "Ledesma Narváez",
+          "idLegislador": 101368,
+          "nombres": "José Gregorio"
+        }
+      ],
+      "idProyecto": 133642,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-17"
+        },
+        "camaraTramite": "CAMARA DE DIPUTADOS",
+        "descripcionEtapa": "Segundo trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "17/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-17"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112872",
+          "camaraSesion": "CAMARA DE DIPUTADOS",
+          "fechaSesion": "17/11/2026",
+          "horaFin": "09:36",
+          "horaInicio": "09:00",
+          "idSesion": 112872,
+          "numeroSesion": "143",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446519,
+        "numeroSesion": "143",
+        "resultadoTramite": "APROBADO"
+      }
+    },
+    {
+      "acapite": "QUE REGULA LA PROFESIÓN DEL AGENTE COMUNITARIO DE SALUD, CREA LA CARRERA DEL AGENTE COMUNITARIO DE SALUD Y ESTABLECE SU REGIMEN JURIDICO, FUNCIONAL Y LABORAL, presentado por los Diputados Nacionales José Rodríguez, Liz Cristina Acosta y Miguel Ángel del Puerto.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/157612",
+      "autores": [
+        {
+          "apellidos": "RODRÍGUEZ MACIEL",
+          "idLegislador": 101390,
+          "nombres": "JOSÉ RAMÓN"
+        },
+        {
+          "apellidos": "ACOSTA BRITEZ",
+          "idLegislador": 101403,
+          "nombres": "LIZ CRISTINA"
+        },
+        {
+          "apellidos": "DEL PUERTO SILVA",
+          "idLegislador": 101454,
+          "nombres": "MIGUEL ANGEL"
+        }
+      ],
+      "idProyecto": 157612,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-17"
+        },
+        "camaraTramite": "CAMARA DE DIPUTADOS",
+        "descripcionEtapa": "Primer trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "17/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-17"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112872",
+          "camaraSesion": "CAMARA DE DIPUTADOS",
+          "fechaSesion": "17/11/2026",
+          "horaFin": "09:36",
+          "horaInicio": "09:00",
+          "idSesion": 112872,
+          "numeroSesion": "143",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446523,
+        "numeroSesion": "143",
+        "resultadoTramite": "APROBADO"
+      }
+    },
+    {
+      "acapite": "Proyecto de Resolución “QUE PIDE INFORMES AL PODER EJECUTIVO - MINISTERIO DE DEFENSA NACIONAL - COMANDO DE LA FUERZA AÉREA PARAGUAYA, SOBRE LOS CONTROLES DE SEGURIDAD DE LA AVIACIÓN CIVIL (AVSEC) APLICADOS EN EL ESPIGÓN PRESIDENCIAL, EN LAS PLATAFORMAS Y HANGARES PRIVADOS DEL AEROPUERTO INTERNACIONAL SILVIO PETTIROSSI Y A LAS AERONAVES QUE SE INDICAN”, presentado por la senadora Lilian Graciela Samaniego González.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/160901",
+      "autores": [
+        {
+          "apellidos": "Samaniego González",
+          "idLegislador": 101352,
+          "nombres": "Lilian Graciela"
+        }
+      ],
+      "idProyecto": 160901,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-18"
+        },
+        "camaraTramite": "CAMARA DE SENADORES",
+        "descripcionEtapa": "Primer trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "18/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-18"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112882",
+          "camaraSesion": "CAMARA DE SENADORES",
+          "fechaSesion": "18/11/2026",
+          "horaFin": "00:00",
+          "horaInicio": "09:00",
+          "idSesion": 112882,
+          "numeroSesion": "202",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446660,
+        "numeroSesion": "202",
+        "resultadoTramite": "APROBADO"
+      }
     }
   ],
   "seguidos": [
@@ -12868,6 +13177,20 @@
     160684,
     160686,
     160703,
-    160902
+    160861,
+    160901,
+    160902,
+    160932,
+    160933,
+    160934,
+    160935,
+    160941,
+    160942,
+    160945,
+    160957,
+    160961,
+    161003,
+    161006,
+    161007
   ]
 }

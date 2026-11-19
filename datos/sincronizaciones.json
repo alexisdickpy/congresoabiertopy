@@ -1,6 +1,54 @@
 {
   "sincronizaciones": [
     {
+      "archivosModificados": [
+        "fuente/2023-2028/votaciones.json",
+        "fuente/2023-2028/proyectos-recientes.json",
+        "fuente/2023-2028/proyectos.json",
+        "fuente/2023-2028/decisiones-plenario.json",
+        "fuente/2023-2028/votaciones.csv",
+        "diccionario.md",
+        "propios/clasificacion-temas.json",
+        "propios/clasificacion-temas.csv"
+      ],
+      "cambios": {
+        "legisladores": {
+          "agregados": 0,
+          "eliminados": 0,
+          "modificados": 0
+        },
+        "leyes": {
+          "agregados": 0,
+          "eliminados": 0,
+          "modificados": 0
+        },
+        "votaciones": {
+          "agregados": 0,
+          "eliminados": 0,
+          "modificados": 16
+        }
+      },
+      "cantidades": {
+        "autores": 2206,
+        "comisiones": 2854,
+        "expedientes": 18048,
+        "legisladores": 146,
+        "legisladoresVigentes": 127,
+        "leyes": 570,
+        "numerosDeLey": 555,
+        "tramitaciones": 13846,
+        "votaciones": 1175,
+        "votos": 83340
+      },
+      "consultas": 1002,
+      "expedientesActualizados": false,
+      "fecha": "2026-11-19T16:39:47Z",
+      "leyesNuevas": [],
+      "modo": "incremental",
+      "periodo": "2023-2028",
+      "resultado": "correcta"
+    },
+    {
       "consultas": 0,
       "error": "ErrorAPI: No se pudo obtener https://datosv2.congreso.gov.py/web/api/periodo: <urlopen error [Errno 110] Connection timed out>",
       "fecha": "2026-11-18T16:42:45Z",

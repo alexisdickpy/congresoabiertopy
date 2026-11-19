@@ -26678,6 +26678,18 @@
       ]
     },
     {
+      "idProyecto": 160861,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "reserva",
+          "tema": "otros-asuntos"
+        }
+      ]
+    },
+    {
       "idProyecto": 160901,
       "pendiente": false,
       "periodoLegislativo": "2023-2028",
@@ -26714,6 +26726,190 @@
         {
           "origen": "regla",
           "palabraClave": "infraestructura",
+          "tema": "obras"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160932,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "funcion publica",
+          "tema": "trabajo"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "funcion publica",
+          "tema": "estado"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160933,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "reserva",
+          "tema": "otros-asuntos"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160934,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "empresa",
+          "tema": "economia"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "trabajador",
+          "tema": "trabajo"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160935,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "intermediacion financiera",
+          "tema": "economia"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160941,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "empresa",
+          "tema": "economia"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160942,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "garantia de deposito",
+          "tema": "economia"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "jubilatori",
+          "tema": "trabajo"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "restitucion",
+          "tema": "justicia"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160945,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "intermediacion financiera",
+          "tema": "economia"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160957,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "trabajador",
+          "tema": "trabajo"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "restitucion",
+          "tema": "justicia"
+        }
+      ]
+    },
+    {
+      "idProyecto": 160961,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "reserva",
+          "tema": "otros-asuntos"
+        }
+      ]
+    },
+    {
+      "idProyecto": 161003,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "mipymes",
+          "tema": "economia"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "trabajador",
+          "tema": "trabajo"
+        }
+      ]
+    },
+    {
+      "idProyecto": 161006,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "vivienda",
+          "tema": "derechos"
+        }
+      ]
+    },
+    {
+      "idProyecto": 161007,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "ruta",
           "tema": "obras"
         }
       ]
