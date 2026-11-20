@@ -705,7 +705,7 @@
     },
     "acapite": "QUE ESTABLECE EL RÉGIMEN ESPECIAL PARA LA REGULARIZACIÓN DE LA TENENCIA Y OCUPACIÓN DE LOS INMUEBLES QUE FORMAN PARTE DE LAS FINCAS QUE FUERON EXPROPIADAS POR LEY 517/95 (ANTEBICUÉ) presentado por varios diputados nacionales",
     "appURL": "https://silpy.congreso.gov.py/expediente/128922",
-    "estadoProyecto": "EN TRAMITE",
+    "estadoProyecto": "ARCHIVADO",
     "expedienteCamara": "D-2373438",
     "fechaIngresoExpediente": "23/08/2023",
     "idProyecto": 128922,
@@ -22451,6 +22451,34 @@
     "expedienteCamara": "D-2696443",
     "fechaIngresoExpediente": "17/11/2026",
     "idProyecto": 161007,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-17"
+    },
+    "acapite": "Proyecto de Ley de Iniciativa Popular “QUE MODIFICA EL ARTÍCULO 135 DE LA LEY 6002/17 ‘QUE MODIFICA LA LEY N° 1160/97 ‘CÓDIGO PENAL’, MODIFICADO POR EL ARTÍCULO 1° DE LA LEY N° 3440/08 ‘QUE MODIFICA VARIAS DISPOSICIONES DE LA LEY N° 1160/97 ‘CÓDIGO PENAL”, conforme nota n.° 1.661 del Tribunal Superior de Justicia Electoral, de fecha 17 de noviembre de 2026, por la cual remite copia autenticada de la Resolución N° 237/2026, mediante la cual se resuelve tener por cumplidas las diligencias correspondientes a la iniciativa popular, promotora del proyecto “Ideología de Género es Abuso Infantil”, de conformidad a lo dispuesto en el artículo 266, inciso b) de la Ley N.° 834/96, y su modificatoria Ley N.° 6983/32, en concordancia con el numeral 4.3 de la Resolución TSJE N.° 175/2023.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161011",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604318",
+    "fechaIngresoExpediente": "17/11/2026",
+    "idProyecto": 161011,
+    "iniciativa": "INICIATIVA POPULAR",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-19"
+    },
+    "acapite": "QUE ESTABLECE EL RÉGIMEN DE PROTECCIÓN Y USO SOSTENIBLE DEL JARDÍN BOTÁNICO DE ASUNCIÓN, presentado por el Diputado Nacional José Rodríguez",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161025",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696462",
+    "fechaIngresoExpediente": "19/11/2026",
+    "idProyecto": 161025,
     "iniciativa": "PARLAMENTARIA",
     "origenProyecto": "CAMARA DE DIPUTADOS",
     "tipoProyecto": "PROYECTO DE LEY"

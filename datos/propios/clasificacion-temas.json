@@ -26913,6 +26913,42 @@
           "tema": "obras"
         }
       ]
+    },
+    {
+      "idProyecto": 161011,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "tribunal",
+          "tema": "justicia"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "electoral",
+          "tema": "estado"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "infantil",
+          "tema": "derechos"
+        }
+      ]
+    },
+    {
+      "idProyecto": 161025,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "jardin botanic",
+          "tema": "ambiente"
+        }
+      ]
     }
   ]
 }

@@ -82,28 +82,6 @@
   },
   {
     "_propio": {
-      "autores": "",
-      "fechaIngreso": "2026-08-21"
-    },
-    "acapite": "Mensaje N.º 408 del Ministerio de Relaciones Exteriores, de fecha 21 de agosto de 2026, por el cual remite el Proyecto de Ley “ACUERDO ENTRE EL GOBIERNO DE LA REPÚBLICA DEL PARAGUAY Y EL GOBIERNO DEL ESTADO DE CATAR SOBRE LA EXENCIÓN MUTUA DEL REQUISITO DE VISAS PARA TITULARES DE PASAPORTES ORDINARIOS”, suscrito en Doha, Estado de Catar, el 9 de octubre de 2025. ",
-    "appURL": "https://silpy.congreso.gov.py/expediente/158197",
-    "autores": [],
-    "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "RESOLUCIÓN SANCION COMPLETA",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603953",
-    "fechaIngresoExpediente": "21/08/2026",
-    "idProyecto": 158197,
-    "iniciativa": "PODER EJECUTIVO",
-    "ministerios": [
-      "MINISTERIO DE RELACIONES EXTERIORES"
-    ],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
       "autores": "MIGUEL ANGEL DEL PUERTO SILVA, RAÚL LUIS LATORRE MARTÍNEZ, CARLOS MARÍA LÓPEZ LÓPEZ, HILDA MARÍA DEL ROCÍO VALLEJO ÁVALOS",
       "fechaIngreso": "2026-08-26"
     },
@@ -4148,6 +4126,52 @@
     "expedienteCamara": "D-2696443",
     "fechaIngresoExpediente": "17/11/2026",
     "idProyecto": 161007,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "",
+      "fechaIngreso": "2026-11-17"
+    },
+    "acapite": "Proyecto de Ley de Iniciativa Popular “QUE MODIFICA EL ARTÍCULO 135 DE LA LEY 6002/17 ‘QUE MODIFICA LA LEY N° 1160/97 ‘CÓDIGO PENAL’, MODIFICADO POR EL ARTÍCULO 1° DE LA LEY N° 3440/08 ‘QUE MODIFICA VARIAS DISPOSICIONES DE LA LEY N° 1160/97 ‘CÓDIGO PENAL”, conforme nota n.° 1.661 del Tribunal Superior de Justicia Electoral, de fecha 17 de noviembre de 2026, por la cual remite copia autenticada de la Resolución N° 237/2026, mediante la cual se resuelve tener por cumplidas las diligencias correspondientes a la iniciativa popular, promotora del proyecto “Ideología de Género es Abuso Infantil”, de conformidad a lo dispuesto en el artículo 266, inciso b) de la Ley N.° 834/96, y su modificatoria Ley N.° 6983/32, en concordancia con el numeral 4.3 de la Resolución TSJE N.° 175/2023.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161011",
+    "autores": [],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604318",
+    "fechaIngresoExpediente": "17/11/2026",
+    "idProyecto": 161011,
+    "iniciativa": "INICIATIVA POPULAR",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "JOSÉ RAMÓN RODRÍGUEZ MACIEL",
+      "fechaIngreso": "2026-11-19"
+    },
+    "acapite": "QUE ESTABLECE EL RÉGIMEN DE PROTECCIÓN Y USO SOSTENIBLE DEL JARDÍN BOTÁNICO DE ASUNCIÓN, presentado por el Diputado Nacional José Rodríguez",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161025",
+    "autores": [
+      {
+        "apellidos": "RODRÍGUEZ MACIEL",
+        "idLegislador": 101390,
+        "nombres": "JOSÉ RAMÓN"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696462",
+    "fechaIngresoExpediente": "19/11/2026",
+    "idProyecto": 161025,
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE DIPUTADOS",

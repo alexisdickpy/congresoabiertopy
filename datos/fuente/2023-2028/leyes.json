@@ -45972,5 +45972,84 @@
       "urgencia": "ORDINARIO"
     },
     "tipoPromulgacion": "NORMAL"
+  },
+  {
+    "_propio": {
+      "fechaPromulgacion": "2026-11-09",
+      "fechaSancion": "2026-10-13",
+      "idPeriodoParlamentario": 100267,
+      "idVotaciones": [],
+      "idVotacionesNoResueltas": [],
+      "idVotacionesOtrosPeriodos": [],
+      "numeroLey": "7736",
+      "periodoLegislativo": "2023-2028"
+    },
+    "appURL": "https://silpy.congreso.gov.py/ley/146873",
+    "fechaPromulgacion": "09/11/2026",
+    "fechaSancion": "13/10/2026",
+    "idLey": 146873,
+    "numeroLey": "7736",
+    "observacionDecreto": "",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-07-01"
+      },
+      "acapite": "Proyecto de Ley “QUE ESTABLECE EL 25 DE JUNIO DE CADA AÑO COMO EL DÍA NACIONAL DE LA AMISTAD ENTRE LA REPÚBLICA DEL PARAGUAY Y LA REPÚBLICA DEL PERÚ”, presentado por los senadores Juan Carlos Luis Galaverna Ortega y Lizarella Valiente de Rodríguez, de fecha 1 de julio de 2026.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/156224",
+      "archivosAdjuntos": [
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=ley-146873",
+          "idAdjunto": 146873,
+          "idProyecto": 156224,
+          "infoAdjunto": "LEY",
+          "tipoAdjunto": "LEY",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-197146",
+          "idAdjunto": 197146,
+          "idProyecto": 156224,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=iniciativa-197381",
+          "idAdjunto": 197381,
+          "idProyecto": 156224,
+          "infoAdjunto": "INICIATIVA",
+          "tipoAdjunto": "ANTECEDENTE",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-500601",
+          "idAdjunto": 500601,
+          "idProyecto": 156224,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/pdf"
+        },
+        {
+          "appURL": "https://datosv2.congreso.gov.py/opendata/descarga?id=sancion-500602",
+          "idAdjunto": 500602,
+          "idProyecto": 156224,
+          "infoAdjunto": "SANCIÓN COMPLETA",
+          "tipoAdjunto": "PROYECTO",
+          "tipoArchivo": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ],
+      "descripcionEtapa": "FINALIZACIÓN DE TRAMITACIÓN",
+      "descripcionSubEtapa": "EN ESPERA DE PUBLICACIÓN",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "S-2603675",
+      "fechaIngresoExpediente": "01/07/2026",
+      "idProyecto": 156224,
+      "iniciativa": "PARLAMENTARIA",
+      "ministerios": [],
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "tipoPromulgacion": "NORMAL"
   }
 ]
