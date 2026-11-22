@@ -47865,17 +47865,17 @@
     "_propio": {
       "orden": 1,
       "periodoParlamentario": "2026-2027",
-      "slug": "zenaida-concepcion-delgado-benitez"
+      "slug": "guadalupe-aveiro-solis"
     },
-    "apellidos": "Delgado Benítez",
+    "apellidos": "Aveiro Solis",
     "appURL": "https://silpy.congreso.gov.py/comision/70",
     "camaraComision": "CAMARA DE SENADORES",
     "esComisionActiva": "SI",
     "idComision": 70,
-    "idLegislador": 101366,
+    "idLegislador": 101604,
     "idPeriodoParlamentario": 100267,
     "nombreComision": "INDUSTRIA Y COMERCIO",
-    "nombres": "Zenaida Concepción",
+    "nombres": "Guadalupe",
     "numeroComision": "17",
     "tipoComision": "PERMANENTE"
   },

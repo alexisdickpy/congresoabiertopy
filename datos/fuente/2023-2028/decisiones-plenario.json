@@ -3524,7 +3524,7 @@
           "appURL": "https://silpy.congreso.gov.py/sesion/112112",
           "camaraSesion": "CAMARA DE SENADORES",
           "fechaSesion": "10/06/2026",
-          "horaFin": "14:47",
+          "horaFin": "14:46",
           "horaInicio": "09:37",
           "idSesion": 112112,
           "numeroSesion": "168",
@@ -3588,7 +3588,7 @@
           "appURL": "https://silpy.congreso.gov.py/sesion/112112",
           "camaraSesion": "CAMARA DE SENADORES",
           "fechaSesion": "10/06/2026",
-          "horaFin": "14:47",
+          "horaFin": "14:46",
           "horaInicio": "09:37",
           "idSesion": 112112,
           "numeroSesion": "168",
@@ -12068,6 +12068,389 @@
         "idTramitacion": 446660,
         "numeroSesion": "202",
         "resultadoTramite": "APROBADO"
+      }
+    },
+    {
+      "acapite": "DE LA CORRECTA UTILIZACIÓN DE MEDICAMENTOS CORTICOIDES, PRESENTADO POR LOS DIPUTADOS NACIONALES CARLOS MARÍA LÓPEZ Y MIGUEL A. DEL PUERTO ",
+      "appURL": "https://silpy.congreso.gov.py/expediente/141914",
+      "autores": [
+        {
+          "apellidos": "LÓPEZ LÓPEZ",
+          "idLegislador": 101451,
+          "nombres": "CARLOS MARÍA"
+        },
+        {
+          "apellidos": "DEL PUERTO SILVA",
+          "idLegislador": 101454,
+          "nombres": "MIGUEL ANGEL"
+        }
+      ],
+      "idProyecto": 141914,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-18"
+        },
+        "camaraTramite": "CAMARA DE SENADORES",
+        "descripcionEtapa": "Cuarto trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario (4T) - Ratifica",
+        "fechaTramite": "18/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-18"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112882",
+          "camaraSesion": "CAMARA DE SENADORES",
+          "fechaSesion": "18/11/2026",
+          "horaFin": "00:00",
+          "horaInicio": "09:00",
+          "idSesion": 112882,
+          "numeroSesion": "202",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446662,
+        "numeroSesion": "202",
+        "resultadoTramite": "SE RATIFICA"
+      }
+    },
+    {
+      "acapite": "QUE MODIFICA EL ARTICULO 3º DE LA LEY 6814/2021 QUE REGULA EL PROCEDIMIENTO PARA EL ENJUICIAMIENTO Y REMOCIÓN DE MAGISTRADOS JUDICIALES, AGENTES FISCALES, DEFENSORES PÚBLICOS Y SÍNDICOS DE QUIEBRA Y DEROGA LA LEY Nº 3759/2009 \"QUE REGULA EL PROCEDIMIENTO PARA EL ENJUICIAMIENTO Y REMOCIÓN DE MAGISTRADOS Y DEROGA LAS LEYES ANTECEDENTES\", Y SUS MODIFICATORIAS, presentado por los Diputados Nacionales Roberto González, Rocío Vallejo, Jorge Avalos ",
+      "appURL": "https://silpy.congreso.gov.py/expediente/142483",
+      "autores": [
+        {
+          "apellidos": "GONZÁLEZ SEGOVIA",
+          "idLegislador": 101425,
+          "nombres": "ROBERTO EUDEZ"
+        },
+        {
+          "apellidos": "VALLEJO ÁVALOS",
+          "idLegislador": 101389,
+          "nombres": "HILDA MARÍA DEL ROCÍO"
+        },
+        {
+          "apellidos": "ÁVALOS MARIÑO",
+          "idLegislador": 101471,
+          "nombres": "JORGE RAMÓN"
+        }
+      ],
+      "idProyecto": 142483,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-18"
+        },
+        "camaraTramite": "CAMARA DE SENADORES",
+        "descripcionEtapa": "Segundo trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "18/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-18"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112882",
+          "camaraSesion": "CAMARA DE SENADORES",
+          "fechaSesion": "18/11/2026",
+          "horaFin": "00:00",
+          "horaInicio": "09:00",
+          "idSesion": 112882,
+          "numeroSesion": "202",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446663,
+        "numeroSesion": "202",
+        "resultadoTramite": "APROBADO CON MODIFICACIONES"
+      }
+    },
+    {
+      "acapite": "QUE AUMENTA PENSIÓN GRACIABLE A LA SEÑORITA ESTELA CONCEPCIÓN RODRÍGUEZ ZARZA,- presentado por los Diputados Nacionales Dalia Estigarribia y Federico Franco Alfaro.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/142845",
+      "autores": [
+        {
+          "apellidos": "ESTIGARRIBIA",
+          "idLegislador": 101440,
+          "nombres": "DALIA MARLENE"
+        },
+        {
+          "apellidos": "FRANCO ALFARO",
+          "idLegislador": 101442,
+          "nombres": "LUIS FEDERICO"
+        }
+      ],
+      "idProyecto": 142845,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-18"
+        },
+        "camaraTramite": "CAMARA DE SENADORES",
+        "descripcionEtapa": "Segundo trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "18/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-18"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112882",
+          "camaraSesion": "CAMARA DE SENADORES",
+          "fechaSesion": "18/11/2026",
+          "horaFin": "00:00",
+          "horaInicio": "09:00",
+          "idSesion": 112882,
+          "numeroSesion": "202",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446697,
+        "numeroSesion": "202",
+        "resultadoTramite": "APROBADO CON MODIFICACIONES"
+      }
+    },
+    {
+      "acapite": "QUE RECONOCE LA FUNCIÓN DEL MEDIADOR COMO APOYO INTEGRAL Y ELEMENTAL A LA GESTIÓN JURISDICCIONAL, LO POSICIONA EN LA AGRUPACIÓN DE LOS CARGOS JURISDICCIONALES NIVEL C “EJECUTIVO SUPERIOR JURISDICCIONAL”, ESTABLECE UNA NIVELACIÓN SALARIAL Y UN RÉGIMEN JUBILATORIO SIMILAR AL MAGISTRADO Y ACTUARIO JUDICIAL, PRESENTADO POR LOS DIPUTADOS NACIONALES ALEJANDRO AGUILERA Y LUIS FEDERICO FRANCO",
+      "appURL": "https://silpy.congreso.gov.py/expediente/155681",
+      "autores": [
+        {
+          "apellidos": "AGUILERA ELIZAUR",
+          "idLegislador": 101453,
+          "nombres": "ALEJANDRO DARÍO"
+        },
+        {
+          "apellidos": "FRANCO ALFARO",
+          "idLegislador": 101442,
+          "nombres": "LUIS FEDERICO"
+        }
+      ],
+      "idProyecto": 155681,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-18"
+        },
+        "camaraTramite": "CAMARA DE SENADORES",
+        "descripcionEtapa": "Segundo trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "18/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-18"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112882",
+          "camaraSesion": "CAMARA DE SENADORES",
+          "fechaSesion": "18/11/2026",
+          "horaFin": "00:00",
+          "horaInicio": "09:00",
+          "idSesion": 112882,
+          "numeroSesion": "202",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446698,
+        "numeroSesion": "202",
+        "resultadoTramite": "APROBADO CON MODIFICACIONES"
+      }
+    },
+    {
+      "acapite": "QUE DISPONE LA TRANSFERENCIA A TITULO GRATUITO A FAVOR DEL MINISTERIO DE URBANISMO, VIVIENDA Y HÁBITAT (MUVH), EL INMUEBLE DE LA FINCA Nº 1.141 PADRÓN Nº 1.696 LOTE 178, PROPIEDAD DE MINISTERIO DE DEFENSA NACIONAL, PARA SU POSTERIOR TRANSFERENCIA A TITULO ONEROSO A FAVOR DE SUS ACTUALES OCUPANTES ",
+      "appURL": "https://silpy.congreso.gov.py/expediente/144442",
+      "autores": [
+        {
+          "apellidos": "VILLALBA DE ABENTE",
+          "idLegislador": 101413,
+          "nombres": "MARÍA CRISTINA"
+        }
+      ],
+      "idProyecto": 144442,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-18"
+        },
+        "camaraTramite": "CAMARA DE SENADORES",
+        "descripcionEtapa": "Segundo trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "18/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-18"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112882",
+          "camaraSesion": "CAMARA DE SENADORES",
+          "fechaSesion": "18/11/2026",
+          "horaFin": "00:00",
+          "horaInicio": "09:00",
+          "idSesion": 112882,
+          "numeroSesion": "202",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446703,
+        "numeroSesion": "202",
+        "resultadoTramite": "RECHAZADO"
+      }
+    },
+    {
+      "acapite": "QUE DECLARA DE INTERÉS SOCIAL Y EXPROPIA A FAVOR DEL ESTADO PARAGUAYO - MINISTERIO DE EDUCACIÓN Y CIENCIAS, UN INMUEBLE IDENTIFICADO COMO PARTE DE LA FINCA Nº 857, PADRÓN Nº 561, SITUADO EN LA COMPAÑÍA YBYHANGUY 1RA., DEL DISTRITO DE SAN BERNARDINO - DEPARTAMENTO DE CORDILLERA, ASIENTO EN LA ESCUELA BÁSICA Nº 3.899 MÁXIMO JIMÉNEZ HERNAES, PRESENTADO POR LAS DIPUTADAS ROCÍO VALLEJO Y GRACIELA AGUILERA, Y EL DIPUTADO HUGO JOEL MEZA.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/145347",
+      "autores": [
+        {
+          "apellidos": "AGUILERA RUIZ DIAZ",
+          "idLegislador": 101450,
+          "nombres": "GRACIELA"
+        },
+        {
+          "apellidos": "MEZA",
+          "idLegislador": 101424,
+          "nombres": "HUGO JOEL"
+        },
+        {
+          "apellidos": "VALLEJO ÁVALOS",
+          "idLegislador": 101389,
+          "nombres": "HILDA MARÍA DEL ROCÍO"
+        }
+      ],
+      "idProyecto": 145347,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-18"
+        },
+        "camaraTramite": "CAMARA DE SENADORES",
+        "descripcionEtapa": "Segundo trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "18/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-18"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112882",
+          "camaraSesion": "CAMARA DE SENADORES",
+          "fechaSesion": "18/11/2026",
+          "horaFin": "00:00",
+          "horaInicio": "09:00",
+          "idSesion": 112882,
+          "numeroSesion": "202",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446704,
+        "numeroSesion": "202",
+        "resultadoTramite": "APROBADO"
+      }
+    },
+    {
+      "acapite": "QUE CAMBIA DE DENOMINACIÓN A LA RUTA PY 19 VIRGEN DEL ROSARIO Y PASA A DENOMINARSE PY19 VIRGEN DEL PILAR, PRESENTADO POR LOS DIPUTADOS NACIONALES DIOSNEL AGUILERA Y FABIANA SOUTO",
+      "appURL": "https://silpy.congreso.gov.py/expediente/146693",
+      "autores": [
+        {
+          "apellidos": "AGUILERA ROJAS",
+          "idLegislador": 101445,
+          "nombres": "DIOSNEL"
+        },
+        {
+          "apellidos": "SOUTO DE ALLIANA",
+          "idLegislador": 101480,
+          "nombres": "MARÍA FABIANA"
+        }
+      ],
+      "idProyecto": 146693,
+      "tramitacion": {
+        "_propio": {
+          "fechaTramite": "2026-11-18"
+        },
+        "camaraTramite": "CAMARA DE SENADORES",
+        "descripcionEtapa": "Segundo trámite constitucional",
+        "descripcionSubEtapa": "Discusión Plenario",
+        "fechaTramite": "18/11/2026",
+        "idSesion": {
+          "_propio": {
+            "fechaSesion": "2026-11-18"
+          },
+          "appURL": "https://silpy.congreso.gov.py/sesion/112882",
+          "camaraSesion": "CAMARA DE SENADORES",
+          "fechaSesion": "18/11/2026",
+          "horaFin": "00:00",
+          "horaInicio": "09:00",
+          "idSesion": 112882,
+          "numeroSesion": "202",
+          "periodoParlamentarioDTO": {
+            "_propio": {
+              "fechaInicio": "2026-07-01",
+              "fechaTermino": "2027-06-30"
+            },
+            "fechaInicio": "01/07/2026",
+            "fechaTermino": "30/06/2027",
+            "idPeriodoLegislativo": 100536,
+            "idPeriodoParlamentario": 100267,
+            "periodoLegislativo": "2023-2028",
+            "periodoParlamentario": "2026-2027"
+          },
+          "tipoSesion": "ORDINARIA"
+        },
+        "idTramitacion": 446705,
+        "numeroSesion": "202",
+        "resultadoTramite": "RECHAZADO"
       }
     }
   ],

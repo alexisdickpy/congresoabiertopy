@@ -307760,6 +307760,36 @@
     }
   },
   {
+    "idProyecto": 143540,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-10"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "10/11/2026",
+      "idTramitacion": 446195,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 143540,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-12"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "12/11/2026",
+      "idTramitacion": 446215,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
+    }
+  },
+  {
     "idProyecto": 143611,
     "tramitacion": {
       "_propio": {
@@ -327005,6 +327035,51 @@
     }
   },
   {
+    "idProyecto": 145451,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-23"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Resolución Sancion Completa",
+      "fechaTramite": "23/10/2026",
+      "idTramitacion": 446151,
+      "numeroSesion": "",
+      "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 145451,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-04"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "04/11/2026",
+      "idTramitacion": 446332,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
+    }
+  },
+  {
+    "idProyecto": 145451,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-02"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "02/11/2026",
+      "idTramitacion": 446334,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
     "idProyecto": 145481,
     "tramitacion": {
       "_propio": {
@@ -338866,7 +338941,7 @@
         "appURL": "https://silpy.congreso.gov.py/sesion/112112",
         "camaraSesion": "CAMARA DE SENADORES",
         "fechaSesion": "10/06/2026",
-        "horaFin": "14:47",
+        "horaFin": "14:46",
         "horaInicio": "09:37",
         "idSesion": 112112,
         "numeroSesion": "168",
@@ -338921,7 +338996,7 @@
         "appURL": "https://silpy.congreso.gov.py/sesion/112112",
         "camaraSesion": "CAMARA DE SENADORES",
         "fechaSesion": "10/06/2026",
-        "horaFin": "14:47",
+        "horaFin": "14:46",
         "horaInicio": "09:37",
         "idSesion": 112112,
         "numeroSesion": "168",
@@ -339272,6 +339347,36 @@
       "idTramitacion": 445502,
       "numeroSesion": "",
       "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 148895,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-10"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "10/11/2026",
+      "idTramitacion": 446192,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 148895,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-12"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "12/11/2026",
+      "idTramitacion": 446216,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
     }
   },
   {
@@ -348340,6 +348445,36 @@
     }
   },
   {
+    "idProyecto": 151682,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-04"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "04/11/2026",
+      "idTramitacion": 446203,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 151682,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-04"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "04/11/2026",
+      "idTramitacion": 446214,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
+    }
+  },
+  {
     "idProyecto": 151701,
     "tramitacion": {
       "_propio": {
@@ -355850,6 +355985,36 @@
     }
   },
   {
+    "idProyecto": 153049,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-02"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "02/11/2026",
+      "idTramitacion": 446324,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 153049,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-04"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "04/11/2026",
+      "idTramitacion": 446343,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
+    }
+  },
+  {
     "idProyecto": 153669,
     "tramitacion": {
       "_propio": {
@@ -355936,7 +356101,7 @@
         "appURL": "https://silpy.congreso.gov.py/sesion/112112",
         "camaraSesion": "CAMARA DE SENADORES",
         "fechaSesion": "10/06/2026",
-        "horaFin": "14:47",
+        "horaFin": "14:46",
         "horaInicio": "09:37",
         "idSesion": 112112,
         "numeroSesion": "168",
@@ -355976,7 +356141,7 @@
         "appURL": "https://silpy.congreso.gov.py/sesion/112112",
         "camaraSesion": "CAMARA DE SENADORES",
         "fechaSesion": "10/06/2026",
-        "horaFin": "14:47",
+        "horaFin": "14:46",
         "horaInicio": "09:37",
         "idSesion": 112112,
         "numeroSesion": "168",
@@ -356587,6 +356752,36 @@
       "idTramitacion": 442644,
       "numeroSesion": "",
       "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 153669,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-03"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "03/11/2026",
+      "idTramitacion": 446199,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 153669,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-12"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "12/11/2026",
+      "idTramitacion": 446217,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
     }
   },
   {
@@ -357611,7 +357806,7 @@
         "appURL": "https://silpy.congreso.gov.py/sesion/112242",
         "camaraSesion": "CAMARA DE SENADORES",
         "fechaSesion": "15/07/2026",
-        "horaFin": "11:56",
+        "horaFin": "11:55",
         "horaInicio": "09:33",
         "idSesion": 112242,
         "numeroSesion": "173",
@@ -359250,6 +359445,51 @@
     }
   },
   {
+    "idProyecto": 154264,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-02"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Resolución Sancion Completa",
+      "fechaTramite": "02/11/2026",
+      "idTramitacion": 446247,
+      "numeroSesion": "",
+      "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 154264,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-10"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "10/11/2026",
+      "idTramitacion": 446368,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 154264,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-12"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "12/11/2026",
+      "idTramitacion": 446395,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
+    }
+  },
+  {
     "idProyecto": 154269,
     "tramitacion": {
       "_propio": {
@@ -359416,7 +359656,7 @@
         "appURL": "https://silpy.congreso.gov.py/sesion/112112",
         "camaraSesion": "CAMARA DE SENADORES",
         "fechaSesion": "10/06/2026",
-        "horaFin": "14:47",
+        "horaFin": "14:46",
         "horaInicio": "09:37",
         "idSesion": 112112,
         "numeroSesion": "168",
@@ -360731,7 +360971,7 @@
         "appURL": "https://silpy.congreso.gov.py/sesion/112112",
         "camaraSesion": "CAMARA DE SENADORES",
         "fechaSesion": "10/06/2026",
-        "horaFin": "14:47",
+        "horaFin": "14:46",
         "horaInicio": "09:37",
         "idSesion": 112112,
         "numeroSesion": "168",
@@ -362290,6 +362530,36 @@
     }
   },
   {
+    "idProyecto": 155544,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-03"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "03/11/2026",
+      "idTramitacion": 446337,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 155544,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-04"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "04/11/2026",
+      "idTramitacion": 446344,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
+    }
+  },
+  {
     "idProyecto": 156024,
     "tramitacion": {
       "_propio": {
@@ -362391,7 +362661,7 @@
         "appURL": "https://silpy.congreso.gov.py/sesion/112242",
         "camaraSesion": "CAMARA DE SENADORES",
         "fechaSesion": "15/07/2026",
-        "horaFin": "11:56",
+        "horaFin": "11:55",
         "horaInicio": "09:33",
         "idSesion": 112242,
         "numeroSesion": "173",
@@ -362431,7 +362701,7 @@
         "appURL": "https://silpy.congreso.gov.py/sesion/112242",
         "camaraSesion": "CAMARA DE SENADORES",
         "fechaSesion": "15/07/2026",
-        "horaFin": "11:56",
+        "horaFin": "11:55",
         "horaInicio": "09:33",
         "idSesion": 112242,
         "numeroSesion": "173",
@@ -362471,7 +362741,7 @@
         "appURL": "https://silpy.congreso.gov.py/sesion/112242",
         "camaraSesion": "CAMARA DE SENADORES",
         "fechaSesion": "15/07/2026",
-        "horaFin": "11:56",
+        "horaFin": "11:55",
         "horaInicio": "09:33",
         "idSesion": 112242,
         "numeroSesion": "173",
@@ -363227,6 +363497,21 @@
       "idTramitacion": 444874,
       "numeroSesion": "",
       "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 156224,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-09"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "09/11/2026",
+      "idTramitacion": 446988,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
     }
   },
   {
@@ -364055,6 +364340,36 @@
     }
   },
   {
+    "idProyecto": 157037,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-02"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "02/11/2026",
+      "idTramitacion": 446326,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 157037,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-04"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "04/11/2026",
+      "idTramitacion": 446331,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
+    }
+  },
+  {
     "idProyecto": 157712,
     "tramitacion": {
       "_propio": {
@@ -364592,6 +364907,36 @@
       "idTramitacion": 444725,
       "numeroSesion": "",
       "resultadoTramite": ""
+    }
+  },
+  {
+    "idProyecto": 160291,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-04"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Promulgación",
+      "fechaTramite": "04/11/2026",
+      "idTramitacion": 446202,
+      "numeroSesion": "",
+      "resultadoTramite": "PROMULGADO"
+    }
+  },
+  {
+    "idProyecto": 160291,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-11-04"
+      },
+      "camaraTramite": "CAMARA DE SENADORES",
+      "descripcionEtapa": "Finalización de Tramitación",
+      "descripcionSubEtapa": "En Espera de Publicación",
+      "fechaTramite": "04/11/2026",
+      "idTramitacion": 446213,
+      "numeroSesion": "",
+      "resultadoTramite": "PUBLICADO"
     }
   }
 ]
