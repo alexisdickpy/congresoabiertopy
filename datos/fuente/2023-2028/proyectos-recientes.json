@@ -123,32 +123,6 @@
   },
   {
     "_propio": {
-      "autores": "Saúl González Rojas",
-      "fechaIngreso": "2026-08-25"
-    },
-    "acapite": "QUE RECONOCE EL DERECHO DE LA SOCIEDAD AL CONOCIMIENTO DE LA VERDADERA HISTÓRICA Y PRESERVACIÓN DE LA MEMORIA COLECTIVA SOBRE LA CAMPAÑA DE LAS CORDILLERAS Y DE LOS HECHOS DE ACOSTA ÑU, ARTICULA SU PROTECCIÓN PATRIMONIAL, FORTALECE SU ENSEÑANZA Y TURISMO EDUCATIVO, PROMUEVE LA INVESTIGACIÓN Y DIVULGACIÓN  HISTÓRICA  Y CREA EL COMITÉ HISTORICO AD HONOREM, presentado por el Diputado Nacional Saúl González.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/158222",
-    "autores": [
-      {
-        "apellidos": "González Rojas",
-        "idLegislador": 101564,
-        "nombres": "Saúl"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2695029",
-    "fechaIngresoExpediente": "25/08/2026",
-    "idProyecto": 158222,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
       "autores": "ENRIQUE ANTONIO CONCEPCIÓN BUZARQUIS CÁCERES, ADRIÁN DARÍO (BILLY) VAESKEN VÁZQUEZ, ARNALDO AGUSTÍN VALDEZ NOGUERA",
       "fechaIngreso": "2026-08-27"
     },
@@ -255,7 +229,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2695149",
     "fechaIngresoExpediente": "01/09/2026",
@@ -4172,6 +4146,42 @@
     "expedienteCamara": "D-2696462",
     "fechaIngresoExpediente": "19/11/2026",
     "idProyecto": 161025,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "MIGUEL ANGEL DEL PUERTO SILVA, CARLOS MARÍA LÓPEZ LÓPEZ, ARTURO RENE URBIETA CUEVAS",
+      "fechaIngreso": "2026-11-24"
+    },
+    "acapite": "QUE REGULA LA EQUINOTERAPIA COMO MÉTODO TERAPEUTICO DE HABILITACIÓN Y REHABILITACIÓN DE LA SALUD INTEGRAL HUMANA, presentado por los Diputados Nacional Carlos María López, Arturo Rene Urbieta, Miguel Ángel Del Puerto",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161261",
+    "autores": [
+      {
+        "apellidos": "DEL PUERTO SILVA",
+        "idLegislador": 101454,
+        "nombres": "MIGUEL ANGEL"
+      },
+      {
+        "apellidos": "LÓPEZ LÓPEZ",
+        "idLegislador": 101451,
+        "nombres": "CARLOS MARÍA"
+      },
+      {
+        "apellidos": "URBIETA CUEVAS",
+        "idLegislador": 101396,
+        "nombres": "ARTURO RENE"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696654",
+    "fechaIngresoExpediente": "24/11/2026",
+    "idProyecto": 161261,
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE DIPUTADOS",

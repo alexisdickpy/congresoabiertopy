@@ -26949,6 +26949,19 @@
           "tema": "ambiente"
         }
       ]
+    },
+    {
+      "idProyecto": 161261,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "salud",
+          "tema": "salud"
+        }
+      ]
     }
   ]
 }

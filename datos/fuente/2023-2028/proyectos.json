@@ -3197,7 +3197,7 @@
     },
     "acapite": "QUE CREA JUZGADOS DE PRIMERA INSTANCIA, FISCALÍAS, DEFENSORÍAS Y SINDICATURA EN EL ÁMBITO DEL PODER JUDICIAL, EL MINISTERIO PÚBLICO, MINISTERIO DE LA DEFENSA PÚBLICA Y LA SINDICATURA GENERAL DE QUIEBRAS, PARA EL DISTRITO DE YHÚ CON COMPETENCIA EN LOS DISTRITOS DE YHU, VAQUERÍA Y SAN JOAQUÍN, presentado por el Diputado  Derlis Rodríguez.",
     "appURL": "https://silpy.congreso.gov.py/expediente/130443",
-    "estadoProyecto": "EN TRAMITE",
+    "estadoProyecto": "ARCHIVADO",
     "expedienteCamara": "D-2476458",
     "fechaIngresoExpediente": "12/03/2024",
     "idProyecto": 130443,
@@ -22479,6 +22479,20 @@
     "expedienteCamara": "D-2696462",
     "fechaIngresoExpediente": "19/11/2026",
     "idProyecto": 161025,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-24"
+    },
+    "acapite": "QUE REGULA LA EQUINOTERAPIA COMO MÉTODO TERAPEUTICO DE HABILITACIÓN Y REHABILITACIÓN DE LA SALUD INTEGRAL HUMANA, presentado por los Diputados Nacional Carlos María López, Arturo Rene Urbieta, Miguel Ángel Del Puerto",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161261",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696654",
+    "fechaIngresoExpediente": "24/11/2026",
+    "idProyecto": 161261,
     "iniciativa": "PARLAMENTARIA",
     "origenProyecto": "CAMARA DE DIPUTADOS",
     "tipoProyecto": "PROYECTO DE LEY"
