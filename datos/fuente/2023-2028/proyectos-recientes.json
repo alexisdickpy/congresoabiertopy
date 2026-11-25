@@ -1,128 +1,6 @@
 [
   {
     "_propio": {
-      "autores": "Celeste Josefina Amarilla Vda. de Boccia, Rafael Augusto Filizzola Serra, Ignacio Iramain Chilavert, José Gregorio Ledesma Narváez, Gladys Lucía Mendoza de Esparza, Blanca Margarita Ovelar de Duarte, José Daniel Oviedo Antúnez, Ramona Yolanda Paredes, Orlando Penner Dürksen, Lilian Graciela Samaniego González, Mario Alberto Varela Cardozo, Ever Federico Villalba Benítez",
-      "fechaIngreso": "2026-08-26"
-    },
-    "acapite": "Proyecto de Ley “QUE CREA EL ARANCEL ESPECÍFICO COMPENSATORIO POR LOS DAÑOS A LA SALUD OCASIONADOS POR EL CONSUMO DE TABACO”, presentado por los senadores Ever Federico Villalba Benítez, Rafael Augusto Filizzola Serra, Orlando Penner Dürksen, Mario Alberto Varela Cardozo, José Daniel Oviedo Antúnez, Ignacio Iramain Chilavert, José Gregorio Ledesma Narváez, Blanca Margarita Ovelar de Duarte, Celeste Josefina Amarilla Vda. de Boccia, Lucía Mendoza de Esparza, Ramona Yolanda Paredes y Lilian Graciela Samaniego González, de fecha 26 de agosto de 2026.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/158196",
-    "autores": [
-      {
-        "apellidos": "Amarilla Vda. de Boccia",
-        "idLegislador": 101350,
-        "nombres": "Celeste Josefina"
-      },
-      {
-        "apellidos": "Filizzola Serra",
-        "idLegislador": 101362,
-        "nombres": "Rafael Augusto"
-      },
-      {
-        "apellidos": "Iramain Chilavert",
-        "idLegislador": 101514,
-        "nombres": "Ignacio"
-      },
-      {
-        "apellidos": "Ledesma Narváez",
-        "idLegislador": 101368,
-        "nombres": "José Gregorio"
-      },
-      {
-        "apellidos": "Mendoza de Esparza",
-        "idLegislador": 101595,
-        "nombres": "Gladys Lucía"
-      },
-      {
-        "apellidos": "Ovelar de Duarte",
-        "idLegislador": 101380,
-        "nombres": "Blanca Margarita"
-      },
-      {
-        "apellidos": "Oviedo Antúnez",
-        "idLegislador": 101359,
-        "nombres": "José Daniel"
-      },
-      {
-        "apellidos": "Paredes",
-        "idLegislador": 101344,
-        "nombres": "Ramona Yolanda"
-      },
-      {
-        "apellidos": "Penner Dürksen",
-        "idLegislador": 101372,
-        "nombres": "Orlando"
-      },
-      {
-        "apellidos": "Samaniego González",
-        "idLegislador": 101352,
-        "nombres": "Lilian Graciela"
-      },
-      {
-        "apellidos": "Varela Cardozo",
-        "idLegislador": 101356,
-        "nombres": "Mario Alberto"
-      },
-      {
-        "apellidos": "Villalba Benítez",
-        "idLegislador": 101355,
-        "nombres": "Ever Federico"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "S-2603932",
-    "fechaIngresoExpediente": "26/08/2026",
-    "idProyecto": 158196,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE SENADORES",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
-      "autores": "MIGUEL ANGEL DEL PUERTO SILVA, RAÚL LUIS LATORRE MARTÍNEZ, CARLOS MARÍA LÓPEZ LÓPEZ, HILDA MARÍA DEL ROCÍO VALLEJO ÁVALOS",
-      "fechaIngreso": "2026-08-26"
-    },
-    "acapite": "QUE MODIFICA LA LEY 480/1974 QUE ACTUALIZA EL ARANCEL MEDICO - QUIRÚRGICO PRIVADO Y DE MEDICINA PRE-PAGA (SEGUROS),  presentado por los Diputados Nacional Carlos María López, Miguel Ángel Del Puerto, Raúl Latorre, Rocío Vallejo",
-    "appURL": "https://silpy.congreso.gov.py/expediente/158221",
-    "autores": [
-      {
-        "apellidos": "DEL PUERTO SILVA",
-        "idLegislador": 101454,
-        "nombres": "MIGUEL ANGEL"
-      },
-      {
-        "apellidos": "LATORRE MARTÍNEZ",
-        "idLegislador": 101385,
-        "nombres": "RAÚL LUIS"
-      },
-      {
-        "apellidos": "LÓPEZ LÓPEZ",
-        "idLegislador": 101451,
-        "nombres": "CARLOS MARÍA"
-      },
-      {
-        "apellidos": "VALLEJO ÁVALOS",
-        "idLegislador": 101389,
-        "nombres": "HILDA MARÍA DEL ROCÍO"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2695050",
-    "fechaIngresoExpediente": "26/08/2026",
-    "idProyecto": 158221,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
       "autores": "ENRIQUE ANTONIO CONCEPCIÓN BUZARQUIS CÁCERES, ADRIÁN DARÍO (BILLY) VAESKEN VÁZQUEZ, ARNALDO AGUSTÍN VALDEZ NOGUERA",
       "fechaIngreso": "2026-08-27"
     },
@@ -548,7 +426,7 @@
       "autores": "Hermelinda Alvarenga de Ortega, Eduardo Hirohito Nakayama Rojas, Blanca Margarita Ovelar de Duarte, José Daniel Oviedo Antúnez, Regina Lizarella Valiente de Rodríguez",
       "fechaIngreso": "2026-09-02"
     },
-    "acapite": "Proyecto de Ley “QUE EXPRESA LA CONDENA DEL ESTADO PARAGUAYO A LOS HECHOS ACAECIDOS EN LA BATALLA DE ACOSTA ÑU EL 16 DE AGOSTO DE 1869, HONRA LA MEMORIA DE LOS NIÑOS MÁRTIRES DE LA PATRIA Y CREA EL PREMIO NACIONAL ‘NIÑOS MÁRTIRES DE ACOSTA ÑU”, presentado por los senadores Hermelinda Alvarenga de Ortega, Regina Lizarella Valiente de Rodríguez, Blanca Margarita Ovelar de Duarte, José Daniel Oviedo Antúnez y Eduardo Hirohito Nakayama Rojas, de fecha 1 de setiembre de 2026.",
+    "acapite": "Proyecto de Ley “QUE EXPRESA LA CONDENA DEL ESTADO PARAGUAYO A LOS HECHOS ACAECIDOS EN LA BATALLA DE ACOSTA ÑU EL 16 DE AGOSTO DE 1869, HONRA LA MEMORIA DE LOS NIÑOS MÁRTIRES DE LA PATRIA Y CREA EL PREMIO NACIONAL ‘NIÑOS MÁRTIRES DE ACOSTA ÑU”, presentado por los senadores Hermelinda Alvarenga de Ortega, Regina Lizarella Valiente de Rodríguez, Blanca Margarita Ovelar de Duarte, José Daniel Oviedo Antúnez, Eduardo Hirohito Nakayama Rojas y Sergio Roberto Rojas Sosa, de fecha 1 de setiembre de 2026.",
     "appURL": "https://silpy.congreso.gov.py/expediente/158391",
     "autores": [
       {
@@ -707,7 +585,7 @@
     "appURL": "https://silpy.congreso.gov.py/expediente/158621",
     "autores": [],
     "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "C-2603984",
     "fechaIngresoExpediente": "04/09/2026",
@@ -1717,9 +1595,9 @@
         "nombres": "JUAN MANUEL"
       }
     ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
-    "estadoProyecto": "EN TRAMITE",
+    "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+    "descripcionSubEtapa": "PROYECTO RETIRADO",
+    "estadoProyecto": "RETIRADO",
     "expedienteCamara": "D-2695741",
     "fechaIngresoExpediente": "08/10/2026",
     "idProyecto": 159441,
@@ -2454,7 +2332,7 @@
       }
     ],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2695962",
     "fechaIngresoExpediente": "21/10/2026",
@@ -3136,7 +3014,7 @@
       "autores": "Derlis Ariel Alejandro Osorio Nunes",
       "fechaIngreso": "2026-11-03"
     },
-    "acapite": "Proyecto de Ley “DEL DERECHO DE ACCESO DEL PACIENTE A SU HISTORIA CLÍNICA”, presentado por el senador Derlis Ariel Alejandro Osorio Nunes, de fecha 3 de noviembre de 2026.",
+    "acapite": "Proyecto de Ley “DEL DERECHO DE ACCESO DEL PACIENTE A SU HISTORIA CLÍNICA”, presentado por el senador Derlis Ariel Alejandro Osorio Nunes y Sergio Roberto Rojas Sosa, de fecha 3 de noviembre de 2026.",
     "appURL": "https://silpy.congreso.gov.py/expediente/160341",
     "autores": [
       {
@@ -3210,7 +3088,7 @@
     "appURL": "https://silpy.congreso.gov.py/expediente/160371",
     "autores": [],
     "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "S-2604228",
     "fechaIngresoExpediente": "02/11/2026",

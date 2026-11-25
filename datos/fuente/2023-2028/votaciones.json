@@ -87093,7 +87093,7 @@
       "acapite": "QUE REGULA LA UTILIZACIÓN DE VIDEOCÁMARAS POR LAS FUERZAS PÚBLICAS CON PARTICIPACIÓN CIUDADANA, presentado por el Diputado Nacional Yamil Esgaib.",
       "appURL": "https://silpy.congreso.gov.py/expediente/129739",
       "descripcionEtapa": "CUARTO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN - (4T)- RATIFICA",
+      "descripcionSubEtapa": "DISCUSIÓN PLENARIO (4T) - RATIFICA",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2375405",
       "fechaIngresoExpediente": "14/11/2023",
@@ -87638,7 +87638,7 @@
       "acapite": "QUE CREA LA COMISIÓN BICAMERAL PARA LA RESTAURACIÓN DEL MUSEO DE ARTE JESUÍTICO - GUARANI DE SAN IGNACIO GUAZÚ, PRESENTADO POR LOS DIPUTADOS CARLOS ARRECHEA Y ARNALDO VALDÉZ.",
       "appURL": "https://silpy.congreso.gov.py/expediente/156434",
       "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2694200",
       "fechaIngresoExpediente": "07/07/2026",
@@ -88025,7 +88025,7 @@
       "acapite": "Proyecto de Ley “QUE ESTABLECE UN RÉGIMEN ESPECIAL AL ORO DE INVERSIÓN”, presentado por los senadores Natalicio Esteban Chase Acosta, Regina Lizarella Valiente de Rodríguez, Juan Carlos Luis Galaverna Ortega, Dionisio Oswaldo Amarilla Guirland, Sergio Roberto Rojas Sosa, Lourdes Noelia Cabrera Petters, Hermelinda Alvarenga de Ortega y Edgar Idalino López Ruíz. ",
       "appURL": "https://silpy.congreso.gov.py/expediente/153616",
       "descripcionEtapa": "TERCER TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN - (3T) - RECHAZO",
+      "descripcionSubEtapa": "DISCUSIÓN PLENARIO (3T) - RECHAZO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "S-2603393",
       "fechaIngresoExpediente": "20/04/2026",
@@ -89491,7 +89491,7 @@
       "acapite": "DE ESPACIOS SENSORIALES PARA LA INCLUSIÓN DE LAS PERSONAS CON TRASTORNO DEL ESPECTRO AUTISTA (TEA),-  presentado por las Diputadas Nacionales Fabiana Souto, Jazmín Narváez, Rocío Abed, y los Diputados Nacionales Santiago Benítez, Néstor Castellano, y Saúl González.",
       "appURL": "https://silpy.congreso.gov.py/expediente/146545",
       "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2587605",
       "fechaIngresoExpediente": "01/09/2025",
@@ -89568,7 +89568,7 @@
       "acapite": "QUE REGULA LA UTILIZACIÓN DE VIDEOCÁMARAS POR LAS FUERZAS PÚBLICAS CON PARTICIPACIÓN CIUDADANA, presentado por el Diputado Nacional Yamil Esgaib.",
       "appURL": "https://silpy.congreso.gov.py/expediente/129739",
       "descripcionEtapa": "CUARTO TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN - (4T)- RATIFICA",
+      "descripcionSubEtapa": "DISCUSIÓN PLENARIO (4T) - RATIFICA",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2375405",
       "fechaIngresoExpediente": "14/11/2023",
@@ -91709,6 +91709,86 @@
       "idTramitacion": 441142,
       "numeroSesion": "89",
       "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146833
+      ],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "ABSTENCIÓN/BLANCO": 1,
+        "AUSENTE": 39,
+        "NO": 36,
+        "SI": 4
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109485",
+    "descripcion": "Consideración del Proyecto de Ley, “QUE DECLARA PATRIMONIO TRADICIONAL Y CULTURAL DEL\nPARAGUAY, A LA CORRIDA DE TOROS (TORÍN)”.",
+    "idVotacion": 109485,
+    "observacion": "(Si) Ratificación Texto Cámara de Diputados (No) Aceptar la versión de la Cámara de Senadores Resultado: Se acepta la versión de la Cámara de Senadores",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2025-06-11"
+      },
+      "acapite": "Proyecto de Ley “QUE DECLARA PATRIMONIO TRADICIONAL Y CULTURAL DEL PARAGUAY, A LA CORRIDA DE TOROS (TORIN)”, presentado por el senador Lider Santiago Amarilla Ríos, de fecha 10 de junio de 2025.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/143540",
+      "descripcionEtapa": "TRAMITACIÓN TERMINADA",
+      "descripcionSubEtapa": "/",
+      "estadoProyecto": "PUBLICADO",
+      "expedienteCamara": "S-2502310",
+      "fechaIngresoExpediente": "11/06/2025",
+      "idProyecto": 143540,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 1,
+    "totalAusente": 39,
+    "totalNO": 36,
+    "totalNoVota": 0,
+    "totalSI": 4,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-13"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Cuarto trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario (4T) - Rechazo",
+      "fechaTramite": "13/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-13"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112632",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "13/10/2026",
+        "horaFin": "13:51",
+        "horaInicio": "09:50",
+        "idSesion": 112632,
+        "numeroSesion": "89",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 441145,
+      "numeroSesion": "89",
+      "resultadoTramite": "NO SE RATIFICA"
     }
   }
 ]
