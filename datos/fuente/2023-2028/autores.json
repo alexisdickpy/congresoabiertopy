@@ -35791,6 +35791,98 @@
     "_propio": {
       "delPeriodo": true,
       "orden": 1,
+      "slug": "dalia-marlene-estigarribia"
+    },
+    "idProyecto": 139271,
+    "legislador": {
+      "activo": true,
+      "apellidos": "ESTIGARRIBIA",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101440",
+      "bancada": "BANCADA DEL PARTIDO LIBERAL RADICAL AUTÉNTICO PLRA - A",
+      "camaraParlamentario": "CAMARA DE DIPUTADOS",
+      "cargoBancada": "SECRETARIA",
+      "departamento": "CENTRAL",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101440.jpg",
+      "idLegislador": 101440,
+      "nombres": "DALIA MARLENE",
+      "partidoPolitico": "Partido Liberal Radical Auténtico PLRA",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 2,
+      "slug": "walter-hugo-garcia-mendez"
+    },
+    "idProyecto": 139271,
+    "legislador": {
+      "activo": true,
+      "apellidos": "GARCIA MENDEZ",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101404",
+      "bancada": "BANCADA DEL MOVIMIENTO CONCIENCIA DEMOCRÁTICA NACIONAL -YO CREO",
+      "camaraParlamentario": "CAMARA DE DIPUTADOS",
+      "cargoBancada": "MIEMBRO",
+      "departamento": "ALTO PARANÁ",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101404.jpg",
+      "idLegislador": 101404,
+      "nombres": "WALTER HUGO",
+      "partidoPolitico": "Movimiento Conciencia Democrática Nacional",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 3,
+      "slug": "johanna-paola-ortega-ghiringhelli"
+    },
+    "idProyecto": 139271,
+    "legislador": {
+      "activo": true,
+      "apellidos": "ORTEGA GHIRINGHELLI",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101447",
+      "bancada": "BANCADA PAIS SOLIDARIO",
+      "camaraParlamentario": "CAMARA DE DIPUTADOS",
+      "cargoBancada": "LIDER",
+      "departamento": "CAPITAL",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101447.jpg",
+      "idLegislador": 101447,
+      "nombres": "JOHANNA PAOLA",
+      "partidoPolitico": "Partido País Solidario PPS",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 4,
+      "slug": "guillermo-ariel-rodriguez-dure"
+    },
+    "idProyecto": 139271,
+    "legislador": {
+      "activo": true,
+      "apellidos": "RODRÍGUEZ DÚRE",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101399",
+      "bancada": "BANCADA DEL MOVIMIENTO CONCIENCIA DEMOCRÁTICA NACIONAL -YO CREO",
+      "camaraParlamentario": "CAMARA DE DIPUTADOS",
+      "cargoBancada": "MIEMBRO",
+      "departamento": "ALTO PARANÁ",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101399.jpg",
+      "idLegislador": 101399,
+      "nombres": "GUILLERMO ARIEL",
+      "partidoPolitico": "Movimiento Conciencia Democrática Nacional",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 1,
       "slug": "luis-federico-franco-alfaro"
     },
     "idProyecto": 139286,
@@ -42981,6 +43073,29 @@
       "fotoURL": "https://silpy.congreso.gov.py/images/101347.jpg",
       "idLegislador": 101347,
       "nombres": "Edgar Idalino",
+      "partidoPolitico": "Partido Liberal Radical Auténtico PLRA",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 1,
+      "slug": "dalia-marlene-estigarribia"
+    },
+    "idProyecto": 145049,
+    "legislador": {
+      "activo": true,
+      "apellidos": "ESTIGARRIBIA",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101440",
+      "bancada": "BANCADA DEL PARTIDO LIBERAL RADICAL AUTÉNTICO PLRA - A",
+      "camaraParlamentario": "CAMARA DE DIPUTADOS",
+      "cargoBancada": "SECRETARIA",
+      "departamento": "CENTRAL",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101440.jpg",
+      "idLegislador": 101440,
+      "nombres": "DALIA MARLENE",
       "partidoPolitico": "Partido Liberal Radical Auténtico PLRA",
       "periodoLegislativo": "2023-2028",
       "tipoParlamentario": "TITULAR"
@@ -50327,6 +50442,29 @@
     "_propio": {
       "delPeriodo": true,
       "orden": 1,
+      "slug": "sebastian-emilio-remesowski-squef"
+    },
+    "idProyecto": 158012,
+    "legislador": {
+      "activo": false,
+      "apellidos": "REMESOWSKI SQUEF",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101504",
+      "bancada": "BANCADA DE LA ASOCIACIÓN NACIONAL REPUBLICANA ANR - A \"HONOR COLORADO\"",
+      "camaraParlamentario": "CAMARA DE DIPUTADOS",
+      "cargoBancada": "MIEMBRO",
+      "departamento": "ITAPÚA",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101504.jpg",
+      "idLegislador": 101504,
+      "nombres": "SEBASTIÁN EMILIO",
+      "partidoPolitico": "Asociación Nacional Republicana ANR",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 1,
       "slug": "miguel-angel-del-puerto-silva"
     },
     "idProyecto": 158018,
@@ -50387,6 +50525,29 @@
       "fotoURL": "https://silpy.congreso.gov.py/images/101396.jpg",
       "idLegislador": 101396,
       "nombres": "ARTURO RENE",
+      "partidoPolitico": "Asociación Nacional Republicana ANR",
+      "periodoLegislativo": "2023-2028",
+      "tipoParlamentario": "TITULAR"
+    }
+  },
+  {
+    "_propio": {
+      "delPeriodo": true,
+      "orden": 1,
+      "slug": "jose-domingo-adorno-mazacotte"
+    },
+    "idProyecto": 159703,
+    "legislador": {
+      "activo": true,
+      "apellidos": "ADORNO MAZACOTTE",
+      "appURL": "https://silpy.congreso.gov.py/legislador/101409",
+      "bancada": "BANCADA DE LA ASOCIACIÓN NACIONAL REPUBLICANA ANR - A \"HONOR COLORADO\"",
+      "camaraParlamentario": "CAMARA DE DIPUTADOS",
+      "cargoBancada": "MIEMBRO",
+      "departamento": "ALTO PARAGUAY",
+      "fotoURL": "https://silpy.congreso.gov.py/images/101409.jpg",
+      "idLegislador": 101409,
+      "nombres": "JOSÉ DOMINGO",
       "partidoPolitico": "Asociación Nacional Republicana ANR",
       "periodoLegislativo": "2023-2028",
       "tipoParlamentario": "TITULAR"

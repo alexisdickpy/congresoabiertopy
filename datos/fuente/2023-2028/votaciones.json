@@ -85155,8 +85155,8 @@
       },
       "acapite": "QUE PROHÍBE TOTALMENTE EL USO DE TELÉFONOS CELULARES Y DISPOSITIVOS ELECTRÓNICOS  PERSONALES EN INSTITUCIONES EDUCATIVAS PÚBLICAS, PRIVADAS Y SUBVENCIONADAS DEL PARAGUAY, PRESENTADO POR EL DIPUTADO NACIONAL JOSÉ RODRÍGUEZ",
       "appURL": "https://silpy.congreso.gov.py/expediente/139611",
-      "descripcionEtapa": "TERCER TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "RESOLUCIÓN DE SANCIÓN AUTOMÁTICA EN 3T (MODIFICA)",
+      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
+      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2582825",
       "fechaIngresoExpediente": "17/01/2025",
@@ -91789,6 +91789,391 @@
       "idTramitacion": 441145,
       "numeroSesion": "89",
       "resultadoTramite": "NO SE RATIFICA"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "resuelto",
+      "idLeyes": [
+        146873
+      ],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "AUSENTE": 39,
+        "NO": 1,
+        "SI": 40
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109495",
+    "descripcion": "Consideración del Proyecto de Ley, “QUE ESTABLECE EL 25 DE JUNIO DE CADA AÑO, COMO EL “DÍA\nNACIONAL DE LA AMISTAD ENTRE LA REPÚBLICA DEL PARAGUAY Y LA REPÚBLICA DEL PERÚ”.",
+    "idVotacion": 109495,
+    "observacion": "(Si) Aprobación en general (No) Rechazo Resultado: Aprobado en general",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-07-01"
+      },
+      "acapite": "Proyecto de Ley “QUE ESTABLECE EL 25 DE JUNIO DE CADA AÑO COMO EL DÍA NACIONAL DE LA AMISTAD ENTRE LA REPÚBLICA DEL PARAGUAY Y LA REPÚBLICA DEL PERÚ”, presentado por los senadores Juan Carlos Luis Galaverna Ortega y Lizarella Valiente de Rodríguez, de fecha 1 de julio de 2026.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/156224",
+      "descripcionEtapa": "FINALIZACIÓN DE TRAMITACIÓN",
+      "descripcionSubEtapa": "EN ESPERA DE PUBLICACIÓN",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "S-2603675",
+      "fechaIngresoExpediente": "01/07/2026",
+      "idProyecto": 156224,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE SENADORES",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 0,
+    "totalAusente": 39,
+    "totalNO": 1,
+    "totalNoVota": 0,
+    "totalSI": 40,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-13"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Segundo trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "13/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-13"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112632",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "13/10/2026",
+        "horaFin": "13:51",
+        "horaInicio": "09:50",
+        "idSesion": 112632,
+        "numeroSesion": "89",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 442093,
+      "numeroSesion": "89",
+      "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "AUSENTE": 38,
+        "SI": 42
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109505",
+    "descripcion": " Consideración del Proyecto de Ley, “QUE DECLARA DE INTERÉS PÚBLICO Y PRIORIDAD NACIONAL\nEL PROYECTO DE ASFALTADO Y CONSTRUCCIÓN DE LA RUTA DE TODO TIEMPO EN EL TRAMO CARMELO\nPERALTA – PUERTO GUARANÍ, EN EL DEPARTAMENTO DE ALTO PARAGUAY, Y AUTORIZA AL PODER EJECUTIVO\nA GESTIONAR SU FINANCIAMIENTO E IMPLEMENTACIÓN”.",
+    "idVotacion": 109505,
+    "observacion": "(Si) Aprobación en general (No) Rechazo Resultado: Aprobado en general",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-09-11"
+      },
+      "acapite": "QUE DECLARA DE INTERÉS PÚBLICO Y PRIORIDAD NACIONAL EL PROYECTO DE ASFALTADO Y CONSTRUCCIÓN DE LA RUTA DE TODO TIEMPO EN EL TRAMO CARMELO PERALTA - PUERO GUARANÍ, EN EL DEPARTAMENTO DE ALTO PARAGUAY, Y AUTORIZA AL PODER EJECUTIVO A GESTIONAR SU FINANCIAMIENTO E IMPLEMENTACIÓN, PRESENTADO POR EL DIPUTADO NACIONAL JOSÉ DOMINGO ADORNO",
+      "appURL": "https://silpy.congreso.gov.py/expediente/159703",
+      "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "D-2695375",
+      "fechaIngresoExpediente": "11/09/2026",
+      "idProyecto": 159703,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 0,
+    "totalAusente": 38,
+    "totalNO": 0,
+    "totalNoVota": 0,
+    "totalSI": 42,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-13"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "13/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-13"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112632",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "13/10/2026",
+        "horaFin": "13:51",
+        "horaInicio": "09:50",
+        "idSesion": 112632,
+        "numeroSesion": "89",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 441336,
+      "numeroSesion": "89",
+      "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "AUSENTE": 37,
+        "SI": 43
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109515",
+    "descripcion": "Consideración del Proyecto de Ley, “QUE RECONOCE Y PROMUEVE EL NEWCOM O VÓLEIBOL\nADAPTADO COMO ACTIVIDAD FÍSICA, RECREATIVA, SOCIAL E INCLUSIVA”.",
+    "idVotacion": 109515,
+    "observacion": "(Si) Aprobación en general (No) Rechazo Resultado: Aprobado en general",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-08-19"
+      },
+      "acapite": "QUE RECONOCE Y PROMUEVE EL NEWCOM O VÓLEIBOL ADAPTADO COMO ACTIVIDAD FÍSICA, RECREATIVA, SOCIAL E INCLUSIVA, presentado por el Diputado Nacional Sebastián Remesowski ",
+      "appURL": "https://silpy.congreso.gov.py/expediente/158012",
+      "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "D-2694915",
+      "fechaIngresoExpediente": "19/08/2026",
+      "idProyecto": 158012,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 0,
+    "totalAusente": 37,
+    "totalNO": 0,
+    "totalNoVota": 0,
+    "totalSI": 43,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-13"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "13/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-13"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112632",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "13/10/2026",
+        "horaFin": "13:51",
+        "horaInicio": "09:50",
+        "idSesion": 112632,
+        "numeroSesion": "89",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "EXTRAORDINARIA"
+      },
+      "idTramitacion": 441153,
+      "numeroSesion": "89",
+      "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "AUSENTE": 35,
+        "SI": 45
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109516",
+    "descripcion": "Consideración del Proyecto de Ley, “QUE MODIFICA EL ARTÍCULO 1º DE LA LEY Nº 7349/2024 “DE\nPENSIÓN PARA NIÑAS, NIÑOS, ADOLESCENTES Y PERSONAS CON DISCAPACIDAD VÍCTIMAS COLATERALES DE\nFEMINICIDIO U HOMICIDIO DE SU PROGENITOR EN UN CONTEXTO DE VIOLENCIA FAMILIAR”.",
+    "idVotacion": 109516,
+    "observacion": "(Si) Aprobación en general y en particular (No) Rechazo Resultado: Aprobado en general y en particular",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2025-07-21"
+      },
+      "acapite": "QUE MODIFICA EL ARTÍCULO 1º DE LA LEY Nº 7349/2024 \"DE PENSIÓN PARA NIÑAS, NIÑOS, ADOLESCENTES Y PERSONAS CON DISCAPACIDAD VÍCTIMAS COLATERALES DE FEMINICIDIO U HOMICIDIO DE SU PROGENITOR EN UN CONTEXTO DE VIOLENCIA FAMILIAR, PRESENTADO POR LA DIPUTADA NACIONAL DALIA ESTIGARRIBIA",
+      "appURL": "https://silpy.congreso.gov.py/expediente/145049",
+      "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "D-2586271",
+      "fechaIngresoExpediente": "21/07/2025",
+      "idProyecto": 145049,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 0,
+    "totalAusente": 35,
+    "totalNO": 0,
+    "totalNoVota": 0,
+    "totalSI": 45,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-20"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "20/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-20"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112642",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "20/10/2026",
+        "horaFin": "13:16",
+        "horaInicio": "09:00",
+        "idSesion": 112642,
+        "numeroSesion": "140",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 442096,
+      "numeroSesion": "140",
+      "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "ABSTENCIÓN/BLANCO": 10,
+        "AUSENTE": 33,
+        "NO": 15,
+        "SI": 22
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109517",
+    "descripcion": "Consideración del Proyecto de Ley, “QUE MODIFICA EL ARTÍCULO 17 DE LA LEY Nº 1183/1985, `CÓDIGO\nCIVIL´, MODIFICADO POR LEY Nº 1/1992 Y LEY Nº 5419/2015”.",
+    "idVotacion": 109517,
+    "observacion": "(Si) Aprobación en general (No) Rechazo Resultado: Aprobado en general",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2024-12-13"
+      },
+      "acapite": "QUE MODIFICA EL ARTÍCULO 17 DE LA LEY Nº 1183/1985 CODIGO CIVIL, MODIFICADO POR LA LEY Nº 1/1192 Y LEY  Nº 5419/2015, presentado por los Diputados Nacionales Dalia Estigarribia, Johanna Ortega, Guillermo Rodríguez y Walter García. ",
+      "appURL": "https://silpy.congreso.gov.py/expediente/139271",
+      "descripcionEtapa": "SEGUNDO TRÁMITE CONSTITUCIONAL",
+      "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+      "estadoProyecto": "EN TRAMITE",
+      "expedienteCamara": "D-2482560",
+      "fechaIngresoExpediente": "13/12/2024",
+      "idProyecto": 139271,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "PROYECTO DE LEY",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 10,
+    "totalAusente": 33,
+    "totalNO": 15,
+    "totalNoVota": 0,
+    "totalSI": 22,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-20"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "20/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-20"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112642",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "20/10/2026",
+        "horaFin": "13:16",
+        "horaInicio": "09:00",
+        "idSesion": 112642,
+        "numeroSesion": "140",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 442097,
+      "numeroSesion": "140",
+      "resultadoTramite": "APROBADO"
     }
   }
 ]

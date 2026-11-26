@@ -1,42 +1,6 @@
 [
   {
     "_propio": {
-      "autores": "ENRIQUE ANTONIO CONCEPCIÓN BUZARQUIS CÁCERES, ADRIÁN DARÍO (BILLY) VAESKEN VÁZQUEZ, ARNALDO AGUSTÍN VALDEZ NOGUERA",
-      "fechaIngreso": "2026-08-27"
-    },
-    "acapite": "QUE ESTABLECE AUMENTO AL IMPUESTO SELECTIVO AL CONSUMO DE TABACO EN DIEZ POR CIENTO (10%) SOBRE LO ESTABLECIDO EN LA LEY Nº 6.380/20 EN SU ART. 115 Y ESTABLECE LA OBLIGATORIEDAD QUE DICHOS FONDOS SEAN DESTINADOS AL MINISTERIO DE SALUD PÚBLICA Y BIENESTAR SOCIAL, PRESENTADO POR LOS DIPUTADOS ENRIQUE ANTONIO BUZARQUIS, ARNALDO VALDEZ Y ADRIAN VAESKEN.",
-    "appURL": "https://silpy.congreso.gov.py/expediente/158241",
-    "autores": [
-      {
-        "apellidos": "BUZARQUIS CÁCERES",
-        "idLegislador": 101457,
-        "nombres": "ENRIQUE ANTONIO CONCEPCIÓN"
-      },
-      {
-        "apellidos": "VAESKEN VÁZQUEZ",
-        "idLegislador": 101444,
-        "nombres": "ADRIÁN DARÍO (BILLY)"
-      },
-      {
-        "apellidos": "VALDEZ NOGUERA",
-        "idLegislador": 101469,
-        "nombres": "ARNALDO AGUSTÍN"
-      }
-    ],
-    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
-    "descripcionSubEtapa": "DISCUSIÓN PLENARIO",
-    "estadoProyecto": "EN TRAMITE",
-    "expedienteCamara": "D-2695080",
-    "fechaIngresoExpediente": "27/08/2026",
-    "idProyecto": 158241,
-    "iniciativa": "PARLAMENTARIA",
-    "ministerios": [],
-    "origenProyecto": "CAMARA DE DIPUTADOS",
-    "tipoProyecto": "PROYECTO DE LEY",
-    "urgencia": "ORDINARIO"
-  },
-  {
-    "_propio": {
       "autores": "WALTER HUGO GARCIA MENDEZ",
       "fechaIngreso": "2026-08-31"
     },
@@ -3911,7 +3875,7 @@
       "autores": "CARLOS ALBERTO NÚÑEZ SALINAS",
       "fechaIngreso": "2026-11-17"
     },
-    "acapite": "QUE ESTABLECE UN PROGRAMA EXTRAORDINARIO DE GARANTÍAS PARA LA CONTINUIDAD PRODUCTIVA Y LA PROTECCIÓN DEL EMPLEO DE LAS MIPYMES Y LOS TRABAJADORES INDEPENDIENTES AFECTADOS POR LA RESOLUCIÓN DE UENO BANK S.A. PRESENTADO POR EL DIPUTADO NACIONAL CARLOS ALBERTO NUÑEZ SALINAS",
+    "acapite": "QUE ESTABLECE UN PROGRAMA EXTRAORDINARIO DE GARANTÍAS PARA LA CONTINUIDAD PRODUCTIVA Y LA PROTECCIÓN DEL EMPLEO DE LAS MIPYMES Y LOS TRABAJADORES INDEPENDIENTES AFECTADOS POR LA RESOLUCIÓN DE UENO BANK S.A. PRESENTADO POR EL DIPUTADO NACIONAL CARLOS ALBERTO NÚÑEZ SALINAS",
     "appURL": "https://silpy.congreso.gov.py/expediente/161003",
     "autores": [
       {
@@ -3963,7 +3927,7 @@
       "autores": "WALTER HUGO GARCIA MENDEZ",
       "fechaIngreso": "2026-11-17"
     },
-    "acapite": "QUE DECLARA EN SITUACIÓN DE EMERGENCIA VIAL LA RUTA PY07 ‘DOCTOR JOSÉ GASPAR RODRÍGUEZ DE FRANCIA’, EN EL TRAMO QUE UNE SANTA FE DEL PARANÁ CON EL CRUCE ITAKYRY, DEPARTAMENTO DE ALTO PARANÁ, Y FACULTA AL PODER EJECUTIVO - MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES A GESTIONAR LOS RECURSOS NECESARIOS PARA LA REPARACIÓN DEL TRAMO AFECTADO, PRESENTADO POR EL DIPUTADO NACIONAL WALTER HUGO GARCIA",
+    "acapite": "QUE DECLARA EN SITUACIÓN DE EMERGENCIA VIAL LA RUTA PY07 ‘DOCTOR JOSÉ GASPAR RODRÍGUEZ DE FRANCIA’, EN EL TRAMO QUE UNE SANTA FE DEL PARANÁ CON EL CRUCE ITAKYRY, DEPARTAMENTO DE ALTO PARANÁ, Y FACULTA AL PODER EJECUTIVO - MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES A GESTIONAR LOS RECURSOS NECESARIOS PARA LA REPARACIÓN DEL TRAMO AFECTADO, PRESENTADO POR EL DIPUTADO NACIONAL WALTER HUGO GARCÍA",
     "appURL": "https://silpy.congreso.gov.py/expediente/161007",
     "autores": [
       {
@@ -4035,7 +3999,7 @@
       "autores": "MIGUEL ANGEL DEL PUERTO SILVA, CARLOS MARÍA LÓPEZ LÓPEZ, ARTURO RENE URBIETA CUEVAS",
       "fechaIngreso": "2026-11-24"
     },
-    "acapite": "QUE REGULA LA EQUINOTERAPIA COMO MÉTODO TERAPEUTICO DE HABILITACIÓN Y REHABILITACIÓN DE LA SALUD INTEGRAL HUMANA, presentado por los Diputados Nacional Carlos María López, Arturo Rene Urbieta, Miguel Ángel Del Puerto",
+    "acapite": "QUE REGULA LA EQUINOTERAPIA COMO MÉTODO TERAPÉUTICO DE HABILITACIÓN Y REHABILITACIÓN DE LA SALUD INTEGRAL HUMANA, presentado por los Diputados Nacionales Carlos María López, Arturo René Urbieta, Miguel Ángel Del Puerto",
     "appURL": "https://silpy.congreso.gov.py/expediente/161261",
     "autores": [
       {
@@ -4063,6 +4027,160 @@
     "iniciativa": "PARLAMENTARIA",
     "ministerios": [],
     "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Juan Carlos Luis Galaverna Ortega, Walter Janusz Ricardo Kobylanski Brandhuber, Carlos Núñez Agüero, Colym Gregorio Soroka Benítez, Regina Lizarella Valiente de Rodríguez",
+      "fechaIngreso": "2026-11-25"
+    },
+    "acapite": "Proyecto de Ley “QUE RESTABLECE EL CONTROL PARLAMENTARIO SOBRE EL PRESUPUESTO GENERAL DE LA NACIÓN Y DEROGA DISPOSICIONES EXCEPCIONALES DE LA LEY 7218/2023 Y NORMAS CONEXAS DE ADMINISTRACIÓN FINANCIERA”, presentado por los senadores Colym Soroka, Regina Lizarella Valiente de Rodríguez, Juan Carlos Luis Galaverna Ortega, Walter Janusz Ricardo Kobylanski Brandhuber y Carlos Núñez Agüero, de fecha 25 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161315",
+    "autores": [
+      {
+        "apellidos": "Galaverna Ortega",
+        "idLegislador": 101484,
+        "nombres": "Juan Carlos Luis"
+      },
+      {
+        "apellidos": "Kobylanski Brandhuber",
+        "idLegislador": 101594,
+        "nombres": "Walter Janusz Ricardo"
+      },
+      {
+        "apellidos": "Núñez Agüero",
+        "idLegislador": 101354,
+        "nombres": "Carlos"
+      },
+      {
+        "apellidos": "Soroka Benítez",
+        "idLegislador": 101364,
+        "nombres": "Colym Gregorio"
+      },
+      {
+        "apellidos": "Valiente de Rodríguez",
+        "idLegislador": 101349,
+        "nombres": "Regina Lizarella"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604350",
+    "fechaIngresoExpediente": "25/11/2026",
+    "idProyecto": 161315,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "Dionisio Oswaldo Amarilla Guirland, Guadalupe Aveiro Solis, Pedro Alejandro Díaz Verón, José Gregorio Ledesma Narváez",
+      "fechaIngreso": "2026-11-23"
+    },
+    "acapite": "Proyecto de Ley “QUE MODIFICA Y AMPLÍA LA LEY N° 7083/2023, A FIN DE IMPLEMENTAR UN PLAN URBANÍSTICO INTEGRAL PARA EL DESARROLLO Y ORDENAMIENTO TERRITORIAL DEL DISTRITO DE VILLA HAYES”, presentado por los senadores José Gregorio Ledesma Narváez, Dionisio Oswaldo Amarilla Guirland, Guadalupe Aveiro Solis y Pedro Alejandro Díaz Verón, de fecha 23 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161317",
+    "autores": [
+      {
+        "apellidos": "Amarilla Guirland",
+        "idLegislador": 101373,
+        "nombres": "Dionisio Oswaldo"
+      },
+      {
+        "apellidos": "Aveiro Solis",
+        "idLegislador": 101604,
+        "nombres": "Guadalupe"
+      },
+      {
+        "apellidos": "Díaz Verón",
+        "idLegislador": 101374,
+        "nombres": "Pedro Alejandro"
+      },
+      {
+        "apellidos": "Ledesma Narváez",
+        "idLegislador": 101368,
+        "nombres": "José Gregorio"
+      }
+    ],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604359",
+    "fechaIngresoExpediente": "23/11/2026",
+    "idProyecto": 161317,
+    "iniciativa": "PARLAMENTARIA",
+    "ministerios": [],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "",
+      "fechaIngreso": "2026-11-26"
+    },
+    "acapite": "MENSAJE DEL PODER EJECUTIVO Nº 444/2026 QUE MODIFICA EL PRESUPUESTO GENERAL DE LA NACIÓN PARA EL EJERCICIO FISCAL 2026, APROBADO POR LEY N° 7609 DEL 31 DE DICIEMBRE DE 2025, “QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACIÓN PARA EL EJERCICIO FISCAL 2026”, MINISTERIO DE SALUD PÚBLICA Y BIENESTAR SOCIAL.\n\n",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161388",
+    "autores": [],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696727",
+    "fechaIngresoExpediente": "26/11/2026",
+    "idProyecto": 161388,
+    "iniciativa": "PODER EJECUTIVO",
+    "ministerios": [
+      "MINISTERIO DE ECONOMÍA Y FINANZAS"
+    ],
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "",
+      "fechaIngreso": "2026-11-25"
+    },
+    "acapite": "MENSAJE DEL PODER EJECUTIVO N.° 442.- Ministerio de Economía y Finanzas, de fecha 25 de noviembre de 2026, por el cual remite el Proyecto de Ley “QUE AUTORIZA LA EMISIÓN DE LETRAS DEL TESORO PÚBLICO Y SE ESTABLECEN MEDIDAS EXCEPCIONALES PARA EL FINANCIAMIENTO DEL CIERRE DEL EJERCICIO FISCAL 2026”. ",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161389",
+    "autores": [],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604362",
+    "fechaIngresoExpediente": "25/11/2026",
+    "idProyecto": 161389,
+    "iniciativa": "PODER EJECUTIVO",
+    "ministerios": [
+      "MINISTERIO DE ECONOMÍA Y FINANZAS"
+    ],
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY",
+    "urgencia": "ORDINARIO"
+  },
+  {
+    "_propio": {
+      "autores": "",
+      "fechaIngreso": "2026-11-25"
+    },
+    "acapite": "MENSAJE DEL PODER EJECUTIVO N.° 441.- Ministerio de Economía y Finanzas, y Ministerio de Trabajo, Empleo y Seguridad Social, de fecha 25 de noviembre de 2026, por el cual remite el Proyecto de Ley “QUE ESTABLECE UN RÉGIMEN EXCEPCIONAL DE ANTICIPO DE CRÉDITOS LABORALES A LOS TRABAJADORES DE LAS EMPRESAS VINCULADAS O RELACIONADAS QUE HAYAN CESADO POR COMPLETO SUS ACTIVIDADES TRAS EL INICIO DEL PROCEDIMIENTO DE RESOLUCIÓN DE UENO BANK S.A. DISPUESTO POR EL BANCO CENTRAL DEL PARAGUAY”.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161391",
+    "autores": [],
+    "descripcionEtapa": "PRIMER TRÁMITE CONSTITUCIONAL",
+    "descripcionSubEtapa": "DICTAMEN DE COMISIÓN",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604361",
+    "fechaIngresoExpediente": "25/11/2026",
+    "idProyecto": 161391,
+    "iniciativa": "PODER EJECUTIVO",
+    "ministerios": [
+      "MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL",
+      "MINISTERIO DE ECONOMÍA Y FINANZAS"
+    ],
+    "origenProyecto": "CAMARA DE SENADORES",
     "tipoProyecto": "PROYECTO DE LEY",
     "urgencia": "ORDINARIO"
   }

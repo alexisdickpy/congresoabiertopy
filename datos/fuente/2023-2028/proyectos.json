@@ -13263,7 +13263,7 @@
     },
     "acapite": "MENSAJE DEL PODER EJECUTIVO Nº 295/2025, QUE CREA EL MINISTERIO DE INDUSTRIA, COMERCIO, TURISMO, MINAS Y ENERGÍA (MIC)",
     "appURL": "https://silpy.congreso.gov.py/expediente/145071",
-    "estadoProyecto": "EN TRAMITE",
+    "estadoProyecto": "RETIRADO",
     "expedienteCamara": "D-2586375",
     "fechaIngresoExpediente": "24/07/2025",
     "idProyecto": 145071,
@@ -22417,7 +22417,7 @@
     "_propio": {
       "fechaIngreso": "2026-11-17"
     },
-    "acapite": "QUE ESTABLECE UN PROGRAMA EXTRAORDINARIO DE GARANTÍAS PARA LA CONTINUIDAD PRODUCTIVA Y LA PROTECCIÓN DEL EMPLEO DE LAS MIPYMES Y LOS TRABAJADORES INDEPENDIENTES AFECTADOS POR LA RESOLUCIÓN DE UENO BANK S.A. PRESENTADO POR EL DIPUTADO NACIONAL CARLOS ALBERTO NUÑEZ SALINAS",
+    "acapite": "QUE ESTABLECE UN PROGRAMA EXTRAORDINARIO DE GARANTÍAS PARA LA CONTINUIDAD PRODUCTIVA Y LA PROTECCIÓN DEL EMPLEO DE LAS MIPYMES Y LOS TRABAJADORES INDEPENDIENTES AFECTADOS POR LA RESOLUCIÓN DE UENO BANK S.A. PRESENTADO POR EL DIPUTADO NACIONAL CARLOS ALBERTO NÚÑEZ SALINAS",
     "appURL": "https://silpy.congreso.gov.py/expediente/161003",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2696442",
@@ -22445,7 +22445,7 @@
     "_propio": {
       "fechaIngreso": "2026-11-17"
     },
-    "acapite": "QUE DECLARA EN SITUACIÓN DE EMERGENCIA VIAL LA RUTA PY07 ‘DOCTOR JOSÉ GASPAR RODRÍGUEZ DE FRANCIA’, EN EL TRAMO QUE UNE SANTA FE DEL PARANÁ CON EL CRUCE ITAKYRY, DEPARTAMENTO DE ALTO PARANÁ, Y FACULTA AL PODER EJECUTIVO - MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES A GESTIONAR LOS RECURSOS NECESARIOS PARA LA REPARACIÓN DEL TRAMO AFECTADO, PRESENTADO POR EL DIPUTADO NACIONAL WALTER HUGO GARCIA",
+    "acapite": "QUE DECLARA EN SITUACIÓN DE EMERGENCIA VIAL LA RUTA PY07 ‘DOCTOR JOSÉ GASPAR RODRÍGUEZ DE FRANCIA’, EN EL TRAMO QUE UNE SANTA FE DEL PARANÁ CON EL CRUCE ITAKYRY, DEPARTAMENTO DE ALTO PARANÁ, Y FACULTA AL PODER EJECUTIVO - MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES A GESTIONAR LOS RECURSOS NECESARIOS PARA LA REPARACIÓN DEL TRAMO AFECTADO, PRESENTADO POR EL DIPUTADO NACIONAL WALTER HUGO GARCÍA",
     "appURL": "https://silpy.congreso.gov.py/expediente/161007",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2696443",
@@ -22487,7 +22487,7 @@
     "_propio": {
       "fechaIngreso": "2026-11-24"
     },
-    "acapite": "QUE REGULA LA EQUINOTERAPIA COMO MÉTODO TERAPEUTICO DE HABILITACIÓN Y REHABILITACIÓN DE LA SALUD INTEGRAL HUMANA, presentado por los Diputados Nacional Carlos María López, Arturo Rene Urbieta, Miguel Ángel Del Puerto",
+    "acapite": "QUE REGULA LA EQUINOTERAPIA COMO MÉTODO TERAPÉUTICO DE HABILITACIÓN Y REHABILITACIÓN DE LA SALUD INTEGRAL HUMANA, presentado por los Diputados Nacionales Carlos María López, Arturo René Urbieta, Miguel Ángel Del Puerto",
     "appURL": "https://silpy.congreso.gov.py/expediente/161261",
     "estadoProyecto": "EN TRAMITE",
     "expedienteCamara": "D-2696654",
@@ -22495,6 +22495,76 @@
     "idProyecto": 161261,
     "iniciativa": "PARLAMENTARIA",
     "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-25"
+    },
+    "acapite": "Proyecto de Ley “QUE RESTABLECE EL CONTROL PARLAMENTARIO SOBRE EL PRESUPUESTO GENERAL DE LA NACIÓN Y DEROGA DISPOSICIONES EXCEPCIONALES DE LA LEY 7218/2023 Y NORMAS CONEXAS DE ADMINISTRACIÓN FINANCIERA”, presentado por los senadores Colym Soroka, Regina Lizarella Valiente de Rodríguez, Juan Carlos Luis Galaverna Ortega, Walter Janusz Ricardo Kobylanski Brandhuber y Carlos Núñez Agüero, de fecha 25 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161315",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604350",
+    "fechaIngresoExpediente": "25/11/2026",
+    "idProyecto": 161315,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-23"
+    },
+    "acapite": "Proyecto de Ley “QUE MODIFICA Y AMPLÍA LA LEY N° 7083/2023, A FIN DE IMPLEMENTAR UN PLAN URBANÍSTICO INTEGRAL PARA EL DESARROLLO Y ORDENAMIENTO TERRITORIAL DEL DISTRITO DE VILLA HAYES”, presentado por los senadores José Gregorio Ledesma Narváez, Dionisio Oswaldo Amarilla Guirland, Guadalupe Aveiro Solis y Pedro Alejandro Díaz Verón, de fecha 23 de noviembre de 2026.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161317",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604359",
+    "fechaIngresoExpediente": "23/11/2026",
+    "idProyecto": 161317,
+    "iniciativa": "PARLAMENTARIA",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-26"
+    },
+    "acapite": "MENSAJE DEL PODER EJECUTIVO Nº 444/2026 QUE MODIFICA EL PRESUPUESTO GENERAL DE LA NACIÓN PARA EL EJERCICIO FISCAL 2026, APROBADO POR LEY N° 7609 DEL 31 DE DICIEMBRE DE 2025, “QUE APRUEBA EL PRESUPUESTO GENERAL DE LA NACIÓN PARA EL EJERCICIO FISCAL 2026”, MINISTERIO DE SALUD PÚBLICA Y BIENESTAR SOCIAL.\n\n",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161388",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "D-2696727",
+    "fechaIngresoExpediente": "26/11/2026",
+    "idProyecto": 161388,
+    "iniciativa": "PODER EJECUTIVO",
+    "origenProyecto": "CAMARA DE DIPUTADOS",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-25"
+    },
+    "acapite": "MENSAJE DEL PODER EJECUTIVO N.° 442.- Ministerio de Economía y Finanzas, de fecha 25 de noviembre de 2026, por el cual remite el Proyecto de Ley “QUE AUTORIZA LA EMISIÓN DE LETRAS DEL TESORO PÚBLICO Y SE ESTABLECEN MEDIDAS EXCEPCIONALES PARA EL FINANCIAMIENTO DEL CIERRE DEL EJERCICIO FISCAL 2026”. ",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161389",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604362",
+    "fechaIngresoExpediente": "25/11/2026",
+    "idProyecto": 161389,
+    "iniciativa": "PODER EJECUTIVO",
+    "origenProyecto": "CAMARA DE SENADORES",
+    "tipoProyecto": "PROYECTO DE LEY"
+  },
+  {
+    "_propio": {
+      "fechaIngreso": "2026-11-25"
+    },
+    "acapite": "MENSAJE DEL PODER EJECUTIVO N.° 441.- Ministerio de Economía y Finanzas, y Ministerio de Trabajo, Empleo y Seguridad Social, de fecha 25 de noviembre de 2026, por el cual remite el Proyecto de Ley “QUE ESTABLECE UN RÉGIMEN EXCEPCIONAL DE ANTICIPO DE CRÉDITOS LABORALES A LOS TRABAJADORES DE LAS EMPRESAS VINCULADAS O RELACIONADAS QUE HAYAN CESADO POR COMPLETO SUS ACTIVIDADES TRAS EL INICIO DEL PROCEDIMIENTO DE RESOLUCIÓN DE UENO BANK S.A. DISPUESTO POR EL BANCO CENTRAL DEL PARAGUAY”.",
+    "appURL": "https://silpy.congreso.gov.py/expediente/161391",
+    "estadoProyecto": "EN TRAMITE",
+    "expedienteCamara": "S-2604361",
+    "fechaIngresoExpediente": "25/11/2026",
+    "idProyecto": 161391,
+    "iniciativa": "PODER EJECUTIVO",
+    "origenProyecto": "CAMARA DE SENADORES",
     "tipoProyecto": "PROYECTO DE LEY"
   }
 ]

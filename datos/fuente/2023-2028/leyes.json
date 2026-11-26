@@ -45979,7 +45979,9 @@
       "fechaPromulgacion": "2026-11-09",
       "fechaSancion": "2026-10-13",
       "idPeriodoParlamentario": 100267,
-      "idVotaciones": [],
+      "idVotaciones": [
+        109495
+      ],
       "idVotacionesNoResueltas": [],
       "idVotacionesOtrosPeriodos": [],
       "numeroLey": "7736",

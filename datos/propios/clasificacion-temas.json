@@ -26962,6 +26962,81 @@
           "tema": "salud"
         }
       ]
+    },
+    {
+      "idProyecto": 161315,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "presupuesto",
+          "tema": "presupuesto"
+        }
+      ]
+    },
+    {
+      "idProyecto": 161317,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "distrito",
+          "tema": "estado"
+        }
+      ]
+    },
+    {
+      "idProyecto": 161388,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "presupuesto",
+          "tema": "presupuesto"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "salud",
+          "tema": "salud"
+        }
+      ]
+    },
+    {
+      "idProyecto": 161389,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "ejercicio fiscal",
+          "tema": "presupuesto"
+        }
+      ]
+    },
+    {
+      "idProyecto": 161391,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "empresa",
+          "tema": "economia"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "trabajador",
+          "tema": "trabajo"
+        }
+      ]
     }
   ]
 }
