@@ -80730,8 +80730,8 @@
       },
       "acapite": "QUE MODIFICA Y AMPLIA EL ARTICULO 289 DE LA LEY 1160/97 CODIGO PENAL PARAGUAYO, presentado por el Diputado Nacional Yamil Esgaib",
       "appURL": "https://silpy.congreso.gov.py/expediente/139451",
-      "descripcionEtapa": "TERCER TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "RESOLUCIÓN DE SANCIÓN SEGUN CÁMARA REVISORA",
+      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
+      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2482677",
       "fechaIngresoExpediente": "17/12/2024",
@@ -89801,8 +89801,8 @@
       },
       "acapite": "QUE MODIFICA Y AMPLIA EL ARTICULO 289 DE LA LEY 1160/97 CODIGO PENAL PARAGUAYO, presentado por el Diputado Nacional Yamil Esgaib",
       "appURL": "https://silpy.congreso.gov.py/expediente/139451",
-      "descripcionEtapa": "TERCER TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "RESOLUCIÓN DE SANCIÓN SEGUN CÁMARA REVISORA",
+      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
+      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2482677",
       "fechaIngresoExpediente": "17/12/2024",
@@ -91580,8 +91580,8 @@
       },
       "acapite": "QUE MODIFICA Y AMPLIA EL ARTICULO 289 DE LA LEY 1160/97 CODIGO PENAL PARAGUAYO, presentado por el Diputado Nacional Yamil Esgaib",
       "appURL": "https://silpy.congreso.gov.py/expediente/139451",
-      "descripcionEtapa": "TERCER TRÁMITE CONSTITUCIONAL",
-      "descripcionSubEtapa": "RESOLUCIÓN DE SANCIÓN SEGUN CÁMARA REVISORA",
+      "descripcionEtapa": "TRÁMITE DE ESPERA OBJECIÓN/PROMULGACIÓN",
+      "descripcionSubEtapa": "INGRESO DE OBJECIÓN/PROMULGACIÓN DEL EJECUTIVO",
       "estadoProyecto": "EN TRAMITE",
       "expedienteCamara": "D-2482677",
       "fechaIngresoExpediente": "17/12/2024",
@@ -92174,6 +92174,82 @@
       "idTramitacion": 442097,
       "numeroSesion": "140",
       "resultadoTramite": "APROBADO"
+    }
+  },
+  {
+    "_propio": {
+      "cantidadVotos": 80,
+      "enlaceLey": "sin_ley",
+      "idLeyes": [],
+      "periodoLegislativo": "2023-2028",
+      "totalesCoinciden": true,
+      "totalesRecalculados": {
+        "AUSENTE": 37,
+        "SI": 43
+      }
+    },
+    "appURL": "https://silpy.congreso.gov.py/votacion/109518",
+    "descripcion": "Consideración del Proyecto de Resolución, “QUE CONCEDE EL PREMIO EMILIANO R. FERNÁNDEZ DE LA\nHONORABLE CÁMARA DE DIPUTADOS, AL ELENCO DE DANZAS PARAGUAY TEKOETÉ”.",
+    "idVotacion": 109518,
+    "observacion": "(Si) Aprobación (No) Rechazo Resultado: Aprobado",
+    "proyecto": {
+      "_propio": {
+        "fechaIngresoExpediente": "2026-07-29"
+      },
+      "acapite": "QUE CONCEDE EL PREMIO EMILIANO R. FERNÁNDEZ AL ELENCO DE DANZA TEKOETE, PRESENTADO POR LA DIPUTADA ALEXANDRA ZENA.",
+      "appURL": "https://silpy.congreso.gov.py/expediente/157148",
+      "descripcionEtapa": "FINALIZACIÓN DE TRAMITACIÓN",
+      "descripcionSubEtapa": "SE COMUNICA A QUIEN CORRESPONDA",
+      "estadoProyecto": "COMUNICADO",
+      "expedienteCamara": "D-2694487",
+      "fechaIngresoExpediente": "29/07/2026",
+      "idProyecto": 157148,
+      "iniciativa": "PARLAMENTARIA",
+      "origenProyecto": "CAMARA DE DIPUTADOS",
+      "tipoProyecto": "RESOLUCIONES UNICAMERALES - (Art. 107-CS y 104-CD REGLAMENTO INTERNO)",
+      "urgencia": "ORDINARIO"
+    },
+    "totalAbstencion": 0,
+    "totalAusente": 37,
+    "totalNO": 0,
+    "totalNoVota": 0,
+    "totalSI": 43,
+    "tramitacion": {
+      "_propio": {
+        "fechaTramite": "2026-10-20"
+      },
+      "camaraTramite": "CAMARA DE DIPUTADOS",
+      "descripcionEtapa": "Primer trámite constitucional",
+      "descripcionSubEtapa": "Discusión Plenario",
+      "fechaTramite": "20/10/2026",
+      "idSesion": {
+        "_propio": {
+          "fechaSesion": "2026-10-20"
+        },
+        "appURL": "https://silpy.congreso.gov.py/sesion/112642",
+        "camaraSesion": "CAMARA DE DIPUTADOS",
+        "fechaSesion": "20/10/2026",
+        "horaFin": "13:16",
+        "horaInicio": "09:00",
+        "idSesion": 112642,
+        "numeroSesion": "140",
+        "periodoParlamentarioDTO": {
+          "_propio": {
+            "fechaInicio": "2026-07-01",
+            "fechaTermino": "2027-06-30"
+          },
+          "fechaInicio": "01/07/2026",
+          "fechaTermino": "30/06/2027",
+          "idPeriodoLegislativo": 100536,
+          "idPeriodoParlamentario": 100267,
+          "periodoLegislativo": "2023-2028",
+          "periodoParlamentario": "2026-2027"
+        },
+        "tipoSesion": "ORDINARIA"
+      },
+      "idTramitacion": 442098,
+      "numeroSesion": "140",
+      "resultadoTramite": "APRUEBA RESOLUCION UNICAMERAL"
     }
   }
 ]

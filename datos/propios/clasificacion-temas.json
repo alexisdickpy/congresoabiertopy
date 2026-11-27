@@ -27037,6 +27037,81 @@
           "tema": "trabajo"
         }
       ]
+    },
+    {
+      "idProyecto": 161461,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "bienes incautados",
+          "tema": "justicia"
+        }
+      ]
+    },
+    {
+      "idProyecto": 161462,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "ambient",
+          "tema": "ambiente"
+        }
+      ]
+    },
+    {
+      "idProyecto": 161471,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "presupuesto",
+          "tema": "presupuesto"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "empleo",
+          "tema": "trabajo"
+        }
+      ]
+    },
+    {
+      "idProyecto": 161472,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "empresa",
+          "tema": "economia"
+        },
+        {
+          "origen": "regla",
+          "palabraClave": "laboral",
+          "tema": "trabajo"
+        }
+      ]
+    },
+    {
+      "idProyecto": 161538,
+      "pendiente": false,
+      "periodoLegislativo": "2023-2028",
+      "revisado": false,
+      "temas": [
+        {
+          "origen": "regla",
+          "palabraClave": "expropia",
+          "tema": "inmuebles"
+        }
+      ]
     }
   ]
 }
