@@ -13,6 +13,7 @@ import {
   COLUMNAS_TABLA,
   comparativa,
   esDeProyectoDeLey,
+  estadosDelPeriodo,
   esVotoEmitido,
   ficha,
   legisladores,
@@ -210,10 +211,22 @@ test("historial: un proyecto sin ley sancionada enlaza a su expediente oficial, 
     assert.ok(h.etapa);
   }
   assert.ok(sinLey.some((h) => h.proyecto.estado === "ARCHIVADO"));
-  assert.deepEqual(
-    b.votos.porEstado.map((e) => [e.estado, e.filtro]).sort(),
-    [["ARCHIVADO", "archivado"], ["EN TRAMITE", "en-tramite"], ["PUBLICADO", "publicado"]],
-  );
+  // Los estados salen de los datos en vivo: la fuente puede sumar estados nuevos (p. ej. RETIRADO),
+  // así que no se exige la lista exacta sino que cada uno tenga su filtro y sus votaciones.
+  const estados = estadosDelPeriodo(PERIODO);
+  const filtros = b.votos.porEstado.map((e) => e.filtro);
+  assert.equal(new Set(filtros).size, filtros.length);
+  for (const e of b.votos.porEstado) {
+    assert.ok(e.estado, "votación sin estado oficial");
+    assert.equal(e.filtro, estados.get(e.estado));
+    assert.equal(e.total, b.votos.historial.filter((h) => h.proyecto?.estado === e.estado).length);
+  }
+  const conocidos = { ARCHIVADO: "archivado", "EN TRAMITE": "en-tramite", PUBLICADO: "publicado" };
+  for (const [estado, filtro] of Object.entries(conocidos)) {
+    assert.ok(b.votos.porEstado.some((e) => e.estado === estado && e.filtro === filtro), estado);
+  }
+  if (estados.has("RETIRADO")) assert.equal(estados.get("RETIRADO"), "retirado");
+  assert.equal(b.votos.porEstado.reduce((n, e) => n + e.total, 0), b.votos.total);
 });
 
 test("filtro de votos por estado: dirección, filas y texto del resultado", () => {
