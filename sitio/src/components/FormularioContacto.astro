@@ -1,0 +1,185 @@
+---
+// Formulario de contacto (#140): mensaje, página donde se vio el error (se completa sola desde
+// "Reportar un error"), correo para responder (opcional), un campo trampa y la verificación de Cloudflare
+// Turnstile. Se envía al Worker de contacto/, que lo manda por correo al proyecto sin guardarlo. Si el envío
+// falla, muestra el correo del proyecto para escribir directamente. Textos en contenido/contacto.json
+// (etiquetas) y contenido/interaccion.json (avisos del script).
+import CopiarCorreo from "./CopiarCorreo.astro";
+import * as rutas from "../lib/rutas.js";
+import { crudo, md, textos } from "../lib/contenido.js";
+import { CAMPOS, LIMITES, claveTurnstile, scriptTurnstile } from "../lib/formulario.js";
+const tx = textos.contacto.formulario;
+const id = (campo: string) => `contacto-${campo}`;
+---
+
+<form
+  id={rutas.anclaFormulario}
+  class="formulario-contacto"
+  method="post"
+  action={rutas.apiContacto()}
+  data-formulario-contacto
+  data-parametro-pagina={rutas.parametrosContacto.pagina}
+  data-parametro-asunto={rutas.parametrosContacto.asunto}
+>
+  <div class="campo">
+    <label for={id(CAMPOS.mensaje)}>{tx.mensaje}</label>
+    <textarea id={id(CAMPOS.mensaje)} name={CAMPOS.mensaje} rows="7" maxlength={LIMITES.mensaje} required></textarea>
+  </div>
+  <div class="campo">
+    <label for={id(CAMPOS.pagina)}>{tx.pagina} <span class="opcional">{tx.opcional}</span></label>
+    <input id={id(CAMPOS.pagina)} name={CAMPOS.pagina} type="text" maxlength={LIMITES.pagina} aria-describedby={id("pagina-ayuda")} />
+    <p class="ayuda" id={id("pagina-ayuda")}>{tx.paginaAyuda}</p>
+  </div>
+  <div class="campo">
+    <label for={id(CAMPOS.correo)}>{tx.correo} <span class="opcional">{tx.opcional}</span></label>
+    <input id={id(CAMPOS.correo)} name={CAMPOS.correo} type="email" maxlength={LIMITES.correo} autocomplete="email" aria-describedby={id("correo-ayuda")} />
+    <p class="ayuda" id={id("correo-ayuda")}>{tx.correoAyuda}</p>
+  </div>
+  <input type="hidden" name={CAMPOS.asunto} />
+  <div class="trampa" aria-hidden="true">
+    <label for={id(CAMPOS.trampa)}>{tx.trampa}</label>
+    <input id={id(CAMPOS.trampa)} name={CAMPOS.trampa} type="text" tabindex="-1" autocomplete="off" />
+  </div>
+  <div class="cf-turnstile" data-sitekey={claveTurnstile(import.meta.env)} data-language="es" data-size="flexible"></div>
+  <p><button type="submit" class="boton">{tx.enviar}</button></p>
+  <p class="aviso" role="status" aria-live="polite" data-aviso></p>
+  <div class="alternativa" data-alternativa hidden>
+    <p>{tx.siFalla}</p>
+    <CopiarCorreo />
+  </div>
+  <p class="ayuda" set:html={md(tx.privacidad, { urlPrivacidad: crudo(rutas.privacidad()) })} />
+</form>
+
+<script is:inline src={scriptTurnstile} async defer></script>
+
+<script>
+  import interaccion from "../contenido/interaccion.json";
+  import { AVISOS_DE_ERROR, CAMPOS } from "../lib/formulario.js";
+  const ti = interaccion.contacto as Record<string, string>;
+
+  declare global {
+    interface Window {
+      turnstile?: { reset: (contenedor?: Element) => void };
+    }
+  }
+
+  for (const formulario of document.querySelectorAll<HTMLFormElement>("[data-formulario-contacto]")) {
+    const campo = (nombre: string) => formulario.elements.namedItem(nombre) as HTMLInputElement | null;
+    const boton = formulario.querySelector<HTMLButtonElement>("button[type=submit]")!;
+    const aviso = formulario.querySelector<HTMLElement>("[data-aviso]")!;
+    const alternativa = formulario.querySelector<HTMLElement>("[data-alternativa]")!;
+    const turnstile = formulario.querySelector(".cf-turnstile") ?? undefined;
+
+    // La página y el asunto llegan en la dirección desde "Reportar un error" y las tarjetas de Colabora.
+    const parametros = new URLSearchParams(location.search);
+    const pagina = parametros.get(formulario.dataset.parametroPagina!);
+    const asunto = parametros.get(formulario.dataset.parametroAsunto!);
+    if (pagina) campo(CAMPOS.pagina)!.value = pagina;
+    if (asunto) campo(CAMPOS.asunto)!.value = asunto;
+
+    const mostrar = (texto: string, tipo: "ok" | "error" | "", conAlternativa = false) => {
+      aviso.textContent = texto;
+      aviso.dataset.tipo = tipo;
+      alternativa.hidden = !conAlternativa;
+    };
+
+    formulario.addEventListener("submit", async (evento) => {
+      evento.preventDefault();
+      if (!campo(CAMPOS.turnstile)?.value) {
+        mostrar(ti.faltaVerificacion, "error");
+        return;
+      }
+      boton.disabled = true;
+      mostrar(ti.enviando, "");
+      let resultado: { ok?: boolean; error?: string } = {};
+      try {
+        const respuesta = await fetch(formulario.action, {
+          method: "POST",
+          headers: { accept: "application/json" },
+          body: new URLSearchParams(new FormData(formulario) as unknown as Record<string, string>),
+        });
+        resultado = await respuesta.json();
+      } catch {
+        resultado = { ok: false };
+      }
+      boton.disabled = false;
+      // Cada prueba de Turnstile sirve para un solo envío.
+      window.turnstile?.reset(turnstile);
+      if (resultado.ok) {
+        formulario.reset();
+        if (pagina) campo(CAMPOS.pagina)!.value = pagina;
+        if (asunto) campo(CAMPOS.asunto)!.value = asunto;
+        mostrar(ti.enviado, "ok");
+        return;
+      }
+      const clave = AVISOS_DE_ERROR[resultado.error as keyof typeof AVISOS_DE_ERROR];
+      mostrar(clave ? ti[clave] : ti.errorGeneral, "error", !clave || clave === AVISOS_DE_ERROR.verificacion);
+    });
+  }
+</script>
+
+<style>
+  .formulario-contacto {
+    margin: var(--espacio-5) 0;
+    padding: var(--espacio-4);
+    border: var(--borde-ancho) solid var(--color-borde);
+    border-radius: var(--radio);
+    background: var(--color-superficie);
+  }
+  .campo {
+    margin-bottom: var(--espacio-4);
+  }
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: var(--espacio-2);
+    border: var(--borde-ancho) solid var(--color-borde-fuerte);
+    border-radius: var(--radio);
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    font: inherit;
+  }
+  .formulario-contacto textarea {
+    resize: vertical;
+  }
+  .opcional,
+  .ayuda {
+    color: var(--color-texto-suave);
+    font-weight: normal;
+    font-size: var(--tamano-chico);
+  }
+  .ayuda {
+    margin: var(--espacio-1) 0 0;
+  }
+  /* Fuera de la vista para las personas, pero en la página para los robots que completan todo. */
+  .trampa {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .cf-turnstile {
+    margin-bottom: var(--espacio-3);
+  }
+  .formulario-contacto button[type="submit"] {
+    border: 0;
+  }
+  .formulario-contacto button[disabled] {
+    opacity: 0.6;
+    cursor: progress;
+  }
+  .aviso:empty {
+    display: none;
+  }
+  .aviso {
+    font-weight: var(--peso-fuerte);
+  }
+  .aviso[data-tipo="ok"] {
+    color: var(--color-voto-si);
+  }
+  .aviso[data-tipo="error"] {
+    color: var(--color-voto-no);
+  }
+</style>

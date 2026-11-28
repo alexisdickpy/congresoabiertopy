@@ -262,6 +262,7 @@ El período legislativo es un dato, no algo fijo en el código.
 ## Privacidad y licencias
 
 - El sitio no usa cookies ni recoge datos personales de visitantes. Las estadísticas son de Cloudflare Web Analytics, sin cookies.
+- Formulario de contacto (#140): los enlaces `mailto:` no hacen nada en una computadora sin programa de correo configurado. El formulario lo recibe un Worker aparte ([`contacto/`](../../contacto/README.md)), en `congresoabiertopy.com/api/contacto`, que lo manda por Cloudflare Email Routing a la casilla del proyecto sin guardarlo. Es un Worker y no una Pages Function porque las Pages Functions no admiten el enlace `send_email`. Antispam con Cloudflare Turnstile (sin cookies de seguimiento, solo en la página de contacto), un campo trampa y un límite de tamaño. Gratuito: el envío a direcciones verificadas de la propia cuenta no tiene costo en el plan Free.
 - La API incluye correo y teléfono institucionales de los legisladores. Decidido en #8: el sitio los muestra en la ficha de cada legislador; se guardan solo en `legisladores.json`.
 - Código bajo AGPL-3.0. Datos derivados bajo CC BY 4.0, con la cita "Origen de los datos: Datos Abiertos Poder Legislativo" y la fecha de actualización tomada de `datos/estado.json`.
 

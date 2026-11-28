@@ -3,12 +3,24 @@
     "titulo": "Contacto",
     "descripcion": "Cómo escribir a Congreso Abierto para avisar de un error, proponer una mejora o hacer una consulta."
   },
-  "texto": "Para avisar de un error, proponer una mejora, colaborar o hacer cualquier consulta, escribe al correo del proyecto:",
-  "boton": "Escribir un correo",
+  "texto": "Para avisar de un error, proponer una mejora, colaborar o hacer cualquier consulta, completa este formulario. El mensaje llega al correo del proyecto.",
   "consejo": "Si se trata de un dato incorrecto, indica la página donde lo viste y, si puedes, el documento oficial con el que no coincide.",
+  "formulario": {
+    "mensaje": "Mensaje",
+    "pagina": "Página donde viste el error",
+    "paginaAyuda": "Si llegaste desde el botón \"Reportar un error\", ya está escrita.",
+    "correo": "Tu correo para responderte",
+    "correoAyuda": "Solo si quieres una respuesta.",
+    "opcional": "(opcional)",
+    "trampa": "No completes este campo",
+    "enviar": "Enviar mensaje",
+    "privacidad": "Lo que envías llega solo por correo al proyecto y no se guarda en este sitio. Más detalles en [Privacidad]({urlPrivacidad}).",
+    "siFalla": "Si el formulario no funciona, escribe directamente al correo del proyecto:"
+  },
+  "correoDirecto": "También puedes escribir directamente al correo del proyecto:",
+  "copiar": "Copiar",
   "aclaracion": "Congreso Abierto es un proyecto independiente, sin vínculo con el Congreso Nacional o partidos políticos. No puede responder consultas sobre trámites legislativos ni hacer llegar mensajes a los legisladores. Otras formas de ayudar están en [Colabora]({urlColabora}).",
   "reportar": {
-    "asunto": "Error en Congreso Abierto",
-    "cuerpo": "Página: {pagina}\n\nQué dato parece incorrecto:\n\nDónde está el dato oficial (si lo tienes):\n"
+    "asunto": "Error en Congreso Abierto"
   }
 }

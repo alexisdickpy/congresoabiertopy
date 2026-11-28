@@ -27,6 +27,14 @@ jobs:
         working-directory: bot
         run: npm test
 
+  contacto:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Pruebas del formulario de contacto
+        working-directory: contacto
+        run: npm test
+
   sitio:
     runs-on: ubuntu-latest
     timeout-minutes: 15

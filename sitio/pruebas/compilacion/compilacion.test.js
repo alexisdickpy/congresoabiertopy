@@ -25,6 +25,7 @@ import { votosPorTema } from "../../src/lib/votosPorTema.js";
 import { perfilesDePartidos } from "../../src/lib/perfilPartidos.js";
 import { escalaDelCuadro, nivelDe } from "../../src/lib/coincidencia.js";
 import { compartirVotacion } from "../../src/lib/compartir.js";
+import { CAMPOS, scriptTurnstile } from "../../src/lib/formulario.js";
 import { datosDelTest, esPreliminar } from "../../src/lib/testAfinidad.js";
 import { fijo, textos } from "../textos.js";
 import { proyectosDeLey } from "../../src/lib/proyectos.js";
@@ -644,7 +645,7 @@ test("todas las páginas tienen el pie común: aviso, enlaces, licencias y firma
       `href="${rutas.sobreElProyecto()}"`,
       `href="${rutas.colabora()}"`,
       `href="${rutas.contacto()}"`,
-      `href="mailto:${rutas.correoContacto}?subject=`,
+      `href="${rutas.contacto()}?${rutas.parametrosContacto.pagina}=`,
     ]) {
       assert.ok(html.includes(buscado), `Falta "${buscado}" en ${url}`);
     }
@@ -669,24 +670,43 @@ test("la privacidad muestra sus secciones editables", () => {
   for (const seccion of textos.privacidad.secciones) if (seccion.texto) assert.ok(html.includes(fijo(seccion.texto)), `Falta "${seccion.titulo}"`);
 });
 
-// Páginas del proyecto (#133): sin formulario, el correo del proyecto en Contacto, Colabora y el botón
-// "Reportar un error" del pie, que lleva escrita la dirección de la página desde la que se escribe.
-test("las páginas del proyecto muestran sus textos y el correo del proyecto", () => {
+// Páginas del proyecto (#133) y formulario de contacto (#140): el correo del proyecto con botón para
+// copiarlo en Contacto y Colabora, el formulario solo en Contacto y el botón "Reportar un error" del pie,
+// que lleva al formulario con la dirección de la página desde la que se escribe.
+test("las páginas del proyecto muestran sus textos, el correo del proyecto y el formulario de contacto", () => {
   const sobre = texto(rutas.sobreElProyecto());
   for (const seccion of textos.sobre.secciones) assert.ok(sobre.includes(fijo(seccion.texto)), `Falta "${seccion.titulo}"`);
   const colabora = texto(rutas.colabora());
   assert.ok(colabora.includes(fijo(textos.colabora.introduccion)));
   for (const forma of textos.colabora.formas) {
     assert.ok(colabora.includes(fijo(forma.texto)), `Falta "${forma.titulo}"`);
-    if (forma.asunto) assert.ok(colabora.includes(`href="${rutas.correo(forma.asunto).replaceAll("&", "&amp;")}"`), `Falta el correo de "${forma.titulo}"`);
+    if (forma.asunto) assert.ok(colabora.includes(`href="${rutas.formularioContacto({ asunto: forma.asunto }).replaceAll("&", "&amp;")}"`), `Falta el enlace de "${forma.titulo}"`);
   }
   assert.ok(colabora.includes(`href="${rutas.codigoFuente()}"`));
-  for (const [url, html] of [[rutas.contacto(), texto(rutas.contacto())], [rutas.colabora(), colabora], [rutas.sobreElProyecto(), sobre]]) {
+  const contacto = texto(rutas.contacto());
+  for (const [url, html] of [[rutas.contacto(), contacto], [rutas.colabora(), colabora], [rutas.sobreElProyecto(), sobre]]) {
     assert.ok(html.includes(`>${rutas.correoContacto}</a>`), `Falta el correo en ${url}`);
-    assert.ok(!html.includes("<form"), `Formulario en ${url}`);
   }
-  const reporte = rutas.correo(textos.contacto.reportar.asunto, textos.contacto.reportar.cuerpo.replace("{pagina}", rutas.absoluta(rutas.leyes())));
+  for (const [url, html] of [[rutas.contacto(), contacto], [rutas.colabora(), colabora]]) {
+    assert.ok(html.includes(`data-copiar-correo="${rutas.correoContacto}"`), `Falta el botón para copiar el correo en ${url}`);
+  }
+  assert.ok(!colabora.includes("<form") && !sobre.includes("<form"), "El formulario va solo en Contacto");
+
+  const reporte = rutas.formularioContacto({ pagina: rutas.absoluta(rutas.leyes()), asunto: textos.contacto.reportar.asunto });
   assert.ok(leer(rutas.leyes()).includes(`href="${reporte.replaceAll("&", "&amp;")}"`), "Falta el botón para reportar un error");
+});
+
+test("el formulario de contacto envía al Worker los campos que espera, con Turnstile y el campo trampa", () => {
+  const html = leer(rutas.contacto());
+  assert.ok(html.includes(`id="${rutas.anclaFormulario}"`));
+  assert.ok(html.includes(`action="${rutas.apiContacto()}"`));
+  assert.match(html, new RegExp(`<textarea[^>]*name="${CAMPOS.mensaje}"[^>]*required`));
+  for (const nombre of [CAMPOS.pagina, CAMPOS.correo, CAMPOS.asunto, CAMPOS.trampa]) assert.ok(html.includes(`name="${nombre}"`), `Falta el campo ${nombre}`);
+  assert.ok(html.includes('class="cf-turnstile" data-sitekey="'), "Falta Turnstile");
+  assert.ok(html.includes(`src="${scriptTurnstile}"`));
+  assert.ok(html.includes(`href="${rutas.privacidad()}"`), "Falta el aviso de privacidad");
+  // Turnstile se carga solo en Contacto.
+  for (const url of [rutas.inicio(), rutas.colabora(), rutas.leyes()]) assert.ok(!leer(url).includes(scriptTurnstile), url);
 });
 
 test("las fichas enlazan a la metodología", () => {

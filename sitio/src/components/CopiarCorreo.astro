@@ -1,0 +1,46 @@
+---
+// Correo del proyecto destacado, con un botón para copiarlo (#140): sirve a quien no tiene un programa de
+// correo configurado, donde el enlace mailto: no hace nada. El botón aparece solo con JavaScript.
+import * as rutas from "../lib/rutas.js";
+import { textos } from "../lib/contenido.js";
+const tx = textos.contacto;
+---
+
+<p class="copiar-correo" data-copiar-correo={rutas.correoContacto}>
+  <a class="copiar-correo-direccion" href={rutas.correo()}>{rutas.correoContacto}</a>
+  <button type="button" class="chico" data-copiar hidden>{tx.copiar}</button>
+  <span class="texto-suave chico" role="status" data-copiado></span>
+</p>
+
+<script>
+  import interaccion from "../contenido/interaccion.json";
+  import { copiarTexto } from "../lib/copiar.js";
+  const ti = interaccion.contacto;
+
+  for (const caja of document.querySelectorAll<HTMLElement>("[data-copiar-correo]")) {
+    const boton = caja.querySelector<HTMLButtonElement>("[data-copiar]")!;
+    const aviso = caja.querySelector<HTMLElement>("[data-copiado]")!;
+    boton.hidden = false;
+    boton.addEventListener("click", async () => {
+      aviso.textContent = (await copiarTexto(caja.dataset.copiarCorreo!)) ? ti.correoCopiado : ti.noSePudoCopiar;
+    });
+  }
+</script>
+
+<style>
+  .copiar-correo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--espacio-2) var(--espacio-3);
+  }
+  .copiar-correo-direccion {
+    font-family: var(--fuente-titulo);
+    font-size: var(--tamano-titulo-3);
+    font-weight: var(--peso-fuerte);
+    overflow-wrap: anywhere;
+  }
+  .copiar-correo button {
+    padding: var(--espacio-1) var(--espacio-3);
+  }
+</style>

@@ -23,34 +23,15 @@ const { url, enlaces, vertical } = Astro.props;
 
 <script>
   import interaccion from "../contenido/interaccion.json";
+  import { copiarTexto } from "../lib/copiar.js";
   const ti = interaccion.compartir;
-  /** Copia con el método anterior, para navegadores que no permiten navigator.clipboard en la página. */
-  function copiarConSeleccion(texto: string) {
-    const campo = document.createElement("textarea");
-    campo.value = texto;
-    campo.setAttribute("readonly", "");
-    campo.style.position = "fixed";
-    campo.style.opacity = "0";
-    document.body.append(campo);
-    campo.select();
-    const copiado = document.execCommand("copy");
-    campo.remove();
-    return copiado;
-  }
 
   for (const caja of document.querySelectorAll<HTMLElement>("[data-compartir]")) {
     const boton = caja.querySelector<HTMLButtonElement>("[data-copiar]")!;
     const aviso = caja.querySelector<HTMLElement>("[data-copiado]")!;
     boton.hidden = false;
     boton.addEventListener("click", async () => {
-      const url = caja.dataset.compartir!;
-      let copiado = false;
-      try {
-        await navigator.clipboard.writeText(url);
-        copiado = true;
-      } catch {
-        copiado = copiarConSeleccion(url);
-      }
+      const copiado = await copiarTexto(caja.dataset.compartir!);
       aviso.textContent = copiado ? ti.enlaceCopiado : ti.noSePudoCopiar;
     });
   }
