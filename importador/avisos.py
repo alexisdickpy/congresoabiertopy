@@ -19,6 +19,11 @@ voto por partido y los enlaces a la votación y al proyecto en SILpy.
 
 Si ya hay votación nominal de un trámite, no se avisa como decisión del plenario.
 
+Los avisos son de lo que aparece nuevo en los datos, no de lo que ocurrió ese día (#139). Cada votación y decisión
+lleva en una línea propia su fecha oficial, y si es anterior a la del aviso por más de DIAS_DEMORA días se agrega
+que el Congreso la publicó después, con la fecha del aviso, porque la API no da la fecha de publicación. Lo mismo
+con la fecha de sanción de las leyes. La fecha del aviso es la de Paraguay (UTC-3).
+
 La primera ejecución marca todo lo existente como procesado y no envía nada. Si la lista de suscriptores no
 se puede obtener, o un mensaje no llega a nadie, ese aviso se reintenta en la próxima ejecución. Un fallo de
 los avisos nunca interrumpe la sincronización. Los números de chat no se guardan ni se muestran aquí.
@@ -43,7 +48,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from .escribir import escribir_si_cambia, json_bytes, leer_json
@@ -52,6 +57,8 @@ RAIZ = Path(__file__).resolve().parents[1]
 LIMITE_LEYES = 5  # más números de ley nuevos que esto en una ejecución: un solo mensaje
 MAXIMO_VOTACIONES_LEY = 6  # en el aviso de una ley, las últimas; el resto está en su ficha
 LIMITE_TELEGRAM = 4000  # Telegram admite 4096 caracteres por mensaje
+DIAS_DEMORA = 3  # una fecha oficial anterior al aviso por más días que esto se marca como publicada después (#139)
+HORA_PARAGUAY = timezone(timedelta(hours=-3))
 LARGO_TITULO = 300  # en las listas, los títulos oficiales se acortan; el enlace lleva al texto completo
 CITA = "Origen de los datos: Datos Abiertos Poder Legislativo"
 API_TELEGRAM = "https://api.telegram.org"
@@ -87,6 +94,22 @@ def fecha_legible(iso):
     return f"{iso[8:10]}/{iso[5:7]}/{iso[:4]}" if iso else "sin dato"
 
 
+def dia_del_aviso(ahora):
+    """Fecha de Paraguay de un instante ISO en UTC, como 2026-11-26T12:00:00Z."""
+    return datetime.fromisoformat(ahora.replace("Z", "+00:00")).astimezone(HORA_PARAGUAY).date()
+
+
+def linea_fecha(texto, oficial, iso, hoy=None):
+    """Línea con la fecha oficial ("Votada el 13/10/2026"), tal como la publica el Congreso si está.
+
+    Con `hoy`, si la fecha es anterior por más de DIAS_DEMORA días, agrega que el Congreso la publicó ese día.
+    """
+    linea = f"📅 {texto} el {oficial or fecha_legible(iso)}"
+    if hoy and iso and (hoy - date.fromisoformat(iso[:10])).days > DIAS_DEMORA:
+        linea += f" · publicada por el Congreso el {hoy.strftime('%d/%m/%Y')}"
+    return linea
+
+
 def acortar(texto, largo=LARGO_TITULO):
     texto = " ".join((texto or "Sin título publicado").split())
     return texto if len(texto) <= largo else texto[:largo - 1].rstrip() + "…"
@@ -96,10 +119,12 @@ def url_ley(base, ley):
     return f"{base}/leyes/{urllib.parse.quote(ley['_propio']['numeroLey'])}/"
 
 
-def tramite_votacion(v):
+def tramite_votacion(v, hoy=None):
+    """Cámara, fecha de la votación y resultado. Con `hoy`, marca si se publicó con demora."""
     tramite = v.get("tramitacion") or {}
     totales = f"Sí {v.get('totalSI', 0)}, No {v.get('totalNO', 0)}, Abstención {v.get('totalAbstencion', 0)}"
-    return (f"{tramite.get('camaraTramite') or 'Cámara sin dato'}, {tramite.get('fechaTramite') or 'fecha sin dato'}\n\n"
+    return (f"{tramite.get('camaraTramite') or 'Cámara sin dato'}\n"
+            f"{linea_fecha('Votada', tramite.get('fechaTramite'), fecha_votacion(v), hoy)}\n\n"
             f"Resultado oficial: {tramite.get('resultadoTramite') or 'sin dato'}. {totales}")
 
 
@@ -115,12 +140,12 @@ def fecha_votacion(v):
     return (v.get("tramitacion") or {}).get("_propio", {}).get("fechaTramite") or ""
 
 
-def mensaje_ley(registros, votaciones, base):
+def mensaje_ley(registros, votaciones, base, hoy=None):
     """Mensaje de un número de ley, que puede tener varios registros si reúne proyectos acumulados."""
     ley = registros[0]
     titulos = "\n".join((l.get("proyecto") or {}).get("acapite") or "Sin título publicado" for l in registros)
     partes = [f"Nueva ley sancionada\n\nLey {ley['_propio']['numeroLey']}\n{titulos}",
-              f"Sancionada el {fecha_legible(ley['_propio'].get('fechaSancion'))}\n{url_ley(base, ley)}"]
+              f"{linea_fecha('Sancionada', None, ley['_propio'].get('fechaSancion'), hoy)}\n{url_ley(base, ley)}"]
     ids = [i for l in registros for i in l["_propio"].get("idVotaciones") or []]
     suyas = sorted((votaciones[i] for i in ids if i in votaciones), key=lambda v: (fecha_votacion(v), v["idVotacion"]))
     if suyas:
@@ -219,7 +244,7 @@ def lineas_por_partido(partidos):
     return lineas
 
 
-def bloque_votacion(v, base, partidos=None, autores=None):
+def bloque_votacion(v, base, partidos=None, autores=None, hoy=None):
     """Una votación. Sin autores se conserva el título entero, porque "presentado por" sería el único dato de origen."""
     proyecto = v.get("proyecto") or {}
     titulo = proyecto.get("acapite")
@@ -227,7 +252,7 @@ def bloque_votacion(v, base, partidos=None, autores=None):
     if autores:
         titulo = PRESENTADO_POR.sub("", titulo or "") or titulo
         partes.append("Presentado por " + ", ".join(autores))
-    partes.append(tramite_votacion(v))
+    partes.append(tramite_votacion(v, hoy))
     enlaces = []
     if v.get("appURL"):
         enlaces.append(f"Votación en SILpy: {v['appURL']}")
@@ -266,7 +291,7 @@ def bloque_proyecto(p, siglas):
             f"{p.get('appURL') or ''}".rstrip())
 
 
-def bloque_decision(d, siglas):
+def bloque_decision(d, siglas, hoy=None):
     """Una decisión del plenario de decisiones-plenario.json, con su resultado oficial."""
     tramite = d["tramitacion"]
     autores = autores_con_partido(d, siglas)
@@ -275,7 +300,8 @@ def bloque_decision(d, siglas):
     if autores:
         titulo = PRESENTADO_POR.sub("", titulo or "") or titulo
         encabezado = f"{acortar(titulo)}\nPresentado por {autores}"
-    partes = [encabezado, f"{tramite.get('camaraTramite') or 'Cámara sin dato'}, {tramite.get('fechaTramite') or 'fecha sin dato'}",
+    fecha = linea_fecha("Tratada en el plenario", tramite.get("fechaTramite"), (tramite.get("_propio") or {}).get("fechaTramite"), hoy)
+    partes = [encabezado, f"{tramite.get('camaraTramite') or 'Cámara sin dato'}\n{fecha}",
               f"Resultado oficial: {tramite.get('resultadoTramite')}"]
     if d.get("appURL"):
         partes.append(f"Proyecto en SILpy: {d['appURL']}")
@@ -308,26 +334,26 @@ def novedades(salida):
             "proyectos": proyectos}
 
 
-def mensajes_de(tipo, pendientes, votaciones, base, salida):
-    """Lista de (identificadores, texto) de un tipo de aviso."""
+def mensajes_de(tipo, pendientes, votaciones, base, salida, hoy=None):
+    """Lista de (identificadores, texto) de un tipo de aviso. `hoy` es la fecha del aviso en Paraguay."""
     if tipo == "leyes":
         por_numero = {}
         for l in pendientes.values():
             por_numero.setdefault(l["_propio"]["numeroLey"], []).append(l)
         if len(por_numero) > LIMITE_LEYES:
             return [(list(pendientes), mensaje_varias_leyes(list(por_numero), base))]
-        return [([l["idLey"] for l in registros], mensaje_ley(registros, votaciones, base))
+        return [([l["idLey"] for l in registros], mensaje_ley(registros, votaciones, base, hoy))
                 for registros in por_numero.values()]
     siglas = siglas_de_legisladores(salida)
     if tipo == "votaciones":
-        encabezado = f"Votaciones nominales nuevas de proyectos de ley\n\n{LEYENDA_VOTOS}"
+        encabezado = f"Votaciones nominales de proyectos de ley recién publicadas por el Congreso\n\n{LEYENDA_VOTOS}"
         por_partido = votos_por_partido(salida, set(pendientes), siglas)
         autores = autores_de_votaciones(salida)
-        bloques = [bloque_votacion(v, base, por_partido.get(i), autores.get((v.get("proyecto") or {}).get("idProyecto")))
+        bloques = [bloque_votacion(v, base, por_partido.get(i), autores.get((v.get("proyecto") or {}).get("idProyecto")), hoy)
                    for i, v in pendientes.items()]
     elif tipo == "plenario":
-        encabezado = "Decisiones del plenario sobre proyectos de ley, sin votación nominal publicada"
-        bloques = [bloque_decision(d, siglas) for d in pendientes.values()]
+        encabezado = "Decisiones del plenario sobre proyectos de ley recién publicadas por el Congreso, sin votación nominal publicada"
+        bloques = [bloque_decision(d, siglas, hoy) for d in pendientes.values()]
     else:
         encabezado = "Proyectos de ley nuevos presentados"
         bloques = [bloque_proyecto(p, siglas) for p in pendientes.values()]
@@ -379,7 +405,7 @@ def avisar(salida, enviar, base, ahora=None, salida_texto=print):
         pendientes = {i: e for i, e in elementos.items() if i not in vistos}
         if not pendientes:
             continue
-        for identificadores, texto in mensajes_de(tipo, pendientes, ids["votaciones"], base, salida):
+        for identificadores, texto in mensajes_de(tipo, pendientes, ids["votaciones"], base, salida, dia_del_aviso(ahora)):
             if not mandar(tipo, texto):
                 break
             nuevos.extend({"tipo": tipo, "id": i, "fecha": ahora} for i in identificadores)
