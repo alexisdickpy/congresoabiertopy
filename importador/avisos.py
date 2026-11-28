@@ -21,7 +21,8 @@ Si ya hay votación nominal de un trámite, no se avisa como decisión del plena
 
 Los avisos son de lo que aparece nuevo en los datos, no de lo que ocurrió ese día (#139). Cada votación y decisión
 lleva en una línea propia su fecha oficial, y si es anterior a la del aviso por más de DIAS_DEMORA días se agrega
-que el Congreso la publicó después, con la fecha del aviso, porque la API no da la fecha de publicación. Lo mismo
+que apareció en los datos abiertos el día del aviso: es la fecha en que la API la incluyó, que puede ser posterior a
+su publicación en otros medios del Congreso. Lo mismo
 con la fecha de sanción de las leyes. La fecha del aviso es la de Paraguay (UTC-3).
 
 La primera ejecución marca todo lo existente como procesado y no envía nada. Si la lista de suscriptores no
@@ -57,7 +58,7 @@ RAIZ = Path(__file__).resolve().parents[1]
 LIMITE_LEYES = 5  # más números de ley nuevos que esto en una ejecución: un solo mensaje
 MAXIMO_VOTACIONES_LEY = 6  # en el aviso de una ley, las últimas; el resto está en su ficha
 LIMITE_TELEGRAM = 4000  # Telegram admite 4096 caracteres por mensaje
-DIAS_DEMORA = 3  # una fecha oficial anterior al aviso por más días que esto se marca como publicada después (#139)
+DIAS_DEMORA = 3  # una fecha oficial anterior al aviso por más días que esto se marca como aparecida después (#139)
 HORA_PARAGUAY = timezone(timedelta(hours=-3))
 LARGO_TITULO = 300  # en las listas, los títulos oficiales se acortan; el enlace lleva al texto completo
 CITA = "Origen de los datos: Datos Abiertos Poder Legislativo"
@@ -102,11 +103,11 @@ def dia_del_aviso(ahora):
 def linea_fecha(texto, oficial, iso, hoy=None):
     """Línea con la fecha oficial ("Votada el 13/10/2026"), tal como la publica el Congreso si está.
 
-    Con `hoy`, si la fecha es anterior por más de DIAS_DEMORA días, agrega que el Congreso la publicó ese día.
+    Con `hoy`, si la fecha es anterior por más de DIAS_DEMORA días, agrega que apareció en los datos abiertos ese día.
     """
     linea = f"📅 {texto} el {oficial or fecha_legible(iso)}"
     if hoy and iso and (hoy - date.fromisoformat(iso[:10])).days > DIAS_DEMORA:
-        linea += f" · publicada por el Congreso el {hoy.strftime('%d/%m/%Y')}"
+        linea += f" · apareció en los datos abiertos el {hoy.strftime('%d/%m/%Y')}"
     return linea
 
 
@@ -120,7 +121,7 @@ def url_ley(base, ley):
 
 
 def tramite_votacion(v, hoy=None):
-    """Cámara, fecha de la votación y resultado. Con `hoy`, marca si se publicó con demora."""
+    """Cámara, fecha de la votación y resultado. Con `hoy`, marca si apareció en los datos con demora."""
     tramite = v.get("tramitacion") or {}
     totales = f"Sí {v.get('totalSI', 0)}, No {v.get('totalNO', 0)}, Abstención {v.get('totalAbstencion', 0)}"
     return (f"{tramite.get('camaraTramite') or 'Cámara sin dato'}\n"
@@ -346,13 +347,13 @@ def mensajes_de(tipo, pendientes, votaciones, base, salida, hoy=None):
                 for registros in por_numero.values()]
     siglas = siglas_de_legisladores(salida)
     if tipo == "votaciones":
-        encabezado = f"Votaciones nominales de proyectos de ley recién publicadas por el Congreso\n\n{LEYENDA_VOTOS}"
+        encabezado = f"Votaciones nominales de proyectos de ley nuevas en los datos abiertos\n\n{LEYENDA_VOTOS}"
         por_partido = votos_por_partido(salida, set(pendientes), siglas)
         autores = autores_de_votaciones(salida)
         bloques = [bloque_votacion(v, base, por_partido.get(i), autores.get((v.get("proyecto") or {}).get("idProyecto")), hoy)
                    for i, v in pendientes.items()]
     elif tipo == "plenario":
-        encabezado = "Decisiones del plenario sobre proyectos de ley recién publicadas por el Congreso, sin votación nominal publicada"
+        encabezado = "Decisiones del plenario sobre proyectos de ley nuevas en los datos abiertos, sin votación nominal publicada"
         bloques = [bloque_decision(d, siglas, hoy) for d in pendientes.values()]
     else:
         encabezado = "Proyectos de ley nuevos presentados"
