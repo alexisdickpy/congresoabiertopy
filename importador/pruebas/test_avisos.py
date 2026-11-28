@@ -104,7 +104,7 @@ class Avisos(unittest.TestCase):
         self.poner(votaciones=[votacion(1), votacion(2), votacion(3), votacion(4, "PEDIDO DE INFORMES (Art. 192 CN)")])
         self.correr()
         texto, = self.textos("votaciones")
-        self.assertTrue(texto.startswith("Votaciones nominales nuevas de proyectos de ley\n"))
+        self.assertTrue(texto.startswith("Votaciones nominales de proyectos de ley nuevas en los datos abiertos\n"))
         self.assertIn("Proyecto 2", texto)
         self.assertIn("Resultado oficial: APROBADO. Sí 30, No 5, Abstención 1", texto)
         self.assertIn(f"{BASE}/votacion/3/", texto)
@@ -318,8 +318,46 @@ class Avisos(unittest.TestCase):
         self.poner_decisiones(decision(1), decision(2))
         self.correr()
         self.assertEqual(len(self.enviados), 1)
-        self.assertIn("Votaciones nominales nuevas", self.enviados[0][1])
+        self.assertIn("Votaciones nominales de proyectos de ley nuevas en los datos", self.enviados[0][1])
         self.assertNotIn("sin votación nominal publicada", self.enviados[0][1])
+
+    def test_votacion_del_dia_muestra_su_fecha_sin_demora(self):
+        # Aviso del 17/10 en Paraguay (02:00 UTC del 18) de una votación del 14: 3 días, sin demora.
+        self.correr()
+        self.poner(votaciones=[votacion(1), votacion(2)])
+        self.correr(ahora="2026-10-18T02:00:00Z")
+        texto, = self.textos("votaciones")
+        self.assertIn("CAMARA DE SENADORES\n📅 Votada el 14/10/2026\n\nResultado oficial", texto)
+        self.assertNotIn("apareció en los datos abiertos el", texto)
+
+    def test_votacion_publicada_con_demora_lo_aclara(self):
+        self.correr()
+        self.poner(votaciones=[votacion(1), votacion(2)])
+        self.correr(ahora="2026-11-26T12:00:00Z")
+        texto, = self.textos("votaciones")
+        self.assertIn("📅 Votada el 14/10/2026 · apareció en los datos abiertos el 26/11/2026\n", texto)
+
+    def test_decision_publicada_con_demora_lo_aclara(self):
+        self.correr()
+        self.poner_decisiones(decision(1))
+        self.correr()
+        self.poner_decisiones(decision(1), decision(2))
+        self.correr(ahora="2026-11-26T12:00:00Z")
+        texto, = self.textos("votaciones")
+        self.assertTrue(texto.startswith("Decisiones del plenario sobre proyectos de ley nuevas en los datos abiertos"))
+        self.assertIn("CAMARA DE SENADORES\n📅 Tratada en el plenario el 20/10/2026 · apareció en los datos abiertos el 26/11/2026", texto)
+
+    def test_ley_publicada_con_demora_lo_aclara_y_sus_votaciones_no(self):
+        # Las votaciones de una ley son anteriores a su sanción y pudieron publicarse antes; no se marcan.
+        self.correr()
+        nueva = ley(2)
+        nueva["_propio"]["idVotaciones"] = [1]
+        self.poner(leyes=[ley(1), nueva])
+        self.correr(ahora="2026-11-26T12:00:00Z")
+        texto, = self.textos("leyes")
+        self.assertIn("📅 Sancionada el 25/08/2026 · apareció en los datos abiertos el 26/11/2026\n", texto)
+        self.assertIn("📅 Votada el 14/10/2026\n", texto)
+        self.assertEqual(texto.count("apareció en los datos abiertos"), 1)
 
     def test_rutas_iguales_a_las_del_sitio(self):
         rutas = (RAIZ / "sitio" / "src" / "lib" / "rutas.js").read_text(encoding="utf-8")
