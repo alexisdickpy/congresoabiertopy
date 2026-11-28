@@ -111,7 +111,17 @@ class CopiaPublicada(unittest.TestCase):
         leyes = json.loads((DATOS / "fuente" / periodo / "leyes.json").read_text(encoding="utf-8"))
         columnas, filas = leer_csv(DATOS / "fuente" / periodo / "leyes.csv")
         for registro, fila in zip(leyes, filas):
-            self.assertEqual(dict(zip(columnas, fila)), aplanar(registro))
+            # Un registro puede no traer un campo que otros sí traen (la API lo omite, p. ej. la
+            # fechaPublicacion de una ley aún no publicada): en el CSV esa celda queda vacía.
+            esperado = {c: "" for c in columnas} | aplanar(registro)
+            with self.subTest(idLey=registro["idLey"]):
+                self.assertEqual(dict(zip(columnas, fila)), esperado)
+
+    def test_campo_ausente_queda_vacio_en_el_csv(self):
+        contenido, columnas = tabla_csv([{"idLey": 1, "fecha": "01/01/2026"}, {"idLey": 2}], "idLey")
+        filas = list(csv.reader(io.StringIO(contenido.decode("utf-8-sig"), newline="")))[1:]
+        self.assertEqual(columnas, ["idLey", "fecha"])
+        self.assertEqual(filas, [["1", "01/01/2026"], ["2", ""]])
 
 
 if __name__ == "__main__":

@@ -27,7 +27,7 @@ Se publica en `fuente/{período}/leyes.json` y `fuente/{período}/leyes.csv`, co
 | `idLey` | oficial | entero | Identificador oficial del registro de ley. Una misma ley puede tener más de un registro. |
 | `appURL` | oficial | URL | Ficha de la ley en SILpy. |
 | `fechaPromulgacion` | oficial | fecha (texto dd/mm/aaaa) | Fecha de promulgación. |
-| `fechaPublicacion` | oficial | fecha (texto dd/mm/aaaa) | Fecha de publicación. |
+| `fechaPublicacion` | oficial | fecha (texto dd/mm/aaaa) | Fecha de publicación. Puede faltar en el registro (la API omite el campo, por ejemplo en una ley promulgada que todavía no se publicó): en el CSV la celda queda vacía. |
 | `fechaSancion` | oficial | fecha (texto dd/mm/aaaa) | Fecha de sanción. |
 | `numeroLey` | oficial | texto | Número de ley tal como lo publica la API (puede tener espacios). |
 | `observacionDecreto` | oficial | texto | Observación sobre el decreto de promulgación. |

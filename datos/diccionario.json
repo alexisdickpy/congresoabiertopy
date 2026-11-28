@@ -30,7 +30,7 @@
           "campo": "fechaPublicacion",
           "origen": "oficial",
           "tipo": "fecha (texto dd/mm/aaaa)",
-          "descripcion": "Fecha de publicación."
+          "descripcion": "Fecha de publicación. Puede faltar en el registro (la API omite el campo, por ejemplo en una ley promulgada que todavía no se publicó): en el CSV la celda queda vacía."
         },
         {
           "campo": "fechaSancion",
