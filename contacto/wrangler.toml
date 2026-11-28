@@ -1,0 +1,16 @@
+# Configuración del Worker del formulario de contacto (#140). La despliega .github/workflows/contacto.yml.
+# Los secretos del Worker (CORREO_DESTINO, TURNSTILE_SECRETO) se cargan desde los secretos de GitHub.
+name = "congreso-abierto-contacto"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+# Solo en el dominio del sitio, en la misma dirección que usa el formulario (sitio/src/lib/rutas.js).
+workers_dev = false
+routes = [{ pattern = "congresoabiertopy.com/api/contacto", zone_name = "congresoabiertopy.com" }]
+
+[vars]
+SITIO = "https://congresoabiertopy.com"
+REMITENTE = "formulario@congresoabiertopy.com"
+
+# Envío por Email Routing, solo a direcciones verificadas en la cuenta (la del proyecto, en CORREO_DESTINO).
+[[send_email]]
+name = "CORREO"

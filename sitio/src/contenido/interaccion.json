@@ -85,5 +85,16 @@
   },
   "sinNominal": {
     "resultado": "Se muestran {visibles} de {total} decisiones."
+  },
+  "contacto": {
+    "enviando": "Enviando…",
+    "enviado": "¡Gracias! Tu mensaje fue enviado.",
+    "faltaVerificacion": "Espera a que termine la verificación contra robots e inténtalo de nuevo.",
+    "errorMensaje": "Escribe un mensaje de hasta 5.000 caracteres.",
+    "errorCorreo": "Revisa el correo para responderte: no parece una dirección válida.",
+    "errorVerificacion": "No se pudo comprobar que no eres un robot. Inténtalo de nuevo.",
+    "errorGeneral": "No se pudo enviar el mensaje.",
+    "correoCopiado": "Correo copiado",
+    "noSePudoCopiar": "No se pudo copiar el correo"
   }
 }

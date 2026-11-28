@@ -148,7 +148,7 @@ content:
             label: "Contacto"
             type: string
           - name: reportarUnError
-            label: "Reportar un error (botón que abre un correo)"
+            label: "Reportar un error (botón que lleva al formulario de contacto)"
             type: string
           - name: actualizadoEl
             label: "{cita}. Actualizado el {fecha}."
@@ -2845,7 +2845,10 @@ content:
       - name: introduccion
         label: "Introducción"
         type: text
-        description: "Partes automáticas, no las borres ni les cambies el nombre: {correo}, {urlCorreo}, {urlCodigo}. Los enlaces van como [texto](dirección)."
+        description: "Partes automáticas, no las borres ni les cambies el nombre: {urlCodigo}, {urlContacto}. Los enlaces van como [texto](dirección)."
+      - name: correoDirecto
+        label: "Texto antes del correo del proyecto (con botón para copiarlo)"
+        type: string
       - name: formas
         label: "Formas de colaborar (una tarjeta cada una)"
         type: object
@@ -2862,9 +2865,9 @@ content:
           - { name: texto, label: Texto, type: text }
           - { name: boton, label: "Texto del botón", type: string }
           - name: asunto
-            label: "Asunto del correo"
+            label: "Asunto del mensaje"
             type: string
-            description: "El botón abre un correo al proyecto con este asunto. La tarjeta de GitHub no lo usa."
+            description: "El botón lleva al formulario de contacto y el mensaje llega al correo del proyecto con este asunto. La tarjeta de GitHub no lo usa."
   - name: contacto
     label: "Contacto y reporte de errores"
     type: file
@@ -2883,14 +2886,53 @@ content:
             label: "Descripción para buscadores"
             type: text
       - name: texto
-        label: "Texto antes del correo"
+        label: "Texto antes del formulario"
         type: text
-      - name: boton
-        label: "Texto del botón"
-        type: string
       - name: consejo
         label: "Consejo para reportar un dato incorrecto"
         type: text
+      - name: formulario
+        label: "Formulario de contacto"
+        type: object
+        description: "Los avisos que aparecen al enviar están en \"Textos de los elementos interactivos\", sección Formulario de contacto."
+        fields:
+          - name: mensaje
+            label: "Mensaje"
+            type: string
+          - name: pagina
+            label: "Página donde viste el error"
+            type: string
+          - name: paginaAyuda
+            label: "Ayuda bajo la página"
+            type: string
+          - name: correo
+            label: "Tu correo para responderte"
+            type: string
+          - name: correoAyuda
+            label: "Ayuda bajo el correo"
+            type: string
+          - name: opcional
+            label: "(opcional)"
+            type: string
+          - name: trampa
+            label: "Campo trampa contra robots (oculto; solo lo leen los lectores de pantalla si fallan los estilos)"
+            type: string
+          - name: enviar
+            label: "Botón Enviar mensaje"
+            type: string
+          - name: privacidad
+            label: "Aviso de privacidad bajo el botón"
+            type: text
+            description: "Partes automáticas, no las borres ni les cambies el nombre: {urlPrivacidad}. Los enlaces van como [texto](dirección)."
+          - name: siFalla
+            label: "Texto si el envío falla (va antes del correo del proyecto)"
+            type: string
+      - name: correoDirecto
+        label: "Texto antes del correo del proyecto (con botón para copiarlo)"
+        type: string
+      - name: copiar
+        label: "Botón Copiar (el correo)"
+        type: string
       - name: aclaracion
         label: "Aclaración de independencia"
         type: text
@@ -2900,12 +2942,9 @@ content:
         type: object
         fields:
           - name: asunto
-            label: "Asunto del correo"
+            label: "Asunto del mensaje"
             type: string
-          - name: cuerpo
-            label: "Texto inicial del correo"
-            type: text
-            description: "Partes automáticas, no las borres ni les cambies el nombre: {pagina} (la dirección de la página desde la que se escribe)."
+            description: "El botón lleva al formulario de contacto con la página ya escrita; el mensaje llega con este asunto."
   - name: privacidad
     label: "Privacidad y aviso legal"
     type: file
@@ -3078,6 +3117,37 @@ content:
             type: string
           - name: noSePudoCopiar
             label: "No se pudo copiar el enlace"
+            type: string
+      - name: contacto
+        label: "Formulario de contacto"
+        type: object
+        fields:
+          - name: enviando
+            label: "Enviando…"
+            type: string
+          - name: enviado
+            label: "Mensaje enviado"
+            type: string
+          - name: faltaVerificacion
+            label: "Falta terminar la verificación contra robots"
+            type: string
+          - name: errorMensaje
+            label: "Error: falta el mensaje o es demasiado largo"
+            type: string
+          - name: errorCorreo
+            label: "Error: el correo para responder no es válido"
+            type: string
+          - name: errorVerificacion
+            label: "Error: no pasó la verificación contra robots"
+            type: string
+          - name: errorGeneral
+            label: "Error: no se pudo enviar (después se muestra el correo del proyecto)"
+            type: string
+          - name: correoCopiado
+            label: "Correo copiado"
+            type: string
+          - name: noSePudoCopiar
+            label: "No se pudo copiar el correo"
             type: string
       - name: filtroExpedientes
         label: "Filtro de expedientes"

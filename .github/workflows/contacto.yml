@@ -1,0 +1,51 @@
+# Despliega el Worker del formulario de contacto (contacto/) en Cloudflare, en congresoabiertopy.com/api/contacto.
+# Se ejecuta al cambiar contacto/ en main o a mano. Sin los secretos necesarios no hace nada.
+# Pasos para ponerlo en marcha en contacto/README.md.
+
+name: Despliegue del formulario de contacto
+
+on:
+  push:
+    branches: [main]
+    paths: ["contacto/**", ".github/workflows/contacto.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  desplegar:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CORREO_DESTINO: ${{ secrets.CORREO_DESTINO }}
+      TURNSTILE_SECRETO: ${{ secrets.TURNSTILE_SECRETO }}
+    steps:
+      - name: Comprobar los secretos
+        id: secretos
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CORREO_DESTINO" ] || [ -z "$TURNSTILE_SECRETO" ]; then
+            echo "::notice::El formulario de contacto todavía no está configurado (contacto/README.md). No se despliega."
+            echo "listo=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "listo=si" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v7
+        if: steps.secretos.outputs.listo == 'si'
+
+      - name: Pruebas
+        if: steps.secretos.outputs.listo == 'si'
+        working-directory: contacto
+        run: npm test
+
+      - name: Desplegar
+        if: steps.secretos.outputs.listo == 'si'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: contacto
+          secrets: |
+            CORREO_DESTINO
+            TURNSTILE_SECRETO

@@ -1,10 +1,10 @@
 ---
 // Pie de página común: cita de la fuente con la fecha de actualización, aviso de datos, enlaces a
 // las páginas del proyecto, metodología y privacidad, licencias y firma (textos acordados en #9). El
-// botón "Reportar un error" (#133) abre un correo al proyecto con la dirección de la página ya escrita.
+// botón "Reportar un error" (#133) lleva al formulario de contacto con la página ya escrita (#140).
 import { actualizacion, cita } from "../lib/catalogo.js";
 import * as rutas from "../lib/rutas.js";
-import { textos, md, crudo, fill } from "../lib/contenido.js";
+import { textos, md, crudo } from "../lib/contenido.js";
 const tx = textos.general.pie;
 const txc = textos.general.comunes;
 
@@ -21,7 +21,7 @@ const enlaces = [
   { url: rutas.contacto(), texto: tx.contacto },
 ];
 const reporte = textos.contacto.reportar;
-const urlReporte = rutas.correo(reporte.asunto, fill(reporte.cuerpo, { pagina: rutas.absoluta(Astro.url.pathname) }));
+const urlReporte = rutas.formularioContacto({ pagina: rutas.absoluta(Astro.url.pathname), asunto: reporte.asunto });
 ---
 
 <footer class="pie">

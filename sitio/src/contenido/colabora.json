@@ -3,14 +3,14 @@
     "titulo": "Colabora",
     "descripcion": "Cómo ayudar a Congreso Abierto: avisar de un error, proponer una mejora, contribuir con código o datos, colaborar como voluntario o apoyar el proyecto."
   },
-  "introduccion": "Congreso Abierto es un proyecto independiente y de código abierto. Todo el código y los datos que muestra el sitio son públicos y están en [GitHub]({urlCodigo}), y cualquiera puede ayudar a que sean más completos y exactos. Para cualquier consulta, escribe a [{correo}]({urlCorreo}). Aquí abajo tienes las diferentes formas de colaborar:",
+  "introduccion": "Congreso Abierto es un proyecto independiente y de código abierto. Todo el código y los datos que muestra el sitio son públicos y están en [GitHub]({urlCodigo}), y cualquiera puede ayudar a que sean más completos y exactos. Para cualquier consulta, usa el [formulario de contacto]({urlContacto}). Aquí abajo tienes las diferentes formas de colaborar:",
   "formas": [
     {
       "clave": "error",
       "etiqueta": "Sin programar",
       "titulo": "Avisa de un error o propón una mejora",
       "texto": "Si un dato no coincide con la fuente oficial o algo no funciona, cuéntanos en qué página está. También son bienvenidas las ideas para mejorar el sitio.",
-      "boton": "Escribir al correo",
+      "boton": "Escribir un mensaje",
       "asunto": "Error o sugerencia en Congreso Abierto"
     },
     {
@@ -36,5 +36,6 @@
       "boton": "Escribir sobre donaciones",
       "asunto": "Donación o patrocinio"
     }
-  ]
+  ],
+  "correoDirecto": "También puedes escribir directamente al correo del proyecto:"
 }

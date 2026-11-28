@@ -31,13 +31,26 @@ export const proyectos = () => "/proyectos/";
 export const sobreElProyecto = () => "/sobre-el-proyecto/";
 export const colabora = () => "/colabora/";
 export const contacto = () => "/contacto/";
-/** Correo del proyecto (#130). Sin formulario: los botones abren el programa de correo del visitante. */
+/** Correo del proyecto (#130), visible en Contacto y Colabora con un botón para copiarlo (#140). */
 export const correoContacto = "contacto@congresoabiertopy.com";
-/** Enlace que abre un correo al proyecto, con asunto y texto ya escritos si se pasan. */
-export const correo = (asunto, cuerpo) => {
-  const partes = [asunto && `subject=${encodeURIComponent(asunto)}`, cuerpo && `body=${encodeURIComponent(cuerpo)}`].filter(Boolean);
-  return `mailto:${correoContacto}${partes.length ? `?${partes.join("&")}` : ""}`;
+/** Enlace que abre un correo al proyecto en el programa de correo del visitante, con asunto si se pasa. */
+export const correo = (asunto) => `mailto:${correoContacto}${asunto ? `?subject=${encodeURIComponent(asunto)}` : ""}`;
+/** Parámetros de la dirección del formulario de contacto (?pagina=…&asunto=…) y ancla (id) del formulario. */
+export const parametrosContacto = { pagina: "pagina", asunto: "asunto" };
+export const anclaFormulario = "formulario";
+/**
+ * Formulario de contacto (#140), en la página de contacto. Con página o asunto, la dirección los lleva
+ * y el formulario los completa solo; "Reportar un error" pasa la página desde la que se escribe.
+ */
+export const formularioContacto = ({ pagina, asunto } = {}) => {
+  const partes = [
+    pagina && `${parametrosContacto.pagina}=${encodeURIComponent(pagina)}`,
+    asunto && `${parametrosContacto.asunto}=${encodeURIComponent(asunto)}`,
+  ].filter(Boolean);
+  return `${contacto()}${partes.length ? `?${partes.join("&")}` : ""}#${anclaFormulario}`;
 };
+/** Dirección que recibe el formulario: el Worker de contacto/ (contacto/wrangler.toml), en el mismo dominio. */
+export const apiContacto = () => "/api/contacto";
 export const sitemap = () => "/sitemap.xml";
 /** Archivos internos del buscador (Pagefind), que los rastreadores no necesitan leer. */
 export const archivosBuscador = () => "/pagefind/";
